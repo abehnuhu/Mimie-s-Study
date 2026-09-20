@@ -1,0 +1,202 @@
+[
+ {
+  "courseSlug": "community-midwifery",
+  "moduleTitle": "Population-Level Maternal Health",
+  "lessonTitle": "Health Education Campaigns in the Community",
+  "description": "Designing messages that change behaviour — education at the community scale.",
+  "tags": [
+   "health education",
+   "campaigns"
+  ]
+ },
+ {
+  "courseSlug": "community-midwifery",
+  "moduleTitle": "Linking Hospital and Home",
+  "lessonTitle": "Continuity of Care Across Settings",
+  "description": "The midwife who follows the mother — continuity that measurably improves outcomes.",
+  "tags": [
+   "continuity",
+   "care"
+  ]
+ },
+ {
+  "courseSlug": "community-midwifery",
+  "moduleTitle": "Linking Hospital and Home",
+  "lessonTitle": "Community Referral Pathways",
+  "description": "The roads between home, clinic and theatre — keeping them open and fast.",
+  "tags": [
+   "referral",
+   "pathways"
+  ]
+ },
+ {
+  "courseSlug": "ethics-professional-practice",
+  "moduleTitle": "Respect and Rights",
+  "lessonTitle": "Respectful Maternity Care: Every Mother's Right",
+  "description": "Dignity during vulnerability — the universal rights of childbearing women.",
+  "tags": [
+   "rmc",
+   "dignity"
+  ]
+ },
+ {
+  "courseSlug": "ethics-professional-practice",
+  "moduleTitle": "Respect and Rights",
+  "lessonTitle": "Informed Consent: The Real Conversation",
+  "description": "Beyond the signature — consent as dialogue, understanding and genuine choice.",
+  "tags": [
+   "consent",
+   "autonomy"
+  ]
+ },
+ {
+  "courseSlug": "ethics-professional-practice",
+  "moduleTitle": "Respect and Rights",
+  "lessonTitle": "Confidentiality in Maternity Care",
+  "description": "The secrets maternity holds — privacy rules in small communities.",
+  "tags": [
+   "confidentiality",
+   "privacy"
+  ]
+ },
+ {
+  "courseSlug": "ethics-professional-practice",
+  "moduleTitle": "Ethics in Daily Practice",
+  "lessonTitle": "The Principles of Healthcare Ethics",
+  "description": "Autonomy, beneficence, non-maleficence, justice — the four pillars applied to real cases.",
+  "tags": [
+   "ethics",
+   "principles"
+  ]
+ },
+ {
+  "courseSlug": "ethics-professional-practice",
+  "moduleTitle": "Ethics in Daily Practice",
+  "lessonTitle": "Professional Conduct and Accountability",
+  "description": "The standards you're judged by and the integrity that keeps your licence.",
+  "tags": [
+   "conduct",
+   "accountability"
+  ]
+ },
+ {
+  "courseSlug": "ethics-professional-practice",
+  "moduleTitle": "Ethics in Daily Practice",
+  "lessonTitle": "Legal Responsibilities of the Midwife",
+  "description": "Negligence, documentation and the law — your duties with legal weight.",
+  "tags": [
+   "law",
+   "negligence"
+  ]
+ },
+ {
+  "courseSlug": "ethics-professional-practice",
+  "moduleTitle": "Protecting and Recording",
+  "lessonTitle": "Safeguarding: Protecting the Vulnerable",
+  "description": "Children, women and the elderly at risk — the legal duty to protect.",
+  "tags": [
+   "safeguarding",
+   "protection"
+  ]
+ },
+ {
+  "courseSlug": "ethics-professional-practice",
+  "moduleTitle": "Protecting and Recording",
+  "lessonTitle": "Documentation: Your Legal Shield",
+  "description": "Notes as evidence — writing that protects patients, midwives and the truth.",
+  "tags": [
+   "documentation",
+   "legal"
+  ]
+ },
+ {
+  "courseSlug": "research-methods",
+  "moduleTitle": "Becoming an Evidence-Based Practitioner",
+  "lessonTitle": "What Is Evidence-Based Practice?",
+  "description": "Best evidence, clinical expertise and patient values — the three-legged stool of modern care.",
+  "tags": [
+   "ebp",
+   "evidence"
+  ]
+ },
+ {
+  "courseSlug": "research-methods",
+  "moduleTitle": "Becoming an Evidence-Based Practitioner",
+  "lessonTitle": "Finding and Reviewing the Literature",
+  "description": "Searching databases without drowning — the systematic way to gather evidence.",
+  "tags": [
+   "literature review",
+   "search"
+  ]
+ },
+ {
+  "courseSlug": "research-methods",
+  "moduleTitle": "Becoming an Evidence-Based Practitioner",
+  "lessonTitle": "Judging the Quality of Research",
+  "description": "Not all studies are equal — appraising validity, bias and applicability.",
+  "tags": [
+   "appraisal",
+   "critique"
+  ]
+ },
+ {
+  "courseSlug": "research-methods",
+  "moduleTitle": "Doing Research",
+  "lessonTitle": "Research Methods: An Overview",
+  "description": "Qualitative and quantitative families — choosing the approach that answers your question.",
+  "tags": [
+   "research methods",
+   "design"
+  ]
+ },
+ {
+  "courseSlug": "research-methods",
+  "moduleTitle": "Doing Research",
+  "lessonTitle": "Study Design: Choosing the Right Approach",
+  "description": "RCTs, cohorts, case-control and surveys — what each design can and cannot prove.",
+  "tags": [
+   "study design",
+   "rct"
+  ]
+ },
+ {
+  "courseSlug": "research-methods",
+  "moduleTitle": "Doing Research",
+  "lessonTitle": "Collecting Data Well",
+  "description": "Tools, sampling and the ethics of collection — data worth analysing at the end.",
+  "tags": [
+   "data collection",
+   "sampling"
+  ]
+ },
+ {
+  "courseSlug": "research-methods",
+  "moduleTitle": "Doing Research",
+  "lessonTitle": "Data Analysis Basics",
+  "description": "Descriptive statistics and simple tests — making numbers confess their meaning.",
+  "tags": [
+   "statistics",
+   "analysis"
+  ]
+ },
+ {
+  "courseSlug": "research-methods",
+  "moduleTitle": "Integrity and Planning",
+  "lessonTitle": "Research Ethics: Protecting Participants",
+  "description": "Consent, confidentiality and review boards — the ethics that guard research subjects.",
+  "tags": [
+   "research ethics",
+   "consent"
+  ]
+ },
+ {
+  "courseSlug": "research-methods",
+  "moduleTitle": "Integrity and Planning",
+  "lessonTitle": "From Idea to Proposal",
+  "description": "Writing your research proposal — the document that turns a question into a project.",
+  "tags": [
+   "proposal",
+   "planning"
+  ]
+ }
+]

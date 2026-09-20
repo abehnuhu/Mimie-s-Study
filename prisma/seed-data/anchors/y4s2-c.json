@@ -1,0 +1,202 @@
+[
+ {
+  "courseSlug": "community-domiciliary-midwifery",
+  "moduleTitle": "Improving Community Care",
+  "lessonTitle": "Leading Health Education in the Community",
+  "description": "Beyond individual teaching — leading community-wide education efforts.",
+  "tags": [
+   "health education",
+   "leadership"
+  ]
+ },
+ {
+  "courseSlug": "comprehensive-exam-review",
+  "moduleTitle": "Revising Like a Pro",
+  "lessonTitle": "Licensing Exam Strategy",
+  "description": "Know the exam's shape, the pass logic and your personal strategy before you study.",
+  "tags": [
+   "licensing exam",
+   "strategy"
+  ]
+ },
+ {
+  "courseSlug": "comprehensive-exam-review",
+  "moduleTitle": "Revising Like a Pro",
+  "lessonTitle": "Spaced Repetition: Study Smarter",
+  "description": "The memory science that beats cramming — spacing, testing and the forgetting curve.",
+  "tags": [
+   "revision",
+   "memory"
+  ]
+ },
+ {
+  "courseSlug": "comprehensive-exam-review",
+  "moduleTitle": "Revising Like a Pro",
+  "lessonTitle": "Question Practice That Actually Works",
+  "description": "Practising questions the deliberate way — focusing on why, not just how many.",
+  "tags": [
+   "practice questions",
+   "technique"
+  ]
+ },
+ {
+  "courseSlug": "comprehensive-exam-review",
+  "moduleTitle": "The Four-Year Review",
+  "lessonTitle": "Review: The Foundation Era",
+  "description": "Anatomy, physiology, microbiology and foundations — the bedrock revisited efficiently.",
+  "tags": [
+   "review",
+   "year 1"
+  ]
+ },
+ {
+  "courseSlug": "comprehensive-exam-review",
+  "moduleTitle": "The Four-Year Review",
+  "lessonTitle": "Review: The Medical-Surgical Era",
+  "description": "Pathology, pharmacology and medical-surgical nursing — the clinical years condensed.",
+  "tags": [
+   "review",
+   "year 2"
+  ]
+ },
+ {
+  "courseSlug": "comprehensive-exam-review",
+  "moduleTitle": "The Four-Year Review",
+  "lessonTitle": "Review: Core Midwifery",
+  "description": "Pregnancy, labour, puerperium and the newborn — the heart of your profession revisited.",
+  "tags": [
+   "review",
+   "year 3"
+  ]
+ },
+ {
+  "courseSlug": "comprehensive-exam-review",
+  "moduleTitle": "The Four-Year Review",
+  "lessonTitle": "Review: Advanced Practice and Leadership",
+  "description": "Emergencies, ethics, research and management — the final layer refreshed.",
+  "tags": [
+   "review",
+   "year 4"
+  ]
+ },
+ {
+  "courseSlug": "comprehensive-exam-review",
+  "moduleTitle": "Exam Readiness",
+  "lessonTitle": "Mock Exams Under Real Conditions",
+  "description": "Full simulations that build stamina — and reveal exactly where to focus next.",
+  "tags": [
+   "mock exam",
+   "practice"
+  ]
+ },
+ {
+  "courseSlug": "comprehensive-exam-review",
+  "moduleTitle": "Exam Readiness",
+  "lessonTitle": "Exam Day and the Night Before",
+  "description": "Logistics, sleep, nerves and pacing — the final 24 hours managed like a professional.",
+  "tags": [
+   "exam day",
+   "wellbeing"
+  ]
+ },
+ {
+  "courseSlug": "clinical-case-simulation",
+  "moduleTitle": "How Simulation Works",
+  "lessonTitle": "Why We Simulate",
+  "description": "Practice without risk — how simulation builds the reflexes real patients will depend on.",
+  "tags": [
+   "simulation",
+   "learning"
+  ]
+ },
+ {
+  "courseSlug": "clinical-case-simulation",
+  "moduleTitle": "How Simulation Works",
+  "lessonTitle": "Debriefing: Where the Learning Happens",
+  "description": "The honest conversation after the scenario — how debriefs turn experience into skill.",
+  "tags": [
+   "debrief",
+   "reflection"
+  ]
+ },
+ {
+  "courseSlug": "clinical-case-simulation",
+  "moduleTitle": "Antenatal and Labour Simulations",
+  "lessonTitle": "Sim Cases: Antenatal Complications",
+  "description": "Case scenarios from the clinic — anaemia, hypertension and the referrals they demand.",
+  "tags": [
+   "simulation",
+   "antenatal"
+  ]
+ },
+ {
+  "courseSlug": "clinical-case-simulation",
+  "moduleTitle": "Antenatal and Labour Simulations",
+  "lessonTitle": "Sim Cases: Labour Emergencies",
+  "description": "Shoulder dystocia and cord prolapse drills — emergencies rehearsed until calm.",
+  "tags": [
+   "simulation",
+   "emergency"
+  ]
+ },
+ {
+  "courseSlug": "clinical-case-simulation",
+  "moduleTitle": "Antenatal and Labour Simulations",
+  "lessonTitle": "Sim Cases: The Referral Decision",
+  "description": "Scenario after scenario of the call — who to send, when and how to say it.",
+  "tags": [
+   "simulation",
+   "referral"
+  ]
+ },
+ {
+  "courseSlug": "clinical-case-simulation",
+  "moduleTitle": "Postnatal and Newborn Simulations",
+  "lessonTitle": "Sim Cases: Postpartum Emergencies",
+  "description": "PPH and sepsis scenarios — the first minutes rehearsed with your own hands.",
+  "tags": [
+   "simulation",
+   "pph"
+  ]
+ },
+ {
+  "courseSlug": "clinical-case-simulation",
+  "moduleTitle": "Postnatal and Newborn Simulations",
+  "lessonTitle": "Sim Cases: Newborn Resuscitation",
+  "description": "The flat baby drill — warming, airway and breathing in team scenarios.",
+  "tags": [
+   "simulation",
+   "resuscitation"
+  ]
+ },
+ {
+  "courseSlug": "clinical-case-simulation",
+  "moduleTitle": "Postnatal and Newborn Simulations",
+  "lessonTitle": "Sim Cases: The Sick Newborn",
+  "description": "Danger sign scenarios — recognising and acting for babies in trouble.",
+  "tags": [
+   "simulation",
+   "newborn"
+  ]
+ },
+ {
+  "courseSlug": "clinical-case-simulation",
+  "moduleTitle": "Complex and Multi-Patient Simulations",
+  "lessonTitle": "Sim Cases: Multiple Patients, One Midwife",
+  "description": "Two labouring women and a bleeding mother — prioritisation under realistic chaos.",
+  "tags": [
+   "simulation",
+   "prioritization"
+  ]
+ },
+ {
+  "courseSlug": "clinical-case-simulation",
+  "moduleTitle": "Complex and Multi-Patient Simulations",
+  "lessonTitle": "Sim Cases: The Full Complex Case",
+  "description": "From admission to referral in one scenario — everything you've learned, tested together.",
+  "tags": [
+   "simulation",
+   "complex"
+  ]
+ }
+]

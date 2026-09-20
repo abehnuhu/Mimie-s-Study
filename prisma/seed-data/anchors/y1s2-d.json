@@ -1,0 +1,122 @@
+[
+ {
+  "courseSlug": "health-assessment",
+  "moduleTitle": "Physical Assessment",
+  "lessonTitle": "The General Survey: First Impressions Count",
+  "description": "What you notice in the first thirty seconds — appearance, gait, breathing and colour.",
+  "tags": [
+   "general survey",
+   "observation"
+  ]
+ },
+ {
+  "courseSlug": "health-assessment",
+  "moduleTitle": "Physical Assessment",
+  "lessonTitle": "Head-to-Toe Physical Assessment",
+  "description": "A systematic full examination — the order, the techniques and the findings worth noting.",
+  "tags": [
+   "physical assessment",
+   "examination"
+  ]
+ },
+ {
+  "courseSlug": "health-assessment",
+  "moduleTitle": "Physical Assessment",
+  "lessonTitle": "Assessment Equipment and Techniques",
+  "description": "Stethoscope, sphygmomanometer, thermometer and penlight — using each one properly.",
+  "tags": [
+   "equipment",
+   "technique"
+  ]
+ },
+ {
+  "courseSlug": "health-assessment",
+  "moduleTitle": "Thinking About What You Find",
+  "lessonTitle": "Normal Versus Abnormal Findings",
+  "description": "Building your internal library of normal so that the abnormal jumps out at you.",
+  "tags": [
+   "findings",
+   "clinical judgment"
+  ]
+ },
+ {
+  "courseSlug": "health-assessment",
+  "moduleTitle": "Thinking About What You Find",
+  "lessonTitle": "Which Finding Should You Report Immediately?",
+  "description": "Practising the escalation decisions that separate safe students from risky ones.",
+  "tags": [
+   "escalation",
+   "prioritization"
+  ]
+ },
+ {
+  "courseSlug": "communication-professional-practice",
+  "moduleTitle": "Communicating in Care",
+  "lessonTitle": "Communication Foundations in Care",
+  "description": "Verbal, non-verbal and written — the three channels every nurse must master.",
+  "tags": [
+   "communication",
+   "basics"
+  ]
+ },
+ {
+  "courseSlug": "communication-professional-practice",
+  "moduleTitle": "Communicating in Care",
+  "lessonTitle": "Overcoming Barriers to Communication",
+  "description": "Pain, fear, language, noise and hierarchy — the obstacles between you and understanding.",
+  "tags": [
+   "barriers",
+   "communication"
+  ]
+ },
+ {
+  "courseSlug": "communication-professional-practice",
+  "moduleTitle": "Communicating in Care",
+  "lessonTitle": "Therapeutic Communication: Healing Through Words",
+  "description": "The specific techniques — open questions, silence, reflection — that turn conversation into therapy.",
+  "tags": [
+   "therapeutic communication",
+   "techniques"
+  ]
+ },
+ {
+  "courseSlug": "communication-professional-practice",
+  "moduleTitle": "Professional Writing",
+  "lessonTitle": "Documentation in Practice: Writing That Protects",
+  "description": "Clear, legal, honest notes — writing for the patient, the team and the record.",
+  "tags": [
+   "documentation",
+   "records"
+  ]
+ },
+ {
+  "courseSlug": "communication-professional-practice",
+  "moduleTitle": "Professional Writing",
+  "lessonTitle": "Handover and Team Communication",
+  "description": "Giving and receiving report safely — structure, brevity and no important gaps.",
+  "tags": [
+   "handover",
+   "teamwork"
+  ]
+ },
+ {
+  "courseSlug": "communication-professional-practice",
+  "moduleTitle": "Professional Conduct",
+  "lessonTitle": "Professional Boundaries and Behaviour",
+  "description": "Warm but boundaried — caring without becoming the patient's friend or their problem.",
+  "tags": [
+   "boundaries",
+   "professionalism"
+  ]
+ },
+ {
+  "courseSlug": "communication-professional-practice",
+  "moduleTitle": "Professional Conduct",
+  "lessonTitle": "Reflecting on Your Communication",
+  "description": "Looking honestly at how you come across — the fastest way to improve it.",
+  "tags": [
+   "reflection",
+   "self-awareness"
+  ]
+ }
+]

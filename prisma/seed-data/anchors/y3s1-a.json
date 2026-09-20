@@ -1,0 +1,182 @@
+[
+ {
+  "courseSlug": "normal-pregnancy",
+  "moduleTitle": "From Conception to Fetus",
+  "lessonTitle": "Conception to Implantation: The Deep Dive",
+  "description": "The full story of egg, sperm and settling in — the biology that pregnancy care rests on.",
+  "tags": [
+   "conception",
+   "implantation"
+  ]
+ },
+ {
+  "courseSlug": "normal-pregnancy",
+  "moduleTitle": "From Conception to Fetus",
+  "lessonTitle": "Embryonic and Fetal Development",
+  "description": "Week by week from embryo to viable baby — the milestones that structure antenatal care.",
+  "tags": [
+   "embryo",
+   "development"
+  ]
+ },
+ {
+  "courseSlug": "normal-pregnancy",
+  "moduleTitle": "From Conception to Fetus",
+  "lessonTitle": "The Fetus: Circulation, Growth and Adaptations",
+  "description": "The remarkable fetal circulatory shortcuts — and what changes in the first breaths after birth.",
+  "tags": [
+   "fetal circulation",
+   "adaptation"
+  ]
+ },
+ {
+  "courseSlug": "normal-pregnancy",
+  "moduleTitle": "The Pregnant Body",
+  "lessonTitle": "Physiological Changes of Pregnancy: Everything Adapts",
+  "description": "Every system changes to carry a baby — knowing normal pregnancy from warning signs.",
+  "tags": [
+   "pregnancy changes",
+   "physiology"
+  ]
+ },
+ {
+  "courseSlug": "normal-pregnancy",
+  "moduleTitle": "The Pregnant Body",
+  "lessonTitle": "Diagnosing Pregnancy",
+  "description": "Signs, symptoms and tests — confirming pregnancy confidently and dating it accurately.",
+  "tags": [
+   "diagnosis",
+   "dating"
+  ]
+ },
+ {
+  "courseSlug": "normal-pregnancy",
+  "moduleTitle": "The Pregnant Body",
+  "lessonTitle": "Minor Disorders of Pregnancy: Common but Real",
+  "description": "Nausea, heartburn and swollen ankles — the discomforts you can soothe and those you can't ignore.",
+  "tags": [
+   "minor disorders",
+   "symptoms"
+  ]
+ },
+ {
+  "courseSlug": "normal-pregnancy",
+  "moduleTitle": "The Booking Visit and Routine Care",
+  "lessonTitle": "The Booking Visit: Your First Full Picture",
+  "description": "The comprehensive first antenatal visit — history, examination and the plan it creates.",
+  "tags": [
+   "booking visit",
+   "anc"
+  ]
+ },
+ {
+  "courseSlug": "normal-pregnancy",
+  "moduleTitle": "The Booking Visit and Routine Care",
+  "lessonTitle": "History Taking in Antenatal Care",
+  "description": "Obstetric, medical and social history — the questions that reveal risk before it bites.",
+  "tags": [
+   "history taking",
+   "risk"
+  ]
+ },
+ {
+  "courseSlug": "normal-pregnancy",
+  "moduleTitle": "The Booking Visit and Routine Care",
+  "lessonTitle": "Physical Examination and Maternal Vital Signs in Pregnancy",
+  "description": "Examining the pregnant woman and reading her vitals — the normal ranges that change in pregnancy.",
+  "tags": [
+   "examination",
+   "vital signs"
+  ]
+ },
+ {
+  "courseSlug": "normal-pregnancy",
+  "moduleTitle": "The Booking Visit and Routine Care",
+  "lessonTitle": "Routine Antenatal Care: The Schedule That Protects",
+  "description": "The visit schedule, the screening tests and why each exists — the rhythm of good antenatal care.",
+  "tags": [
+   "anc schedule",
+   "screening"
+  ]
+ },
+ {
+  "courseSlug": "normal-pregnancy",
+  "moduleTitle": "Watching the Fetus",
+  "lessonTitle": "Fetal Assessment and Fundal Height",
+  "description": "Measuring growth with hands and tape — the skill that detects problems early.",
+  "tags": [
+   "fundal height",
+   "growth"
+  ]
+ },
+ {
+  "courseSlug": "normal-pregnancy",
+  "moduleTitle": "Watching the Fetus",
+  "lessonTitle": "Fetal Heart Assessment",
+  "description": "Finding and interpreting the fetal heartbeat — reassurance and alarm in one sound.",
+  "tags": [
+   "fetal heart",
+   "auscultation"
+  ]
+ },
+ {
+  "courseSlug": "normal-pregnancy",
+  "moduleTitle": "Watching the Fetus",
+  "lessonTitle": "Fetal Movement and Wellbeing",
+  "description": "Kick counts and movement patterns — the mother's own monitoring that saves babies.",
+  "tags": [
+   "fetal movement",
+   "kick count"
+  ]
+ },
+ {
+  "courseSlug": "normal-pregnancy",
+  "moduleTitle": "Nutrition, Education and Safety Nets",
+  "lessonTitle": "Nutrition in Pregnancy",
+  "description": "Eating for two without doubling — the nutrients that matter most and the deficiencies to prevent.",
+  "tags": [
+   "nutrition",
+   "pregnancy"
+  ]
+ },
+ {
+  "courseSlug": "normal-pregnancy",
+  "moduleTitle": "Nutrition, Education and Safety Nets",
+  "lessonTitle": "Antenatal Education and Birth Preparedness",
+  "description": "Preparing mothers for birth and beyond — the teaching that turns fear into readiness.",
+  "tags": [
+   "antenatal education",
+   "birth plan"
+  ]
+ },
+ {
+  "courseSlug": "normal-pregnancy",
+  "moduleTitle": "Nutrition, Education and Safety Nets",
+  "lessonTitle": "Danger Signs in Pregnancy: When to Act and Refer",
+  "description": "The symptoms that demand immediate attention — your list to memorise and teach every mother.",
+  "tags": [
+   "danger signs",
+   "referral"
+  ]
+ },
+ {
+  "courseSlug": "normal-labour",
+  "moduleTitle": "Foundations of Labour",
+  "lessonTitle": "What Is Labour?",
+  "description": "The clinical definition, the physiology and why we care so much about the word itself.",
+  "tags": [
+   "labour",
+   "definition"
+  ]
+ },
+ {
+  "courseSlug": "normal-labour",
+  "moduleTitle": "Foundations of Labour",
+  "lessonTitle": "The Onset of Labour: What Tips the Balance",
+  "description": "The hormonal cascade that starts it all — and the theories behind why labour begins when it does.",
+  "tags": [
+   "onset",
+   "hormones"
+  ]
+ }
+]

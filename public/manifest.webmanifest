@@ -1,0 +1,30 @@
+{
+  "name": "Mimie's Study — Midwifery Learning Academy",
+  "short_name": "Mimie's Study",
+  "description": "Her little corner to become an amazing midwife. Study smart. Grow confident.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#faf5f0",
+  "theme_color": "#d4738c",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

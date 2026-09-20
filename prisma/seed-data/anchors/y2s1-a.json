@@ -1,0 +1,182 @@
+[
+ {
+  "courseSlug": "medical-surgical-nursing-1",
+  "moduleTitle": "The Body Under Attack",
+  "lessonTitle": "Inflammation: The Body's Alarm System",
+  "description": "Redness, heat, swelling, pain — what inflammation is achieving and when it becomes the problem.",
+  "tags": [
+   "inflammation",
+   "immune response"
+  ]
+ },
+ {
+  "courseSlug": "medical-surgical-nursing-1",
+  "moduleTitle": "The Body Under Attack",
+  "lessonTitle": "Infection in the Adult Patient",
+  "description": "Recognising and nursing the infected adult — from the first fever to recovery or sepsis.",
+  "tags": [
+   "infection",
+   "nursing care"
+  ]
+ },
+ {
+  "courseSlug": "medical-surgical-nursing-1",
+  "moduleTitle": "The Body Under Attack",
+  "lessonTitle": "Fever: Friend or Foe?",
+  "description": "Why the body raises its temperature, when to treat it and when to worry deeply.",
+  "tags": [
+   "fever",
+   "pyrexia"
+  ]
+ },
+ {
+  "courseSlug": "medical-surgical-nursing-1",
+  "moduleTitle": "The Body Under Attack",
+  "lessonTitle": "Pain: The Fifth Vital Sign",
+  "description": "Acute and chronic pain, assessment tools and care — because unrelieved pain is never acceptable.",
+  "tags": [
+   "pain",
+   "assessment"
+  ]
+ },
+ {
+  "courseSlug": "medical-surgical-nursing-1",
+  "moduleTitle": "System-by-System Nursing I",
+  "lessonTitle": "Respiratory Conditions: When Breathing Gets Hard",
+  "description": "Asthma, pneumonia, COPD and friends — the conditions and the nursing they need.",
+  "tags": [
+   "respiratory",
+   "conditions"
+  ]
+ },
+ {
+  "courseSlug": "medical-surgical-nursing-1",
+  "moduleTitle": "System-by-System Nursing I",
+  "lessonTitle": "Cardiovascular Conditions: Life with a Struggling Pump",
+  "description": "Hypertension, heart failure and more — nursing the body's hardest-working muscle.",
+  "tags": [
+   "cardiovascular",
+   "conditions"
+  ]
+ },
+ {
+  "courseSlug": "medical-surgical-nursing-1",
+  "moduleTitle": "System-by-System Nursing I",
+  "lessonTitle": "Gastrointestinal Conditions: The Gut Story",
+  "description": "From ulcers to obstruction — the gut's common troubles and the care that helps.",
+  "tags": [
+   "gastrointestinal",
+   "conditions"
+  ]
+ },
+ {
+  "courseSlug": "medical-surgical-nursing-1",
+  "moduleTitle": "System-by-System Nursing I",
+  "lessonTitle": "Urinary Conditions: When the Filter Struggles",
+  "description": "UTIs, stones and renal disease — quiet conditions with loud consequences.",
+  "tags": [
+   "urinary",
+   "renal"
+  ]
+ },
+ {
+  "courseSlug": "medical-surgical-nursing-1",
+  "moduleTitle": "System-by-System Nursing II",
+  "lessonTitle": "Endocrine Disorders: When Hormones Drift",
+  "description": "Diabetes, thyroid and adrenal disorders — restoring balance with careful monitoring.",
+  "tags": [
+   "endocrine",
+   "diabetes"
+  ]
+ },
+ {
+  "courseSlug": "medical-surgical-nursing-1",
+  "moduleTitle": "System-by-System Nursing II",
+  "lessonTitle": "Neurological Disorders: The Disrupted Network",
+  "description": "Stroke, seizures and degenerative disease — nursing the system that makes us who we are.",
+  "tags": [
+   "neurological",
+   "stroke"
+  ]
+ },
+ {
+  "courseSlug": "medical-surgical-nursing-1",
+  "moduleTitle": "System-by-System Nursing II",
+  "lessonTitle": "Perioperative Principles: Before, During and After",
+  "description": "Preparing patients for theatre and bringing them safely back — the full perioperative journey.",
+  "tags": [
+   "perioperative",
+   "surgery"
+  ]
+ },
+ {
+  "courseSlug": "pathology-1",
+  "moduleTitle": "Cell Injury and Death",
+  "lessonTitle": "What Injures a Cell?",
+  "description": "Hypoxia, toxins, infection and more — the forces that push cells past their limits.",
+  "tags": [
+   "cell injury",
+   "pathology"
+  ]
+ },
+ {
+  "courseSlug": "pathology-1",
+  "moduleTitle": "Cell Injury and Death",
+  "lessonTitle": "Reversible and Irreversible Cell Injury",
+  "description": "The point of no return — how to tell adaptation from injury from death.",
+  "tags": [
+   "necrosis",
+   "apoptosis"
+  ]
+ },
+ {
+  "courseSlug": "pathology-1",
+  "moduleTitle": "Inflammation, Infection and Healing",
+  "lessonTitle": "The Pathology of Inflammation",
+  "description": "The sequence beneath the swelling — vascular and cellular events explained simply.",
+  "tags": [
+   "inflammation",
+   "pathology"
+  ]
+ },
+ {
+  "courseSlug": "pathology-1",
+  "moduleTitle": "Inflammation, Infection and Healing",
+  "lessonTitle": "How Infection Causes Disease",
+  "description": "Pathogens, virulence and the damage they leave — connecting microbiology to sick patients.",
+  "tags": [
+   "infection",
+   "pathogenesis"
+  ]
+ },
+ {
+  "courseSlug": "pathology-1",
+  "moduleTitle": "Inflammation, Infection and Healing",
+  "lessonTitle": "Healing and Repair: Rebuilding Tissue",
+  "description": "Primary and secondary healing — why some wounds mend quickly and others never fully do.",
+  "tags": [
+   "healing",
+   "repair"
+  ]
+ },
+ {
+  "courseSlug": "pathology-1",
+  "moduleTitle": "When Growth Goes Wrong",
+  "lessonTitle": "Neoplasia: When Cells Stop Listening",
+  "description": "Benign and malignant growth — what cancer actually is at the tissue level.",
+  "tags": [
+   "neoplasia",
+   "cancer"
+  ]
+ },
+ {
+  "courseSlug": "pathology-1",
+  "moduleTitle": "When Growth Goes Wrong",
+  "lessonTitle": "Systemic Disease Processes",
+  "description": "How local disease becomes whole-body illness — the cascades behind multi-system failure.",
+  "tags": [
+   "systemic disease",
+   "pathophysiology"
+  ]
+ }
+]

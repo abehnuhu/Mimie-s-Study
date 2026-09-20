@@ -1,0 +1,172 @@
+[
+ {
+  "courseSlug": "reproductive-health",
+  "moduleTitle": "Youth and Preparation",
+  "lessonTitle": "Adolescent Reproductive Health",
+  "description": "Teenage pregnancy and the adolescent patient — caring for young bodies and younger minds.",
+  "tags": [
+   "adolescent health",
+   "teen pregnancy"
+  ]
+ },
+ {
+  "courseSlug": "reproductive-health",
+  "moduleTitle": "Youth and Preparation",
+  "lessonTitle": "Preconception Care: The Healthiest Start",
+  "description": "Optimising health before pregnancy — folic acid, screening and the conversation beforehand.",
+  "tags": [
+   "preconception",
+   "planning"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-pharmacology",
+  "moduleTitle": "Medications in Pregnancy",
+  "lessonTitle": "Medication Principles in Pregnancy",
+  "description": "The rules change when two patients share one dose — prescribing logic in pregnancy.",
+  "tags": [
+   "pregnancy",
+   "principles"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-pharmacology",
+  "moduleTitle": "Medications in Pregnancy",
+  "lessonTitle": "Medication Effects on the Fetus and Newborn",
+  "description": "Crossing the placenta and into breast milk — how drugs reach the smallest patients.",
+  "tags": [
+   "fetus",
+   "transfer"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-pharmacology",
+  "moduleTitle": "Medications in Pregnancy",
+  "lessonTitle": "Medication Safety in Maternity Care",
+  "description": "High-alert drugs and the safety culture of maternity — double checks that double protection.",
+  "tags": [
+   "medication safety",
+   "maternity"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-pharmacology",
+  "moduleTitle": "Medications in Labour and After",
+  "lessonTitle": "Medications During Labour",
+  "description": "Oxytocin to analgesia — the drugs of labour and the watching they demand.",
+  "tags": [
+   "labour",
+   "oxytocin"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-pharmacology",
+  "moduleTitle": "Medications in Labour and After",
+  "lessonTitle": "Postpartum Medications",
+  "description": "The few drugs after birth that matter most — and the ones breastfeeding mothers should avoid.",
+  "tags": [
+   "postpartum",
+   "breastfeeding"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-pharmacology",
+  "moduleTitle": "Safe Practice and Vigilance",
+  "lessonTitle": "Safe Administration in Midwifery",
+  "description": "Rights, checks and documentation applied to maternity practice — safety without exception.",
+  "tags": [
+   "administration",
+   "safety"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-pharmacology",
+  "moduleTitle": "Safe Practice and Vigilance",
+  "lessonTitle": "Pharmacovigilance: Reporting What Goes Wrong",
+  "description": "The surveillance system that keeps medicines safe — your role as a reporter.",
+  "tags": [
+   "pharmacovigilance",
+   "reporting"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-skills",
+  "moduleTitle": "Hands-On Antenatal Skills",
+  "lessonTitle": "Abdominal Examination and Fundal Height",
+  "description": "Warm hands, measured tape — the abdominal exam that maps the whole pregnancy.",
+  "tags": [
+   "abdominal exam",
+   "fundal height"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-skills",
+  "moduleTitle": "Hands-On Antenatal Skills",
+  "lessonTitle": "Leopold's Manoeuvres: Mapping the Baby",
+  "description": "Four systematic moves that tell you lie, presentation and position — practice makes them natural.",
+  "tags": [
+   "leopold",
+   "assessment"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-skills",
+  "moduleTitle": "Hands-On Antenatal Skills",
+  "lessonTitle": "Auscultating the Fetal Heart",
+  "description": "Finding the heartbeat with a Pinard or doppler — the skill and what the rate says.",
+  "tags": [
+   "fetal heart",
+   "auscultation"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-skills",
+  "moduleTitle": "Skills for Labour",
+  "lessonTitle": "Vaginal Examination in Labour",
+  "description": "The when, why and gentle how of VE — findings, limits and dignity.",
+  "tags": [
+   "vaginal examination",
+   "assessment"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-skills",
+  "moduleTitle": "Skills for Labour",
+  "lessonTitle": "Plotting and Reading the Partograph",
+  "description": "Graphing labour in real time — making the partograph your early warning system.",
+  "tags": [
+   "partograph",
+   "monitoring"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-skills",
+  "moduleTitle": "Skills for Labour",
+  "lessonTitle": "Supporting the Labouring Woman",
+  "description": "Positions, breathing, massage and advocacy — comfort as a clinical skill.",
+  "tags": [
+   "labour support",
+   "comfort"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-skills",
+  "moduleTitle": "Skills for Birth and After",
+  "lessonTitle": "Conducting a Normal Birth: The Practical Sequence",
+  "description": "The choreography from crowning to crying — rehearse it until it flows.",
+  "tags": [
+   "normal birth",
+   "conduct"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-skills",
+  "moduleTitle": "Skills for Birth and After",
+  "lessonTitle": "Immediate Newborn Care: The Practical Steps",
+  "description": "Drying, assessing, warming and handing over — the first minutes in practiced hands.",
+  "tags": [
+   "newborn care",
+   "immediate"
+  ]
+ }
+]

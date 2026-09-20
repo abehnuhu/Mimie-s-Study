@@ -1,0 +1,143 @@
+[
+ {
+  "courseSlug": "anatomy-physiology-1",
+  "moduleTitle": "Body Systems Overview",
+  "lessonTitle": "The Urinary System: The Master Filter",
+  "description": "The kidneys filter, balance and fine-tune — the quiet system that controls the body's chemistry.",
+  "tags": [
+   "kidneys",
+   "urinary"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-1",
+  "moduleTitle": "Body Systems Overview",
+  "lessonTitle": "The Nervous System: The Body's Control Network",
+  "description": "Neurons, reflexes and the brain — the electrical messaging system running everything, including you.",
+  "tags": [
+   "nervous system",
+   "neurons"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-1",
+  "moduleTitle": "Body Systems Overview",
+  "lessonTitle": "The Endocrine System: Messengers in the Blood",
+  "description": "Hormones travel slowly but change everything — growth, metabolism, stress and reproduction.",
+  "tags": [
+   "hormones",
+   "endocrine"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-1",
+  "moduleTitle": "Body Systems Overview",
+  "lessonTitle": "Reproductive System: A First Look",
+  "description": "Your first gentle meeting with the system you'll spend your whole career caring for.",
+  "tags": [
+   "reproductive system",
+   "introduction"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-1",
+  "moduleTitle": "Homeostasis & Balance",
+  "lessonTitle": "Negative Feedback: The Body's Thermostat",
+  "description": "The elegant loops that reverse change and restore balance — the reason healthy bodies self-correct.",
+  "tags": [
+   "negative feedback",
+   "homeostasis"
+  ]
+ },
+ {
+  "courseSlug": "foundations-nursing-1",
+  "moduleTitle": "The Profession & the Process",
+  "lessonTitle": "The Nursing Profession: What You're Joining",
+  "description": "A warm welcome to the profession — its history, its standards and the trust people place in you.",
+  "tags": [
+   "profession",
+   "introduction"
+  ]
+ },
+ {
+  "courseSlug": "foundations-nursing-1",
+  "moduleTitle": "The Profession & the Process",
+  "lessonTitle": "The Role of the Nurse and Midwife",
+  "description": "Caregiver, advocate, teacher, detective — the many hats you'll wear and how they fit together.",
+  "tags": [
+   "roles",
+   "nurse",
+   "midwife"
+  ]
+ },
+ {
+  "courseSlug": "foundations-nursing-1",
+  "moduleTitle": "The Profession & the Process",
+  "lessonTitle": "The Nursing Process: Your Problem-Solving Tool",
+  "description": "Assess, diagnose, plan, implement, evaluate — the five-step cycle that organises all safe care.",
+  "tags": [
+   "nursing process",
+   "adpie"
+  ]
+ },
+ {
+  "courseSlug": "foundations-nursing-1",
+  "moduleTitle": "The Profession & the Process",
+  "lessonTitle": "Assessment: Gathering the Clues",
+  "description": "Learn to collect the history, the observations and the story that everything else depends on.",
+  "tags": [
+   "assessment",
+   "nursing process"
+  ]
+ },
+ {
+  "courseSlug": "foundations-nursing-1",
+  "moduleTitle": "The Profession & the Process",
+  "lessonTitle": "Planning Care: Goals That Make Sense",
+  "description": "Turn your assessment into a plan — realistic goals and the steps that lead the patient there.",
+  "tags": [
+   "care planning",
+   "goals"
+  ]
+ },
+ {
+  "courseSlug": "foundations-nursing-1",
+  "moduleTitle": "The Profession & the Process",
+  "lessonTitle": "Implementation: Turning Plans into Care",
+  "description": "Executing the plan — the skills, timing and judgement of actually delivering care.",
+  "tags": [
+   "implementation",
+   "interventions"
+  ]
+ },
+ {
+  "courseSlug": "foundations-nursing-1",
+  "moduleTitle": "The Profession & the Process",
+  "lessonTitle": "Evaluation: Did the Care Work?",
+  "description": "The step most people skip — checking honestly whether your care achieved what the patient needed.",
+  "tags": [
+   "evaluation",
+   "outcomes"
+  ]
+ },
+ {
+  "courseSlug": "foundations-nursing-1",
+  "moduleTitle": "The Profession & the Process",
+  "lessonTitle": "Communication: The Heart of Nursing",
+  "description": "How you speak, listen and carry yourself is a clinical skill — maybe the most important one.",
+  "tags": [
+   "communication",
+   "therapeutic"
+  ]
+ },
+ {
+  "courseSlug": "foundations-nursing-1",
+  "moduleTitle": "The Profession & the Process",
+  "lessonTitle": "Documentation: If It Isn't Written, It Didn't Happen",
+  "description": "Clear, honest, timely notes — protecting your patient and your practice with every line.",
+  "tags": [
+   "documentation",
+   "records"
+  ]
+ }
+]

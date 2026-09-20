@@ -1,0 +1,142 @@
+[
+ {
+  "courseSlug": "health-promotion-1",
+  "moduleTitle": "Health & Its Determinants",
+  "lessonTitle": "Determinants of Health: Why Your Address Matters",
+  "description": "Income, education, environment and culture shape health more than hospitals do — understanding this changes your care.",
+  "tags": [
+   "determinants",
+   "inequality"
+  ]
+ },
+ {
+  "courseSlug": "health-promotion-1",
+  "moduleTitle": "Prevention & Education",
+  "lessonTitle": "Health Education: Teaching That Sticks",
+  "description": "How to teach patients so they actually remember and act — simple language, real relevance.",
+  "tags": [
+   "health education",
+   "teaching"
+  ]
+ },
+ {
+  "courseSlug": "health-promotion-1",
+  "moduleTitle": "Prevention & Education",
+  "lessonTitle": "Lifestyle: The Daily Decisions That Build Health",
+  "description": "Sleep, stress, smoking, movement — the everyday choices where small changes compound into big health.",
+  "tags": [
+   "lifestyle",
+   "habits"
+  ]
+ },
+ {
+  "courseSlug": "health-promotion-1",
+  "moduleTitle": "Community & Maternal Health",
+  "lessonTitle": "Nutrition: The Foundation of Good Health",
+  "description": "What a balanced plate looks like and why malnutrition hides in plain sight in every community.",
+  "tags": [
+   "nutrition",
+   "diet"
+  ]
+ },
+ {
+  "courseSlug": "health-promotion-1",
+  "moduleTitle": "Community & Maternal Health",
+  "lessonTitle": "Physical Activity: Movement as Medicine",
+  "description": "What exercise actually does for the body and how to encourage it without lecturing.",
+  "tags": [
+   "physical activity",
+   "exercise"
+  ]
+ },
+ {
+  "courseSlug": "health-promotion-1",
+  "moduleTitle": "Community & Maternal Health",
+  "lessonTitle": "Maternal Health: Your First Introduction",
+  "description": "A gentle first look at the field you're heading into — why mothers' health decides so much.",
+  "tags": [
+   "maternal health",
+   "introduction"
+  ]
+ },
+ {
+  "courseSlug": "health-promotion-1",
+  "moduleTitle": "Community & Maternal Health",
+  "lessonTitle": "Community Health: Beyond the Hospital Walls",
+  "description": "Where most health actually happens — the community, its resources and your role in it.",
+  "tags": [
+   "community health",
+   "public health"
+  ]
+ },
+ {
+  "courseSlug": "microbiology-1",
+  "moduleTitle": "The Microbial World",
+  "lessonTitle": "Microorganisms: The Invisible Majority",
+  "description": "A warm introduction to the microscopic world that outnumbers us and shares every surface we touch.",
+  "tags": [
+   "microorganisms",
+   "introduction"
+  ]
+ },
+ {
+  "courseSlug": "microbiology-1",
+  "moduleTitle": "The Microbial World",
+  "lessonTitle": "Bacteria: Friends, Foes and Neighbours",
+  "description": "Shapes, structures and survival tricks of the bacteria that live with us and sometimes against us.",
+  "tags": [
+   "bacteria",
+   "pathogens"
+  ]
+ },
+ {
+  "courseSlug": "microbiology-1",
+  "moduleTitle": "The Microbial World",
+  "lessonTitle": "Viruses: The Hijackers",
+  "description": "Not quite alive but devastatingly effective — how viruses invade cells and spread.",
+  "tags": [
+   "viruses",
+   "pathogens"
+  ]
+ },
+ {
+  "courseSlug": "microbiology-1",
+  "moduleTitle": "The Microbial World",
+  "lessonTitle": "Fungi: The Quiet Kingdom",
+  "description": "Yeasts and moulds — usually harmless, occasionally dangerous, always fascinating.",
+  "tags": [
+   "fungi",
+   "mycology"
+  ]
+ },
+ {
+  "courseSlug": "microbiology-1",
+  "moduleTitle": "The Microbial World",
+  "lessonTitle": "Parasites: The Uninvited Guests",
+  "description": "Malaria, worms and more — the parasites that still shape health across Ghana and the tropics.",
+  "tags": [
+   "parasites",
+   "malaria"
+  ]
+ },
+ {
+  "courseSlug": "microbiology-1",
+  "moduleTitle": "Infection & Its Chain",
+  "lessonTitle": "Infection: What's Actually Happening in the Body",
+  "description": "Colonisation versus infection, pathogenicity and the battle that follows when microbes get in.",
+  "tags": [
+   "infection",
+   "pathogenicity"
+  ]
+ },
+ {
+  "courseSlug": "microbiology-1",
+  "moduleTitle": "Infection & Its Chain",
+  "lessonTitle": "Transmission: How Microbes Travel",
+  "description": "Contact, droplets, vectors and vehicles — the routes every infection takes between people.",
+  "tags": [
+   "transmission",
+   "routes"
+  ]
+ }
+]

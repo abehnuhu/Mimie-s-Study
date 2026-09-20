@@ -1,0 +1,192 @@
+[
+ {
+  "courseSlug": "advanced-midwifery-practice",
+  "moduleTitle": "Thinking Like an Expert",
+  "lessonTitle": "Clinical Reasoning for the Expert Midwife",
+  "description": "From pattern recognition to deliberate analysis — the thinking that experts actually do.",
+  "tags": [
+   "clinical reasoning",
+   "expertise"
+  ]
+ },
+ {
+  "courseSlug": "advanced-midwifery-practice",
+  "moduleTitle": "Thinking Like an Expert",
+  "lessonTitle": "Differential Thinking in Midwifery",
+  "description": "Holding several possibilities at once — the skill that prevents premature closure.",
+  "tags": [
+   "differential",
+   "diagnosis"
+  ]
+ },
+ {
+  "courseSlug": "advanced-midwifery-practice",
+  "moduleTitle": "Thinking Like an Expert",
+  "lessonTitle": "Prioritisation When Everything Is Urgent",
+  "description": "Triage thinking in maternity — sequencing care when three patients need you now.",
+  "tags": [
+   "prioritization",
+   "triage"
+  ]
+ },
+ {
+  "courseSlug": "advanced-midwifery-practice",
+  "moduleTitle": "Complex Care Integration",
+  "lessonTitle": "Managing Complex Cases",
+  "description": "The mother with complications stacking up — holding the whole picture together.",
+  "tags": [
+   "complex care",
+   "integration"
+  ]
+ },
+ {
+  "courseSlug": "advanced-midwifery-practice",
+  "moduleTitle": "Complex Care Integration",
+  "lessonTitle": "Multidisciplinary Teamwork in Maternity",
+  "description": "Consultants, anaesthetists, neonatologists — leading and contributing to the full team.",
+  "tags": [
+   "teamwork",
+   "mdt"
+  ]
+ },
+ {
+  "courseSlug": "advanced-midwifery-practice",
+  "moduleTitle": "Complex Care Integration",
+  "lessonTitle": "Consultation and Referral: The Professional Conversation",
+  "description": "Calling for help as an expert — concise, structured and persuasive.",
+  "tags": [
+   "referral",
+   "communication"
+  ]
+ },
+ {
+  "courseSlug": "advanced-midwifery-practice",
+  "moduleTitle": "Leading at the Bedside",
+  "lessonTitle": "Leadership in Clinical Practice",
+  "description": "Leading the room when it matters — directing, delegating and staying calm.",
+  "tags": [
+   "leadership",
+   "practice"
+  ]
+ },
+ {
+  "courseSlug": "advanced-midwifery-practice",
+  "moduleTitle": "Leading at the Bedside",
+  "lessonTitle": "Documentation and Communication at Expert Level",
+  "description": "Your notes as clinical instruments — writing that other professionals act on.",
+  "tags": [
+   "documentation",
+   "communication"
+  ]
+ },
+ {
+  "courseSlug": "high-risk-pregnancy",
+  "moduleTitle": "Recognising Risk Early",
+  "lessonTitle": "What Makes a Pregnancy High-Risk?",
+  "description": "Risk factors you can spot before conception — the assessment that changes care pathways.",
+  "tags": [
+   "risk factors",
+   "assessment"
+  ]
+ },
+ {
+  "courseSlug": "high-risk-pregnancy",
+  "moduleTitle": "Recognising Risk Early",
+  "lessonTitle": "The High-Risk Care Pathway and Team",
+  "description": "What changes when risk is flagged — the surveillance and specialisms that follow.",
+  "tags": [
+   "care pathway",
+   "surveillance"
+  ]
+ },
+ {
+  "courseSlug": "high-risk-pregnancy",
+  "moduleTitle": "Hypertensive Crises",
+  "lessonTitle": "Severe Pre-eclampsia and Severe Hypertension",
+  "description": "When blood pressure threatens — recognition, magnesium and the timing of birth.",
+  "tags": [
+   "pre-eclampsia",
+   "hypertension"
+  ]
+ },
+ {
+  "courseSlug": "high-risk-pregnancy",
+  "moduleTitle": "Hypertensive Crises",
+  "lessonTitle": "Eclampsia: Managing the Emergency",
+  "description": "The fit and everything after — the drill from airway to delivery decision.",
+  "tags": [
+   "eclampsia",
+   "emergency"
+  ]
+ },
+ {
+  "courseSlug": "high-risk-pregnancy",
+  "moduleTitle": "Hypertensive Crises",
+  "lessonTitle": "After the Crisis: Monitoring and Follow-Up",
+  "description": "The recovery that still holds danger — post-crisis care and future pregnancy counselling.",
+  "tags": [
+   "follow-up",
+   "recovery"
+  ]
+ },
+ {
+  "courseSlug": "high-risk-pregnancy",
+  "moduleTitle": "Bleeding and the At-Risk Fetus",
+  "lessonTitle": "Severe Antepartum Haemorrhage",
+  "description": "Major bleeding before birth — maternal stabilisation and the race to deliver.",
+  "tags": [
+   "aph",
+   "emergency"
+  ]
+ },
+ {
+  "courseSlug": "high-risk-pregnancy",
+  "moduleTitle": "Bleeding and the At-Risk Fetus",
+  "lessonTitle": "Surveilling the At-Risk Fetus",
+  "description": "CTG patterns, doppler and growth scans — technology in service of the compromised baby.",
+  "tags": [
+   "fetal surveillance",
+   "ctg"
+  ]
+ },
+ {
+  "courseSlug": "high-risk-pregnancy",
+  "moduleTitle": "Bleeding and the At-Risk Fetus",
+  "lessonTitle": "Deciding the Timing of Birth",
+  "description": "The risk balance of waiting versus delivering — decisions that weigh two patients.",
+  "tags": [
+   "timing",
+   "decision-making"
+  ]
+ },
+ {
+  "courseSlug": "obstetric-emergencies",
+  "moduleTitle": "Maternal Collapse and Shock",
+  "lessonTitle": "Maternal Collapse: First Response",
+  "description": "The pregnant or postnatal woman who collapses — a systematic response under pressure.",
+  "tags": [
+   "collapse",
+   "resuscitation"
+  ]
+ },
+ {
+  "courseSlug": "obstetric-emergencies",
+  "moduleTitle": "Maternal Collapse and Shock",
+  "lessonTitle": "Obstetric Shock: Causes and Response",
+  "description": "Haemorrhagic, septic and amniotic causes — identifying and counteracting shock fast.",
+  "tags": [
+   "shock",
+   "emergency"
+  ]
+ },
+ {
+  "courseSlug": "obstetric-emergencies",
+  "moduleTitle": "Maternal Collapse and Shock",
+  "lessonTitle": "Sepsis in Pregnancy and After Birth",
+  "description": "The quiet killer of new mothers — recognition bundles and antibiotics within the hour.",
+  "tags": [
+   "sepsis",
+   "maternal"
+  ]
+ }
+]

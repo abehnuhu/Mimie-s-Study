@@ -1,0 +1,182 @@
+[
+ {
+  "courseSlug": "public-health-nursing",
+  "moduleTitle": "Family and Community Care",
+  "lessonTitle": "Family-Centred Community Care",
+  "description": "Nursing whole families in their own context — the household as the unit of care.",
+  "tags": [
+   "family",
+   "community care"
+  ]
+ },
+ {
+  "courseSlug": "public-health-nursing",
+  "moduleTitle": "Family and Community Care",
+  "lessonTitle": "Assessing a Community's Health",
+  "description": "Reading a community like a patient — its resources, risks and its own definition of health.",
+  "tags": [
+   "community assessment",
+   "planning"
+  ]
+ },
+ {
+  "courseSlug": "public-health-nursing",
+  "moduleTitle": "Family and Community Care",
+  "lessonTitle": "Working with Community Health Workers",
+  "description": "The colleagues closest to the community — partnership that multiplies your reach.",
+  "tags": [
+   "chps",
+   "partnership"
+  ]
+ },
+ {
+  "courseSlug": "psychiatric-nursing",
+  "moduleTitle": "Understanding Mental Health",
+  "lessonTitle": "Mental Health and Wellbeing: The Full Picture",
+  "description": "What mental health really means — not just the absence of illness but the presence of functioning.",
+  "tags": [
+   "mental health",
+   "wellbeing"
+  ]
+ },
+ {
+  "courseSlug": "psychiatric-nursing",
+  "moduleTitle": "Understanding Mental Health",
+  "lessonTitle": "Stigma: The Barrier We Build Ourselves",
+  "description": "Why mental illness hides — and how your attitude can open or close the door to care.",
+  "tags": [
+   "stigma",
+   "attitudes"
+  ]
+ },
+ {
+  "courseSlug": "psychiatric-nursing",
+  "moduleTitle": "Understanding Mental Health",
+  "lessonTitle": "Common Psychiatric Conditions: An Overview",
+  "description": "Depression, anxiety, bipolar disorder, schizophrenia — a respectful first meeting with each.",
+  "tags": [
+   "psychiatric conditions",
+   "overview"
+  ]
+ },
+ {
+  "courseSlug": "psychiatric-nursing",
+  "moduleTitle": "Therapeutic Use of Self",
+  "lessonTitle": "Therapeutic Communication in Mental Health",
+  "description": "Your words as instruments — the advanced communication techniques psychiatric care depends on.",
+  "tags": [
+   "therapeutic communication",
+   "techniques"
+  ]
+ },
+ {
+  "courseSlug": "psychiatric-nursing",
+  "moduleTitle": "Therapeutic Use of Self",
+  "lessonTitle": "Building Therapeutic Relationships",
+  "description": "Trust with boundaries — the relationship that heals and the discipline that keeps it safe.",
+  "tags": [
+   "therapeutic relationship",
+   "boundaries"
+  ]
+ },
+ {
+  "courseSlug": "psychiatric-nursing",
+  "moduleTitle": "Caring Through the Conditions",
+  "lessonTitle": "Nursing the Anxious and Depressed Patient",
+  "description": "Care that gently lifts — practical nursing for the most common mental illnesses.",
+  "tags": [
+   "depression",
+   "anxiety"
+  ]
+ },
+ {
+  "courseSlug": "psychiatric-nursing",
+  "moduleTitle": "Caring Through the Conditions",
+  "lessonTitle": "Understanding Psychosis",
+  "description": "Hallucinations, delusions and the person inside them — nursing with calm and respect.",
+  "tags": [
+   "psychosis",
+   "schizophrenia"
+  ]
+ },
+ {
+  "courseSlug": "psychiatric-nursing",
+  "moduleTitle": "Caring Through the Conditions",
+  "lessonTitle": "Maternal Mental Health: A First Look",
+  "description": "The emotional side of motherhood — your first preview of perinatal mental health.",
+  "tags": [
+   "maternal mental health",
+   "perinatal"
+  ]
+ },
+ {
+  "courseSlug": "clinical-practice",
+  "moduleTitle": "A Day on the Ward",
+  "lessonTitle": "Admission and Discharge: The Bookends of Care",
+  "description": "First and last impressions matter clinically — smooth admission and safe discharge.",
+  "tags": [
+   "admission",
+   "discharge"
+  ]
+ },
+ {
+  "courseSlug": "clinical-practice",
+  "moduleTitle": "A Day on the Ward",
+  "lessonTitle": "Shift Handover: Passing the Baton Safely",
+  "description": "The structured handover that keeps patients safe while nurses change over.",
+  "tags": [
+   "handover",
+   "communication"
+  ]
+ },
+ {
+  "courseSlug": "clinical-practice",
+  "moduleTitle": "A Day on the Ward",
+  "lessonTitle": "Organising Care for Multiple Patients",
+  "description": "The reality of practice — prioritising and sequencing when six people need you at once.",
+  "tags": [
+   "prioritization",
+   "workload"
+  ]
+ },
+ {
+  "courseSlug": "clinical-practice",
+  "moduleTitle": "Learning from Real Patients",
+  "lessonTitle": "Reflective Practice: Turning Experience into Learning",
+  "description": "The habit that separates ten years of growth from one year repeated ten times.",
+  "tags": [
+   "reflection",
+   "learning"
+  ]
+ },
+ {
+  "courseSlug": "clinical-practice",
+  "moduleTitle": "Learning from Real Patients",
+  "lessonTitle": "When Things Go Wrong: Learning Without Blame",
+  "description": "Errors and near misses handled honestly — the culture that makes care safer.",
+  "tags": [
+   "error",
+   "safety culture"
+  ]
+ },
+ {
+  "courseSlug": "clinical-practice",
+  "moduleTitle": "Growing into the Team",
+  "lessonTitle": "Working with the Multidisciplinary Team",
+  "description": "Doctors, pharmacists, physiotherapists and more — finding your voice in the team.",
+  "tags": [
+   "teamwork",
+   "mdt"
+  ]
+ },
+ {
+  "courseSlug": "clinical-practice",
+  "moduleTitle": "Growing into the Team",
+  "lessonTitle": "Caring for Yourself While Caring for Others",
+  "description": "Sleep, boundaries and support — the self-care that makes a long career possible.",
+  "tags": [
+   "self-care",
+   "resilience"
+  ]
+ }
+]

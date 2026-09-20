@@ -1,0 +1,132 @@
+[
+ {
+  "courseSlug": "microbiology-1",
+  "moduleTitle": "Asepsis & Control",
+  "lessonTitle": "Asepsis: Clean Versus Sterile, Made Clear",
+  "description": "Medical and surgical asepsis — which level of clean your task actually requires.",
+  "tags": [
+   "asepsis",
+   "sterile technique"
+  ]
+ },
+ {
+  "courseSlug": "microbiology-1",
+  "moduleTitle": "Asepsis & Control",
+  "lessonTitle": "Disinfection: Choosing the Right Weapon",
+  "description": "Levels of disinfection and how to match them to equipment — practical, everyday decisions.",
+  "tags": [
+   "disinfection",
+   "equipment"
+  ]
+ },
+ {
+  "courseSlug": "microbiology-1",
+  "moduleTitle": "Asepsis & Control",
+  "lessonTitle": "Sterilization: When Clean Isn't Enough",
+  "description": "Autoclaves and friends — how we guarantee that instruments are completely free of life.",
+  "tags": [
+   "sterilization",
+   "autoclave"
+  ]
+ },
+ {
+  "courseSlug": "microbiology-1",
+  "moduleTitle": "Asepsis & Control",
+  "lessonTitle": "Standard Precautions: Your Everyday Armour",
+  "description": "The precautions you take with every single patient — because you can't always know who carries what.",
+  "tags": [
+   "standard precautions",
+   "ppe"
+  ]
+ },
+ {
+  "courseSlug": "clinical-skills-1",
+  "moduleTitle": "Entering the Clinical World",
+  "lessonTitle": "The Clinical Environment: Finding Your Feet",
+  "description": "Wards, clinics and the people in them — what to expect and how to belong on your first placement.",
+  "tags": [
+   "clinical placement",
+   "orientation"
+  ]
+ },
+ {
+  "courseSlug": "clinical-skills-1",
+  "moduleTitle": "Entering the Clinical World",
+  "lessonTitle": "Professional Appearance and Behaviour on Placement",
+  "description": "Uniform, punctuality and phone etiquette — how your presence builds or breaks patient trust.",
+  "tags": [
+   "professionalism",
+   "conduct"
+  ]
+ },
+ {
+  "courseSlug": "clinical-skills-1",
+  "moduleTitle": "Entering the Clinical World",
+  "lessonTitle": "Hand Hygiene: The Skill That Saves the Most Lives",
+  "description": "The five moments and the proper technique — practise until it's completely automatic.",
+  "tags": [
+   "hand hygiene",
+   "infection prevention"
+  ]
+ },
+ {
+  "courseSlug": "clinical-skills-1",
+  "moduleTitle": "Bedside Essentials",
+  "lessonTitle": "Practising Vital Signs Until They're Second Nature",
+  "description": "Taking temperatures, pulses and pressures repeatedly, accurately and gently — repetition is the teacher.",
+  "tags": [
+   "vital signs",
+   "practice"
+  ]
+ },
+ {
+  "courseSlug": "clinical-skills-1",
+  "moduleTitle": "Bedside Essentials",
+  "lessonTitle": "Positioning and Comfort at the Bedside",
+  "description": "Safe positioning for eating, sleeping and recovery — protecting skin and dignity together.",
+  "tags": [
+   "positioning",
+   "comfort"
+  ]
+ },
+ {
+  "courseSlug": "clinical-skills-1",
+  "moduleTitle": "Bedside Essentials",
+  "lessonTitle": "Assisting with Daily Living Activities",
+  "description": "Bathing, feeding and mobility support — helping without taking over the patient's independence.",
+  "tags": [
+   "activities of daily living",
+   "assistance"
+  ]
+ },
+ {
+  "courseSlug": "clinical-skills-1",
+  "moduleTitle": "Safe Practice Basics",
+  "lessonTitle": "Personal Protective Equipment: Dressing for Safety",
+  "description": "Gloves, gowns, masks and when each one matters — protection that fits the task.",
+  "tags": [
+   "ppe",
+   "safety"
+  ]
+ },
+ {
+  "courseSlug": "clinical-skills-1",
+  "moduleTitle": "Safe Practice Basics",
+  "lessonTitle": "Aseptic Technique: Your First Practice",
+  "description": "Sterile fields without panic — the choreography of keeping things clean in real procedures.",
+  "tags": [
+   "aseptic technique",
+   "sterile field"
+  ]
+ },
+ {
+  "courseSlug": "clinical-skills-1",
+  "moduleTitle": "Safe Practice Basics",
+  "lessonTitle": "Speaking Up: Reporting and Escalating Safely",
+  "description": "When something looks wrong, your voice is the safety net — how and when to raise it.",
+  "tags": [
+   "escalation",
+   "safety"
+  ]
+ }
+]

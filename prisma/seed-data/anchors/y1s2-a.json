@@ -1,0 +1,132 @@
+[
+ {
+  "courseSlug": "anatomy-physiology-2",
+  "moduleTitle": "The Reproductive Blueprint",
+  "lessonTitle": "Reproductive Anatomy: The Big Picture",
+  "description": "A guided overview of the pelvis and its contents — the map you'll navigate your whole career.",
+  "tags": [
+   "reproductive anatomy",
+   "pelvis"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-2",
+  "moduleTitle": "The Reproductive Blueprint",
+  "lessonTitle": "The Female Reproductive System: A Guided Tour",
+  "description": "Ovaries to vulva — every structure, its job and the words patients actually use for it.",
+  "tags": [
+   "female anatomy",
+   "reproductive system"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-2",
+  "moduleTitle": "The Reproductive Blueprint",
+  "lessonTitle": "The Male Reproductive System: The Other Half of the Story",
+  "description": "The structures and hormones that make conception possible — worth knowing well.",
+  "tags": [
+   "male anatomy",
+   "reproductive system"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-2",
+  "moduleTitle": "Cycles and Hormones",
+  "lessonTitle": "The Menstrual Cycle: A Month in Four Acts",
+  "description": "Follicular, ovulation, luteal, menstruation — the cycle you'll explain and monitor countless times.",
+  "tags": [
+   "menstrual cycle",
+   "ovulation"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-2",
+  "moduleTitle": "Cycles and Hormones",
+  "lessonTitle": "Reproductive Hormones: The Chemical Conductors",
+  "description": "Oestrogen, progesterone, FSH, LH and friends — the messages that run the whole reproductive show.",
+  "tags": [
+   "hormones",
+   "endocrine"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-2",
+  "moduleTitle": "From Egg to Embryo",
+  "lessonTitle": "Fertilization: Where Life Begins",
+  "description": "The remarkable meeting of egg and sperm — timing, journey and the very first cell divisions.",
+  "tags": [
+   "fertilization",
+   "conception"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-2",
+  "moduleTitle": "From Egg to Embryo",
+  "lessonTitle": "Implantation and Early Development",
+  "description": "How the blastocyst burrows in and sets up home — the beginning of placenta and pregnancy.",
+  "tags": [
+   "implantation",
+   "embryo"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-2",
+  "moduleTitle": "From Egg to Embryo",
+  "lessonTitle": "Genetics Basics: The Instruction Manual",
+  "description": "DNA, genes and chromosomes — the blueprint that decides so much and explains conditions you'll meet.",
+  "tags": [
+   "genetics",
+   "dna"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-2",
+  "moduleTitle": "From Egg to Embryo",
+  "lessonTitle": "Pregnancy Physiology: An Introduction",
+  "description": "A preview of how the whole body adapts to carry a pregnancy — changes you'll monitor daily soon.",
+  "tags": [
+   "pregnancy",
+   "physiology"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-2",
+  "moduleTitle": "From Egg to Embryo",
+  "lessonTitle": "Fetal Development: A First Look at the Growing Baby",
+  "description": "From embryo to newborn in forty weeks — the milestones and the trimester-by-trimester story.",
+  "tags": [
+   "fetal development",
+   "trimesters"
+  ]
+ },
+ {
+  "courseSlug": "foundations-nursing-2",
+  "moduleTitle": "Daily Care Fundamentals",
+  "lessonTitle": "Mobility and Positioning: Moving Patients Safely",
+  "description": "Safe moving and handling that protects your back and their dignity — technique before strength.",
+  "tags": [
+   "mobility",
+   "moving and handling"
+  ]
+ },
+ {
+  "courseSlug": "foundations-nursing-2",
+  "moduleTitle": "Daily Care Fundamentals",
+  "lessonTitle": "Nutrition Basics for Patient Care",
+  "description": "Why eating and drinking are clinical concerns — supporting appetite, diets and swallowing safely.",
+  "tags": [
+   "nutrition",
+   "hydration"
+  ]
+ },
+ {
+  "courseSlug": "foundations-nursing-2",
+  "moduleTitle": "Daily Care Fundamentals",
+  "lessonTitle": "Elimination: Supporting Dignified Care",
+  "description": "Urination and defecation are private and clinical — caring well takes both respect and knowledge.",
+  "tags": [
+   "elimination",
+   "dignity"
+  ]
+ }
+]

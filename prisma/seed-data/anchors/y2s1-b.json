@@ -1,0 +1,182 @@
+[
+ {
+  "courseSlug": "pharmacology-1",
+  "moduleTitle": "How Drugs Work",
+  "lessonTitle": "Pharmacology Terminology: Speaking the Language",
+  "description": "Half-life, bioavailability, loading dose — the vocabulary that makes drug charts readable.",
+  "tags": [
+   "pharmacology",
+   "terminology"
+  ]
+ },
+ {
+  "courseSlug": "pharmacology-1",
+  "moduleTitle": "How Drugs Work",
+  "lessonTitle": "Pharmacokinetics: The Journey of a Drug",
+  "description": "Absorption, distribution, metabolism, excretion — what the body does to the drug.",
+  "tags": [
+   "pharmacokinetics",
+   "adme"
+  ]
+ },
+ {
+  "courseSlug": "pharmacology-1",
+  "moduleTitle": "How Drugs Work",
+  "lessonTitle": "Pharmacodynamics: What the Drug Does to You",
+  "description": "Receptors, dose-response and therapeutic windows — how drugs create their effects.",
+  "tags": [
+   "pharmacodynamics",
+   "receptors"
+  ]
+ },
+ {
+  "courseSlug": "pharmacology-1",
+  "moduleTitle": "Giving Drugs Safely",
+  "lessonTitle": "Routes of Administration: Choosing the Path",
+  "description": "Oral, intramuscular, intravenous and more — why the route matters and how it changes action.",
+  "tags": [
+   "routes",
+   "administration"
+  ]
+ },
+ {
+  "courseSlug": "pharmacology-1",
+  "moduleTitle": "Giving Drugs Safely",
+  "lessonTitle": "Medication Safety: The Rights and Beyond",
+  "description": "The rights of administration plus the habits that prevent most medication errors.",
+  "tags": [
+   "medication safety",
+   "rights"
+  ]
+ },
+ {
+  "courseSlug": "pharmacology-1",
+  "moduleTitle": "Giving Drugs Safely",
+  "lessonTitle": "Medication Calculations: Practice Until Perfect",
+  "description": "Doses, drip rates and conversions — the arithmetic that patients' lives depend on.",
+  "tags": [
+   "calculations",
+   "drug doses"
+  ]
+ },
+ {
+  "courseSlug": "pharmacology-1",
+  "moduleTitle": "Giving Drugs Safely",
+  "lessonTitle": "Safe Documentation of Medications",
+  "description": "Recording every dose clearly — what to write, when, and why it protects everyone.",
+  "tags": [
+   "documentation",
+   "medications"
+  ]
+ },
+ {
+  "courseSlug": "pharmacology-1",
+  "moduleTitle": "When Drugs Go Wrong",
+  "lessonTitle": "Adverse Effects: Reading the Warning Signs",
+  "description": "Side effects, toxicity and how to spot a patient reacting badly to treatment.",
+  "tags": [
+   "adverse effects",
+   "toxicity"
+  ]
+ },
+ {
+  "courseSlug": "pharmacology-1",
+  "moduleTitle": "When Drugs Go Wrong",
+  "lessonTitle": "Contraindications: When a Drug Must Not Be Given",
+  "description": "The conditions and situations that make familiar drugs dangerous.",
+  "tags": [
+   "contraindications",
+   "safety"
+  ]
+ },
+ {
+  "courseSlug": "pharmacology-1",
+  "moduleTitle": "When Drugs Go Wrong",
+  "lessonTitle": "Drug Interactions: The Hidden Dangers",
+  "description": "How medicines fight each other — the combinations to question before giving.",
+  "tags": [
+   "interactions",
+   "polypharmacy"
+  ]
+ },
+ {
+  "courseSlug": "nutrition-dietetics",
+  "moduleTitle": "The Building Blocks",
+  "lessonTitle": "Nutrients: The Body's Shopping List",
+  "description": "Macronutrients and micronutrients — what the body needs and why it can't manage without them.",
+  "tags": [
+   "nutrients",
+   "basics"
+  ]
+ },
+ {
+  "courseSlug": "nutrition-dietetics",
+  "moduleTitle": "The Building Blocks",
+  "lessonTitle": "Carbohydrates: The Quick Fuel",
+  "description": "Sugars and starches — energy now, and the blood glucose story every nurse must know.",
+  "tags": [
+   "carbohydrates",
+   "energy"
+  ]
+ },
+ {
+  "courseSlug": "nutrition-dietetics",
+  "moduleTitle": "The Building Blocks",
+  "lessonTitle": "Proteins: The Builders",
+  "description": "Amino acids and repair — why wounds, immunity and growth all depend on protein.",
+  "tags": [
+   "proteins",
+   "repair"
+  ]
+ },
+ {
+  "courseSlug": "nutrition-dietetics",
+  "moduleTitle": "The Building Blocks",
+  "lessonTitle": "Fats: The Misunderstood Macronutrient",
+  "description": "Good, bad and essential fats — storage, hormones and the truth about cholesterol.",
+  "tags": [
+   "fats",
+   "lipids"
+  ]
+ },
+ {
+  "courseSlug": "nutrition-dietetics",
+  "moduleTitle": "Small but Mighty",
+  "lessonTitle": "Vitamins: Small Amounts, Big Jobs",
+  "description": "The water-soluble and fat-soluble families and what deficiency looks like in real patients.",
+  "tags": [
+   "vitamins",
+   "deficiency"
+  ]
+ },
+ {
+  "courseSlug": "nutrition-dietetics",
+  "moduleTitle": "Small but Mighty",
+  "lessonTitle": "Minerals: The Construction Crew",
+  "description": "Iron, calcium, iodine and friends — the minerals whose lack still harms many Ghanaian patients.",
+  "tags": [
+   "minerals",
+   "iron"
+  ]
+ },
+ {
+  "courseSlug": "nutrition-dietetics",
+  "moduleTitle": "Small but Mighty",
+  "lessonTitle": "Hydration: Water, the Forgotten Nutrient",
+  "description": "Fluid balance made friendly — intake, losses and the patients most at risk.",
+  "tags": [
+   "hydration",
+   "fluid balance"
+  ]
+ },
+ {
+  "courseSlug": "nutrition-dietetics",
+  "moduleTitle": "When Nutrition Fails",
+  "lessonTitle": "Malnutrition: The Quiet Emergency",
+  "description": "Recognising undernutrition in hospital and community — the signs hiding in plain sight.",
+  "tags": [
+   "malnutrition",
+   "assessment"
+  ]
+ }
+]

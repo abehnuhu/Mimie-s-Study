@@ -1,0 +1,172 @@
+[
+ {
+  "courseSlug": "puerperium",
+  "moduleTitle": "The First Six Weeks",
+  "lessonTitle": "Uterine Involution: Watching the Womb Return",
+  "description": "How the uterus shrinks from birth to six weeks — and what the pace tells you.",
+  "tags": [
+   "involution",
+   "uterus"
+  ]
+ },
+ {
+  "courseSlug": "puerperium",
+  "moduleTitle": "The First Six Weeks",
+  "lessonTitle": "Lochia: What's Normal and What's Not",
+  "description": "The stages and colours of postnatal bleeding — reading the warning signs in the flow.",
+  "tags": [
+   "lochia",
+   "bleeding"
+  ]
+ },
+ {
+  "courseSlug": "puerperium",
+  "moduleTitle": "The First Six Weeks",
+  "lessonTitle": "Maternal Assessment in the Postnatal Period",
+  "description": "The postnatal check-up — systematic assessment of the recovering mother.",
+  "tags": [
+   "postnatal assessment",
+   "routine"
+  ]
+ },
+ {
+  "courseSlug": "puerperium",
+  "moduleTitle": "Feeding and Recovery",
+  "lessonTitle": "Breastfeeding: The First Days",
+  "description": "Positioning, attachment and the common early problems — getting feeding established well.",
+  "tags": [
+   "breastfeeding",
+   "feeding"
+  ]
+ },
+ {
+  "courseSlug": "puerperium",
+  "moduleTitle": "Feeding and Recovery",
+  "lessonTitle": "Maternal Nutrition After Birth",
+  "description": "Recovery and breastfeeding both demand fuel — the postnatal plate that provides it.",
+  "tags": [
+   "nutrition",
+   "recovery"
+  ]
+ },
+ {
+  "courseSlug": "puerperium",
+  "moduleTitle": "Feeding and Recovery",
+  "lessonTitle": "Postnatal Education for the New Mother",
+  "description": "What every new mother needs to know before going home — danger signs, feeding, baby care.",
+  "tags": [
+   "postnatal education",
+   "discharge"
+  ]
+ },
+ {
+  "courseSlug": "puerperium",
+  "moduleTitle": "Mind, Family and Warning Signs",
+  "lessonTitle": "Family Planning After Birth",
+  "description": "Spacing pregnancies and choosing methods — counselling that respects and informs.",
+  "tags": [
+   "family planning",
+   "contraception"
+  ]
+ },
+ {
+  "courseSlug": "puerperium",
+  "moduleTitle": "Mind, Family and Warning Signs",
+  "lessonTitle": "Emotional Wellbeing and the Baby Blues",
+  "description": "Baby blues, depression and the difference that matters — protecting the new mother's mind.",
+  "tags": [
+   "mental health",
+   "blues"
+  ]
+ },
+ {
+  "courseSlug": "puerperium",
+  "moduleTitle": "Mind, Family and Warning Signs",
+  "lessonTitle": "Postpartum Danger Signs",
+  "description": "The symptoms after birth that mean now — haemorrhage, sepsis, pre-eclampsia returning.",
+  "tags": [
+   "danger signs",
+   "postpartum"
+  ]
+ },
+ {
+  "courseSlug": "puerperium",
+  "moduleTitle": "Mind, Family and Warning Signs",
+  "lessonTitle": "Postpartum Complications",
+  "description": "Puerperal sepsis, haemorrhage and thrombosis — the complications and your response to each.",
+  "tags": [
+   "complications",
+   "puerperium"
+  ]
+ },
+ {
+  "courseSlug": "reproductive-health",
+  "moduleTitle": "Understanding Reproductive Health",
+  "lessonTitle": "Reproductive Anatomy for Practice",
+  "description": "A working refresher of the anatomy — now seen through the lens of clinical practice.",
+  "tags": [
+   "reproductive anatomy",
+   "review"
+  ]
+ },
+ {
+  "courseSlug": "reproductive-health",
+  "moduleTitle": "Understanding Reproductive Health",
+  "lessonTitle": "Fertility: How It Works and What Affects It",
+  "description": "The biology of fertility and the factors that raise or reduce it — knowledge patients need.",
+  "tags": [
+   "fertility",
+   "conception"
+  ]
+ },
+ {
+  "courseSlug": "reproductive-health",
+  "moduleTitle": "Understanding Reproductive Health",
+  "lessonTitle": "Reproductive Rights and You",
+  "description": "Consent, choice and dignity — the rights framework behind every service you'll offer.",
+  "tags": [
+   "rights",
+   "ethics"
+  ]
+ },
+ {
+  "courseSlug": "reproductive-health",
+  "moduleTitle": "Family Planning and Contraception",
+  "lessonTitle": "Contraception: The Options Explained",
+  "description": "From natural methods to implants — how each option works and who it suits.",
+  "tags": [
+   "contraception",
+   "methods"
+  ]
+ },
+ {
+  "courseSlug": "reproductive-health",
+  "moduleTitle": "Family Planning and Contraception",
+  "lessonTitle": "Family Planning: Counselling for Real Choices",
+  "description": "Helping couples choose — the counselling approach that respects values and lives.",
+  "tags": [
+   "family planning",
+   "counselling"
+  ]
+ },
+ {
+  "courseSlug": "reproductive-health",
+  "moduleTitle": "Preventing Infection",
+  "lessonTitle": "STI Prevention: Protect and Educate",
+  "description": "The common STIs, their quiet dangers and the prevention that actually works.",
+  "tags": [
+   "sti",
+   "prevention"
+  ]
+ },
+ {
+  "courseSlug": "reproductive-health",
+  "moduleTitle": "Preventing Infection",
+  "lessonTitle": "HIV and Reproductive Health",
+  "description": "HIV in pregnancy and relationships — prevention, treatment and hope.",
+  "tags": [
+   "hiv",
+   "pmtct"
+  ]
+ }
+]

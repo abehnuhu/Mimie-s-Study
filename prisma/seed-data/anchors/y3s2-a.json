@@ -1,0 +1,162 @@
+[
+ {
+  "courseSlug": "abnormal-pregnancy",
+  "moduleTitle": "Medical Disorders in Pregnancy",
+  "lessonTitle": "Hyperemesis Gravidarum: Beyond Morning Sickness",
+  "description": "When nausea becomes dangerous — recognising and supporting the mother who can't keep anything down.",
+  "tags": [
+   "hyperemesis",
+   "vomiting"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-pregnancy",
+  "moduleTitle": "Medical Disorders in Pregnancy",
+  "lessonTitle": "Anaemia in Pregnancy",
+  "description": "Why pregnancy drains iron — the screening, treatment and thresholds that matter.",
+  "tags": [
+   "anaemia",
+   "iron"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-pregnancy",
+  "moduleTitle": "Medical Disorders in Pregnancy",
+  "lessonTitle": "Hypertensive Disorders of Pregnancy",
+  "description": "From gestational hypertension to pre-eclampsia — the spectrum every midwife must know cold.",
+  "tags": [
+   "pre-eclampsia",
+   "hypertension"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-pregnancy",
+  "moduleTitle": "Medical Disorders in Pregnancy",
+  "lessonTitle": "Gestational Diabetes",
+  "description": "The sugar that arrives with pregnancy — screening, management and the birth that follows.",
+  "tags": [
+   "diabetes",
+   "screening"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-pregnancy",
+  "moduleTitle": "Early Complications",
+  "lessonTitle": "Ectopic Pregnancy: The Emergency You Can't Miss",
+  "description": "The pregnancy in the wrong place — recognising rupture before it takes the mother.",
+  "tags": [
+   "ectopic",
+   "emergency"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-pregnancy",
+  "moduleTitle": "Early Complications",
+  "lessonTitle": "Miscarriage: Management and Compassion",
+  "description": "The types and treatments of pregnancy loss — clinical skill and human kindness together.",
+  "tags": [
+   "miscarriage",
+   "loss"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-pregnancy",
+  "moduleTitle": "Early Complications",
+  "lessonTitle": "Multiple Pregnancy: Twice the Watching",
+  "description": "Twins and their risks — the extra surveillance that keeps two babies safe.",
+  "tags": [
+   "multiple pregnancy",
+   "twins"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-pregnancy",
+  "moduleTitle": "Placenta, Bleeding and Infection",
+  "lessonTitle": "Placental Disorders",
+  "description": "Praevia, abruption and accreta — the placenta in the wrong place or doing the wrong thing.",
+  "tags": [
+   "placenta",
+   "praevia"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-pregnancy",
+  "moduleTitle": "Placenta, Bleeding and Infection",
+  "lessonTitle": "Antepartum Haemorrhage",
+  "description": "Bleeding before birth — the causes, the response and the referral decisions.",
+  "tags": [
+   "aph",
+   "bleeding"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-pregnancy",
+  "moduleTitle": "Placenta, Bleeding and Infection",
+  "lessonTitle": "Infections in Pregnancy",
+  "description": "The infections that threaten mother and baby — screening, treating and preventing.",
+  "tags": [
+   "infection",
+   "screening"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-pregnancy",
+  "moduleTitle": "The Baby at Risk",
+  "lessonTitle": "Preterm Labour: Buying Time for the Baby",
+  "description": "When labour comes too early — the tocolytics, steroids and transfer that improve survival.",
+  "tags": [
+   "preterm",
+   "labour"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-pregnancy",
+  "moduleTitle": "The Baby at Risk",
+  "lessonTitle": "Fetal Growth Problems",
+  "description": "Too big, too small, too fast, too slow — growth issues and what they predict.",
+  "tags": [
+   "growth restriction",
+   "lga"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-pregnancy",
+  "moduleTitle": "The Baby at Risk",
+  "lessonTitle": "Fetal Compromise: Recognising Distress",
+  "description": "The signs that the baby is struggling — patterns that demand action for two patients.",
+  "tags": [
+   "fetal distress",
+   "compromise"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-pregnancy",
+  "moduleTitle": "The Baby at Risk",
+  "lessonTitle": "When to Refer: The Criteria That Save Lives",
+  "description": "The thresholds for escalation — decisions that depend on your recognition speed.",
+  "tags": [
+   "referral",
+   "escalation"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-labour",
+  "moduleTitle": "When Labour Leaves the Script",
+  "lessonTitle": "Prolonged Labour: The Clock Is Ticking",
+  "description": "Why labour stalls and what the partograph shows — action before hours become danger.",
+  "tags": [
+   "prolonged labour",
+   "partograph"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-labour",
+  "moduleTitle": "When Labour Leaves the Script",
+  "lessonTitle": "Obstructed Labour: Recognising the Block",
+  "description": "The killer of mothers and babies — the signs that the baby simply cannot fit.",
+  "tags": [
+   "obstructed labour",
+   "emergency"
+  ]
+ }
+]

@@ -1,0 +1,162 @@
+[
+ {
+  "courseSlug": "domiciliary-midwifery",
+  "moduleTitle": "Midwifery Beyond the Hospital",
+  "lessonTitle": "What Is Domiciliary Midwifery?",
+  "description": "Care in the home and community — the philosophy and the practical reality.",
+  "tags": [
+   "domiciliary",
+   "introduction"
+  ]
+ },
+ {
+  "courseSlug": "domiciliary-midwifery",
+  "moduleTitle": "Midwifery Beyond the Hospital",
+  "lessonTitle": "The Home Visit: What to Look For",
+  "description": "A structure for visiting mothers at home — the assessment that fits inside a house call.",
+  "tags": [
+   "home visit",
+   "assessment"
+  ]
+ },
+ {
+  "courseSlug": "domiciliary-midwifery",
+  "moduleTitle": "Midwifery Beyond the Hospital",
+  "lessonTitle": "Home Birth: Assessing Suitability and Safety",
+  "description": "Choosing who can safely birth at home — the criteria and the preparation.",
+  "tags": [
+   "home birth",
+   "selection"
+  ]
+ },
+ {
+  "courseSlug": "domiciliary-midwifery",
+  "moduleTitle": "Community Antenatal and Postnatal Care",
+  "lessonTitle": "Antenatal Care in the Community",
+  "description": "Taking the clinic to the mother — outreach antenatal care that actually works.",
+  "tags": [
+   "antenatal",
+   "community"
+  ]
+ },
+ {
+  "courseSlug": "domiciliary-midwifery",
+  "moduleTitle": "Community Antenatal and Postnatal Care",
+  "lessonTitle": "Postnatal Care in the Community",
+  "description": "Following the mother home after birth — the visits that catch problems early.",
+  "tags": [
+   "postnatal",
+   "community"
+  ]
+ },
+ {
+  "courseSlug": "domiciliary-midwifery",
+  "moduleTitle": "Community Antenatal and Postnatal Care",
+  "lessonTitle": "Following the Newborn at Home",
+  "description": "Weighing, feeding checks and danger sign teaching — the newborn follow-up visits.",
+  "tags": [
+   "newborn",
+   "follow-up"
+  ]
+ },
+ {
+  "courseSlug": "domiciliary-midwifery",
+  "moduleTitle": "Safety and Trust in the Community",
+  "lessonTitle": "Recognising Danger and Referring from Home",
+  "description": "When the home becomes the danger — assessment and fast decisions far from theatre.",
+  "tags": [
+   "referral",
+   "emergency"
+  ]
+ },
+ {
+  "courseSlug": "domiciliary-midwifery",
+  "moduleTitle": "Safety and Trust in the Community",
+  "lessonTitle": "Culture, Beliefs and Safe Motherhood",
+  "description": "Respecting beliefs while protecting mothers — working with culture, not against it.",
+  "tags": [
+   "culture",
+   "beliefs"
+  ]
+ },
+ {
+  "courseSlug": "domiciliary-midwifery",
+  "moduleTitle": "Safety and Trust in the Community",
+  "lessonTitle": "Record Keeping in the Community",
+  "description": "Documentation when there's no ward file — portable, accurate, protective records.",
+  "tags": [
+   "documentation",
+   "records"
+  ]
+ },
+ {
+  "courseSlug": "clinical-midwifery-practice",
+  "moduleTitle": "In the Antenatal Clinic",
+  "lessonTitle": "Working in the Antenatal Clinic",
+  "description": "The flow, the team and your place in it — surviving and contributing in ANC.",
+  "tags": [
+   "antenatal clinic",
+   "placement"
+  ]
+ },
+ {
+  "courseSlug": "clinical-midwifery-practice",
+  "moduleTitle": "In the Antenatal Clinic",
+  "lessonTitle": "Hands-On Antenatal Assessment Practice",
+  "description": "Real abdomens, real measurements — supervised practice until confident.",
+  "tags": [
+   "assessment",
+   "practice"
+  ]
+ },
+ {
+  "courseSlug": "clinical-midwifery-practice",
+  "moduleTitle": "On the Labour Ward",
+  "lessonTitle": "Orientation to the Labour Ward",
+  "description": "The rooms, the rhythms and the intensity — finding your feet where birth happens.",
+  "tags": [
+   "labour ward",
+   "orientation"
+  ]
+ },
+ {
+  "courseSlug": "clinical-midwifery-practice",
+  "moduleTitle": "On the Labour Ward",
+  "lessonTitle": "Monitoring Labouring Women in Practice",
+  "description": "Partographs and patience — real monitoring shifts with real responsibility.",
+  "tags": [
+   "monitoring",
+   "labour"
+  ]
+ },
+ {
+  "courseSlug": "clinical-midwifery-practice",
+  "moduleTitle": "On the Labour Ward",
+  "lessonTitle": "Supporting Birth Under Supervision",
+  "description": "Your hands on births with a mentor behind you — the moment theory becomes you.",
+  "tags": [
+   "birth",
+   "supervision"
+  ]
+ },
+ {
+  "courseSlug": "clinical-midwifery-practice",
+  "moduleTitle": "After the Birth",
+  "lessonTitle": "Postnatal Ward Practice",
+  "description": "Caring for mothers and babies after transfer — feeding, checking, teaching.",
+  "tags": [
+   "postnatal",
+   "placement"
+  ]
+ },
+ {
+  "courseSlug": "clinical-midwifery-practice",
+  "moduleTitle": "After the Birth",
+  "lessonTitle": "Reflecting on Your First Births",
+  "description": "Processing what you saw and did — reflection that turns experience into growth.",
+  "tags": [
+   "reflection",
+   "growth"
+  ]
+ }
+]

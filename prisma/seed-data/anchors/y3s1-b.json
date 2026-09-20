@@ -1,0 +1,172 @@
+[
+ {
+  "courseSlug": "normal-labour",
+  "moduleTitle": "Foundations of Labour",
+  "lessonTitle": "Signs of Labour: True, False and Warning",
+  "description": "Distinguishing true labour from the rehearsal — and the signs that something isn't right.",
+  "tags": [
+   "signs of labour",
+   "diagnosis"
+  ]
+ },
+ {
+  "courseSlug": "normal-labour",
+  "moduleTitle": "Foundations of Labour",
+  "lessonTitle": "Birth Preparedness: Ready Before the Day",
+  "description": "Plans, transport and supplies — preparation that saves lives when labour starts at 2am.",
+  "tags": [
+   "birth preparedness",
+   "planning"
+  ]
+ },
+ {
+  "courseSlug": "normal-labour",
+  "moduleTitle": "Understanding the Passenger",
+  "lessonTitle": "The Maternal Pelvis: The Passage",
+  "description": "The bones, diameters and landmark anatomy — the architecture every baby must navigate.",
+  "tags": [
+   "pelvis",
+   "anatomy"
+  ]
+ },
+ {
+  "courseSlug": "normal-labour",
+  "moduleTitle": "Understanding the Passenger",
+  "lessonTitle": "Fetal Attitude and Engagement",
+  "description": "Flexion, extension and whether the head has entered the pelvis — fitting versus floating.",
+  "tags": [
+   "attitude",
+   "engagement"
+  ]
+ },
+ {
+  "courseSlug": "normal-labour",
+  "moduleTitle": "Understanding the Passenger",
+  "lessonTitle": "Descent: The Journey Through the Pelvis",
+  "description": "How the baby moves down station by station — progress you can measure and monitor.",
+  "tags": [
+   "descent",
+   "station"
+  ]
+ },
+ {
+  "courseSlug": "normal-labour",
+  "moduleTitle": "Monitoring & the Partograph",
+  "lessonTitle": "Maternal Monitoring in Labour",
+  "description": "Vitals, contractions, hydration and emotional support — watching the mother as closely as the baby.",
+  "tags": [
+   "maternal monitoring",
+   "vital signs"
+  ]
+ },
+ {
+  "courseSlug": "normal-labour",
+  "moduleTitle": "Monitoring & the Partograph",
+  "lessonTitle": "Fetal Monitoring in Labour",
+  "description": "Heart rate patterns and what they mean — hearing the baby's side of the story.",
+  "tags": [
+   "fetal monitoring",
+   "fhr"
+  ]
+ },
+ {
+  "courseSlug": "normal-labour",
+  "moduleTitle": "Monitoring & the Partograph",
+  "lessonTitle": "The Partograph: Labour on One Page",
+  "description": "The WHO labour curve — plotting progress so delay shouts at you before anyone has to.",
+  "tags": [
+   "partograph",
+   "progress"
+  ]
+ },
+ {
+  "courseSlug": "normal-labour",
+  "moduleTitle": "Monitoring & the Partograph",
+  "lessonTitle": "Pain Management in Labour",
+  "description": "Breathing, movement, pharmacology and presence — helping mothers cope their way.",
+  "tags": [
+   "pain management",
+   "support"
+  ]
+ },
+ {
+  "courseSlug": "normal-labour",
+  "moduleTitle": "Managing Each Stage",
+  "lessonTitle": "Managing the First Stage of Labour",
+  "description": "Support, monitoring and knowing when progress is true or troubled — the long stage done right.",
+  "tags": [
+   "first stage",
+   "management"
+  ]
+ },
+ {
+  "courseSlug": "normal-labour",
+  "moduleTitle": "Managing Each Stage",
+  "lessonTitle": "The Second Stage and Conduct of a Normal Birth",
+  "description": "Recognising full dilatation, guiding pushing and receiving a baby — the moment you're training for.",
+  "tags": [
+   "second stage",
+   "normal birth"
+  ]
+ },
+ {
+  "courseSlug": "normal-labour",
+  "moduleTitle": "Managing Each Stage",
+  "lessonTitle": "The Third Stage of Labour",
+  "description": "The placenta and the danger it carries — active management and the watchful hour.",
+  "tags": [
+   "third stage",
+   "placenta"
+  ]
+ },
+ {
+  "courseSlug": "normal-labour",
+  "moduleTitle": "Managing Each Stage",
+  "lessonTitle": "Immediate Postpartum Care: The Golden Hour",
+  "description": "The first hour after birth — the checks that catch the bleeds and the contact that bonds mother to baby.",
+  "tags": [
+   "postpartum",
+   "golden hour"
+  ]
+ },
+ {
+  "courseSlug": "normal-labour",
+  "moduleTitle": "Mechanisms of Labour",
+  "lessonTitle": "Uterine Contractions: The Engine of Labour",
+  "description": "What a contraction is and what a good one looks like — frequency, strength and the story they tell.",
+  "tags": [
+   "contractions",
+   "physiology"
+  ]
+ },
+ {
+  "courseSlug": "normal-labour",
+  "moduleTitle": "Mechanisms of Labour",
+  "lessonTitle": "Cervical Dilatation: The Opening Story",
+  "description": "Effacement and dilatation explained — the cervix's journey from closed to complete.",
+  "tags": [
+   "dilatation",
+   "cervix"
+  ]
+ },
+ {
+  "courseSlug": "normal-labour",
+  "moduleTitle": "Mechanisms of Labour",
+  "lessonTitle": "The Mechanisms of Labour: The Cardinal Movements",
+  "description": "Engagement, flexion, rotation, extension — the sequence every normal birth follows.",
+  "tags": [
+   "mechanisms",
+   "cardinal movements"
+  ]
+ },
+ {
+  "courseSlug": "puerperium",
+  "moduleTitle": "The First Six Weeks",
+  "lessonTitle": "Physiological Changes of the Puerperium",
+  "description": "The body's remarkable six-week return — what normal recovery looks like in every system.",
+  "tags": [
+   "puerperium",
+   "involution"
+  ]
+ }
+]

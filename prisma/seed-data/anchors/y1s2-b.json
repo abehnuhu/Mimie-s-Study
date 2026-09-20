@@ -1,0 +1,132 @@
+[
+ {
+  "courseSlug": "foundations-nursing-2",
+  "moduleTitle": "Comfort, Skin and Wounds",
+  "lessonTitle": "Pain Assessment: Believing the Story Behind the Score",
+  "description": "Scales, faces and words — measuring what can't be seen and taking it seriously.",
+  "tags": [
+   "pain",
+   "assessment"
+  ]
+ },
+ {
+  "courseSlug": "foundations-nursing-2",
+  "moduleTitle": "Comfort, Skin and Wounds",
+  "lessonTitle": "Wound Care Principles: Protecting the Body's Barrier",
+  "description": "How wounds heal and how you help — clean, protect, observe, and never disturb what's working.",
+  "tags": [
+   "wound care",
+   "healing"
+  ]
+ },
+ {
+  "courseSlug": "foundations-nursing-2",
+  "moduleTitle": "Comfort, Skin and Wounds",
+  "lessonTitle": "Infection Prevention in Daily Care",
+  "description": "Applying the basics you learned — hands, linen, sharps and equipment in real patient contact.",
+  "tags": [
+   "infection prevention",
+   "daily care"
+  ]
+ },
+ {
+  "courseSlug": "foundations-nursing-2",
+  "moduleTitle": "The Observant Nurse",
+  "lessonTitle": "Patient Observation: The Nurse's Sixth Sense",
+  "description": "How often, what to look for and how to record it — the rhythm of safe observation.",
+  "tags": [
+   "observation",
+   "monitoring"
+  ]
+ },
+ {
+  "courseSlug": "foundations-nursing-2",
+  "moduleTitle": "The Observant Nurse",
+  "lessonTitle": "Spotting the Patient Who Is Getting Worse",
+  "description": "Early deterioration whispers — learn the changes that demand action before they shout.",
+  "tags": [
+   "deterioration",
+   "early warning"
+  ]
+ },
+ {
+  "courseSlug": "microbiology-2",
+  "moduleTitle": "Your Immune System",
+  "lessonTitle": "The Body's Defences: Barriers First",
+  "description": "Skin, mucous membranes and chemicals — the remarkable walls that stop most invaders daily.",
+  "tags": [
+   "immunity",
+   "barriers"
+  ]
+ },
+ {
+  "courseSlug": "microbiology-2",
+  "moduleTitle": "Your Immune System",
+  "lessonTitle": "Inside the Immune Response",
+  "description": "White cells, inflammation and antibodies — the fast and slow armies that fight infection.",
+  "tags": [
+   "immune response",
+   "antibodies"
+  ]
+ },
+ {
+  "courseSlug": "microbiology-2",
+  "moduleTitle": "Your Immune System",
+  "lessonTitle": "Active and Passive Immunity",
+  "description": "From vaccination to mother-to-baby antibodies — the two ways protection is gained and passed on.",
+  "tags": [
+   "immunity",
+   "vaccination"
+  ]
+ },
+ {
+  "courseSlug": "microbiology-2",
+  "moduleTitle": "Practical Microbiology",
+  "lessonTitle": "Collecting Specimens the Right Way",
+  "description": "The right container, the right technique, the right time — results are only as good as samples.",
+  "tags": [
+   "specimens",
+   "laboratory"
+  ]
+ },
+ {
+  "courseSlug": "microbiology-2",
+  "moduleTitle": "Practical Microbiology",
+  "lessonTitle": "Common Laboratory Tests: Stains, Cultures and More",
+  "description": "What actually happens to your swab — the lab tests that confirm what you suspect.",
+  "tags": [
+   "laboratory",
+   "culture"
+  ]
+ },
+ {
+  "courseSlug": "microbiology-2",
+  "moduleTitle": "Practical Microbiology",
+  "lessonTitle": "Interpreting Microbiology Results",
+  "description": "Reading reports wisely — growth, sensitivity and the art of matching results to the patient.",
+  "tags": [
+   "results",
+   "interpretation"
+  ]
+ },
+ {
+  "courseSlug": "microbiology-2",
+  "moduleTitle": "Microbes and Medicine",
+  "lessonTitle": "Antimicrobials and Resistance",
+  "description": "How antibiotics work, why they sometimes stop working, and what that means for your patients.",
+  "tags": [
+   "antibiotics",
+   "resistance"
+  ]
+ },
+ {
+  "courseSlug": "microbiology-2",
+  "moduleTitle": "Microbes and Medicine",
+  "lessonTitle": "Healthcare-Associated Infections",
+  "description": "The infections hospitals themselves cause — prevention as a daily professional obligation.",
+  "tags": [
+   "hai",
+   "prevention"
+  ]
+ }
+]

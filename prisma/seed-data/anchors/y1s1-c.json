@@ -1,0 +1,142 @@
+[
+ {
+  "courseSlug": "foundations-nursing-1",
+  "moduleTitle": "Vital Signs & Observation",
+  "lessonTitle": "Patient Observation: Noticing What Others Miss",
+  "description": "Train your eyes to see the quiet early signs — the small changes that come before the crisis.",
+  "tags": [
+   "observation",
+   "assessment"
+  ]
+ },
+ {
+  "courseSlug": "foundations-nursing-1",
+  "moduleTitle": "Vital Signs & Observation",
+  "lessonTitle": "Patient Safety: Protecting People at Their Most Vulnerable",
+  "description": "Falls, pressure injuries and errors — the everyday hazards you are there to prevent.",
+  "tags": [
+   "safety",
+   "risk"
+  ]
+ },
+ {
+  "courseSlug": "foundations-nursing-1",
+  "moduleTitle": "Safety, Hygiene & Comfort",
+  "lessonTitle": "Hygiene: Clean Care Is Safe Care",
+  "description": "Personal care with dignity — how hygiene protects patients and preserves their sense of self.",
+  "tags": [
+   "hygiene",
+   "infection prevention"
+  ]
+ },
+ {
+  "courseSlug": "foundations-nursing-1",
+  "moduleTitle": "Safety, Hygiene & Comfort",
+  "lessonTitle": "Patient Comfort: The Small Things That Heal",
+  "description": "Positioning, rest, privacy and presence — comfort is clinical, not just kind.",
+  "tags": [
+   "comfort",
+   "rest"
+  ]
+ },
+ {
+  "courseSlug": "foundations-nursing-1",
+  "moduleTitle": "Safety, Hygiene & Comfort",
+  "lessonTitle": "Infection Prevention: The Basics That Save Lives",
+  "description": "Hands, gloves and barriers — the simple habits that protect you, your patients and your family at home.",
+  "tags": [
+   "infection prevention",
+   "asepsis"
+  ]
+ },
+ {
+  "courseSlug": "perspectives-nursing-1",
+  "moduleTitle": "Where Nursing Came From",
+  "lessonTitle": "The History of Nursing: From Temples to Modern Wards",
+  "description": "The long human story of caring for the sick — and how it led to the profession you're joining.",
+  "tags": [
+   "history",
+   "nursing"
+  ]
+ },
+ {
+  "courseSlug": "perspectives-nursing-1",
+  "moduleTitle": "Where Nursing Came From",
+  "lessonTitle": "Florence Nightingale: More Than a Lamp",
+  "description": "The founder of modern nursing — statistician, reformer and the reason nursing became a science.",
+  "tags": [
+   "nightingale",
+   "history"
+  ]
+ },
+ {
+  "courseSlug": "perspectives-nursing-1",
+  "moduleTitle": "Where Nursing Came From",
+  "lessonTitle": "The Development of Professional Nursing",
+  "description": "From apprenticeship to degree — how nursing earned its place as a regulated, educated profession.",
+  "tags": [
+   "professional development",
+   "regulation"
+  ]
+ },
+ {
+  "courseSlug": "perspectives-nursing-1",
+  "moduleTitle": "Nursing as a Profession",
+  "lessonTitle": "Nursing Theories: Why They Actually Matter",
+  "description": "The thinkers who explained what nursing is for — and how their ideas quietly shape your daily work.",
+  "tags": [
+   "nursing theories",
+   "theory"
+  ]
+ },
+ {
+  "courseSlug": "perspectives-nursing-1",
+  "moduleTitle": "Nursing as a Profession",
+  "lessonTitle": "Nursing as a Profession: Standards and Accountability",
+  "description": "What makes an occupation a profession — education, ethics, regulation and public trust.",
+  "tags": [
+   "profession",
+   "accountability"
+  ]
+ },
+ {
+  "courseSlug": "perspectives-nursing-1",
+  "moduleTitle": "Nursing as a Profession",
+  "lessonTitle": "Professional Identity: Becoming the Nurse You Admire",
+  "description": "The values, habits and self-image you build now that will carry you through your career.",
+  "tags": [
+   "identity",
+   "professionalism"
+  ]
+ },
+ {
+  "courseSlug": "perspectives-nursing-1",
+  "moduleTitle": "Working as One Team",
+  "lessonTitle": "Teamwork: Healthcare Is a Team Sport",
+  "description": "How teams really work — roles, communication and the humility to speak up and listen.",
+  "tags": [
+   "teamwork",
+   "collaboration"
+  ]
+ },
+ {
+  "courseSlug": "perspectives-nursing-1",
+  "moduleTitle": "Working as One Team",
+  "lessonTitle": "Introduction to Ethics: Doing Right When It's Hard",
+  "description": "Your first map of right and wrong in care — autonomy, beneficence and the dilemmas that follow.",
+  "tags": [
+   "ethics",
+   "principles"
+  ]
+ },
+ {
+  "courseSlug": "health-promotion-1",
+  "moduleTitle": "Health & Its Determinants",
+  "lessonTitle": "Health and Illness: A Moving Scale, Not Two Boxes",
+  "description": "Health isn't yes or no — it's a continuum we all travel along, and nurses meet people everywhere on it.",
+  "tags": [
+   "health",
+   "illness"
+  ]
+ }
+]

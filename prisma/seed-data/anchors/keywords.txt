@@ -1,0 +1,1233 @@
+33 care
+28 assessment
+25 labour
+24 emergency
+22 practice
+21 communication
+21 health
+20 what
+20 community
+19 first
+19 birth
+19 newborn
+18 your
+18 when
+18 pregnancy
+17 referral
+16 that
+14 system
+13 documentation
+13 patient
+13 safety
+13 conditions
+12 planning
+12 infection
+11 nutrition
+11 nursing
+11 maternal
+11 with
+11 fetal
+10 body
+10 respiratory
+10 development
+10 postpartum
+9 introduction
+9 reproductive
+9 professional
+9 signs
+9 monitoring
+9 feeding
+9 antenatal
+9 review
+9 cases
+9 simulation
+8 midwife
+8 prevention
+8 teamwork
+8 baby
+8 pain
+8 pathology
+8 shock
+8 emergencies
+8 resuscitation
+8 maternity
+8 neonatal
+7 cardiovascular
+7 endocrine
+7 basics
+7 ethics
+7 principles
+7 working
+7 medication
+7 growth
+7 home
+7 leadership
+6 transport
+6 hormones
+6 safe
+6 comfort
+6 team
+6 response
+6 examination
+6 findings
+6 inflammation
+6 after
+6 medications
+6 haemorrhage
+6 recovery
+6 sepsis
+6 data
+6 postnatal
+6 preterm
+5 orientation
+5 from
+5 heart
+5 look
+5 nurse
+5 role
+5 observation
+5 risk
+5 hygiene
+5 history
+5 right
+5 education
+5 equipment
+5 conduct
+5 technique
+5 story
+5 common
+5 prioritization
+5 reflection
+5 disorders
+5 disease
+5 administration
+5 screening
+5 bleeding
+5 recognising
+5 trauma
+5 wellbeing
+5 learning
+5 caring
+5 partograph
+5 managing
+5 breastfeeding
+5 complications
+5 transfer
+5 midwifery
+5 complex
+5 sick
+5 research
+4 terminology
+4 cell
+4 movement
+4 life
+4 urinary
+4 profession
+4 therapeutic
+4 protecting
+4 infection prevention
+4 asepsis
+4 actually
+4 accountability
+4 decisions
+4 beyond
+4 choosing
+4 clinical
+4 placement
+4 vital signs
+4 vital
+4 escalation
+4 safely
+4 pelvis
+4 conception
+4 implantation
+4 physiology
+4 supporting
+4 healing
+4 immunity
+4 barriers
+4 specimens
+4 surveillance
+4 supervision
+4 before
+4 head
+4 normal
+4 through
+4 handover
+4 fever
+4 repair
+4 drug
+4 rights
+4 calculations
+4 warning
+4 loss
+4 ward
+4 drugs
+4 mental health
+4 preparedness
+4 family
+4 wrong
+4 fetus
+4 real
+4 danger
+4 management
+4 stage
+4 placenta
+4 children
+4 proposal
+3 cells
+3 everything
+3 things
+3 more
+3 living
+3 circulation
+3 blood
+3 fluid
+3 reproductive system
+3 implementation
+3 records
+3 others
+3 vulnerable
+3 clean
+3 small
+3 lives
+3 they
+3 identity
+3 professionalism
+3 becoming
+3 collaboration
+3 healthcare
+3 hard
+3 illness
+3 matters
+3 health education
+3 habits
+3 daily
+3 physical
+3 quiet
+3 routes
+3 finding
+3 until
+3 second
+3 positioning
+3 reporting
+3 anatomy
+3 picture
+3 patients
+3 hydration
+3 elimination
+3 laboratory
+3 collecting
+3 culture
+3 mentorship
+3 techniques
+3 foundations
+3 boundaries
+3 diabetes
+3 stop
+3 reading
+3 fluid balance
+3 support
+3 balance
+3 level
+3 triage
+3 disaster
+3 resilience
+3 assessing
+3 mental
+3 full
+3 overview
+3 discharge
+3 multiple
+3 diagnosis
+3 danger signs
+3 immediate
+3 uterine
+3 puerperium
+3 involution
+3 mother
+3 contraception
+3 hypertension
+3 compromise
+3 presentation
+3 pph
+3 keeping
+3 safeguarding
+3 home birth
+3 high
+3 severe
+3 eclampsia
+3 decision-making
+3 audit
+3 consent
+3 autonomy
+3 legal
+3 analysis
+3 project
+2 standard
+2 organization
+2 building
+2 four
+2 tissue
+2 families
+2 integumentary
+2 than
+2 warmth
+2 pump
+2 lungs
+2 kidneys
+2 filter
+2 network
+2 roles
+2 nursing process
+2 goals
+2 sense
+2 turning
+2 into
+2 evaluation
+2 work
+2 miss
+2 most
+2 save
+2 nightingale
+2 matter
+2 standards
+2 moving
+2 determinants
+2 teaching
+2 lifestyle
+2 build
+2 foundation
+2 medicine
+2 maternal health
+2 public health
+2 microorganisms
+2 bacteria
+2 pathogens
+2 viruses
+2 fungi
+2 parasites
+2 malaria
+2 transmission
+2 versus
+2 disinfection
+2 sterilization
+2 ppe
+2 behaviour
+2 hand hygiene
+2 assisting
+2 dressing
+2 aseptic
+2 speaking
+2 reproductive anatomy
+2 fertilization
+2 where
+2 embryo
+2 early
+2 genetics
+2 mobility
+2 dignity
+2 wound
+2 barrier
+2 immune response
+2 results
+2 antibiotics
+2 resistance
+2 antimicrobials
+2 infections
+2 outbreak
+2 days
+2 area
+2 limits
+2 help
+2 history taking
+2 taking
+2 while
+2 assess
+2 therapeutic communication
+2 writing
+2 protects
+2 reflecting
+2 gastrointestinal
+2 neurological
+2 perioperative
+2 during
+2 causes
+2 neoplasia
+2 systemic
+2 pharmacology
+2 pharmacokinetics
+2 journey
+2 pharmacodynamics
+2 path
+2 medication safety
+2 effects
+2 contraindications
+2 interactions
+2 nutrients
+2 carbohydrates
+2 proteins
+2 fats
+2 vitamins
+2 minerals
+2 iron
+2 malnutrition
+2 every
+2 priorities
+2 primary survey
+2 abc
+2 concepts
+2 burns
+2 fractures
+2 stabilising
+2 poisoning
+2 oral
+2 injections
+2 pressure
+2 catheterisation
+2 comorbidity
+2 complexity
+2 revisited
+2 oedema
+2 thrombosis
+2 embolism
+2 airways
+2 liver
+2 cascade
+2 analgesics
+2 antipyretics
+2 opening
+2 deciding
+2 needs
+2 coordination
+2 epidemiology
+2 chps
+2 stigma
+2 psychosis
+2 admission
+2 mdt
+2 multidisciplinary
+2 physiological
+2 changes
+2 visit
+2 routine
+2 fundal height
+2 fundal
+2 height
+2 fetal heart
+2 auscultation
+2 refer
+2 onset
+2 attitude
+2 engagement
+2 descent
+2 fhr
+2 normal birth
+2 third stage
+2 third
+2 contractions
+2 dilatation
+2 mechanisms
+2 watching
+2 lochia
+2 family planning
+2 blues
+2 fertility
+2 works
+2 methods
+2 counselling
+2 preconception
+2 pharmacovigilance
+2 goes
+2 leopold
+2 labouring
+2 practical
+2 hyperemesis
+2 anaemia
+2 pre-eclampsia
+2 ectopic
+2 miscarriage
+2 aph
+2 antepartum
+2 time
+2 fetal distress
+2 distress
+2 obstructed
+2 malpresentation
+2 malposition
+2 breech
+2 shoulder
+2 rupture
+2 retained placenta
+2 retained
+2 caesarean
+2 thermoregulation
+2 prematurity
+2 jaundice
+2 core
+2 childhood
+2 infant
+2 transition
+2 child
+2 approach
+2 immunization
+2 dehydration
+2 abuse
+2 protection
+2 domiciliary
+2 follow-up
+2 beliefs
+2 under
+2 reasoning
+2 expert
+2 differential
+2 integration
+2 conversation
+2 crisis
+2 timing
+2 collapse
+2 advanced
+2 outreach
+2 campaigns
+2 continuity
+2 pathways
+2 confidentiality
+2 ebp
+2 evidence
+2 quality
+2 design
+2 study
+2 data collection
+2 caseload
+2 cpd
+2 question
+2 integrity
+2 medical
+2 dyad
+2 styles
+2 leading
+2 improvement
+2 staffing
+2 decision
+2 strategy
+2 exam
+1 directional terms
+1 anatomical
+1 saying
+1 exactly
+1 mean
+1 body planes
+1 planes
+1 positions
+1 slices
+1 structure
+1 levels
+1 atom
+1 whole
+1 person
+1 organelles
+1 blocks
+1 cell membrane
+1 membrane
+1 gatekeeper
+1 osmosis
+1 diffusion
+1 move
+1 tissues
+1 histology
+1 skin
+1 wrapper
+1 skeleton
+1 bones
+1 skeletal
+1 frame
+1 muscles
+1 muscular
+1 pipes
+1 haematology
+1 respiration
+1 breath
+1 digestion
+1 digestive
+1 kitchen
+1 master
+1 nervous system
+1 neurons
+1 nervous
+1 control
+1 messengers
+1 negative feedback
+1 homeostasis
+1 negative
+1 feedback
+1 thermostat
+1 joining
+1 adpie
+1 process
+1 problem
+1 solving
+1 tool
+1 gathering
+1 clues
+1 care planning
+1 make
+1 interventions
+1 plans
+1 outcomes
+1 written
+1 didn
+1 happen
+1 noticing
+1 people
+1 their
+1 rest
+1 heal
+1 temples
+1 modern
+1 wards
+1 florence
+1 lamp
+1 professional development
+1 regulation
+1 nursing theories
+1 theory
+1 theories
+1 admire
+1 sport
+1 doing
+1 scale
+1 boxes
+1 inequality
+1 address
+1 sticks
+1 diet
+1 good
+1 physical activity
+1 exercise
+1 activity
+1 community health
+1 hospital
+1 walls
+1 invisible
+1 majority
+1 friends
+1 foes
+1 neighbours
+1 hijackers
+1 mycology
+1 kingdom
+1 uninvited
+1 guests
+1 pathogenicity
+1 happening
+1 microbes
+1 travel
+1 sterile technique
+1 sterile
+1 made
+1 clear
+1 weapon
+1 autoclave
+1 enough
+1 standard precautions
+1 precautions
+1 everyday
+1 armour
+1 clinical placement
+1 environment
+1 feet
+1 appearance
+1 hand
+1 skill
+1 saves
+1 practising
+1 nature
+1 bedside
+1 activities of daily living
+1 assistance
+1 activities
+1 personal
+1 protective
+1 aseptic technique
+1 sterile field
+1 escalating
+1 female anatomy
+1 female
+1 guided
+1 tour
+1 male anatomy
+1 male
+1 other
+1 half
+1 menstrual cycle
+1 ovulation
+1 menstrual
+1 cycle
+1 month
+1 acts
+1 chemical
+1 conductors
+1 begins
+1 dna
+1 instruction
+1 manual
+1 fetal development
+1 trimesters
+1 growing
+1 moving and handling
+1 dignified
+1 believing
+1 behind
+1 score
+1 wound care
+1 daily care
+1 sixth
+1 deterioration
+1 early warning
+1 spotting
+1 getting
+1 worse
+1 defences
+1 antibodies
+1 inside
+1 immune
+1 vaccination
+1 active
+1 passive
+1 tests
+1 stains
+1 cultures
+1 interpretation
+1 interpreting
+1 microbiology
+1 hai
+1 associated
+1 outbreaks
+1 stopped
+1 preceptors
+1 mentors
+1 shift work
+1 routines
+1 rhythm
+1 confident
+1 stick
+1 limitations
+1 knowing
+1 asking
+1 stethoscope
+1 chief complaint
+1 red flags
+1 chief
+1 complaint
+1 flags
+1 communicating
+1 general survey
+1 general
+1 survey
+1 impressions
+1 count
+1 physical assessment
+1 clinical judgment
+1 abnormal
+1 which
+1 should
+1 report
+1 immediately
+1 overcoming
+1 words
+1 self-awareness
+1 alarm
+1 nursing care
+1 adult
+1 pyrexia
+1 friend
+1 fifth
+1 sign
+1 breathing
+1 gets
+1 struggling
+1 renal
+1 struggles
+1 drift
+1 stroke
+1 disrupted
+1 surgery
+1 cell injury
+1 injures
+1 necrosis
+1 apoptosis
+1 reversible
+1 irreversible
+1 injury
+1 pathogenesis
+1 rebuilding
+1 cancer
+1 listening
+1 systemic disease
+1 pathophysiology
+1 processes
+1 language
+1 adme
+1 receptors
+1 does
+1 drug doses
+1 perfect
+1 adverse effects
+1 toxicity
+1 adverse
+1 must
+1 given
+1 polypharmacy
+1 hidden
+1 dangers
+1 shopping
+1 list
+1 energy
+1 quick
+1 fuel
+1 builders
+1 lipids
+1 misunderstood
+1 macronutrient
+1 deficiency
+1 amounts
+1 jobs
+1 construction
+1 crew
+1 water
+1 forgotten
+1 nutrient
+1 nutritional assessment
+1 nutritional
+1 scene safety
+1 scene
+1 become
+1 primary
+1 counts
+1 bls
+1 cpr
+1 basic
+1 silent
+1 killer
+1 wounds
+1 depth
+1 cool
+1 cover
+1 immobilisation
+1 broken
+1 toxins
+1 questions
+1 making
+1 medication administration
+1 topical
+1 giving
+1 wound dressing
+1 pressure ulcers
+1 skin care
+1 iv therapy
+1 cannulation
+1 intravenous
+1 therapy
+1 acute care
+1 acute
+1 sudden
+1 chronic care
+1 long-term
+1 chronic
+1 long
+1 haul
+1 several
+1 once
+1 types
+1 minutes
+1 chest
+1 moment
+1 infarction
+1 hypoperfusion
+1 cellular
+1 cardiac
+1 vessels
+1 kidney
+1 autoimmunity
+1 hypersensitivity
+1 attacks
+1 itself
+1 organ failure
+1 multi
+1 organ
+1 failure
+1 stewardship
+1 fighting
+1 invaders
+1 toolbox
+1 nsaids
+1 anti
+1 inflammatories
+1 antihypertensives
+1 controllers
+1 insulin
+1 balancing
+1 bronchodilators
+1 psychotropics
+1 psychotropic
+1 emergency drugs
+1 ones
+1 know
+1 cold
+1 special populations
+1 dosing
+1 special
+1 populations
+1 rapid assessment
+1 rapid
+1 means
+1 disaster response
+1 strikes
+1 chaos
+1 psychological first aid
+1 psychological
+1 disasters
+1 public
+1 detective
+1 patterns
+1 community care
+1 centred
+1 community assessment
+1 partnership
+1 workers
+1 attitudes
+1 ourselves
+1 psychiatric conditions
+1 psychiatric
+1 therapeutic relationship
+1 relationships
+1 depression
+1 anxiety
+1 anxious
+1 depressed
+1 schizophrenia
+1 understanding
+1 maternal mental health
+1 perinatal
+1 bookends
+1 shift
+1 passing
+1 baton
+1 workload
+1 organising
+1 reflective
+1 experience
+1 error
+1 safety culture
+1 without
+1 blame
+1 self-care
+1 yourself
+1 deep
+1 dive
+1 embryonic
+1 fetal circulation
+1 adaptation
+1 adaptations
+1 pregnancy changes
+1 adapts
+1 dating
+1 diagnosing
+1 minor disorders
+1 symptoms
+1 minor
+1 booking visit
+1 anc
+1 booking
+1 anc schedule
+1 schedule
+1 fetal movement
+1 kick count
+1 antenatal education
+1 birth plan
+1 definition
+1 tips
+1 signs of labour
+1 true
+1 false
+1 birth preparedness
+1 ready
+1 passage
+1 station
+1 maternal monitoring
+1 fetal monitoring
+1 progress
+1 page
+1 pain management
+1 first stage
+1 second stage
+1 golden hour
+1 golden
+1 hour
+1 engine
+1 cervix
+1 cervical
+1 cardinal movements
+1 cardinal
+1 movements
+1 uterus
+1 womb
+1 return
+1 postnatal assessment
+1 period
+1 postnatal education
+1 emotional
+1 affects
+1 options
+1 explained
+1 choices
+1 sti
+1 protect
+1 educate
+1 hiv
+1 pmtct
+1 adolescent health
+1 teen pregnancy
+1 adolescent
+1 healthiest
+1 start
+1 oxytocin
+1 abdominal exam
+1 abdominal
+1 manoeuvres
+1 mapping
+1 auscultating
+1 vaginal examination
+1 vaginal
+1 plotting
+1 labour support
+1 woman
+1 conducting
+1 sequence
+1 newborn care
+1 steps
+1 vomiting
+1 gravidarum
+1 morning
+1 sickness
+1 hypertensive
+1 gestational
+1 compassion
+1 multiple pregnancy
+1 twins
+1 twice
+1 praevia
+1 placental
+1 buying
+1 growth restriction
+1 lga
+1 problems
+1 criteria
+1 prolonged labour
+1 prolonged
+1 clock
+1 ticking
+1 obstructed labour
+1 block
+1 lead
+1 part
+1 turned
+1 bottom
+1 transverse lie
+1 transverse
+1 cord prolapse
+1 cord
+1 prolapse
+1 compression
+1 catastrophe
+1 recognise
+1 react
+1 perineal tear
+1 perineal
+1 repairing
+1 operative birth
+1 operative
+1 forceps
+1 ventouse
+1 newborn exam
+1 warm
+1 newborn safety
+1 sleep
+1 came
+1 lbw
+1 weight
+1 bilirubin
+1 yellow
+1 neonatal sepsis
+1 threat
+1 roadmap
+1 paediatrics
+1 different
+1 infants
+1 vaccines
+1 schedules
+1 childhood illness
+1 fluids
+1 pneumonia
+1 neglect
+1 home visit
+1 selection
+1 suitability
+1 following
+1 referring
+1 motherhood
+1 record
+1 antenatal clinic
+1 clinic
+1 hands
+1 labour ward
+1 women
+1 births
+1 clinical reasoning
+1 expertise
+1 thinking
+1 prioritisation
+1 urgent
+1 complex care
+1 consultation
+1 risk factors
+1 makes
+1 care pathway
+1 pathway
+1 follow
+1 fetal surveillance
+1 ctg
+1 surveilling
+1 obstetric
+1 obstruction
+1 emergency birth
+1 drills
+1 compromised
+1 judgment
+1 complete
+1 drill
+1 stabilisation
+1 transferring
+1 nicu
+1 very
+1 challenges
+1 babies
+1 family-centred care
+1 parents
+1 limits of care
+1 ethical
+1 community midwifery
+1 expanded
+1 equity
+1 reach
+1 health system
+1 within
+1 counting
+1 tba
+1 traditional
+1 attendants
+1 across
+1 settings
+1 rmc
+1 respectful
+1 informed
+1 privacy
+1 law
+1 negligence
+1 responsibilities
+1 shield
+1 based
+1 literature review
+1 search
+1 reviewing
+1 literature
+1 appraisal
+1 critique
+1 judging
+1 research methods
+1 study design
+1 rct
+1 sampling
+1 well
+1 statistics
+1 research ethics
+1 participants
+1 idea
+1 scope
+1 organisation
+1 solo
+1 registered
+1 defends
+1 interprofessional
+1 lifelong
+1 research question
+1 collection
+1 analysing
+1 write-up
+1 time management
+1 timeline
+1 dissemination
+1 disseminating
+1 better
+1 mothers
+1 morbidities
+1 complex cases
+1 collide
+1 high dependency
+1 critical care
+1 dependency
+1 complex newborn
+1 congenital
+1 newborns
+1 complicated
+1 bad news
+1 breaking
+1 difficult
+1 news
+1 bereavement
+1 supervising
+1 mentoring
+1 operations
+1 running
+1 unit
+1 manager
+1 view
+1 quality improvement
+1 resources
+1 resource
+1 career
+1 role model
+1 mentor
+1 model
+1 service design
+1 designing
+1 services
+1 preparation
+1 preparing
+1 planned
+1 readiness
+1 setup
+1 auditing
+1 licensing exam
+1 licensing
+1 revision
+1 memory
+1 spaced
+1 repetition
+1 smarter
+1 practice questions
+1 year 1
+1 year 2
+1 surgical
+1 year 3
+1 year 4
+1 mock exam
+1 mock
+1 exams
+1 exam day
+1 night
+1 simulate
+1 debrief
+1 debriefing
+1 happens
+1 case

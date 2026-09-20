@@ -1,0 +1,192 @@
+[
+ {
+  "courseSlug": "obstetric-emergencies",
+  "moduleTitle": "The Big Bleeds",
+  "lessonTitle": "Postpartum Haemorrhage: The Emergency Response",
+  "description": "The full team response to major bleeding — from uterine massage to theatre.",
+  "tags": [
+   "pph",
+   "emergency"
+  ]
+ },
+ {
+  "courseSlug": "obstetric-emergencies",
+  "moduleTitle": "The Big Bleeds",
+  "lessonTitle": "When Bleeding Won't Stop: The Retained Placenta",
+  "description": "The third stage that turns surgical — emptying the uterus and stopping the loss.",
+  "tags": [
+   "retained placenta",
+   "haemorrhage"
+  ]
+ },
+ {
+  "courseSlug": "obstetric-emergencies",
+  "moduleTitle": "Labour Emergencies",
+  "lessonTitle": "Obstructed Labour: The Emergency Response",
+  "description": "The blocked passage that kills — recognising and relieving obstruction without delay.",
+  "tags": [
+   "obstruction",
+   "emergency"
+  ]
+ },
+ {
+  "courseSlug": "obstetric-emergencies",
+  "moduleTitle": "Labour Emergencies",
+  "lessonTitle": "Emergency Birth: No Time to Transfer",
+  "description": "The breech or shoulder that delivers where it is — drills for the untransferable.",
+  "tags": [
+   "emergency birth",
+   "drills"
+  ]
+ },
+ {
+  "courseSlug": "obstetric-emergencies",
+  "moduleTitle": "The Newborn and the Referral",
+  "lessonTitle": "The Compromised Newborn at Birth",
+  "description": "The baby who needs resuscitation or more — advanced recognition and first minutes.",
+  "tags": [
+   "neonatal",
+   "compromise"
+  ]
+ },
+ {
+  "courseSlug": "obstetric-emergencies",
+  "moduleTitle": "The Newborn and the Referral",
+  "lessonTitle": "Advanced Referral Reasoning",
+  "description": "The judgment of when, where and how — referral as the expert skill it is.",
+  "tags": [
+   "referral",
+   "judgment"
+  ]
+ },
+ {
+  "courseSlug": "advanced-neonatal-care",
+  "moduleTitle": "The Compromised Newborn",
+  "lessonTitle": "Newborn Resuscitation: The Complete Drill",
+  "description": "From drying to intubation decisions — the full resuscitation sequence rehearsed to fluency.",
+  "tags": [
+   "resuscitation",
+   "newborn"
+  ]
+ },
+ {
+  "courseSlug": "advanced-neonatal-care",
+  "moduleTitle": "The Compromised Newborn",
+  "lessonTitle": "Stabilising the Sick Newborn",
+  "description": "Airway, breathing, circulation, temperature — the stabilisation that precedes everything.",
+  "tags": [
+   "stabilisation",
+   "newborn"
+  ]
+ },
+ {
+  "courseSlug": "advanced-neonatal-care",
+  "moduleTitle": "The Compromised Newborn",
+  "lessonTitle": "Transferring the Sick Newborn",
+  "description": "Kangaroo transfer or ambulance — the decisions and preparation for safe movement.",
+  "tags": [
+   "transfer",
+   "transport"
+  ]
+ },
+ {
+  "courseSlug": "advanced-neonatal-care",
+  "moduleTitle": "Caring for Preterm and Sick Babies",
+  "lessonTitle": "Caring for the Very Preterm Baby",
+  "description": "The tiniest patients and their biggest challenges — surfactant, feeding and development.",
+  "tags": [
+   "preterm",
+   "nicu"
+  ]
+ },
+ {
+  "courseSlug": "advanced-neonatal-care",
+  "moduleTitle": "Caring for Preterm and Sick Babies",
+  "lessonTitle": "Feeding Challenges in Sick Babies",
+  "description": "When feeding isn't simple — tubes, drip feeds and the slow road back to the breast.",
+  "tags": [
+   "feeding",
+   "preterm"
+  ]
+ },
+ {
+  "courseSlug": "advanced-neonatal-care",
+  "moduleTitle": "Caring for Preterm and Sick Babies",
+  "lessonTitle": "Neonatal Sepsis Revisited",
+  "description": "The infection that returns harder — advanced recognition and antibiotic reasoning.",
+  "tags": [
+   "sepsis",
+   "neonatal"
+  ]
+ },
+ {
+  "courseSlug": "advanced-neonatal-care",
+  "moduleTitle": "The Family in Neonatal Crisis",
+  "lessonTitle": "Caring for Parents in Neonatal Crisis",
+  "description": "The parents watching their baby fight — communication, involvement and hope.",
+  "tags": [
+   "family-centred care",
+   "support"
+  ]
+ },
+ {
+  "courseSlug": "advanced-neonatal-care",
+  "moduleTitle": "The Family in Neonatal Crisis",
+  "lessonTitle": "Ethical Decisions in Neonatal Care",
+  "description": "The hardest conversations — limits of care and decisions made with parents.",
+  "tags": [
+   "ethics",
+   "limits of care"
+  ]
+ },
+ {
+  "courseSlug": "community-midwifery",
+  "moduleTitle": "Midwifery in the Community",
+  "lessonTitle": "The Community Midwife's Expanded Role",
+  "description": "Beyond catching babies — the community midwife as clinician, leader and health system node.",
+  "tags": [
+   "community midwifery",
+   "role"
+  ]
+ },
+ {
+  "courseSlug": "community-midwifery",
+  "moduleTitle": "Midwifery in the Community",
+  "lessonTitle": "Outreach and the Hard-to-Reach Mother",
+  "description": "Finding the women that services miss — outreach that saves hidden lives.",
+  "tags": [
+   "outreach",
+   "equity"
+  ]
+ },
+ {
+  "courseSlug": "community-midwifery",
+  "moduleTitle": "Midwifery in the Community",
+  "lessonTitle": "Working Within the Health System",
+  "description": "CHPS, districts and referrals — the system you navigate and the gaps you fill.",
+  "tags": [
+   "health system",
+   "chps"
+  ]
+ },
+ {
+  "courseSlug": "community-midwifery",
+  "moduleTitle": "Population-Level Maternal Health",
+  "lessonTitle": "Counting What Matters: Community Data",
+  "description": "Registers, audits and dashboards — the numbers that reveal a community's mothers.",
+  "tags": [
+   "data",
+   "audit"
+  ]
+ },
+ {
+  "courseSlug": "community-midwifery",
+  "moduleTitle": "Population-Level Maternal Health",
+  "lessonTitle": "Working with Traditional Birth Attendants",
+  "description": "Partnership with the healers mothers trust — collaboration that makes birth safer.",
+  "tags": [
+   "tba",
+   "collaboration"
+  ]
+ }
+]

@@ -1,0 +1,192 @@
+[
+ {
+  "courseSlug": "pharmacology-2",
+  "moduleTitle": "Drug Classes You'll Meet Everywhere",
+  "lessonTitle": "Antipyretics and Anti-Inflammatories",
+  "description": "The drugs that cool fevers and calm inflammation — how they work and when to hold them.",
+  "tags": [
+   "antipyretics",
+   "nsaids"
+  ]
+ },
+ {
+  "courseSlug": "pharmacology-2",
+  "moduleTitle": "Drugs for the Body Systems",
+  "lessonTitle": "Cardiovascular Drugs: The Pressure Controllers",
+  "description": "Antihypertensives, diuretics and heart drugs — the agents you'll chart most often.",
+  "tags": [
+   "antihypertensives",
+   "cardiovascular"
+  ]
+ },
+ {
+  "courseSlug": "pharmacology-2",
+  "moduleTitle": "Drugs for the Body Systems",
+  "lessonTitle": "Endocrine Drugs: Balancing Hormones",
+  "description": "Insulin, metformin, thyroid replacement — medications that mimic life's own chemistry.",
+  "tags": [
+   "insulin",
+   "endocrine"
+  ]
+ },
+ {
+  "courseSlug": "pharmacology-2",
+  "moduleTitle": "Drugs for the Body Systems",
+  "lessonTitle": "Respiratory Drugs: Opening the Airways",
+  "description": "Bronchodilators and steroids — the inhalers and nebulisers that restore breath.",
+  "tags": [
+   "bronchodilators",
+   "respiratory"
+  ]
+ },
+ {
+  "courseSlug": "pharmacology-2",
+  "moduleTitle": "Special Situations",
+  "lessonTitle": "Psychotropic Medications: An Introduction",
+  "description": "Antidepressants, antipsychotics and anxiolytics — psychiatric pharmacy made approachable.",
+  "tags": [
+   "psychotropics",
+   "mental health"
+  ]
+ },
+ {
+  "courseSlug": "pharmacology-2",
+  "moduleTitle": "Special Situations",
+  "lessonTitle": "Emergency Drugs: The Ones to Know Cold",
+  "description": "Adrenaline, naloxone and the rapid-response drugs — actions and doses you can't fumble.",
+  "tags": [
+   "emergency drugs",
+   "resuscitation"
+  ]
+ },
+ {
+  "courseSlug": "pharmacology-2",
+  "moduleTitle": "Special Situations",
+  "lessonTitle": "Medications in Special Populations",
+  "description": "The old, the young, the pregnant — how age and condition change every dose.",
+  "tags": [
+   "special populations",
+   "dosing"
+  ]
+ },
+ {
+  "courseSlug": "emergency-disaster-nursing",
+  "moduleTitle": "Triage and Rapid Decisions",
+  "lessonTitle": "Triage: Deciding Who Needs Help First",
+  "description": "The ethical arithmetic of emergencies — sorting patients when demand outruns resources.",
+  "tags": [
+   "triage",
+   "prioritization"
+  ]
+ },
+ {
+  "courseSlug": "emergency-disaster-nursing",
+  "moduleTitle": "Triage and Rapid Decisions",
+  "lessonTitle": "Rapid Patient Assessment in Emergencies",
+  "description": "The sixty-second workup — gleaning maximum information in minimum time.",
+  "tags": [
+   "rapid assessment",
+   "emergency"
+  ]
+ },
+ {
+  "courseSlug": "emergency-disaster-nursing",
+  "moduleTitle": "Disaster Preparedness and Response",
+  "lessonTitle": "What Disaster Preparedness Actually Means",
+  "description": "Plans, drills and stockpiles — the unglamorous work that makes terrifying times survivable.",
+  "tags": [
+   "disaster",
+   "preparedness"
+  ]
+ },
+ {
+  "courseSlug": "emergency-disaster-nursing",
+  "moduleTitle": "Disaster Preparedness and Response",
+  "lessonTitle": "The Nurse's Role When Disaster Strikes",
+  "description": "Where you go, what you carry and who you answer to when the system activates.",
+  "tags": [
+   "disaster response",
+   "roles"
+  ]
+ },
+ {
+  "courseSlug": "emergency-disaster-nursing",
+  "moduleTitle": "Disaster Preparedness and Response",
+  "lessonTitle": "Communication and Coordination in Chaos",
+  "description": "Radios, runners and role clarity — keeping information alive when everything else fails.",
+  "tags": [
+   "communication",
+   "coordination"
+  ]
+ },
+ {
+  "courseSlug": "emergency-disaster-nursing",
+  "moduleTitle": "After the Emergency",
+  "lessonTitle": "Psychological First Aid",
+  "description": "Calm presence and practical support — the first mental health response after any crisis.",
+  "tags": [
+   "psychological first aid",
+   "mental health"
+  ]
+ },
+ {
+  "courseSlug": "emergency-disaster-nursing",
+  "moduleTitle": "After the Emergency",
+  "lessonTitle": "Recovery and Resilience After Disasters",
+  "description": "Picking up the pieces — community recovery and protecting your own wellbeing too.",
+  "tags": [
+   "recovery",
+   "resilience"
+  ]
+ },
+ {
+  "courseSlug": "public-health-nursing",
+  "moduleTitle": "Public Health Foundations",
+  "lessonTitle": "What Is Public Health?",
+  "description": "From clean water to health policy — the discipline that prevents disease on a population scale.",
+  "tags": [
+   "public health",
+   "foundations"
+  ]
+ },
+ {
+  "courseSlug": "public-health-nursing",
+  "moduleTitle": "Public Health Foundations",
+  "lessonTitle": "Disease Prevention at Community Level",
+  "description": "Prevention beyond the individual — the community programmes that stop outbreaks before they start.",
+  "tags": [
+   "prevention",
+   "community"
+  ]
+ },
+ {
+  "courseSlug": "public-health-nursing",
+  "moduleTitle": "Public Health Foundations",
+  "lessonTitle": "Maternal and Community Health Foundations",
+  "description": "Where mothers' wellbeing meets community design — the foundation of your future speciality.",
+  "tags": [
+   "maternal health",
+   "community"
+  ]
+ },
+ {
+  "courseSlug": "public-health-nursing",
+  "moduleTitle": "Epidemiology Basics",
+  "lessonTitle": "Epidemiology: The Detective Work of Health",
+  "description": "Outbreaks investigated, rates compared, causes hunted — how we know what makes populations sick.",
+  "tags": [
+   "epidemiology",
+   "outbreak"
+  ]
+ },
+ {
+  "courseSlug": "public-health-nursing",
+  "moduleTitle": "Epidemiology Basics",
+  "lessonTitle": "Surveillance and Disease Patterns",
+  "description": "Counting illness to see patterns — the data systems that guide public health action.",
+  "tags": [
+   "surveillance",
+   "data"
+  ]
+ }
+]

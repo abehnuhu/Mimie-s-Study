@@ -1,0 +1,143 @@
+[
+ {
+  "courseSlug": "anatomy-physiology-1",
+  "moduleTitle": "The Language of the Body",
+  "lessonTitle": "Anatomical Terminology: Saying Exactly What You Mean",
+  "description": "Anterior, posterior, medial, distal — the precise little words that keep every description clear.",
+  "tags": [
+   "terminology",
+   "directional terms"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-1",
+  "moduleTitle": "The Language of the Body",
+  "lessonTitle": "Body Planes and Positions: The Body's Standard Slices",
+  "description": "Sagittal, frontal and transverse — the imaginary planes that let us locate anything in the body.",
+  "tags": [
+   "body planes",
+   "orientation"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-1",
+  "moduleTitle": "The Language of the Body",
+  "lessonTitle": "Levels of Organization: From Atom to Whole Person",
+  "description": "A tour of how the body builds itself up from atoms to cells to tissues to the whole person you'll care for.",
+  "tags": [
+   "organization",
+   "structure"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-1",
+  "moduleTitle": "Cells, Tissues & Transport",
+  "lessonTitle": "Cells: The Building Blocks of Everything",
+  "description": "Meet the cell — its organelles, its busy inner life and why understanding it explains so much disease.",
+  "tags": [
+   "cells",
+   "organelles"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-1",
+  "moduleTitle": "Cells, Tissues & Transport",
+  "lessonTitle": "The Cell Membrane: The Gatekeeper",
+  "description": "The membrane decides what enters and leaves — a selective border that keeps every cell alive.",
+  "tags": [
+   "cell membrane",
+   "transport"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-1",
+  "moduleTitle": "Cells, Tissues & Transport",
+  "lessonTitle": "Cell Transport: How Things Move In and Out",
+  "description": "Diffusion, osmosis and active transport — the quiet movement that keeps every cell in balance.",
+  "tags": [
+   "transport",
+   "osmosis",
+   "diffusion"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-1",
+  "moduleTitle": "Cells, Tissues & Transport",
+  "lessonTitle": "The Four Tissue Families",
+  "description": "Epithelial, connective, muscle and nervous — the four families that build every organ you'll ever assess.",
+  "tags": [
+   "tissues",
+   "histology"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-1",
+  "moduleTitle": "Body Systems Overview",
+  "lessonTitle": "The Integumentary System: More Than a Wrapper",
+  "description": "Skin, hair and nails — the body's largest organ and its first line of defence.",
+  "tags": [
+   "skin",
+   "integumentary"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-1",
+  "moduleTitle": "Body Systems Overview",
+  "lessonTitle": "The Skeletal System: A Living Frame",
+  "description": "Bones do far more than hold you up — they make blood, store minerals and heal themselves.",
+  "tags": [
+   "skeleton",
+   "bones"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-1",
+  "moduleTitle": "Body Systems Overview",
+  "lessonTitle": "The Muscular System: Movement and Warmth",
+  "description": "Muscles move you, hold you upright and generate the heat that keeps your temperature stable.",
+  "tags": [
+   "muscles",
+   "movement"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-1",
+  "moduleTitle": "Body Systems Overview",
+  "lessonTitle": "The Cardiovascular System: The Pump and the Pipes",
+  "description": "Follow the blood through heart and vessels — the delivery network every organ depends on.",
+  "tags": [
+   "heart",
+   "circulation"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-1",
+  "moduleTitle": "Body Systems Overview",
+  "lessonTitle": "Blood: The Living Transport Fluid",
+  "description": "Plasma, red cells, white cells and platelets — the fluid that carries oxygen, defence and repair.",
+  "tags": [
+   "blood",
+   "haematology"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-1",
+  "moduleTitle": "Body Systems Overview",
+  "lessonTitle": "The Respiratory System: Breath of Life",
+  "description": "From nose to alveoli — how air becomes oxygen for the blood and waste leaves as breath.",
+  "tags": [
+   "respiration",
+   "lungs"
+  ]
+ },
+ {
+  "courseSlug": "anatomy-physiology-1",
+  "moduleTitle": "Body Systems Overview",
+  "lessonTitle": "The Digestive System: The Body's Kitchen",
+  "description": "Follow food from mouth to absorption — the remarkable tube that turns meals into fuel.",
+  "tags": [
+   "digestion",
+   "nutrition"
+  ]
+ }
+]

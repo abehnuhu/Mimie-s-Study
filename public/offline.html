@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mimie's Study — Offline</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      font-family: Georgia, 'Times New Roman', serif;
+      background: radial-gradient(900px 500px at 80% -10%, #f0e6f6 0%, transparent 60%),
+                  radial-gradient(800px 400px at -10% 30%, #f9e3ea 0%, transparent 55%), #faf5f0;
+      color: #3d2b28; text-align: center; padding: 24px;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: #241f2b; color: #ece4e6; }
+    }
+    .card {
+      max-width: 420px; padding: 40px 32px; border-radius: 24px;
+      background: rgba(255,255,255,0.7); border: 1px solid rgba(212,115,140,0.25);
+      box-shadow: 0 24px 48px -24px rgba(109,58,92,0.25);
+    }
+    @media (prefers-color-scheme: dark) {
+      .card { background: rgba(41,34,49,0.8); border-color: rgba(212,115,140,0.3); }
+    }
+    h1 { font-size: 26px; margin: 12px 0 8px; }
+    p { font-size: 15px; line-height: 1.6; opacity: 0.85; margin: 0 0 20px; }
+    .heart { font-size: 40px; }
+    button {
+      font-family: inherit; font-size: 15px; padding: 12px 28px; border-radius: 999px; border: 0;
+      background: linear-gradient(120deg, #d4738c, #6d3a5c); color: #fff; cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="heart">💗</div>
+    <h1>You're offline for a moment</h1>
+    <p>Your progress is safe — it lives on the server and nothing was lost.<br/>Reconnect and we'll pick up right where you left off.</p>
+    <button onclick="location.reload()">Try again</button>
+  </div>
+</body>
+</html>

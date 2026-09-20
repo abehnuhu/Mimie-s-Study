@@ -1,0 +1,162 @@
+[
+ {
+  "courseSlug": "abnormal-labour",
+  "moduleTitle": "When Labour Leaves the Script",
+  "lessonTitle": "Malpresentation: When the Lead Part Isn't the Head",
+  "description": "Brow, face and shoulder-first — presentations that change everything about the birth.",
+  "tags": [
+   "malpresentation",
+   "assessment"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-labour",
+  "moduleTitle": "When Labour Leaves the Script",
+  "lessonTitle": "Malposition: The Head That Turned Wrong",
+  "description": "Occiput posterior and its friends — positions that lengthen labour and test the mother.",
+  "tags": [
+   "malposition",
+   "labour"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-labour",
+  "moduleTitle": "Unusual Presentations",
+  "lessonTitle": "Breech: The Bottom-First Baby",
+  "description": "The breech journey and its risks — the vaginal breech debate and the referral question.",
+  "tags": [
+   "breech",
+   "presentation"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-labour",
+  "moduleTitle": "Unusual Presentations",
+  "lessonTitle": "Shoulder Presentation: The Transverse Lie",
+  "description": "The baby lying sideways — why this presentation cannot be born vaginally.",
+  "tags": [
+   "transverse lie",
+   "shoulder"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-labour",
+  "moduleTitle": "Unusual Presentations",
+  "lessonTitle": "Cord Complications: Prolapse and Compression",
+  "description": "The emergency of the fallen cord — recognition, knee-chest position and rushing to theatre.",
+  "tags": [
+   "cord prolapse",
+   "emergency"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-labour",
+  "moduleTitle": "Mother and Baby in Danger",
+  "lessonTitle": "Fetal Distress: Reading the Warning Signs",
+  "description": "Meconium, abnormal heart rates and the decisions they force — hearing the baby's distress.",
+  "tags": [
+   "fetal distress",
+   "fhr"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-labour",
+  "moduleTitle": "Mother and Baby in Danger",
+  "lessonTitle": "Uterine Rupture: The Catastrophe",
+  "description": "The scarred uterus that tears — the signs and the minutes that decide survival.",
+  "tags": [
+   "rupture",
+   "emergency"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-labour",
+  "moduleTitle": "Emergencies After Birth",
+  "lessonTitle": "Postpartum Haemorrhage: Recognise and React",
+  "description": "The world's biggest maternal killer — the tone, trauma, tissue, clot framework in action.",
+  "tags": [
+   "pph",
+   "emergency"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-labour",
+  "moduleTitle": "Emergencies After Birth",
+  "lessonTitle": "Retained Placenta: The Third Stage That Won't End",
+  "description": "When the placenta stays — the emptying options and the risks of each.",
+  "tags": [
+   "retained placenta",
+   "third stage"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-labour",
+  "moduleTitle": "Emergencies After Birth",
+  "lessonTitle": "Perineal Trauma: Assessing and Repairing",
+  "description": "Degrees of tears and the repair decisions — caring for the aftermath of birth.",
+  "tags": [
+   "perineal tear",
+   "repair"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-labour",
+  "moduleTitle": "Assisted and Emergency Birth",
+  "lessonTitle": "Operative Birth: Forceps, Ventouse and Caesarean",
+  "description": "The instruments and operations that end labour — what each means for mother and baby.",
+  "tags": [
+   "operative birth",
+   "caesarean"
+  ]
+ },
+ {
+  "courseSlug": "abnormal-labour",
+  "moduleTitle": "Assisted and Emergency Birth",
+  "lessonTitle": "Emergency Referral in Labour",
+  "description": "Pack, call, stabilise, move — the referral choreography that saves complicated births.",
+  "tags": [
+   "referral",
+   "transport"
+  ]
+ },
+ {
+  "courseSlug": "neonatal-nursing",
+  "moduleTitle": "The First Minutes",
+  "lessonTitle": "The Newborn Examination: Head to Toe",
+  "description": "The systematic first-day examination — confirming the normal and catching the not.",
+  "tags": [
+   "newborn exam",
+   "assessment"
+  ]
+ },
+ {
+  "courseSlug": "neonatal-nursing",
+  "moduleTitle": "The First Minutes",
+  "lessonTitle": "Thermoregulation: Keeping the Baby Warm",
+  "description": "Why babies lose heat fast and how you prevent it — warm chains that save lives.",
+  "tags": [
+   "thermoregulation",
+   "warmth"
+  ]
+ },
+ {
+  "courseSlug": "neonatal-nursing",
+  "moduleTitle": "Feeding & Care",
+  "lessonTitle": "Breastfeeding the Newborn",
+  "description": "First feeds, attachment and the support that makes breastfeeding work.",
+  "tags": [
+   "breastfeeding",
+   "feeding"
+  ]
+ },
+ {
+  "courseSlug": "neonatal-nursing",
+  "moduleTitle": "Feeding & Care",
+  "lessonTitle": "Keeping the Newborn Safe",
+  "description": "Sleep, handling, hygiene and hazards — the safety teaching every new parent needs.",
+  "tags": [
+   "newborn safety",
+   "sleep"
+  ]
+ }
+]

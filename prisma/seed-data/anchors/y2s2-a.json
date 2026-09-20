@@ -1,0 +1,192 @@
+[
+ {
+  "courseSlug": "medical-surgical-nursing-2",
+  "moduleTitle": "Acute and Chronic Care",
+  "lessonTitle": "Common Acute Conditions: Sudden Illness on the Ward",
+  "description": "The acute presentations you'll meet everywhere — rapid assessment and nursing response.",
+  "tags": [
+   "acute care",
+   "assessment"
+  ]
+ },
+ {
+  "courseSlug": "medical-surgical-nursing-2",
+  "moduleTitle": "Acute and Chronic Care",
+  "lessonTitle": "Chronic Conditions: Nursing for the Long Haul",
+  "description": "Diabetes, hypertension and their companions — care that helps people live well, not just survive.",
+  "tags": [
+   "chronic care",
+   "long-term"
+  ]
+ },
+ {
+  "courseSlug": "medical-surgical-nursing-2",
+  "moduleTitle": "Acute and Chronic Care",
+  "lessonTitle": "The Patient with Several Conditions at Once",
+  "description": "When illnesses interact — the reasoning that keeps multiple problems from becoming one crisis.",
+  "tags": [
+   "comorbidity",
+   "complexity"
+  ]
+ },
+ {
+  "courseSlug": "medical-surgical-nursing-2",
+  "moduleTitle": "Emergencies You Must Recognise",
+  "lessonTitle": "Shock Revisited: Types and Response",
+  "description": "Hypovolaemic, septic, cardiogenic, anaphylactic — the patterns and the response each demands.",
+  "tags": [
+   "shock",
+   "emergencies"
+  ]
+ },
+ {
+  "courseSlug": "medical-surgical-nursing-2",
+  "moduleTitle": "Emergencies You Must Recognise",
+  "lessonTitle": "Respiratory Emergencies: Minutes Matter",
+  "description": "Severe asthma, pulmonary oedema and obstruction — recognising and acting fast.",
+  "tags": [
+   "respiratory",
+   "emergency"
+  ]
+ },
+ {
+  "courseSlug": "medical-surgical-nursing-2",
+  "moduleTitle": "Emergencies You Must Recognise",
+  "lessonTitle": "Cardiovascular Emergencies: The Chest Pain Moment",
+  "description": "Chest pain triage and response — what it might be and what you do first.",
+  "tags": [
+   "cardiovascular",
+   "emergency"
+  ]
+ },
+ {
+  "courseSlug": "medical-surgical-nursing-2",
+  "moduleTitle": "Trauma Care",
+  "lessonTitle": "Trauma: The First Priorities",
+  "description": "Assessing the multiply-injured patient — the order of threats that decides survival.",
+  "tags": [
+   "trauma",
+   "primary survey"
+  ]
+ },
+ {
+  "courseSlug": "medical-surgical-nursing-2",
+  "moduleTitle": "Trauma Care",
+  "lessonTitle": "Nursing the Trauma Patient Through Recovery",
+  "description": "From resus bay to ward — the long recovery and the complications on the way.",
+  "tags": [
+   "trauma",
+   "recovery"
+  ]
+ },
+ {
+  "courseSlug": "pathology-2",
+  "moduleTitle": "Pathology of Circulation",
+  "lessonTitle": "Fluid Balance and Oedema",
+  "description": "Why fluid leaks and pools — the mechanisms behind swollen legs and wet lungs.",
+  "tags": [
+   "oedema",
+   "fluid balance"
+  ]
+ },
+ {
+  "courseSlug": "pathology-2",
+  "moduleTitle": "Pathology of Circulation",
+  "lessonTitle": "Thrombosis, Embolism and Infarction",
+  "description": "Clots that form, travel and kill tissue — the vascular cascade behind strokes and infarcts.",
+  "tags": [
+   "thrombosis",
+   "embolism"
+  ]
+ },
+ {
+  "courseSlug": "pathology-2",
+  "moduleTitle": "Pathology of Circulation",
+  "lessonTitle": "Shock at the Cellular Level",
+  "description": "What hypoperfusion does to cells and organs — the pathology behind the emergency.",
+  "tags": [
+   "shock",
+   "hypoperfusion"
+  ]
+ },
+ {
+  "courseSlug": "pathology-2",
+  "moduleTitle": "Organ System Pathology",
+  "lessonTitle": "Pathology of the Heart and Vessels",
+  "description": "Atherosclerosis, ischaemia and failure — the disease pathways of the cardiovascular system.",
+  "tags": [
+   "cardiac",
+   "pathology"
+  ]
+ },
+ {
+  "courseSlug": "pathology-2",
+  "moduleTitle": "Organ System Pathology",
+  "lessonTitle": "Pathology of the Lungs and Airways",
+  "description": "From pneumonia to fibrosis — what disease looks like in respiratory tissue.",
+  "tags": [
+   "respiratory",
+   "pathology"
+  ]
+ },
+ {
+  "courseSlug": "pathology-2",
+  "moduleTitle": "Organ System Pathology",
+  "lessonTitle": "Pathology of the Liver, Kidneys and Beyond",
+  "description": "Cirrhosis, nephritis and organ failure — the abdominal organs' disease stories.",
+  "tags": [
+   "liver",
+   "kidney"
+  ]
+ },
+ {
+  "courseSlug": "pathology-2",
+  "moduleTitle": "Systemic Disease",
+  "lessonTitle": "Sepsis and Systemic Inflammation",
+  "description": "When infection becomes whole-body disease — the biology of the sickest patients.",
+  "tags": [
+   "sepsis",
+   "inflammation"
+  ]
+ },
+ {
+  "courseSlug": "pathology-2",
+  "moduleTitle": "Systemic Disease",
+  "lessonTitle": "When Immunity Attacks Itself",
+  "description": "Autoimmune and hypersensitivity disease — friendly fire explained at the tissue level.",
+  "tags": [
+   "autoimmunity",
+   "hypersensitivity"
+  ]
+ },
+ {
+  "courseSlug": "pathology-2",
+  "moduleTitle": "Systemic Disease",
+  "lessonTitle": "Multi-Organ Failure: The Cascade",
+  "description": "How one failing organ drags the others — the physiology you need before the ICU.",
+  "tags": [
+   "organ failure",
+   "cascade"
+  ]
+ },
+ {
+  "courseSlug": "pharmacology-2",
+  "moduleTitle": "Drug Classes You'll Meet Everywhere",
+  "lessonTitle": "Antimicrobials: Fighting the Invaders",
+  "description": "The major antibiotic families, their targets and the stewardship that keeps them working.",
+  "tags": [
+   "antibiotics",
+   "stewardship"
+  ]
+ },
+ {
+  "courseSlug": "pharmacology-2",
+  "moduleTitle": "Drug Classes You'll Meet Everywhere",
+  "lessonTitle": "Analgesics: The Pain Toolbox",
+  "description": "Paracetamol through opioids — matching pain relief strength to pain severity safely.",
+  "tags": [
+   "analgesics",
+   "pain"
+  ]
+ }
+]

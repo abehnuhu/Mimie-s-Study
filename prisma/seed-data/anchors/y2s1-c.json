@@ -1,0 +1,182 @@
+[
+ {
+  "courseSlug": "nutrition-dietetics",
+  "moduleTitle": "When Nutrition Fails",
+  "lessonTitle": "Nutritional Assessment: Screening Every Patient",
+  "description": "Tools and observations to catch nutritional risk early — and act on it.",
+  "tags": [
+   "nutritional assessment",
+   "screening"
+  ]
+ },
+ {
+  "courseSlug": "first-aid",
+  "moduleTitle": "Before You Touch Anyone",
+  "lessonTitle": "Scene Safety: Don't Become the Second Patient",
+  "description": "The pause that protects — checking for danger before you help anyone at all.",
+  "tags": [
+   "scene safety",
+   "priorities"
+  ]
+ },
+ {
+  "courseSlug": "first-aid",
+  "moduleTitle": "Before You Touch Anyone",
+  "lessonTitle": "Primary Assessment: The First Look That Counts",
+  "description": "A systematic first survey — airway, breathing, circulation and the obvious catastrophes.",
+  "tags": [
+   "primary survey",
+   "abc"
+  ]
+ },
+ {
+  "courseSlug": "first-aid",
+  "moduleTitle": "Life-Saving Basics",
+  "lessonTitle": "Basic Life Support Concepts",
+  "description": "The reasoning behind CPR — compressions, breaths and the chain of survival.",
+  "tags": [
+   "bls",
+   "cpr"
+  ]
+ },
+ {
+  "courseSlug": "first-aid",
+  "moduleTitle": "Life-Saving Basics",
+  "lessonTitle": "Bleeding: Stop the Loss",
+  "description": "Direct pressure, elevation and bandaging — controlling blood loss with calm hands.",
+  "tags": [
+   "bleeding",
+   "haemorrhage"
+  ]
+ },
+ {
+  "courseSlug": "first-aid",
+  "moduleTitle": "Life-Saving Basics",
+  "lessonTitle": "Shock: The Silent Killer",
+  "description": "Why shock kills quietly — recognising it and what to do while help comes.",
+  "tags": [
+   "shock",
+   "circulation"
+  ]
+ },
+ {
+  "courseSlug": "first-aid",
+  "moduleTitle": "Common Emergencies",
+  "lessonTitle": "Burns: Depth, Cool and Cover",
+  "description": "Assessing severity and the first aid that limits damage — cool thinking for hot injuries.",
+  "tags": [
+   "burns",
+   "wounds"
+  ]
+ },
+ {
+  "courseSlug": "first-aid",
+  "moduleTitle": "Common Emergencies",
+  "lessonTitle": "Fractures: Stabilising What's Broken",
+  "description": "Suspecting, immobilising and comforting — moving injured bones without more harm.",
+  "tags": [
+   "fractures",
+   "immobilisation"
+  ]
+ },
+ {
+  "courseSlug": "first-aid",
+  "moduleTitle": "Common Emergencies",
+  "lessonTitle": "Poisoning: The First Questions",
+  "description": "What was it, when, how much — the response that buys time and guides treatment.",
+  "tags": [
+   "poisoning",
+   "toxins"
+  ]
+ },
+ {
+  "courseSlug": "first-aid",
+  "moduleTitle": "Common Emergencies",
+  "lessonTitle": "Recognising Emergencies and Making the Referral",
+  "description": "The first aid endgame — recognising limits and getting patients to definitive care fast.",
+  "tags": [
+   "referral",
+   "emergencies"
+  ]
+ },
+ {
+  "courseSlug": "clinical-skills-2",
+  "moduleTitle": "Medication Skills",
+  "lessonTitle": "Oral and Topical Medication Administration",
+  "description": "Giving tablets, liquids and creams correctly — technique, checks and teaching patients.",
+  "tags": [
+   "medication administration",
+   "oral"
+  ]
+ },
+ {
+  "courseSlug": "clinical-skills-2",
+  "moduleTitle": "Medication Skills",
+  "lessonTitle": "Giving Injections Safely",
+  "description": "IM, SC and ID injections — sites, angles, aspiration and the confidence of technique.",
+  "tags": [
+   "injections",
+   "technique"
+  ]
+ },
+ {
+  "courseSlug": "clinical-skills-2",
+  "moduleTitle": "Medication Skills",
+  "lessonTitle": "Medication Calculations for the Ward",
+  "description": "Real ward calculations under time pressure — the practice that keeps you safe at 3am.",
+  "tags": [
+   "calculations",
+   "practice"
+  ]
+ },
+ {
+  "courseSlug": "clinical-skills-2",
+  "moduleTitle": "Wound and Skin Skills",
+  "lessonTitle": "Aseptic Wound Dressing",
+  "description": "Changing dressings with a sterile field and a steady hand — assess, clean, cover, record.",
+  "tags": [
+   "wound dressing",
+   "asepsis"
+  ]
+ },
+ {
+  "courseSlug": "clinical-skills-2",
+  "moduleTitle": "Wound and Skin Skills",
+  "lessonTitle": "Pressure Area Care",
+  "description": "Repositioning, skin checks and support surfaces — preventing the ulcers that never had to happen.",
+  "tags": [
+   "pressure ulcers",
+   "skin care"
+  ]
+ },
+ {
+  "courseSlug": "clinical-skills-2",
+  "moduleTitle": "Monitoring and Elimination Skills",
+  "lessonTitle": "Catheterisation: Comfort and Safety",
+  "description": "Inserting and caring for urinary catheters — the technique plus the dignity conversation.",
+  "tags": [
+   "catheterisation",
+   "elimination"
+  ]
+ },
+ {
+  "courseSlug": "clinical-skills-2",
+  "moduleTitle": "Monitoring and Elimination Skills",
+  "lessonTitle": "Intravenous Therapy Basics",
+  "description": "Cannulation concepts and safe infusions — the line between helpful and harmful.",
+  "tags": [
+   "iv therapy",
+   "cannulation"
+  ]
+ },
+ {
+  "courseSlug": "clinical-skills-2",
+  "moduleTitle": "Monitoring and Elimination Skills",
+  "lessonTitle": "Fluid Balance Monitoring",
+  "description": "Charts, intake and output and the stories they tell about the kidneys and heart.",
+  "tags": [
+   "fluid balance",
+   "monitoring"
+  ]
+ }
+]

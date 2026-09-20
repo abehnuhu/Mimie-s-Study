@@ -1,0 +1,162 @@
+[
+ {
+  "courseSlug": "neonatal-nursing",
+  "moduleTitle": "The At-Risk Newborn",
+  "lessonTitle": "Neonatal Danger Signs",
+  "description": "The signs in a baby that mean hospital now — the list every caregiver must learn.",
+  "tags": [
+   "danger signs",
+   "newborn"
+  ]
+ },
+ {
+  "courseSlug": "neonatal-nursing",
+  "moduleTitle": "The At-Risk Newborn",
+  "lessonTitle": "Prematurity: The Baby Who Came Early",
+  "description": "The challenges of the preterm baby — what immaturity means for every system.",
+  "tags": [
+   "prematurity",
+   "preterm"
+  ]
+ },
+ {
+  "courseSlug": "neonatal-nursing",
+  "moduleTitle": "The At-Risk Newborn",
+  "lessonTitle": "Low Birth Weight: Small but Vulnerable",
+  "description": "The low birth weight baby's risks and needs — feeding, warming and watching.",
+  "tags": [
+   "lbw",
+   "growth"
+  ]
+ },
+ {
+  "courseSlug": "neonatal-nursing",
+  "moduleTitle": "The At-Risk Newborn",
+  "lessonTitle": "Neonatal Jaundice: The Yellow Warning",
+  "description": "Why babies turn yellow — physiological versus pathological and the bilirubin that harms.",
+  "tags": [
+   "jaundice",
+   "bilirubin"
+  ]
+ },
+ {
+  "courseSlug": "neonatal-nursing",
+  "moduleTitle": "The At-Risk Newborn",
+  "lessonTitle": "Neonatal Infection: The Quiet Threat",
+  "description": "Sepsis in the newest patients — subtle signs and swift treatment.",
+  "tags": [
+   "neonatal sepsis",
+   "infection"
+  ]
+ },
+ {
+  "courseSlug": "neonatal-nursing",
+  "moduleTitle": "The At-Risk Newborn",
+  "lessonTitle": "Newborn Resuscitation: Core Concepts",
+  "description": "The first golden minute and the airway-breathing sequence every birth attendant must own.",
+  "tags": [
+   "resuscitation",
+   "abc"
+  ]
+ },
+ {
+  "courseSlug": "paediatric-nursing",
+  "moduleTitle": "The Growing Child",
+  "lessonTitle": "Growth and Development: The Roadmap of Childhood",
+  "description": "Milestones and red flags — how children should grow and when to worry.",
+  "tags": [
+   "growth",
+   "development"
+  ]
+ },
+ {
+  "courseSlug": "paediatric-nursing",
+  "moduleTitle": "The Growing Child",
+  "lessonTitle": "The Newborn-to-Infant Transition",
+  "description": "The dramatic changes of the first weeks — from newborn reflexes to feeding patterns.",
+  "tags": [
+   "infant",
+   "transition"
+  ]
+ },
+ {
+  "courseSlug": "paediatric-nursing",
+  "moduleTitle": "The Growing Child",
+  "lessonTitle": "Child Assessment: A Different Approach",
+  "description": "You can't ask a baby where it hurts — assessing children takes observation and clever tricks.",
+  "tags": [
+   "assessment",
+   "paediatrics"
+  ]
+ },
+ {
+  "courseSlug": "paediatric-nursing",
+  "moduleTitle": "Feeding and Protecting",
+  "lessonTitle": "Nutrition for Infants and Children",
+  "description": "From exclusive breastfeeding to family food — the feeding journey of early childhood.",
+  "tags": [
+   "nutrition",
+   "feeding"
+  ]
+ },
+ {
+  "courseSlug": "paediatric-nursing",
+  "moduleTitle": "Feeding and Protecting",
+  "lessonTitle": "Immunization: Schedules and Safety",
+  "description": "The vaccines on Ghana's schedule and how to reassure worried parents.",
+  "tags": [
+   "immunization",
+   "vaccines"
+  ]
+ },
+ {
+  "courseSlug": "paediatric-nursing",
+  "moduleTitle": "When Children Fall Ill",
+  "lessonTitle": "Common Childhood Conditions",
+  "description": "The everyday illnesses of Ghanaian children — malaria, measles and the rest.",
+  "tags": [
+   "childhood illness",
+   "malaria"
+  ]
+ },
+ {
+  "courseSlug": "paediatric-nursing",
+  "moduleTitle": "When Children Fall Ill",
+  "lessonTitle": "Dehydration in Children: Assess and Act",
+  "description": "The child who keeps losing fluid — pinch tests, plans and the peril of delay.",
+  "tags": [
+   "dehydration",
+   "fluids"
+  ]
+ },
+ {
+  "courseSlug": "paediatric-nursing",
+  "moduleTitle": "When Children Fall Ill",
+  "lessonTitle": "Fever in Children",
+  "description": "The frightened parent's first worry — causes, assessment and what needs urgent care.",
+  "tags": [
+   "fever",
+   "assessment"
+  ]
+ },
+ {
+  "courseSlug": "paediatric-nursing",
+  "moduleTitle": "When Children Fall Ill",
+  "lessonTitle": "Respiratory Disease in Children",
+  "description": "The small airways and their big problems — pneumonia, croup and fast breathing.",
+  "tags": [
+   "pneumonia",
+   "respiratory"
+  ]
+ },
+ {
+  "courseSlug": "paediatric-nursing",
+  "moduleTitle": "Keeping Children Safe",
+  "lessonTitle": "Child Protection: Recognising Abuse and Neglect",
+  "description": "Your duty to notice and act — signs of harm in the smallest, most silent patients.",
+  "tags": [
+   "safeguarding",
+   "abuse"
+  ]
+ }
+]

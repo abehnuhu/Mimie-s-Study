@@ -1,0 +1,192 @@
+[
+ {
+  "courseSlug": "advanced-maternal-newborn-care",
+  "moduleTitle": "Advanced Newborn and Dyad Care",
+  "lessonTitle": "Newborns with Complex Needs",
+  "description": "Congenital conditions and complications — newborn care beyond the basics.",
+  "tags": [
+   "complex newborn",
+   "congenital"
+  ]
+ },
+ {
+  "courseSlug": "advanced-maternal-newborn-care",
+  "moduleTitle": "Advanced Newborn and Dyad Care",
+  "lessonTitle": "Caring for the Sick Dyad",
+  "description": "When mother and baby are both patients — the juggling act that seems impossible.",
+  "tags": [
+   "dyad",
+   "complexity"
+  ]
+ },
+ {
+  "courseSlug": "advanced-maternal-newborn-care",
+  "moduleTitle": "Advanced Newborn and Dyad Care",
+  "lessonTitle": "Feeding When It's Complicated",
+  "description": "Feeding around illness, surgery and separation — nutrition as advanced care.",
+  "tags": [
+   "feeding",
+   "complex"
+  ]
+ },
+ {
+  "courseSlug": "advanced-maternal-newborn-care",
+  "moduleTitle": "Caring for Families Through Complexity",
+  "lessonTitle": "Breaking Difficult News",
+  "description": "The conversations you'll never feel ready for — skill and compassion in delivering bad news.",
+  "tags": [
+   "communication",
+   "bad news"
+  ]
+ },
+ {
+  "courseSlug": "advanced-maternal-newborn-care",
+  "moduleTitle": "Caring for Families Through Complexity",
+  "lessonTitle": "Supporting Families Through Loss",
+  "description": "When the worst happens — bereavement care for parents and for yourself.",
+  "tags": [
+   "loss",
+   "bereavement"
+  ]
+ },
+ {
+  "courseSlug": "leadership-management",
+  "moduleTitle": "Leading Teams",
+  "lessonTitle": "Leadership Styles in Maternity Care",
+  "description": "Commanding, coaching, transforming — the styles and when each saves the day.",
+  "tags": [
+   "leadership",
+   "styles"
+  ]
+ },
+ {
+  "courseSlug": "leadership-management",
+  "moduleTitle": "Leading Teams",
+  "lessonTitle": "Leading the Maternity Team",
+  "description": "Motivating, resolving and directing — the everyday leadership of a busy unit.",
+  "tags": [
+   "team",
+   "leadership"
+  ]
+ },
+ {
+  "courseSlug": "leadership-management",
+  "moduleTitle": "Leading Teams",
+  "lessonTitle": "Supervising and Mentoring Others",
+  "description": "Passing on what you've learned — supervision that grows safe practitioners.",
+  "tags": [
+   "supervision",
+   "mentorship"
+  ]
+ },
+ {
+  "courseSlug": "leadership-management",
+  "moduleTitle": "Managing Services",
+  "lessonTitle": "Running the Unit: A Manager's View",
+  "description": "Rosters, beds and throughput — the management reality behind good care.",
+  "tags": [
+   "management",
+   "operations"
+  ]
+ },
+ {
+  "courseSlug": "leadership-management",
+  "moduleTitle": "Managing Services",
+  "lessonTitle": "Quality Improvement in Maternity Care",
+  "description": "Audit cycles and change projects — making care measurably better.",
+  "tags": [
+   "quality improvement",
+   "audit"
+  ]
+ },
+ {
+  "courseSlug": "leadership-management",
+  "moduleTitle": "Managing Services",
+  "lessonTitle": "Staffing and Resource Decisions",
+  "description": "Nurses, drugs and equipment on limited budgets — the hard arithmetic of management.",
+  "tags": [
+   "resources",
+   "staffing"
+  ]
+ },
+ {
+  "courseSlug": "leadership-management",
+  "moduleTitle": "Your Professional Journey",
+  "lessonTitle": "Planning Your Professional Development",
+  "description": "Specialisation, further study and career paths — designing your future deliberately.",
+  "tags": [
+   "career",
+   "cpd"
+  ]
+ },
+ {
+  "courseSlug": "leadership-management",
+  "moduleTitle": "Your Professional Journey",
+  "lessonTitle": "Becoming a Mentor and Role Model",
+  "description": "The midwife others learn from — the final transformation of your education.",
+  "tags": [
+   "mentorship",
+   "role model"
+  ]
+ },
+ {
+  "courseSlug": "community-domiciliary-midwifery",
+  "moduleTitle": "Advanced Community Practice",
+  "lessonTitle": "Designing Community Midwifery Services",
+  "description": "Planning services that reach every mother — the midwife as service architect.",
+  "tags": [
+   "service design",
+   "planning"
+  ]
+ },
+ {
+  "courseSlug": "community-domiciliary-midwifery",
+  "moduleTitle": "Advanced Community Practice",
+  "lessonTitle": "Preparing for a Planned Home Birth",
+  "description": "Selection, equipment and team — the full preparation for safe planned home birth.",
+  "tags": [
+   "home birth",
+   "preparation"
+  ]
+ },
+ {
+  "courseSlug": "community-domiciliary-midwifery",
+  "moduleTitle": "Advanced Community Practice",
+  "lessonTitle": "The Home Birth Kit and Setup",
+  "description": "What you pack and how you set up — readiness that handles surprises.",
+  "tags": [
+   "equipment",
+   "readiness"
+  ]
+ },
+ {
+  "courseSlug": "community-domiciliary-midwifery",
+  "moduleTitle": "Emergencies at Home",
+  "lessonTitle": "When Birth Goes Wrong at Home",
+  "description": "Haemorrhage and dystocia far from theatre — drills for the worst at home.",
+  "tags": [
+   "emergency",
+   "home birth"
+  ]
+ },
+ {
+  "courseSlug": "community-domiciliary-midwifery",
+  "moduleTitle": "Emergencies at Home",
+  "lessonTitle": "The Transfer Decision",
+  "description": "Stabilise and send versus stay — the decision that defines home birth safety.",
+  "tags": [
+   "transfer",
+   "decision-making"
+  ]
+ },
+ {
+  "courseSlug": "community-domiciliary-midwifery",
+  "moduleTitle": "Improving Community Care",
+  "lessonTitle": "Auditing Your Community Practice",
+  "description": "Reviewing cases and outcomes — the evidence that improves your service.",
+  "tags": [
+   "audit",
+   "improvement"
+  ]
+ }
+]

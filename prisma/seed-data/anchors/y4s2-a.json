@@ -1,0 +1,192 @@
+[
+ {
+  "courseSlug": "midwifery-practice",
+  "moduleTitle": "Autonomous Practice",
+  "lessonTitle": "Autonomy and Its Limits",
+  "description": "The independent decisions of the registered midwife — and knowing exactly where the line is.",
+  "tags": [
+   "autonomy",
+   "scope"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-practice",
+  "moduleTitle": "Autonomous Practice",
+  "lessonTitle": "Managing a Caseload",
+  "description": "Caring for many mothers at once — the organisation that keeps quality high.",
+  "tags": [
+   "caseload",
+   "organisation"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-practice",
+  "moduleTitle": "Autonomous Practice",
+  "lessonTitle": "Solo Decisions and Safe Referral",
+  "description": "The decisions you'll make alone at 3am — and the referral thinking that backs you.",
+  "tags": [
+   "decision-making",
+   "referral"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-practice",
+  "moduleTitle": "Professional Communication",
+  "lessonTitle": "Communication as a Registered Midwife",
+  "description": "The conversations of a professional — with patients, colleagues and the public.",
+  "tags": [
+   "communication",
+   "professional"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-practice",
+  "moduleTitle": "Professional Communication",
+  "lessonTitle": "Documentation That Defends Care",
+  "description": "Final-level record keeping — notes that demonstrate the standard of your care.",
+  "tags": [
+   "documentation",
+   "standards"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-practice",
+  "moduleTitle": "Professional Communication",
+  "lessonTitle": "Teamwork and Interprofessional Practice",
+  "description": "Earning your place as an equal — collaborating across every profession.",
+  "tags": [
+   "teamwork",
+   "collaboration"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-practice",
+  "moduleTitle": "Your Professional Growth",
+  "lessonTitle": "Professional Development: The Lifelong Path",
+  "description": "Conferences, courses and continuing education — growth doesn't stop at graduation.",
+  "tags": [
+   "cpd",
+   "development"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-practice",
+  "moduleTitle": "Your Professional Growth",
+  "lessonTitle": "Becoming the Midwife You Set Out to Be",
+  "description": "Reflecting on the journey from year one — and writing the next chapter with intention.",
+  "tags": [
+   "reflection",
+   "identity"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-research",
+  "moduleTitle": "Your Research Project",
+  "lessonTitle": "Choosing a Research Question That Matters",
+  "description": "Finding the question at the intersection of curiosity and clinical need.",
+  "tags": [
+   "research question",
+   "project"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-research",
+  "moduleTitle": "Your Research Project",
+  "lessonTitle": "The Research Proposal",
+  "description": "Aims, methods, ethics and timeline — the document that gets your project approved.",
+  "tags": [
+   "proposal",
+   "planning"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-research",
+  "moduleTitle": "Your Research Project",
+  "lessonTitle": "Planning Your Data Collection",
+  "description": "Instruments, access and logistics — the unglamorous planning that saves projects.",
+  "tags": [
+   "data collection",
+   "planning"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-research",
+  "moduleTitle": "Analysis and Writing",
+  "lessonTitle": "Analysing Your Findings",
+  "description": "Turning your data into answers — analysis appropriate to your design.",
+  "tags": [
+   "analysis",
+   "findings"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-research",
+  "moduleTitle": "Analysis and Writing",
+  "lessonTitle": "Writing Up with Integrity",
+  "description": "The structure of a research report — written honestly and usefully.",
+  "tags": [
+   "write-up",
+   "integrity"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-research",
+  "moduleTitle": "Analysis and Writing",
+  "lessonTitle": "Managing Your Project Timeline",
+  "description": "Milestones, motivation and deadlines — finishing a project alongside practice.",
+  "tags": [
+   "time management",
+   "project"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-research",
+  "moduleTitle": "Sharing and Using Research",
+  "lessonTitle": "Disseminating Your Findings",
+  "description": "Posters, presentations and papers — research only matters when it's shared.",
+  "tags": [
+   "dissemination",
+   "presentation"
+  ]
+ },
+ {
+  "courseSlug": "midwifery-research",
+  "moduleTitle": "Sharing and Using Research",
+  "lessonTitle": "From Findings to Better Care",
+  "description": "Turning your evidence into practice change — the loop that improves care.",
+  "tags": [
+   "implementation",
+   "ebp"
+  ]
+ },
+ {
+  "courseSlug": "advanced-maternal-newborn-care",
+  "moduleTitle": "Advanced Maternal Care",
+  "lessonTitle": "Mothers with Medical Co-Morbidities",
+  "description": "Heart disease, sickle cell and beyond — maternity care on top of existing illness.",
+  "tags": [
+   "comorbidity",
+   "medicine"
+  ]
+ },
+ {
+  "courseSlug": "advanced-maternal-newborn-care",
+  "moduleTitle": "Advanced Maternal Care",
+  "lessonTitle": "When Complications Collide",
+  "description": "The mother with two, three, four problems — complex case management at its hardest.",
+  "tags": [
+   "complex cases",
+   "integration"
+  ]
+ },
+ {
+  "courseSlug": "advanced-maternal-newborn-care",
+  "moduleTitle": "Advanced Maternal Care",
+  "lessonTitle": "High-Dependency Maternal Care",
+  "description": "Between ward and ICU — caring for the critically ill mother.",
+  "tags": [
+   "high dependency",
+   "critical care"
+  ]
+ }
+]

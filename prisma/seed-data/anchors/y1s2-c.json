@@ -1,0 +1,122 @@
+[
+ {
+  "courseSlug": "microbiology-2",
+  "moduleTitle": "Microbes and Medicine",
+  "lessonTitle": "Outbreaks and How They're Stopped",
+  "description": "Recognising clusters early and the actions that break transmission across a ward or community.",
+  "tags": [
+   "outbreak",
+   "surveillance"
+  ]
+ },
+ {
+  "courseSlug": "basic-clinical-practice",
+  "moduleTitle": "Finding Your Feet",
+  "lessonTitle": "Your First Days in the Clinical Area",
+  "description": "Nerves, names and new routines — surviving and thriving in the first weeks of placement.",
+  "tags": [
+   "placement",
+   "orientation"
+  ]
+ },
+ {
+  "courseSlug": "basic-clinical-practice",
+  "moduleTitle": "Finding Your Feet",
+  "lessonTitle": "Working with Preceptors and Mentors",
+  "description": "Making the most of supervision — asking well, learning fast and building trust.",
+  "tags": [
+   "mentorship",
+   "supervision"
+  ]
+ },
+ {
+  "courseSlug": "basic-clinical-practice",
+  "moduleTitle": "Finding Your Feet",
+  "lessonTitle": "The Rhythm of a Working Day",
+  "description": "Handover, rounds, observations, notes — how a shift flows and where you fit into it.",
+  "tags": [
+   "shift work",
+   "routines"
+  ]
+ },
+ {
+  "courseSlug": "basic-clinical-practice",
+  "moduleTitle": "Practising the Basics",
+  "lessonTitle": "Vital Signs: Practice Until Confident",
+  "description": "Repeated real-world practice with feedback — building speed without losing accuracy.",
+  "tags": [
+   "vital signs",
+   "practice"
+  ]
+ },
+ {
+  "courseSlug": "basic-clinical-practice",
+  "moduleTitle": "Practising the Basics",
+  "lessonTitle": "Assisting with Hygiene and Feeding",
+  "description": "Real patients, real pace — supporting personal care while protecting dignity and independence.",
+  "tags": [
+   "hygiene",
+   "feeding"
+  ]
+ },
+ {
+  "courseSlug": "basic-clinical-practice",
+  "moduleTitle": "Practising the Basics",
+  "lessonTitle": "Collecting Specimens in Practice",
+  "description": "Your first urine samples, swabs and more — doing it right with a patient watching you.",
+  "tags": [
+   "specimens",
+   "technique"
+  ]
+ },
+ {
+  "courseSlug": "basic-clinical-practice",
+  "moduleTitle": "Being a Safe Student",
+  "lessonTitle": "Infection Prevention Habits That Stick",
+  "description": "Making hand hygiene and PPE second nature even when the ward is busy and no one is watching.",
+  "tags": [
+   "hand hygiene",
+   "habits"
+  ]
+ },
+ {
+  "courseSlug": "basic-clinical-practice",
+  "moduleTitle": "Being a Safe Student",
+  "lessonTitle": "Knowing Your Limits and Asking for Help",
+  "description": "The most professional skill you have — recognising the edge of your competence and speaking up.",
+  "tags": [
+   "limitations",
+   "escalation"
+  ]
+ },
+ {
+  "courseSlug": "health-assessment",
+  "moduleTitle": "The Story First",
+  "lessonTitle": "History Taking: The Story Before the Stethoscope",
+  "description": "How to structure a patient history — because most of diagnosis lives in the story.",
+  "tags": [
+   "history taking",
+   "communication"
+  ]
+ },
+ {
+  "courseSlug": "health-assessment",
+  "moduleTitle": "The Story First",
+  "lessonTitle": "The Chief Complaint and Its Red Flags",
+  "description": "Focusing on the presenting problem and the warning signs hiding inside its story.",
+  "tags": [
+   "chief complaint",
+   "red flags"
+  ]
+ },
+ {
+  "courseSlug": "health-assessment",
+  "moduleTitle": "The Story First",
+  "lessonTitle": "Communicating While You Assess",
+  "description": "Talking, listening and examining all at once — the coordination real assessment requires.",
+  "tags": [
+   "communication",
+   "assessment"
+  ]
+ }
+]
