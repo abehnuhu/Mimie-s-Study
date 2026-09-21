@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/select";
 import {
   ArrowLeft,
+  ArrowRight,
   Eye,
   EyeOff,
   Heart,
@@ -49,9 +50,12 @@ export function LoginView({ onLogin }: { onLogin: (user: SessionUser) => void })
   const [showPw, setShowPw] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  // quick action shown inside the error box: 403 → staff entrance, 409 (signup) → sign in
+  const [errorAction, setErrorAction] = useState<null | "staff" | "signin">(null);
 
   function switchMode(next: Mode) {
     setError(null);
+    setErrorAction(null);
     setShowPw(false);
     setMode(next);
   }
@@ -60,6 +64,7 @@ export function LoginView({ onLogin }: { onLogin: (user: SessionUser) => void })
     e.preventDefault();
     setLoading(true);
     setError(null);
+    setErrorAction(null);
     try {
       const endpoint =
         mode === "signin"
@@ -81,6 +86,8 @@ export function LoginView({ onLogin }: { onLogin: (user: SessionUser) => void })
       const data = await res.json();
       if (!res.ok) {
         setError(data.error ?? "That didn't work. Try again 💗");
+        if (res.status === 403 && mode === "signin") setErrorAction("staff");
+        else if (res.status === 409 && mode === "signup") setErrorAction("signin");
         return;
       }
       if (mode === "signup") {
@@ -105,9 +112,29 @@ export function LoginView({ onLogin }: { onLogin: (user: SessionUser) => void })
   }
 
   const errorBox = error && (
-    <p className="rounded-lg bg-destructive/10 px-3 py-2 text-sm text-destructive" role="alert">
-      {error}
-    </p>
+    <div className="rounded-lg bg-destructive/10 px-3 py-2.5 text-sm text-destructive" role="alert">
+      <p className="leading-snug">{error}</p>
+      {errorAction === "staff" && (
+        <button
+          type="button"
+          onClick={() => switchMode("staff")}
+          className="mt-2 inline-flex items-center gap-1.5 rounded-full bg-destructive/10 px-3 py-1.5 text-xs font-medium text-destructive transition-colors hover:bg-destructive/20 focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50"
+        >
+          Open the staff entrance
+          <ArrowRight className="h-3.5 w-3.5" aria-hidden />
+        </button>
+      )}
+      {errorAction === "signin" && (
+        <button
+          type="button"
+          onClick={() => switchMode("signin")}
+          className="mt-2 inline-flex items-center gap-1.5 rounded-full bg-destructive/10 px-3 py-1.5 text-xs font-medium text-destructive transition-colors hover:bg-destructive/20 focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50"
+        >
+          Sign in instead
+          <ArrowRight className="h-3.5 w-3.5" aria-hidden />
+        </button>
+      )}
+    </div>
   );
 
   return (
@@ -435,9 +462,18 @@ export function LoginView({ onLogin }: { onLogin: (user: SessionUser) => void })
                           required
                         />
                       </div>
+                      <p className="text-[11px] leading-snug text-muted-foreground">
+                        The owner key from your <span className="font-mono text-[10px]">ADMIN_ACCESS_KEY</span> — see your{" "}
+                        <span className="font-mono text-[10px]">.env</span> file (Vercel settings on the live site).
+                      </p>
                     </div>
 
                     {errorBox}
+                    {error && (
+                      <p className="-mt-2 text-[11px] leading-snug text-muted-foreground">
+                        Double-check all three — staff email, password and admin key — then try again.
+                      </p>
+                    )}
 
                     <Button
                       type="submit"

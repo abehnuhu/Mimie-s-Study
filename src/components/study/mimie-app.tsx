@@ -19,6 +19,7 @@ import { ProgressView } from "./progress-view";
 import { ProfileView } from "./profile-view";
 import { SavedView } from "./saved-view";
 import { AdminView } from "./admin/admin-view";
+import { BackgroundMusic } from "./background-music";
 import { SearchPalette } from "./search-palette";
 import { ConfettiLayer } from "./decor";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -77,23 +78,29 @@ export function MimieApp() {
 
   if (!authChecked) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-background">
-        <div className="space-y-4 text-center">
-          <div className="mx-auto h-12 w-12 animate-pulse rounded-2xl bg-gradient-to-br from-primary to-plum" />
-          <p className="font-display text-lg text-muted-foreground">Opening Mimie&apos;s Study…</p>
+      <>
+        <div className="flex min-h-screen items-center justify-center bg-background">
+          <div className="space-y-4 text-center">
+            <div className="mx-auto h-12 w-12 animate-pulse rounded-2xl bg-gradient-to-br from-primary to-plum" />
+            <p className="font-display text-lg text-muted-foreground">Opening Mimie&apos;s Study…</p>
+          </div>
         </div>
-      </div>
+        <BackgroundMusic />
+      </>
     );
   }
 
   if (!user) {
     return (
-      <LoginView
-        onLogin={(u) => {
-          setUser(u);
-          refreshBootstrap();
-        }}
-      />
+      <>
+        <LoginView
+          onLogin={(u) => {
+            setUser(u);
+            refreshBootstrap();
+          }}
+        />
+        <BackgroundMusic />
+      </>
     );
   }
 
@@ -102,6 +109,7 @@ export function MimieApp() {
       <ViewRouter />
       <SearchPalette />
       <ConfettiLayer />
+      <BackgroundMusic />
     </AppShell>
   );
 }

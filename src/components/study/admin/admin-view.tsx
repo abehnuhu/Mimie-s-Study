@@ -16,9 +16,11 @@ import { Switch } from "@/components/ui/switch";
 import { toast } from "sonner";
 import { StatCard } from "../shared-cards";
 import { MiniProgress } from "../progress-widgets";
+import { MusicTab } from "./music-tab";
 import {
   Activity, Flame, Clock, BookOpen, Trophy, CalendarDays, Plus, Pencil, Trash2, Eye, EyeOff,
   Heart, Sparkles, Save, BarChart3, HelpCircle, Settings, X, Upload, TrendingUp, TrendingDown, Lightbulb, Search,
+  Download, FolderDown,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -66,6 +68,7 @@ export function AdminView() {
           <TabsTrigger value="lessons" className="rounded-full">Lessons</TabsTrigger>
           <TabsTrigger value="questions" className="rounded-full">Questions</TabsTrigger>
           <TabsTrigger value="analytics" className="rounded-full">Analytics</TabsTrigger>
+          <TabsTrigger value="music" className="rounded-full">Music</TabsTrigger>
           <TabsTrigger value="settings" className="rounded-full">Settings</TabsTrigger>
         </TabsList>
 
@@ -73,6 +76,7 @@ export function AdminView() {
         <TabsContent value="lessons"><LessonsTab /></TabsContent>
         <TabsContent value="questions"><QuestionsTab /></TabsContent>
         <TabsContent value="analytics"><AnalyticsTab /></TabsContent>
+        <TabsContent value="music"><MusicTab /></TabsContent>
         <TabsContent value="settings"><SettingsTab /></TabsContent>
       </Tabs>
     </div>
@@ -83,6 +87,7 @@ export function AdminView() {
 
 function OverviewTab() {
   const [data, setData] = useState<OverviewData | null>(null);
+  const [noStudent, setNoStudent] = useState(false);
   const [selectedDay, setSelectedDay] = useState<OverviewData["heatmap"][number] | null>(null);
 
   useEffect(() => {
@@ -91,12 +96,35 @@ function OverviewTab() {
         const res = await fetch("/api/admin/overview", { cache: "no-store" });
         const json = await res.json();
         if (res.ok) setData(json);
+        else if (res.status === 404) setNoStudent(true);
         else toast(json.error ?? "Couldn't load the overview 💗");
       } catch {
         toast("We lost the connection for a moment 💗");
       }
     })();
   }, []);
+
+  if (noStudent) {
+    return (
+      <Card className="border-dashed border-border/70">
+        <CardContent className="flex flex-col items-center gap-3 py-10 text-center">
+          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-primary/15 to-plum/15 text-2xl" aria-hidden>
+            🌱
+          </div>
+          <div className="space-y-1">
+            <h3 className="font-display text-lg font-semibold text-foreground">No student account yet</h3>
+            <p className="mx-auto max-w-sm text-sm text-muted-foreground">
+              Once your learner creates her account on the login page (the <span className="font-medium text-foreground">Create account</span> tab),
+              her streaks, progress and little wins will light up this dashboard.
+            </p>
+          </div>
+          <Button variant="outline" className="rounded-full" onClick={() => { setNoStudent(false); window.location.reload(); }}>
+            <Flame className="h-4 w-4" aria-hidden /> Check again
+          </Button>
+        </CardContent>
+      </Card>
+    );
+  }
 
   if (!data) {
     return (
@@ -1620,6 +1648,53 @@ function SettingsTab() {
           <Save className="h-4 w-4" aria-hidden /> {saving ? "Saving…" : "Save all settings"}
         </Button>
       </div>
+
+      {/* project tools */}
+      <Card className="border-border/70">
+        <CardHeader className="pb-3">
+          <CardTitle className="font-display text-lg flex items-center gap-2">
+            <FolderDown className="h-4 w-4 text-primary" aria-hidden /> Project
+          </CardTitle>
+          <p className="text-xs text-muted-foreground">Take the whole academy with you — code, content and the seeded database</p>
+        </CardHeader>
+        <CardContent className="space-y-3">
+          <div className="flex flex-col gap-3 rounded-xl border border-border/60 bg-gradient-to-br from-primary/5 to-plum/5 p-4 sm:flex-row sm:items-center sm:justify-between">
+            <div className="space-y-1">
+              <p className="text-sm font-medium text-foreground">Download source code (.zip)</p>
+              <p className="text-xs text-muted-foreground">
+                A fresh snapshot of everything — src, prisma seed data, public images,
+                docs and the seeded <code className="rounded bg-muted px-1 py-0.5">db/custom.db</code>.
+                Perfect for GitHub or a local backup.
+              </p>
+              <p className="flex items-center gap-1.5 text-xs text-muted-foreground">
+                Direct link, works anywhere:
+                <code className="rounded bg-muted px-1.5 py-0.5 font-mono text-[11px] text-primary">/mimies-study.zip</code>
+              </p>
+            </div>
+            <Button asChild className="shrink-0 rounded-full">
+              <a
+                href="/mimies-study.zip"
+                download
+                target="_blank"
+                rel="noopener"
+                aria-label="Download the project source as a zip archive"
+              >
+                <Download className="h-4 w-4" aria-hidden /> Download .zip
+              </a>
+            </Button>
+          </div>
+          <p className="text-xs leading-relaxed text-muted-foreground">
+            Tip: if the download doesn&apos;t start inside the preview panel, use{" "}
+            <span className="font-medium text-foreground">Open in new tab</span> first, then open{" "}
+            <code className="rounded bg-muted px-1 py-0.5">/mimies-study.zip</code> from the
+            address bar. The archive skips node_modules, .git and secrets — after unzipping
+            run <code className="rounded bg-muted px-1 py-0.5">bun install</code>, copy{" "}
+            <code className="rounded bg-muted px-1 py-0.5">.env.example</code> to{" "}
+            <code className="rounded bg-muted px-1 py-0.5">.env</code>, then{" "}
+            <code className="rounded bg-muted px-1 py-0.5">bun run dev</code>.
+          </p>
+        </CardContent>
+      </Card>
     </div>
   );
 }

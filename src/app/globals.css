@@ -746,3 +746,75 @@ body[data-session="on"] [data-sonner-toaster] {
 /* css-kick-1789881998 */
 
 /* css-kick-1789883006 */
+
+/* ── background music player ───────────────────────────────── */
+
+.eq-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 2.5px;
+  height: 15px;
+}
+
+.eq-bars > span {
+  width: 3px;
+  height: 30%;
+  border-radius: 9999px;
+  background: var(--primary);
+  opacity: 0.9;
+}
+
+.eq-bars.playing > span {
+  animation: eq-bounce 1.1s ease-in-out infinite;
+}
+
+.eq-bars.playing > span:nth-child(1) { animation-duration: 0.9s; }
+.eq-bars.playing > span:nth-child(2) { animation-duration: 1.2s; animation-delay: 0.12s; }
+.eq-bars.playing > span:nth-child(3) { animation-duration: 1.0s; animation-delay: 0.06s; }
+.eq-bars.playing > span:nth-child(4) { animation-duration: 1.3s; animation-delay: 0.18s; }
+
+@keyframes eq-bounce {
+  0%, 100% { height: 25%; }
+  50% { height: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .eq-bars.playing > span {
+    animation: none;
+    height: 65%;
+  }
+}
+
+/* volume slider */
+.music-vol {
+  -webkit-appearance: none;
+  appearance: none;
+  background: linear-gradient(
+    to right,
+    hsl(var(--primary)) 0%,
+    hsl(var(--primary)) var(--music-vol-fill, 35%),
+    hsl(var(--muted)) var(--music-vol-fill, 35%),
+    hsl(var(--muted)) 100%
+  );
+}
+
+.music-vol::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  background: hsl(var(--primary));
+  border: 2px solid hsl(var(--background));
+  box-shadow: 0 1px 4px hsl(var(--primary) / 0.35);
+  cursor: pointer;
+}
+
+.music-vol::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  background: hsl(var(--primary));
+  border: 2px solid hsl(var(--background));
+  cursor: pointer;
+}

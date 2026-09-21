@@ -69,3 +69,5 @@ Caddyfile
 
 # packaged deliverable
 *.zip
+# ...but the download route is a folder that happens to end in .zip — keep it
+!src/app/mimies-study.zip/

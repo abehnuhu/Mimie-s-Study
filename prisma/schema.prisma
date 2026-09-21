@@ -368,3 +368,35 @@ model PersonalMessage {
   tone   String  @default("warm") // warm | playful | proud
   active Boolean @default(true)
 }
+
+// ── Background music (owner-uploaded through Admin Studio) ────
+
+// master switch for the whole site (single row, id "global")
+model MusicSetting {
+  id      String  @id @default("global")
+  enabled Boolean @default(true)
+}
+
+model MusicTrack {
+  id         String       @id @default(cuid())
+  title      String
+  fileName   String
+  mimeType   String
+  sizeBytes  Int
+  data       Bytes // full audio bytes — set when upload finishes
+  enabled    Boolean      @default(true) // included in the site playlist
+  sortOrder  Int          @default(0)
+  plays      Int          @default(0)
+  uploadedAt DateTime     @default(now())
+  chunks     MusicChunk[] // temporary: chunks during a chunked upload
+}
+
+model MusicChunk {
+  id      String     @id @default(cuid())
+  idx     Int
+  data    Bytes
+  trackId String
+  track   MusicTrack @relation(fields: [trackId], references: [id], onDelete: Cascade)
+
+  @@unique([trackId, idx])
+}
