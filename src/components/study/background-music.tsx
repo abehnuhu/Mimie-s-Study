@@ -42,6 +42,7 @@ const DEFAULT_VOL = 0.35; // background music should sit under everything
  */
 export function BackgroundMusic() {
   const hasUser = useAppStore((s) => !!s.user);
+  const isAdmin = useAppStore((s) => s.user?.role === "ADMIN");
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const reportedRef = useRef<Set<string>>(new Set());
@@ -115,6 +116,14 @@ export function BackgroundMusic() {
     },
     [tracks, reportPlay]
   );
+
+  /** Replay the current track from the top (single-song playlists). */
+  const replayTrack = useCallback(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    audio.currentTime = 0;
+    audio.play().catch(() => setPlaying(false));
+  }, []);
 
   /* ── load playlist + preferences (data only — the audio element mounts after this) ── */
   useEffect(() => {
@@ -287,9 +296,12 @@ export function BackgroundMusic() {
     }
   }
 
-  function next(dir: 1 | -1) {
+  function next(dir: 1 | -1, autoplay?: boolean) {
     if (tracks.length < 2) return;
-    const wasPlaying = !audioRef.current?.paused;
+    // ⚠️ after a track ENDS the element is already paused — "wasPlaying"
+    // would be false and the next song would load but never start.
+    // An explicit `autoplay` (auto-advance / error-skip) overrides that.
+    const wasPlaying = autoplay ?? !audioRef.current?.paused;
     startTrack((idx + dir + tracks.length) % tracks.length, wasPlaying);
   }
 
@@ -444,6 +456,48 @@ export function BackgroundMusic() {
     return () => window.clearTimeout(t);
   }, [hint]);
 
+  /* ── end-of-track watchdog ──
+ *
+ * Some mobile browsers, with a fragmented m4a served over Range requests,
+ * can park the element at the very end of the timeline WITHOUT firing
+ * `ended` (and without looping): the song is "playing" at 244.4/244.5s,
+ * silent forever. The watchdog notices that the playhead has stopped
+ * advancing within the last 1.5s of the song and forces the transition
+ * the element should have made itself — next song, or replay when the
+ * playlist holds just this one.
+ */
+  useEffect(() => {
+    if (!loaded || tracks.length === 0) return;
+    let lastTime = -1;
+    let stuckOnce = false;
+    const timer = window.setInterval(() => {
+      const audio = audioRef.current;
+      if (!audio || audio.paused || !Number.isFinite(audio.duration) || audio.duration <= 0) {
+        lastTime = -1;
+        stuckOnce = false;
+        return;
+      }
+      const at = audio.currentTime;
+      const nearEnd = audio.duration - at < 1.5;
+      if (nearEnd && lastTime >= 0 && Math.abs(at - lastTime) < 0.05) {
+        if (!stuckOnce) {
+          // give the element one extra beat to end/loop on its own
+          stuckOnce = true;
+          return;
+        }
+        // genuinely stuck at the end — force the transition
+        if (tracks.length > 1) next(1, true);
+        else replayTrack();
+        stuckOnce = false;
+        lastTime = -1;
+        return;
+      }
+      if (Math.abs(at - lastTime) >= 0.05) stuckOnce = false;
+      lastTime = at;
+    }, 1500);
+    return () => window.clearInterval(timer);
+  }, [loaded, tracks, idx, reportPlay, replayTrack]);
+
 
   /* hidden while the playlist loads or is empty */
   if (!loaded || tracks.length === 0 || !current) return null;
@@ -465,13 +519,20 @@ export function BackgroundMusic() {
         onPlay={() => setPlaying(true)}
         onPause={() => setPlaying(false)}
         onEnded={() => {
-          if (multi) next(1);
+          // a finished song always rolls on: the next track (multi-song
+          // playlists) or this one again (loop should have caught it,
+          // but some browsers miss it — so we replay to be sure)
+          if (tracks.length > 1) {
+            next(1, true);
+          } else {
+            replayTrack();
+          }
         }}
         onError={() => {
           // skip a broken track, but give up if everything fails
-          if (multi && failStreakRef.current < tracks.length) {
+          if (tracks.length > 1 && failStreakRef.current < tracks.length) {
             failStreakRef.current += 1;
-            next(1);
+            next(1, true);
           } else {
             setPlaying(false);
           }
@@ -572,6 +633,11 @@ export function BackgroundMusic() {
                   {playing ? "Now playing" : muted ? "Muted" : "Paused"}
                   {multi && ` · ${idx + 1} of ${tracks.length}`}
                 </p>
+                {isAdmin && tracks.length === 1 && (
+                  <p className="text-[10px] leading-snug text-muted-foreground/80">
+                    The only song in the playlist — upload more in Admin Studio → Music and they play back-to-back 💗
+                  </p>
+                )}
               </div>
 
               {multi && (
