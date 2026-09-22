@@ -2,7 +2,7 @@
 
 import { SortGame } from "./sort-game";
 import { AnatomyLabelGame } from "./anatomy-label-game";
-import { FetalPositionGame } from "./fetal-position-game";
+import { GcsChallengeGame } from "./gcs-challenge-game";
 import { TimelineGame } from "./timeline-game";
 import { PriorityGame } from "./priority-game";
 import { MedicationMatchGame } from "./medication-match-game";
@@ -23,9 +23,9 @@ export function GamePlayer({ slug }: { slug: string }) {
   switch (slug) {
     case "anatomy-label":
       return <AnatomyLabelGame />;
-    case "fetal-position":
-      return <FetalPositionGame />;
-    case "labour-timeline":
+    case "gcs-challenge":
+      return <GcsChallengeGame />;
+    case "nursing-process-timeline":
       return <TimelineGame />;
     case "clinical-priority":
       return <PriorityGame />;

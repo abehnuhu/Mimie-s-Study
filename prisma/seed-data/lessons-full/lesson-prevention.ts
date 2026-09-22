@@ -4,11 +4,11 @@ export const lessonPrevention: SeedFullLesson = {
   courseSlug: "health-promotion-1",
   moduleTitle: "Prevention & Education",
   lessonTitle: "Prevention Before Treatment",
-  description: "The best patient of your career will be the one who never falls sick because of something you taught her in ten minutes. Meet the three levels of prevention — the quiet superpower of midwifery.",
+  description: "The best patient of your career will be the one who never falls sick because of something you taught her in ten minutes. Meet the three levels of prevention — the quiet superpower of nursing.",
   difficulty: "Easy",
   durationMin: 14,
   objectives: [
-    "By the end you can define the three levels of prevention and give one midwifery example of each.",
+    "By the end you can define the three levels of prevention and give one nursing example of each.",
     "By the end you can classify any intervention — a bed net, a screening test, rehabilitation — into its prevention level.",
     "By the end you can explain why a single antenatal visit weaves all three levels together.",
     "By the end you can design a short health education message a woman can actually act on.",
@@ -20,17 +20,17 @@ export const lessonPrevention: SeedFullLesson = {
     {
       type: "callout",
       title: "Why this matters",
-      body: "Surgery saves one person at a time; prevention saves whole communities. In Ghana, midwives are often the most trusted health voice a woman has — the person she tells her real symptoms, her real plans and her real fears. Health promotion is where that trust turns into lower maternal and newborn illness. This lesson is the theory behind the softest, most powerful skill you own.",
+      body: "Surgery saves one person at a time; prevention saves whole communities. In Ghana, nurses are often the most trusted health voice a woman has — the person she tells her real symptoms, her real plans and her real fears. Health promotion is where that trust turns into lower maternal and newborn illness. This lesson is the theory behind the softest, most powerful skill you own.",
     },
     {
       type: "text",
       title: "Three levels, one idea",
-      body: "Simply first: prevention comes in three flavours. Primary prevention stops disease before it starts — bed nets, immunisation, good nutrition in pregnancy. Secondary prevention catches disease early, while it is still cheap and easy to treat — screening tests, growth monitoring, checking blood pressure at every ANC visit. Tertiary prevention limits the damage of disease that already exists — rehabilitation, support and preventing recurrence.\n\nThe classic picture is a river: primary prevention stops people falling in upstream; secondary throws them a rope while they are still swimming; tertiary pulls them out downstream and helps them recover.\n\nClinically, midwifery lives in all three — often within the same ten-minute antenatal contact.",
+      body: "Simply first: prevention comes in three flavours. Primary prevention stops disease before it starts — bed nets, immunisation, good nutrition in pregnancy. Secondary prevention catches disease early, while it is still cheap and easy to treat — screening tests, growth monitoring, checking blood pressure at every ANC visit. Tertiary prevention limits the damage of disease that already exists — rehabilitation, support and preventing recurrence.\n\nThe classic picture is a river: primary prevention stops people falling in upstream; secondary throws them a rope while they are still swimming; tertiary pulls them out downstream and helps them recover.\n\nClinically, nursing lives in all three — often within the same ten-minute antenatal contact.",
     },
     {
       type: "table",
       title: "The three levels in maternity practice",
-      body: "| Level | When it acts | Goal | Midwifery examples |\n|---|---|---|---|\n| Primary | Before disease exists | Stop it starting | Antenatal health education, balanced diet in pregnancy, insecticide-treated bed nets, tetanus immunisation through ANC, family planning counselling, clean birth preparation |\n| Secondary | Early disease, few or no symptoms | Detect and treat early | Blood pressure check at every ANC visit, haemoglobin and infection screening at booking, fetal growth monitoring, partograph use in labour |\n| Tertiary | Established disease | Limit damage, prevent recurrence | Rehabilitation and reintegration support after obstetric fistula repair, mental-health support after a traumatic birth, structured follow-up after severe pre-eclampsia |",
+      body: "| Level | When it acts | Goal | Nursing examples |\n|---|---|---|---|\n| Primary | Before disease exists | Stop it starting | Antenatal health education, balanced diet in pregnancy, insecticide-treated bed nets, tetanus immunisation through ANC, family planning counselling, clean birth preparation |\n| Secondary | Early disease, few or no symptoms | Detect and treat early | Blood pressure check at every ANC visit, haemoglobin and infection screening at booking, fetal growth monitoring, partograph use in labour |\n| Tertiary | Established disease | Limit damage, prevent recurrence | Rehabilitation and reintegration support after obstetric fistula repair, mental-health support after a traumatic birth, structured follow-up after severe pre-eclampsia |",
     },
     {
       type: "memory_trick",
@@ -40,7 +40,7 @@ export const lessonPrevention: SeedFullLesson = {
     {
       type: "text",
       title: "The ANC visit: all three levels in one room",
-      body: "Watch a single antenatal contact through a prevention lens. You check her blood pressure — secondary prevention, hunting pre-eclampsia before it produces symptoms. You counsel on nutrition and sleep under a net — primary prevention. For a woman whose previous pregnancy ended in a stillbirth, your extra vigilance and honest discussion are both secondary (intensified screening) and tertiary (limiting the damage of the past).\n\nThis is why prevention is not a separate chapter of midwifery — it is the weave of the job. Even the casual question about how she will reach the facility in labour ('who will bring you if it is 2 am?') is prevention: a birth plan is an emergency plan, and emergency plans save mothers.",
+      body: "Watch a single antenatal contact through a prevention lens. You check her blood pressure — secondary prevention, hunting pre-eclampsia before it produces symptoms. You counsel on nutrition and sleep under a net — primary prevention. For a woman whose previous pregnancy ended in a stillbirth, your extra vigilance and honest discussion are both secondary (intensified screening) and tertiary (limiting the damage of the past).\n\nThis is why prevention is not a separate chapter of nursing — it is the weave of the job. Even the casual question about how she will reach the facility in labour ('who will bring you if it is 2 am?') is prevention: a birth plan is an emergency plan, and emergency plans save mothers.",
     },
     {
       type: "text",
@@ -55,7 +55,7 @@ export const lessonPrevention: SeedFullLesson = {
     {
       type: "case",
       title: "The Tuesday clinic",
-      body: "Mimie, you are the student midwife at a busy Tuesday antenatal clinic. Three women are waiting. Madam Yaa, 20 weeks into her first pregnancy, has no complaints — her blood pressure is normal, and she asks why she should sleep under a net when she has never had malaria. Madam Dzigbordi, 28 weeks, had a booking pressure of 124/76 and records 138/88 today, with mild swelling of her fingers. Madam Afiba delivered her first baby by caesarean two years ago and wants to know whether her next birth must also be by caesarean.\n\nWhich level of prevention is your net conversation with Madam Yaa — and what one sentence could make it stick? Madam Dzigbordi's pressure change: which level catches this, and whose decision is the response? Madam Afiba's question: which level serves her, and what does safe counselling look like when you are the student in the room?\n\nThree chairs, three levels, ten minutes each — and notice that two of your three best interventions today are sentences, not procedures. (For the record: Madam Dzigbordi's reading goes straight to the midwife in charge for review, and Madam Afiba's birth-mode question belongs to senior counselling — your part is to listen well and support the plan.)",
+      body: "Mimie, you are the student nurse at a busy Tuesday antenatal clinic. Three women are waiting. Madam Yaa, 20 weeks into her first pregnancy, has no complaints — her blood pressure is normal, and she asks why she should sleep under a net when she has never had malaria. Madam Dzigbordi, 28 weeks, had a booking pressure of 124/76 and records 138/88 today, with mild swelling of her fingers. Madam Afiba delivered her first baby by caesarean two years ago and wants to know whether her next birth must also be by caesarean.\n\nWhich level of prevention is your net conversation with Madam Yaa — and what one sentence could make it stick? Madam Dzigbordi's pressure change: which level catches this, and whose decision is the response? Madam Afiba's question: which level serves her, and what does safe counselling look like when you are the student in the room?\n\nThree chairs, three levels, ten minutes each — and notice that two of your three best interventions today are sentences, not procedures. (For the record: Madam Dzigbordi's reading goes straight to the nurse in charge for review, and Madam Afiba's birth-mode question belongs to senior counselling — your part is to listen well and support the plan.)",
     },
     {
       type: "quiz_prompt",
@@ -111,12 +111,12 @@ export const lessonPrevention: SeedFullLesson = {
       stem: "A woman at 28 weeks records a blood pressure of 138/88, up from 124/76 at booking, during a routine ANC check. In prevention terms, what does the blood pressure check represent — and what happens next?",
       options: [
         "Primary prevention — the visit itself has protected her from pre-eclampsia",
-        "Secondary prevention — it detects a possible hypertensive disorder early — and the reading must be reported now to the midwife in charge for review and follow-up",
+        "Secondary prevention — it detects a possible hypertensive disorder early — and the reading must be reported now to the nurse in charge for review and follow-up",
         "Tertiary prevention, because a rise in blood pressure means established disease",
         "It is not prevention at all, since the finding requires medical treatment",
       ],
       correctIndex: 1,
-      explanation: "The blood pressure check is textbook secondary prevention: detecting disease at a stage before symptoms, when management can still change the outcome. A rise from her own booking baseline is exactly what screening is designed to catch — and the response (review, repeat measurement, further assessment of protein and symptoms) belongs to the qualified midwife or clinician, today, not at the next visit. The student's contribution is accurate measurement and immediate reporting.",
+      explanation: "The blood pressure check is textbook secondary prevention: detecting disease at a stage before symptoms, when management can still change the outcome. A rise from her own booking baseline is exactly what screening is designed to catch — and the response (review, repeat measurement, further assessment of protein and symptoms) belongs to the qualified nurse or clinician, today, not at the next visit. The student's contribution is accurate measurement and immediate reporting.",
       whyOthers: {
         A: "Primary prevention acts before disease exists; by the time a baseline shift is detectable, you are detecting — not preventing onset.",
         C: "A single elevated reading is a screening signal, not established disease — tertiary prevention applies after diagnosis and damage, which is not yet the situation.",

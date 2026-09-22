@@ -63,7 +63,7 @@ export function GamesView() {
         <EmptyState
           icon={Trophy}
           title="Your first challenge is waiting."
-          hint="Start with Anatomy Label or Labour Timeline — two minutes each."
+          hint="Start with Anatomy Label or Nursing Process Timeline — two minutes each."
         />
       )}
 

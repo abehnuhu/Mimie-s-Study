@@ -1403,7 +1403,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Nursing and Midwifery Council of Ghana",
-        title: "Code of Professional Conduct for Nurses and Midwives",
+        title: "Code of Professional Conduct for Nurses and Nurses",
         note: "Professional standards governing medication practice — verify current version.",
       },
     ],
@@ -1653,8 +1653,8 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
-        note: "Standard midwifery text — verify current edition.",
+        title: "Myles Textbook for Nurses",
+        note: "Standard nursing text — verify current edition.",
       },
       {
         organization: "Elsevier",
@@ -1939,7 +1939,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Midwives meet the catheter at both ends of the journey: measuring output accurately in a haemorrhaging mother, protecting skin during prolonged immobility, relieving a bladder that will not empty. It is a genuinely useful tool — with a tax attached. Every day a catheter stays, the risk of urinary infection climbs, and catheter-associated infection is among the most common healthcare-associated infections there are.\n\nSo this is really two skills in one lesson: knowing when not to insert it, and doing it safely when you must.",
+        body: "Nurses meet the catheter at both ends of the journey: measuring output accurately in a haemorrhaging mother, protecting skin during prolonged immobility, relieving a bladder that will not empty. It is a genuinely useful tool — with a tax attached. Every day a catheter stays, the risk of urinary infection climbs, and catheter-associated infection is among the most common healthcare-associated infections there are.\n\nSo this is really two skills in one lesson: knowing when not to insert it, and doing it safely when you must.",
       },
       {
         type: "text",

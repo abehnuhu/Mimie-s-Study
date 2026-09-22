@@ -98,7 +98,7 @@ export interface SeedSemester {
 
 export interface SeedYear {
   number: 1 | 2 | 3 | 4;
-  title: string; // e.g. "Your Midwifery Era 💗"
+  title: string; // e.g. "Your Nursing Era 💗"
   semesters: SeedSemester[];
 }
 
@@ -138,12 +138,12 @@ export interface TimelineEvent {
   feedback: string;
 }
 
-export interface FetalPositionScenario {
+export interface GcsScenario {
   scenario: string;
-  lie: string; // correct answer text
-  presentation: string;
-  position: string;
-  options: { lie: string[]; presentation: string[]; position: string[] };
+  eye: string; // correct answer text, e.g. "Opens eyes to pain — E2"
+  verbal: string;
+  motor: string;
+  options: { eye: string[]; verbal: string[]; motor: string[] };
   explanation: string;
 }
 

@@ -8,9 +8,9 @@ import { lessonHomeostasis } from "./seed-data/lessons-full/lesson-homeostasis";
 import { lessonVitalSigns } from "./seed-data/lessons-full/lesson-vital-signs";
 import { lessonChainOfInfection } from "./seed-data/lessons-full/lesson-chain-of-infection";
 import { lessonPrevention } from "./seed-data/lessons-full/lesson-prevention";
-import { lessonFetalPositions } from "./seed-data/lessons-full/lesson-fetal-positions";
-import { lessonFourStages } from "./seed-data/lessons-full/lesson-four-stages";
-import { lessonNewbornAssessment } from "./seed-data/lessons-full/lesson-newborn-assessment";
+import { lessonAbcde } from "./seed-data/lessons-full/lesson-abcde";
+import { lessonHeadToToe } from "./seed-data/lessons-full/lesson-head-to-toe";
+import { lessonDangerSignsPregnancy } from "./seed-data/lessons-full/lesson-danger-signs-pregnancy";
 import type { SeedFullLesson, SeedQuestion } from "./seed-data/types";
 import { loadBulkLessons } from "./seed-data/lessons-bulk/load";
 
@@ -22,9 +22,9 @@ const fullLessons: SeedFullLesson[] = [
   lessonVitalSigns,
   lessonChainOfInfection,
   lessonPrevention,
-  lessonFetalPositions,
-  lessonFourStages,
-  lessonNewbornAssessment,
+  lessonAbcde,
+  lessonHeadToToe,
+  lessonDangerSignsPregnancy,
 ];
 
 async function main() {
@@ -144,6 +144,9 @@ async function main() {
         objectives: JSON.stringify(fl.objectives),
         tags: JSON.stringify(fl.tags),
         sourceStatus: fl.sourceStatus,
+        // authored content → visible to students immediately
+        // (matches the old fill-empty pipeline behaviour)
+        status: "PUBLISHED",
       },
     });
     for (const [i, sec] of fl.sections.entries()) {
@@ -220,7 +223,7 @@ async function main() {
     data: {
       key: "app",
       value: JSON.stringify({
-        tagline: "Her little corner to become an amazing midwife.",
+        tagline: "Her little corner to become an amazing nurse.",
         showSources: true,
         maintenance: false,
         version: "1.0",

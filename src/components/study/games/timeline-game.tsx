@@ -3,13 +3,13 @@
 import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { GameShell, shuffle, type GameResult } from "./game-shell";
-import { labourTimeline } from "@/lib/game-content";
+import { nursingProcessTimeline } from "@/lib/game-content";
 import { Button } from "@/components/ui/button";
 import { ArrowUp, ArrowDown, CheckCircle2, XCircle, Flag } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export function TimelineGame() {
-  const [order, setOrder] = useState<number[]>(() => shuffle([...Array(labourTimeline.length).keys()]));
+  const [order, setOrder] = useState<number[]>(() => shuffle([...Array(nursingProcessTimeline.length).keys()]));
   const [submitted, setSubmitted] = useState(false);
   const [finished, setFinished] = useState(false);
   const [score, setScore] = useState(0);
@@ -27,13 +27,13 @@ export function TimelineGame() {
 
   function check() {
     const correct = order.filter((orig, pos) => orig === pos).length;
-    setScore(Math.round((correct / labourTimeline.length) * 100));
+    setScore(Math.round((correct / nursingProcessTimeline.length) * 100));
     setSubmitted(true);
     setTimeout(() => setFinished(true), 100);
   }
 
   function restart() {
-    setOrder(shuffle([...Array(labourTimeline.length).keys()]));
+    setOrder(shuffle([...Array(nursingProcessTimeline.length).keys()]));
     setSubmitted(false);
     setFinished(false);
     setScore(0);
@@ -43,20 +43,20 @@ export function TimelineGame() {
 
   return (
     <GameShell
-      slug="labour-timeline"
-      title="Labour Timeline"
-      description="Arrange the events of labour in the correct order."
+      slug="nursing-process-timeline"
+      title="Nursing Process Timeline"
+      description="Arrange the stages of the nursing process (ADPIE) in the correct order."
       icon="ListOrdered"
       onRestart={restart}
       result={result}
     >
       <div className="rounded-2xl border border-border/70 bg-card p-5">
         <p className="mb-4 text-center text-xs text-muted-foreground">
-          Use the arrows — from the first sign to immediate postpartum care.
+          Use the arrows — from the first data gathered to the plan revised.
         </p>
         <ol className="space-y-2">
           {order.map((origIdx, pos) => {
-            const event = labourTimeline[origIdx];
+            const event = nursingProcessTimeline[origIdx];
             const isRight = submitted && origIdx === pos;
             const isWrong = submitted && origIdx !== pos;
             return (
@@ -98,7 +98,7 @@ export function TimelineGame() {
                 if (origIdx === pos) return null;
                 return (
                   <p key={origIdx} className="rounded-lg bg-muted/50 px-3 py-2 text-xs text-muted-foreground">
-                    <span className="font-semibold text-foreground">{labourTimeline[origIdx].text}</span> — {labourTimeline[origIdx].feedback}
+                    <span className="font-semibold text-foreground">{nursingProcessTimeline[origIdx].text}</span> — {nursingProcessTimeline[origIdx].feedback}
                   </p>
                 );
               })}

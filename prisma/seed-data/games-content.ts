@@ -1,10 +1,11 @@
-import type { MatchPair, TimelineEvent, SortGameItem, FetalPositionScenario, PrioritySet, DetectiveCase, LabelItem } from "./types";
+import type { MatchPair, TimelineEvent, SortGameItem, GcsScenario, PrioritySet, DetectiveCase, LabelItem } from "./types";
 
 // ─────────────────────────────────────────────────────────────
 // MIMIE'S STUDY — GAMES CONTENT
 // Educational game data: infection control, medications, newborn findings,
-// labour timeline, fetal position, clinical priority, case detective,
-// memory match and anatomy labels. Recognition + referral focus, no doses.
+// the nursing process (ADPIE) timeline, Glasgow Coma Scale scenarios,
+// clinical priority, case detective, memory match and anatomy labels.
+// Recognition + referral focus, no doses.
 // ─────────────────────────────────────────────────────────────
 
 // ── GAME 5 · INFECTION CONTROL SORT ──────────────────────────
@@ -56,7 +57,7 @@ export const infectionSortItems: SortGameItem[] = [
     feedback: "Requires further action — seal it and bring a new container; overfilled sharps bins cause the injuries they exist to prevent."
   },
   {
-    text: "A splash of amniotic fluid reaches a midwife's uncovered eye during a birth",
+    text: "A splash of blood reaches a nurse's uncovered eye during an emergency procedure",
     bin: "action",
     feedback: "Requires further action — rinse the eye immediately, report the exposure and follow the facility's post-exposure protocol."
   },
@@ -66,7 +67,7 @@ export const infectionSortItems: SortGameItem[] = [
     feedback: "Requires further action — the load is not confirmed sterile, so reprocess it and report the failed cycle before any instrument is used."
   },
   {
-    text: "A midwife notices a rash developing on her hands under her gloves",
+    text: "A nurse notices a rash developing on her hands under her gloves",
     bin: "action",
     feedback: "Requires further action — report to the supervisor and occupational health; damaged skin is a doorway for infection."
   }
@@ -80,12 +81,24 @@ export const medicationMatchPairs: MatchPair[] = [
     right: "Confirm when the last dose was given before repeating, and re-check the temperature afterwards"
   },
   {
-    left: "Oxytocin (uterotonic)",
-    right: "High-alert medicine of labour and birth — verify the indication and stay with the mother"
-  },
-  {
     left: "Antibiotics",
     right: "Follow the five rights and complete the prescribed course — never save or share tablets"
+  },
+  {
+    left: "Insulin",
+    right: "High-alert ward medicine — verify the dose, the timing and the blood glucose, and watch for hypoglycaemia afterwards"
+  },
+  {
+    left: "Metformin",
+    right: "Give with meals to protect the stomach, and flag the sick days when eating and drinking stop"
+  },
+  {
+    left: "IV fluids (e.g. normal saline)",
+    right: "Confirm the prescribed rate, check the drip and the infusion site, and watch the limb for swelling"
+  },
+  {
+    left: "Adrenaline (epinephrine)",
+    right: "The anaphylaxis emergency medicine — know where the emergency tray keeps it and check its expiry"
   },
   {
     left: "Antihypertensives",
@@ -104,8 +117,8 @@ export const medicationMatchPairs: MatchPair[] = [
     right: "Adherence is everything — counsel without judgement and protect confidentiality"
   },
   {
-    left: "Antimalarials",
-    right: "Confirm the diagnosis and current local treatment guidance — never treat with leftover tablets from home"
+    left: "Oral rehydration salts (ORS)",
+    right: "Start early at the first sign of diarrhoea, mix the sachet in the correct amount of water and keep feeding"
   }
 ];
 
@@ -174,100 +187,97 @@ export const newbornFindings: SortGameItem[] = [
   }
 ];
 
-// ── GAME 3 · LABOUR TIMELINE ─────────────────────────────────
-// Events listed in the CORRECT order: onset of labour → birth → immediate postpartum
-export const labourTimeline: TimelineEvent[] = [
+// ── GAME 3 · NURSING PROCESS TIMELINE (ADPIE) ────────────────
+// Events listed in the CORRECT order: assessment → diagnosis → planning →
+// implementation → evaluation, with the real ward steps between them
+export const nursingProcessTimeline: TimelineEvent[] = [
   {
-    text: "Show — the blood-streaked mucus plug is passed",
-    feedback: "The show signals the cervix is beginning to efface and dilate; labour is usually hours away."
+    text: "Assessment — collect the data: the history, the head-to-toe examination and the vital signs",
+    feedback: "Assessment gathers every subjective and objective clue — what the patient tells you and what you measure. It is continuous, not a one-time entrance."
   },
   {
-    text: "Contractions become regular and progressively stronger",
-    feedback: "Regular, strengthening contractions mark true labour, unlike the irregular practice contractions of late pregnancy."
+    text: "Cluster the cues — group the wound drainage, the fever and the rising pulse into meaningful patterns",
+    feedback: "Clustering links related data so problems can be named — one wound infection, not three separate findings."
   },
   {
-    text: "The membranes rupture with clear amniotic fluid",
-    feedback: "Clear liquor is reassuring — meconium-stained fluid at this point would change the whole plan."
+    text: "State the nursing diagnosis — 'Risk for infection related to impaired skin integrity'",
+    feedback: "The nursing diagnosis names the patient's actual or potential response to the health problem — it is about the patient, not the disease label alone."
   },
   {
-    text: "The cervix becomes fully dilated",
-    feedback: "Ten centimetres — the first stage ends and the second stage, the bearing-down stage, begins."
+    text: "Prioritise — life-threatening problems first, then safety, then teaching and comfort",
+    feedback: "Prioritising with ABC logic (airway, breathing, circulation) means the infection and the pain are addressed before discharge teaching."
   },
   {
-    text: "The woman feels an overwhelming involuntary urge to bear down",
-    feedback: "The Ferguson reflex — pushing with the urge is more effective and less exhausting than being told to push."
+    text: "Set the goals with the patient — 'the wound will show healthy granulation within seven days'",
+    feedback: "SMART goals — specific, measurable, achievable, relevant and time-bound — are written with the patient, not about them."
   },
   {
-    text: "Crowning — the scalp becomes visible at the introitus and stays visible",
-    feedback: "Crowning means birth is imminent: controlled delivery of the head, perineal support and no rushing."
+    text: "Choose the interventions — wound care technique, the prescribed medicines, positioning and education",
+    feedback: "Every intervention flows directly from the nursing diagnosis and the goal — each one has a reason you can state out loud."
   },
   {
-    text: "The head is born, restitutes, and the anterior shoulder delivers",
-    feedback: "Restitution aligns the shoulders; the anterior shoulder comes first, then the posterior, slowly and gently."
+    text: "Implement — carry out the care with five-rights checks, aseptic technique and teach-back",
+    feedback: "Implementation loops assessment again: check the patient before, during and after each intervention, and document in real time."
   },
   {
-    text: "The baby is thoroughly dried, assessed for breathing and colour on the mother's abdomen",
-    feedback: "Drying stimulates breathing — warmth and assessment come before any cord care."
+    text: "Evaluate — measure the wound and compare today's findings against the goals that were set",
+    feedback: "Evaluation compares outcomes with goals — is the wound smaller, the fever settled, the patient able to explain the dressing?"
   },
   {
-    text: "The cord is clamped and cut after pulsation stops, and the baby is placed skin-to-skin, covered",
-    feedback: "Delayed clamping transfers iron-rich blood to the baby; skin-to-skin warms, calms and primes breastfeeding."
-  },
-  {
-    text: "The placenta is delivered, the fundus is massaged until firm, and the first breastfeed is supported",
-    feedback: "A firm fundus is the shield against postpartum haemorrhage — fourth-stage checks follow every 15 minutes."
+    text: "Revise the plan — reassess what changed, keep what worked, change what did not, and document",
+    feedback: "The nursing process is a cycle: a revised plan restarts the journey with better data — that is what makes it a process and not a checklist."
   }
 ];
 
-// ── GAME 2 · FETAL POSITION CHALLENGE ────────────────────────
-export const fetalPositionScenarios: FetalPositionScenario[] = [
+// ── GAME 2 · GCS CHALLENGE (GLASGOW COMA SCALE) ──────────────
+export const gcsScenarios: GcsScenario[] = [
   {
-    scenario: "At 34 weeks you palpate a smooth, round head in the fundus with small, irregular parts just above the pubis. A long firm plane — the back — lies along the mother's left side, and the fetal heart is loudest above the umbilicus on the left.",
-    lie: "Longitudinal",
-    presentation: "Breech",
-    position: "Left sacro-anterior",
+    scenario: "Madam Akua, 70, was found on the floor of her room at dawn after a night fall, and her daughter has brought her to the district hospital. She does not open her eyes to your voice, but when you press her nail bed her eyes open. She talks with you in sentences, but she is confused — she calls you her daughter and asks whether the market is over. When you keep the pressure on her nail bed, she reaches up with her hand and firmly pushes your fingers away.",
+    eye: "Opens eyes to pain — E2",
+    verbal: "Confused conversation — V4",
+    motor: "Localises pain — M5",
     options: {
-      lie: ["Longitudinal", "Oblique", "Transverse"],
-      presentation: ["Cephalic", "Breech", "Shoulder"],
-      position: ["Left sacro-anterior", "Right sacro-posterior", "Direct occipito-posterior", "Left occipito-anterior"]
+      eye: ["Opens eyes spontaneously — E4", "Opens eyes to voice — E3", "Opens eyes to pain — E2", "No eye opening — E1"],
+      verbal: ["Oriented conversation — V5", "Confused conversation — V4", "Inappropriate words — V3", "Incomprehensible sounds — V2"],
+      motor: ["Obeys commands — M6", "Localises pain — M5", "Withdraws from pain — M4", "Abnormal extension — M2"]
     },
-    explanation: "The long axis of the fetus runs with the mother's, so the lie is longitudinal. A round head in the fundus and small parts below mean the breech leads — a breech presentation. With the back along the mother's left front, the sacrum points to the left and forward: left sacro-anterior. The fetal heart heard loudest above the umbilicus confirms a breech, since the heart is best heard at the level of the fetal chest."
+    explanation: "Eyes that open only to a painful stimulus score E2 — spontaneous would be E4, to voice E3, none E1. She converses in sentences but is disoriented, which is V4, one step below the V5 of a fully oriented person. Reaching up to push your hand away is purposeful removal of the stimulus — localising pain, M5. The sum: 2 + 4 + 5 = GCS 11 out of 15 — a moderate injury. Chart it exactly as E2 V4 M5 = 11/15, because the components, not just the total, let the next nurse score her the same way — and a falling trend on your scheduled observations is the loudest early warning a head injury gives."
   },
   {
-    scenario: "In established labour you feel a hard, round head deeply engaged in the pelvis. The back lies along the mother's right flank with small parts on the left, and the fetal heart is loudest below the umbilicus on the right. Vaginal examination finds the occiput in the right anterior quadrant with a well-flexed vertex.",
-    lie: "Longitudinal",
-    presentation: "Cephalic",
-    position: "Right occipito-anterior",
+    scenario: "Mr. Mensah, 34, struck his head on a door frame when the lights went out during a dumsor night, and his neighbours have walked him in. As you call his name his eyes open, and they stay open while you speak with him. He tells you correctly that he is at the district hospital, what day it is, and how the injury happened — though he speaks slowly and repeats himself. When you ask him to raise both arms and squeeze your fingers, he does both without hesitation.",
+    eye: "Opens eyes to voice — E3",
+    verbal: "Oriented conversation — V5",
+    motor: "Obeys commands — M6",
     options: {
-      lie: ["Longitudinal", "Oblique", "Transverse"],
-      presentation: ["Cephalic", "Breech", "Shoulder"],
-      position: ["Left occipito-anterior", "Right occipito-posterior", "Right occipito-anterior", "Left sacro-anterior"]
+      eye: ["Opens eyes spontaneously — E4", "Opens eyes to voice — E3", "Opens eyes to pain — E2", "No eye opening — E1"],
+      verbal: ["Oriented conversation — V5", "Confused conversation — V4", "Inappropriate words — V3", "Incomprehensible sounds — V2"],
+      motor: ["Obeys commands — M6", "Localises pain — M5", "Withdraws from pain — M4", "Abnormal extension — M2"]
     },
-    explanation: "The fetal spine parallels the mother's spine, giving a longitudinal lie. A hard round head leading into the pelvis is a cephalic — vertex — presentation. When the back is on the mother's right and the occiput lies in the right anterior quadrant of the pelvis, the position is right occipito-anterior, the mirror image of the most common LOA. A well-flexed vertex in an anterior position is the favourable arrangement labour hopes for."
+    explanation: "Eyes opening when called — rather than waiting for pain — is E3; they would be E4 only if they were already open as you approached. He knows person, place, time and event: oriented conversation, V5. Obeying your commands exactly is M6, the top of the motor scale. The sum: 3 + 5 + 6 = GCS 14 out of 15 — mild. But 'mild' on paper is not 'safe' in practice: every head injury, however small, goes onto scheduled observations, because bleeding inside the skull can whisper before it shouts — and the GCS trend is how you hear it early. Teach him and his neighbours the danger signs before he goes home."
   },
   {
-    scenario: "At 32 weeks of antenatal palpation, the fetal head lies in the mother's right flank and the breech in her left flank. No presenting part can be felt above the inlet, and the fetal heart is loudest near the umbilicus. The small scapula is palpable anteriorly on the right of the midline.",
-    lie: "Transverse",
-    presentation: "Shoulder",
-    position: "Right acromion-anterior",
+    scenario: "Mr. Fuseini, 45, was thrown from an okada on the main road and brought in lying across a taxi seat. He does not open his eyes to your voice. When you press his nail bed his eyes open, but he speaks no words — only deep, wordless moans each time the pressure comes. His arm does not reach for your hand: it pulls away and turns from the stimulus, but never rises to stop it.",
+    eye: "Opens eyes to pain — E2",
+    verbal: "Incomprehensible sounds — V2",
+    motor: "Withdraws from pain — M4",
     options: {
-      lie: ["Longitudinal", "Oblique", "Transverse"],
-      presentation: ["Cephalic", "Breech", "Shoulder"],
-      position: ["Right acromion-anterior", "Left occipito-anterior", "Direct occipito-anterior", "Left sacro-anterior"]
+      eye: ["Opens eyes spontaneously — E4", "Opens eyes to voice — E3", "Opens eyes to pain — E2", "No eye opening — E1"],
+      verbal: ["Oriented conversation — V5", "Confused conversation — V4", "Inappropriate words — V3", "Incomprehensible sounds — V2"],
+      motor: ["Obeys commands — M6", "Localises pain — M5", "Withdraws from pain — M4", "Abnormal extension — M2"]
     },
-    explanation: "The head and breech lying in opposite flanks mean the long axis crosses the mother's abdomen — a transverse lie. The part over the inlet is the shoulder, so the presentation is shoulder. The shoulder's position is named by the acromion process of the presenting shoulder, which lies on the same side as the head: here the head and the palpable scapula are both on the right, giving a right acromion-anterior. A transverse lie beyond term cannot deliver vaginally, so it must be identified and referred in good time."
+    explanation: "Eyes opening only to pain is E2. Wordless moaning — sounds without any recognisable word — is V2; V3 would be occasional inappropriate words, and V5 and V4 both need conversation. An arm that escapes the stimulus without ever reaching to remove it is withdrawal, M4 — one step below the purposeful localisation of M5, and far above the stiffness of M3 and M2. The sum: 2 + 2 + 4 = GCS 8 out of 15 — severe, and sitting exactly on the most famous line in trauma teaching: a GCS of 8 or below means the patient cannot be trusted to protect their own airway. Position, suction readiness, oxygen per protocol and urgent help — this is the score that moves everything."
   },
   {
-    scenario: "In early labour the head is engaged, but you struggle to feel the fetal back anywhere. Small parts are present on both sides of the midline, the fetal heart is loudest in the right flank, and vaginal examination finds the occiput directed toward the mother's sacrum on the right, with the sagittal suture in the right oblique diameter.",
-    lie: "Longitudinal",
-    presentation: "Cephalic",
-    position: "Right occipito-posterior",
+    scenario: "Mr. Darko, 60, was found unresponsive at home and rushed in by his sons. He does not open his eyes to your voice, to a firm nail-bed press, or to the painful squeeze of the trapezius muscle. No words or conversation come from him — only a low, wordless groan that rises with each stimulation. When the nail-bed pressure continues, both arms stiffen and stretch out straight beside him, wrists bent inward.",
+    eye: "No eye opening — E1",
+    verbal: "Incomprehensible sounds — V2",
+    motor: "Abnormal extension — M2",
     options: {
-      lie: ["Longitudinal", "Oblique", "Transverse"],
-      presentation: ["Cephalic", "Breech", "Shoulder"],
-      position: ["Direct occipito-anterior", "Right occipito-posterior", "Direct occipito-posterior", "Left sacro-anterior"]
+      eye: ["Opens eyes spontaneously — E4", "Opens eyes to voice — E3", "Opens eyes to pain — E2", "No eye opening — E1"],
+      verbal: ["Oriented conversation — V5", "Confused conversation — V4", "Inappropriate words — V3", "Incomprehensible sounds — V2"],
+      motor: ["Obeys commands — M6", "Localises pain — M5", "Withdraws from pain — M4", "Abnormal extension — M2"]
     },
-    explanation: "The fetal spine still runs parallel to the mother's, so the lie is longitudinal, and the vertex presenting means cephalic. With the back pressed against the mother's spine, small limbs fill the front on both sides of the midline — the classic silhouette of a posterior position. An occiput in the posterior quadrant with the sagittal suture in the right oblique diameter gives a right occipito-posterior position — the commonest of the occipito-posterior arrangements. These labours tend to be longer with deep backache, though most rotate to anterior as labour advances."
+    explanation: "No eye opening even to pain is E1, the floor of the eye scale. Only groans, never words — V2 again, but now paired with the deepest motor sign: arms stretched straight out and stiff with wrists bent inward is abnormal extension, M2 — the decerebrate pattern that points to pressure on the brainstem itself, deeper than the bent-inward flexion of M3. The sum: 1 + 2 + 2 = GCS 5 out of 15 — severe. The lowest possible score is 3 (E1 V1 M1). At this depth your precision matters most of all: the pattern of extension tells the team where the injury presses, the trend tells them which way it is moving, and your repeated, exact scoring is the patient's voice until he recovers his own."
   }
 ];
 
@@ -275,127 +285,127 @@ export const fetalPositionScenarios: FetalPositionScenario[] = [
 // Each set: 4 findings, exactly ONE urgent
 export const clinicalPrioritySets: PrioritySet[] = [
   {
-    scenario: "You are checking four term babies in the newborn nursery of a district hospital two hours after birth.",
+    scenario: "You are doing the evening round on a male medical ward. Four patients call for your attention.",
     findings: [
       {
-        text: "A baby grunting with every breath, with chest recession and a rate of 70 per minute",
+        text: "Mr. Owusu, 62, pressing his fist to his chest — a crushing central pain for the last 10 minutes, pale and sweating",
         urgent: true,
-        feedback: "Urgent — respiratory distress in a newborn can deteriorate within minutes: keep warm, minimise handling and escalate now."
+        feedback: "Urgent — crushing central chest pain with sweating is a heart attack until proven otherwise: stay with him, alert the nurse in charge and get the ECG pathway moving now."
       },
       {
-        text: "A baby with moulding of the skull bones after a vertex birth",
+        text: "Mr. Boakye asking whether his evening tablets can come early because visitors have arrived",
         urgent: false,
-        feedback: "Not urgent — moulding is the normal overlap of skull bones and settles within days."
+        feedback: "Not urgent — a timing request; medicines go by prescription times, and a polite explanation with his routine care will do."
       },
       {
-        text: "A baby with a salmon-pink birthmark on the eyelid",
+        text: "Mr. Nkrumah reporting a mild headache after his afternoon nap, blood pressure 128/78 on re-check",
         urgent: false,
-        feedback: "Not urgent — a benign capillary mark that fades during the first year; just note it in the record."
+        feedback: "Not urgent — a normal reading with a mild post-nap headache calls for comfort and observation, not alarm."
       },
       {
-        text: "A baby who sneezes occasionally when dust drifts through the window",
+        text: "Mr. Quaye whose intravenous cannula site is slightly tender, with no redness, swelling or warmth",
         urgent: false,
-        feedback: "Not urgent — sneezing helps a newborn clear the airway; it is not a danger sign on its own."
+        feedback: "Not urgent — a cannula site with no phlebitis signs is checked at the scheduled times; document what you saw."
       }
     ]
   },
   {
-    scenario: "Four women attend the antenatal clinic on the same morning. You triage their findings.",
+    scenario: "Four patients with diabetes share the end of the ward. It is 06:00 and breakfast is late.",
     findings: [
       {
-        text: "Blood pressure 160/110 mmHg on repeat, with a severe headache and 'flashes' in her vision",
+        text: "Madam Yaa, on evening insulin, is sweating, trembling and suddenly confused — the glucose meter reads 2.4 mmol/L",
         urgent: true,
-        feedback: "Urgent — severe pre-eclampsia features: she needs immediate escalation and review before eclampsia strikes."
+        feedback: "Urgent — hypoglycaemia with confusion: give fast-acting sugar per protocol now, stay with her and recheck in 15 minutes."
       },
       {
-        text: "Trace swelling of both ankles present for a week, unchanged",
+        text: "Mr. Mensah, whose bedtime glucose was 8.2 mmol/L, asking for extra tea because he feels hungry",
         urgent: false,
-        feedback: "Not urgent — dependent ankle oedema is common in late pregnancy unless sudden, gross, or involving face and hands."
+        feedback: "Not urgent — hunger with a stable glucose is breakfast territory, not an emergency."
       },
       {
-        text: "Fundal height 2 cm below dates at 32 weeks with a lively fetus",
+        text: "Madam Adjoa complaining of a dry mouth since the fan has been on all night",
         urgent: false,
-        feedback: "Not urgent today — possible growth concern needing follow-up and ultrasound, but not an emergency."
+        feedback: "Not urgent — offer water and mouth care; a dry mouth alone in a stable patient is comfort care."
       },
       {
-        text: "Heartburn at night relieved by posture changes",
+        text: "Mr. Tetteh, due for his morning insulin, waiting calmly for the meal tray to arrive before eating",
         urgent: false,
-        feedback: "Not urgent — heartburn is a routine discomfort of late pregnancy from uterine pressure on the stomach."
+        feedback: "Not urgent — insulin is timed to food; a patient correctly waiting for his meal is doing it right."
       }
     ]
   },
   {
-    scenario: "You are monitoring four women in the first stage of labour in the same room.",
+    scenario: "You are checking four patients during the fever round on a medical ward.",
     findings: [
       {
-        text: "A fetal heart rate of 96 beats per minute, persisting on re-check after repositioning",
+        text: "Madam Comfort, day 5 on the ward: temperature 39.4°C, pulse 118, breathing 26, blood pressure 92/58 — and newly confused about where she is",
         urgent: true,
-        feedback: "Urgent — persistent fetal bradycardia means compromise: stay with the woman and call the midwife in charge immediately."
+        feedback: "Urgent — the sepsis picture: fever, racing pulse, fast breathing, falling pressure and new confusion. Escalate now and start the sepsis pathway per protocol."
       },
       {
-        text: "Contractions every 3 minutes lasting 45 seconds, moderate to strong",
+        text: "Mr. Darko with a temperature of 37.4°C after his evening tea, pulse 84, breathing 18",
         urgent: false,
-        feedback: "Not urgent — this is effective established labour; contractions like these are exactly what progress requires."
+        feedback: "Not urgent — these numbers sit in the safe range; continue routine observations and watch the trend."
       },
       {
-        text: "A blood-stained mucus show on the pad",
+        text: "Mr. Fuseini whose wound dressing is due for change today — the wound is clean and dry",
         urgent: false,
-        feedback: "Not urgent — the show is a normal event of labour, not a bleeding complication."
+        feedback: "Not urgent — a clean wound due for a routine dressing change is scheduled care, not a crisis."
       },
       {
-        text: "Deep constant backache in a known occipito-posterior position",
+        text: "Madam Afia reporting a mild sore throat with no fever, swallowing normally",
         urgent: false,
-        feedback: "Not urgent — backache is expected with occipito-posterior positions; comfort measures and position changes help."
+        feedback: "Not urgent — comfort measures, fluids and observation; escalate if swallowing becomes painful or fever joins in."
       }
     ]
   },
   {
-    scenario: "Four postnatal women are on the ward on day one after birth. You do your evening round.",
+    scenario: "Four patients are on their first day after surgery. You do the 22:00 round.",
     findings: [
       {
-        text: "A pad fully soaked within 20 minutes, twice in the last hour, fundus soft",
+        text: "Mr. Boateng's dressing is soaked with fresh blood and his drain has filled again — pulse 112, blood pressure 96/60, skin pale and cool",
         urgent: true,
-        feedback: "Urgent — postpartum haemorrhage until proven otherwise: massage the fundus, call for help, and escalate now."
+        feedback: "Urgent — post-operative bleeding with shock signs: call for help, apply firm pressure and monitor continuously while the team is summoned."
       },
       {
-        text: "Afterpains during breastfeeding, relieved by simple comfort measures",
+        text: "Mr. Okai asking for a position change because his wound aches when he lies on that side",
         urgent: false,
-        feedback: "Not urgent — afterpains are normal uterine contractions sharpened by suckling, strongest in multigravidae."
+        feedback: "Not urgent — positioning and prescribed analgesia are the routine answers to wound ache after surgery."
       },
       {
-        text: "Temperature of 37.2°C on the evening chart",
+        text: "Madam Eshun passing flatus and sipping water happily after her appendicectomy",
         urgent: false,
-        feedback: "Not urgent — this is within normal limits; watch the trend rather than reacting to a single reading."
+        feedback: "Not urgent — flatus and tolerated sips are the bowel announcing its return; chart and encourage."
       },
       {
-        text: "Moderate red lochia, smaller than a normal period pad, changing normally",
+        text: "Mr. Tetteh with mild nausea that has not stopped him taking oral sips",
         urgent: false,
-        feedback: "Not urgent — lochia rubra of this amount on day one is exactly what the puerperium should look like."
+        feedback: "Not urgent — mild post-operative nausea is common; observe, comfort per instruction, and watch that it does not progress to vomiting."
       }
     ]
   },
   {
-    scenario: "At a CHPS compound child-welfare clinic, you assess four one-week-old babies.",
+    scenario: "In the children's ward, four beds need your evening check.",
     findings: [
       {
-        text: "A baby who feels cold to touch, has not fed in 10 hours and is floppy",
+        text: "Elikem, 6, wheezing so hard he cannot finish a sentence, sitting upright and using his neck and shoulder muscles to breathe",
         urgent: true,
-        feedback: "Urgent — hypothermia with poor feeding and floppiness is a neonatal emergency: warm, feed or refer urgently."
+        feedback: "Urgent — a severe asthma attack sits upright and cannot speak in sentences: give the reliever per protocol, oxygen per protocol and call for urgent review now."
       },
       {
-        text: "A dry, clean, blackening cord stump with no redness",
+        text: "Adjoa, 4, with a runny nose and mild cough, playing with her toys in bed",
         urgent: false,
-        feedback: "Not urgent — a drying, darkening stump without redness or discharge is healthy healing."
+        feedback: "Not urgent — a runny nose with an active, playing child is the common cold, watched with routine care."
       },
       {
-        text: "Yellow colour of face and chest persisting into week two, baby feeding well",
+        text: "Kwabena, 2, drinking oral rehydration salts happily between episodes of loose stool",
         urgent: false,
-        feedback: "Not urgent yet — prolonged jaundice needs assessment and follow-up, so arrange review, but the well-feeding baby is not collapsing."
+        feedback: "Not urgent — a child drinking well and playing between stools is managing his diarrhoea exactly as taught; continue ORS and feeding."
       },
       {
-        text: "A baby sleeping 3-hour stretches, waking to feed 8 times a day",
+        text: "Nhyira, 5 months, sleeping peacefully, due for her vaccination tomorrow morning",
         urgent: false,
-        feedback: "Not urgent — this pattern of sleep and waking feeds is what healthy newborns do."
+        feedback: "Not urgent — a sleeping, well baby awaiting a scheduled vaccination is routine care; let her sleep."
       }
     ]
   }
@@ -404,114 +414,114 @@ export const clinicalPrioritySets: PrioritySet[] = [
 // ── GAME 9 · CASE DETECTIVE ──────────────────────────────────
 export const detectiveCases: DetectiveCase[] = [
   {
-    title: "The Quiet Danger: Postpartum Haemorrhage",
-    intro: "You are a final-year student midwife on the postnatal side of a busy district hospital in the Eastern Region. Births are many and hands are few, so your eyes and your voice matter. Work through the case and see whether you can spot the danger before it shouts.",
+    title: "The Quiet Danger: Sepsis on Ward B",
+    intro: "You are a final-year student nurse on the male surgical ward of a busy district hospital in the Eastern Region. The ward is full and the night is long, so your eyes and your voice matter. Work through the case and see whether you can spot the danger before it shouts.",
     steps: [
       {
-        vignette: "Madam Adjoa, 28, G3P2, gives birth to a healthy boy at 14:05 with the community midwife. At 14:25 you are asked to check on her. She is lying quietly and says she feels 'fine, just tired' — but the sheet beneath her is soaked, and the pad you are replacing was fresh ten minutes ago.",
+        vignette: "Mr. Kwabena Mensah, 68, is on day three after hernia repair. Yesterday he was chatting with you about his grandchildren and walking to the window. At your 20:00 round he is strangely quiet. He asks twice where he is, his breathing seems a little quick, and his observations read: temperature 38.9°C, pulse 112, blood pressure 98/60, breathing rate 24. The ward is busy, and the evening nurse says he was 'fine at lunch'.",
         question: "What is the most important first recognition?",
         options: [
-          "Recognise primary postpartum haemorrhage now and call for help while assessing — the clock has already started",
-          "Estimate the loss as 'about normal' because she is alert and pain-free",
-          "Wait thirty minutes to see whether the bleeding slows before calling anyone",
-          "Assume it is a perineal tear bleeding and apply pressure to the wound site only"
+          "Recognise possible sepsis now and escalate — the clock has already started",
+          "Attribute it to normal post-operative tiredness, since he walked to the window yesterday",
+          "Wait until the morning review to see whether the pattern is real",
+          "Treat it as malaria and give paracetamol, since harmattan fevers are common"
         ],
         correctIndex: 0,
-        explanation: "Primary postpartum haemorrhage is significant bleeding within 24 hours of birth — commonly defined as blood loss of 500 ml or more, or any loss that makes the mother's condition unstable. Visual estimation is notoriously unreliable, so soaked pads within minutes and a soaked sheet must be treated as PPH. A quiet, tired mother who 'feels fine' is how PPH hides in its early stage — shock signs arrive late. Recognition and the call for help always come first, before any single cause is assumed."
+        explanation: "Sepsis is the body's overwhelming response to infection, and it rarely announces itself with drama — it whispers first. New confusion, a fever, a pulse above 110, breathing above 22 and a blood pressure drifting down: that whisper is the whole picture. On track-and-trigger charts these crossings would already have rung the alert line — and the respiratory rate is often the very first vital sign to change, long before the blood pressure falls. 'He was fine at lunch' is exactly how deterioration stories begin; the trend is the truth, not a single reassuring memory. Recognition and the call for help come first, and they cost nothing but attention."
       },
       {
-        vignette: "The senior midwife arrives. Together you assess: the uterus is soft and boggy, at the level of the umbilicus, and the bleeding is dark red and steady. The placenta was delivered intact ten minutes ago and looks complete on inspection. The perineum and vagina show no visible tears.",
-        question: "Which cause best fits this picture?",
+        vignette: "The senior nurse arrives and reviews him with you. The wound looks clean and closed, but a urinary catheter placed during surgery is still in situ, day three now. His urine is dark, scanty and slightly cloudy, his mouth is dry, and he has drunk little today. Repeat observations: temperature 39.2°C, pulse 118, breathing 26, blood pressure 92/58.",
+        question: "Which source of infection best fits this picture?",
         options: [
-          "Uterine atony — the uterus has lost its muscle tone and cannot clamp its own vessels",
-          "Retained placental fragments — since the placenta was incomplete",
-          "Genital tract trauma — since the bleeding is dark red",
-          "A pre-existing clotting disorder of the mother"
+          "A urinary tract infection from the catheter — fever, confusion and cloudy urine in an older man with a device in place",
+          "The surgical wound — because the fever started after surgery",
+          "Simple dehydration — because his mouth is dry and he has not drunk",
+          "A reaction to the evening medication — because he became confused at night"
         ],
         correctIndex: 0,
-        explanation: "Remember the four Ts: Tone, Tissue, Trauma and Thrombin. A soft, boggy fundus with steady dark-red bleeding in the first hour is the signature of uterine atony — by far the commonest cause, because the contracting muscle layer normally compresses the spiral arteries like living ligatures. Retained tissue would require an incomplete placenta, and this one was intact. Trauma typically bleeds bright red even while the uterus is firm, and clotting disorders are rare and usually announced by oozing from puncture sites. Naming the cause quickly directs the whole team's response."
+        explanation: "Fever with new confusion in an older man whose catheter has stayed in place points strongly to a catheter-associated urinary tract infection — one of the commonest hospital-acquired infections, and one that hides below the sheet. A clean, closed wound makes a wound source less likely, dehydration is real but is a consequence rather than the cause, and confusion after evening medication does not explain fever, fast breathing and falling blood pressure together. Naming the likeliest source directs the team's next moves — cultures per protocol, the doctor's review, and a conversation about whether the catheter still earns its place. The nurse's question, 'does this device still need to be here?', prevents more sepsis than any single medicine."
       },
       {
-        vignette: "The senior midwife allocates tasks clearly: one nurse calls the doctor, another prepares the emergency trolley and intravenous access. She turns to you: 'You are with the mother. Report to me every few minutes.'",
+        vignette: "The senior nurse allocates tasks clearly: one nurse calls the doctor, another prepares the emergency trolley and takes the blood samples for culture per protocol, another starts the prescribed intravenous fluids. She turns to you: 'Stay with Mr. Mensah. Watch his breathing, his pressure and his urine output, and report to me every few minutes.'",
         question: "What is YOUR correct role as the student, under supervision?",
         options: [
-          "Massage the fundus to keep the uterus firm, stay with the mother, and report her pulse, colour, breathing and blood loss",
-          "Administer the uterotonics from the emergency tray yourself, since speed matters most",
-          "Step out to phone the woman's family about what is happening",
-          "Write the notes in real time and leave the bedside whenever you have finished a line"
+          "Stay at the bedside, monitor his observations and urine output, keep him calm and safe, and report upward using SBAR",
+          "Give the first dose of antibiotics from the ward stock yourself, since speed matters most",
+          "Step out to phone his family about what is happening",
+          "Write the full notes now and leave the bedside once the page is finished"
         ],
         correctIndex: 0,
-        explanation: "A student's contribution in an emergency is presence, hands and voice — not independent prescribing. Rubbing up the fundus keeps the uterus contracted, emptying the bladder helps it stay so, and staying at the bedside means someone is continuously watching the mother's pulse, colour and blood loss while reporting upward. Medicines are given by authorised staff under the facility's protocol, and family communication comes after the emergency is under way. Notes are vital but written in brief, legible fragments without abandoning the woman."
+        explanation: "A student's contribution in an emergency is presence, hands and voice — not independent prescribing. Staying at the bedside means someone is continuously watching the breathing, the blood pressure and the urine output while reporting upward, and keeping a frightened, confused patient calm and safe. Medicines, fluids and cultures are given and taken by authorised staff under the facility's protocol — speed lives in the team, not in shortcuts. Family communication comes after the emergency is under way, and notes are written in brief, legible fragments without abandoning the man. If his breathing rises or his pressure drops again, you are the one who will see it first — that is the job."
       },
       {
-        vignette: "Twenty minutes later the uterus is firm, bleeding has slowed to a moderate trickle, pulse is 96, blood pressure 108/66, and her colour is returning. She is tired but awake, with her baby skin-to-skin. The doctor is reviewing her now.",
+        vignette: "By midnight Mr. Mensah has been reviewed, the sepsis pathway is running, and his observations are settling: temperature 37.8°C, pulse 96, breathing 20, blood pressure 104/62. He recognises you and asks for water. The senior nurse tells you his observations must now be scheduled, documented and handed over carefully.",
         question: "What is the most appropriate follow-up?",
         options: [
-          "Continue fourth-stage monitoring — vital signs, fundal tone and pad checks at frequent scheduled intervals — and document and debrief fully",
-          "Discharge her home tonight since the bleeding has stopped",
-          "Remove all monitoring to let her rest undisturbed until morning",
-          "Skip the documentation because the emergency has passed and everyone is busy"
+          "Continue scheduled observations and urine output monitoring, document fully, and hand over clearly — including the catheter conversation",
+          "Relax the monitoring, since the antibiotics have started and he is improving",
+          "Plan his discharge home tomorrow, since the fever settled overnight",
+          "Skip the documentation because the emergency has passed and the night is busy"
         ],
         correctIndex: 0,
-        explanation: "The fourth stage of labour — the first 1–2 hours after birth — demands scheduled checks of vital signs, fundal tone and blood loss, because a uterus that firmed once can relax again. A woman who has had one PPH is at raised risk of recurrence, so her observations stay frequent and her status is clearly handed over. Discharging on the day of a PPH, or relaxing all monitoring, removes the safety net. Finally, thorough documentation and a debrief turn the emergency into learning, and into a flag on her record for the next birth."
+        explanation: "Sepsis can relapse, and a patient who has been septic once is watched more closely, not less — scheduled observations, strict fluid balance and urine output, and a clear handover so the morning shift inherits the whole story, not a summary of one good moment. The catheter that probably started it all must be reviewed for removal, not silently left in place — and that conversation belongs in the notes. Discharge on the day after sepsis began settling removes the safety net, and undocumented care is invisible care: what is not written did not happen. Finally, a debrief with the team turns the emergency into learning — for you, and for the next quiet man on the ward."
       }
     ],
-    debrief: "Postpartum haemorrhage is the world's leading cause of maternal death, and most of those deaths are preventable by exactly what you practised here: recognise early — remembering that visual blood loss is always underestimated — call for help immediately, then work the four Ts: Tone (massage, bladder emptying, uterotonics per protocol), Tissue (check the placenta), Trauma (examine the tract once the uterus is firm) and Thrombin (watch for failing clotting). As a student, your power is in noticing, reporting and staying present — the quiet mother on a soaked sheet is the one who needed your voice. Debrief, document, and let every case sharpen the next one."
+    debrief: "Sepsis remains one of the fastest, quietest killers on any ward — and most of those deaths are preventable with exactly what you practised here: notice the trend (new confusion, a climbing breathing rate, fever, a falling blood pressure), escalate early, hunt the source (including the devices we ourselves placed — catheters, cannulas, lines), and never leave the patient unwatched while the protocol runs. The respiratory rate is your earliest sentinel — it rises before everything else. Trust the quiet ones: the patient who suddenly becomes confused, drowsy or 'not himself' is talking to you in the only voice sepsis allows him. Document, hand over, and let every case sharpen the next one."
   },
   {
-    title: "The Warning Signs: A Pre-eclampsia Case",
-    intro: "You are a final-year student at an antenatal clinic attached to a district hospital. Today a young first-time mother arrives for her routine visit — and the story you are about to follow is one you must be able to recognise from the first clue. Educational simulation: recognition and escalation are your tools.",
+    title: "The Warning Signs: A Chest Pain Case",
+    intro: "You are a final-year student on a busy female medical ward at night in a district hospital in the Ashanti Region. A market trader was admitted this afternoon with 'stomach upset'. The story you are about to follow is one you must be able to recognise from the first clue. Educational simulation: recognition and escalation are your tools.",
     steps: [
       {
-        vignette: "Afua, 22, primigravida at 33 weeks, attends her visit. Her blood pressure is 148/96 mmHg, confirmed on repeat after rest. Her urine dipstick reads protein 2+. She mentions, almost apologetically, that her face and hands have been swollen for two days and that she has a 'stubborn headache' that rest has not touched.",
+        vignette: "Madam Akosua, 58, was admitted with 'gastritis' after two days of upper abdominal discomfort following market day. At 22:10 she presses the call bell. She is sitting forward, pale and sweaty, one hand pressed to her chest: a heavy, pressing pain across the front of her chest for the last twenty minutes, with nausea and a tingling down her left arm. She apologises for bothering you.",
         question: "What should your recognition be?",
         options: [
-          "These findings suggest pre-eclampsia with severe features — an emergency that needs immediate escalation and referral",
-          "Normal pregnancy swelling and headache — she can go home and return at her next routine visit",
-          "Probably malaria — treat and review next week",
-          "First-time-mother anxiety — reassure her and let her wait outside"
+          "Treat this as a possible heart attack now — call for help while she stays still; this is not 'gastritis' until an ECG says so",
+          "Acid reflux from her evening meal — antacid and let her sleep",
+          "Wait fifteen minutes to see whether the pain passes before calling anyone",
+          "Anxiety about being in hospital — reassure her and dim the lights"
         ],
         correctIndex: 0,
-        explanation: "Pre-eclampsia is new hypertension with proteinuria after 20 weeks of gestation, and this woman has both. Facial and hand swelling, a severe headache unrelieved by rest — these are severe features, meaning the disease is moving toward eclampsia, its seizure phase. The only cure is delivery of the baby and placenta, which makes the timing a specialist decision taken in hospital. Missing the signs at this visit could cost both lives; recognising them makes you the reason she arrives in time."
+        explanation: "Heavy, pressing central chest pain lasting more than fifteen minutes, with sweating, nausea or radiation to the arm, is a heart attack — a myocardial infarction — until an ECG proves otherwise. Women, older adults and people living with diabetes often present atypically: pressure rather than stabbing pain, 'gas', jaw or back discomfort, or simply sudden tiredness — which is exactly how a heart attack dresses up as gastritis. Her polite apology is the most dangerous symptom in the room: women minimise their own emergencies. Recognition is free and instant, and the ECG belongs in the first ten minutes of it."
       },
       {
-        vignette: "As you arrange the referral, Afua's sister pulls you aside: 'Last night she was pressing her eyes and saying lights were flashing.' You re-check: blood pressure now 158/104 mmHg, brisk reflexes at the knees, urine protein 3+.",
-        question: "Which finding signals she is moving toward eclampsia?",
+        vignette: "You call the nurse in charge. Together you settle her upright, and the observations read: pulse 96, blood pressure 152/94, oxygen saturation 95%. She is still pale and sweaty, and the pain has not eased. Her folder shows hypertension diagnosed two years ago — and a note that she stops her tablets whenever she 'feels fine', because 'hospital medicine is for sick people'. Her blood sugar tonight is normal.",
+        question: "Which feature makes this an emergency rather than routine chest discomfort?",
         options: [
-          "Visual disturbance with brisk reflexes and a climbing blood pressure — premonitory signs of seizures",
-          "Proteinuria alone, because protein in urine always means eclampsia",
-          "Brisk reflexes, because exaggerated reflexes are normal in every pregnancy",
-          "Her sister's anxiety, since relatives always dramatise symptoms"
+          "Prolonged heavy pressure with sweating and arm tingling in a hypertensive woman — the acute coronary syndrome picture",
+          "The pain is above the navel, which always means the heart",
+          "Her history of stomach upset, which explains everything",
+          "The blood pressure reading alone, since it is high tonight"
         ],
         correctIndex: 0,
-        explanation: "The premonitory signs of imminent eclampsia are severe headache, visual disturbance such as flashing lights, epigastric pain, and hyperreflexia — the jittery nervous system just below its seizure threshold. A climbing pressure with rising proteinuria completes the picture of a disease accelerating. Proteinuria defines the disease but does not by itself foretell seizures, brisk reflexes are not normal in pregnancy, and a relative's report is clinical data, not noise — families often notice the change before the chart does. These signs demand escalation now, with the woman never left alone."
+        explanation: "The emergency pattern is the combination: twenty minutes of heavy central pressure, autonomic signs — pallor, sweating, nausea — radiation to the arm, in a 58-year-old woman with untreated hypertension: her risk engine has been running for years. Pain location alone never settles the question, because the heart and the stomach share nerve pathways — which is exactly why 'gastritis' mislabels so many hearts. A single high blood pressure reading is a number, not a diagnosis. Untreated hypertension quietly damages the coronary arteries for years before the day it presents as 'gas' after market. Tonight the ECG, the troponin pathway and the doctor decide; your part is to recognise and not explain away."
       },
       {
-        vignette: "The referral van will take twenty minutes. Afua is placed on her left side in a quiet, dim corner of the observation room, and you are told to stay with her and keep talking to her calmly while recording her observations.",
-        question: "Why the left lateral position and continuous presence?",
+        vignette: "The nurse in charge calls the doctor and turns to you with clear instructions. You note the exact time the pain began — 21:50 — and record that she has received nothing for it.",
+        question: "What is YOUR correct role as the student, under supervision?",
         options: [
-          "Lying on her left side lifts the heavy uterus off the great vessels, improving blood flow to the placenta and kidneys — and someone must be watching the moment a seizure begins",
-          "The left side is simply to prevent pressure sores during the wait",
-          "Dim lighting and quiet are only for her comfort and have no clinical purpose",
-          "Continuous presence is required just so a witness can sign the notes"
+          "Keep her still and calm, prepare the ECG machine and the emergency trolley, monitor her observations, and report any change immediately",
+          "Walk her slowly to the nurses' station for closer observation",
+          "Give her the glyceryl trinitrate from the trolley yourself to see whether the pain responds",
+          "Tell her to breathe deeply and push through the pain while the doctor travels"
         ],
         correctIndex: 0,
-        explanation: "In late pregnancy the uterus compresses the inferior vena cava when the woman lies flat, reducing venous return and placental blood flow — the left lateral position relieves that pressure and also helps her kidneys perfuse. Quiet, dim surroundings reduce the sensory stimulation that can trigger a seizure in a pre-eclamptic woman. Staying with her means the moment of eclampsia, if it comes, is met instantly: protect from injury, do not force anything into the mouth, turn her to the side, note the time and call for help. An unattended seizure is where head injury, aspiration and delay are born."
+        explanation: "Time is muscle: every minute of a blocked coronary artery costs surviving heart muscle — which is why the time of pain onset (21:50) is charted and why the ECG and the doctor's pathway begin the moment recognition does. A patient with a possible infarction stays still and calm, because activity raises the heart's oxygen demand; walking her anywhere is the opposite of care. Preparing the ECG machine and the emergency trolley is exactly a student's hands doing useful work; medicines that affect blood pressure and the heart are given by authorised staff under prescription, never tested by a student. And 'pushing through' chest pain is the sentence that turns a salvageable heart into a memorial."
       },
       {
-        vignette: "Afua reaches the district hospital and is stabilised. Two days later the team, weighing all the risks, delivers her by caesarean section. The baby is small but vigorous. On discharge, the midwife sits with Afua to explain what happened and what it means for her future.",
-        question: "Which teaching point is most accurate for the discharge conversation?",
+        vignette: "The ECG shows changes confirming injury; the doctor arrives, the pathway runs, and Madam Akosua is stabilised and prepared for transfer to the regional hospital. Before the ambulance leaves, the ward sister asks you to sit with her for a short teaching conversation, because she will be back on this ward one day.",
+        question: "Which teaching point is most accurate for that conversation?",
         options: [
-          "She has a raised risk of pre-eclampsia in a future pregnancy — book early for antenatal care, attend every visit, and report danger signs immediately",
-          "Pre-eclampsia never recurs, so ordinary care is enough next time",
-          "She must avoid all future pregnancies altogether",
-          "The condition was caused by her drinking too little water during pregnancy"
+          "Her blood pressure medicine is for life — never stopped when she feels fine — and any new chest discomfort means come at once",
+          "One treated heart attack means the heart is now cured; ordinary care is enough",
+          "She should avoid all walking and exertion for the rest of her life",
+          "The attack was caused by the pepper in her evening soup, so diet alone will prevent another"
         ],
         correctIndex: 0,
-        explanation: "A woman who has had pre-eclampsia faces a raised risk of recurrence — roughly one in six or seven in a next pregnancy — and also deserves awareness of her long-term cardiovascular health, because hypertensive disease of pregnancy marks a woman for life. The practical prescription is behavioural: book early, attend every visit, report headache, visual changes, swelling or upper abdominal pain at once, and keep a healthy blood pressure for life. Pre-eclampsia is not caused by drinking too little water, and never means future pregnancy is forbidden — it means future pregnancy is watched."
+        explanation: "Hypertension is silent — that is its cruelty: she felt fine precisely while her arteries were being damaged, so the tablets are for life and 'feeling fine' is never a reason to stop them. After a heart attack the heart is scarred, not cured: follow-up, protective medicines and gradual guided walking — cardiac rehabilitation — are the lifelong plan, and the heart strengthens with gentle exercise, not with bed rest forever. Any new chest pressure, at rest or with market loads, means come at once — time is muscle again. Pepper did not do this; years of untreated pressure did. Teach the family too: the person who cooks controls the salt and oil of the whole house."
       }
     ],
-    debrief: "Pre-eclampsia travels a spectrum — gestational hypertension, then pre-eclampsia, then eclampsia — and it remains a leading cause of maternal death in Ghana and worldwide. Your tools as a midwife are recognition and escalation: measure the blood pressure properly, test the urine, listen for headache, flashing lights and epigastric pain, and never normalise facial swelling in a pregnant woman. Refer early, keep the woman on her left side, keep her calm and never leave her alone, and manage any seizure by protecting the airway and calling for help. Finally, teach: early booking in the next pregnancy and lifelong blood-pressure awareness are her inheritance from this illness. You did not just pass a case today — you rehearsed the reflexes of a lifesaver."
+    debrief: "Heart disease is now one of Ghana's leading causes of death, and it arrives on medical wards dressed as 'gastritis', 'gas' or 'tiredness' — especially in women and in people living with diabetes. Your tools are recognition and escalation: new heavy chest pressure lasting more than fifteen minutes, with sweating, nausea or radiation to the arm or jaw, is an acute coronary syndrome until the ECG says otherwise; the ECG belongs in the first ten minutes; the patient stays still, calm and monitored; and the time of onset is charted because the whole treatment pathway is timed from it. Then teach: pressure medicines are for life, salt is a family decision, and chest discomfort is never 'bothering the nurse'. She apologised for calling you. Your recognition is the reason that apology did not cost her heart."
   }
 ];
 
@@ -519,44 +529,44 @@ export const detectiveCases: DetectiveCase[] = [
 // condition → hallmark symptom
 export const memoryMatchPairs: MatchPair[] = [
   {
-    left: "Ectopic pregnancy",
-    right: "Sharp unilateral lower abdominal pain with amenorrhoea and fainting"
+    left: "Myocardial infarction (heart attack)",
+    right: "Crushing central chest pain with sweating, radiating to the arm"
   },
   {
-    left: "Placenta praevia",
-    right: "Painless bright vaginal bleeding after mid-pregnancy"
+    left: "Stroke",
+    right: "Sudden face droop, one-sided weakness and slurred speech"
   },
   {
-    left: "Placental abruption",
-    right: "Abdominal pain with dark vaginal bleeding and a tense, woody uterus"
+    left: "Sepsis",
+    right: "Fever with fast breathing, a racing pulse and new confusion"
   },
   {
-    left: "Severe pre-eclampsia",
-    right: "Severe headache with blurred vision and upper abdominal pain"
+    left: "Hypoglycaemia",
+    right: "Sweating, trembling and sudden confusion in a patient on insulin"
   },
   {
-    left: "Postpartum haemorrhage",
-    right: "Heavy bleeding within 24 hours of birth, often with a soft uterus"
+    left: "Diabetic ketoacidosis (DKA)",
+    right: "Deep sighing breathing, vomiting and a fruity smell on the breath"
   },
   {
-    left: "Obstructed labour",
-    right: "Contractions continue but the presenting part descends no further"
+    left: "Severe asthma attack",
+    right: "Sitting upright, wheezing, too breathless to finish a sentence"
   },
   {
-    left: "Eclampsia",
-    right: "Convulsions in a woman with high blood pressure"
+    left: "Anaphylaxis",
+    right: "Swelling of the lips and throat with an itchy rash after a medicine or sting"
   },
   {
-    left: "Omphalitis (cord infection)",
-    right: "Red, swollen, foul-smelling umbilical stump in a newborn"
+    left: "Wound infection",
+    right: "A red, hot, tender surgical wound with fever and discharge"
   },
   {
-    left: "Mastitis",
-    right: "A painful, red, wedge-shaped area of the breast with fever"
+    left: "Hypovolaemic shock",
+    right: "A rising pulse with falling blood pressure and cold, clammy skin"
   },
   {
-    left: "Uterine rupture",
-    right: "Sudden severe abdominal pain, contractions stop, and the fetal heart is lost"
+    left: "Pressure injury (stage 1)",
+    right: "A reddened area over a bony point that does not turn pale when pressed"
   }
 ];
 
@@ -564,7 +574,7 @@ export const memoryMatchPairs: MatchPair[] = [
 export const anatomyLabels: LabelItem[] = [
   {
     label: "Fundus",
-    description: "The rounded upper part of the uterus, above the tube openings; its height above the pubis in pregnancy is used to track the baby's growth."
+    description: "The rounded upper part of the uterus, above the tube openings; its height above the pubis in pregnancy is used to follow the baby's growth."
   },
   {
     label: "Uterine cavity",
@@ -584,7 +594,7 @@ export const anatomyLabels: LabelItem[] = [
   },
   {
     label: "Vagina",
-    description: "The muscular, elastic birth canal between the cervix and the vulva, which stretches during birth and returns to shape afterwards."
+    description: "The muscular, elastic canal between the cervix and the vulva, which stretches during birth and returns to shape afterwards."
   },
   {
     label: "Endometrium",
@@ -592,6 +602,6 @@ export const anatomyLabels: LabelItem[] = [
   },
   {
     label: "Myometrium",
-    description: "The thick middle muscle layer of the uterine wall; its contractions birth the baby and clamp the vessels to prevent bleeding afterwards."
+    description: "The thick middle muscle layer of the uterine wall; its contractions deliver the baby and clamp the vessels to prevent bleeding afterwards."
   }
 ];

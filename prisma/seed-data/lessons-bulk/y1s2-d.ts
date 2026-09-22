@@ -246,7 +246,7 @@ export const lessons: SeedFullLesson[] = [
     sources: [
       { organization: "McGraw Hill", title: "Bates' Guide to Physical Examination and History Taking (13th edition)" },
       { organization: "Elsevier", title: "Potter & Perry's Fundamentals of Nursing (10th edition)" },
-      { organization: "Elsevier", title: "Myles Textbook for Midwives (17th edition)" },
+      { organization: "Elsevier", title: "Myles Textbook for Nurses (17th edition)" },
     ],
   },
 
@@ -389,7 +389,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Experienced midwives seem to spot the abnormal instantly. They are not magicians — they simply carry a large, well-organised library of 'normal', built by examining many well people. Against that library, the abnormal finding jumps out like a spelling mistake in a familiar sentence.\n\nYour library starts in this lesson: the normal ranges every student should hold in memory, the ways pregnancy rewrites them, and the habit that turns ordinary numbers into early warnings — the trend.",
+        body: "Experienced nurses seem to spot the abnormal instantly. They are not magicians — they simply carry a large, well-organised library of 'normal', built by examining many well people. Against that library, the abnormal finding jumps out like a spelling mistake in a familiar sentence.\n\nYour library starts in this lesson: the normal ranges every student should hold in memory, the ways pregnancy rewrites them, and the habit that turns ordinary numbers into early warnings — the trend.",
       },
       {
         type: "text",
@@ -523,7 +523,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The core ideas",
-        body: "Learn the red flags that end all waiting. Heavy vaginal bleeding — a pad soaked within an hour, or steady trickling — is an emergency you shout about. A blood pressure of **140/90 or more with headache, blurred vision or epigastric pain** is a pre-eclampsia emergency. A fever of 38 °C or more after birth with foul-smelling lochia or a fast respiratory rate points to **puerperal sepsis**, which can overwhelm a woman within hours. A respiratory rate above 24, a sudden change in consciousness, a convulsion, absent fetal movement or an absent fetal heart — all go straight to the senior midwife.\n\nWhen you report, be structured: who she is, what you found, what you need. SBAR — Situation, Background, Assessment, Recommendation — keeps a frightened report clear. And stay with the patient until help arrives; never leave a deteriorating woman alone.\n\nUnder all the rules sits one rule: if you are unsure whether a finding is serious, report it anyway. Nobody is ever scolded for escalating too early.",
+        body: "Learn the red flags that end all waiting. Heavy vaginal bleeding — a pad soaked within an hour, or steady trickling — is an emergency you shout about. A blood pressure of **140/90 or more with headache, blurred vision or epigastric pain** is a pre-eclampsia emergency. A fever of 38 °C or more after birth with foul-smelling lochia or a fast respiratory rate points to **puerperal sepsis**, which can overwhelm a woman within hours. A respiratory rate above 24, a sudden change in consciousness, a convulsion, absent fetal movement or an absent fetal heart — all go straight to the senior nurse.\n\nWhen you report, be structured: who she is, what you found, what you need. SBAR — Situation, Background, Assessment, Recommendation — keeps a frightened report clear. And stay with the patient until help arrives; never leave a deteriorating woman alone.\n\nUnder all the rules sits one rule: if you are unsure whether a finding is serious, report it anyway. Nobody is ever scolded for escalating too early.",
       },
       {
         type: "clinical_pearl",
@@ -532,7 +532,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "On the postnatal ward at 10 p.m., you find a day-three mother with a temperature of 38.6 °C. Her lochia smells foul, her respirations are 26 per minute, and to you she looks 'just not right'. You are tempted to chart the vitals and mention it on the morning round when the doctors come.\n\nWhat does this decision depend on, and what should happen in the next five minutes?\n\nAnswer: It depends on knowing that fever plus foul lochia plus a rising respiratory rate is the picture of puerperal sepsis — a killer that moves in hours, not days. In the next five minutes: take her full vitals, stay with her, and report now to the senior midwife using SBAR. The morning round is far too late; the next steps will likely be urgent review, intravenous access and antibiotics.",
+        body: "On the postnatal ward at 10 p.m., you find a day-three mother with a temperature of 38.6 °C. Her lochia smells foul, her respirations are 26 per minute, and to you she looks 'just not right'. You are tempted to chart the vitals and mention it on the morning round when the doctors come.\n\nWhat does this decision depend on, and what should happen in the next five minutes?\n\nAnswer: It depends on knowing that fever plus foul lochia plus a rising respiratory rate is the picture of puerperal sepsis — a killer that moves in hours, not days. In the next five minutes: take her full vitals, stay with her, and report now to the senior nurse using SBAR. The morning round is far too late; the next steps will likely be urgent review, intravenous access and antibiotics.",
       },
       {
         type: "memory_trick",
@@ -551,7 +551,7 @@ export const lessons: SeedFullLesson[] = [
         stem: "An hour after delivery, a woman's pad is fully soaked with blood. What do you do?",
         options: [
           "Chart it and check again in two hours",
-          "Report immediately to the senior midwife, call for help and stay with her",
+          "Report immediately to the senior nurse, call for help and stay with her",
           "Wait for the doctor's round to mention it",
           "Encourage fluids and rest, then reassess",
         ],
@@ -607,7 +607,7 @@ export const lessons: SeedFullLesson[] = [
       {
         topic: "Puerperal Sepsis",
         front: "Fever 38.6 °C, foul lochia, respiratory rate 26 on day three postnatal. What is this and when do you act?",
-        back: "Possible puerperal sepsis — act within minutes: full vitals, stay with her, SBAR report to the senior midwife now.",
+        back: "Possible puerperal sepsis — act within minutes: full vitals, stay with her, SBAR report to the senior nurse now.",
       },
     ],
     sources: [
@@ -623,7 +623,7 @@ export const lessons: SeedFullLesson[] = [
         year: "2011",
         url: "https://www.who.int/publications/i/item/9789241501950",
       },
-      { organization: "Elsevier", title: "Myles Textbook for Midwives (17th edition)" },
+      { organization: "Elsevier", title: "Myles Textbook for Nurses (17th edition)" },
     ],
   },
 
@@ -647,7 +647,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Communication is not a soft extra to 'real' clinical work — it is clinical work. Almost everything a midwife does — taking a history, giving news, teaching a mother, calming a frightened woman — travels along communication. And it travels on three channels at once: the words you speak, the body that speaks them, and the notes you write.\n\nIn this lesson you will meet the three channels, learn why they must all carry the same message, and pick up two habits — active listening and plain language — that immediately improve every conversation you have.",
+        body: "Communication is not a soft extra to 'real' clinical work — it is clinical work. Almost everything a nurse does — taking a history, giving news, teaching a mother, calming a frightened woman — travels along communication. And it travels on three channels at once: the words you speak, the body that speaks them, and the notes you write.\n\nIn this lesson you will meet the three channels, learn why they must all carry the same message, and pick up two habits — active listening and plain language — that immediately improve every conversation you have.",
       },
       {
         type: "text",
@@ -871,7 +871,7 @@ export const lessons: SeedFullLesson[] = [
         year: "2011",
         url: "https://www.who.int/publications/i/item/9789241501950",
       },
-      { organization: "Elsevier", title: "Myles Textbook for Midwives (17th edition)" },
+      { organization: "Elsevier", title: "Myles Textbook for Nurses (17th edition)" },
     ],
   },
 
@@ -1019,7 +1019,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Long after your shift ends, the chart keeps working: it speaks to the next midwife at 2 a.m., to the doctor at the morning round, to the court if care is ever questioned, and to the patient herself. Documentation is the only part of your care that outlives the shift — which is why writing that protects is a clinical skill, not paperwork.\n\nIn this lesson you will learn the skeleton every entry needs, the difference between fact and opinion, how to correct an error without destroying a legal record, and the old rule that decides audits and lawsuits alike: if it was not documented, it was not done.",
+        body: "Long after your shift ends, the chart keeps working: it speaks to the next nurse at 2 a.m., to the doctor at the morning round, to the court if care is ever questioned, and to the patient herself. Documentation is the only part of your care that outlives the shift — which is why writing that protects is a clinical skill, not paperwork.\n\nIn this lesson you will learn the skeleton every entry needs, the difference between fact and opinion, how to correct an error without destroying a legal record, and the old rule that decides audits and lawsuits alike: if it was not documented, it was not done.",
       },
       {
         type: "text",
@@ -1028,12 +1028,12 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         type: "clinical_pearl",
-        body: "Write every note as if the patient's lawyer, the next midwife and your own future self will read it tomorrow — all three should find it clear, honest and complete.",
+        body: "Write every note as if the patient's lawyer, the next nurse and your own future self will read it tomorrow — all three should find it clear, honest and complete.",
       },
       {
         type: "case",
         title: "On the ward",
-        body: "During a review after a near-miss, the folder of a woman with pre-eclampsia shows the 8 a.m. entry: 'Patient stable. Continue monitoring.' The vital-signs chart shows 148/96 at that same hour, and the nursing notes record that she had a headache. The midwife insists she noticed everything; the record says nothing.\n\nWhat did 'stable' cost this woman, and how should the entry have read?\n\nAnswer: 'Stable' hid the one finding that mattered. The record should carry the data: '8 a.m. — BP 148/96, pulse 88, reports headache; senior midwife informed, review within 30 minutes.' A note without numbers cannot guide the next shift or defend the care given — an opinion in place of facts is a gap in the record where harm hides.",
+        body: "During a review after a near-miss, the folder of a woman with pre-eclampsia shows the 8 a.m. entry: 'Patient stable. Continue monitoring.' The vital-signs chart shows 148/96 at that same hour, and the nursing notes record that she had a headache. The nurse insists she noticed everything; the record says nothing.\n\nWhat did 'stable' cost this woman, and how should the entry have read?\n\nAnswer: 'Stable' hid the one finding that mattered. The record should carry the data: '8 a.m. — BP 148/96, pulse 88, reports headache; senior nurse informed, review within 30 minutes.' A note without numbers cannot guide the next shift or defend the care given — an opinion in place of facts is a gap in the record where harm hides.",
       },
       {
         type: "memory_trick",
@@ -1112,7 +1112,7 @@ export const lessons: SeedFullLesson[] = [
       },
     ],
     sources: [
-      { organization: "Nursing and Midwifery Council of Ghana", title: "Code of Professional Conduct for Nurses and Midwives" },
+      { organization: "Nursing and Midwifery Council of Ghana", title: "Code of Professional Conduct for Nurses and Nurses" },
       {
         organization: "WHO",
         title: "WHO Patient Safety Curriculum Guide: Multi-Professional Edition",
@@ -1148,7 +1148,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The core ideas",
-        body: "**SBAR** is the standard structure. **Situation**: who she is and why you are worried — 'Madam Yaa, room 4, day one after delivery, blood pressure climbing.' **Background**: the relevant history — 'first pregnancy, booked at 20 weeks, pressures normal until last night.' **Assessment**: your findings — 'BP 152/98 now, pulse 96, headache, no visual symptoms, urine protein trace.' **Recommendation**: what you need — 'she needs review within 30 minutes; I have kept her on her left side and the fetal heart is being monitored.'\n\nHand over face to face, at the bedside where the ward layout allows, so the incoming midwife can ask questions and see the patient. Give the highest-risk patients first, while everyone is fresh, and back verbal report with the written chart. Close the loop on instructions by repeating them back — read-back confirms the message arrived before the outgoing shift leaves.\n\nThe classic failure is the warm assumption: 'she's fine, you know Madam Yaa' — she is known to you, and a stranger to the next shift. Familiarity transfers nothing; facts transfer care.",
+        body: "**SBAR** is the standard structure. **Situation**: who she is and why you are worried — 'Madam Yaa, room 4, day one after delivery, blood pressure climbing.' **Background**: the relevant history — 'first pregnancy, booked at 20 weeks, pressures normal until last night.' **Assessment**: your findings — 'BP 152/98 now, pulse 96, headache, no visual symptoms, urine protein trace.' **Recommendation**: what you need — 'she needs review within 30 minutes; I have kept her on her left side and the fetal heart is being monitored.'\n\nHand over face to face, at the bedside where the ward layout allows, so the incoming nurse can ask questions and see the patient. Give the highest-risk patients first, while everyone is fresh, and back verbal report with the written chart. Close the loop on instructions by repeating them back — read-back confirms the message arrived before the outgoing shift leaves.\n\nThe classic failure is the warm assumption: 'she's fine, you know Madam Yaa' — she is known to you, and a stranger to the next shift. Familiarity transfers nothing; facts transfer care.",
       },
       {
         type: "clinical_pearl",
@@ -1157,7 +1157,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "At the 7 p.m. handover on the postnatal ward, a tired student says: 'Bed 6 is fine, she's the one from Tuesday, you know her.' The incoming midwife does not know her. Two hours later, bed 6's blood pressure is 158/102 with a headache, and the story of a steadily climbing pressure since the morning comes out only after hunting through the notes.\n\nWhat was lost in that one sentence, and what would a proper SBAR have changed?\n\nAnswer: Everything that mattered was compressed into 'fine' — her identity, the day of delivery, the trend of climbing pressures, the morning's warning signs. A proper SBAR — name, day, background, current numbers, recommendation for review — would have put the incoming midwife at the bedside with her eyes open, ready to escalate before 158/102. 'You know her' transfers nothing; facts transfer care.",
+        body: "At the 7 p.m. handover on the postnatal ward, a tired student says: 'Bed 6 is fine, she's the one from Tuesday, you know her.' The incoming nurse does not know her. Two hours later, bed 6's blood pressure is 158/102 with a headache, and the story of a steadily climbing pressure since the morning comes out only after hunting through the notes.\n\nWhat was lost in that one sentence, and what would a proper SBAR have changed?\n\nAnswer: Everything that mattered was compressed into 'fine' — her identity, the day of delivery, the trend of climbing pressures, the morning's warning signs. A proper SBAR — name, day, background, current numbers, recommendation for review — would have put the incoming nurse at the bedside with her eyes open, ready to escalate before 158/102. 'You know her' transfers nothing; facts transfer care.",
       },
       {
         type: "memory_trick",
@@ -1214,7 +1214,7 @@ export const lessons: SeedFullLesson[] = [
         ],
         correctIndex: 1,
         explanation:
-          "Warm assumptions transfer no information: the incoming midwife may not know the patient, and 'fine' hides the trend, the risks and the plan. Bedside handover and clear notes are protections, not failures.",
+          "Warm assumptions transfer no information: the incoming nurse may not know the patient, and 'fine' hides the trend, the risks and the plan. Bedside handover and clear notes are protections, not failures.",
         courseSlug: "communication-professional-practice",
       },
     ],
@@ -1257,7 +1257,7 @@ export const lessons: SeedFullLesson[] = [
     difficulty: "Moderate",
     durationMin: 13,
     objectives: [
-      "Define professional boundaries and why they protect both patient and midwife.",
+      "Define professional boundaries and why they protect both patient and nurse.",
       "Identify warning signs of boundary drift, including secrets, gifts and off-duty involvement.",
       "Apply gracious ways to decline gifts and manage dual relationships in small communities.",
     ],
@@ -1272,7 +1272,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The core ideas",
-        body: "A professional boundary is the line between a caring relationship and a personal one. You may know the woman on your ward from church or the market — it is fine to greet her warmly by name. What stays constant is that during her care you are her midwife, not her friend: your decisions, your records and your confidentiality follow professional rules, not personal loyalty.\n\nBoundary drift has warning signs. You spend off-duty hours with one patient. You share your own problems with her. She asks you to keep something 'just between us — don't tell sister.' You begin accepting personal gifts, money or favours, or a social media friend request from a current patient. Any of these means the boundary has moved, and it is time to talk it through with your supervisor.\n\nGifts are the everyday test. Families offer out of genuine gratitude, sometimes as tradition, and refusing rudely wounds them. The professional path: thank them sincerely, explain that policy does not allow staff to accept personal gifts, and refer the matter to the ward in-charge. Money is never yours to keep, and secrets are never yours to keep either: 'I cannot promise to keep secrets, but I can promise to handle what you tell me carefully.'",
+        body: "A professional boundary is the line between a caring relationship and a personal one. You may know the woman on your ward from church or the market — it is fine to greet her warmly by name. What stays constant is that during her care you are her nurse, not her friend: your decisions, your records and your confidentiality follow professional rules, not personal loyalty.\n\nBoundary drift has warning signs. You spend off-duty hours with one patient. You share your own problems with her. She asks you to keep something 'just between us — don't tell sister.' You begin accepting personal gifts, money or favours, or a social media friend request from a current patient. Any of these means the boundary has moved, and it is time to talk it through with your supervisor.\n\nGifts are the everyday test. Families offer out of genuine gratitude, sometimes as tradition, and refusing rudely wounds them. The professional path: thank them sincerely, explain that policy does not allow staff to accept personal gifts, and refer the matter to the ward in-charge. Money is never yours to keep, and secrets are never yours to keep either: 'I cannot promise to keep secrets, but I can promise to handle what you tell me carefully.'",
       },
       {
         type: "clinical_pearl",
@@ -1360,7 +1360,7 @@ export const lessons: SeedFullLesson[] = [
       },
     ],
     sources: [
-      { organization: "Nursing and Midwifery Council of Ghana", title: "Code of Professional Conduct for Nurses and Midwives" },
+      { organization: "Nursing and Midwifery Council of Ghana", title: "Code of Professional Conduct for Nurses and Nurses" },
       {
         organization: "WHO",
         title: "WHO Patient Safety Curriculum Guide: Multi-Professional Edition",
@@ -1396,7 +1396,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The core ideas",
-        body: "Reflection is thinking on purpose after the event. It is not re-playing a bad moment all night — that is rumination, which drains you and changes nothing. Reflection has a shape. **What happened?** The facts: the mother asked no questions during her counselling session. **What did I do, and what did she do?** I spoke for ten minutes without pausing; she nodded and looked at the floor. **What will I try next time?** Pause after each section and finish with teach-back. One decision, and the interaction has taught you something.\n\nWrite it small or it will not survive the ward: two lines after a shift — one win, one retry — in a small notebook. In a month the notebook becomes a mirror: you see your patterns (you rush when busy, you use jargon when nervous, you interrupt when anxious) and your growth. Reflection works best with company: ask your mentor or a trusted classmate what they saw — 'How did I come across when the mother refused the examination?' is a question senior midwives respect. What you cannot see in yourself, others see plainly, and that feedback is free tuition.",
+        body: "Reflection is thinking on purpose after the event. It is not re-playing a bad moment all night — that is rumination, which drains you and changes nothing. Reflection has a shape. **What happened?** The facts: the mother asked no questions during her counselling session. **What did I do, and what did she do?** I spoke for ten minutes without pausing; she nodded and looked at the floor. **What will I try next time?** Pause after each section and finish with teach-back. One decision, and the interaction has taught you something.\n\nWrite it small or it will not survive the ward: two lines after a shift — one win, one retry — in a small notebook. In a month the notebook becomes a mirror: you see your patterns (you rush when busy, you use jargon when nervous, you interrupt when anxious) and your growth. Reflection works best with company: ask your mentor or a trusted classmate what they saw — 'How did I come across when the mother refused the examination?' is a question senior nurses respect. What you cannot see in yourself, others see plainly, and that feedback is free tuition.",
       },
       {
         type: "clinical_pearl",

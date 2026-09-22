@@ -76,7 +76,7 @@ export const lessons: SeedFullLesson[] = [
         topic: "Determinants in Practice",
         type: "MCQ",
         difficulty: "Moderate",
-        stem: "A woman at your antenatal clinic has missed three appointments. Which response is most appropriate for a student midwife?",
+        stem: "A woman at your antenatal clinic has missed three appointments. Which response is most appropriate for a student nurse?",
         options: [
           "Scold her firmly so she takes the pregnancy seriously",
           "Threaten to record her as a defaulter to frighten her into attending",
@@ -133,7 +133,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
         note: "Educational source — verify current edition.",
       },
@@ -160,7 +160,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The clinical skill nobody warns you about",
-        body: "Here is a truth from every busy ward: much of what clinicians tell patients is forgotten before the patient reaches home. Not because she is careless — because the words were too many, too technical, too fast, or given at the wrong moment.\n\nHealth education is the planned work of changing that. It means helping a person understand health information in a way they can remember, believe and act on. And for a midwife, it is as clinical as taking a pulse. The mother who knows her danger signs may be the one who arrives in time. The one who was only lectured may not.",
+        body: "Here is a truth from every busy ward: much of what clinicians tell patients is forgotten before the patient reaches home. Not because she is careless — because the words were too many, too technical, too fast, or given at the wrong moment.\n\nHealth education is the planned work of changing that. It means helping a person understand health information in a way they can remember, believe and act on. And for a nurse, it is as clinical as taking a pulse. The mother who knows her danger signs may be the one who arrives in time. The one who was only lectured may not.",
       },
       {
         type: "text",
@@ -206,7 +206,7 @@ export const lessons: SeedFullLesson[] = [
         topic: "Family Involvement",
         type: "MCQ",
         difficulty: "Moderate",
-        stem: "A first-time mother is being discharged, and her mother-in-law will help care for the newborn. The mother-in-law plans to give the baby water and local mixtures. What is the best approach for the student midwife?",
+        stem: "A first-time mother is being discharged, and her mother-in-law will help care for the newborn. The mother-in-law plans to give the baby water and local mixtures. What is the best approach for the student nurse?",
         options: [
           "Counsel the mother privately and tell her to ignore her mother-in-law at home",
           "Counsel both women together, respectfully, explaining the reason for exclusive breastfeeding, and finish with teach-back",
@@ -263,7 +263,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
         note: "Educational source — verify current edition.",
       },
@@ -429,7 +429,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "Madam Yaa is 30 weeks into her second pregnancy. Her haemoglobin at today's antenatal visit is 9.2 g/dL and she looks pale. She eats mostly kenkey with pepper soup. Breakfast is always bread with very strong tea. She stopped taking her iron tablets because 'they make me sick' and money for fish and eggs has been tight.\n\nWhat would you counsel, and how will you make it realistic?\n\nAnswer: Her anaemia has three doors — diet, tablets and the tea timing. Advise adding affordable Grow and Glow foods: beans, groundnuts, dried fish, kontomire and seasonal fruit rather than expensive ones. Restart the iron tablet with food and explain that dark stools are expected, and that side effects usually settle — if nausea continues, discuss timing with the midwife. Move the strong tea away from meals so it stops stealing her iron, and add vitamin C like orange or tomato to the meal she eats best. Finally, arrange a repeat haemoglobin check, because counselling without follow-up is only conversation.",
+        body: "Madam Yaa is 30 weeks into her second pregnancy. Her haemoglobin at today's antenatal visit is 9.2 g/dL and she looks pale. She eats mostly kenkey with pepper soup. Breakfast is always bread with very strong tea. She stopped taking her iron tablets because 'they make me sick' and money for fish and eggs has been tight.\n\nWhat would you counsel, and how will you make it realistic?\n\nAnswer: Her anaemia has three doors — diet, tablets and the tea timing. Advise adding affordable Grow and Glow foods: beans, groundnuts, dried fish, kontomire and seasonal fruit rather than expensive ones. Restart the iron tablet with food and explain that dark stools are expected, and that side effects usually settle — if nausea continues, discuss timing with the nurse. Move the strong tea away from meals so it stops stealing her iron, and add vitamin C like orange or tomato to the meal she eats best. Finally, arrange a repeat haemoglobin check, because counselling without follow-up is only conversation.",
       },
       {
         type: "memory_trick",
@@ -765,7 +765,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
         note: "Educational source — verify current edition.",
       },
@@ -784,7 +784,7 @@ export const lessons: SeedFullLesson[] = [
     objectives: [
       "Define community health and primary health care.",
       "Describe Ghana's levels of care from CHPS to teaching hospital and how referral links them.",
-      "Explain community participation and the midwife's role within it.",
+      "Explain community participation and the nurse's role within it.",
     ],
     tags: ["community health", "public health", "chps", "referral", "primary health care"],
     sourceStatus: "GCU_ALIGNED",
@@ -1031,7 +1031,7 @@ export const lessons: SeedFullLesson[] = [
     durationMin: 14,
     objectives: [
       "Describe the main bacterial shapes and the basic meaning of Gram positive and Gram negative.",
-      "Give examples of useful bacteria and pathogenic bacteria relevant to midwifery.",
+      "Give examples of useful bacteria and pathogenic bacteria relevant to nursing.",
       "Explain how spores, capsules and fast reproduction shape infection control.",
     ],
     tags: ["bacteria", "pathogens", "gram stain", "bacterial shapes"],
@@ -1126,7 +1126,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         topic: "Bacterial Survival",
-        front: "What are bacterial spores, and which midwifery-relevant organism makes them?",
+        front: "What are bacterial spores, and which nursing-relevant organism makes them?",
         back: "Dried, armoured survival forms that resist heat, drying and disinfectants, waking later when conditions improve. Clostridium tetani — reason number one for clean, dry cord care.",
       },
     ],
@@ -1143,7 +1143,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
         note: "Educational source — verify current edition.",
       },
@@ -1162,7 +1162,7 @@ export const lessons: SeedFullLesson[] = [
     objectives: [
       "Describe the structure of a virus and why it must hijack living cells to multiply.",
       "Explain why antibiotics do not work against viruses.",
-      "Give midwifery-relevant examples, including hepatitis B, rubella and HIV.",
+      "Give nursing-relevant examples, including hepatitis B, rubella and HIV.",
     ],
     tags: ["viruses", "pathogens", "vaccination", "hepatitis b"],
     sourceStatus: "GCU_ALIGNED",
@@ -1175,7 +1175,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The core ideas",
-        body: "Why antibiotics fail against viruses is now simple to see: antibiotics target machinery bacteria have and viruses lack — cell walls, bacterial ribosomes, bacterial chemistry. Attacking a virus means attacking our own hijacked cells, which is why few direct antiviral drugs exist. For most viruses, medicine's strongest weapon is the vaccine: it trains your immune system to recognise the intruder before an invasion begins.\n\nThe midwifery-relevant short list matters to learn early. **HIV** passes through blood, sex and from mother to baby — and antiretroviral medicines in pregnancy, birth and after can interrupt that journey, your future daily work. **Hepatitis B** passes at birth, which is why newborns should be vaccinated as soon as possible after delivery. **Rubella**, usually a mild childhood rash, is a monster in early pregnancy — infection in the first weeks can leave a baby deaf, with heart defects and cataracts; the vaccine belongs before pregnancy, never during. Herpes cold sores hide in nerves between attacks and can seriously harm a newborn. And the common cold? A virus — rest, fluids and patience, not antibiotics.",
+        body: "Why antibiotics fail against viruses is now simple to see: antibiotics target machinery bacteria have and viruses lack — cell walls, bacterial ribosomes, bacterial chemistry. Attacking a virus means attacking our own hijacked cells, which is why few direct antiviral drugs exist. For most viruses, medicine's strongest weapon is the vaccine: it trains your immune system to recognise the intruder before an invasion begins.\n\nThe nursing-relevant short list matters to learn early. **HIV** passes through blood, sex and from mother to baby — and antiretroviral medicines in pregnancy, birth and after can interrupt that journey, your future daily work. **Hepatitis B** passes at birth, which is why newborns should be vaccinated as soon as possible after delivery. **Rubella**, usually a mild childhood rash, is a monster in early pregnancy — infection in the first weeks can leave a baby deaf, with heart defects and cataracts; the vaccine belongs before pregnancy, never during. Herpes cold sores hide in nerves between attacks and can seriously harm a newborn. And the common cold? A virus — rest, fluids and patience, not antibiotics.",
       },
       {
         type: "clinical_pearl",
@@ -1193,7 +1193,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         type: "summary",
-        body: "- A virus is genetic material in a protein coat — not quite alive, unable to multiply alone.\n- It hijacks a living cell: attach, enter, copy, assemble, escape — the cell dies as a virus factory.\n- Antibiotics target bacterial machinery only; they do nothing to viruses and misuse breeds resistance.\n- Vaccines train the immune system before the invasion — the strongest antiviral weapon we have.\n- Midwifery list: HIV (interrupt with antiretrovirals), hepatitis B (vaccinate the newborn early), rubella (vaccinate before pregnancy), herpes (protect newborns).\n- The common cold is a virus: fluids, rest and patience — not antibiotics.",
+        body: "- A virus is genetic material in a protein coat — not quite alive, unable to multiply alone.\n- It hijacks a living cell: attach, enter, copy, assemble, escape — the cell dies as a virus factory.\n- Antibiotics target bacterial machinery only; they do nothing to viruses and misuse breeds resistance.\n- Vaccines train the immune system before the invasion — the strongest antiviral weapon we have.\n- Nursing list: HIV (interrupt with antiretrovirals), hepatitis B (vaccinate the newborn early), rubella (vaccinate before pregnancy), herpes (protect newborns).\n- The common cold is a virus: fluids, rest and patience — not antibiotics.",
       },
     ],
     questions: [
@@ -1255,8 +1255,8 @@ export const lessons: SeedFullLesson[] = [
         back: "Antibiotics attack bacterial structures — cell walls and bacterial machinery. Viruses lack all of them; misusing antibiotics only breeds resistant bacteria.",
       },
       {
-        topic: "Midwifery Viruses",
-        front: "Name three viruses with special importance in midwifery and one protective action for each.",
+        topic: "Nursing Viruses",
+        front: "Name three viruses with special importance in nursing and one protective action for each.",
         back: "Hepatitis B — vaccinate the newborn as soon as possible after birth. Rubella — vaccinate before pregnancy (never during). HIV — antiretroviral care through pregnancy, birth and beyond to interrupt mother-to-child transmission.",
       },
     ],
@@ -1299,7 +1299,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The quiet kingdom",
-        body: "Fungi are the kingdom you notice least and meet constantly: the mould on forgotten bread, the yeast that raises dough and ferments beer, the mushrooms after the rains, the ring of itchy rash on a child's scalp. Larger and more complex than bacteria, they live by absorbing their food — which makes them the world's great recyclers, breaking down everything that once lived.\n\nMost fungi are quiet neighbours. A few cause disease in humans, and the diseases they cause are mostly skin-deep, slow and treatable. But in midwifery you will meet them more often than you expect — in itchy pregnancies, in newborn mouths and on folded skin.",
+        body: "Fungi are the kingdom you notice least and meet constantly: the mould on forgotten bread, the yeast that raises dough and ferments beer, the mushrooms after the rains, the ring of itchy rash on a child's scalp. Larger and more complex than bacteria, they live by absorbing their food — which makes them the world's great recyclers, breaking down everything that once lived.\n\nMost fungi are quiet neighbours. A few cause disease in humans, and the diseases they cause are mostly skin-deep, slow and treatable. But in nursing you will meet them more often than you expect — in itchy pregnancies, in newborn mouths and on folded skin.",
       },
       {
         type: "text",
@@ -1314,7 +1314,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "Madam Aku is 28 weeks pregnant with her first baby. For two weeks she has had a thick white discharge and intense itching that keeps her awake at night. She is embarrassed and worried: her aunt told her such discharge means her husband has been unfaithful, and she has started washing the area repeatedly with strong soap several times a day, which seems to make things worse.\n\nWhat is the most likely cause, and how will you help her?\n\nAnswer: This is almost certainly candidiasis — the most common vaginal infection of pregnancy, fed by pregnancy hormones rather than by anyone's behaviour. It is not an STI and not proof of unfaithfulness, a reassurance that may matter as much as the medicine. The frequent soap washing strips the normal protective flora and worsens discomfort — advise plain water, thorough drying, and loose cotton clothing. She should be assessed by the midwife for a suitable topical treatment such as clotrimazole, safe in pregnancy. Ask how often it has recurred: repeated episodes deserve a blood-sugar check. Her body is doing something normal in pregnancy; her treatment is medicine plus gentle truth.",
+        body: "Madam Aku is 28 weeks pregnant with her first baby. For two weeks she has had a thick white discharge and intense itching that keeps her awake at night. She is embarrassed and worried: her aunt told her such discharge means her husband has been unfaithful, and she has started washing the area repeatedly with strong soap several times a day, which seems to make things worse.\n\nWhat is the most likely cause, and how will you help her?\n\nAnswer: This is almost certainly candidiasis — the most common vaginal infection of pregnancy, fed by pregnancy hormones rather than by anyone's behaviour. It is not an STI and not proof of unfaithfulness, a reassurance that may matter as much as the medicine. The frequent soap washing strips the normal protective flora and worsens discomfort — advise plain water, thorough drying, and loose cotton clothing. She should be assessed by the nurse for a suitable topical treatment such as clotrimazole, safe in pregnancy. Ask how often it has recurred: repeated episodes deserve a blood-sugar check. Her body is doing something normal in pregnancy; her treatment is medicine plus gentle truth.",
       },
       {
         type: "memory_trick",
@@ -1676,7 +1676,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The core ideas",
-        body: "**Contact** is the commonest road: direct, skin-to-skin or sexual (gonorrhoea, HIV, syphilis), or indirect through shared objects — towels, combs, instruments. **Droplet** spread rides the heavy spray of a cough or sneeze, travelling about a metre before dropping — influenza and whooping cough go this way, and distance, masks and cough etiquette block them. **Airborne** spread is the stealth upgrade: tiny dried nuclei that float far and stay suspended for hours — tuberculosis, measles and chickenpox move like this, demanding ventilation and isolation, not just distance.\n\n**Faecal-oral** spread runs from waste to mouth through dirty hands, water and food — cholera, typhoid, hepatitis A, polio — the route of the latrine and the unprotected well, with soap and safe water as its roadblocks. **Vector-borne** spread uses living couriers: the night-biting Anopheles mosquito carrying malaria, Aedes carrying yellow fever and dengue. **Blood and body fluids** carry HIV and hepatitis B — the route behind sharps safety, gloves and screening.\n\nThe last route is uniquely yours: **vertical transmission**, mother to child, with three timings — through the placenta in pregnancy (syphilis, rubella, HIV, toxoplasmosis); during birth through the birth canal (gonorrhoea and chlamydia into the newborn's eyes, hepatitis B); and through breast milk (HIV, where it is). Each timing has a midwifery answer: treatment in pregnancy, eye care and vaccines at birth, safer feeding plans.",
+        body: "**Contact** is the commonest road: direct, skin-to-skin or sexual (gonorrhoea, HIV, syphilis), or indirect through shared objects — towels, combs, instruments. **Droplet** spread rides the heavy spray of a cough or sneeze, travelling about a metre before dropping — influenza and whooping cough go this way, and distance, masks and cough etiquette block them. **Airborne** spread is the stealth upgrade: tiny dried nuclei that float far and stay suspended for hours — tuberculosis, measles and chickenpox move like this, demanding ventilation and isolation, not just distance.\n\n**Faecal-oral** spread runs from waste to mouth through dirty hands, water and food — cholera, typhoid, hepatitis A, polio — the route of the latrine and the unprotected well, with soap and safe water as its roadblocks. **Vector-borne** spread uses living couriers: the night-biting Anopheles mosquito carrying malaria, Aedes carrying yellow fever and dengue. **Blood and body fluids** carry HIV and hepatitis B — the route behind sharps safety, gloves and screening.\n\nThe last route is uniquely yours: **vertical transmission**, mother to child, with three timings — through the placenta in pregnancy (syphilis, rubella, HIV, toxoplasmosis); during birth through the birth canal (gonorrhoea and chlamydia into the newborn's eyes, hepatitis B); and through breast milk (HIV, where it is). Each timing has a nursing answer: treatment in pregnancy, eye care and vaccines at birth, safer feeding plans.",
       },
       {
         type: "clinical_pearl",
@@ -1694,7 +1694,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         type: "summary",
-        body: "- Every microbe needs a route to travel — identify the route and you know where to build the roadblock.\n- Contact: direct (touch, sex) or indirect via shared objects.\n- Droplet spread travels about a metre and drops; airborne nuclei float for hours (TB, measles) and demand ventilation and isolation.\n- Faecal-oral runs from waste to mouth through hands, water and food (cholera, typhoid, hepatitis A) — soap and safe water are the roadblocks.\n- Vectors carry malaria and yellow fever; blood and body fluids carry HIV and hepatitis B.\n- Vertical (mother-to-child) transmission happens via placenta, birth canal or breast milk — and each timing has a midwifery answer.",
+        body: "- Every microbe needs a route to travel — identify the route and you know where to build the roadblock.\n- Contact: direct (touch, sex) or indirect via shared objects.\n- Droplet spread travels about a metre and drops; airborne nuclei float for hours (TB, measles) and demand ventilation and isolation.\n- Faecal-oral runs from waste to mouth through hands, water and food (cholera, typhoid, hepatitis A) — soap and safe water are the roadblocks.\n- Vectors carry malaria and yellow fever; blood and body fluids carry HIV and hepatitis B.\n- Vertical (mother-to-child) transmission happens via placenta, birth canal or breast milk — and each timing has a nursing answer.",
       },
     ],
     questions: [
@@ -1774,7 +1774,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
         note: "Educational source — verify current edition.",
       },

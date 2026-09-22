@@ -27,7 +27,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "You will meet pain on every shift — the woman after a caesarean, the patient in sickle cell crisis, the burnt child. Yet pain is invisible. No machine measures it and no scan shows it. What you have instead is the patient's own story, and this lesson teaches you how to listen to it well.\n\nPain assessment is core nursing work, not an optional extra. The score you record tonight decides the analgesia the next midwife reviews in the morning, so asking well, charting honestly and closing the loop matter deeply.",
+        body: "You will meet pain on every shift — the woman after a caesarean, the patient in sickle cell crisis, the burnt child. Yet pain is invisible. No machine measures it and no scan shows it. What you have instead is the patient's own story, and this lesson teaches you how to listen to it well.\n\nPain assessment is core nursing work, not an optional extra. The score you record tonight decides the analgesia the next nurse reviews in the morning, so asking well, charting honestly and closing the loop matter deeply.",
       },
       {
         type: "text",
@@ -438,7 +438,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "A postnatal woman is on four-hourly observations after a caesarean. At 18:00 her temperature is 37.0 and pulse 78. At 22:00 she feels warm; her temperature reads 37.8, pulse 96, and while she rests you count her breathing at 24 breaths per minute. She says she feels 'a bit weak' and has not passed urine since the evening check.\n\nWhat do you do with these findings, and why do they matter even though no single number looks alarming?\n\nAnswer: Chart them immediately and accurately, because together they form a rising trend — creeping fever, climbing pulse, fast breathing, no urine — the classic whisper of infection or early sepsis. Inform the senior midwife or clinician now, not at handover, increase observation frequency as advised, and look for a source: the wound, breasts, lungs, urine and IV site. Early escalation is the whole point of the observation rhythm; waiting for the numbers to look dramatic is waiting too long.",
+        body: "A postnatal woman is on four-hourly observations after a caesarean. At 18:00 her temperature is 37.0 and pulse 78. At 22:00 she feels warm; her temperature reads 37.8, pulse 96, and while she rests you count her breathing at 24 breaths per minute. She says she feels 'a bit weak' and has not passed urine since the evening check.\n\nWhat do you do with these findings, and why do they matter even though no single number looks alarming?\n\nAnswer: Chart them immediately and accurately, because together they form a rising trend — creeping fever, climbing pulse, fast breathing, no urine — the classic whisper of infection or early sepsis. Inform the senior nurse or clinician now, not at handover, increase observation frequency as advised, and look for a source: the wound, breasts, lungs, urine and IV site. Early escalation is the whole point of the observation rhythm; waiting for the numbers to look dramatic is waiting too long.",
       },
       {
         type: "memory_trick",
@@ -927,7 +927,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         note: "Immunity in childbearing — transplacental IgG and breast milk IgA. Verify current edition.",
       },
     ],
@@ -953,7 +953,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Immunity can be built or borrowed. When your immune system meets an antigen and makes its own memory, that is active immunity — earned through infection or vaccination. When ready-made antibodies are handed to you, that is passive immunity — fast, borrowed and temporary.\n\nBoth matter enormously in midwifery, because pregnancy and breastfeeding are the body's own passive-immunity service: the mother's antibodies travel to her baby through the placenta and through milk. This lesson shows you how the two kinds of protection differ, and why vaccines fit so beautifully into that picture.",
+        body: "Immunity can be built or borrowed. When your immune system meets an antigen and makes its own memory, that is active immunity — earned through infection or vaccination. When ready-made antibodies are handed to you, that is passive immunity — fast, borrowed and temporary.\n\nBoth matter enormously in nursing, because pregnancy and breastfeeding are the body's own passive-immunity service: the mother's antibodies travel to her baby through the placenta and through milk. This lesson shows you how the two kinds of protection differ, and why vaccines fit so beautifully into that picture.",
       },
       {
         type: "text",
@@ -1325,7 +1325,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         note: "Wet-mount microscopy for vaginal discharge. Verify current edition.",
       },
     ],
@@ -1457,8 +1457,8 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
-        note: "Applying laboratory results in midwifery care. Verify current edition.",
+        title: "Myles Textbook for Nurses",
+        note: "Applying laboratory results in nursing care. Verify current edition.",
       },
     ],
   },
@@ -1630,7 +1630,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "In one week, two post-caesarean women on the same ward develop fever with wound discharge — one on day three, one on day four. Each is treated with antibiotics and dressings, and both slowly improve. The ward is busy, and the cases are charted as isolated complications.\n\nBeyond treating each woman, what does this pattern demand — and why?\n\nAnswer: Two similar surgical site infections on one ward in one week is a pattern, not a coincidence, and it demands escalation to the senior midwife and the IPC team. Possible common sources need review: hand hygiene compliance, dressing technique, theatre sterility and instrument processing, shared equipment and the wound-care trolley. Reporting triggers that review; treating the women in silence leaves the breakdown in place for the next patients. An outbreak contained early is a ward saved — and quiet charting helps nobody who is admitted tomorrow.",
+        body: "In one week, two post-caesarean women on the same ward develop fever with wound discharge — one on day three, one on day four. Each is treated with antibiotics and dressings, and both slowly improve. The ward is busy, and the cases are charted as isolated complications.\n\nBeyond treating each woman, what does this pattern demand — and why?\n\nAnswer: Two similar surgical site infections on one ward in one week is a pattern, not a coincidence, and it demands escalation to the senior nurse and the IPC team. Possible common sources need review: hand hygiene compliance, dressing technique, theatre sterility and instrument processing, shared equipment and the wound-care trolley. Reporting triggers that review; treating the women in silence leaves the breakdown in place for the next patients. An outbreak contained early is a ward saved — and quiet charting helps nobody who is admitted tomorrow.",
       },
       {
         type: "memory_trick",

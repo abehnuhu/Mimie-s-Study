@@ -1,0 +1,253 @@
+import type { SeedFullLesson } from "../types";
+
+export const lessonDangerSignsPregnancy: SeedFullLesson = {
+  courseSlug: "maternal-child-health-1",
+  moduleTitle: "Watching Mother & Baby",
+  lessonTitle: "Danger Signs in Pregnancy",
+  description: "Bleeding, severe headache, swelling, fever, a baby gone quiet — the signs that turn a routine antenatal day into a rescue. The nurse's job: recognise fast, respond first, refer smart, and teach the list until families can recite it.",
+  difficulty: "Clinical Reasoning",
+  durationMin: 12,
+  objectives: [
+    "By the end you can list the core danger signs of pregnancy and name the emergency that may hide behind each one.",
+    "By the end you can apply the response pattern — assess, stabilise, refer — for a danger sign at clinic or CHPS level.",
+    "By the end you can explain why some assessments, like vaginal examination for late bleeding, must wait for the referral centre.",
+    "By the end you can teach the danger-sign list to women and their families so the 3 a.m. responder knows when to bring her in.",
+  ],
+  tags: ["danger signs", "pregnancy", "referral", "pre-eclampsia", "emergency recognition"],
+  sourceStatus: "PROPOSED",
+  sections: [
+    {
+      type: "callout",
+      title: "Why this matters",
+      body: "Pregnancy is normal — until, quietly, it is not. Danger signs are the body's alarm bells: symptoms that say a complication has already begun and the next hours, not the next appointment, will decide the ending. In the WHO guide Pregnancy, Childbirth, Postpartum and Newborn Care (PCPNC), these signs define the difference between routine antenatal care and same-day rescue. The nurse in the clinic, the CHPS compound and the emergency unit is often the first — and sometimes the only — professional who will hear the alarm. Recognising it, responding to it and moving the woman safely onward is one of the highest-stakes skills you will ever own.",
+    },
+    {
+      type: "text",
+      title: "What this lesson is about",
+      body: "There is a short list of symptoms that turn an antenatal clinic into a rescue station, and every nurse must carry it letter-perfect in her head and teach it until families can recite it in theirs. A woman with any of these signs cannot wait for the next routine contact — today's arrival at the facility is the contact.\n\nThis lesson gives you the list, the emergency that may hide behind each sign, the first response at your level, and the teaching method that carries it from your mouth to the compound where it will matter at midnight. Remember the shape of your role in maternity care: births and definitive treatment are led by the maternity team and the clinicians at the referral centre — but **the nurse prepares, recognises, responds and never abandons the patient**. In this lesson, the recognising is the whole game.",
+    },
+    {
+      type: "text",
+      title: "The core list — learn it letter-perfect",
+      body: "**Vaginal bleeding** at any stage. **Severe headache** with **blurred vision** or flashing lights. **Convulsions** or loss of consciousness. **Severe abdominal pain**. **Fever**. **Reduced or absent fetal movement**. **Leaking or gushing fluid** from the vagina. **Swelling of the face and hands**. **Breathlessness at rest**. **Severe vomiting with weakness**.\n\nBehind these signs hide the great killers of pregnancy: haemorrhage and ectopic pregnancy behind the bleeding; pre-eclampsia advancing towards eclampsia behind the headache, the visual changes and the swelling; placental abruption behind bleeding with pain; malaria and infection behind the fever; cord compression and fetal compromise behind the fluid leak and the baby gone quiet.\n\nNone of these emergencies announces itself with a name. They announce themselves with a symptom a woman mentions in passing — 'my head has been paining me since two days' — while she is putting her sandals back on to go home.",
+    },
+    {
+      type: "table",
+      title: "The sign, what may hide behind it, and your first response",
+      body: "| Danger sign | What may hide behind it | First nursing response |\n|---|---|---|\n| **Vaginal bleeding** | Ectopic pregnancy or miscarriage (early); placenta praevia or abruption (late) | Vital signs and pallor check, keep her lying down and warm, IV access if per guideline, urgent referral — and no vaginal examination |\n| **Severe headache, blurred vision, flashing lights** | Pre-eclampsia advancing towards eclampsia | Blood pressure against her booking baseline, urine protein, quiet environment, urgent review |\n| **Convulsions / unconsciousness** | Eclampsia | Left lateral position, protect from injury, nothing forced into the mouth, shout for help, treat per protocol, urgent transfer |\n| **Severe abdominal pain** | Abruption, ectopic rupture, preterm labour, other surgical causes | Vital signs, position of comfort, nothing by mouth, urgent review and referral |\n| **Fever** | Malaria, urinary or other infection | Temperature, vital signs, pallor, urine findings; same-day assessment and treatment pathway |\n| **Reduced or absent fetal movement** | Fetal compromise, possible stillbirth | Same-day assessment: fetal heart where trained, history of the pattern, referral as directed |\n| **Leaking or gushing fluid** | Ruptured membranes — infection and cord prolapse risk | Clean pad, note colour and smell, avoid introducing anything into the vagina, prompt review |\n| **Face and hand swelling** | Pre-eclampsia | Blood pressure and urine protein; compare with her baseline; same-day review |\n| **Breathlessness at rest** | Severe anaemia, heart strain, clot | Sit her upright, count respirations, pallor check, urgent assessment |\n| **Severe vomiting with weakness** | Dehydration, deranged salts | Signs of dehydration, urine output, urgent review |",
+    },
+    {
+      type: "text",
+      title: "Bleeding — the loudest alarm",
+      body: "Bleeding in pregnancy is never 'just spotting to watch'. In **early pregnancy**, bleeding with **unilateral lower abdominal pain** — especially with dizziness or fainting — is a triad that means **ectopic pregnancy until proven otherwise**, and a ruptured ectopic can kill within hours. Bleeding with cramping may be a threatened or inevitable miscarriage, but that judgement belongs to the clinical team, not to reassurance at the door.\n\nIn **later pregnancy**, two classics hide behind bleeding. **Placenta praevia** — the placenta sitting low over the cervix — classically causes **painless, bright red** bleeding. **Placental abruption** — the placenta shearing away from the wall — brings **pain, dark blood and a rigid, tender uterus**. Both are referral emergencies, and both demand the same first response: position, warmth, vital signs, IV access where your guideline directs it, and urgent transfer with a call ahead — never a wait-and-see.\n\nYour response pattern for any bleeding: **assess** (vital signs, pallor, blood pressure against baseline), **stabilise** (lying, warm, nothing by mouth in an emergency), **refer urgently** — with the receiving facility called ahead and a written note carrying her history.",
+    },
+    {
+      type: "clinical_pearl",
+      title: "The examination that must wait",
+      body: "Never perform a vaginal examination on a woman bleeding in later pregnancy until placenta praevia has been excluded by ultrasound at the referral centre — the examining finger can tear the placenta's bed open and convert a warning bleed into a catastrophe. Assess and stabilise from the outside: vital signs, fundal feel, pallor, fetal heart where trained.",
+    },
+    {
+      type: "text",
+      title: "Headache, vision, swelling — the pre-eclampsia trail",
+      body: "Pre-eclampsia is hypertension with protein in the urine after mid-pregnancy, and it can move from quiet to catastrophic in a day. Its warning trail: a **severe headache not relieved by rest**, **flashes of light or blurred vision**, **pain in the upper abdomen beneath the ribs** (liver involvement — easily mistaken for ordinary heartburn), and **swelling of the face and hands** — note the difference from the benign evening ankle swelling of late pregnancy, which is gone by morning.\n\nThe numbers matter less than the **rise from her own booking baseline**: a pressure of 150/96 in a woman booked at 110/70 is screaming even before the textbook threshold. When you find this trail — or she reports it — she needs same-day review, a quiet environment, and urgent referral as the team directs. And the headache that 'won't go' is never a headache to manage with tea and sleep: it is the warning bell of eclampsia, which can follow within hours.",
+    },
+    {
+      type: "text",
+      title: "Fever and the quiet baby",
+      body: "**Fever in a pregnant woman is a same-day assessment, every time.** In Ghana, malaria is the first suspect and one of the most dangerous: malaria in pregnancy causes **severe anaemia, miscarriage, preterm birth and low birth weight**, and it remains a leading killer of mothers and babies. Urinary infection and other sources complete the differential — the response is assessment now, not 'come back if it continues'.\n\nThe **quiet baby** is the fetus's own alarm. From the time movements are established, a mother notices her baby's rhythm; a felt **reduction in movement, or no movement at all** — commonly after a mother drinks something cold and lies down to count, or simply notices the silence — signals possible fetal compromise and raises the risk of stillbirth. The WHO teaching is simple and non-negotiable: **reduced fetal movement means come today, whatever the hour.** Reassuring a mother that 'babies sleep in the womb' without assessment is one of the most dangerous sentences a clinic can produce.",
+    },
+    {
+      type: "text",
+      title: "Breathlessness, vomiting, and the waters breaking",
+      body: "**Breathlessness at rest** stands apart from the mild breathlessness of late pregnancy that appears on exertion and settles with rest: at rest, it suggests **severe anaemia** (the heart straining to carry too little haemoglobin) or heart strain — and it is an urgent assessment. **Severe vomiting with weakness** risks dehydration and deranged salts, especially in early pregnancy, and may need admission for fluids the team prescribes.\n\n**Leaking or gushing fluid** means the membranes have ruptured. Two dangers follow: **infection ascending into the womb**, and — if the head is not engaged — **cord prolapse**, where the cord slips down beside the baby and is compressed. First response: clean pad and note the **colour and smell** of the fluid (foul smell suggests infection; meconium staining suggests the baby has been stressed), nothing introduced into the vagina, and prompt review with transfer as directed. A woman who reports her waters breaking at home belongs in assessment today, not at the next visit.",
+    },
+    {
+      type: "text",
+      title: "The response pattern: assess, stabilise, refer",
+      body: "Whatever the sign, your first response follows the same three beats.\n\n**Assess**: vital signs (temperature, pulse, respirations, blood pressure against her booking baseline), pallor check, urine for protein, fetal heart where you are trained and equipped — and above all, listen to her story with the danger-sign list in your head.\n\n**Stabilise**: position her — left lateral for the fainting or convulsing woman, sitting upright for the breathless one; keep her warm; give nothing by mouth if an emergency transfer is likely; secure IV access where your guideline directs; and for the convulsing woman: left side, protected from injury, **nothing forced into the mouth**, help summoned immediately, and treatment per the magnesium sulphate protocol as the guideline and team direct — with you protecting the airway, timing the fit and documenting.\n\n**Refer**: call the receiving facility **ahead** so they are ready; write a **referral note** with the findings, times and her history; send an **escort who knows her story**; never send a deteriorating woman alone, and never in an unescorted trotro if an ambulance can be arranged. Then document everything and prepare the family for what the transfer means. This pattern — assess, stabilise, refer, never abandon — is the same at every level of the system, from CHPS compound to district hospital.",
+    },
+    {
+      type: "case",
+      title: "The Tuesday afternoon that was not routine",
+      body: "A 34-week multigravida arrives at your CHPS compound supported by her sister: two days of severe headache, 'lights dancing' in her vision since morning, and swelling of her face she shows you by removing her headscarf. Her blood pressure is 162/104 — she booked at 118/72. The dipstick reads 3+ protein. She says the baby has not moved since yesterday evening. Her sister asks whether they can go home and come back for the next antenatal day on Thursday.\n\nWhat is happening, and how do you answer the sister? What is your order of actions in the next thirty minutes? What must you not do? And what exactly makes this a referral rather than a review?\n\nAnswer: This is the pre-eclampsia trail with a quiet baby — severe headache, visual disturbance, facial swelling, a pressure far above her baseline with heavy proteinuria, and reduced fetal movement. The answer to the sister is kind and absolute: today is the antenatal day, because Thursday is two days this woman may not have. Your actions: keep her calm and on her **left side**, recheck the pressure, confirm the urine result, listen for the fetal heart if trained and equipped, secure IV access per your guideline, prepare the referral note with times and findings, call the district hospital ahead, and arrange the fastest escorted transport available. You do **not** send her home, and you do not manage the headache with anything oral. It is a referral because she needs monitoring and decisions — magnesium for seizure prevention, assessment of the baby, planning the birth — that belong to the maternity team with the equipment and authority for them. Two lives are being transferred, and minutes are the currency.",
+    },
+    {
+      type: "memory_trick",
+      title: "The six Bs and a convulsion",
+      body: "**Bleeding, Blurred vision, Bursting waters, Burning fever, Breathlessness, Baby gone quiet** — plus **any convulsion**. Six Bs, one fit, one rule: **never wait; come immediately.** Teach it exactly this way, and the list survives midnight in a house with no electricity.",
+    },
+    {
+      type: "quiz_prompt",
+      title: "The examination that must wait",
+      body: "A woman at 34 weeks reports painless, bright red vaginal bleeding, moderate in amount, with no pain and a soft abdomen. Which assessment must NOT be performed at your level — and why?\n\nAnswer: A vaginal examination. Painless bright bleeding in later pregnancy suggests placenta praevia — a placenta lying low over the cervix — and an examining finger can tear its bed open and cause massive haemorrhage. Ultrasound at the referral centre must exclude praevia first; your role is vital signs, pallor check, warmth, IV access per guideline and urgent referral with a call ahead.",
+    },
+    {
+      type: "quiz_prompt",
+      title: "Why the family learns the list too",
+      body: "The woman herself may be unconscious, convulsing, or simply asleep at 3 a.m. when a danger sign arrives. Why must the danger-sign list be taught to whoever will be home with her — and how do you know the teaching has landed?\n\nAnswer: Because the first responder to a danger sign is almost never a nurse — it is the husband, the mother-in-law, the co-wife, the neighbour. Teaching the family, in the language they speak at home, and confirming with **teach-back** ('tell me the signs that mean you bring her today') is what turns the list from your knowledge into a household alarm system.",
+    },
+    {
+      type: "text",
+      title: "Teaching the list until families can recite it",
+      body: "Every antenatal contact is a teaching moment, and the danger-sign list is the one lesson you repeat at every single visit. Use the local language and the six Bs. Point to the woman's own body — 'if your face swells like this, you come today'. Write the signs on the cover of her antenatal notebook, the one object that travels with her to every facility, and make sure the person who will be home with her has heard them too — invite the husband or the mother-in-law in for two minutes of the visit.\n\nThen verify with **teach-back**: 'If I asked your sister when to bring you to the clinic, what would she say?' If the answer is complete, the teaching worked. If not, teach it again — kindly, without embarrassment. Respect is the frame: the woman is the captain of this pregnancy, and the family is her crew; your list is the map of when to sail for help. In a compound far from the facility, that map is often the thinnest — and the most decisive — thread between a danger sign and a rescue.",
+    },
+    {
+      type: "summary",
+      title: "In one minute",
+      body: "- Core danger signs: **vaginal bleeding; severe headache with blurred vision or flashing lights; convulsions or unconsciousness; severe abdominal pain; fever; reduced or absent fetal movement; leaking or gushing fluid; swelling of face and hands; breathlessness at rest; severe vomiting with weakness.**\n- Behind them hide the killers: haemorrhage, ectopic pregnancy, eclampsia, abruption, malaria and infection, fetal compromise.\n- The response pattern never changes: **assess** (vitals, pallor, BP against her booking baseline, urine protein, fetal heart where trained), **stabilise** (position, warmth, nothing by mouth if transferring, IV per guideline), **refer urgently** — call ahead, written note, an escort, never alone.\n- **No vaginal examination** for bleeding in later pregnancy until ultrasound excludes placenta praevia.\n- Reduced fetal movement or any fever means **same-day assessment** — 'babies sleep' and 'fever will pass' are sentences that cost lives.\n- The convulsing woman: **left lateral, protect from injury, nothing forced into the mouth**, call for help, treat per protocol.\n- Teach the six Bs and a convulsion to the **family**, in their language, with **teach-back** — the 3 a.m. responder is rarely the nurse.\n- The nurse's role in maternity care: prepare, recognise, respond, refer — and never abandon the patient.",
+    },
+  ],
+  questions: [
+    {
+      topic: "Danger Signs in Pregnancy",
+      type: "MCQ",
+      difficulty: "Easy",
+      stem: "At a routine antenatal contact, a woman mentions one of these complaints. Which one requires immediate, same-day assessment rather than routine advice and follow-up?",
+      options: [
+        "Severe headache with blurred vision for two days",
+        "Mild heartburn after evening meals",
+        "Morning nausea that eases by midday",
+        "Evening ankle swelling that is gone by morning",
+      ],
+      correctIndex: 0,
+      explanation: "Severe headache with visual disturbance is a classic warning of pre-eclampsia advancing towards eclampsia — it demands blood pressure against her booking baseline, urine protein and same-day clinical review, because seizures can follow within hours. Heartburn, morning nausea and evening ankle swelling that clears overnight are common minor discomforts of pregnancy managed with advice. The exam skill is not knowing the list — it is hearing one of its items inside an ordinary sentence.",
+      whyOthers: {
+        B: "Heartburn after meals is a routine complaint of late pregnancy — uncomfortable, not dangerous; advice on posture and small meals suffices unless pain is severe atypical upper-abdominal pain.",
+        C: "Morning nausea easing by midday fits the normal pattern of early pregnancy — reassurance and practical advice are appropriate.",
+        D: "Evening ankle swelling that clears by morning is benign dependent oedema — the danger version is sudden, gross, or involving the face and hands.",
+      },
+      courseSlug: "maternal-child-health-1",
+    },
+    {
+      topic: "Danger Signs in Pregnancy",
+      type: "MCQ",
+      difficulty: "Moderate",
+      stem: "A woman at 34 weeks reports painless bright red vaginal bleeding, moderate in amount. As the nurse preparing her for referral, which action must you NOT take?",
+      options: [
+        "Record her vital signs and check for pallor",
+        "Establish IV access and arrange transfer with a call ahead",
+        "Perform a vaginal examination to assess the source of bleeding",
+        "Ask about fetal movements and listen for the fetal heart where trained",
+      ],
+      correctIndex: 2,
+      explanation: "Painless bright bleeding in later pregnancy suggests placenta praevia — a placenta lying low over the cervix — and a vaginal examination can provoke catastrophic haemorrhage by tearing the placenta's bed. The safe pathway is assessment and stabilisation from the outside — vital signs, pallor, fetal heart, IV access per guideline — followed by urgent referral, with ultrasound at the receiving centre excluding praevia before anyone examines internally. The other three options are exactly the right first-response actions.",
+      whyOthers: {
+        A: "Vital signs and a pallor check are core first response — shock from praevia bleeding can begin quietly.",
+        B: "IV access where the guideline directs, plus transfer arranged with a call ahead, is textbook preparation for a bleeding referral.",
+        D: "Fetal movements and the fetal heart where trained belong in the assessment — the baby's status shapes the urgency the referral note carries.",
+      },
+      courseSlug: "maternal-child-health-1",
+    },
+    {
+      topic: "Danger Signs in Pregnancy",
+      type: "CLINICAL_SCENARIO",
+      difficulty: "Clinical Reasoning",
+      stem: "A pregnant woman begins convulsing in the antenatal clinic waiting area. Which action is correct while help is summoned?",
+      options: [
+        "Place her on her left side, protect her from injury, force nothing into her mouth, and treat per the magnesium sulphate protocol as the guideline and team direct",
+        "Force a spoon wrapped in cloth between her teeth to protect her tongue",
+        "Restrain her limbs firmly to stop the shaking",
+        "Give oral paracetamol and fluids, and wait for the fit to pass",
+      ],
+      correctIndex: 0,
+      explanation: "A convulsion in a pregnant woman is eclampsia until proven otherwise, and the nursing response is disciplined: left lateral position to protect the airway and drainage, gentle protection from hard surfaces, absolutely nothing forced into the mouth (it breaks teeth and risks aspiration), help summoned loudly, treatment per the magnesium sulphate protocol as the guideline directs, and urgent transfer arranged. Restraining limbs harms; oral anything risks aspiration in a woman who cannot protect her own airway. Your documentation of the fit's timing becomes part of the clinical record the team acts on.",
+      whyOthers: {
+        B: "Forcing objects between the teeth breaks teeth, injures the mouth and creates aspiration material — the textbook error this question exists to prevent.",
+        C: "Firm restraint causes injury and achieves nothing — the fit will follow its course; your job is protection and airway positioning.",
+        D: "An unconscious or convulsing patient cannot swallow safely — oral medicines and fluids are an aspiration risk, and eclampsia is not treated with paracetamol.",
+      },
+      courseSlug: "maternal-child-health-1",
+    },
+    {
+      topic: "Danger Signs in Pregnancy",
+      type: "MCQ",
+      difficulty: "Hard",
+      stem: "A woman at 36 weeks phones the clinic: the baby, normally lively in the evenings, has been unusually quiet since yesterday, and a glass of cold water and lying down — as her friends advised — has brought barely any movement. What is the correct advice?",
+      options: [
+        "Come in today for same-day assessment — reduced fetal movement is the fetus's own warning sign and is never dismissed",
+        "Wait two more days, since babies' movement naturally decreases near term",
+        "Repeat the cold-water trick twice more and only come if there is no movement at all by tomorrow",
+        "Reassure her that babies sleep deeply in the womb during the last weeks",
+      ],
+      correctIndex: 0,
+      explanation: "Reduced or absent fetal movement is a danger sign in the WHO PCPNC tradition: it signals possible fetal compromise and raises the risk of stillbirth, and the teaching is non-negotiable — same-day assessment, whatever the hour. A lively baby that goes quiet is a change from her pattern, and the change is the finding. 'Babies slow down near term' and 'babies sleep in the womb' are exactly the reassuring sentences that cost lives; a mother's perception of reduced movement is sensitive enough to act on every time.",
+      whyOthers: {
+        B: "Movement should continue steadily to term — waiting two days on a quiet baby risks discovering a stillbirth at the next visit.",
+        C: "Home remedies are not assessment — requiring 'no movement at all' before she comes sets a threshold far past the safe one.",
+        D: "Reassurance without assessment is the most dangerous response to this danger sign; a mother's report of a quiet baby is always worth a fetal heart check.",
+      },
+      courseSlug: "maternal-child-health-1",
+    },
+    {
+      topic: "Danger Signs in Pregnancy",
+      type: "MULTI_SELECT",
+      difficulty: "Moderate",
+      stem: "A woman at 32 weeks is being assessed at a clinic. Which findings require immediate escalation as danger signs of pregnancy? Select ALL that apply.",
+      options: [
+        "Fever of 38.5 °C with chills and body aches",
+        "Swelling of the face and hands noticed this morning",
+        "Mild ankle swelling in the evening that is gone by morning",
+        "Vaginal bleeding of any amount",
+      ],
+      correctIndexes: [0, 1, 3],
+      explanation: "Fever in pregnancy demands same-day assessment — malaria, a leading killer of mothers and babies in Ghana, is the first suspect, with urinary and other infection close behind. Swelling of the face and hands (not the benign evening ankles) is part of the pre-eclampsia trail, as is any bleeding, which may hide ectopic pregnancy, miscarriage, praevia or abruption depending on the stage. Evening ankle swelling that clears overnight, by contrast, is common dependent oedema of late pregnancy — reassurance and advice fit, unless swelling becomes sudden, gross, or involves the face.",
+      whyOthers: {
+        C: "Dependent evening ankle oedema that resolves by morning is a normal feature of late pregnancy — it is the facial and hand swelling, or sudden gross oedema, that raises the alarm.",
+      },
+      courseSlug: "maternal-child-health-1",
+    },
+  ],
+  flashcards: [
+    {
+      topic: "Danger Signs in Pregnancy",
+      front: "Name the six Bs of pregnancy danger signs — and the seventh alarm.",
+      back: "Bleeding, Blurred vision (with severe headache), Bursting waters, Burning fever, Breathlessness at rest, Baby gone quiet — plus any convulsion. One rule: never wait; come immediately.",
+    },
+    {
+      topic: "Danger Signs in Pregnancy",
+      front: "Why must you never perform a vaginal examination on a woman bleeding in later pregnancy before referral?",
+      back: "Placenta praevia may lie over the cervix — an examining finger can tear the placenta's bed open and cause massive haemorrhage. Ultrasound at the referral centre must exclude praevia first.",
+    },
+    {
+      topic: "Danger Signs in Pregnancy",
+      front: "What is the constant response pattern for any danger sign at clinic or CHPS level?",
+      back: "Assess (vitals, pallor, BP against her booking baseline, urine protein, fetal heart where trained) → stabilise (position, warmth, nothing by mouth if transferring, IV per guideline) → refer urgently: call ahead, written note, escort — never send her alone.",
+    },
+    {
+      topic: "Danger Signs in Pregnancy",
+      front: "What does severe headache with flashing lights, facial swelling and a rise from her booking blood pressure suggest together?",
+      back: "Pre-eclampsia advancing towards eclampsia — a same-day review emergency with a quiet environment and urgent referral, because seizures can follow within hours.",
+    },
+    {
+      topic: "Danger Signs in Pregnancy",
+      front: "Why is the danger-sign list taught to the family with teach-back, not just to the woman?",
+      back: "Because the first responder at 3 a.m. is usually the husband, mother-in-law or neighbour — teach-back ('tell me the signs that mean bring her today') turns the list from your knowledge into a household alarm system.",
+    },
+  ],
+  sources: [
+    {
+      organization: "World Health Organization",
+      title: "Pregnancy, Childbirth, Postpartum and Newborn Care: A Guide for Essential Practice (PCPNC)",
+      year: "2015 (3rd edition)",
+      note: "The WHO guide whose danger-sign framework this lesson follows for first-level facilities.",
+    },
+    {
+      organization: "World Health Organization",
+      title: "WHO recommendations on antenatal care for a positive pregnancy experience",
+      year: "2016",
+      note: "Antenatal counselling on danger signs and fetal movement awareness.",
+    },
+    {
+      organization: "Nursing and Midwifery Council of Ghana",
+      title: "Curriculum for the Registered General Nursing (RGN) Programme",
+      year: "2015",
+      note: "Maternal and child health competencies and the nurse's referral role.",
+    },
+    {
+      organization: "Ghana Health Service",
+      title: "Standard Treatment Guidelines",
+      year: "2017",
+      note: "National guidance on malaria in pregnancy, hypertensive disorders and referral pathways.",
+    },
+  ],
+};

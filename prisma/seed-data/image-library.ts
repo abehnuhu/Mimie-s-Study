@@ -14,7 +14,10 @@ export const imageLibrary: LibraryImage[] = [
    "instruments",
    "autoclave",
    "asepsis",
-   "sterile"
+   "sterile",
+   "theatre",
+   "perioperative",
+   "surgical"
   ]
  },
  {
@@ -27,7 +30,8 @@ export const imageLibrary: LibraryImage[] = [
    "measurement",
    "baby",
    "growth",
-   "nutrition"
+   "nutrition",
+   "paediatric"
   ]
  },
  {
@@ -35,11 +39,15 @@ export const imageLibrary: LibraryImage[] = [
   "alt": "A blood pressure cuff",
   "caption": "The blood pressure cuff — your daily companion at every check-up.",
   "tags": [
-   "blood pressure",
+   "blood",
+   "pressure",
    "vital",
    "measurement",
    "hypertension",
-   "preeclampsia"
+   "preeclampsia",
+   "eclampsia",
+   "cardiac",
+   "monitoring"
   ]
  },
  {
@@ -52,7 +60,9 @@ export const imageLibrary: LibraryImage[] = [
    "newborn",
    "lactation",
    "latch",
-   "nutrition"
+   "nutrition",
+   "postnatal",
+   "maternal"
   ]
  },
  {
@@ -65,7 +75,8 @@ export const imageLibrary: LibraryImage[] = [
    "newborn",
    "birth",
    "delivery",
-   "labour"
+   "labour",
+   "maternal"
   ]
  },
  {
@@ -77,7 +88,9 @@ export const imageLibrary: LibraryImage[] = [
    "care",
    "newborn",
    "hygiene",
-   "baby"
+   "baby",
+   "infection",
+   "sepsis"
   ]
  },
  {
@@ -90,7 +103,8 @@ export const imageLibrary: LibraryImage[] = [
    "expressed",
    "newborn",
    "milk",
-   "nutrition"
+   "nutrition",
+   "preterm"
   ]
  },
  {
@@ -103,19 +117,22 @@ export const imageLibrary: LibraryImage[] = [
    "ward",
    "labour",
    "birth",
-   "positioning"
+   "positioning",
+   "maternal",
+   "obstetric"
   ]
  },
  {
   "file": "/images/games/delivery-kit.jpg",
-  "alt": "A sterile midwifery delivery kit",
+  "alt": "A sterile clean delivery kit for the labour ward",
   "caption": "The delivery kit — checked and complete before every birth.",
   "tags": [
    "delivery",
    "kit",
    "instruments",
    "pack",
-   "midwifery",
+   "birth",
+   "clean",
    "sterile",
    "aseptic"
   ]
@@ -130,7 +147,8 @@ export const imageLibrary: LibraryImage[] = [
    "heart",
    "monitoring",
    "auscultation",
-   "pregnancy"
+   "pregnancy",
+   "antenatal"
   ]
  },
  {
@@ -142,7 +160,9 @@ export const imageLibrary: LibraryImage[] = [
    "forceps",
    "surgical",
    "obstetric",
-   "sterile"
+   "sterile",
+   "theatre",
+   "delivery"
   ]
  },
  {
@@ -155,7 +175,9 @@ export const imageLibrary: LibraryImage[] = [
    "protective",
    "infection",
    "hygiene",
-   "standard"
+   "standard",
+   "asepsis",
+   "precautions"
   ]
  },
  {
@@ -167,7 +189,9 @@ export const imageLibrary: LibraryImage[] = [
    "goggles",
    "protection",
    "infection",
-   "equipment"
+   "equipment",
+   "precautions",
+   "isolation"
   ]
  },
  {
@@ -192,7 +216,8 @@ export const imageLibrary: LibraryImage[] = [
    "hygiene",
    "alcohol",
    "infection",
-   "sanitizer"
+   "sanitizer",
+   "asepsis"
   ]
  },
  {
@@ -206,7 +231,8 @@ export const imageLibrary: LibraryImage[] = [
    "washing",
    "infection",
    "asepsis",
-   "aseptic"
+   "aseptic",
+   "precautions"
   ]
  },
  {
@@ -219,20 +245,23 @@ export const imageLibrary: LibraryImage[] = [
    "skin",
    "premature",
    "newborn",
-   "warmth"
+   "warmth",
+   "preterm",
+   "mother"
   ]
  },
  {
   "file": "/images/games/midwife-ghana.jpg",
-  "alt": "A Ghanaian midwife in her maternity ward",
-  "caption": "A midwife in her ward — calm hands, watchful eyes, warm heart.",
+  "alt": "A Ghanaian nurse in her maternity ward",
+  "caption": "A nurse in her ward — calm hands, watchful eyes, warm heart.",
   "tags": [
-   "midwife",
+   "nurse",
    "ghana",
    "care",
-   "nursing",
+   "maternity",
    "communication",
    "professional",
+   "licensure",
    "ward",
    "leadership"
   ]
@@ -248,7 +277,9 @@ export const imageLibrary: LibraryImage[] = [
    "medication",
    "vaccination",
    "sharps",
-   "immunization"
+   "immunization",
+   "insulin",
+   "diabetes"
   ]
  },
  {
@@ -261,7 +292,8 @@ export const imageLibrary: LibraryImage[] = [
    "emergency",
    "airway",
    "breathing",
-   "apgar"
+   "apgar",
+   "neonatal"
   ]
  },
  {
@@ -274,7 +306,9 @@ export const imageLibrary: LibraryImage[] = [
    "assessment",
    "apgar",
    "baby",
-   "vital"
+   "vital",
+   "neonatal",
+   "paediatric"
   ]
  },
  {
@@ -286,7 +320,8 @@ export const imageLibrary: LibraryImage[] = [
    "baby",
    "examination",
    "face",
-   "assessment"
+   "assessment",
+   "neonatal"
   ]
  },
  {
@@ -298,7 +333,8 @@ export const imageLibrary: LibraryImage[] = [
    "baby",
    "feet",
    "assessment",
-   "examination"
+   "examination",
+   "neonatal"
   ]
  },
  {
@@ -311,7 +347,8 @@ export const imageLibrary: LibraryImage[] = [
    "fontanelle",
    "baby",
    "examination",
-   "skull"
+   "skull",
+   "neonatal"
   ]
  },
  {
@@ -324,7 +361,8 @@ export const imageLibrary: LibraryImage[] = [
    "baby",
    "warmth",
    "care",
-   "positioning"
+   "positioning",
+   "neonatal"
   ]
  },
  {
@@ -337,7 +375,9 @@ export const imageLibrary: LibraryImage[] = [
    "premature",
    "newborn",
    "special",
-   "care"
+   "care",
+   "preterm",
+   "neonatal"
   ]
  },
  {
@@ -350,12 +390,14 @@ export const imageLibrary: LibraryImage[] = [
    "newborn",
    "equipment",
    "premature",
-   "observation"
+   "observation",
+   "preterm",
+   "neonatal"
   ]
  },
  {
   "file": "/images/games/palpation.jpg",
-  "alt": "A midwife palpating a pregnant abdomen",
+  "alt": "A nurse palpating a pregnant abdomen",
   "caption": "Abdominal palpation — hands reading lie, position and growth.",
   "tags": [
    "palpation",
@@ -365,7 +407,8 @@ export const imageLibrary: LibraryImage[] = [
    "position",
    "antenatal",
    "pregnancy",
-   "assessment"
+   "assessment",
+   "maternal"
   ]
  },
  {
@@ -378,7 +421,9 @@ export const imageLibrary: LibraryImage[] = [
    "monitoring",
    "progress",
    "chart",
-   "documentation"
+   "documentation",
+   "maternal",
+   "obstructed"
   ]
  },
  {
@@ -416,7 +461,9 @@ export const imageLibrary: LibraryImage[] = [
    "waste",
    "infection",
    "disposal",
-   "needle"
+   "needle",
+   "medication",
+   "injection"
   ]
  },
  {
@@ -428,7 +475,9 @@ export const imageLibrary: LibraryImage[] = [
    "waste",
    "disposal",
    "safety",
-   "infection"
+   "infection",
+   "injection",
+   "occupational"
   ]
  },
  {
@@ -440,7 +489,10 @@ export const imageLibrary: LibraryImage[] = [
    "sterile",
    "aseptic",
    "technique",
-   "surgical"
+   "surgical",
+   "asepsis",
+   "theatre",
+   "perioperative"
   ]
  },
  {
@@ -454,7 +506,9 @@ export const imageLibrary: LibraryImage[] = [
    "chest",
    "assessment",
    "heart",
-   "lungs"
+   "lungs",
+   "respiratory",
+   "cardiac"
   ]
  },
  {
@@ -467,7 +521,10 @@ export const imageLibrary: LibraryImage[] = [
    "wound",
    "repair",
    "instruments",
-   "perineal"
+   "perineal",
+   "theatre",
+   "perioperative",
+   "surgical"
   ]
  },
  {
@@ -480,7 +537,9 @@ export const imageLibrary: LibraryImage[] = [
    "vital",
    "fever",
    "measurement",
-   "infection"
+   "infection",
+   "triage",
+   "sepsis"
   ]
  },
  {
@@ -492,7 +551,8 @@ export const imageLibrary: LibraryImage[] = [
    "disposal",
    "hygiene",
    "infection",
-   "environment"
+   "environment",
+   "environmental"
   ]
  },
  {
@@ -602,21 +662,25 @@ export const imageLibrary: LibraryImage[] = [
  {
   "file": "/images/lessons/muscles/muscles-02.jpg",
   "alt": "Wikimedia Commons: 1105 Anterior and Posterior Views of Muscles.jpg",
-  "caption": "The muscular system — every move a mother makes in labour uses it.",
+  "caption": "The muscular system — every move your patients make depends on it.",
   "tags": [
    "muscles",
    "muscular",
-   "anatomy"
+   "anatomy",
+   "mobility",
+   "movement"
   ]
  },
  {
   "file": "/images/lessons/muscles/muscles-03.jpg",
   "alt": "Wikimedia Commons: Skeletal muscles homo sapiens.JPG",
-  "caption": "The muscular system — every move a mother makes in labour uses it.",
+  "caption": "The muscular system — every move your patients make depends on it.",
   "tags": [
    "muscles",
    "muscular",
-   "anatomy"
+   "anatomy",
+   "mobility",
+   "movement"
   ]
  },
  {
@@ -626,7 +690,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "skull",
    "bones",
-   "anatomy"
+   "anatomy",
+   "head",
+   "neurology"
   ]
  },
  {
@@ -636,7 +702,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "skull",
    "bones",
-   "anatomy"
+   "anatomy",
+   "head",
+   "neurology"
   ]
  },
  {
@@ -646,7 +714,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "blood",
    "cells",
-   "red"
+   "red",
+   "anaemia",
+   "oxygen"
   ]
  },
  {
@@ -686,7 +756,10 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "skeleton",
    "bones",
-   "anatomy"
+   "anatomy",
+   "fractures",
+   "mobility",
+   "joints"
   ]
  },
  {
@@ -697,7 +770,10 @@ export const imageLibrary: LibraryImage[] = [
    "pelvis",
    "bones",
    "female",
-   "anatomy"
+   "anatomy",
+   "labour",
+   "birth",
+   "maternal"
   ]
  },
  {
@@ -708,7 +784,10 @@ export const imageLibrary: LibraryImage[] = [
    "pelvis",
    "bones",
    "female",
-   "anatomy"
+   "anatomy",
+   "labour",
+   "birth",
+   "maternal"
   ]
  },
  {
@@ -719,7 +798,10 @@ export const imageLibrary: LibraryImage[] = [
    "pelvis",
    "bones",
    "female",
-   "anatomy"
+   "anatomy",
+   "labour",
+   "birth",
+   "maternal"
   ]
  },
  {
@@ -730,7 +812,10 @@ export const imageLibrary: LibraryImage[] = [
    "pelvis",
    "bones",
    "female",
-   "anatomy"
+   "anatomy",
+   "labour",
+   "birth",
+   "maternal"
   ]
  },
  {
@@ -740,7 +825,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "skull",
    "bones",
-   "anatomy"
+   "anatomy",
+   "head",
+   "neurology"
   ]
  },
  {
@@ -750,7 +837,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "skull",
    "bones",
-   "anatomy"
+   "anatomy",
+   "head",
+   "neurology"
   ]
  },
  {
@@ -780,7 +869,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "blood",
    "immunity",
-   "white"
+   "white",
+   "infection",
+   "sepsis"
   ]
  },
  {
@@ -790,7 +881,11 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "brain",
    "nervous",
-   "anatomy"
+   "anatomy",
+   "neurology",
+   "stroke",
+   "seizures",
+   "meningitis"
   ]
  },
  {
@@ -800,7 +895,10 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "brain",
    "nervous",
-   "anatomy"
+   "anatomy",
+   "neurology",
+   "stroke",
+   "seizures"
   ]
  },
  {
@@ -810,7 +908,10 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "brain",
    "nervous",
-   "anatomy"
+   "anatomy",
+   "neurology",
+   "stroke",
+   "seizures"
   ]
  },
  {
@@ -860,13 +961,14 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "pancreas",
    "insulin",
-   "endocrine"
+   "endocrine",
+   "diabetes"
   ]
  },
  {
   "file": "/images/lessons/repro-female/repro-female-01.jpg",
   "alt": "Wikimedia Commons: Female anatomy with G-spot - Ukraine.png",
-  "caption": "The female reproductive system — the anatomy at the heart of midwifery.",
+  "caption": "The female reproductive system — the anatomy at the heart of nursing.",
   "tags": [
    "reproductive",
    "female",
@@ -953,7 +1055,9 @@ export const imageLibrary: LibraryImage[] = [
    "delivery",
    "room",
    "ward",
-   "labour"
+   "labour",
+   "maternal",
+   "obstetric"
   ]
  },
  {
@@ -964,7 +1068,9 @@ export const imageLibrary: LibraryImage[] = [
    "kangaroo",
    "care",
    "premature",
-   "newborn"
+   "newborn",
+   "preterm",
+   "neonatal"
   ]
  },
  {
@@ -975,7 +1081,9 @@ export const imageLibrary: LibraryImage[] = [
    "kangaroo",
    "care",
    "premature",
-   "newborn"
+   "newborn",
+   "preterm",
+   "neonatal"
   ]
  },
  {
@@ -986,7 +1094,9 @@ export const imageLibrary: LibraryImage[] = [
    "incubator",
    "nicu",
    "premature",
-   "newborn"
+   "newborn",
+   "preterm",
+   "neonatal"
   ]
  },
  {
@@ -996,7 +1106,10 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "gloves",
    "sterile",
-   "aseptic"
+   "aseptic",
+   "asepsis",
+   "theatre",
+   "perioperative"
   ]
  },
  {
@@ -1006,7 +1119,10 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "gloves",
    "sterile",
-   "aseptic"
+   "aseptic",
+   "asepsis",
+   "theatre",
+   "perioperative"
   ]
  },
  {
@@ -1016,7 +1132,10 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "gloves",
    "sterile",
-   "aseptic"
+   "aseptic",
+   "asepsis",
+   "theatre",
+   "perioperative"
   ]
  },
  {
@@ -1026,7 +1145,10 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "mask",
    "shield",
-   "ppe"
+   "ppe",
+   "isolation",
+   "precautions",
+   "infection"
   ]
  },
  {
@@ -1036,7 +1158,10 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "mask",
    "shield",
-   "ppe"
+   "ppe",
+   "isolation",
+   "precautions",
+   "infection"
   ]
  },
  {
@@ -1046,7 +1171,10 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "mask",
    "shield",
-   "ppe"
+   "ppe",
+   "isolation",
+   "precautions",
+   "infection"
   ]
  },
  {
@@ -1056,7 +1184,10 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "autoclave",
    "sterilization",
-   "instruments"
+   "instruments",
+   "asepsis",
+   "theatre",
+   "perioperative"
   ]
  },
  {
@@ -1066,7 +1197,10 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "transfusion",
    "blood",
-   "infusion"
+   "infusion",
+   "anaemia",
+   "resuscitation",
+   "shock"
   ]
  },
  {
@@ -1077,7 +1211,8 @@ export const imageLibrary: LibraryImage[] = [
    "stethoscope",
    "auscultation",
    "chest",
-   "lung"
+   "lung",
+   "respiratory"
   ]
  },
  {
@@ -1088,7 +1223,8 @@ export const imageLibrary: LibraryImage[] = [
    "stethoscope",
    "auscultation",
    "chest",
-   "lung"
+   "lung",
+   "respiratory"
   ]
  },
  {
@@ -1098,7 +1234,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "oxygen",
    "saturation",
-   "vital"
+   "vital",
+   "respiratory",
+   "copd"
   ]
  },
  {
@@ -1108,7 +1246,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "oxygen",
    "saturation",
-   "vital"
+   "vital",
+   "respiratory",
+   "copd"
   ]
  },
  {
@@ -1118,7 +1258,8 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "bacteria",
    "culture",
-   "microbiology"
+   "microbiology",
+   "infection"
   ]
  },
  {
@@ -1128,7 +1269,8 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "virus",
    "microbiology",
-   "microbes"
+   "microbes",
+   "infection"
   ]
  },
  {
@@ -1138,7 +1280,8 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "virus",
    "microbiology",
-   "microbes"
+   "microbes",
+   "infection"
   ]
  },
  {
@@ -1178,7 +1321,8 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "malaria",
    "parasite",
-   "blood"
+   "blood",
+   "anaemia"
   ]
  },
  {
@@ -1188,7 +1332,8 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "worm",
    "parasite",
-   "stool"
+   "stool",
+   "anaemia"
   ]
  },
  {
@@ -1219,7 +1364,9 @@ export const imageLibrary: LibraryImage[] = [
    "community",
    "health",
    "ghana",
-   "worker"
+   "worker",
+   "chps",
+   "primary"
   ]
  },
  {
@@ -1229,7 +1376,8 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "nutrition",
    "diet",
-   "food"
+   "food",
+   "diabetes"
   ]
  },
  {
@@ -1239,7 +1387,8 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "water",
    "sanitation",
-   "hygiene"
+   "hygiene",
+   "environmental"
   ]
  },
  {
@@ -1249,7 +1398,8 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "family",
    "planning",
-   "contraception"
+   "contraception",
+   "reproductive"
   ]
  },
  {
@@ -1323,7 +1473,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "emergency",
    "resuscitation",
-   "team"
+   "team",
+   "simulation",
+   "training"
   ]
  },
  {
@@ -1343,7 +1495,8 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "skin",
    "histology",
-   "layers"
+   "layers",
+   "wound"
   ]
  },
  {
@@ -1353,7 +1506,8 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "heart",
    "anatomy",
-   "model"
+   "model",
+   "cardiac"
   ]
  },
  {
@@ -1363,7 +1517,8 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "heart",
    "anatomy",
-   "model"
+   "model",
+   "cardiac"
   ]
  },
  {
@@ -1373,7 +1528,8 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "heart",
    "anatomy",
-   "model"
+   "model",
+   "cardiac"
   ]
  },
  {
@@ -1384,7 +1540,9 @@ export const imageLibrary: LibraryImage[] = [
    "ecg",
    "heart",
    "rhythm",
-   "cardiac"
+   "cardiac",
+   "arrhythmias",
+   "monitoring"
   ]
  },
  {
@@ -1395,7 +1553,9 @@ export const imageLibrary: LibraryImage[] = [
    "ecg",
    "heart",
    "rhythm",
-   "cardiac"
+   "cardiac",
+   "arrhythmias",
+   "monitoring"
   ]
  },
  {
@@ -1405,7 +1565,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "blood",
    "hemoglobin",
-   "anaemia"
+   "anaemia",
+   "sickle",
+   "iron"
   ]
  },
  {
@@ -1415,7 +1577,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "blood",
    "hemoglobin",
-   "anaemia"
+   "anaemia",
+   "sickle",
+   "iron"
   ]
  },
  {
@@ -1425,7 +1589,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "blood",
    "hemoglobin",
-   "anaemia"
+   "anaemia",
+   "sickle",
+   "iron"
   ]
  },
  {
@@ -1436,7 +1602,10 @@ export const imageLibrary: LibraryImage[] = [
    "chest",
    "x-ray",
    "lungs",
-   "radiology"
+   "radiology",
+   "pneumonia",
+   "tuberculosis",
+   "respiratory"
   ]
  },
  {
@@ -1447,7 +1616,10 @@ export const imageLibrary: LibraryImage[] = [
    "chest",
    "x-ray",
    "lungs",
-   "radiology"
+   "radiology",
+   "pneumonia",
+   "tuberculosis",
+   "respiratory"
   ]
  },
  {
@@ -1458,7 +1630,10 @@ export const imageLibrary: LibraryImage[] = [
    "chest",
    "x-ray",
    "lungs",
-   "radiology"
+   "radiology",
+   "pneumonia",
+   "tuberculosis",
+   "respiratory"
   ]
  },
  {
@@ -1549,7 +1724,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "apgar",
    "newborn",
-   "assessment"
+   "assessment",
+   "neonatal",
+   "resuscitation"
   ]
  },
  {
@@ -1559,7 +1736,8 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "newborn",
    "hearing",
-   "screening"
+   "screening",
+   "neonatal"
   ]
  },
  {
@@ -1569,7 +1747,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "isolation",
    "infection",
-   "control"
+   "control",
+   "tuberculosis",
+   "precautions"
   ]
  },
  {
@@ -1579,7 +1759,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "isolation",
    "infection",
-   "control"
+   "control",
+   "tuberculosis",
+   "precautions"
   ]
  },
  {
@@ -1622,7 +1804,8 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "pharmacy",
    "medication",
-   "dispensing"
+   "dispensing",
+   "pharmacology"
   ]
  },
  {
@@ -1632,7 +1815,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "antibiotic",
    "capsules",
-   "medication"
+   "medication",
+   "pharmacology",
+   "antimicrobial"
   ]
  },
  {
@@ -1642,7 +1827,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "antibiotic",
    "capsules",
-   "medication"
+   "medication",
+   "pharmacology",
+   "antimicrobial"
   ]
  },
  {
@@ -1653,7 +1840,9 @@ export const imageLibrary: LibraryImage[] = [
    "blood",
    "pressure",
    "monitor",
-   "measurement"
+   "measurement",
+   "hypertension",
+   "vital"
   ]
  },
  {
@@ -1665,7 +1854,8 @@ export const imageLibrary: LibraryImage[] = [
    "heart",
    "ctg",
    "monitoring",
-   "labour"
+   "labour",
+   "maternal"
   ]
  },
  {
@@ -1677,7 +1867,8 @@ export const imageLibrary: LibraryImage[] = [
    "heart",
    "ctg",
    "monitoring",
-   "labour"
+   "labour",
+   "maternal"
   ]
  },
  {
@@ -1697,7 +1888,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "tuberculosis",
    "microbiology",
-   "stain"
+   "stain",
+   "respiratory",
+   "infection"
   ]
  },
  {
@@ -1707,7 +1900,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "ward",
    "hospital",
-   "nurses"
+   "nurses",
+   "leadership",
+   "handover"
   ]
  },
  {
@@ -1718,7 +1913,9 @@ export const imageLibrary: LibraryImage[] = [
    "water",
    "sanitation",
    "village",
-   "pump"
+   "pump",
+   "environmental",
+   "community"
   ]
  },
  {
@@ -1731,7 +1928,9 @@ export const imageLibrary: LibraryImage[] = [
    "cord",
    "cutting",
    "sterile",
-   "surgical"
+   "surgical",
+   "delivery",
+   "theatre"
   ]
  },
  {
@@ -1744,7 +1943,9 @@ export const imageLibrary: LibraryImage[] = [
    "bonding",
    "postnatal",
    "baby",
-   "care"
+   "care",
+   "neonatal",
+   "maternal"
   ]
  },
  {
@@ -1754,7 +1955,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "caesarean",
    "surgery",
-   "theatre"
+   "theatre",
+   "perioperative",
+   "sterile"
   ]
  },
  {
@@ -1765,7 +1968,9 @@ export const imageLibrary: LibraryImage[] = [
    "kangaroo",
    "care",
    "premature",
-   "newborn"
+   "newborn",
+   "preterm",
+   "neonatal"
   ]
  },
  {
@@ -1775,7 +1980,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "incubator",
    "premature",
-   "nicu"
+   "nicu",
+   "preterm",
+   "neonatal"
   ]
  },
  {
@@ -1785,7 +1992,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "incubator",
    "premature",
-   "nicu"
+   "nicu",
+   "preterm",
+   "neonatal"
   ]
  },
  {
@@ -1795,7 +2004,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "incubator",
    "premature",
-   "nicu"
+   "nicu",
+   "preterm",
+   "neonatal"
   ]
  },
  {
@@ -1836,7 +2047,10 @@ export const imageLibrary: LibraryImage[] = [
    "bed",
    "ward",
    "patient",
-   "comfort"
+   "comfort",
+   "mobility",
+   "positioning",
+   "palliative"
   ]
  },
  {
@@ -1845,7 +2059,9 @@ export const imageLibrary: LibraryImage[] = [
   "caption": "Explaining clearly — informed care.",
   "tags": [
    "communication",
-   "consultation"
+   "consultation",
+   "therapeutic",
+   "mental"
   ]
  },
  {
@@ -1855,7 +2071,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "immunization",
    "campaign",
-   "vaccination"
+   "vaccination",
+   "community",
+   "school"
   ]
  },
  {
@@ -1865,7 +2083,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "immunization",
    "campaign",
-   "vaccination"
+   "vaccination",
+   "community",
+   "school"
   ]
  },
  {
@@ -1875,7 +2095,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "immunization",
    "campaign",
-   "vaccination"
+   "vaccination",
+   "community",
+   "school"
   ]
  },
  {
@@ -1885,7 +2107,8 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "immunization",
    "campaign",
-   "vaccination"
+   "vaccination",
+   "community"
   ]
  },
  {
@@ -1951,7 +2174,10 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "emergency",
    "hospital",
-   "team"
+   "team",
+   "simulation",
+   "training",
+   "triage"
   ]
  },
  {
@@ -1961,7 +2187,8 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "ambulance",
    "emergency",
-   "referral"
+   "referral",
+   "transport"
   ]
  },
  {
@@ -1971,7 +2198,8 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "ambulance",
    "emergency",
-   "referral"
+   "referral",
+   "transport"
   ]
  },
  {
@@ -1980,7 +2208,10 @@ export const imageLibrary: LibraryImage[] = [
   "caption": "Full PPE for procedures.",
   "tags": [
    "ppe",
-   "protective"
+   "protective",
+   "isolation",
+   "precautions",
+   "infection"
   ]
  },
  {
@@ -1990,7 +2221,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "tablets",
    "medication",
-   "oral"
+   "oral",
+   "pharmacology",
+   "pain"
   ]
  },
  {
@@ -2000,7 +2233,9 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "temperature",
    "thermometer",
-   "vital"
+   "vital",
+   "triage",
+   "fever"
   ]
  },
  {
@@ -2010,7 +2245,8 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "oxygen",
    "saturation",
-   "vital"
+   "vital",
+   "respiratory"
   ]
  },
  {
@@ -2020,7 +2256,8 @@ export const imageLibrary: LibraryImage[] = [
   "tags": [
    "oxygen",
    "saturation",
-   "vital"
+   "vital",
+   "respiratory"
   ]
  },
  {

@@ -24,7 +24,7 @@ async function ask(zai: Awaited<ReturnType<typeof ZAI.create>>, file: string, to
   const p = join(ROOT, "public", file);
   const buf = await sharp(p).resize({ width: 512 }).jpeg({ quality: 70 }).toBuffer();
   const b64 = buf.toString("base64");
-  const prompt = `This image is used in a midwifery study app to illustrate the topic "${topic}" (teaching point: "${caption}"). Judge it. Answer with EXACTLY one of:
+  const prompt = `This image is used in a nursing study app to illustrate the topic "${topic}" (teaching point: "${caption}"). Judge it. Answer with EXACTLY one of:
 GOOD — relevant to the topic AND clear/usable quality
 OFFTOPIC: <what it shows instead> — clearly irrelevant
 LOWQ: <reason> — too blurry, dark, low resolution, a scan of an old book page, or mostly text/watermark
@@ -58,7 +58,7 @@ async function main() {
   const todo = LESSONS.filter((e) => !cache[e.file]);
   console.log(`auditing ${todo.length} of ${LESSONS.length} lesson images (${Object.keys(cache).length} cached)`);
   for (const e of todo) {
-    const ans = await ask(zai, e.file, e.tags[0] ?? "midwifery", e.caption);
+    const ans = await ask(zai, e.file, e.tags[0] ?? "nursing", e.caption);
     cache[e.file] = ans;
     if (!ans.startsWith("GOOD")) console.log(`${e.file}: ${ans}`);
     writeFileSync(CACHE, JSON.stringify(cache, null, 1));

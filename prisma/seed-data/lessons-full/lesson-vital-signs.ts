@@ -4,7 +4,7 @@ export const lessonVitalSigns: SeedFullLesson = {
   courseSlug: "foundations-nursing-1",
   moduleTitle: "Vital Signs & Observation",
   lessonTitle: "Taking Vital Signs Without Missing the Story",
-  description: "A temperature of 37.8 °C is just a number — until you know it was 36.6 °C two hours ago. This lesson teaches you to take vital signs the way midwives read them: as a story told in trends.",
+  description: "A temperature of 37.8 °C is just a number — until you know it was 36.6 °C two hours ago. This lesson teaches you to take vital signs the way nurses read them: as a story told in trends.",
   difficulty: "Moderate",
   durationMin: 18,
   objectives: [
@@ -20,7 +20,7 @@ export const lessonVitalSigns: SeedFullLesson = {
     {
       type: "callout",
       title: "Why this matters",
-      body: "In Ghanaian facilities, vital signs are charted on temperature charts (TPR sheets) and, during labour, on the partograph — and senior midwives make decisions from what you record. The skill is not placing the thermometer; it is noticing which number is telling you something, and saying it out loud early. That is how a student midwife helps save a life.",
+      body: "In Ghanaian facilities, vital signs are charted on temperature charts (TPR sheets) and, during labour, on the partograph — and senior nurses make decisions from what you record. The skill is not placing the thermometer; it is noticing which number is telling you something, and saying it out loud early. That is how a student nurse helps save a life.",
     },
     {
       type: "text",
@@ -60,12 +60,12 @@ export const lessonVitalSigns: SeedFullLesson = {
     {
       type: "text",
       title: "What deterioration looks like before it announces itself",
-      body: "Physiology tends to fail from the outside in: the respiratory rate rises first, then the pulse, and blood pressure falls late. That sequence is why respiratory rate is called the most sensitive early sign — and, famously, the most skipped or guessed number on the chart.\n\nA woman quietly developing infection may simply look 'just tired'. So between observations, ask three questions: how does she feel compared to this morning? is she drinking and passing urine? and has anything new started — headache, faintness on sitting up, feeling cold when everyone else is warm? Her answers often arrive before her numbers.\n\nWhen your instinct and the chart disagree, trust both enough to escalate. 'Something is not right with Madam Ama, and here are her numbers' is a completely legitimate thing to say to the midwife in charge — senior staff would always rather be called early than late.",
+      body: "Physiology tends to fail from the outside in: the respiratory rate rises first, then the pulse, and blood pressure falls late. That sequence is why respiratory rate is called the most sensitive early sign — and, famously, the most skipped or guessed number on the chart.\n\nA woman quietly developing infection may simply look 'just tired'. So between observations, ask three questions: how does she feel compared to this morning? is she drinking and passing urine? and has anything new started — headache, faintness on sitting up, feeling cold when everyone else is warm? Her answers often arrive before her numbers.\n\nWhen your instinct and the chart disagree, trust both enough to escalate. 'Something is not right with Madam Ama, and here are her numbers' is a completely legitimate thing to say to the nurse in charge — senior staff would always rather be called early than late.",
     },
     {
       type: "case",
       title: "The quiet postnatal shift",
-      body: "Mimie, you are the student midwife on the postnatal ward at 22:00. Madam Efua delivered yesterday evening. Her 18:00 observations were T 37.0 °C, P 92, R 18, BP 118/74, noted as 'mild tachycardia — monitor'. At 22:00 you find T 38.1 °C, P 118, R 24, BP 112/70. She is awake but oddly quiet, says she feels 'cold inside', and has wrapped herself in two wrappers.\n\nWhich observation must be reported immediately — and why is the answer the pattern rather than any single value? What is the difference between documenting 'pyrexia 38.1' and documenting 'temperature rising over 4 hours with parallel rise in pulse and respiration'? The midwife asks whether she is breastfeeding — what infection clues should you be ready to help explore (breast tenderness, lochia odour, wound pain, urinary symptoms)? And where does your role stop — whose job are the diagnosis and the treatment plan?\n\nThis is the shape of early postnatal sepsis: quiet, polite, and moving in one direction. Your measurement and your escalation are the treatment's head start.",
+      body: "Mimie, you are the student nurse on the postnatal ward at 22:00. Madam Efua delivered yesterday evening. Her 18:00 observations were T 37.0 °C, P 92, R 18, BP 118/74, noted as 'mild tachycardia — monitor'. At 22:00 you find T 38.1 °C, P 118, R 24, BP 112/70. She is awake but oddly quiet, says she feels 'cold inside', and has wrapped herself in two wrappers.\n\nWhich observation must be reported immediately — and why is the answer the pattern rather than any single value? What is the difference between documenting 'pyrexia 38.1' and documenting 'temperature rising over 4 hours with parallel rise in pulse and respiration'? The nurse asks whether she is breastfeeding — what infection clues should you be ready to help explore (breast tenderness, lochia odour, wound pain, urinary symptoms)? And where does your role stop — whose job are the diagnosis and the treatment plan?\n\nThis is the shape of early postnatal sepsis: quiet, polite, and moving in one direction. Your measurement and your escalation are the treatment's head start.",
     },
     {
       type: "quiz_prompt",
@@ -156,7 +156,7 @@ export const lessonVitalSigns: SeedFullLesson = {
       stem: "At 34 weeks, a woman whose booking blood pressure was 124/78 now records 152/98 and mentions a persistent headache since this morning. What does this observation set most suggest, and what does it demand?",
       options: [
         "Normal pregnancy-related fluctuation; recheck at her next routine visit",
-        "A significant rise from her own baseline with a warning symptom — a hypertensive disorder of pregnancy must be considered, so report immediately for same-day review by the midwife or clinician in charge",
+        "A significant rise from her own baseline with a warning symptom — a hypertensive disorder of pregnancy must be considered, so report immediately for same-day review by the nurse or clinician in charge",
         "White-coat effect; reassure her and repeat the reading after a chat",
         "Early labour; prepare her for transfer to the labour ward",
       ],
@@ -173,15 +173,15 @@ export const lessonVitalSigns: SeedFullLesson = {
       topic: "Escalation",
       type: "CLINICAL_SCENARIO",
       difficulty: "Hard",
-      stem: "02:00 on the postnatal ward. Your observations for Madam Afia show pulse 112 (booking 72), respirations 24, temperature 37.9 °C, blood pressure 106/64. She is quiet and looks pale. As the student midwife, what is your most appropriate action?",
+      stem: "02:00 on the postnatal ward. Your observations for Madam Afia show pulse 112 (booking 72), respirations 24, temperature 37.9 °C, blood pressure 106/64. She is quiet and looks pale. As the student nurse, what is your most appropriate action?",
       options: [
         "Chart the values and wait for the 06:00 round so you do not wake anyone unnecessarily",
-        "Wake the midwife in charge now, present the trend and your concern, and stay with the woman while she is reviewed",
+        "Wake the nurse in charge now, present the trend and your concern, and stay with the woman while she is reviewed",
         "Give her extra fluids by mouth and recheck in one hour",
         "Reassure her that each value is only borderline and encourage her to sleep",
       ],
       correctIndex: 1,
-      explanation: "A rising pulse from her own baseline, tachypnoea, low-grade fever and pallour at 02:00 is a deterioration pattern — and deterioration at night moves fastest precisely because it is least watched. The student's scope is to observe, document and escalate: waking the midwife in charge is not an interruption, it is the system working. Presenting the trend ('her pulse has climbed from 72 to 112') is far stronger than presenting numbers.",
+      explanation: "A rising pulse from her own baseline, tachypnoea, low-grade fever and pallour at 02:00 is a deterioration pattern — and deterioration at night moves fastest precisely because it is least watched. The student's scope is to observe, document and escalate: waking the nurse in charge is not an interruption, it is the system working. Presenting the trend ('her pulse has climbed from 72 to 112') is far stronger than presenting numbers.",
       whyOthers: {
         A: "Waiting four hours on a rising trend converts a treatable early problem into an emergency — nobody is ever blamed for calling early.",
         C: "Oral fluids are supportive but cannot address unidentified blood loss or infection, and an hour of delay may be the hour that mattered.",
@@ -270,12 +270,12 @@ export const lessonVitalSigns: SeedFullLesson = {
     },
     {
       organization: "Nursing and Midwifery Council of Ghana",
-      title: "Professional standards for midwifery practice and conduct",
+      title: "Professional standards for nursing practice and conduct",
       note: "Educational reference — consult current NMC Ghana publications for exact documents.",
     },
     {
       organization: "Elsevier",
-      title: "Myles Textbook for Midwives",
+      title: "Myles Textbook for Nurses",
       year: "2020 (17th edition)",
       note: "Educational source — verify current edition.",
     },

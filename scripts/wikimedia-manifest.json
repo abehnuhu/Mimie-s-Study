@@ -102,14 +102,14 @@
  },
  {
   "file": "/images/games/delivery-kit.jpg",
-  "alt": "A sterile midwifery delivery kit",
+  "alt": "A sterile nursing delivery kit",
   "caption": "The delivery kit — checked and complete before every birth.",
   "tags": [
    "delivery",
    "kit",
    "instruments",
    "pack",
-   "midwifery",
+   "nursing",
    "sterile",
    "aseptic"
   ]
@@ -217,11 +217,11 @@
   ]
  },
  {
-  "file": "/images/games/midwife-ghana.jpg",
-  "alt": "A Ghanaian midwife in her maternity ward",
-  "caption": "A midwife in her ward — calm hands, watchful eyes, warm heart.",
+  "file": "/images/games/nurse-ghana.jpg",
+  "alt": "A Ghanaian nurse in her maternity ward",
+  "caption": "A nurse in her ward — calm hands, watchful eyes, warm heart.",
   "tags": [
-   "midwife",
+   "nurse",
    "ghana",
    "care",
    "nursing",
@@ -349,7 +349,7 @@
  },
  {
   "file": "/images/games/palpation.jpg",
-  "alt": "A midwife palpating a pregnant abdomen",
+  "alt": "A nurse palpating a pregnant abdomen",
   "caption": "Abdominal palpation — hands reading lie, position and growth.",
   "tags": [
    "palpation",
@@ -860,7 +860,7 @@
  {
   "file": "/images/lessons/repro-female/repro-female-01.jpg",
   "alt": "Wikimedia Commons: Female anatomy with G-spot - Ukraine.png",
-  "caption": "The female reproductive system — the anatomy at the heart of midwifery.",
+  "caption": "The female reproductive system — the anatomy at the heart of nursing.",
   "tags": [
    "reproductive",
    "female",

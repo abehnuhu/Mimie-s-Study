@@ -22,12 +22,12 @@ const CASES: CasePrompt[] = [
   {
     n: 1,
     prompt:
-      "A Ghanaian midwife in soft pink scrubs gently checking on a young mother resting in a modest district hospital postnatal ward in Ghana, warm golden evening light through a window, simple hospital bed with clean pale sheets, the midwife leaning in with a concerned caring expression, the mother calm but tired with her newborn sleeping beside her, cinematic photorealistic, respectful, dignified, soft depth of field, warm colour palette, medical education illustration, high quality, detailed",
+      "A Ghanaian nurse in soft pink scrubs gently checking on a young mother resting in a modest district hospital postnatal ward in Ghana, warm golden evening light through a window, simple hospital bed with clean pale sheets, the nurse leaning in with a concerned caring expression, the mother calm but tired with her newborn sleeping beside her, cinematic photorealistic, respectful, dignified, soft depth of field, warm colour palette, medical education illustration, high quality, detailed",
   },
   {
     n: 2,
     prompt:
-      "A Ghanaian midwife measuring the blood pressure of a young pregnant woman with a cuff at a bright antenatal clinic in Ghana, the woman seated and quietly worried, midwife focused and reassuring, warm afternoon light, simple clinic room with wooden bench and health poster on wall, cinematic photorealistic, respectful, dignified, soft depth of field, warm colour palette, medical education illustration, high quality, detailed",
+      "A Ghanaian nurse measuring the blood pressure of a young pregnant woman with a cuff at a bright antenatal clinic in Ghana, the woman seated and quietly worried, nurse focused and reassuring, warm afternoon light, simple clinic room with wooden bench and health poster on wall, cinematic photorealistic, respectful, dignified, soft depth of field, warm colour palette, medical education illustration, high quality, detailed",
   },
 ];
 

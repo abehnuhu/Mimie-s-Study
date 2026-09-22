@@ -1,2507 +1,315 @@
 // ─────────────────────────────────────────────────────────────
 // MIMIE'S STUDY — BULK LESSON CONTENT
-// Year 4, Semester 1 — Batch A (Advanced Midwifery Practice,
-// High-Risk Pregnancy, Obstetric Emergencies)
-// 19 lessons anchored to prisma/seed-data/anchors/y4s1-a.json
-// Match key: courseSlug::moduleTitle::lessonTitle
+// Year 4, Semester 1 — Batch A (Critical Care & Emergency Nursing)
+// 11 lessons; the flagship lesson "The ABCDE Approach" is authored
+// separately in lessons-full. Match key: courseSlug::moduleTitle::lessonTitle
 // ─────────────────────────────────────────────────────────────
 import type { SeedFullLesson } from "../types";
 
 export const lessons: SeedFullLesson[] = [
   // ── 1 ──────────────────────────────────────────────────────
   {
-    courseSlug: "advanced-midwifery-practice",
-    moduleTitle: "Thinking Like an Expert",
-    lessonTitle: "Clinical Reasoning for the Expert Midwife",
+    courseSlug: "critical-care-nursing",
+    moduleTitle: "The Deteriorating Patient",
+    lessonTitle: "Early Warning Scores & Track-and-Trigger",
     description:
-      "From pattern recognition to deliberate analysis — the thinking that experts actually do, and how to keep it safe when it moves fast.",
+      "Turning observations into numbers that summon help — the charts and thresholds that catch the quiet crash long before the loud one.",
     difficulty: "Moderate",
-    durationMin: 12,
+    durationMin: 11,
     objectives: [
-      "Describe the two systems of clinical thinking — fast pattern recognition and slow deliberate analysis.",
-      "Explain how cognitive biases such as premature closure and anchoring distort expert judgement.",
-      "Apply structured reflection to real ward cases so your intuition stays honest and your reasoning stays checkable.",
+      "Explain what track-and-trigger systems are and why single observations fail to catch deterioration.",
+      "Score a set of observations on a NEWS-style early warning chart and state the escalation each score demands.",
+      "Apply the escalation response when a trigger fires — including when the score is low but your instinct is loud.",
     ],
-    tags: ["clinical reasoning", "expertise", "decision making", "cognitive bias"],
-    sourceStatus: "GCU_ALIGNED",
+    tags: ["early warning", "vital signs", "deterioration", "escalation"],
+    sourceStatus: "PROPOSED",
     sections: [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "By your final year you have started to notice things without knowing quite how. One glance at a woman on the corridor and you already have a feeling about her. That feeling is real clinical data, and this lesson is about what it is, where it comes from, and when to trust it.\n\nExperts think in two modes. Fast, effortless pattern recognition — built from hundreds of matched cases — and slow, deliberate analysis, where you list possibilities and test them one by one. Expertise is not choosing one mode. It is knowing when to switch.",
+        body: "Patients rarely crash out of nowhere. For hours before the collapse, the body whispers — a breathing rate creeping from 16 to 24, a pulse that will not settle, a patient who was chatty at dawn and oddly quiet by noon. The tragedy on many wards is that the whispers were written down, in ink, by hardworking nurses — and nobody added them up.\n\nA **track-and-trigger system** does the adding up. The tracking half is a standard observation chart, completed regularly and measured properly. The trigger half is a set of fixed thresholds that force an action the moment a patient's numbers cross them. This lesson teaches how the systems work, how to score, and how to answer the alarm — and why your own worried instinct is part of the system, never a threat to it.",
       },
       {
         type: "text",
         title: "The core ideas",
-        body: "Pattern recognition (often called **System 1**) is the strength and the danger of the expert midwife. It is fast and usually right, because the patterns were learned from real patients. It fails when today's case only looks like a familiar one — the feverish postnatal woman who resembles yesterday's malaria case but is actually developing sepsis. Deliberate analysis (**System 2**) is slower and effortful: you state your findings, form hypotheses, and go looking for evidence that could prove you wrong.\n\nExperts stay safe through **calibration** — tracking whether their calls turned out right, and adjusting. Watch for the classic traps: **premature closure** (settling on the first answer that fits), **anchoring** (fixating on one early detail), and **availability** (judging by the case you remember most vividly). The rescue is metacognition: thinking about your own thinking. When something about the story does not sit right, name it aloud, widen your differential, and let a colleague hear your reasoning.",
+        body: "The widely used systems — the UK's **NEWS2**, the MEWS family, and the modified hospital charts spreading through Ghana's regional and district hospitals — all do the same job: they turn seven observations into a single number. The parameters are **respiratory rate**, **oxygen saturation** plus whether the patient is **on supplemental oxygen**, **temperature**, **systolic blood pressure**, **heart rate**, and **level of consciousness** — alert, or new confusion, or responding only to voice, pain or nothing (the AVPU scale).\n\nEach parameter scores zero when normal and one to three points as it drifts further from normal. The total then calls the shots: zero means routine monitoring; a low score of one to four means more frequent observations and review by the senior nurse; **a score of five or more — or three points in any single parameter — means urgent clinical review now**, with escalation to the most senior team available. Many hospitals add their own single-parameter triggers: a systolic below 90, a respiratory rate above 24, chest pain, any new bleeding — any one of these demands review regardless of the total.\n\nThe second half of the system is behaviour. A chart only works if observations are taken at the prescribed frequency, measured correctly, and never invented for a busy hour. A score written and ignored is worse than no score at all, because it looks like care.",
+      },
+      {
+        type: "table",
+        title: "A NEWS-style early warning chart (adult)",
+        body: "| Parameter | 3 points | 2 points | 1 point | 0 points |\n|---|---|---|---|---|\n| Respiratory rate | 8 or less · 25 or more | 21–24 | 9–11 | 12–20 |\n| SpO2 (on air) | 91 or less | 92–93 | 94–95 | 96 or more |\n| Supplemental oxygen | — | any oxygen running | — | breathing room air |\n| Temperature | 35.0 or less | 39.1 or more | 35.1–36.0 · 38.1–39.0 | 36.1–38.0 |\n| Systolic BP | 90 or less · 220 or more | 91–100 | 101–110 | 111–219 |\n| Heart rate | 40 or less · 131 or more | 111–130 | 41–50 · 91–110 | 51–90 |\n| Consciousness | new confusion or unresponsive | — | — | alert |\n\nAdd the points and act: 0 — routine, minimum 12-hourly observations; 1–4 — observations every 4–6 hours plus senior-nurse review; **5 or more, or 3 points in any single parameter — urgent clinical review and escalation, now.** The values follow the NEWS2 pattern — the chart your hospital actually uses is the one you must know by heart.",
       },
       {
         type: "clinical_pearl",
-        body: "If the story does not sit right, that feeling is a finding, not a distraction. Slow down, say out loud what does not fit, and get a second pair of eyes. Speaking your reasoning aloud is the cheapest safety device on any ward.",
+        body: "The respiratory rate is the sentry of the whole chart — it climbs early in sepsis, shock, bleeding and heart failure, and it is the observation most often skipped or guessed on a busy evening. Count it for a full minute, every time. And remember: a total score of zero never overrules your eyes. The chart has not examined the patient — you have.",
       },
       {
         type: "case",
         title: "On the ward",
-        body: "Night shift on a postnatal ward. A G3P2 woman, day one after a normal birth, has a temperature of 37.8 degrees and complains of feeling feverish. The night sister says, \"That is malaria season, we all know it.\" You almost agree — but something snags: her lochia smells slightly offensive and she winces when you press the fundus.\n\nWhich mode of thinking is being used here, and what should you do next?\n\nAnswer: This is fast pattern recognition, and it is drifting towards premature closure — the classic picture of malaria is being fitted onto a story with early warning signs of puerperal sepsis, which can be fatal within hours. Switch to deliberate analysis: full vital signs on a modified early warning chart, a focused abdominal and lochia assessment, senior review, and investigations plus antibiotics per protocol rather than waiting for the textbook picture. The feeling that something did not fit was your expertise working.",
+        body: "Day two after prostate surgery, a 68-year-old man is charted 'stable' — BP 118/74, temperature 37.4. But his respiratory rate is 24, his pulse is 108, and the night nurse wrote that he was 'a bit muddled' around 2 am. Nobody has scored it; the observation chart shows a column of reassuring blood pressures.\n\nScore him — and tell me what the ward must do in the next hour.\n\nAnswer: Respiratory rate 24 scores 2, pulse 108 scores 1, and new confusion scores 3 in a single parameter — which demands urgent clinical review on its own, and the total of 6 confirms it. He is deteriorating, most probably toward sepsis or a silent surgical complication, and the chart is shouting while everyone admires the blood pressure. Within the hour: observations at least hourly, the senior nurse informed, a clinician at the bedside, bloods and cultures per the sepsis pathway, and the whole story handed over with SBAR — situation, background, assessment, recommendation. The score is not paperwork; it is the doorbell, and it has been rung.",
+      },
+      {
+        type: "quiz_prompt",
+        title: "When the score disagrees with you",
+        body: "You cannot put your finger on it. The man in bed 6 scores 2 — pulse 94, everything else green — but he has not touched his food, he will not look at you, and something in your chest says go back. What does the chart's worry rule let you do?\n\nAnswer: Escalate anyway. Every track-and-trigger system includes a concern rule: the nurse's — or the family's — feeling that a patient is getting worse is a valid trigger in its own right, whatever the number says. Report the score and the behaviour together and ask for a review. You will be wrong sometimes; you will be right often enough to justify every false alarm.",
       },
       {
         type: "memory_trick",
-        body: "PATTERN — PAUSE — PROVE. Run the pattern, pause the moment anything smudges it, and prove your diagnosis with vitals, examination and evidence before you commit the plan.",
+        body: "The chart is a doorbell, not a diary. **Three in one, or five all told — someone senior must be told.** And the lungs speak first: count the respiratory rate for a full minute, every set of observations, every shift.",
       },
       {
         type: "summary",
-        body: "- Experts hold two modes: fast pattern recognition and slow deliberate analysis.\n- Pattern recognition is efficient but prone to premature closure, anchoring and availability bias.\n- A feeling of unease is data — treat it as a trigger to slow down and widen the differential.\n- Calibration comes from reviewing your own calls and saying your reasoning aloud to colleagues.",
+        body: "- Track-and-trigger: a standard observation chart (track) plus fixed thresholds that force escalation (trigger).\n- Score the seven parameters — respiratory rate, SpO2, oxygen need, temperature, systolic BP, heart rate, consciousness — and let the total speak: 0 routine; 1–4 closer monitoring and senior-nurse review; 5 or more, or 3 in one parameter, urgent clinical review.\n- The respiratory rate is the sentinel and the most-skipped number: count it, never guess it.\n- The worry rule: your concern, or the family's, is a legitimate trigger — escalate on instinct even when the score is low.\n- The system fails by silence: unmeasured vitals, uncalculated scores, unanswered alarms. Do not be the silent link.",
       },
     ],
     questions: [
       {
-        topic: "Clinical Reasoning",
+        topic: "Early Warning Scores",
         type: "MCQ",
-        difficulty: "Easy",
-        stem: "Which statement best describes the difference between the two modes of expert clinical thinking?",
+        difficulty: "Moderate",
+        stem: "What is the core purpose of a track-and-trigger early warning system?",
         options: [
-          "Experienced midwives should use pattern recognition and students should use deliberate analysis",
-          "Pattern recognition is fast and automatic; deliberate analysis is slow, effortful and hypothesis-driven",
-          "Deliberate analysis is only used when documentation is required",
-          "Pattern recognition is taught in class while deliberate analysis only comes with years of practice",
+          "To predict the exact diagnosis before the clinician arrives",
+          "To store observations neatly for audit and statistics",
+          "To convert observations into a number that forces review before the patient collapses",
+          "To reduce the number of observations a nurse must take each shift",
         ],
         correctIndex: 2,
         explanation:
-          "The two modes differ in speed and effort: pattern recognition matches the current case against a library of remembered ones, while deliberate analysis builds and tests hypotheses step by step. Experts use both and switch deliberately.",
-        courseSlug: "advanced-midwifery-practice",
+          "The system aggregates whispering vital signs into a score whose thresholds demand action — closer monitoring, senior-nurse review, urgent clinical review. It is a doorbell, not a filing system, and it assists rather than replaces clinical judgement.",
+        courseSlug: "critical-care-nursing",
       },
       {
-        topic: "Clinical Reasoning",
+        topic: "Early Warning Scores",
         type: "MCQ",
-        difficulty: "Moderate",
-        stem: "A midwife accepts 'malaria' as the explanation for a day-one postnatal fever because three other patients this week had malaria. Which cognitive trap is she falling into, and what is the practical antidote?",
+        difficulty: "Easy",
+        stem: "Which observation is both the earliest and most reliable sentinel of deterioration — and the one most often guessed on a busy ward?",
         options: [
-          "Availability bias — antidote is to consult the laboratory before seeing any patient",
-          "Anchoring on the first vital sign — antidote is to re-measure the temperature",
-          "Premature closure on an available diagnosis — antidote is to list alternatives and look for evidence against the favoured one",
-          "Confirmation bias in the physical exam — antidote is to avoid examining the abdomen",
+          "The respiratory rate",
+          "The blood pressure",
+          "The temperature",
+          "The weight",
         ],
         correctIndex: 0,
         explanation:
-          "She is closing the case early using the diagnosis that comes most easily to mind — a blend of premature closure and availability. The antidote is deliberately generating alternatives (sepsis, breast engorgement, UTI) and hunting for disconfirming evidence, not avoiding examination.",
-        courseSlug: "advanced-midwifery-practice",
+          "The respiratory rate rises early in sepsis, shock, bleeding and heart failure, and it is the observation nurses most often skip or estimate. Count it for a full minute. Blood pressure falls late — trusting it alone is the classic trap.",
+        courseSlug: "critical-care-nursing",
       },
       {
-        topic: "Clinical Reasoning",
+        topic: "Early Warning Scores",
+        type: "MCQ",
+        difficulty: "Hard",
+        stem: "A post-operative patient has a respiratory rate of 26, pulse 112, systolic 98, new confusion, and all other observations normal. What does the chart demand?",
+        options: [
+          "Observations every four hours and review at the next ward round",
+          "Reassurance — the blood pressure is still normal",
+          "Repeat the full set in the morning and compare",
+          "Urgent clinical review now, with escalation and at least hourly observations",
+        ],
+        correctIndex: 3,
+        explanation:
+          "Respiratory rate 26 scores 3, and new confusion scores 3 in a single parameter — either one alone triggers urgent review; with tachycardia and a drifting pressure, the total is deep in the danger zone. Next-morning comparison is how quiet crashes become loud ones.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Early Warning Scores",
         type: "MCQ",
         difficulty: "Moderate",
-        stem: "During a busy clinic you feel uneasy about a woman whose observations are all technically normal. What is the most expert response to that feeling?",
+        stem: "Your patient scores only 2, but he is drowsy, has stopped eating, and his wife says he 'is not himself'. What does the worry rule allow you to do?",
         options: [
-          "Document 'patient appears well' and move on, since the observations are normal",
-          "Treat the feeling as a clinical finding: name what does not fit, widen the differential, and ask a colleague to review her with you",
-          "Request a specialist referral for every woman who gives you an uneasy feeling",
-          "Ignore the feeling until an observation becomes abnormal, to avoid over-investigating",
+          "Nothing — a score of 2 is reassuring, and over-riding it will annoy the doctors",
+          "Escalate and request review on the strength of your concern, even though the number is low",
+          "Wait until the score reaches 5 so the escalation is justified on paper",
+          "Ask the relatives to monitor him overnight and report in the morning",
         ],
         correctIndex: 1,
         explanation:
-          "Expert intuition is trained pattern matching, and unease often reflects cues you have not consciously registered. Naming it, widening the differential and seeking a second opinion converts a vague worry into checkable clinical reasoning — without reflexively escalating everything.",
-        courseSlug: "advanced-midwifery-practice",
+          "Every modern track-and-trigger system includes an explicit concern rule: the nurse's or family's judgement that something is wrong is a trigger in its own right. Escalate the behaviour together with the score. Waiting for the number to catch up with your eyes defeats the whole system.",
+        courseSlug: "critical-care-nursing",
       },
     ],
     flashcards: [
       {
-        topic: "Clinical Reasoning",
-        front: "What are the two modes of expert clinical thinking?",
-        back: "Fast pattern recognition (System 1) — matching today's case against remembered ones — and slow deliberate analysis (System 2) — listing hypotheses and testing them. Expertise is knowing when to switch between the two.",
+        topic: "Early Warning Scores",
+        front: "What are the two halves of a track-and-trigger system?",
+        back: "Tracking: a standard observation chart completed accurately and on time. Trigger: fixed thresholds that demand defined actions — more frequent observations, senior-nurse review, urgent clinical review.",
       },
       {
-        topic: "Clinical Reasoning",
-        front: "Name three classic cognitive traps that distort expert judgement.",
-        back: "Premature closure (settling on the first answer that fits), anchoring (fixating on one early detail) and availability bias (judging by the most vivid recent case).",
+        topic: "Early Warning Scores",
+        front: "State the escalation thresholds on a NEWS-style chart.",
+        back: "0 — routine, minimum 12-hourly observations. 1–4 — observations every 4–6 hours plus senior-nurse review. 5 or more, or 3 points in any single parameter — urgent clinical review and escalation.",
       },
       {
-        topic: "Clinical Reasoning",
-        front: "Why should a feeling of unease be treated as a clinical finding?",
-        back: "It often reflects real cues your experience has registered but your conscious mind has not. Naming what does not fit, widening the differential and getting a second opinion turns instinct into safety.",
+        topic: "Early Warning Scores",
+        front: "Which single observation is the chart's sentry, and why?",
+        back: "Respiratory rate. It climbs early in sepsis, shock, haemorrhage and heart failure — and it is the one most often skipped. Count it for a full minute, every time.",
+      },
+      {
+        topic: "Early Warning Scores",
+        front: "The patient scores 2 but you are worried. What does the worry rule say?",
+        back: "Nurse or family concern is a valid trigger independent of the score — escalate anyway. The chart assists judgement; it never replaces it.",
       },
     ],
     sources: [
       {
-        organization: "World Health Organization",
-        title: "WHO Patient Safety Curriculum Guide: Multi-professional Edition",
-        year: "2011",
-        url: "https://www.who.int/publications/i/item/9789241501950",
+        organization: "Nursing and Midwifery Council of Ghana",
+        title: "Curriculum for the Registered General Nursing (RGN) Programme",
+        year: "2015",
       },
       {
-        organization: "Elsevier",
-        title: "Myles Textbook for Midwives, 17th edition",
-        year: "2020",
-        note: "Chapter on clinical judgement and decision making. Verify current edition.",
+        organization: "World Health Organization",
+        title: "Emergency Triage Assessment and Treatment (ETAT)",
+        note: "Structured emergency recognition principles adapted across ages; verify latest edition.",
+      },
+      {
+        organization: "Ghana Health Service",
+        title: "Nursing care protocols and observation charting standards",
+        note: "Facility-level monitoring practice; verify current edition.",
       },
     ],
   },
 
   // ── 2 ──────────────────────────────────────────────────────
   {
-    courseSlug: "advanced-midwifery-practice",
-    moduleTitle: "Thinking Like an Expert",
-    lessonTitle: "Differential Thinking in Midwifery",
+    courseSlug: "critical-care-nursing",
+    moduleTitle: "The Deteriorating Patient",
+    lessonTitle: "Sepsis: The Body's Overreaction",
     description:
-      "Holding several possibilities at once — the simple habit that prevents premature closure and keeps the dangerous diagnosis on the table.",
-    difficulty: "Moderate",
+      "The infection that becomes a whole-body crisis — the sentry signs that catch it, and the hour-one bundle that decides who survives.",
+    difficulty: "Hard",
     durationMin: 12,
     objectives: [
-      "Describe what a differential diagnosis is and why single-answer thinking is unsafe in maternity care.",
-      "Explain the worst-first principle and how illness scripts organise a differential.",
-      "Apply a three-point differential to common presenting complaints such as headache, breathlessness and fever.",
+      "Define sepsis and septic shock, and describe how infection anywhere becomes failure everywhere.",
+      "Recognise the sentinel signs of adult sepsis and screen febrile patients without waiting for collapse.",
+      "Apply the hour-one bundle — oxygen, antibiotics, fluids, cultures, lactate and urine output — with escalation and reassessment.",
     ],
-    tags: ["differential", "diagnosis", "clinical reasoning", "decision making"],
-    sourceStatus: "GCU_ALIGNED",
+    tags: ["sepsis", "infection", "bundles", "deterioration"],
+    sourceStatus: "PROPOSED",
     sections: [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "A woman tells you one thing — a headache, a fever, breathlessness — and behind that one symptom sit several possible diseases. The commonest diagnostic error in medicine is grabbing the first plausible answer and stopping. This lesson trains the opposite habit: holding more than one possibility in mind until the evidence chooses for you.\n\nDifferential thinking is not academic gymnastics. On a district labour ward it is the difference between treating a 34-week headache as 'stress' and finding a blood pressure of 170/115 before she convulses.",
+        body: "Sepsis is the quiet one. It rarely announces itself with a collapse; it arrives as a fever, a tender wound, a patient who 'is not quite themselves' — and it kills more people worldwide than any single cancer. The World Health Organization counts millions of sepsis deaths each year, most of them in low-resource settings, and most of them preventable with recognition and simple treatment in the first hours.\n\nIn Ghana there is a second trap: every fever is malaria until proven otherwise — and malaria-first thinking has buried cases of sepsis that looked exactly like malaria. This lesson is about recognition that outruns the fever chart, and the bundle that must start within the hour.",
       },
       {
         type: "text",
-        title: "The core ideas",
-        body: "A **differential** is a short, ranked list of explanations for what you see. Rank it **worst first**: whatever could kill or disable her in the next few hours goes to the top, even if it is uncommon. For the third-trimester headache: pre-eclampsia first (treatable and deadly), then severe anaemia or malaria (common in Ghana), then migraine or tension headache last. Whatever ranks first gets excluded first — blood pressure and urine protein cost minutes and answer the question.\n\nExperts store **illness scripts** — the typical story of each disease — and compare the woman in front of them against each script, deliberately noticing what fits and what does not. Write the differential in the notes when the case is unclear; it shows the next midwife what you considered, and it forces you to keep the dangerous option alive until it is genuinely excluded.",
+        title: "What sepsis actually is",
+        body: "**Sepsis is life-threatening organ dysfunction caused by a dysregulated response to infection.** Read that twice: the problem is not the germ alone, but the body's own answer to it — an immune response that tips from fighting the infection into attacking the body, flooding vessels, leaking lungs, stalling kidneys, clotting and bleeding at once. When the circulation begins to fail under this storm — **blood pressure that will not respond to fluids** — it becomes **septic shock**, and mortality climbs steeply.\n\nThe infection behind it enters by any door. On a Ghanaian ward, hunt in this order: the **chest** (pneumonia, especially in the elderly and in people living with HIV), the **urine** (catheters left too long, blocked urinary systems), the **skin and wounds** (diabetic foot ulcers, post-operative wounds, cellulitis, traditional incision sites), the **abdomen** (perforated ulcer, appendicitis, typhoid, cholera-like diarrhoea), and the **bloodstream** from any of these — plus, in a mother who has recently given birth, the uterus. Malaria, typhoid and sepsis coexist cheerfully; a positive malaria smear has never once excluded an infection somewhere else.",
+      },
+      {
+        type: "text",
+        title: "The sentinel signs and the hour-one bundle",
+        body: "The diagnosis hides behind the masks other diseases wear, so nurses screen by signs. The **sentry signs of sepsis in any adult** are: **pyrexia of 38 degrees or more — or hypothermia below 36**; **respiratory rate of 25 or more**; **heart rate above 110**; **new confusion, drowsiness or agitation**; and **systolic pressure drifting below 100**. Two or more of these, with any suspicion of infection, and sepsis is the working diagnosis until excluded. A simple bedside screen used worldwide is **qSOFA** — respiratory rate 22 or more, systolic 100 or less, altered mentation — with two of three flagging the high-risk patient. But you do not need the acronym to count the signs; you need the habit of counting the breathing rate, because tachypnoea is the earliest and the most-ignored flag the body raises.\n\nThe response is a package, not a debate. Within **one hour** of recognising possible sepsis — the three **IN**: **high-flow oxygen** to target saturations, **IV broad-spectrum antibiotics** per local protocol, and **IV fluid resuscitation** begun with caution; and the three **OUT**: **cultures** (blood plus relevant swabs and urine, taken before antibiotics only if this costs no delay), **serum lactate** to reveal hidden tissue acid, and **hourly urine output** through a catheter — the honest meter of perfusion. **Antibiotics within the first hour is the single intervention that moves survival most** — do not wait for the ward round, the culture result or the registrar; and in Ghana, take the malaria smear **in parallel, never instead**. After every fluid bolus, re-examine: did the pressure rise, the pulse fall — or has the patient begun to crepitate? The septic heart is a fragile heart, and flooding it unwatched trades shock for pulmonary oedema. Escalate deliberately: persistent hypotension or a lactate that will not fall means critical-care review and transfer planning, discussed early rather than at midnight.",
       },
       {
         type: "clinical_pearl",
-        body: "One diagnosis is a guess; two is a plan. When a case is not obvious, write three possibilities in the margin — worst first — and let your examination and tests argue between them.",
+        body: "The respiratory rate is the sentry — an adult breathing 26 times a minute has sepsis until proven otherwise, whatever the temperature chart says. And the antibiotic clock starts at recognition, not at the doctor's arrival. Sepsis rewards the fast and punishes the polite.",
+      },
+      {
+        type: "table",
+        title: "Common sources of sepsis on a Ghanaian ward",
+        body: "| Door the infection used | Clues that point there |\n|---|---|\n| Chest | Cough, fast breathing, crackles, chest pain; elderly or HIV-positive patient |\n| Urine | Catheter in situ, burning on urination, cloudy or offensive urine, flank pain |\n| Skin and wounds | Spreading redness, discharging wound, diabetic foot ulcer, traditional incisions, puerperal fever in a recently delivered mother |\n| Abdomen | Severe or persistent pain, rigid abdomen, distension, vomiting, typhoid or ulcer history |\n| Bloodstream | Any of the above plus rigors, shaking chills, rapid collapse — and always think of the IV cannula that has stayed too long |\n\nWhatever the door, the hour-one bundle is the same. The source changes the definitive treatment; it never delays the bundle.",
       },
       {
         type: "case",
         title: "On the ward",
-        body: "A 19-year-old primigravida at 34 weeks attends antenatal clinic with her mother, who explains that the girl 'cannot sleep because of headaches' and the family has given her paracetamol. The girl looks pale and tired. Your clinic is heaving and the easy move is to treat the anaemia and send her home.\n\nWhich diagnoses must be on your differential before she leaves, and which goes first?\n\nAnswer: Headache at 34 weeks in a pale, tired teenager could be anaemia, malaria, tension headache — or pre-eclampsia, and pre-eclampsia goes first because it can progress to eclampsia and death within hours, and it is cheap to exclude. Check her blood pressure and urine protein now, examine for oedema and reflexes, and test her haemoglobin. The rule of worst-first exists precisely for the busy clinic where shortcuts feel safest.",
+        body: "Day six after prostate surgery, a 68-year-old diabetic man becomes confused in the evening. Temperature 38.4, pulse 118, respiratory rate 26, BP 98/58. His catheter has been in since theatre and the urine looks cloudy; he has passed 'very little' today.\n\nWhat is the working diagnosis, and what happens in the next hour?\n\nAnswer: Fever, tachycardia, tachypnoea, new confusion and borderline pressure — sepsis until excluded, with the likely doors being the catheter, the chest and the surgical wound. Within the hour: inform the senior; blood cultures, a urine culture and a malaria smear before antibiotics if the delay is only minutes; **IV broad-spectrum antibiotics per protocol — not in the morning**; oxygen to target; a cautious IV fluid bolus with immediate reassessment of chest and mentation; lactate sent; hourly urine charted; observations moved to early-warning scoring at least hourly. Reassess at one hour: pressure falling or lactate rising means critical-care review and transfer planning now. Waiting overnight 'to see whether the malaria treatment works' is how this case becomes a mortality audit — and the relatives will remember that the confusion was reported and nothing moved.",
       },
       {
         type: "memory_trick",
-        body: "WORST — COMMON — FIT — HOLD. Rank what could kill her worst first, add the most common cause next, check how the story fits each script, and hold the list open until evidence closes it.",
+        body: "SEPSIS SIX, three IN, three OUT, all within the hour: **I**N — oxygen, antibiotics, IV fluids. **O**UT — cultures, lactate, urine output. And the sentry at the door is the breathing rate.",
       },
       {
         type: "summary",
-        body: "- A differential is a short, ranked list of explanations for a presenting complaint.\n- Always rank worst first — exclude the killer before comforting yourself with the common.\n- Illness scripts let you compare this woman against the typical story of each disease.\n- Write the differential down for unclear cases; it keeps the dangerous option alive and tells the next reader what you considered.",
+        body: "- Sepsis is life-threatening organ dysfunction from a dysregulated response to infection; septic shock is when the pressure fails to respond to fluids.\n- Sentinel signs: fever 38 or more (or hypothermia), respiratory rate 25 or more, pulse above 110, new confusion, systolic below 100 — two or more means sepsis until excluded.\n- Hour-one bundle: oxygen, IV antibiotics, IV fluids IN; cultures, lactate, hourly urine OUT.\n- Malaria smear in parallel, never instead — a positive smear excludes nothing.\n- Reassess after every bolus — the septic heart floods easily; escalate persistent hypotension or a rising lactate.",
       },
     ],
     questions: [
       {
-        topic: "Differential Diagnosis",
+        topic: "Sepsis",
         type: "MCQ",
         difficulty: "Moderate",
-        stem: "A woman at 32 weeks presents with breathlessness. Which differential is ranked on the worst-first principle?",
+        stem: "Which combination of adult findings makes sepsis the working diagnosis until excluded?",
         options: [
-          "Anaemia first, then malaria, then pulmonary embolism, then normal pregnancy breathlessness",
-          "Normal pregnancy breathlessness first, since it is by far the most common cause",
-          "Pulmonary embolism first, then severe anaemia and pneumonia, then physiological breathlessness of pregnancy",
-          "Malaria first, then pulmonary embolism, since both are common in Ghana",
+          "Temperature 37.2, pulse 76, respiratory rate 16, alert and chatty",
+          "Temperature 38.4, respiratory rate 26, new confusion, pulse 116",
+          "Blood pressure 148/92, pulse 88, afebrile, alert",
+          "Temperature 36.9, respiratory rate 18, pulse 84, mild headache",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Fever, tachypnoea, new confusion and tachycardia — several sentry signs together with probable infection — is the sepsis screen firing. Screening tools differ in exact cutoffs, but several flags together always outrank a single borderline number.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Sepsis",
+        type: "MCQ",
+        difficulty: "Hard",
+        stem: "A patient screens positive for sepsis at 21:40. Within the next hour, what is the correct relationship between antibiotics and cultures?",
+        options: [
+          "Hold all treatment until blood cultures have incubated, so therapy can be precisely targeted",
+          "Give antibiotics immediately and skip cultures entirely, since they will not change the first hour",
+          "Send cultures only after three days of fever, and treat symptomatically meanwhile",
+          "Take cultures before the antibiotics if it costs no delay — but the antibiotics are given within the hour regardless",
         ],
         correctIndex: 3,
         explanation:
-          "Worst-first means the condition that can kill within hours — here pulmonary embolism, with severe anaemia and pneumonia close behind — is ranked top and excluded actively, before settling on the common benign explanations.",
-        courseSlug: "advanced-midwifery-practice",
+          "The hour-one bundle draws cultures when it can, but the antibiotic clock is fixed: every hour of delay in antibiotics measurably increases mortality. Waiting for incubation, ward rounds or results is the classic fatal pause.",
+        courseSlug: "critical-care-nursing",
       },
       {
-        topic: "Differential Diagnosis",
+        topic: "Sepsis",
         type: "MCQ",
         difficulty: "Easy",
-        stem: "What is an illness script?",
+        stem: "In a Ghanaian ward, how should malaria be handled in a patient being treated for suspected sepsis?",
         options: [
-          "A written referral letter describing the woman's diagnosis",
-          "A standard treatment protocol issued by the Ministry of Health",
-          "The typical story of a disease — its features, course and signs — stored in an expert's memory",
-          "The list of differential diagnoses required by the hospital register",
-        ],
-        correctIndex: 1,
-        explanation:
-          "An illness script is the mental model of a disease's typical presentation, course and findings. Experts compare the patient in front of them against each script, noting what fits and what does not.",
-        courseSlug: "advanced-midwifery-practice",
-      },
-      {
-        topic: "Differential Diagnosis",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "Why does premature closure matter so much in maternity care?",
-        options: [
-          "Because it lengthens the woman's stay in hospital",
-          "Because the dangerous diagnoses in pregnancy can progress within hours, so a wrong early label delays life-saving treatment",
-          "Because it makes documentation harder for the next midwife",
-          "Because it prevents the midwife from following protocols exactly",
+          "Test for malaria in parallel and treat both possibilities — never let malaria management delay the sepsis bundle",
+          "Treat malaria alone for 48 hours first; fever in Ghana is almost always malaria",
+          "A positive malaria smear excludes sepsis, so the sepsis pathway can be stopped",
+          "Malaria and sepsis cannot coexist in one patient",
         ],
         correctIndex: 0,
         explanation:
-          "In maternity, conditions like eclampsia, sepsis and abruption move in hours. Settling on a benign explanation early means the killer diagnosis is only discovered when she collapses — when treatment is far harder.",
-        courseSlug: "advanced-midwifery-practice",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Differential Diagnosis",
-        front: "What does worst-first mean when building a differential?",
-        back: "Rank whatever could kill or disable her within hours at the top, even if uncommon — and exclude it first. Pre-eclampsia before migraine; pulmonary embolism before anxiety.",
+          "Both diseases are common and can coexist. The safe pattern is smear and cultures in parallel, the sepsis bundle now, and malaria treatment added if confirmed. Malaria-first thinking is exactly how sepsis deaths are audited in endemic settings.",
+        courseSlug: "critical-care-nursing",
       },
       {
-        topic: "Differential Diagnosis",
-        front: "Give a worst-first differential for headache at 34 weeks.",
-        back: "Pre-eclampsia first (check BP and urine protein immediately), then severe anaemia or malaria, then migraine or tension headache last.",
-      },
-      {
-        topic: "Differential Diagnosis",
-        front: "Why write the differential in the notes for an unclear case?",
-        back: "It shows the next clinician what you considered, and it stops you quietly dropping the dangerous option — the list must stay open until evidence closes it.",
-      },
-    ],
-    sources: [
-      {
-        organization: "World Health Organization",
-        title: "Pregnancy, Childbirth, Postpartum and Newborn Care: A Guide for Essential Practice, 3rd edition",
-        year: "2015",
-        url: "https://www.who.int/publications/i/item/9789241549289",
-      },
-      {
-        organization: "Elsevier",
-        title: "Gabbe's Obstetrics: Normal and Problem Pregnancies, 8th edition",
-        year: "2021",
-        note: "Diagnostic reasoning chapters. Verify current edition.",
-      },
-    ],
-  },
-
-  // ── 3 ──────────────────────────────────────────────────────
-  {
-    courseSlug: "advanced-midwifery-practice",
-    moduleTitle: "Thinking Like an Expert",
-    lessonTitle: "Prioritisation When Everything Is Urgent",
-    description:
-      "Triage thinking in maternity — sequencing care when three patients need you now, and why the calm sequencer saves more lives than the fastest runner.",
-    difficulty: "Moderate",
-    durationMin: 12,
-    objectives: [
-      "Describe a structured method for ranking simultaneous emergencies on a busy ward.",
-      "Explain why treating and assessing happen together, not in sequence, during a crisis.",
-      "Apply delegation and closed-loop communication to cover more than one urgent patient at once.",
-    ],
-    tags: ["prioritization", "triage", "emergency", "delegation", "time management"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "One night you will be the senior midwife on a district labour ward and three things will happen at once. A woman will be bleeding, a trace will go bad, and someone will start fitting in the corridor. You cannot be in three rooms, but your thinking can — if it is sequenced.\n\nThis lesson is about triage thinking: deciding, in seconds, which problem gets you first, which gets a delegated pair of hands, and which gets reassessed in ten minutes. It is a final-year skill because nobody can practise it until the stakes are real.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "Rank threats by how fast they kill and what your presence changes. **Airway first** — a convulsing woman can asphyxiate in minutes. **Uncontrolled bleeding next** — PPH kills within the hour if the uterus stays slack. **The compromised fetus third** — usually minutes rather than seconds, and often improved by delegated actions: reposition, stop oxytocin, call for help. And in every version your first act is the same: **shout for help and name what you need** — theatre, doctor, ambulance — the single highest-yield action you own.\n\nTwo habits multiply you. **Treat while you assess**: rub the uterus while counting the pulse — never finish an assessment before starting treatment. And **delegate by name with a closed loop**: 'Sister Adjoa, call the registrar now, come back and tell me he is coming.' A vague 'someone call someone' is a hope, not delegation.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "The loudest patient is not always the sickest. A quiet, pale woman in the corner with a thready pulse outranks the shouting one — silence in shock is a warning, not comfort.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "You are the senior on night duty with one junior midwife and a ward aide. Simultaneously: the bell rings from Room 1 where a woman delivered an hour ago and the junior shouts 'she is bleeding heavily'; the CTG in Room 2 shows deep late decelerations; and a waiting woman in the corridor cries out and begins to convulse.\n\nIn what order do you act, and what do you say?\n\nAnswer: Shout for the doctor, theatre team and second helper first — one call, many hands. Go to the convulsing woman, who is dying fastest: left lateral, airway clear, nothing in her mouth, magnesium sulfate per protocol. Send the aide and junior to Room 1 with clear orders — rub the uterus, empty the bladder, give oxytocics — because active PPH is the next fastest killer. Room 2 gets a delegated action now: turn the mother, stop oxytocin if running, with theatre preparation for the arriving doctor. You sequenced by speed of death and by what only you could do.",
-      },
-      {
-        type: "memory_trick",
-        body: "SHOUT, then A-B-B-P: Airway first, Blood second, Baby third, Paperwork last. And when you delegate, name the person, name the task, and make them report back.",
-      },
-      {
-        type: "summary",
-        body: "- Prioritise by speed of death and by what your personal hands change: airway, then bleeding, then the fetus.\n- Shout for help before anything else — summoning the team is the highest-yield action you own.\n- Treat while you assess; never finish assessing before starting treatment.\n- Delegate by name with a closed loop — vague requests are wishes, not instructions.\n- The quiet, pale woman outranks the loud one: silence in shock is a red flag.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Prioritisation",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "You are alone when three emergencies start at once: a convulsion, heavy postpartum bleeding, and late decelerations on the CTG. What is your first action?",
-        options: [
-          "Shout for help and state clearly what you need — doctor, theatre, extra hands",
-          "Run to the CTG machine to assess the fetal heart in detail",
-          "Begin documentation, since accurate notes protect everyone",
-          "Assess all three patients fully before intervening in any of them",
-        ],
-        correctIndex: 0,
-        explanation:
-          "Summoning the team multiplies the hands available and starts the longer chain (theatre, blood, transport) moving. It costs seconds and changes everything downstream.",
-        courseSlug: "advanced-midwifery-practice",
-      },
-      {
-        topic: "Prioritisation",
+        topic: "Sepsis",
         type: "MCQ",
         difficulty: "Moderate",
-        stem: "Which order reflects sound triage reasoning when a convulsing woman, an active PPH and a pathological CTG occur together?",
+        stem: "During fluid resuscitation for sepsis, what must the nurse do after each bolus — and why?",
         options: [
-          "CTG first, since fetal death is irreversible; then convulsion; then PPH",
-          "Convulsion first, then PPH, then the compromised fetus — ranked by speed of death and by what your presence changes",
-          "PPH first in all cases, because bleeding is always the commonest emergency",
-          "Deal with whichever family is loudest, to keep the ward calm",
+          "Nothing until the registrar reviews the chart in the morning",
+          "Run the next bolus immediately — the faster the fluid, the better",
+          "Reassess pressure, pulse, mentation and the chest — because the septic heart floods easily, and shock can be traded for pulmonary oedema",
+          "Only check the urine output, since it alone reflects perfusion",
         ],
         correctIndex: 2,
         explanation:
-          "The convulsion threatens the airway within minutes, uncontrolled PPH kills within the hour, and fetal compromise can usually be bridged with delegated actions while the team assembles. Speed of death sets the order.",
-        courseSlug: "advanced-midwifery-practice",
-      },
-      {
-        topic: "Prioritisation",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "What makes 'someone call the registrar' an ineffective instruction during a crisis?",
-        options: [
-          "It is too polite for an emergency",
-          "It assigns no named person, sets no closed loop, and assumes the task will be noticed — often nobody acts",
-          "Registrars should only be called by students",
-          "It wastes time that could be spent on documentation",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Diffuse responsibility is a known team killer in emergencies. Naming a person, stating the task and requiring a report back creates a closed loop — the task is verifiably done.",
-        courseSlug: "advanced-midwifery-practice",
+          "Every bolus is a test as well as a treatment: reassess the pressure, pulse and mentation and auscultate the chest after each one. Septic patients can tip from under-filled to overloaded within hours, which is why the bundle pairs aggressive fluids with aggressive reassessment.",
+        courseSlug: "critical-care-nursing",
       },
     ],
     flashcards: [
       {
-        topic: "Prioritisation",
-        front: "Give the A-B-B-P order for simultaneous maternity emergencies.",
-        back: "Airway (convulsion) first, Blood (uncontrolled haemorrhage) second, Baby (fetal compromise) third, Paperwork last — after shouting for help, which always comes first.",
+        topic: "Sepsis",
+        front: "Define sepsis in one sentence.",
+        back: "Life-threatening organ dysfunction caused by a dysregulated host response to infection — the body's answer to the germ becomes the killer. With hypotension that fails to respond to fluids, it is septic shock.",
       },
       {
-        topic: "Prioritisation",
-        front: "What does 'treat while you assess' mean?",
-        back: "Start treatment the moment danger is suspected rather than completing a full assessment first — rub the uterus while counting the pulse, give oxygen while taking respirations.",
+        topic: "Sepsis",
+        front: "List the sentinel (sentry) signs of adult sepsis.",
+        back: "Pyrexia 38 or more (or hypothermia below 36); respiratory rate 25 or more; heart rate above 110; new confusion or drowsiness; systolic below 100. Two or more — with suspected infection — treat as sepsis.",
       },
       {
-        topic: "Prioritisation",
-        front: "What are the two ingredients of closed-loop delegation?",
-        back: "Name the person and the task ('Sister, call the registrar now'), and require a report back ('come and tell me he is coming') — so the task is verifiably done, not assumed.",
+        topic: "Sepsis",
+        front: "What is the Sepsis Six (hour-one bundle)?",
+        back: "Three IN: oxygen, IV broad-spectrum antibiotics, IV fluids. Three OUT: cultures (before antibiotics if no delay), serum lactate, hourly urine output.",
       },
-    ],
-    sources: [
       {
-        organization: "World Health Organization",
-        title: "Managing Complications in Pregnancy and Childbirth: A Guide for Midwives and Doctors, 2nd edition",
-        year: "2017",
-        url: "https://www.who.int/publications/i/item/9789241565195",
-      },
-      {
-        organization: "Agency for Healthcare Research and Quality",
-        title: "TeamSTEPPS: Team Strategies and Tools to Enhance Performance and Patient Safety",
-        url: "https://www.ahrq.gov/teamstepps-program/index.html",
-      },
-    ],
-  },
-
-  // ── 4 ──────────────────────────────────────────────────────
-  {
-    courseSlug: "advanced-midwifery-practice",
-    moduleTitle: "Complex Care Integration",
-    lessonTitle: "Managing Complex Cases",
-    description:
-      "The mother whose complications stack up — anaemia, old scars, distance and blood pressure all at once — and how to hold the whole picture together.",
-    difficulty: "Moderate",
-    durationMin: 12,
-    objectives: [
-      "Describe how multiple risk factors interact rather than simply add up in a complex pregnancy.",
-      "Explain the value of a single problem list, a single coordinator and a single plan in complex care.",
-      "Apply an individualised care plan to a Ghanaian woman with stacked complications, including where she should birth.",
-    ],
-    tags: ["complex care", "integration", "care planning", "high risk", "case management"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "Some women arrive with one problem. Others arrive with a queue: a previous caesarean scar, a haemoglobin of 8.5, blood pressure creeping up, five previous births, and a three-hour tro-tro ride to your facility. Managing complexity is not managing each problem well side by side — it is managing their conversation.\n\nThis lesson is about integration: one story, one plan, one person holding it together — the difference between a woman 'known to be high risk' and a woman whose every danger has been thought through before the night it happens.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "Complications **multiply** risk rather than add it. A scarred uterus plus grand multiparity plus anaemia is not three small worries — the scar is more likely to give way, she tolerates bleeding worse, and she has less reserve to survive it. Complex care therefore starts with a **single written problem list** naming each condition and what it does to the others, from which grows one plan with a **named coordinator** — usually you — who carries it to everyone: the woman, the referral hospital, the anaesthetist, the blood bank.\n\nThe plan works by **anticipation**: for each problem ask what could go wrong tonight, next week, at term — and where she must be when it does. A woman with a repaired ruptured uterus should never labour far from a theatre; severe anaemia needs iron now and a crossmatch plan for later. Write the plan where everyone can see it — her booklet, the referral letter, the ward board — and rehearse it in plain language: who decides at 2 am, and how the transport will be paid.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "Complexity multiplies faster than it adds. When the second serious problem arrives on the same notes, the risk of the first one turning fatal has already grown — that is the moment to escalate, not when the pulse rises.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "A 39-year-old G6P5 books at your district hospital at 14 weeks. Her notes read: previous caesarean for obstructed labour, postpartum haemorrhage at her last birth requiring transfusion, haemoglobin 8.9, blood pressure 148/94, breech at the current visit is possible, and she lives three hours away by road with no phone credit for emergencies.\n\nWhat are the elements of a safe integrated plan for her?\n\nAnswer: One written problem list: uterine scar, previous PPH, anaemia, possible chronic hypertension, distance. Then one plan: iron now for the anaemia; investigate and manage the pressure; birth at the regional hospital — not your district — because the scar, the bleeding history and the possible breech all point to caesarean with blood on standby; anaesthetic review in the third trimester with a crossmatch plan; a maternity waiting home near term so distance cannot strand her; the danger signs taught to her and her husband. One coordinator — you — carries the plan so no thread is dropped.",
-      },
-      {
-        type: "memory_trick",
-        body: "The FOUR ONES: ONE list of problems, ONE plan everyone can see, ONE coordinator who owns it, ONE story told back to the woman in her own language.",
-      },
-      {
-        type: "summary",
-        body: "- Complications interact and multiply risk; a single problem list exposes those interactions.\n- Complex care needs one written plan, one named coordinator and anticipation of what could go wrong at each stage.\n- Where she births is a complexity decision: blood, theatre and senior skills must match her danger list.\n- The woman is part of the team — rehearse the plan with her and the 2 am decision-maker, in plain language.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Complex Care",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "Why is a woman with both a previous caesarean scar and severe anaemia at far greater risk than either problem alone suggests?",
-        options: [
-          "Anaemia weakens the scar directly and speeds up labour",
-          "The two problems require conflicting treatments, so care has to be delayed",
-          "If the scar ruptures she bleeds faster, and with severe anaemia she has less reserve to tolerate the blood loss — the risks multiply",
-          "It is not; risk simply adds up, and two moderate risks equal one high risk",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Risk factors interact: haemorrhage from scar rupture on top of a low haemoglobin decompensates far earlier, and her capacity to survive blood loss is already reduced. Complexity multiplies rather than adds.",
-        courseSlug: "advanced-midwifery-practice",
-      },
-      {
-        topic: "Complex Care",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "Which set of arrangements best shows integrated complex care for the woman with a scarred uterus, previous PPH and a three-hour distance to hospital?",
-        options: [
-          "Routine antenatal contacts with advice to come in quickly if anything feels wrong",
-          "A single problem list, a written plan in her booklet, birth planned at a theatre-equipped facility, a crossmatch strategy and a maternity waiting home near term",
-          "Serial haemoglobin checks to confirm the anaemia is improving before planning anything else",
-          "Immediate referral letter to the teaching hospital for the whole pregnancy and birth",
-        ],
-        correctIndex: 3,
-        explanation:
-          "Integration means the plan connects the problems: birth where blood and theatre live, the anaemia treated, the distance solved by a waiting home, and one written plan carried by the woman. The other options treat one thread and drop the rest.",
-        courseSlug: "advanced-midwifery-practice",
-      },
-      {
-        topic: "Complex Care",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "What is the role of the named coordinator in complex care?",
-        options: [
-          "To perform all the specialist procedures personally",
-          "To hold the single plan, communicate it to every level — woman, clinic, referral hospital, blood bank — and make sure no thread is dropped",
-          "To replace the woman's own decision-making during labour",
-          "To take legal responsibility so other staff can step back",
-        ],
-        correctIndex: 2,
-        explanation:
-          "The coordinator owns communication and continuity — the commonest failure point when many teams touch one complex woman. The clinical tasks still belong to the specialists; the joining-up belongs to the coordinator.",
-        courseSlug: "advanced-midwifery-practice",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Complex Care",
-        front: "What are the FOUR ONES of managing a complex case?",
-        back: "One problem list, one plan everyone can see, one coordinator who owns it, and one story told back to the woman and her family in plain language.",
-      },
-      {
-        topic: "Complex Care",
-        front: "Why do complications multiply rather than add?",
-        back: "Because they interact: scar rupture plus anaemia means faster decompensation and less reserve; each condition changes how dangerous the others are.",
-      },
-      {
-        topic: "Complex Care",
-        front: "What anticipation question drives the complex birth plan?",
-        back: "For every problem on the list: what could go wrong tonight, next week, at term — and where must she be when it does? Then plan blood, theatre, transport and waiting home accordingly.",
-      },
-    ],
-    sources: [
-      {
-        organization: "World Health Organization",
-        title: "WHO Recommendations on Antenatal Care for a Positive Pregnancy Experience",
-        year: "2016",
-        url: "https://www.who.int/publications/i/item/9789241549912",
-      },
-      {
-        organization: "Ghana Health Service",
-        title: "National Reproductive Health Service Policy and Standards",
-        note: "Verify current edition at GHS Reproductive and Child Health Department.",
-      },
-      {
-        organization: "Elsevier",
-        title: "Myles Textbook for Midwives, 17th edition",
-        year: "2020",
-        note: "Chapters on risk assessment and referral. Verify current edition.",
-      },
-    ],
-  },
-
-  // ── 5 ──────────────────────────────────────────────────────
-  {
-    courseSlug: "advanced-midwifery-practice",
-    moduleTitle: "Complex Care Integration",
-    lessonTitle: "Multidisciplinary Teamwork in Maternity",
-    description:
-      "Obstetricians, anaesthetists, neonatologists, labs and midwives — how the full team actually works when the emergency alarm goes.",
-    difficulty: "Moderate",
-    durationMin: 12,
-    objectives: [
-      "Describe the core roles of the maternity multidisciplinary team during an obstetric emergency.",
-      "Explain shared mental model, closed-loop communication and psychological safety in team performance.",
-      "Apply structured speaking-up language (CUS) when you are the most junior person who sees the danger first.",
-    ],
-    tags: ["teamwork", "mdt", "communication", "safety", "leadership"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "When the alarm sounds for an eclamptic fit, the people who arrive hold different skills: the midwife who knows the woman, the obstetrician who decides delivery, the anaesthetist who protects her airway, the paediatric team for the baby, the lab and blood bank behind them all. None of them can save her alone — the team is the treatment.\n\nThis lesson is about how such teams work: who does what, how they talk, and how you — often the most junior voice in the room — speak up when you see something others have missed.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "High-performing teams build a **shared mental model**: the plan is said out loud — 'we are stabilising her, then caesarean in twenty minutes.' They talk in **closed loops**: instructions repeated back and confirmed done. Roles are assigned by name, because tasks without names are tasks without owners. A **brief** before high-risk work ('previous rupture, group and screen done, theatre on standby') and a **debrief** after every emergency turn each crisis into rehearsal for the next.\n\nThe quiet engine is **psychological safety** — the shared belief that anyone can raise a concern without punishment. You, at the bedside, often hold information the registrar does not: the pressure you watched climb, the bleeding the swabs show. Use graded assertive language (CUS): 'I'm **C**oncerned about this bleeding'; 'I'm **U**ncomfortable continuing'; 'this is a **S**afety issue — I need you now.' Hierarchy that silences the junior voice is a hazard, not a tradition.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "Say the plan out loud even when everyone 'obviously' knows it — the shared mental model is built by speaking, not by assuming. And the most junior person in the room is often the closest to the monitors and the blood; the team works when they can say so.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "At 02:00 a woman at 33 weeks convulses in your district hospital. Seven responders crowd in: two midwives, the medical officer, an anaesthetic nurse, the ward aide, a student — you. People begin three conversations at once; nobody has stated a plan and the magnesium is still in the cupboard.\n\nWhat does this team need in its first sixty seconds, and what can you contribute even as the most junior?\n\nAnswer: Sixty seconds buy: a named leader, roles by name — one to give magnesium per protocol, one for the airway and timing, one to run the calls to the regional hospital and blood bank, one scribing — and the plan said aloud: stabilise with magnesium, then prepare delivery. Your contribution is real: you may know her history from triage, you can close the loop on tasks, and you can speak up if her respirations fall after the loading dose — 'I'm concerned, her breathing has slowed, we should check reflexes.'",
-      },
-      {
-        type: "memory_trick",
-        body: "B-N-L-D: **B**rief before the risky work, **N**ame the leader and roles, **L**oop every message closed, **D**ebrief after the dust settles. And when you must speak up: C-U-S — Concerned, Uncomfortable, Safety.",
-      },
-      {
-        type: "summary",
-        body: "- The emergency team is the treatment: midwife, obstetrician, anaesthetist, neonatal team, lab and blood bank, each with a defined role.\n- A shared mental model is spoken aloud; closed-loop communication makes every instruction verifiably done.\n- Brief before high-risk work and debrief after every emergency — each crisis rehearses the next.\n- Psychological safety lets the most junior person raise the alarm: use CUS — Concerned, Uncomfortable, Safety.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Teamwork",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "What is a shared mental model in an emergency team?",
-        options: [
-          "A private mental plan each member keeps to themselves",
-          "The hospital's written protocol filed in the emergency folder",
-          "A common, spoken understanding of the situation and the plan that everyone in the room holds",
-          "The shift roster showing who is present that night",
-        ],
-        correctIndex: 0,
-        explanation:
-          "A shared mental model means all responders understand the same picture and the same plan — and because minds cannot be read, it is built by saying the plan out loud and confirming it.",
-        courseSlug: "advanced-midwifery-practice",
-      },
-      {
-        topic: "Teamwork",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "You are the student at the bedside when the woman's respirations fall to 12 per minute after the magnesium loading dose. The medical officer is busy with the drip. What is your best action?",
-        options: [
-          "Stay quiet and watch, because interrupting a senior is insubordinate",
-          "Reduce the magnesium infusion yourself without telling anyone",
-          "Speak up with graded assertive language: 'I'm concerned her breathing has slowed — can we check her reflexes before the next dose?'",
-          "Wait for the ward aide to notice and report it on your behalf",
-        ],
-        correctIndex: 2,
-        explanation:
-          "The bedside observer often detects deterioration first. Graded assertive language (CUS) states the concern respectfully but unmistakably; silence from the closest watcher is a classic cause of magnesium toxicity going unrecognised.",
-        courseSlug: "advanced-midwifery-practice",
-      },
-      {
-        topic: "Teamwork",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "Which statement about the maternity MDT is true?",
-        options: [
-          "The midwife defers all decisions to the obstetrician, so her knowledge is rarely needed in the emergency",
-          "Briefing and debriefing are optional courtesies that delay care",
-          "The anaesthetist's main emergency role is airway and haemodynamic support while the obstetrician plans delivery and the midwife holds continuity and the woman's story",
-          "Blood bank and laboratory are not considered part of the emergency team",
-        ],
-        correctIndex: 3,
-        explanation:
-          "Each role has a distinct emergency function — airway and circulation, delivery decisions, continuity and observation, plus lab and blood bank as essential team members behind the clinicians. Debriefing afterwards converts the crisis into learning.",
-        courseSlug: "advanced-midwifery-practice",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Teamwork",
-        front: "What are the four roles that define an obstetric emergency team's work?",
-        back: "Leader (directs and decides), airway/circulation holder (anaesthetist), delivery planner (obstetrician), and the midwife holding continuity, observations and the woman's story — with lab and blood bank behind them.",
-      },
-      {
-        topic: "Teamwork",
-        front: "What does CUS stand for?",
-        back: "Concerned — Uncomfortable — Safety issue: graded assertive language for speaking up, so a junior voice can stop the line without insult: 'I'm concerned... I'm uncomfortable... this is a safety issue.'",
-      },
-      {
-        topic: "Teamwork",
-        front: "Why brief and debrief around obstetric emergencies?",
-        back: "The brief sets roles and the plan before the crisis; the debrief after it turns what went wrong into system change — each emergency rehearses the next one.",
-      },
-    ],
-    sources: [
-      {
-        organization: "Agency for Healthcare Research and Quality",
-        title: "TeamSTEPPS: Team Strategies and Tools to Enhance Performance and Patient Safety",
-        url: "https://www.ahrq.gov/teamstepps-program/index.html",
-      },
-      {
-        organization: "World Health Organization",
-        title: "WHO Patient Safety Curriculum Guide: Multi-professional Edition",
-        year: "2011",
-        url: "https://www.who.int/publications/i/item/9789241501950",
-      },
-      {
-        organization: "Elsevier",
-        title: "Myles Textbook for Midwives, 17th edition",
-        year: "2020",
-        note: "Working with the multidisciplinary team. Verify current edition.",
-      },
-    ],
-  },
-
-  // ── 6 ──────────────────────────────────────────────────────
-  {
-    courseSlug: "advanced-midwifery-practice",
-    moduleTitle: "Complex Care Integration",
-    lessonTitle: "Consultation and Referral: The Professional Conversation",
-    description:
-      "Calling for help as an expert — concise, structured and persuasive, with the right information at the right time to the right person.",
-    difficulty: "Moderate",
-    durationMin: 12,
-    objectives: [
-      "Describe the SBAR structure for a referral or consultation call.",
-      "Explain why early referral of a stabilised woman outperforms late referral of a collapsing one.",
-      "Apply a complete referral package — call, letter, records, medications given and a timeline of observations.",
-    ],
-    tags: ["referral", "communication", "sbar", "transfer", "escalation"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "Referral is a clinical skill like palpation or suturing — and in Ghana's tiered system, with district hospitals feeding regional and teaching hospitals, it is one of the most life-saving skills you own. A mumbled, incomplete call leads to a bouncing patient and lost hours. A structured call moves her through the system the same night.\n\nThis lesson trains the professional conversation: deciding when to call, what to say, in what order, and what travels with the woman in the ambulance.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "Structure your call as **SBAR**. **S**ituation: who you are, where you are calling from, and the one-sentence emergency — 'I am the midwife at Suhum District Hospital; I have a 34-week woman with severe pre-eclampsia.' **B**ackground: the facts that matter — her age, parity, history. **A**ssessment: your findings with numbers — blood pressure, protein, reflexes, urine output. **R**ecommendation: what you are asking for — 'I request acceptance for transfer; I have started the magnesium loading dose per protocol; ambulance ready in thirty minutes.' That last sentence is what makes you a professional colleague rather than a voice with a problem.\n\nTwo principles govern timing. **Refer early with a stable patient** — the woman who arrives talking survives the journey; the one who is transferred as she collapses often arrives as a corpse in transit. And **stabilise before and during transfer**: magnesium running, IV access secured, a trained escort with a clear timeline of observations, and the call made **ahead** so the receiving team prepares blood, theatre or ICU. Send the referral letter, her booklet, the medication record and a written vitals timeline — a woman who travels with her story travels safer.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "Refer early with a stable woman, not late with a dying one — and never send a referral note alone: the note travels with her, along with the drugs given, doses, times and a vitals timeline, in the hands of someone who knows the story.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "A 27-year-old G2P1 at 34 weeks has a repeat blood pressure of 168/112 with headache and 2+ proteinuria. Your district hospital has no theatre or blood. You have given the magnesium loading dose per protocol. Now you must call the regional hospital's registrar, who is mid-round and impatient.\n\nHow do you open and structure the call?\n\nAnswer: 'Good evening, Doctor. I am Sister Mensah, the midwife at Suhum District. I am referring a 34-week primigravida — sorry, G2P1 — with severe pre-eclampsia.' Background: no medical history, first pregnancy normal. Assessment: BP 168/112 on two readings, headache, 2+ protein, brisk reflexes, magnesium loading given at 19:40, urine output 40 mL in the last hour. Recommendation: 'I request acceptance for transfer; she is stable; ambulance leaves in thirty minutes with an escort; notes, booklet and vitals timeline attached.' Ten structured sentences move her tonight.",
-      },
-      {
-        type: "memory_trick",
-        body: "SBAR: Situation — one sentence with your name and the emergency. Background — her story in facts. Assessment — your findings in numbers. Recommendation — your ask, stated as a colleague states it: 'I request...'",
-      },
-      {
-        type: "summary",
-        body: "- SBAR (Situation, Background, Assessment, Recommendation) structures every referral call.\n- Recommendation is the expert's paragraph: state what you are asking for and what you have already done.\n- Refer early with a stable woman; stabilise before and during transfer, with a trained escort.\n- Call ahead so the receiving team prepares blood, theatre or ICU; send notes, booklet, drug record and a vitals timeline.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Referral",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "A midwife calls the regional hospital: 'Please, we have a woman here, she is not well, we want to send her to you.' What is the main failure of this call?",
-        options: [
-          "It is too polite for a professional referral",
-          "It gives no identification, no clinical picture, no numbers and no explicit request — the receiver cannot triage or prepare",
-          "Referrals should be made by text message, not by phone",
-          "It fails because district midwives may not speak to regional registrars directly",
-        ],
-        correctIndex: 1,
-        explanation:
-          "The receiving team cannot assign urgency, prepare theatre or blood, or even accept the patient usefully without the situation, findings and a clear request. That structure is exactly what SBAR provides.",
-        courseSlug: "advanced-midwifery-practice",
-      },
-      {
-        topic: "Referral",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "In SBAR, what belongs in the Recommendation section?",
-        options: [
-          "The woman's full antenatal history since booking",
-          "The laboratory printouts for the last three visits",
-          "What you are asking for and what you have already done — acceptance for transfer, what treatment has started, transport timing",
-          "A polite apology for disturbing the senior doctor",
-        ],
-        correctIndex: 0,
-        explanation:
-          "Recommendation is your professional ask plus actions already taken — 'I request acceptance; magnesium started at 19:40; ambulance ready in thirty minutes.' It is what distinguishes a colleague's call from a cry for help.",
-        courseSlug: "advanced-midwifery-practice",
-      },
-      {
-        topic: "Referral",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "Which woman is being referred at the right time by the right method?",
-        options: [
-          "A woman transferred while actively convulsing, with no escort and no treatment record",
-          "A woman with rising blood pressure referred only after she collapses, since the receiving hospital 'will manage better'",
-          "A woman with severe features and early symptoms, stabilised on magnesium with IV access, escorted with a written vitals timeline, after a call ahead to the accepting registrar",
-          "A stable woman sent home to pack, to travel by public transport tomorrow morning",
-        ],
-        correctIndex: 2,
-        explanation:
-          "Early referral of the stabilised woman, treatment running, escort and records present, receiving team warned — this package survives the journey. Convulsing or collapsing transfers and 'come tomorrow' instructions are how distance becomes death.",
-        courseSlug: "advanced-midwifery-practice",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Referral",
-        front: "What are the four SBAR elements?",
-        back: "Situation (who and the one-sentence emergency), Background (relevant history), Assessment (findings with numbers), Recommendation (what you request and what you have already done).",
-      },
-      {
-        topic: "Referral",
-        front: "Why is 'refer early with a stable patient' the golden rule of transfer?",
-        back: "The woman who arrives talking survives the journey; deterioration during transfer — without blood, theatre or ICU — converts a treatable problem into a death. Stabilise, then move.",
-      },
-      {
-        topic: "Referral",
-        front: "What should travel with every referred woman?",
-        back: "Referral letter, antenatal booklet, medication record with doses and times, a written vitals timeline — and a trained escort who knows the story, after a call ahead to the receiving team.",
-      },
-    ],
-    sources: [
-      {
-        organization: "World Health Organization",
-        title: "Managing Complications in Pregnancy and Childbirth: A Guide for Midwives and Doctors, 2nd edition",
-        year: "2017",
-        url: "https://www.who.int/publications/i/item/9789241565195",
-      },
-      {
-        organization: "Ghana Health Service",
-        title: "National Reproductive Health Service Policy and Standards",
-        note: "Referral protocols for district and regional levels. Verify current edition.",
-      },
-      {
-        organization: "Agency for Healthcare Research and Quality",
-        title: "TeamSTEPPS: Team Strategies and Tools to Enhance Performance and Patient Safety",
-        url: "https://www.ahrq.gov/teamstepps-program/index.html",
-      },
-    ],
-  },
-
-  // ── 7 ──────────────────────────────────────────────────────
-  {
-    courseSlug: "advanced-midwifery-practice",
-    moduleTitle: "Leading at the Bedside",
-    lessonTitle: "Leadership in Clinical Practice",
-    description:
-      "Leading the room when it matters — directing, delegating and staying calm when the emergency finds you first.",
-    difficulty: "Moderate",
-    durationMin: 12,
-    objectives: [
-      "Describe the specific behaviours of an effective emergency team leader.",
-      "Explain why the leader's hands stay empty and the plan is spoken aloud.",
-      "Apply leadership behaviours to a cord prolapse scenario as the senior clinician present.",
-    ],
-    tags: ["leadership", "practice", "emergency", "delegation", "communication"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "Leadership in maternity is not a rank on your collar — it is a set of behaviours a room needs when things go wrong. On many Ghanaian night shifts the most senior person at the bedside is the midwife. The team takes its calm from whoever leads it, and leading can be learned.\n\nThis lesson looks at what a good emergency leader actually does in the first minutes: how they stand, how they speak, what they refuse to do with their own hands, and how they hand the room back afterwards.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "The leader's first duty is to **stay out of the task work**: hands full of a syringe cannot point at the next problem. The leader stands where the whole room is visible and keeps the **big picture** — what is happening now, what happens next, what goes wrong in ten minutes. They **allocate by name with closed loops** ('Nurse Adjoa, ring theatre, come back and confirm'), keep **one voice at a time**, and use a low, unhurried tone — a team copies its leader's voice the way water copies the wind.\n\nThe leader **says the plan aloud** and stamps it with time: 'Plan is emergency caesarean; we should be in theatre by 07:35.' A scribe records times and events. When new information arrives, the leader re-plans aloud, saying what has changed. Afterwards, a two-minute **debrief** — what went well, what we do differently — closes the loop. Leadership may rotate between emergencies, but only one person leads at a time; two leaders are none.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "The leader's hands should be the emptiest in the room. If you are the one filling the syringe, nobody is watching the whole picture — and the whole picture is the leader's real job.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "At 07:10 on your final placement, the cord prolapses during a vaginal examination on a woman at 6 cm with a breech. Two junior midwives freeze; the medical officer is doing the ward round upstairs; a nurse aide starts crying. You are the senior person present.\n\nWhat do you do in the next two minutes?\n\nAnswer: Announce yourself leader aloud: 'I am leading until the doctor comes.' Keep the presenting part off the cord — yourself or one named helper, mother head-down in knee-to-chest; this is the single most fetal-life-preserving action. Delegate by name: one to call the medical officer and theatre team, one for IV access and tocolysis per protocol, the aide to comfort the woman. Say the plan with a time: 'Emergency caesarean; moving by 07:25.' Keep your voice low and your hands mostly empty; brief the arriving doctor in two sentences, then debrief.",
-      },
-      {
-        type: "memory_trick",
-        body: "A leader keeps EYES ON THE WHOLE ROOM, NOT THE HOLE IN IT — hands empty, names given, one voice, plan spoken with a time on it, and a debrief to close.",
-      },
-      {
-        type: "summary",
-        body: "- Leadership is behaviour, not rank; the most senior person present owns it, and only one person leads at a time.\n- The leader's hands stay empty: watching the whole picture beats doing any single task.\n- Allocate by name with closed loops; keep one voice and a low, unhurried tone.\n- Say the plan aloud with a time attached; re-plan aloud when the picture changes.\n- Two minutes of debrief after every emergency turns panic into rehearsal.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Leadership",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "During a postpartum haemorrhage, the most senior midwife starts suturing the tear herself while shouting instructions. What has gone wrong with her leadership?",
-        options: [
-          "Nothing — the most experienced hands should do the most skilled task",
-          "She has not called the doctor, which is mandatory before any suturing",
-          "Her hands are no longer free, so nobody is watching the whole picture, allocating roles or re-planning as the bleeding evolves",
-          "She should have delegated the shouting instead of the suturing",
-        ],
-        correctIndex: 2,
-        explanation:
-          "Once the leader is absorbed in a manual task, the team loses its coordinator: no big picture, no re-planning, no visible calm. Skilled tasks are delegated or swapped; leadership is the role that cannot be delegated.",
-        courseSlug: "advanced-midwifery-practice",
-      },
-      {
-        topic: "Leadership",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "Which set of statements is characteristic of an effective emergency leader?",
-        options: [
-          "Gives tasks to 'someone', works silently, and waits for the plan to become obvious",
-          "Allocates by name with closed loops, speaks the plan aloud with a time, keeps one voice going and their own hands free",
-          "Assigns blame quickly so the team learns, then continues the shift without discussion",
-          "Leads the loudest, takes over all technical tasks, and avoids delegating to juniors",
-        ],
-        correctIndex: 3,
-        explanation:
-          "Name-task-loop delegation, a spoken, time-stamped plan, one calm voice and empty leader hands are the core behaviours — they build the shared mental model and keep the leader in the coordinating role.",
-        courseSlug: "advanced-midwifery-practice",
-      },
-      {
-        topic: "Leadership",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "Why does a leader announce the plan aloud with a time attached, e.g. 'we should be in theatre by 07:25'?",
-        options: [
-          "To comply with documentation rules about verbal orders",
-          "So that every team member shares one mental model and can notice if progress falls behind the stated clock",
-          "To reassure the family waiting outside",
-          "Because the scribe cannot write without a stated time",
-        ],
-        correctIndex: 1,
-        explanation:
-          "The spoken, time-stamped plan builds the shared mental model and creates a visible yardstick: if 07:25 comes and the team is still in the room, everyone knows escalation is needed without anyone having to ask.",
-        courseSlug: "advanced-midwifery-practice",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Leadership",
-        front: "What are the core behaviours of an emergency team leader?",
-        back: "Hands empty, eyes on the whole room; allocate by name with closed loops; one voice, low and unhurried; plan spoken aloud with a time; re-plan aloud when the picture changes; debrief afterwards.",
-      },
-      {
-        topic: "Leadership",
-        front: "Why must the leader's hands stay empty in a crisis?",
-        back: "Hands full of a task cannot direct the next one — a leader absorbed in a syringe has stopped watching the whole picture, which is the leadership job nobody else holds.",
-      },
-      {
-        topic: "Leadership",
-        front: "How many leaders should an emergency have, and why?",
-        back: "Exactly one — two leaders are none. Leadership can rotate between emergencies, but at any moment the room needs one voice, one plan and one owner of the big picture.",
-      },
-    ],
-    sources: [
-      {
-        organization: "Agency for Healthcare Research and Quality",
-        title: "TeamSTEPPS: Team Strategies and Tools to Enhance Performance and Patient Safety",
-        url: "https://www.ahrq.gov/teamstepps-program/index.html",
-      },
-      {
-        organization: "Royal College of Obstetricians and Gynaecologists",
-        title: "Good Practice Series: Leadership in Obstetric Emergencies",
-        note: "Verify current edition on the RCOG website.",
-      },
-      {
-        organization: "Elsevier",
-        title: "Myles Textbook for Midwives, 17th edition",
-        year: "2020",
-        note: "Professional issues: leading care. Verify current edition.",
-      },
-    ],
-  },
-
-  // ── 8 ──────────────────────────────────────────────────────
-  {
-    courseSlug: "advanced-midwifery-practice",
-    moduleTitle: "Leading at the Bedside",
-    lessonTitle: "Documentation and Communication at Expert Level",
-    description:
-      "Your notes as clinical instruments — writing that the next team acts on, the audit trusts and the courtroom reads fairly.",
-    difficulty: "Moderate",
-    durationMin: 12,
-    objectives: [
-      "Describe what separates expert-level clinical notes from ordinary notes.",
-      "Explain the legal and clinical weight of contemporaneous, objective, time-stamped records.",
-      "Apply a structured entry format to a complicated birth so the timeline can be reconstructed without you.",
-    ],
-    tags: ["documentation", "communication", "record keeping", "legal", "handover"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "By now you write notes every shift. The question this lesson asks is sharper: do your notes work as clinical instruments? Are they written so that the team taking over at 20:00 can act instantly, the audit committee can reconstruct events, and a court — if it ever comes to that — finds fairness and fact?\n\nIn your final year, documentation graduates from a chore to a clinical skill. The difference between 'lochia moderate' and a timed, quantified, signed observation is sometimes the difference between a sepsis caught at day one and a death audited at month's end.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "Expert notes are **contemporaneous** — written at the bedside or immediately after, never reconstructed at shift end. They carry a **timeline**: each event with its time — when the fetal heart decelerated, when you called, when help arrived, when the baby was born. They record **what was observed, what was done, and what was said**: conversations that matter are quoted verbatim in quotation marks ('she refuses blood transfusion on religious grounds'), with the witness present. Every escalation entry names **who** was informed and **when**.\n\nThe expert register is **objective and neutral**: 'fundus soft, bled 400 mL estimated by weighing' — never 'patient being difficult'. Opinion belongs to assessments, not to descriptions. Remember the two readers you never meet: the next clinician at 02:00, who needs action-ready facts, and the woman herself, who has a right to read what was written about her. Sign, print your name, and give your designation — an unsigned note is legally no note at all.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "Write so that a stranger can rebuild the timeline without you — and remember the woman may one day read it. Facts written kindly at 03:00 protect both her and you at 15:00 in a courtroom.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "A shoulder dystocia occurred on your shift. The manoeuvres worked; the baby cried after thirty seconds of airway support and was examined by the paediatric team. Two weeks later the case is selected for the perinatal audit meeting, and the chair reads your entry aloud: 'Difficulty with shoulders. Help called. Baby fine.'\n\nWhat must a defensible, useful entry for this event contain?\n\nAnswer: The timeline first: time of head birth and time of body birth — the head-to-body interval is the number audits and courts look for. Then the call: who was called, at what time, who attended. The manoeuvres in the order used (McRoberts, suprapubic pressure, then internal rotation) and the result of each. The baby's condition: Apgar scores, resuscitation given, cord gases if taken, who examined the baby and when. The parents' debrief: that you explained what happened, in what words, and their questions. Sign, print, designation. Written that way, the note teaches the audit; written vaguely, it teaches nothing and protects no one.",
-      },
-      {
-        type: "memory_trick",
-        body: "NOTE: **N**eutral language, **O**bserved facts and quotes, **T**imes on every event, **E**very hand signed with name and designation. If it is not written down, it was not done.",
-      },
-      {
-        type: "summary",
-        body: "- Expert notes are contemporaneous, time-stamped and reconstructable by a stranger without you.\n- Record what was observed, done and said — important conversations quoted verbatim, escalations named and timed.\n- Keep language neutral and objective; opinion belongs to assessments, not descriptions.\n- Sign, print and designate — an unsigned entry is legally invisible.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Documentation",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "What makes a clinical record contemporaneous?",
-        options: [
-          "It is countersigned by the doctor on duty",
-          "It is written at the time of the events or immediately afterwards, at the bedside rather than reconstructed later",
-          "It is written in the hospital's approved format",
-          "It contains the woman's full name and folder number",
-        ],
-        correctIndex: 0,
-        explanation:
-          "Contemporaneous means written as events happen or immediately after — memory fades within hours, and notes reconstructed at shift end lose exactly the details audits and courts need most.",
-        courseSlug: "advanced-midwifery-practice",
-      },
-      {
-        topic: "Documentation",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "A woman refuses a recommended blood transfusion. Which is the best note entry?",
-        options: [
-          "Refused transfusion. Doctor informed.",
-          "Patient uncooperative regarding blood; will hold her responsible if anything happens",
-          "At 21:15, with her husband and Sister Yaro present, she declined transfusion, stating 'I cannot accept blood on religious grounds.' Risks of refusing explained in Twi; she repeated her refusal and understood. Dr Mensah informed 21:20.",
-          "Advice given about blood; family resisting; suggest they talk to her pastor",
-        ],
-        correctIndex: 1,
-        explanation:
-          "The strong entry quotes her words verbatim, times the event, names witnesses, records the information given and her demonstrated understanding, and names who was informed — it is factual, respectful and reconstructable.",
-        courseSlug: "advanced-midwifery-practice",
-      },
-      {
-        topic: "Documentation",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "Why is the head-to-body interval a mandatory fact in shoulder dystocia notes?",
-        options: [
-          "Because the hospital needs it for billing purposes",
-          "Because the length of the interval predicts the baby's risk of hypoxic injury, and it is the number that audits and legal review look for",
-          "Because it determines which midwife documents the birth",
-          "Because maternity statistics require all intervals to be recorded",
-        ],
-        correctIndex: 3,
-        explanation:
-          "In shoulder dystocia the clock between head and body delivery is the measure of asphyxia risk. Without it, no reviewer can judge whether delay occurred — which is precisely why vague notes fail the audit.",
-        courseSlug: "advanced-midwifery-practice",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Documentation",
-        front: "What does NOTE stand for in expert record keeping?",
-        back: "Neutral language, Observed facts (with important speech quoted verbatim), Times on every event, Every entry signed with printed name and designation.",
-      },
-      {
-        topic: "Documentation",
-        front: "What must an escalation entry always contain?",
-        back: "Who was informed, by what method, and at what time — plus what you were advised and what you did next.",
-      },
-      {
-        topic: "Documentation",
-        front: "Which number must always appear in shoulder dystocia documentation?",
-        back: "The head-to-body delivery interval with times — the key measure of asphyxia risk and the first thing auditors and courts look for.",
-      },
-    ],
-    sources: [
-      {
-        organization: "Nursing and Midwifery Council of Ghana",
-        title: "Code of Professional Conduct for Midwives and Nurses",
-        note: "Standards for records and accountability. Verify current edition.",
-      },
-      {
-        organization: "World Health Organization",
-        title: "WHO Patient Safety Curriculum Guide: Multi-professional Edition",
-        year: "2011",
-        url: "https://www.who.int/publications/i/item/9789241501950",
-      },
-      {
-        organization: "Elsevier",
-        title: "Myles Textbook for Midwives, 17th edition",
-        year: "2020",
-        note: "Record keeping and legal aspects of midwifery. Verify current edition.",
-      },
-    ],
-  },
-
-  // ── 9 ──────────────────────────────────────────────────────
-  {
-    courseSlug: "high-risk-pregnancy",
-    moduleTitle: "Recognising Risk Early",
-    lessonTitle: "What Makes a Pregnancy High-Risk?",
-    description:
-      "Risk factors you can spot before conception and at booking — the assessment that quietly changes everything about her care.",
-    difficulty: "Moderate",
-    durationMin: 12,
-    objectives: [
-      "Describe the three time-frames of risk assessment — before pregnancy, at booking, and along the way.",
-      "Explain why a risk factor is a reason to prepare rather than a prediction of disaster.",
-      "Apply a structured booking assessment to identify which women need an altered pathway from the start.",
-    ],
-    tags: ["risk factors", "assessment", "booking", "preconception", "high risk"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "'High risk' is not a prophecy — it is a traffic signal. It changes where a woman births, who reviews her, how often she is seen and what the team prepares for. The whole skill is spotting the signal early, ideally before the pregnancy even starts.\n\nThis lesson organises risk into three time-frames and trains your booking assessment so that the woman who needs a different pathway is identified at her first contact — not at her first emergency.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "Risk from **before** the pregnancy: age under 18 or over 35, grand multiparity (five or more births), chronic hypertension, diabetes or kidney disease, severe anaemia, heart disease, HIV, Rhesus-negative blood, epilepsy, and the powerful obstetric history — previous caesarean, pre-eclampsia, PPH, stillbirth, three or more miscarriages, or a repaired ruptured uterus. Risk **of** this pregnancy: twins, pre-eclampsia, antepartum haemorrhage, malpresentation after 36 weeks, growth restriction, severe malaria, anaemia. Risk **along the way**: the pregnancy that was normal at booking but develops a rising blood pressure at 28 weeks or reduced movements at 36 — risk is dynamic, so every antenatal contact is a re-assessment.\n\nHold the balance carefully. The label 'high risk' means prepare, not panic — most labelled women birth normally and safely. But never let the label lull you either: prepared teams survive the complications that unprepared teams discover. At booking, the risk screen decides her pathway: which facility, which frequency, which tests, which senior eyes.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "A risk factor is a reason to prepare, never a prediction of disaster — but 'low risk' is not a destination either. Reassess at every contact; the pregnancy that changes class at 30 weeks does not announce it politely.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "A 37-year-old G5P4 attends your clinic hoping to conceive again. Her history: caesarean for obstructed labour nine years ago, then three vaginal births; a transfusion after her last delivery for haemorrhage; she mentions her blood pressure has 'sometimes been high' at market screenings. Her haemoglobin today is 10.2 g/dL.\n\nWhich risk factors are already on the table, and what do you advise before she conceives?\n\nAnswer: Before pregnancy she carries five flags: age over 35, grand multiparity (para 4 becoming 5), a uterine scar, a previous PPH with transfusion, and possible chronic hypertension — plus borderline anaemia. Preconception advice: check blood pressure properly and treat if confirmed; start iron and improve diet to build her haemoglobin now; test glucose; plan antenatal care at a facility with theatre and blood once she conceives, booked early; and agree a family planning method until she is ready. Every one of these problems is easier to fix before conception than during pregnancy.",
-      },
-      {
-        type: "memory_trick",
-        body: "BEFORE — DURING — ALONG: risks she brings from before, risks of this pregnancy, and risks that join along the way. Reassess at every contact, because risk is a traveller.",
-      },
-      {
-        type: "summary",
-        body: "- Risk is a traffic signal, not a prophecy — it changes pathway, place and preparation.\n- Risk before pregnancy includes age, parity, chronic disease, anaemia and the obstetric history.\n- Risk of this pregnancy includes multiples, pre-eclampsia, bleeding, malpresentation and growth problems.\n- Risk is dynamic: reassess at every contact; a 'low risk' booking can be a high-risk third trimester.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Risk Assessment",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "A woman's booking history shows: age 37, para 4, previous caesarean, previous PPH requiring transfusion. What does this combination mean for her care?",
-        options: [
-          "She should be discouraged from further pregnancy entirely",
-          "She is low risk because she has since had vaginal births after the caesarean",
-          "She needs a high-risk pathway from booking: senior review, theatre-capable facility for birth, blood availability planning and anaemia correction",
-          "Only the previous caesarean matters; the other factors can be ignored if she feels well",
-        ],
-        correctIndex: 2,
-        explanation:
-          "Stacked risk factors — age, grand multiparity, scar, bleeding history — trigger an altered pathway from the start: where she births, who reviews her and what is prepared. The factors interact; they do not cancel.",
-        courseSlug: "high-risk-pregnancy",
-      },
-      {
-        topic: "Risk Assessment",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "Why is risk assessment repeated at every antenatal contact rather than only at booking?",
-        options: [
-          "Because women forget their history between visits",
-          "To fill the required forms of the maternity register",
-          "Because risk is dynamic — problems like pre-eclampsia, growth restriction and anaemia appear along the way and change her class",
-          "Because the midwife on duty changes each week",
-        ],
-        correctIndex: 0,
-        explanation:
-          "A woman can be entirely normal at booking and develop the next complication weeks later. Risk re-assessment at each contact is how the pathway changes before the emergency does.",
-        courseSlug: "high-risk-pregnancy",
-      },
-      {
-        topic: "Risk Assessment",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "Which finding at booking most strongly signals that this woman should not deliver at a CHPS compound?",
-        options: [
-          "First pregnancy at age 22 with haemoglobin 11.5",
-          "Mild nausea controlled by diet",
-          "Previous ruptured uterus repaired at laparotomy",
-          "One previous miscarriage at eight weeks, now well",
-        ],
-        correctIndex: 3,
-        explanation:
-          "A repaired ruptured uterus is at high risk of recurrence — catastrophic, sudden and surgical. She needs a facility with immediate theatre and blood from the earliest planning conversation. The other findings are compatible with community-level care.",
-        courseSlug: "high-risk-pregnancy",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Risk Assessment",
-        front: "Name the three time-frames of risk.",
-        back: "Before the pregnancy (age, parity, chronic disease, obstetric history), of this pregnancy (twins, pre-eclampsia, bleeding, growth), and along the way (new findings at any contact).",
-      },
-      {
-        topic: "Risk Assessment",
-        front: "What does 'risk is a traffic signal, not a prophecy' mean in practice?",
-        back: "A high-risk label changes pathway, place of birth, frequency and preparation — it does not assume disaster. Most labelled women birth normally, but prepared teams survive what unprepared teams discover.",
-      },
-      {
-        topic: "Risk Assessment",
-        front: "List five powerful 'before pregnancy' risk factors.",
-        back: "Age over 35 or under 18; grand multiparity (para 5+); chronic hypertension or diabetes; previous caesarean or ruptured uterus; previous PPH, stillbirth or recurrent miscarriage.",
-      },
-    ],
-    sources: [
-      {
-        organization: "World Health Organization",
-        title: "WHO Recommendations on Antenatal Care for a Positive Pregnancy Experience",
-        year: "2016",
-        url: "https://www.who.int/publications/i/item/9789241549912",
-      },
-      {
-        organization: "Ghana Health Service",
-        title: "National Reproductive Health Service Policy and Standards",
-        note: "Risk categorisation and referral criteria. Verify current edition.",
-      },
-      {
-        organization: "Elsevier",
-        title: "Gabbe's Obstetrics: Normal and Problem Pregnancies, 8th edition",
-        year: "2021",
-        note: "Verify current edition.",
-      },
-    ],
-  },
-
-  // ── 10 ─────────────────────────────────────────────────────
-  {
-    courseSlug: "high-risk-pregnancy",
-    moduleTitle: "Recognising Risk Early",
-    lessonTitle: "The High-Risk Care Pathway and Team",
-    description:
-      "What actually changes when risk is flagged — more watching, different specialists, and a birth planned where the right help already lives.",
-    difficulty: "Moderate",
-    durationMin: 12,
-    objectives: [
-      "Describe the concrete changes a high-risk flag makes to surveillance, specialty input and place of birth.",
-      "Explain the roles of the specialists around a high-risk pregnancy and who coordinates them.",
-      "Apply pathway thinking to plan care for a woman with twins after two caesareans.",
-    ],
-    tags: ["care pathway", "surveillance", "high risk", "referral", "birth planning"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "When the risk screen lights up, something concrete has to change — otherwise the label is decoration. A high-risk pathway is the set of changes that follow: how often she is seen, which tests run on a schedule, which specialists join, and where the birth is planned.\n\nIn Ghana this is a geography question as much as a clinical one: the right help must already be close when the emergency comes, because the emergency will not wait for a three-hour ambulance.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "Surveillance intensifies along the danger: blood pressure and urine more often, growth scans every two to four weeks for a lagging fetus, umbilical artery doppler when growth falters, haemoglobin re-checked for the anaemic woman, specialised tests for medical conditions (HbA1c, renal function, viral load). **Specialists join early** — the obstetrician for surgical decisions, the physician for medical disease, the anaesthetist reviewing a scarred abdomen in the third trimester, the neonatal team warned in advance, the blood bank holding a plan. One **named coordinator** — often the senior midwife — keeps it all moving between levels.\n\nThe **place of birth** is the pathway's anchor: it must match her danger list. Placenta praevia after two caesareans needs a regional hospital with theatre, blood and ICU capability — arranging that at 32 weeks is the pathway working; discovering it at 03:00 with bleeding is the pathway failed. Her individualised plan travels in the booklet she carries, in plain language.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "The pathway's weakest link is usually the woman's understanding of it. She should be able to say, in her own words, where she will birth, why, which signs mean 'go now', and who travels with her — a plan she cannot recite is a plan that does not exist.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "A 31-year-old with two previous caesareans is found to have twins at her 20-week scan at your district facility. Your theatre functions, but there is no blood bank and the neonatal unit manages only well babies.\n\nWhat does her pathway look like from here?\n\nAnswer: The danger list is surgical (two scars plus twins), haemorrhagic (twins over-distend the uterus — high PPH risk) and neonatal (twins are often early and small). The pathway: transfer antenatal care to the regional hospital; growth scans of both twins every three to four weeks; anaesthetic review in the third trimester; crossmatch and transfusion plan with the regional blood bank; paediatric team briefed; maternity waiting home near term so distance cannot separate her from the theatre; a written plan with danger signs that she and her husband can recite. The district clinic stays in the loop until the handover is complete.",
-      },
-      {
-        type: "memory_trick",
-        body: "The pathway changes four things: WATCH more (extra visits and scans), INVITE more specialists, BIRTH WHERE THE HELP LIVES, and WRITE the plan where the woman carries it.",
-      },
-      {
-        type: "summary",
-        body: "- A high-risk flag must produce visible change: extra surveillance, scheduled tests and named specialists.\n- The team grows deliberately — obstetrician, physician, anaesthetist, neonatal team, blood bank — under one named coordinator.\n- Place of birth is the anchor: theatre, blood and neonatal capability must match her danger list, arranged in advance.\n- The plan lives in her booklet in plain words, with danger signs and a named facility — a plan she cannot recite does not exist.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Care Pathway",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "A woman with twins after two caesareans is being planned. Which arrangement reflects pathway thinking rather than wishful thinking?",
-        options: [
-          "Continue district antenatal care and see how the pregnancy goes before deciding anything",
-          "Book a home birth with the CHPS midwife on standby for transfer",
-          "Regional-hospital birth planned, third-trimester anaesthetic review, crossmatch plan with the blood bank, neonatal team briefed, waiting home near term, written plan in her booklet",
-          "Wait for labour to start, then refer to whichever hospital has space that day",
-        ],
-        correctIndex: 1,
-        explanation:
-          "The pathway pre-arranges the three things her danger list demands — theatre, blood and neonatal care — plus distance solved and a written plan. Deciding 'on the day' is how pathway failure looks in audits.",
-        courseSlug: "high-risk-pregnancy",
-      },
-      {
-        topic: "Care Pathway",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "What is the anchor of a high-risk care pathway?",
-        options: [
-          "The booking blood test results",
-          "The chosen place of birth, matched to her danger list and arranged in advance",
-          "The number of antenatal visits scheduled",
-          "The referral letter to the regional hospital",
-        ],
-        correctIndex: 3,
-        explanation:
-          "Visits and tests feed the decision, but where she births — with theatre, blood and neonatal capability matched to her risks — is the anchor that determines whether an emergency at 03:00 is survivable.",
-        courseSlug: "high-risk-pregnancy",
-      },
-      {
-        topic: "Care Pathway",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "Who typically coordinates a high-risk pathway across clinic, referral hospital and community in the Ghanaian system?",
-        options: [
-          "The woman's husband, as head of the household",
-          "The regional hospital's medical director",
-          "A named senior midwife who holds the plan, communicates between levels and follows the woman through",
-          "Whoever is on duty at each contact — responsibility rotates with the shift",
-        ],
-        correctIndex: 0,
-        explanation:
-          "A named coordinator (commonly the senior midwife) keeps the plan moving between the levels and is answerable for continuity; 'whoever is on duty' is how women fall between services.",
-        courseSlug: "high-risk-pregnancy",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Care Pathway",
-        front: "What four things change when a pregnancy is flagged high-risk?",
-        back: "Watch more (extra visits, scheduled scans and tests), invite more specialists, birth where the help lives (facility matched to her dangers), and write the plan in the booklet she carries.",
-      },
-      {
-        topic: "Care Pathway",
-        front: "Why is place of birth the anchor of the pathway?",
-        back: "Because emergencies at 03:00 are survived by proximity: theatre, blood and neonatal care must already be close. Arranging that at 32 weeks is the pathway working; discovering its absence during haemorrhage is failure.",
-      },
-      {
-        topic: "Care Pathway",
-        front: "What is the pathway's weakest link, and how do you test it?",
-        back: "The woman's own understanding. Test by teach-back: she should say in her own words where she births, why, which signs mean 'go now', and who travels with her.",
-      },
-    ],
-    sources: [
-      {
-        organization: "World Health Organization",
-        title: "WHO Recommendations on Antenatal Care for a Positive Pregnancy Experience",
-        year: "2016",
-        url: "https://www.who.int/publications/i/item/9789241549912",
-      },
-      {
-        organization: "Ghana Health Service",
-        title: "National Reproductive Health Service Policy and Standards",
-        note: "Levels of care and referral pathways. Verify current edition.",
-      },
-      {
-        organization: "Elsevier",
-        title: "Gabbe's Obstetrics: Normal and Problem Pregnancies, 8th edition",
-        year: "2021",
-        note: "Verify current edition.",
-      },
-    ],
-  },
-
-  // ── 11 ─────────────────────────────────────────────────────
-  {
-    courseSlug: "high-risk-pregnancy",
-    moduleTitle: "Hypertensive Crises",
-    lessonTitle: "Severe Pre-eclampsia and Severe Hypertension",
-    description:
-      "When blood pressure threatens — recognition, magnesium, and the decisions that time the birth of two patients.",
-    difficulty: "Moderate",
-    durationMin: 12,
-    objectives: [
-      "Describe severe hypertension and severe pre-eclampsia, including severe features at lower blood pressures.",
-      "Explain the roles of magnesium sulfate and antihypertensive treatment, and the monitoring they demand.",
-      "Apply the first hour of management to a woman presenting with severe features at 34 weeks.",
-    ],
-    tags: ["pre-eclampsia", "hypertension", "magnesium sulfate", "hellp", "emergency"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "Pre-eclampsia becomes an emergency when it turns severe — and 'severe' is not only about the number on the cuff. A woman at 150/100 with platelets crashing and epigastric pain is in more danger than one at 165/112 who feels well. This lesson covers recognition of severity, magnesium, the blood pressure itself, and the timing of birth.\n\nThe midwife role is central here: you find her first, and your monitoring guides the clock.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "**Severe hypertension** is 160/110 or above, confirmed with a repeat reading. **Severe pre-eclampsia** means severe hypertension, or any BP with proteinuria plus **severe features**: severe headache, visual disturbance, epigastric or right-upper-quadrant pain, clonus, oliguria, low platelets, raised liver enzymes — the HELLP combination of **h**aemolysis, **e**levated **l**iver enzymes, **l**ow **p**latelets. This is a multi-organ disease: kidneys, liver, brain and clotting are all targets, which is why repeated blood pressure alone cannot monitor her.\n\nManagement stands on three legs. **Magnesium sulfate** for seizure prophylaxis: 4 g IV slowly over 5–10 minutes, then maintenance per your unit's protocol, with the safety triad of reflexes present, respirations at least 16 per minute and urine flowing; calcium gluconate is the antidote. **Antihypertensive therapy** to bring the severe range down within hours — IV labetalol or hydralazine, or oral nifedipine — aiming below 160/110, not down to normal. **Timing of birth**: at 37 weeks or more, deliver; at 34 weeks or beyond with severe features, birth after stabilisation; before 34 weeks, expectant care only in a capable unit with a stable mother and reassuring fetus. Corticosteroids cover fetal lungs below 34 weeks.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "The liver and platelets can crash before the pressure climbs another millimetre — symptoms and bloods are part of the monitoring, not decoration. In HELLP the headache may be the loudest alarm.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "A 26-year-old primigravida at 34 weeks attends your district clinic with a two-day headache, flashing lights and pain under the right ribs. Blood pressure is 172/114 on two readings 20 minutes apart; urine shows 3+ protein; reflexes are brisk with two beats of clonus; her platelet count from this morning is 95 × 10⁹/L.\n\nWhat does your first hour look like?\n\nAnswer: Recognise severe pre-eclampsia with severe features (symptoms, clonus, low platelets — HELLP territory). Call the senior and the referral pathway now. Magnesium sulfate: 4 g IV slowly, then maintenance per protocol, monitoring reflexes, respirations and urine. Antihypertensive per protocol to bring the pressure below 160/110. Repeat full blood count, liver enzymes, creatinine and coagulation; strict fluid balance — with low platelets she risks pulmonary oedema. Corticosteroids for fetal lungs. Plan birth after stabilisation — at 34 weeks with severe features, delivery is expected, by the route the obstetrician chooses — with transfer to a theatre-capable facility running in parallel.",
-      },
-      {
-        type: "memory_trick",
-        body: "HER UP — she is getting worse: **H**eadache, **E**ye changes, **R**ight upper quadrant pain, **U**rine output falling, **P**latelets falling. Any of these with hypertension means severe: magnesium, antihypertensive, senior, and a plan for birth.",
-      },
-      {
-        type: "summary",
-        body: "- Severe hypertension is 160/110 or above; severe pre-eclampsia can exist below it with severe features — symptoms, clonus, oliguria, HELLP.\n- Magnesium sulfate (4 g IV slowly, then maintenance) protects against fits; monitor reflexes, respirations (≥16) and urine; calcium gluconate is the antidote.\n- Bring severe BP below 160/110 within hours — not to normal — with labetalol, hydralazine or nifedipine per protocol.\n- Birth timing: deliver at 37 weeks; at 34+ with severe features usually after stabilisation; below 34 weeks expectant care only in a capable unit with a stable mother and fetus.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Severe Pre-eclampsia",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "A woman at 33 weeks has BP 148/98 with 2+ proteinuria, severe headache, visual flashing and right upper quadrant pain. Why is this classified as severe despite the blood pressure reading?",
-        options: [
-          "Any headache in pregnancy is treated as severe pre-eclampsia",
-          "Proteinuria above 2+ automatically defines severity regardless of other findings",
-          "Severe features — neurological symptoms and liver-area pain — define severe pre-eclampsia even at blood pressures below 160/110",
-          "Because her gestational age is below 34 weeks, all pre-eclampsia is severe",
-        ],
-        correctIndex: 2,
-        explanation:
-          "Severity is defined by organ involvement, not the cuff alone: neurological symptoms, epigastric pain, clonus, oliguria, HELLP or severe hypertension each define it. Waiting for the pressure to reach 160/110 before acting is a classic fatal delay.",
-        courseSlug: "high-risk-pregnancy",
-      },
-      {
-        topic: "Severe Pre-eclampsia",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "What monitoring accompanies magnesium sulfate maintenance therapy?",
-        options: [
-          "Daily weight and abdominal girth only",
-          "Reflexes present, respirations at least 16 per minute, and urine output flowing — checked regularly",
-          "Blood pressure every four hours only, since magnesium treats the pressure",
-          "No monitoring is needed once the loading dose is given",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Magnesium is excreted by the kidneys and depresses respiration and reflexes when it accumulates: check patellar reflexes, keep respirations at or above 16 per minute and monitor urine output, with calcium gluconate ready as the antidote.",
-        courseSlug: "high-risk-pregnancy",
-      },
-      {
-        topic: "Severe Pre-eclampsia",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "A woman at 34 weeks has severe pre-eclampsia with severe features, just stabilised on magnesium. What is the usual plan for birth?",
-        options: [
-          "Continue expectant care until 37 weeks in any facility, to mature the lungs",
-          "Deliver now by caesarean without stabilising further, to prevent a fit",
-          "Plan birth after stabilisation — usually within 24 hours — at a theatre-capable facility, with steroids given where time allows and the obstetrician choosing the route",
-          "Suppress the blood pressure for two weeks and deliver at 36 weeks",
-        ],
-        correctIndex: 3,
-        explanation:
-          "At 34 weeks and beyond with severe features, the disease is usually more dangerous than prematurity: stabilise first, then deliver, by the route the obstetrician selects. Prolonging pregnancy with active severe disease invites eclampsia, abruption and HELLP deterioration.",
-        courseSlug: "high-risk-pregnancy",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Severe Pre-eclampsia",
-        front: "What defines severe hypertension, and what defines severe pre-eclampsia?",
-        back: "Severe hypertension: BP 160/110 or above. Severe pre-eclampsia: severe hypertension, OR proteinuria with severe features — headache, visual symptoms, epigastric pain, clonus, oliguria, HELLP.",
-      },
-      {
-        topic: "Severe Pre-eclampsia",
-        front: "What is the magnesium sulfate safety triad, and the antidote?",
-        back: "Reflexes present, respirations at least 16 per minute, urine output flowing (about 25-30 mL/h or more). Antidote: calcium gluconate 10 mL of 10% IV slowly.",
-      },
-      {
-        topic: "Severe Pre-eclampsia",
-        front: "What does HELLP stand for?",
-        back: "Haemolysis, Elevated Liver enzymes, Low Platelets — the multi-organ severe end of pre-eclampsia; epigastric pain and falling platelets are its warning lights.",
-      },
-    ],
-    sources: [
-      {
-        organization: "World Health Organization",
-        title: "WHO Recommendations for Prevention and Treatment of Pre-eclampsia and Eclampsia",
-        year: "2011",
-        url: "https://www.who.int/publications/i/item/9789241548335",
-      },
-      {
-        organization: "World Health Organization",
-        title: "Managing Complications in Pregnancy and Childbirth: A Guide for Midwives and Doctors, 2nd edition",
-        year: "2017",
-        url: "https://www.who.int/publications/i/item/9789241565195",
-      },
-      {
-        organization: "Elsevier",
-        title: "Myles Textbook for Midwives, 17th edition",
-        year: "2020",
-        note: "Hypertensive disorders chapters. Verify current edition.",
-      },
-    ],
-  },
-
-  // ── 12 ─────────────────────────────────────────────────────
-  {
-    courseSlug: "high-risk-pregnancy",
-    moduleTitle: "Hypertensive Crises",
-    lessonTitle: "Eclampsia: Managing the Emergency",
-    description:
-      "The fit and everything after — the drill from airway to magnesium to the delivery decision, and the monitoring that guards the hours that follow.",
-    difficulty: "Moderate",
-    durationMin: 12,
-    objectives: [
-      "Describe the correct actions during and immediately after an eclamptic fit.",
-      "Explain magnesium sulfate dosing logic, toxicity signs and the place of the antidote.",
-      "Apply the stabilise-then-deliver principle and postpartum magnesium continuation to a real fit.",
-    ],
-    tags: ["eclampsia", "emergency", "magnesium sulfate", "convulsion", "airway"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "Eclampsia — the fit — is the complication every midwife fears and every ward drills for. The woman you least expect can convulse: after weeks of normal pressure, in the corridor, two days after an uneventful birth. Half of fits come without warning; your speed in the first five minutes shapes whether she survives.\n\nThis lesson is the drill itself: what to do while she fits, what drug to reach for, what to monitor, when the baby comes. Learn it until your hands move before your fear does.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "**During the fit**, your job is protection, not restraint. Call for help. Left lateral — the airway drains and the womb lifts off the great vessels. Clear the airway, give oxygen; suction if secretions block it. **Nothing in her mouth, ever** — tongues are bitten, not swallowed, and forced gags break teeth and block airways. Shield her from injury and time the fit; most stop within a minute or two. Then the drug that changed this disease: **magnesium sulfate**, loading dose 4 g IV slowly over 5–10 minutes, then maintenance per protocol (commonly 1 g per hour IV). Further fits after loading get an additional bolus per protocol.\n\n**After the fit**, monitoring is the treatment's shadow: reflexes, respirations (16 or more per minute), hourly urine output, and a MEOWS-style chart. Toxicity — depressed breathing, absent reflexes, drowsiness — is treated with **calcium gluconate 10 mL of 10% IV slowly**. **Delivery** is the cure, but sequence matters: stabilise first — magnesium running, BP treated, airway safe — then deliver by the fastest safe route, often caesarean, though a woman near full dilatation may deliver vaginally. Continue magnesium for 24 hours after birth, because fits still occur postpartum.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "Nothing in her mouth — ever — and know where the calcium gluconate lives before the night you need it. The two errors that kill in eclampsia are a forced mouth gag and an unmonitored infusion.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "A 19-year-old primigravida at 39 weeks, admitted in early labour with BP 144/94 and trace protein, suddenly convulses in the assessment room. The fit lasts 90 seconds. Her aunt begins screaming and tries to force a spoon between her teeth.\n\nWalk through your response, and what happens after the fit stops?\n\nAnswer: Protect, don't restrain: left lateral, airway open, oxygen, nothing in the mouth — move the aunt gently away and delegate someone to calm her. Time the fit. When it stops: shout for the doctor and theatre team, give magnesium sulfate 4 g IV slowly as the loading dose and start maintenance per protocol; treat severe BP readings per protocol; insert a catheter for hourly urine; keep watching reflexes and respirations. Once stabilised, deliver — at 39 weeks in early labour the obstetrician may accelerate a vaginal birth or take her to theatre, either way birth after stabilisation. Magnesium continues 24 hours postpartum, and the aunt learns the postnatal warning signs too.",
-      },
-      {
-        type: "memory_trick",
-        body: "LEFT — CLEAR — LOAD. Turn her LEFT lateral, CLEAR the airway (nothing in the mouth), LOAD with magnesium. Then watch REFLEXES — RESPIRATIONS — URINE, with CALCIUM in your pocket.",
-      },
-      {
-        type: "summary",
-        body: "- During the fit: left lateral, airway and oxygen, nothing in the mouth, protect from injury, time it — no restraint.\n- Magnesium sulfate 4 g IV slowly as loading, then maintenance per protocol; extra bolus for recurrent fits per protocol.\n- Monitor reflexes, respirations at or above 16, hourly urine; calcium gluconate 10 mL of 10% IV is the antidote for toxicity.\n- Stabilise first, then deliver by the fastest safe route; continue magnesium 24 hours postpartum — fits still come after birth.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Eclampsia",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "A woman is convulsing and a relative tries to force a spoon into her mouth. What is the correct action and reasoning?",
-        options: [
-          "Allow it — protecting the tongue from biting takes priority",
-          "Allow it only if the spoon is wrapped in cloth",
-          "Stop them: position her left lateral, keep the airway clear, and give oxygen — forced objects break teeth, cause aspiration and block the airway",
-          "Restrain her limbs tightly while the gag is placed",
-        ],
-        correctIndex: 0,
-        explanation:
-          "Nothing goes in the mouth during a fit. Left lateral position lets the airway drain; tongues recover from bites, but broken teeth and gags obstruct breathing. Protection, not restraint, is the job.",
-        courseSlug: "high-risk-pregnancy",
-      },
-      {
-        topic: "Eclampsia",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "Two hours after the magnesium loading dose and start of maintenance, the woman's respirations are 12 per minute, her reflexes are absent and she is drowsy. What is happening and what do you do?",
-        options: [
-          "She is settling after the fit — dim the lights and let her rest",
-          "This is a recurrent fit beginning — give another magnesium bolus now",
-          "Magnesium toxicity: stop the infusion, give calcium gluconate 10 mL of 10% IV slowly, check respiratory support is ready, and alert the team",
-          "She has developed HELLP — send urgent bloods and prepare theatre",
-        ],
-        correctIndex: 2,
-        explanation:
-          "Absent reflexes, respirations below 16 and drowsiness are textbook magnesium toxicity. Stop the drug, give the antidote (calcium gluconate, slowly IV) and support breathing — continuing the infusion risks respiratory arrest.",
-        courseSlug: "high-risk-pregnancy",
-      },
-      {
-        topic: "Eclampsia",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "Why is magnesium continued for 24 hours after birth in an eclamptic woman?",
-        options: [
-          "To prevent postpartum haemorrhage, which is her main remaining risk",
-          "Because postpartum fits occur — the highest risk period extends into the first 24 hours (and later) after delivery",
-          "To help the uterus involute properly after the seizure",
-          "Because the baby also receives magnesium through breastfeeding and needs the cover",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Eclampsia does not end at delivery: fits occur postpartum, with meaningful risk in the first 24 hours and beyond. Continued magnesium for a day after birth is standard protection.",
-        courseSlug: "high-risk-pregnancy",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Eclampsia",
-        front: "Give the LEFT-CLEAR-LOAD drill for an eclamptic fit.",
-        back: "LEFT lateral position, CLEAR the airway with oxygen (nothing ever in the mouth), LOAD with magnesium sulfate 4 g IV slowly over 5-10 minutes, then maintenance per protocol.",
-      },
-      {
-        topic: "Eclampsia",
-        front: "What are the three magnesium toxicity signs and the antidote?",
-        back: "Absent reflexes, respirations below 16 per minute, drowsiness (with falling urine output driving accumulation). Antidote: calcium gluconate 10 mL of 10% IV slowly, ready on the emergency trolley.",
-      },
-      {
-        topic: "Eclampsia",
-        front: "What is the delivery rule after a fit?",
-        back: "Stabilise first — magnesium running, BP controlled, airway safe — then deliver by the fastest safe route. Continue magnesium for 24 hours postpartum.",
-      },
-    ],
-    sources: [
-      {
-        organization: "World Health Organization",
-        title: "Managing Complications in Pregnancy and Childbirth: A Guide for Midwives and Doctors, 2nd edition",
-        year: "2017",
-        url: "https://www.who.int/publications/i/item/9789241565195",
-      },
-      {
-        organization: "World Health Organization",
-        title: "WHO Recommendations for Prevention and Treatment of Pre-eclampsia and Eclampsia",
-        year: "2011",
-        url: "https://www.who.int/publications/i/item/9789241548335",
-      },
-      {
-        organization: "Elsevier",
-        title: "Myles Textbook for Midwives, 17th edition",
-        year: "2020",
-        note: "Verify current edition.",
-      },
-    ],
-  },
-
-  // ── 13 ─────────────────────────────────────────────────────
-  {
-    courseSlug: "high-risk-pregnancy",
-    moduleTitle: "Hypertensive Crises",
-    lessonTitle: "After the Crisis: Monitoring and Follow-Up",
-    description:
-      "The recovery that still holds danger — postpartum monitoring, the six-week blood pressure, and honest counselling for the next pregnancy.",
-    difficulty: "Moderate",
-    durationMin: 12,
-    objectives: [
-      "Describe the monitoring and follow-up a woman needs after pre-eclampsia or eclampsia.",
-      "Explain recurrence risk and the long-term cardiovascular implications of hypertensive disease in pregnancy.",
-      "Apply next-pregnancy counselling — early booking, aspirin prophylaxis — to a post-eclamptic mother.",
-    ],
-    tags: ["follow-up", "recovery", "postpartum", "recurrence", "pre-eclampsia"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "The crisis is over — the baby is born, the magnesium has run its 24 hours, the pressure is drifting down. This is exactly when teams relax and exactly when women are lost: postpartum pre-eclampsia is real, blood pressure can climb again at home, and the next pregnancy is already on its way for many families.\n\nThis lesson covers the follow-up that keeps her safe after discharge, and the conversation that protects her next pregnancy and her long-term health.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "**In the first days**, blood pressure is checked at least daily in hospital, magnesium continues for 24 hours after eclampsia, and symptoms are asked about actively — headache, visual disturbance, epigastric pain. **At home**, blood pressure is checked at every postnatal contact (24 hours, 48–72 hours, days 7–14, and the visits through six weeks), with a written rule: severe headache, visual changes or right-upper-quadrant pain means come now, day or night — postpartum pre-eclampsia and eclampsia occur up to six weeks after birth, most in the first days.\n\n**The next pregnancy conversation** is part of this episode's care. Recurrence: roughly 1 in 6 women with pre-eclampsia develop it again, rising towards 1 in 4 after severe, early disease. Next time: book before 12 weeks and ask about low-dose aspirin from early in the second trimester where criteria are met. The longer horizon matters too — pre-eclampsia flags lifetime risks of hypertension, heart disease and stroke, so the postnatal visit is the moment to talk weight, salt, exercise and blood-pressure checks. For contraception, progestin-only and non-hormonal methods suit the recovering hypertensive mother.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "A headache at home on day five is postpartum pre-eclampsia until excluded — not 'stress from the baby'. Check her blood pressure, not her patience.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "At the child welfare clinic, day five after discharge, you meet a woman who birthed at your hospital after an eclamptic fit; BP was 142/92 on discharge and she was told to 'come for postnatal in six weeks'. Today she reports headache since yesterday and blurring when she stands; BP is 158/104, urine trace protein.\n\nWhat has gone wrong, and what happens now?\n\nAnswer: The follow-up gap. A post-eclamptic woman with a rising discharge BP needed scheduled checks and a written warning rule — not a six-week appointment only. Today: symptoms plus severe-range blood pressure five days postpartum is postpartum pre-eclampsia until excluded — same-day medical review, bloods (platelets, liver enzymes, creatinine), BP treatment per protocol, assessment for magnesium, and admission or close observation rather than home. After stabilising, fix the system: written postnatal BP plan, symptom rules, and a next-pregnancy conversation — early booking, aspirin where criteria are met — plus lifelong blood-pressure awareness she and her husband both understand.",
-      },
-      {
-        type: "memory_trick",
-        body: "B-P-B after the crisis: **B**lood pressure checked at every postnatal contact to six weeks, **P**lan the next pregnancy early (book before 12 weeks, ask about aspirin), **B**eyond pregnancy — her heart health for life.",
-      },
-      {
-        type: "summary",
-        body: "- Danger continues after birth: check BP daily in hospital then at every postnatal contact through six weeks; postpartum fits and severe hypertension are real.\n- Written warning signs — headache, visual change, epigastric pain — must travel home with her and her family.\n- Recurrence risk is about 1 in 6 overall, higher after severe or early disease; next pregnancy: book before 12 weeks, consider low-dose aspirin per criteria.\n- Pre-eclampsia flags lifetime cardiovascular risk — use the postnatal visit to plant blood-pressure awareness for life.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Post-Crisis Follow-Up",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "A woman reports severe headache and blurred vision five days after a birth complicated by eclampsia. Her BP is 158/104. What does this represent and what is the response?",
-        options: [
-          "Normal postnatal tiredness — advise rest and paracetamol, review in six weeks",
-          "Postpartum pre-eclampsia until excluded — same-day review, bloods, BP treatment per protocol and assessment for magnesium; observe or admit",
-          "Migraine triggered by sleeplessness — treat with fluids and send home",
-          "A reaction to the magnesium she received last week — reassure and recheck tomorrow",
-        ],
-        correctIndex: 3,
-        explanation:
-          "Symptoms plus severe-range blood pressure days after birth is postpartum pre-eclampsia territory: it needs urgent assessment and treatment the same day, because postpartum eclampsia can still follow. 'Come back in six weeks' is how women are lost.",
-        courseSlug: "high-risk-pregnancy",
-      },
-      {
-        topic: "Post-Crisis Follow-Up",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "What follow-up does a woman recovering from severe pre-eclampsia need after discharge?",
-        options: [
-          "A single six-week postnatal check, since the disease ends with delivery",
-          "No checks — delivery is the cure and blood pressure always normalises within a day",
-          "Blood pressure checks at postnatal contacts through six weeks (24 hours, 48-72 hours, days 7-14 and later), with written warning signs for headache, visual change and epigastric pain",
-          "Weekly telephone calls from the ward clerk for two months",
-        ],
-        correctIndex: 0,
-        explanation:
-          "The risk window extends weeks beyond birth: scheduled BP checks at each postnatal contact plus a written rule for symptoms covers it. A six-week-only appointment leaves the highest-risk days unwatched.",
-        courseSlug: "high-risk-pregnancy",
-      },
-      {
-        topic: "Post-Crisis Follow-Up",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "During counselling before discharge, what do you tell a woman whose first pregnancy ended in eclampsia at 34 weeks?",
-        options: [
-          "She cannot safely have another pregnancy and should choose permanent contraception",
-          "Her next pregnancy will definitely be normal because she is now 'immune'",
-          "She has a raised recurrence risk (higher after early, severe disease): book before 12 weeks next time, attend early ANC, and low-dose aspirin from early second trimester may be advised — plus lifelong blood-pressure awareness",
-          "Recurrence risk is negligible, and only family planning needs discussion",
-        ],
-        correctIndex: 2,
-        explanation:
-          "After severe, early-onset disease recurrence risk rises substantially (approaching one in four). Early booking with aspirin prophylaxis where indicated, close surveillance, and lifelong cardiovascular risk awareness form the honest next-pregnancy message.",
-        courseSlug: "high-risk-pregnancy",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Post-Crisis Follow-Up",
-        front: "How long can postpartum pre-eclampsia and eclampsia occur after birth?",
-        back: "Up to six weeks — most in the first days. Symptoms (headache, visual change, epigastric pain) at home mean same-day BP review, not reassurance.",
-      },
-      {
-        topic: "Post-Crisis Follow-Up",
-        front: "What is the recurrence risk of pre-eclampsia, and what raises it?",
-        back: "About 1 in 6 overall, rising towards 1 in 4 or higher after severe or early-onset disease (before 34 weeks) and after eclampsia.",
-      },
-      {
-        topic: "Post-Crisis Follow-Up",
-        front: "Name three elements of next-pregnancy counselling after pre-eclampsia.",
-        back: "Book before 12 weeks and attend early; low-dose aspirin from early second trimester where criteria are met; and lifelong cardiovascular awareness — blood pressure checks, weight, salt, exercise, no smoking.",
-      },
-    ],
-    sources: [
-      {
-        organization: "World Health Organization",
-        title: "WHO Recommendations on Maternal and Newborn Care for a Positive Postnatal Experience",
-        year: "2022",
-        url: "https://www.who.int/publications/i/item/9789241500649",
-      },
-      {
-        organization: "World Health Organization",
-        title: "WHO Recommendations for Prevention and Treatment of Pre-eclampsia and Eclampsia",
-        year: "2011",
-        url: "https://www.who.int/publications/i/item/9789241548335",
-      },
-      {
-        organization: "Elsevier",
-        title: "Myles Textbook for Midwives, 17th edition",
-        year: "2020",
-        note: "Postnatal follow-up of hypertensive disorders. Verify current edition.",
-      },
-    ],
-  },
-
-  // ── 14 ─────────────────────────────────────────────────────
-  {
-    courseSlug: "high-risk-pregnancy",
-    moduleTitle: "Bleeding and the At-Risk Fetus",
-    lessonTitle: "Severe Antepartum Haemorrhage",
-    description:
-      "Major bleeding before birth — maternal stabilisation first, the scan that rules the examination, and the race to a safe delivery.",
-    difficulty: "Moderate",
-    durationMin: 12,
-    objectives: [
-      "Describe the distinguishing features of placenta praevia and placental abruption.",
-      "Explain why vaginal examination is forbidden until placental position is known, and how resuscitation runs in parallel.",
-      "Apply the first response to a woman presenting at 32 weeks with heavy painless bleeding.",
-    ],
-    tags: ["aph", "emergency", "placenta praevia", "abruption", "haemorrhage"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "Antepartum haemorrhage — bleeding after about 24 weeks and before birth — is the emergency where a single wrong reflex can empty her blood volume into the bed: the classic error is examining the vagina to 'see where the blood is coming from' in a woman whose placenta sits over the cervix.\n\nThis lesson covers the two great causes, the resuscitation that runs parallel with assessment, and the delivery decisions that end the bleeding.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "**Placenta praevia**: the placenta lies in the lower segment, over or near the cervix. The bleeding is typically **painless, bright red and recurrent** — she soaks a pad, feels entirely well, then bleeds again worse. The uterus is soft and non-tender, and the fetus often lies oddly (transverse or breech). **Placental abruption**: the placenta separates from the wall — **constant pain**, a **tense, tender, board-like uterus**, dark or revealed blood, with much loss **concealed** behind the placenta so the visible pad betrays nothing while she slips into shock. Fetal compromise comes early and often.\n\nTwo laws govern response. **The examination law**: no vaginal or speculum examination until ultrasound has located the placenta — in praevia, a finger on the cervix can tear the placental edge and convert a bleed into a flood. **The resuscitation law**: assessment and treatment run in parallel — shout for help, ABC with left lateral tilt, two large-bore IV lines, crossmatch (FBC, coagulation) before blood is needed, warm fluids, oxygen, MEOWS plus continuous fetal heart monitoring. Analgesia for abruption pain, anti-D for the Rhesus-negative mother, and senior review decide delivery: major praevia means caesarean; abruption means urgent delivery by the fastest appropriate route, theatre team awake while you resuscitate.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "Painless and bright, think praevia; painful with a board-like womb and a worrying trace, think abruption. And never let fingers meet a cervix before the scan has cleared it — that examination is the one that kills.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "A 28-year-old G3P2 at 32 weeks arrives by taxi: an hour ago she stood up from cooking and felt a gush. One pad soaked with bright red blood; no pain or contractions; she looks pale but chatty. Pulse 104, BP 104/64; uterus soft and non-tender; fetus transverse; fetal heart 148.\n\nWhat is the likely cause, and what are your next actions in order?\n\nAnswer: Painless, bright bleeding, soft uterus, transverse lie at 32 weeks — the pattern reads placenta praevia, though abruption stays on the list until the scan. Actions: call for help, alert theatre and blood bank; left lateral tilt, oxygen; two large-bore cannulae with bloods for FBC, coagulation and crossmatch; warm fluids; fetal heart and MEOWS monitoring; **no vaginal examination**; urgent ultrasound. Then senior decisions: heavy bleeding at 32 weeks with praevia usually means caesarean once she is stabilised — steroids only if bleeding settles enough to buy 48 hours — and anti-D if she is Rhesus negative.",
-      },
-      {
-        type: "memory_trick",
-        body: "P for **P**ainless and bright — **P**raevia. Pain plus a hard, tender womb — abruption: the blood hides behind the placenta, so trust the pain more than the pad. SCAN before you touch.",
-      },
-      {
-        type: "summary",
-        body: "- Praevia: painless, bright, recurrent bleeding, soft uterus, odd fetal lie. Abruption: pain, tense tender uterus, dark or concealed loss, fetal compromise early.\n- Never perform vaginal or speculum examination until ultrasound locates the placenta.\n- Resuscitate in parallel: help, tilt, oxygen, two large-bore lines, crossmatch, warm fluids, MEOWS and fetal monitoring.\n- Delivery is the definitive treatment: caesarean for major praevia, urgent delivery for abruption, theatre team involved from the start; give anti-D to Rhesus-negative mothers.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Antepartum Haemorrhage",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "A woman at 33 weeks has painless bright red bleeding, a soft non-tender uterus and a transverse lie. What is the most likely diagnosis, and what must precede any vaginal examination?",
-        options: [
-          "Placental abruption; an abdominal ultrasound must precede examination only if the bleeding continues",
-          "Placenta praevia; an ultrasound locating the placenta must precede any vaginal or speculum examination",
-          "Cervical infection; a full blood count must precede examination",
-          "Early labour show; a digital examination must be done first to assess the cervix",
-        ],
-        correctIndex: 2,
-        explanation:
-          "Painless, bright, recurrent bleeding with a soft uterus and malpresentation is classic praevia. Vaginal examination before imaging risks tearing the placental edge and provoking torrential bleeding — ultrasound first, always.",
-        courseSlug: "high-risk-pregnancy",
-      },
-      {
-        topic: "Antepartum Haemorrhage",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "Why can a woman with placental abruption be in profound shock despite only a small visible blood loss on the pad?",
-        options: [
-          "Because abruption always causes infection before bleeding shows",
-          "Because abruption pain causes fainting rather than true shock",
-          "Because much of the bleeding can be concealed behind the placenta and within the uterine wall, so the pad shows only a fraction of the true loss",
-          "Because abruption blocks the placenta from producing blood for the mother",
-        ],
-        correctIndex: 0,
-        explanation:
-          "In abruption, blood pools behind the placenta and inside the uterine muscle — concealed haemorrhage. Trust the mother's signs (pain, tense uterus, shock, fetal distress) over the visible pad.",
-        courseSlug: "high-risk-pregnancy",
-      },
-      {
-        topic: "Antepartum Haemorrhage",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "What does 'resuscitation runs in parallel with assessment' mean in severe APH?",
-        options: [
-          "Complete the full examination and ultrasound before starting any treatment, to keep the diagnosis clean",
-          "Start help, tilt, oxygen, IV access, crossmatch and fluids at the same time as you are assessing — treatment does not wait for a final diagnosis",
-          "Only the senior doctor may start resuscitation, so call and wait",
-          "Resuscitation is deferred until the fetal heart has been documented for ten minutes",
-        ],
-        correctIndex: 3,
-        explanation:
-          "In haemorrhage, minutes of blood loss matter more than diagnostic completeness: call for help, secure access and start volume replacement while the assessment continues. Sequence kills; parallelism saves.",
-        courseSlug: "high-risk-pregnancy",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Antepartum Haemorrhage",
-        front: "Contrast the classic pictures of praevia and abruption.",
-        back: "Praevia: painless, bright, recurrent bleeding; soft uterus; odd fetal lie. Abruption: constant pain; tense, tender, board-like uterus; dark or concealed blood; fetal compromise early.",
-      },
-      {
-        topic: "Antepartum Haemorrhage",
-        front: "What is the examination law of antepartum haemorrhage?",
-        back: "No vaginal or speculum examination until ultrasound has located the placenta — in praevia, touching the cervix can convert a bleed into a torrential one.",
-      },
-      {
-        topic: "Antepartum Haemorrhage",
-        front: "List the parallel first-line actions for severe APH.",
-        back: "Call for help; left lateral tilt and oxygen; two large-bore IV lines; bloods for FBC, coagulation, crossmatch; warm fluids; MEOWS and continuous fetal heart monitoring; then scan and senior delivery decision — anti-D if Rhesus negative.",
-      },
-    ],
-    sources: [
-      {
-        organization: "Royal College of Obstetricians and Gynaecologists",
-        title: "Green-top Guideline No. 63: Antepartum Haemorrhage",
-        year: "2011",
-        note: "Verify current edition on the RCOG website.",
-      },
-      {
-        organization: "World Health Organization",
-        title: "Managing Complications in Pregnancy and Childbirth: A Guide for Midwives and Doctors, 2nd edition",
-        year: "2017",
-        url: "https://www.who.int/publications/i/item/9789241565195",
-      },
-      {
-        organization: "Elsevier",
-        title: "Gabbe's Obstetrics: Normal and Problem Pregnancies, 8th edition",
-        year: "2021",
-        note: "Verify current edition.",
-      },
-    ],
-  },
-
-  // ── 15 ─────────────────────────────────────────────────────
-  {
-    courseSlug: "high-risk-pregnancy",
-    moduleTitle: "Bleeding and the At-Risk Fetus",
-    lessonTitle: "Surveilling the At-Risk Fetus",
-    description:
-      "CTG patterns, doppler and growth scans — reading the technology that whispers about a placenta that is failing its baby.",
-    difficulty: "Moderate",
-    durationMin: 12,
-    objectives: [
-      "Describe the roles and limits of growth charts, CTG and umbilical artery doppler in fetal surveillance.",
-      "Explain the significance of absent and reversed end-diastolic flow on doppler.",
-      "Apply surveillance interpretation to a growth-restricted fetus and decide when findings demand escalation.",
-    ],
-    tags: ["fetal surveillance", "ctg", "doppler", "growth restriction", "antepartum monitoring"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "The at-risk fetus — growth-restricted, hypertensive mother, previous stillbirth, reduced movements — cannot tell you it is struggling. But the placenta leaves fingerprints: in the growth curve, in the blood flow of the umbilical artery, and sometimes on the CTG trace. Your job is to read the fingerprint before the silence becomes a stillbirth.\n\nThis lesson matches each tool to its question: growth asks 'is the baby getting nutrition over weeks', doppler asks 'is the placenta resisting blood flow today', and the CTG asks 'how is the baby coping right now'.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "**Growth**: serial symphysis-fundal height at every contact, with ultrasound scans every two to four weeks when risk is flagged. One reading means little; the trend is the message — a fetus crossing centiles downwards is being starved of placental supply. Note that **small-for-gestational-age** (constitutionally small) is not the same as **growth restriction** (failing to reach potential); doppler helps tell them apart.\n\n**Umbilical artery doppler** is the early-warning line for a failing placenta: as resistance rises, end-diastolic flow falls — **absent** end-diastolic flow is severe, **reversed** flow is critical, usually demanding delivery at a centre with neonatal care. **CTG** (from about 28 weeks in the at-risk fetus) reads the current state: baseline 110–160, variability roughly 5–25 beats, accelerations reassuring, repetitive decelerations worrying — interpret systematically (DR C BraVADO). But remember the CTG's character: it is a snapshot of now, not a promise about tomorrow — a reactive trace does not cancel absent doppler flow or reduced movements. And the mother herself is surveillance: teach count-to-ten and treat every report as same-day review.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "A single reassuring trace says the baby is fine right now; the series — growth trend plus doppler plus the mother's own count — tells you where the baby is heading. Never let one friendly CTG veto an unfriendly pattern.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "A 30-year-old hypertensive mother at 35 weeks has an SFH tracking four weeks behind since 30 weeks; ultrasound confirms growth below the 3rd centile. Today's umbilical artery doppler shows absent end-diastolic flow. The CTG you perform is reactive with good variability, and the baby moves 'less than before, but she still feels ten in the evening'.\n\nWhat do these findings mean together, and what happens next?\n\nAnswer: The pattern is severe placental insufficiency: growth restriction with absent end-diastolic flow — the placenta is failing, and stillbirth risk climbs with every day of waiting. The reactive CTG means the baby is coping today; it does not offset the doppler. Management is admission to a facility with neonatal support for intensified surveillance — daily CTG, repeated doppler — and a senior-planned delivery, at this gestation usually within days rather than weeks; any deterioration (reversed flow, abnormal CTG, reduced movements) means delivery now.",
-      },
-      {
-        type: "memory_trick",
-        body: "Three questions, one story: GROWTH (weeks), DOPPLER (today's placenta), CTG (this minute). On the CTG itself, run DR C BraVADO: **D**efine risk, **C**ontractions, **BRA**seline, **V**ariability, **A**ccelerations, **D**ecelerations, **O**verall.",
-      },
-      {
-        type: "summary",
-        body: "- Match the tool to its question: growth trend over weeks, doppler for placental resistance today, CTG for the state of now.\n- Small-for-gestational-age is not the same as growth restriction — the trend and doppler separate them.\n- Absent end-diastolic flow is severe; reversed flow is critical — both demand senior-level planning and a facility with neonatal care.\n- A reactive CTG does not cancel abnormal doppler or reduced movements; the mother's counts are part of the monitoring.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Fetal Surveillance",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "At 34 weeks, a growth-restricted fetus shows absent end-diastolic flow on umbilical artery doppler, but the CTG is reactive with good variability. How should the findings be interpreted together?",
-        options: [
-          "The reactive CTG cancels the doppler concern — resume routine care",
-          "Both tests are contradictory, so repeat both in two weeks to see which is right",
-          "Severe placental insufficiency with a baby currently compensating: admit for intensified surveillance and senior-planned delivery — the CTG is a snapshot, the doppler is the trajectory",
-          "The findings suggest a constitutionally small baby with no risk; reassure and discharge",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Doppler reflects the placenta's failing supply line; the reactive CTG shows present compensation only. Absent end-diastolic flow with growth restriction needs admission, intensified monitoring and a delivery plan — not routine care or a two-week wait.",
-        courseSlug: "high-risk-pregnancy",
-      },
-      {
-        topic: "Fetal Surveillance",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "Which CTG finding pair belongs to a normal, reassuring trace?",
-        options: [
-          "Baseline 170 with absent variability",
-          "Baseline 140 with moderate variability and accelerations present",
-          "Baseline 100 with repetitive late decelerations",
-          "Sinusoidal pattern with no accelerations",
-        ],
-        correctIndex: 2,
-        explanation:
-          "Normal: baseline 110–160, moderate (roughly 5–25 beats) variability and accelerations. A baseline of 170 or 100, absent variability, repetitive late decelerations or a sinusoidal pattern all demand escalation.",
-        courseSlug: "high-risk-pregnancy",
-      },
-      {
-        topic: "Fetal Surveillance",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "A mother at 36 weeks reports reduced movements for two days. The CTG today is reactive. What is the correct management?",
-        options: [
-          "Reassure her — a reactive CTG proves the fetus is safe and movements often reduce near term",
-          "Admit for observation and repeat assessment as per protocol, because reduced movements with a reactive CTG still require same-day review and further assessment — the 'slows near term' myth has killed babies",
-          "Advise her to drink cold water and count movements at home for a week",
-          "Perform immediate caesarean for the reduced movements alone",
-        ],
-        correctIndex: 0,
-        explanation:
-          "Reduced movements is a same-day-review symptom: assess now (CTG, growth/doppler history), plan follow-up and never send the message that 'babies slow down near term'. A reactive trace does not predict tomorrow.",
-        courseSlug: "high-risk-pregnancy",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Fetal Surveillance",
-        front: "What question does each surveillance tool answer?",
-        back: "Growth trend (SFH + scans): is the baby being fed over weeks? Umbilical artery doppler: is the placenta resisting flow today? CTG: how is the baby coping this minute?",
-      },
-      {
-        topic: "Fetal Surveillance",
-        front: "What does reversed end-diastolic flow on umbilical artery doppler mean?",
-        back: "Critical placental failure — the fetus is at very high risk of hypoxia and stillbirth. Delivery is usually imminent, at a facility with neonatal support. Absent flow is severe; reversed is worse.",
-      },
-      {
-        topic: "Fetal Surveillance",
-        front: "Give the normal CTG core features and the DR C BraVADO order.",
-        back: "Baseline 110-160, variability roughly 5-25 beats, accelerations reassuring. DR C BraVADO: Define risk, Contractions, BRAseline, VArIability, Accelerations, Decelerations, Overall.",
-      },
-    ],
-    sources: [
-      {
-        organization: "National Institute for Health and Care Excellence",
-        title: "Fetal Monitoring in Labour (NG229)",
-        year: "2022",
-        url: "https://www.nice.org.uk/guidance/ng229",
-      },
-      {
-        organization: "World Health Organization",
-        title: "WHO Recommendations on Antenatal Care for a Positive Pregnancy Experience",
-        year: "2016",
-        url: "https://www.who.int/publications/i/item/9789241549912",
-      },
-      {
-        organization: "FIGO",
-        title: "FIGO Consensus Guidelines on Intrapartum Fetal Monitoring",
-        year: "2015",
-        note: "CTG interpretation standards. Verify current edition.",
-      },
-    ],
-  },
-
-  // ── 16 ─────────────────────────────────────────────────────
-  {
-    courseSlug: "high-risk-pregnancy",
-    moduleTitle: "Bleeding and the At-Risk Fetus",
-    lessonTitle: "Deciding the Timing of Birth",
-    description:
-      "The risk balance of waiting versus delivering — decisions that weigh two patients against one clock, and how experts make them defensible.",
-    difficulty: "Moderate",
-    durationMin: 12,
-    objectives: [
-      "Describe the factors that weigh in the timing-of-birth decision for a complicated pregnancy.",
-      "Explain the roles of antenatal corticosteroids and magnesium sulfate neuroprotection, and their limits.",
-      "Apply timing logic to a severe growth-restricted fetus at 30 weeks with abnormal doppler.",
-    ],
-    tags: ["timing", "decision making", "steroids", "prematurity", "growth restriction"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "Every complicated pregnancy eventually asks the same question: is this baby safer inside or outside — today? Inside buys maturity but the danger continues; outside removes the danger but hands the baby to prematurity. There is no risk-free answer, only a reasoned one.\n\nThis lesson is about how experts weigh it: which factors matter, what steroids and magnesium buy, and how to make the decision defensible in notes, audits and the conversation with the parents.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "Four factors sit on the scale. **Maternal condition and trend**: stable and treatable buys time; deteriorating pre-eclampsia, bleeding or sepsis does not. **Fetal state**: growth trend, doppler, CTG and movements — a fetus with reversed flow or an abnormal trace is negotiating its exit. **Gestational age**: below 34 weeks the lungs are the great vulnerability, so **antenatal corticosteroids** (best effect about 48 hours after the first dose; partial benefit real) are given whenever birth before 34 weeks is anticipated, and magnesium sulfate adds **neuroprotection** below about 32 weeks. **Facility capability**: a 30-week decision belongs where a neonatal unit can receive the baby.\n\nThe rules of thumb: if the mother or fetus is unstable, deliver — steroids ride along, but never hold the door on a deteriorating patient for a drug course. If all is stable in a capable unit, wait under intensified surveillance with a **named review time** ('re-scan Thursday, deliver if growth flat') so the decision is re-made on evidence, not inertia. Involve the parents: they should hear both sides — the risks of waiting and the realities of a neonatal unit. And time elective decisions for indication, not convenience: late prematurity without cause carries its own costs.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "Never let a steroid course hold you hostage: give it while you prepare, but if the trace or the mother deteriorates, deliver. A living baby on partial steroids beats a perfect course that arrived too late.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "A first-time mother at 30 weeks has a growth-restricted fetus with reversed end-diastolic flow; she received the first steroid dose 24 hours ago. Today's CTG shows reduced variability with recurrent decelerations, and movements have halved since yesterday.\n\nDo you wait another 24 hours to complete the steroids, or deliver now — and why?\n\nAnswer: Deliver now. The doppler has already declared critical placental failure, and the abnormal CTG shows the fetus is decompensating — each hour inside raises stillbirth risk more than prematurity raises risk outside. The single steroid dose already given matters (partial benefit is real); the second rides along. Give magnesium for neuroprotection below 32 weeks per protocol, have the neonatal team present at delivery, and counsel the parents honestly: their baby is small but better born breathing with help than silent inside. Waiting to 'finish the course' would be choosing the drug over the patient.",
-      },
-      {
-        type: "memory_trick",
-        body: "W-A-I-T before you cut: **W**hat is the risk of staying in? **A**ge of the fetus (steroids under 34, magnesium under 32)? **I**s the facility ready for this baby? **T**ime-limit written and named? If any answer collapses, so does the waiting.",
-      },
-      {
-        type: "summary",
-        body: "- The decision weighs maternal trend, fetal state, gestational age and facility capability — two patients, one clock.\n- Antenatal corticosteroids before 34 weeks mature the lungs (ideally 48 hours, partial benefit real); magnesium below ~32 weeks protects the brain.\n- Unstable mother or fetus = deliver now; steroids ride along but never hold the door.\n- Stable and capable = wait under intensified surveillance with a named review time; document the reasoning and share both sides with the parents.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Timing of Birth",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "A 30-week growth-restricted fetus with reversed end-diastolic flow now shows an abnormal CTG (reduced variability, recurrent decelerations) after one steroid dose. What is the correct decision and its logic?",
-        options: [
-          "Complete the steroid course before delivering, because two doses are far superior to one",
-          "Continue expectant care with daily doppler until 34 weeks to mature the lungs",
-          "Deliver now: the fetus is decompensating, and the risk of in-utero death now exceeds the prematurity risk; the single dose already gives partial protection",
-          "Give a tocolytic and re-examine in six hours to see if the trace normalises",
-        ],
-        correctIndex: 3,
-        explanation:
-          "Reversed flow plus a pathological CTG means the placenta has stopped supporting the fetus: waiting risks stillbirth. Steroids are valuable but partial benefit is real, and neuroprotective magnesium and neonatal presence accompany delivery — the drug never outranks the patient.",
-        courseSlug: "high-risk-pregnancy",
-      },
-      {
-        topic: "Timing of Birth",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "At which gestational age window are antenatal corticosteroids routinely given when preterm birth is anticipated, and what is their target benefit?",
-        options: [
-          "Below 24 weeks, to prevent congenital infection",
-          "Below 34 weeks, to accelerate fetal lung maturity and reduce respiratory distress and neonatal death",
-          "Only after 37 weeks, to prevent meconium aspiration",
-          "Any gestation, purely to reduce maternal anxiety",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Antenatal corticosteroids given when birth before 34 weeks is anticipated mature the fetal lungs, measurably reducing respiratory distress, neonatal morbidity and death. Best effect is ~48 hours after the first dose, but even partial courses help.",
-        courseSlug: "high-risk-pregnancy",
-      },
-      {
-        topic: "Timing of Birth",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "A woman with stable chronic hypertension and a well-grown fetus at 34 weeks is offered delivery 'today' because the consultant is travelling. What principle does this decision violate?",
-        options: [
-          "It violates the two-patient rule — the mother's interests always come first",
-          "No violation — consultant availability is a legitimate timing factor whenever convenient",
-          "It violates the capability rule — 34-week babies can never survive outside tertiary care",
-          "Timing should follow clinical indication, not convenience: without a medical or fetal reason, late-preterm delivery exposes the baby to avoidable prematurity risks",
-        ],
-        correctIndex: 2,
-        explanation:
-          "Elective timing without clinical indication trades real neonatal risk (respiratory, feeding, jaundice) for schedule. Defensible timing is documented against maternal-fetal factors and a named review time, with capability arranged.",
-        courseSlug: "high-risk-pregnancy",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Timing of Birth",
-        front: "What four factors sit on the timing-of-birth scale?",
-        back: "Maternal condition and its trend; fetal state (growth, doppler, CTG, movements); gestational age (steroids below 34 weeks, magnesium below ~32); and facility capability for this baby.",
-      },
-      {
-        topic: "Timing of Birth",
-        front: "What is the rule when the mother or fetus is unstable but steroids are incomplete?",
-        back: "Deliver. Steroids ride along and partial benefit is real, but a drug course is never a reason to keep a deteriorating patient undelivered.",
-      },
-      {
-        topic: "Timing of Birth",
-        front: "What does magnesium sulfate add below about 32 weeks, and what does it reduce?",
-        back: "Neuroprotection — given before preterm birth it reduces the risk of cerebral palsy in the surviving baby.",
-      },
-    ],
-    sources: [
-      {
-        organization: "World Health Organization",
-        title: "WHO Recommendations on Interventions to Improve Preterm Birth Outcomes",
-        year: "2015",
-        url: "https://www.who.int/publications/i/item/9789241508980",
-      },
-      {
-        organization: "World Health Organization",
-        title: "WHO Recommendations on Antenatal Corticosteroids for Improving Preterm Birth Outcomes",
-        year: "2015",
-        note: "Verify current edition on the WHO publications site.",
-      },
-      {
-        organization: "Elsevier",
-        title: "Gabbe's Obstetrics: Normal and Problem Pregnancies, 8th edition",
-        year: "2021",
-        note: "Verify current edition.",
-      },
-    ],
-  },
-
-  // ── 17 ─────────────────────────────────────────────────────
-  {
-    courseSlug: "obstetric-emergencies",
-    moduleTitle: "Maternal Collapse and Shock",
-    lessonTitle: "Maternal Collapse: First Response",
-    description:
-      "The pregnant or postnatal woman who collapses — a systematic response under pressure, and why pregnancy changes the resuscitation itself.",
-    difficulty: "Moderate",
-    durationMin: 12,
-    objectives: [
-      "Describe a systematic first response to maternal collapse using an ABCDE approach with pregnancy modifications.",
-      "Explain the aortocaval compression problem after 20 weeks and how it changes CPR and positioning.",
-      "Apply the four-minute rule for resuscitative caesarean and the leading reversible causes of collapse.",
-    ],
-    tags: ["collapse", "resuscitation", "cpr", "emergency", "perimortem caesarean"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "A woman collapses in the corridor and your training has to outrun your fear. Maternal collapse is rare, which means you must think your approach through now — because in the event, the first two minutes belong to reflexes.\n\nThis lesson covers the systematic response, plus the special rules pregnancy writes on top: the womb that blocks her circulation after 20 weeks, and the operation that is part of her resuscitation, not separate from it.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "**Shout for help and start systematically.** Check response; open the airway; check breathing — if abnormal or absent, start CPR immediately on a firm surface, calling the arrest team and defibrillator as you go. From about **20 weeks** (fundus at or above the umbilicus), the pregnant womb presses the aorta and vena cava against the spine when she lies flat, cutting the blood returning to her heart. So **tilt the woman, or have a helper manually displace the uterus to the left** during compressions. Otherwise CPR follows standard rules — about 100–120 compressions per minute on the lower sternum — and the defibrillator is used exactly as in any collapse.\n\nThink causes as you work: the **4Hs and 4Ts** plus the obstetric list — haemorrhage (obvious or concealed), eclampsia, pulmonary embolism, amniotic fluid embolism, sepsis, anaesthetic complications. And know the **four-minute rule**: from 20 weeks, if there is no return of circulation after about four minutes, a **resuscitative caesarean** is performed — not to save the baby at her expense but as part of saving her: emptying the uterus relieves the compression and restores venous return. For the postnatal woman, the same systematic response applies, with haemorrhage, sepsis and thromboembolism topping the cause list.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "In any pregnant collapse beyond 20 weeks, her own womb is squashing the pipe that refills her heart — tilt her or push the womb aside while you compress. And start the clock for the four-minute caesarean at the start of CPR, not after you feel you have failed.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "A woman at 34 weeks collapses in the clinic waiting area — unresponsive, not breathing normally; a nurse screams her name; the crowd presses in. You are the senior midwife present.\n\nWhat are your actions in the first two minutes, and what is the pregnancy-specific decision already running?\n\nAnswer: Shout for the arrest team and defibrillator and clear the crowd. On the floor: airway open, breathing check — abnormal, so CPR starts now, compressions at 100–120 per minute while a second helper manually displaces the womb to the left, because at 34 weeks the uterus is strangling her venous return. Attach the AED as soon as it arrives. Note the time CPR started and task someone to alert theatre: no return of circulation by four minutes means the resuscitative caesarean is the next step of her resuscitation. As you work, run the cause list — pale and bleeding? cyanosed after a fit? recently delivered? The cause changes the treatment; the sequence never changes.",
-      },
-      {
-        type: "memory_trick",
-        body: "SHOUT — TILT — PUMP — FOUR: shout for help, tilt the womb off the vessels, pump the chest hard and fast, and let the clock run towards the four-minute caesarean — which is resuscitation, not surrender.",
-      },
-      {
-        type: "summary",
-        body: "- Maternal collapse gets the same disciplined start as any collapse: shout, airway, breathing, CPR on a firm surface, defibrillator early.\n- Beyond 20 weeks, tilt or manually displace the uterus — the womb itself obstructs venous return when she lies flat.\n- Run the obstetric cause list alongside the 4Hs and 4Ts: haemorrhage, eclampsia, embolism, sepsis, anaesthesia.\n- No circulation back by about four minutes from 20 weeks: resuscitative caesarean is part of the mother's resuscitation, emptying the uterus to restore venous return.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Maternal Collapse",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "Why must a pregnant woman beyond 20 weeks be tilted, or her uterus manually displaced, during CPR?",
-        options: [
-          "To make the chest compressions easier to perform",
-          "To keep the baby comfortable during resuscitation",
-          "Because the uterus compresses the aorta and vena cava against the spine when she lies flat, obstructing the venous return that CPR needs to circulate",
-          "To reduce the risk of acid reflux during compressions",
-        ],
-        correctIndex: 0,
-        explanation:
-          "Supine after 20 weeks, the heavy womb occludes the vena cava and aorta — blood cannot return to the heart, so compressions pump an empty pipe. Tilting or manual displacement relieves the obstruction and restores the circulation CPR is trying to create.",
-        courseSlug: "obstetric-emergencies",
-      },
-      {
-        topic: "Maternal Collapse",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "At 36 weeks, CPR with uterine displacement has run four minutes without return of circulation. What is the rationale for proceeding to resuscitative caesarean?",
-        options: [
-          "It is performed to save the baby, accepting that the mother cannot be saved",
-          "It is performed to save the mother: emptying the uterus relieves aortocaval compression and dramatically improves venous return, making her resuscitation viable — the baby is the second beneficiary",
-          "It is performed because CPR is impossible to continue with the uterus present",
-          "It is performed to allow diagnosis of the cause of the collapse",
-        ],
-        correctIndex: 3,
-        explanation:
-          "The resuscitative hysterotomy is a maternal resuscitation move: delivery of the fetus decompresses the great vessels and restores the venous return CPR depends on. Start its clock from the beginning of CPR; waiting until 'failure' wastes the minutes that make it work.",
-        courseSlug: "obstetric-emergencies",
-      },
-      {
-        topic: "Maternal Collapse",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "A woman collapses two days after a normal vaginal birth. Which cause list should be running in your head alongside standard resuscitation?",
-        options: [
-          "Only obstetric causes are possible after delivery, so no standard 4Hs and 4Ts apply",
-          "Ectopic pregnancy and placenta praevia are the leading causes in this period",
-          "Postpartum haemorrhage, sepsis and thromboembolism top the list, alongside the standard 4Hs and 4Ts causes",
-          "Collapse after birth is almost always vasovagal and needs no resuscitation",
-        ],
-        correctIndex: 1,
-        explanation:
-          "The postnatal collapse list is led by haemorrhage (including concealed), sepsis and pulmonary embolism, in addition to the standard reversible causes. Collapsed postnatal women deserve the full systematic response — 'just fainted' is a diagnosis that audits discover was wrong.",
-        courseSlug: "obstetric-emergencies",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Maternal Collapse",
-        front: "Give the SHOUT-TILT-PUMP-FOUR sequence.",
-        back: "SHOUT for the arrest team and defibrillator; TILT the woman or displace the uterus left (from 20 weeks); PUMP the chest hard and fast with standard CPR; FOUR minutes without circulation from 20 weeks = resuscitative caesarean.",
-      },
-      {
-        topic: "Maternal Collapse",
-        front: "Why is the resuscitative caesarean part of the mother's resuscitation?",
-        back: "Emptying the uterus relieves aortocaval compression and restores venous return — CPR suddenly becomes effective. Saving the baby is the second benefit, not the primary purpose.",
-      },
-      {
-        topic: "Maternal Collapse",
-        front: "Name the leading causes of postnatal collapse.",
-        back: "Postpartum haemorrhage (including concealed), sepsis and thromboembolism — with the standard 4Hs and 4Ts still running alongside.",
-      },
-    ],
-    sources: [
-      {
-        organization: "Royal College of Obstetricians and Gynaecologists",
-        title: "Green-top Guideline No. 56: Maternal Collapse in Pregnancy and the Puerperium",
-        year: "2011",
-        note: "Verify current edition on the RCOG website.",
-      },
-      {
-        organization: "World Health Organization",
-        title: "Managing Complications in Pregnancy and Childbirth: A Guide for Midwives and Doctors, 2nd edition",
-        year: "2017",
-        url: "https://www.who.int/publications/i/item/9789241565195",
-      },
-      {
-        organization: "Elsevier",
-        title: "Myles Textbook for Midwives, 17th edition",
-        year: "2020",
-        note: "Emergency management chapters. Verify current edition.",
-      },
-    ],
-  },
-
-  // ── 18 ─────────────────────────────────────────────────────
-  {
-    courseSlug: "obstetric-emergencies",
-    moduleTitle: "Maternal Collapse and Shock",
-    lessonTitle: "Obstetric Shock: Causes and Response",
-    description:
-      "Haemorrhagic, septic and amniotic causes — how young mothers hide shock beautifully, and the response that catches it early.",
-    difficulty: "Moderate",
-    durationMin: 12,
-    objectives: [
-      "Describe the physiological stages of shock and why young women conceal blood loss so effectively.",
-      "Explain the major obstetric causes of shock and how each directs treatment.",
-      "Apply early recognition and quantified blood loss to a postpartum woman whose numbers do not match her appearance.",
-    ],
-    tags: ["shock", "emergency", "haemorrhage", "sepsis", "haemodynamics"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "Shock means the tissues are starving — the circulation, whatever its pressure, is no longer delivering. In maternity the causes are few and fierce: bleeding first, sepsis second, amniotic fluid embolism and clot obstruction as the rarer assassins. The trap is that your patients are young and fit, and young fit women defend their blood pressure heroically — right up until they collapse without warning.\n\nThis lesson trains the early signs, before the fall, and the response that runs volume and cause in parallel.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "Shock progresses through compensation. First the **pulse rises** and the skin arteries clamp down: she is pale, cold, clammy; fingertips refill slowly; urine output falls. The **pulse pressure narrows**, the breathing quickens, and she is anxious or oddly restless. Blood pressure holds until perhaps a **third of her volume is gone** — and pregnancy gave her extra volume to lose, while the fetus suffers quietly well before she does. By the time the BP falls, you are late; when it is unrecordable, you are nearly out of road.\n\nThe response: **call for help early**; restore delivery — oxygen, two large-bore IV lines, warm fluids, and **blood early** in haemorrhage (endless crystalloid while she keeps bleeding only dilutes what remains); **treat the cause in parallel**, because volume alone does not stop a bleeding uterus — rub, empty the bladder, give uterotonics, escalate to theatre; for septic shock, cultures and broad-spectrum antibiotics within the hour. **Quantify the loss**: weigh the swabs and pads, use a collection bag — the eye underestimates blood every single time. Monitor with pulse, BP, respirations and hourly urine (the catheter tells the truth) on a MEOWS chart, left lateral if she is still pregnant.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "Trust the pulse and the skin, not the pressure — and weigh the swabs. A young mother with a rising pulse and cold fingertips has lost serious blood even if her pressure reads beautifully.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "An hour after a normal vaginal birth, the midwife reports 'moderate bleeding, maybe 500 mL — she looks fine'. The woman is pale and quiet, fingers cold, pulse 118, BP 96/62, respirations 24, and the catheter bag holds 15 mL for the hour. The pads are soaked but the estimation was 'about two'.\n\nWhat is happening, and what do you do in the next fifteen minutes?\n\nAnswer: This is compensated hypovolaemic shock — the '500 mL' is almost certainly wrong, and the physiology (pulse 118, narrowed pressure, cold skin, near-absent urine) speaks of loss well beyond a litre. Weigh the swabs and pads on a scale now. In parallel: call for help and the blood bank; rub the uterus and give uterotonics per protocol; empty the bladder; two large-bore lines with bloods for FBC, coagulation and crossmatch; warm fluids while blood is fetched; oxygen; MEOWS charting with hourly urine as your progress meter. If bleeding continues, she goes to theatre — the treatment of haemorrhagic shock is the treatment of its cause.",
-      },
-      {
-        type: "memory_trick",
-        body: "P-P-P: the **P**ulse speaks first, the **P**ressure lies late, the **P**erfusion — skin, capillary refill, urine — tells the truth. And the swabs go on a scale, not on a guess.",
-      },
-      {
-        type: "summary",
-        body: "- Shock = failing tissue delivery; young mothers compensate brilliantly and collapse suddenly — watch the pulse, skin and urine, not the BP.\n- Causes: haemorrhage leads, sepsis follows, embolism is the rarer killer; each redirects treatment.\n- Respond in parallel: help, oxygen, two large-bore lines, blood early, uterotonics and theatre for the cause, antibiotics within the hour for sepsis.\n- Quantify loss by weighing swabs and pads; monitor with MEOWS and hourly urine.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Obstetric Shock",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "An hour after birth, a woman has pulse 118, BP 96/62, cold fingertips and 15 mL of urine in the hour. The midwife estimates blood loss at 500 mL. What is the correct interpretation?",
-        options: [
-          "Normal post-birth physiology — observe and chart hourly",
-          "Mild anxiety — reassure and offer tea",
-          "Compensated hypovolaemic shock: the true loss is almost certainly far higher than estimated, and the pulse, cold skin and urine output are the honest signs",
-          "Early septic shock — start with cultures alone before any fluids",
-        ],
-        correctIndex: 2,
-        explanation:
-          "Tachycardia, narrowed pulse pressure, cold skin and oliguria are the compensatory phase of hypovolaemia — typically appearing only after substantial loss. The visual estimate is unreliable; weigh the swabs and treat for the physiology you see.",
-        courseSlug: "obstetric-emergencies",
-      },
-      {
-        topic: "Obstetric Shock",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "Which group of signs represents the EARLIEST reliable indicators of obstetric haemorrhagic shock?",
-        options: [
-          "Fall in systolic blood pressure and loss of consciousness",
-          "Rising pulse, cold clammy skin, delayed capillary refill and falling urine output",
-          "Rising blood pressure and bounding pulses",
-          "Warm flushed skin with a slow pulse",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Compensation shows first in the pulse and the skin perfusion, with urine output quietly falling. Blood pressure is maintained until roughly a third of volume is lost — by which point you are already late.",
-        courseSlug: "obstetric-emergencies",
-      },
-      {
-        topic: "Obstetric Shock",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "Why is endless crystalloid the wrong answer to ongoing obstetric haemorrhage?",
-        options: [
-          "Because crystalloid crosses the placenta and harms the baby",
-          "Because crystalloid raises blood pressure dangerously fast",
-          "Because replacing volume while bleeding continues dilutes the remaining blood and its clotting factors — blood and correction of the cause (uterotonics, theatre) are the definitive treatment",
-          "Because young women cannot tolerate IV fluids",
-        ],
-        correctIndex: 3,
-        explanation:
-          "Fluid buys minutes, but the cure is stopping the bleeding: uterotonics, mechanical measures and theatre, with early blood and blood products to preserve oxygen delivery and clotting. Volume without cause control is a slowing failure.",
-        courseSlug: "obstetric-emergencies",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Obstetric Shock",
-        front: "What are the earliest honest signs of haemorrhagic shock in a young mother?",
-        back: "Rising pulse, narrowed pulse pressure, cold clammy skin with delayed refill, falling urine output and anxiety/restlessness. Blood pressure holds until roughly a third of the volume is gone.",
-      },
-      {
-        topic: "Obstetric Shock",
-        front: "Why weigh swabs and pads instead of estimating blood loss?",
-        back: "Visual estimation underestimates every time, sometimes by half. Weighing swabs and pads (1 g ≈ 1 mL) plus a calibrated collection bag gives the true number that drives treatment.",
-      },
-      {
-        topic: "Obstetric Shock",
-        front: "Name the major obstetric causes of shock.",
-        back: "Haemorrhage (commonest — atony, trauma, retained tissue, coagulopathy), sepsis, amniotic fluid embolism and thromboembolism — each redirects treatment toward its cause.",
-      },
-    ],
-    sources: [
-      {
-        organization: "World Health Organization",
-        title: "Managing Complications in Pregnancy and Childbirth: A Guide for Midwives and Doctors, 2nd edition",
-        year: "2017",
-        url: "https://www.who.int/publications/i/item/9789241565195",
-      },
-      {
-        organization: "World Health Organization",
-        title: "WHO Recommendations for the Prevention and Treatment of Postpartum Haemorrhage",
-        year: "2022",
-        note: "Verify current edition on the WHO publications site.",
-      },
-      {
-        organization: "Elsevier",
-        title: "Gabbe's Obstetrics: Normal and Problem Pregnancies, 8th edition",
-        year: "2021",
-        note: "Verify current edition.",
-      },
-    ],
-  },
-
-  // ── 19 ─────────────────────────────────────────────────────
-  {
-    courseSlug: "obstetric-emergencies",
-    moduleTitle: "Maternal Collapse and Shock",
-    lessonTitle: "Sepsis in Pregnancy and After Birth",
-    description:
-      "The quiet killer of new mothers — why the respiratory rate is the sentry, and why antibiotics within the hour are the treatment's beating heart.",
-    difficulty: "Moderate",
-    durationMin: 12,
-    objectives: [
-      "Describe maternal and puerperal sepsis and identify the red-flag vital signs in pregnancy and after birth.",
-      "Explain the Sepsis Six bundle and the importance of antibiotics within the first hour.",
-      "Apply the first response to a day-three postpartum woman with fever, tachycardia and tachypnoea.",
-    ],
-    tags: ["sepsis", "maternal", "puerperal sepsis", "emergency", "antibiotics"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "Sepsis is the quiet one. It rarely announces itself with a collapse; it arrives as a fever, a tender uterus, a mother who 'isn't quite herself' — and it kills more new mothers than almost any other cause. In Ghana the trap is real: every fever in a postnatal mother is malaria until excluded, but malaria treatment alone has buried cases of puerperal sepsis.\n\nThis lesson is about recognition that outruns the fever chart, and the bundle that must start within the hour.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "**Puerperal sepsis** is infection of the genital tract after birth, classically from rupture of membranes to day 42 — but sepsis around birth can arise from any source: the uterus (endometritis — tender uterus, offensive lochia, fever), wounds, breasts, urine, chest. What makes it deadly is masking: pregnancy already runs a fast pulse and warm skin, so the classic 'septic' picture arrives late. Watch instead for the **sentry signs**: pyrexia 38 degrees or more (or hypothermia), **respiratory rate of 25 or more** — the most under-charted, most telling vital — heart rate above 110-120, and any altered mental state; 'she seems confused' from a relative is data. Two or more of these, or a MEOWS in the red zone, and sepsis is the working diagnosis.\n\nThe response is the **Sepsis Six, within one hour**: the three IN — high-flow oxygen, IV broad-spectrum antibiotics, IV fluid resuscitation; the three OUT — cultures (before antibiotics if this costs no delay), serum lactate, hourly urine via catheter. Antibiotics within the first hour is the intervention that most changes survival — do not wait for culture results or the ward round. In Ghana, take the malaria smear in parallel, never instead. Escalate early: septic shock in a young mother can move from clinic to ICU in four hours.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "The respiratory rate is the sentry — a postnatal mother breathing 26 a minute has sepsis until proven otherwise, whatever the temperature chart says. And the antibiotic clock starts at recognition, not at the registrar's arrival.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "Day three after a normal birth, a 24-year-old mother has a temperature of 38.6, pulse 114, respirations 26, BP 100/62 and 'she is not talking well' per her mother-in-law. The uterus is tender, the lochia offensive, and she has passed urine twice today.\n\nWhat is the working diagnosis and what happens in the next hour?\n\nAnswer: Fever, tachycardia, tachypnoea, mild hypotension, new confusion, tender uterus and offensive lochia — puerperal sepsis (endometritis) approaching severe sepsis; the confusion and RR 26 say it is already serious. Within the hour: call the senior; take blood cultures, high vaginal swab and urine culture plus a malaria smear — in parallel, never instead; IV broad-spectrum antibiotics within the hour per protocol; oxygen; IV fluids with careful monitoring (she risks pulmonary oedema); lactate; catheter for hourly urine; MEOWS charting; reassess at one hour — falling pressure or high lactate means critical-care review and transfer. Waiting overnight 'to see if the malaria treatment works' is how this case becomes a maternal death audit.",
-      },
-      {
-        type: "memory_trick",
-        body: "SEPSIS SIX — three IN, three OUT, all within the hour: **I**n — oxygen, antibiotics, IV fluids. **O**ut — cultures, lactate, urine output. And the sentry at the door is the respiratory rate.",
-      },
-      {
-        type: "summary",
-        body: "- Puerperal sepsis spans rupture of membranes to day 42; sources include uterus (commonest), wounds, breast, urine and chest.\n- Pregnancy masks sepsis — watch the sentry signs: pyrexia, RR 25+, HR 110+, new confusion; chart the respiratory rate.\n- Sepsis Six within one hour: oxygen, IV antibiotics, IV fluids IN; cultures, lactate, urine output OUT.\n- Test for malaria in parallel — never let malaria treatment delay the sepsis bundle; escalate early toward critical care.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Maternal Sepsis",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "Which single vital sign most reliably raises the flag for sepsis in a postnatal mother, and is most often under-charted?",
-        options: [
-          "Blood pressure",
-          "Temperature alone",
-          "Respiratory rate — a rate of 25 or more in a postnatal mother is sepsis until proven otherwise",
-          "Blood glucose",
-        ],
-        correctIndex: 0,
-        explanation:
-          "Tachypnoea is an early and highly predictive sepsis sign, and it is the one most often skipped when observations are charted. Blood pressure falls late; temperature alone misses the afebrile septic mother.",
-        courseSlug: "obstetric-emergencies",
-      },
-      {
-        topic: "Maternal Sepsis",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "A day-three postpartum woman has fever 38.6, pulse 114, RR 26 and mild hypotension. What must happen within the first hour, and in what relationship to cultures?",
-        options: [
-          "Wait for blood cultures, malaria smear and the doctor's review before starting any treatment, to target therapy precisely",
-          "The Sepsis Six: oxygen, IV fluids, cultures, lactate, urine output — and IV broad-spectrum antibiotics within the hour, with cultures taken first only if this causes no delay",
-          "Oral antimalarials for a week, then reassess for antibiotics if she deteriorates",
-          "Paracetamol and tepid sponging hourly until the fever settles, then decide",
-        ],
-        correctIndex: 2,
-        explanation:
-          "The hour-one bundle is the survival difference: antibiotics within 60 minutes alongside oxygen, fluids, lactate and urine monitoring, with cultures drawn before antibiotics only if it costs no delay. Waiting for results or ward rounds is the classic fatal pause.",
-        courseSlug: "obstetric-emergencies",
-      },
-      {
-        topic: "Maternal Sepsis",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "A postnatal mother is feverish with a tender uterus and offensive lochia on day three. How should malaria, common in Ghana, be handled in her care?",
-        options: [
-          "Treat malaria alone for 48 hours — fever after birth in Ghana is almost always malaria",
-          "Test for malaria in parallel while treating the sepsis possibility immediately with the full bundle; never let malaria management delay antibiotics",
-          "Malaria and sepsis cannot coexist, so a positive smear excludes sepsis",
-          "Malaria testing is only needed if she is jaundiced",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Both diseases are common and can coexist. The safe pattern: smear and cultures in parallel, sepsis bundle now, malaria treatment added if confirmed. Malaria-first thinking is exactly how puerperal sepsis deaths are audited in malaria-endemic settings.",
-        courseSlug: "obstetric-emergencies",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Maternal Sepsis",
-        front: "What is the Sepsis Six?",
-        back: "Six actions within one hour — three IN: oxygen, IV broad-spectrum antibiotics, IV fluids; three OUT: cultures (before antibiotics if no delay), lactate, hourly urine output.",
-      },
-      {
-        topic: "Maternal Sepsis",
-        front: "What is the time-frame of puerperal sepsis, and its commonest postnatal source?",
-        back: "From rupture of membranes until day 42 after birth; endometritis — tender uterus with offensive lochia and fever — is the classic postnatal source, alongside wounds, breast, urine and chest infections.",
-      },
-      {
-        topic: "Maternal Sepsis",
-        front: "List the sentry signs of maternal sepsis.",
-        back: "Pyrexia 38+ (or hypothermia), respiratory rate 25 or more, heart rate above 110-120, new confusion or altered behaviour, and hypotension — the first four appear before the pressure ever falls.",
+        topic: "Sepsis",
+        front: "Why count the respiratory rate in every febrile patient?",
+        back: "Tachypnoea is the earliest and most consistently present sepsis sign — and the most frequently skipped observation. A fever with a rate of 26 is sepsis until proven otherwise.",
       },
     ],
     sources: [
@@ -2512,15 +320,1489 @@ export const lessons: SeedFullLesson[] = [
         url: "https://www.who.int/news-room/fact-sheets/detail/sepsis",
       },
       {
+        organization: "Ghana Health Service",
+        title: "Standard Treatment Guidelines",
+        note: "Antimicrobial choices for sepsis management; verify current edition, Ministry of Health Ghana.",
+      },
+      {
+        organization: "CDC",
+        title: "About Sepsis — clinical and public education resources",
+        note: "Recognition resources for health workers; verify current pages on the CDC website.",
+      },
+    ],
+  },
+
+  // ── 3 ──────────────────────────────────────────────────────
+  {
+    courseSlug: "critical-care-nursing",
+    moduleTitle: "Shock & Circulation",
+    lessonTitle: "Shock: The Four Kinds of Collapse",
+    description:
+      "Hypovolaemic, cardiogenic, septic and anaphylactic — the failing circulation, the signs that betray it early, and the response that runs volume and cause in parallel.",
+    difficulty: "Hard",
+    durationMin: 12,
+    objectives: [
+      "Define shock as failing tissue oxygen delivery rather than a blood-pressure reading, and describe compensation.",
+      "Distinguish the four shock families — hypovolaemic, cardiogenic, septic and anaphylactic — with the bedside signs that separate them.",
+      "Apply the first-line nursing response to each family, running resuscitation and cause control in parallel.",
+    ],
+    tags: ["shock", "circulation", "haemorrhage", "haemodynamics"],
+    sourceStatus: "PROPOSED",
+    sections: [
+      {
+        type: "text",
+        title: "What this lesson is about",
+        body: "Shock means the tissues are starving. Whatever the blood pressure reads, the circulation is no longer delivering oxygen to the cells — and cells denied oxygen begin dying within minutes. The word frightens people, which is the wrong lesson: shock is not a verdict, it is a signal, and it is caught by watching the pulse, the skin and the urine rather than worshipping the pressure cuff.\n\nThe causes arrive daily on Ghanaian wards: the okada rider bleeding into his abdomen, the grandmother emptied by cholera-like diarrhoea, the man whose infarction has broken his pump, the patient whose infection has thrown every vessel open, the one whose antibiotic has triggered an allergic collapse. Four families of failure — and four different answers. This lesson separates them.",
+      },
+      {
+        type: "text",
+        title: "The four kinds — tank, pump, pipes",
+        body: "Picture the circulation as a **tank** (the blood volume), a **pump** (the heart) and **pipes** (the vessels). Shock is what happens when one of them fails.\n\n**Hypovolaemic shock** — the tank empties. Bleeding is the honoured cause: trauma, a ruptured ulcer, obstetric haemorrhage — but in Ghana, diarrhoea and vomiting empty the tank as thoroughly and far more quietly, and burns do it through weeping skin. **Cardiogenic shock** — the pump breaks. Myocardial infarction is the classic; arrhythmias and late heart failure follow. Note its three **obstructive cousins**, which strangle a healthy pump from outside: massive pulmonary embolism, tension pneumothorax and cardiac tamponade. **Septic (distributive) shock** — the pipes leak. Overwhelming infection floods the body with inflammatory signals; the vessels dilate and gape open, so a normal volume circulates in pipes twice too wide. **Anaphylactic shock** — the pipes collapse in minutes, an allergic catastrophe with its own lesson and its own injection. A fifth cousin, **neurogenic shock** after spinal cord injury, mimics the distributive pattern — warm dry limbs, low pressure and a paradoxically slow pulse.",
+      },
+      {
+        type: "table",
+        title: "The four shocks at a glance",
+        body: "| Family | The fault | Classic causes | Skin | Neck veins | First nursing answer |\n|---|---|---|---|---|---|\n| Hypovolaemic | Empty tank | Bleeding, diarrhoea and vomiting, burns | Cold, clammy, pale | Flat | Two wide-bore lines, warmed fluids, blood early, stop the loss |\n| Cardiogenic (± obstructive) | Broken or squeezed pump | Infarction, arrhythmia, pulmonary embolism, tension pneumothorax, tamponade | Cold, clammy, mottled | Engorged | Oxygen, sit up, fluids with great caution, treat the heart, escalate early |\n| Septic (distributive) | Gaping pipes | Chest, urine, wounds, abdomen; malaria may ride along | Warm and flushed early; cold and clammy late | Flat until late | The sepsis bundle — oxygen, antibiotics within the hour, careful fluids, source control |\n| Anaphylactic | Pipes clamped after a trigger | Antibiotics, foods, stings, contrast, antivenom, blood products | Flushed, urticaria, swollen lips | Flat | IM adrenaline first — everything else second |\n\nThe skin and the neck veins are your fastest compass between the families: cold and collapsed versus warm and wide; flat neck veins when tank or pipes are empty, engorged when the pump is drowning.",
+      },
+      {
+        type: "text",
+        title: "Compensation — the honest signs",
+        body: "The body defends its blood pressure heroically, and healthy young adults defend it best — which is why the young rider 'looks fine' with half his volume pooled in his abdomen. First the **pulse rises** and the skin vessels clamp down: pale, cold, clammy fingers; capillary refill dragging past two seconds; urine quietly falling — the kidney is the first organ sacrificed. **Pulse pressure narrows** — the systolic and diastolic close together — breathing quickens, and the patient becomes anxious, restless or oddly still; restlessness after blood loss is a physiology sign, not a personality. The pressure is defended until roughly **a third of the volume is gone**; by the time it falls, you are late, and when it becomes unrecordable you are nearly out of road.\n\nFor bleeding, quantify everything: weigh the dressings and pads — one gram is one millilitre — measure the drainage, chart the stool and vomit, watch the collection bag. The eye underestimates every loss, every single time.",
+      },
+      {
+        type: "clinical_pearl",
+        body: "Trust the pulse and the skin, not the pressure — and weigh the swabs. A young adult with a climbing pulse, cold fingertips and an empty catheter bag has lost serious blood even while the cuff reads beautifully. And warm shock is the sneaky one: fever with warm flushed skin and a bounding pulse is still shock — it is merely septic.",
+      },
+      {
+        type: "case",
+        title: "On the ward",
+        body: "An okada rider arrives after a head-on collision. He is quiet and pale, with 'no big wounds' — only a graze on the forearm. Pulse 122 and thin, BP 96/64, respiratory rate 26, capillary refill four seconds; the abdomen is distending under your hands, and the catheter has yielded 15 mL in an hour. The night cover says he seems stable because the pressure is fine.\n\nWhat is happening, and what do you do in the next fifteen minutes?\n\nAnswer: This is compensated hypovolaemic shock — almost certainly bleeding into the abdomen, with the chest and pelvis on the suspicion list. The physiology speaks: fast thin pulse, narrowed pressure, cold skin, absent urine — loss well past a litre while 'the pressure is fine'. Within fifteen minutes: call for help and alert theatre and the blood bank; two large-bore cannulae with crossmatch bloods drawn at insertion; warmed fluids running while blood is fetched — blood early, because endless crystalloid into ongoing bleeding only dilutes what remains; oxygen; keep him warm; monitor with pulse, pressure, respirations and hourly urine; prepare him for theatre, because the treatment of haemorrhagic shock is the treatment of its cause. And chart it all, so the next person sees the trend rather than a reassurance.",
+      },
+      {
+        type: "memory_trick",
+        body: "P-P-P: the **P**ulse speaks first, the **P**ressure lies late, the **P**erfusion — skin, capillary refill, urine — tells the truth. And the four families in four pictures: **tank empty, pump broken, pipes gaping, pipes clamped**.",
+      },
+      {
+        type: "summary",
+        body: "- Shock is failing tissue oxygen delivery, not a blood-pressure reading; young adults compensate brilliantly and then collapse without warning.\n- Four families: hypovolaemic (empty tank — bleeding, diarrhoea, burns), cardiogenic with its obstructive cousins (broken or squeezed pump), septic/distributive (gaping pipes), anaphylactic (clamped pipes after allergy; neurogenic the spinal cousin).\n- Earliest honest signs: rising pulse, narrowing pulse pressure, cold clammy skin, slow capillary refill, falling urine, restlessness.\n- The skin and neck veins are the compass between families: cold-and-flat versus warm-and-wide.\n- Treat in parallel: resuscitate (two wide-bore lines, warmed fluids, blood early in bleeding) while attacking the cause — volume alone has never stopped a bleed or cured an infarction.",
+      },
+    ],
+    questions: [
+      {
+        topic: "Shock",
+        type: "MCQ",
+        difficulty: "Easy",
+        stem: "Which statement defines shock correctly?",
+        options: [
+          "Shock means the blood pressure is low",
+          "Shock means the tissues are starved of oxygen — whatever the blood pressure reads",
+          "Shock is a faint that resolves with lying flat",
+          "Shock is the final stage of infection",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Shock is failure of oxygen delivery at tissue level — the pressure is merely one dial on the machine, and it lies until late. A patient can be in compensated shock with a normal pressure, which is precisely the trap that catches the confident.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Shock",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "Which group of findings represents the EARLIEST reliable signs of haemorrhagic shock?",
+        options: [
+          "Fall in blood pressure and loss of consciousness",
+          "Falling urine output with hypertension and a slow pulse",
+          "Rising pulse, cold clammy skin, delayed capillary refill, falling urine output",
+          "Warm flushed skin with a slow strong pulse",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Compensation shows first in the pulse and skin perfusion while the kidney quietly loses its supply; the pressure is defended until roughly a third of the volume is lost. Warm flushed skin belongs to early distributive shock, not bleeding.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Shock",
+        type: "CLINICAL_SCENARIO",
+        difficulty: "Hard",
+        stem: "A febrile patient has warm flushed skin, a bounding fast pulse, wide pulse pressure and new confusion. Which shock family is this — and what is the response?",
+        options: [
+          "Hypovolaemic from concealed bleeding — urgent crossmatch and theatre",
+          "Cardiogenic after infarction — sit up, restrict fluids, treat the heart",
+          "Neurogenic from cord injury — immobilise and observe",
+          "Early septic (distributive) shock — run the sepsis bundle: oxygen, antibiotics within the hour, careful fluids, source control",
+        ],
+        correctIndex: 3,
+        explanation:
+          "Warm, vasodilated shock with fever is the distributive pattern — sepsis until proven otherwise. The warm skin deceives: the pipes are gaping, not the tank overflowing. The response is the hour-one bundle; anaphylaxis is the mimic to exclude if a trigger occurred minutes before.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Shock",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "Why is endless crystalloid the wrong answer to ongoing haemorrhage?",
+        options: [
+          "Because crystalloid raises the blood pressure dangerously fast",
+          "Because replacing volume while bleeding continues dilutes the remaining blood and its clotting factors — blood early and control of the bleed are the definitive treatment",
+          "Because crystalloid only works in children",
+          "Because young adults cannot tolerate IV fluids",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Fluid buys minutes, but the cure is stopping the bleeding — with early blood and blood products to preserve oxygen delivery and clotting. Volume without cause control is a slowing failure; this is the same logic that fills the next lesson.",
+        courseSlug: "critical-care-nursing",
+      },
+    ],
+    flashcards: [
+      {
+        topic: "Shock",
+        front: "Name the four shock families and their fault.",
+        back: "Hypovolaemic — empty tank (bleeding, diarrhoea, burns); cardiogenic, with the obstructive cousins pulmonary embolism, tension pneumothorax and tamponade — broken or squeezed pump; septic/distributive — gaping pipes; anaphylactic — pipes clamped after allergy (neurogenic the spinal cousin).",
+      },
+      {
+        topic: "Shock",
+        front: "What are the earliest honest signs of shock?",
+        back: "Rising pulse, narrowing pulse pressure, cold clammy skin, capillary refill over two seconds, falling urine output, anxiety or restlessness. The pressure falls only after about a third of the volume is lost.",
+      },
+      {
+        topic: "Shock",
+        front: "How does warm shock differ from cold shock at the bedside?",
+        back: "Warm, flushed skin with a bounding pulse early in sepsis (distributive), versus cold, clammy, pale skin with a thready pulse in hypovolaemic and cardiogenic shock. Neck veins: flat when tank or pipes are empty; engorged when the pump fails.",
+      },
+      {
+        topic: "Shock",
+        front: "Why weigh dressings and pads in a bleeding patient?",
+        back: "Visual estimation underestimates blood loss every time. Weighing dressings and pads (1 g is about 1 mL) plus measured drainage gives the number that drives treatment — while the physiology, not the estimate, drives the urgency.",
+      },
+    ],
+    sources: [
+      {
         organization: "World Health Organization",
-        title: "WHO Statement on Maternal Sepsis",
-        year: "2017",
-        note: "Global Maternal Sepsis Study background. Verify current edition on the WHO website.",
+        title: "Basic Emergency Care: approach to the acutely ill and injured",
+        note: "Circulatory assessment and shock management for frontline providers; verify current edition.",
       },
       {
         organization: "Ghana Health Service",
         title: "Standard Treatment Guidelines",
-        note: "Antimicrobial choices for puerperal sepsis. Verify current edition, Ministry of Health Ghana.",
+        note: "Emergency management in district practice; verify current edition, Ministry of Health Ghana.",
+      },
+      {
+        organization: "Wolters Kluwer",
+        title: "Brunner & Suddarth's Textbook of Medical-Surgical Nursing",
+        year: "2022 (15th edition)",
+      },
+    ],
+  },
+
+  // ── 4 ──────────────────────────────────────────────────────
+  {
+    courseSlug: "critical-care-nursing",
+    moduleTitle: "Shock & Circulation",
+    lessonTitle: "Fluid Resuscitation & Blood Products",
+    description:
+      "Choosing, giving and watching — the craft of refilling the tank without drowning it, and the blood that answers what water cannot.",
+    difficulty: "Hard",
+    durationMin: 12,
+    objectives: [
+      "Compare crystalloids, colloids and blood products, and match each to the clinical problem it actually solves.",
+      "Apply the technique of rapid, safe administration — large-bore access, warmed boluses, reassessment after each.",
+      "Recognise the patients in whom fluid itself is the danger, and the nursing discipline around blood transfusion.",
+    ],
+    tags: ["fluids", "transfusion", "resuscitation", "iv therapy"],
+    sourceStatus: "PROPOSED",
+    sections: [
+      {
+        type: "text",
+        title: "What this lesson is about",
+        body: "Refill the tank without drowning the pump. Fluid resuscitation is one of the most powerful things a nurse does — and one of the most abused. Given thoughtfully, it walks patients back from the edge of shock; given reflexively, it floods lungs, dilutes blood and hides the fact that the bleeding never stopped.\n\nThis lesson is the craft: choosing the fluid, giving it fast when speed matters, watching what happens, knowing when the answer is blood instead — and respecting the patients in whom fluid itself is the danger.",
+      },
+      {
+        type: "text",
+        title: "Choosing the fluid",
+        body: "Fluids are medicines: they have indications, doses and side-effects. The everyday choice is between **crystalloids** — salt-water solutions that mix with the whole water space of the body — and **blood products**, which carry what water cannot: oxygen and clotting. **Normal saline** is familiar and stable, but litres of it deliver a heavy salt and acid load. **Ringer's lactate or Hartmann's (balanced crystalloids)** approximate the body's own chemistry and are generally preferred for resuscitation. Crystalloid works by volume — and two-thirds of what you give leaves the vessels within the hour, which is fine until bleeding continues, because then every bag dilutes the remaining red cells and clotting factors. **Colloids** (gelatins, starches, albumin) stay in the vessels longer but add cost and complications — and none of them replaces what a bleeding patient is actually losing.\n\n**Blood is the definitive answer to ongoing haemorrhage.** Whole blood or packed red cells restore the oxygen carriers; **fresh frozen plasma and platelets** restore clotting when loss or dilution has thinned it. In Ghana, blood comes through the **National Blood Service** from voluntary donors — stock is precious, group-and-screen and crossmatch take time, and the blood bank must be alerted at the first thought of bleeding, not the last. In dire emergencies, group O blood bridges the gap while the crossmatch completes.",
+      },
+      {
+        type: "table",
+        title: "The fluid larder",
+        body: "| Fluid | What it is | Best for | Caution |\n|---|---|---|---|\n| Normal saline | Crystalloid — salt water | Volume where nothing else exists; diluent for many drugs | Large volumes load salt and acid; watch the kidneys and the chloride |\n| Ringer's lactate / Hartmann's | Balanced crystalloid | First-choice volume for shock and losses | None unique — but no fluid replaces blood for the bleeding patient |\n| Colloids (gelatin, albumin) | Large molecules that stay in vessels | Selected cases of persistently low pressure | Cost, reactions; never a substitute for blood or cause control |\n| Packed red cells / whole blood | Oxygen carriers | Ongoing bleeding; severe anaemia with shock | Crossmatch time; reactions; cold blood; identity checking |\n| Fresh frozen plasma and platelets | Clotting factors | Bleeding with diluted or failing clotting | Guided by the clinical picture and available tests |\n\nThe rule under every row: fluid resuscitation is a bridge to a diagnosis, never a substitute for one.",
+      },
+      {
+        type: "text",
+        title: "Giving it — speed, warmth and watching",
+        body: "Speed is technique. For shock, run fluids through **two large-bore cannulae** — wide enough to matter, 16–18 gauge in an adult, sized to the child — with pressure bags or squeezed bags for the fast ones, and the first bag **warmed**, because cold fluid into a cold shocked patient deepens the hypothermia that already switches off their clotting. Then the discipline that separates craft from ritual: **reassess after every bolus**. Does the pulse fall, the pressure climb, the skin warm, the confusion clear, the **urine rise past 0.5 mL per kilogram per hour**? That urinary catheter is not an indignity — it is the honest meter of your resuscitation, alongside capillary refill, mentation and, where available, a falling **lactate**. And put your stethoscope on the chest between boluses: new crepitations, a gallop rhythm, breathing that quickens as the pressure climbs — the tank is full and the lungs are drinking.\n\nThis is where fluid becomes the enemy, and some patients were in danger from the first drop: the **cardiogenic shock patient**, whose failing pump cannot be filled; the **kidney-failure patient**; the frail elderly; and — taught sharply by WHO's ETAT — the **severely malnourished child**, whose small stiff heart demands fluids given slowly, in smaller volumes, with weaker solutions than the standard bolus, watched breath by breath for the signs of overload.",
+      },
+      {
+        type: "case",
+        title: "On the ward",
+        body: "A 52-year-old man is admitted overnight with three days of black tarry stools — melaena from a long-known ulcer. Pulse 118, BP 92/58, cold and pale. The night cover runs litre after litre of saline and writes 'responding to fluids'. By morning he is on his third litre, still tachycardic, now breathing at 28 with fine crepitations at both bases — and nobody has called the blood bank.\n\nWhat has gone wrong, and what are the next moves?\n\nAnswer: The bleeding never stopped, so the crystalloid has only diluted him — volume without oxygen carriers, clotting factors thinned further. He is now both under-resuscitated (still tachycardic, still hypovolaemic) and overloaded (the crepitations, the tachypnoea). Correct the course: inform the senior and the blood bank now, with a crossmatch drawn; sit him upright; oxygen; hold the routine saline; treat the bleed — acid suppression per protocol and urgent endoscopy or transfer — and monitor with pulse, pressure, respirations, hourly urine and repeated chest listens. The lesson the shock lesson closed on, now in full colour: **the treatment of haemorrhagic shock is the treatment of its cause — and blood early in the bleeding patient is not a last resort, it is the plan.**",
+      },
+      {
+        type: "clinical_pearl",
+        body: "Fluids are a bridge, not a destination. After every bolus, three questions before the next bag: is the patient warmer, clearer and making urine — or merely wetter? The catheter and the stethoscope judge your fluids; the drip chart only records them.",
+      },
+      {
+        type: "quiz_prompt",
+        title: "The malnourished child",
+        body: "WHO's ETAT teaching singles out the severely malnourished child for a different fluid rule. Why does the standard adult bolus become dangerous in this child — and what replaces it?\n\nAnswer: Severe acute malnutrition remodels the heart into a small, stiff, fragile pump, and the usual rapid bolus can push it into acute heart failure. ETAT teaches fluids given slowly, in smaller volumes and weaker solutions than the standard regimen, under close monitoring for congestive signs — with shock re-assessed before anything is repeated. The general law: in fluid resuscitation, the sicker the heart, the slower the hand.",
+      },
+      {
+        type: "memory_trick",
+        body: "**Two big and warm; blood early; ears between.** Two big-bore lines, fluids warmed, blood early when the tank leaks — and between every bolus, your ears on the chest and your eyes on the catheter bag. The drip judges nothing; the patient does.",
+      },
+      {
+        type: "summary",
+        body: "- Crystalloid (saline, or the balanced Ringer's/Hartmann's) buys volume; only blood restores oxygen carriers and clotting — in ongoing bleeding, blood early and the blood bank alerted early.\n- Give shock fluids through two large-bore cannulae, warmed, as reassessed boluses — never as an unwatched river.\n- After each bolus judge pulse, pressure, skin, mentation and urine (target 0.5 mL/kg/h) — and listen to the chest.\n- The slow-fluid patients: cardiogenic shock, kidney failure, the frail elderly, and the severely malnourished child (ETAT: slow, small, weak, watched).\n- Fluid resuscitation is a bridge to definitive care: stop the bleed, treat the cause — then the fluids can stop.",
+      },
+    ],
+    questions: [
+      {
+        topic: "Fluid Resuscitation",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "Why does ongoing crystalloid infusion fail the actively bleeding patient?",
+        options: [
+          "Because crystalloid damages the kidneys in everyone",
+          "Because it replaces volume with water — diluting red cells and clotting factors — while the loss continues; the definitive answers are blood early and control of the bleed",
+          "Because crystalloid cannot be given through large cannulae",
+          "Because crystalloid causes immediate anaphylaxis",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Crystalloid refills the pipes but cannot carry oxygen or make clot; every bag given while bleeding continues thins what remains, trading haemorrhage for dilutional anaemia and coagulopathy. Blood and cause control are the treatment; crystalloid is the bridge.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Fluid Resuscitation",
+        type: "MCQ",
+        difficulty: "Easy",
+        stem: "Which bedside measures most reliably show whether resuscitation is working?",
+        options: [
+          "Urine output past 0.5 mL/kg/h, with warming skin and a falling pulse",
+          "A rising temperature",
+          "The total volume of fluid infused overnight",
+          "The patient's weight on admission",
+        ],
+        correctIndex: 0,
+        explanation:
+          "The kidney is the first organ sacrificed in shock and the last rewarded — hourly urine, read together with mentation, perfusion and pulse, is the honest meter. Volume infused measures effort; urine measures effect.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Fluid Resuscitation",
+        type: "MCQ",
+        difficulty: "Hard",
+        stem: "An elderly patient in cardiogenic shock needs volume assessment. What is the safe nursing approach to fluids?",
+        options: [
+          "A rapid two-litre bolus to fill the failing pump",
+          "Fluids are absolutely forbidden in all cardiac patients",
+          "Only if prescribed: small reassessed boluses with chest auscultation and pressure checks after each — the failing pump floods early",
+          "Run fluids at double speed because the pressure is low",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Cardiogenic shock sometimes does need judicious volume — but the failing ventricle tips into pulmonary oedema quickly, so fluids travel in small, reassessed steps with the stethoscope between bags. 'Never' is as wrong as 'fast'.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Fluid Resuscitation",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "What must precede every blood transfusion, without exception?",
+        options: [
+          "A prophylactic dose of antihistamine",
+          "Warming the unit in hot water for speed",
+          "A haemoglobin check alone",
+          "A two-person bedside identity check — patient and unit against the prescription — with the patient monitored closely from the first minutes for a reaction",
+        ],
+        correctIndex: 3,
+        explanation:
+          "Most fatal transfusion reactions trace to the wrong blood in the wrong patient, and disciplined bedside checking is the only barrier. Monitor temperature, pulse, respiration and rash through the first 15 minutes, and stop the transfusion at the first sign of a reaction — stop, keep the line open with saline, alert.",
+        courseSlug: "critical-care-nursing",
+      },
+    ],
+    flashcards: [
+      {
+        topic: "Fluid Resuscitation",
+        front: "Why give blood early in ongoing haemorrhage?",
+        back: "Crystalloid replaces volume but not oxygen carriers or clotting factors; continued crystalloid dilutes the remaining blood into dilutional anaemia and coagulopathy. Blood plus control of the bleed is the definitive treatment.",
+      },
+      {
+        topic: "Fluid Resuscitation",
+        front: "Three signs a bolus worked — and three signs of overload.",
+        back: "Worked: pulse falls, pressure and mentation improve, skin warms, urine passes 0.5 mL/kg/h. Overload: breathing quickens, new crepitations or a gallop, distress rising with the pressure — stop and reassess.",
+      },
+      {
+        topic: "Fluid Resuscitation",
+        front: "Who are the 'slow-fluid' patients?",
+        back: "Cardiogenic shock, kidney failure, the frail elderly — and the severely malnourished child (WHO ETAT: slow, small-volume, weakened solutions under close observation). The sicker the heart, the slower the hand.",
+      },
+      {
+        topic: "Fluid Resuscitation",
+        front: "First nursing response to a suspected transfusion reaction?",
+        back: "Stop the transfusion immediately, keep the line open with normal saline, re-check identity paperwork, inform the doctor and blood bank, monitor vitals — and never restart the same unit.",
+      },
+    ],
+    sources: [
+      {
+        organization: "World Health Organization",
+        title: "Emergency Triage Assessment and Treatment (ETAT)",
+        note: "Fluid therapy principles including the special rules for severe malnutrition; verify current edition.",
+      },
+      {
+        organization: "National Blood Service, Ghana",
+        title: "Clinical transfusion practice resources",
+        note: "Blood safety, donation and bedside checking guidance; verify current materials.",
+      },
+      {
+        organization: "Ghana Health Service",
+        title: "Standard Treatment Guidelines",
+        note: "Fluid choices and transfusion indications; verify current edition.",
+      },
+    ],
+  },
+
+  // ── 5 ──────────────────────────────────────────────────────
+  {
+    courseSlug: "critical-care-nursing",
+    moduleTitle: "Shock & Circulation",
+    lessonTitle: "Anaphylaxis: The Allergic Emergency",
+    description:
+      "Adrenaline, airway and speed — the reaction that gives you minutes, not hours, and the thigh injection that reverses it.",
+    difficulty: "Clinical Reasoning",
+    durationMin: 11,
+    objectives: [
+      "Recognise anaphylaxis rapidly using the two-systems-after-a-trigger rule, and separate it from faints and panic.",
+      "Apply the first-line response: IM adrenaline into the thigh immediately, position, oxygen and fluids — with antihistamines understood as adjuncts.",
+      "Explain the biphasic reaction, the observation period, and the documentation and family education that prevent the next reaction.",
+    ],
+    tags: ["anaphylaxis", "adrenaline", "allergy", "emergency"],
+    sourceStatus: "PROPOSED",
+    sections: [
+      {
+        type: "text",
+        title: "What this lesson is about",
+        body: "The reaction that gives you minutes, not hours. Ten minutes after an intravenous antibiotic, a patient can travel from an itch to a closing airway to circulatory collapse — and the difference between a story told warmly at handover and a case discussed in a mortality meeting is whether the nearest nurse's hands already knew what to do.\n\nAnaphylaxis lives in exactly the places Ghanaian nurses work: antibiotic injections in OPD, antivenom after snakebite, blood products, anaesthesia, contrast scans in the cities, bee and wasp stings at the farm, and foods from groundnuts to shellfish. This lesson makes the recognition instant and the response automatic — starting with the one drug that is the treatment.",
+      },
+      {
+        type: "text",
+        title: "Recognising it — the rule of two",
+        body: "Anaphylaxis is a serious, rapid **hypersensitivity reaction involving the airway, breathing or circulation — typically with skin changes — after exposure to a trigger**. The bedside rule that never lets you down: **two systems, after a trigger, treat as anaphylaxis**. Skin is the most faithful witness — **urticaria** (the raised, itching weals), widespread flushing, **angioedema** of the lips, tongue and eyelids — arriving in most cases within minutes. The killers are the other systems: **airway** — hoarseness, a swelling tongue, stridor, the sound of a pipe closing; **breathing** — wheeze, distress, falling saturation; **circulation** — faintness, collapse, hypotension, a fast thready pulse; and the gut may join with vomiting, cramping and diarrhoea.\n\nDistinguish the fainters. A **vasovagal** collapse is pale, brief, slow-pulsed, resolves with lying flat, and shows no rash, stridor or wheeze. Panic flushes and hyperventilates but keeps a strong pulse, no swelling and normal breathing sounds. When you genuinely cannot tell — treat as anaphylaxis: adrenaline given for a faint harms almost no one, while an anaphylaxis treated as a faint becomes a fatality.",
+      },
+      {
+        type: "text",
+        title: "The response — adrenaline owns the first minute",
+        body: "Shout for help and **stop the trigger** — clamp the infusion, remove a stinger by scraping sideways, never squeezing the sac. Then the one drug that is the treatment: **adrenaline 1 in 1000, 0.5 mg intramuscularly into the mid-outer thigh** for an adult — through clothing if you must, repeated after about **five minutes** if the response is poor. It is not the last resort; it is the first move, given by nurses under standing emergency protocols while the doctor is being called. Then the support: **lie the patient flat with legs raised** — the vasodilated, empty circulation needs gravity's help (sitting up if breathing demands it; left tilt if she is pregnant); **high-flow oxygen**; **IV fluid resuscitation** through a wide-bore line for the collapsed pressure; **salbutamol nebulisation** for stubborn bronchospasm; and early senior or anaesthetic help for the airway that keeps narrowing — because a swelling airway narrows fast, and the moment of 'worse' is not the moment to begin planning.\n\nAntihistamines and steroids are the furniture — useful adjuncts, never the treatment, and reaching for them first is the classic beginner's error. **Biphasic reactions** — the second wave — arrive without re-exposure in a meaningful minority of patients, hours after apparent recovery: everyone treated for anaphylaxis is observed, commonly at least six hours and longer after severe reactions, and referred for review with written instructions. On discharge, the patient owns the lesson: what the trigger was, red-flag documentation at every future contact, an alert band, and — where available — an adrenaline auto-injector with the family taught to use it.",
+      },
+      {
+        type: "clinical_pearl",
+        body: "Adrenaline is the treatment; everything else is furniture. There is no contraindication to IM adrenaline in anaphylaxis, the best site is the mid-outer thigh, and the dose can be repeated at five minutes. The deaths cluster in the minutes spent reaching for an antihistamine.",
+      },
+      {
+        type: "table",
+        title: "Anaphylaxis, vasovagal faint or panic — the 60-second separation",
+        body: "| Feature | Anaphylaxis | Vasovagal faint | Panic attack |\n|---|---|---|---|\n| Onset after trigger | Minutes | Seconds to minutes — at the needle, at the pain | Minutes, under stress |\n| Skin | Urticaria, flushing, angioedema | Pale, cold, clammy | Flushed, but no weals or swelling |\n| Airway and chest | Stridor, hoarseness, wheeze | Clear | Tight feeling, but good air entry and clear lungs |\n| Pulse | Fast, thready, may fade | Slow | Fast but strong |\n| Response to lying flat | Hypotension persists or deepens | Colour and consciousness return quickly | Settles with calm and slowed breathing |\n| First response | IM adrenaline — now | Flat with legs raised, observe | Reassure, breathe slowly, monitor |\n\nWhen the columns blur, act in the first column's favour — treat as anaphylaxis and keep watching.",
+      },
+      {
+        type: "case",
+        title: "On the ward",
+        body: "Ten minutes into an intravenous ampicillin infusion on a medical ward, a 30-year-old man starts scratching, his lips and tongue visibly swell, his voice turns hoarse, and he slumps sideways in the bed fighting to sit upright and breathe. The infusion is still running; the emergency trolley has adrenaline; the doctor is on a ward round two buildings away.\n\nWhat are your actions in the next two minutes — in order?\n\nAnswer: Clamp and disconnect the infusion — the trigger — while shouting for help. **Adrenaline 1 in 1000, 0.5 mg IM into the mid-outer thigh now**: with tongue swelling and a hoarse voice the airway is closing, and this is the intervention that reverses it — under standing protocol you do not wait for the doctor. Lie him flat with legs raised — or as upright as his breathing tolerates — high-flow oxygen on, and airway help summoned early, because a narrowing airway narrows fast. Wide-bore IV access and a fluid bolus ready for the collapsing pressure; salbutamol nebuliser if wheeze dominates; and the clock written down — time of reaction, time of adrenaline, response — because the second dose at five minutes and the biphasic watch are decided by that clock. Antihistamine and steroid follow, never lead. Then observation for at least six hours, documentation that shouts 'penicillin allergy' from the front of the folder, and a discharge conversation with the family about the next reaction and its first minute.",
+      },
+      {
+        type: "memory_trick",
+        body: "The anaphylaxis answer is written on the **thigh**: A-A-A — **A**drenaline IM, **A**irway help early, **A**ntihistamines never first. Flat with legs up, oxygen on, fluids wide, repeat the adrenaline at five — and watch for the second wave.",
+      },
+      {
+        type: "summary",
+        body: "- Rule of two: airway, breathing or circulation signs — usually with skin changes — after a trigger, treat as anaphylaxis.\n- Adrenaline 1 in 1000, 0.5 mg IM into the mid-outer thigh for an adult, repeat at about five minutes: first move, no contraindications, works while everything else is still being fetched.\n- Support: stop the trigger, flat with legs raised, high-flow oxygen, IV fluids, salbutamol for wheeze, early airway help.\n- Antihistamines and steroids are adjuncts; deaths cluster in delayed adrenaline.\n- Observe for the biphasic second wave (commonly six hours or more); document the allergy where the next drug-giver cannot miss it, band the patient, and teach the family.",
+      },
+    ],
+    questions: [
+      {
+        topic: "Anaphylaxis",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "What is the first-line treatment, dose and route for an adult in anaphylaxis?",
+        options: [
+          "Slow IV chlorpheniramine while calling the doctor",
+          "Oral prednisolone, then observation for improvement",
+          "Subcutaneous adrenaline 0.1 mg into the deltoid",
+          "Adrenaline 1 in 1000, 0.5 mg intramuscularly into the mid-outer thigh, repeatable after about five minutes",
+        ],
+        correctIndex: 3,
+        explanation:
+          "IM adrenaline into the thigh gives the fastest reliable absorption and is the single intervention that reverses airway and circulatory collapse — repeat at five minutes if the response is poor. Antihistamines and steroids are adjuncts; subcutaneous absorption is slower and has no place here.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Anaphylaxis",
+        type: "MCQ",
+        difficulty: "Hard",
+        stem: "A patient is successfully treated for anaphylaxis and feels entirely well two hours later, asking to go home. What does the evidence demand?",
+        options: [
+          "He can go — adrenaline cures the reaction completely",
+          "Observe for at least six hours (longer after severe reactions): biphasic second waves arrive without re-exposure — with written discharge instructions and a clear plan",
+          "Observe only if he needed two doses of adrenaline",
+          "Send him home on antihistamines alone, which prevent the second wave",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Biphasic reactions recur hours after apparent recovery in a meaningful minority of patients; observation periods — commonly six hours or more after severe reactions — with clear written instructions are standard. Antihistamines do not prevent the second wave.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Anaphylaxis",
+        type: "CLINICAL_SCENARIO",
+        difficulty: "Clinical Reasoning",
+        stem: "During an injection, a nursing student goes pale, briefly faints, and recovers fully when laid flat — no rash, no swelling, no stridor, and a slow pulse. What happened, and what is the correct response?",
+        options: [
+          "A vasovagal faint — lie flat with legs raised, observe, and escalate only if rash, swelling, stridor or persistent hypotension appears",
+          "Anaphylaxis — give IM adrenaline immediately and admit for observation",
+          "A seizure — protect her with restraint and a mouth gag",
+          "A panic attack — discharge her at once with reassurance",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Pale, brief, slow-pulsed, recovered by lying flat, with clean skin and a clear airway — the vasovagal signature. Treat with position and observation, keeping the anaphylaxis rule close: any evolution into rash, stridor or persistent hypotension converts the plan to adrenaline. When a case genuinely blurs, treat as anaphylaxis — but the classic faint is not a blur.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Anaphylaxis",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "Before a patient with a new drug allergy goes home, what documentation and education are essential?",
+        options: [
+          "A verbal reminder to avoid the drug, recorded nowhere",
+          "A note buried deep in the summary sheet only",
+          "A front-of-notes allergy entry and alert band, the trigger named in writing, the family taught the warning signs and first response — and an adrenaline auto-injector with training where available",
+          "Nothing — future prescribing is the pharmacist's responsibility",
+        ],
+        correctIndex: 2,
+        explanation:
+          "The next reaction depends on the next drug-giver seeing the warning: red-flag documentation, a band, a taught family and — where available — an auto-injector. Allergies recorded only in conversation are allergies forgotten.",
+        courseSlug: "critical-care-nursing",
+      },
+    ],
+    flashcards: [
+      {
+        topic: "Anaphylaxis",
+        front: "The bedside rule for recognising anaphylaxis?",
+        back: "Two systems after a trigger: airway (stridor, tongue swelling, hoarseness), breathing (wheeze, distress), circulation (collapse, hypotension) — usually with skin signs (urticaria, flushing, angioedema). When you cannot exclude it, treat as anaphylaxis.",
+      },
+      {
+        topic: "Anaphylaxis",
+        front: "Adult adrenaline in anaphylaxis — what, where, when, and again?",
+        back: "Adrenaline 1 in 1000, 0.5 mg IM into the mid-outer thigh, immediately, repeated after about five minutes if the response is poor. No contraindications. Everything else — antihistamines, steroids — comes second.",
+      },
+      {
+        topic: "Anaphylaxis",
+        front: "Why does the anaphylaxis patient lie flat with legs raised?",
+        back: "Vasodilation has emptied the effective circulation; gravity refills the heart from the legs. Sit up only if breathing demands it, left tilt in pregnancy — and never stand the patient up suddenly during recovery.",
+      },
+      {
+        topic: "Anaphylaxis",
+        front: "What is a biphasic reaction?",
+        back: "A second wave of anaphylaxis, without new exposure, typically within hours — the reason to observe (commonly six hours or more after severe reactions) and to send the patient home with written instructions.",
+      },
+    ],
+    sources: [
+      {
+        organization: "World Health Organization",
+        title: "Anaphylaxis recognition and treatment — immunization training resources",
+        note: "Recognition and first-response guidance used in vaccination training; verify current edition.",
+      },
+      {
+        organization: "CDC",
+        title: "Anaphylaxis after vaccination — clinical guidance",
+        note: "Public clinical resources on recognition and management; verify current pages on the CDC website.",
+      },
+      {
+        organization: "Ghana Health Service",
+        title: "Standard Treatment Guidelines",
+        note: "Anaphylaxis management in district practice; verify current edition.",
+      },
+    ],
+  },
+
+  // ── 6 ──────────────────────────────────────────────────────
+  {
+    courseSlug: "critical-care-nursing",
+    moduleTitle: "Airway, Breathing & Resuscitation",
+    lessonTitle: "Basic Life Support: The Core Skills",
+    description:
+      "Chest compressions, rescue breaths and the defibrillator — the sequence practised until calm, and the teamwork that brings people back.",
+    difficulty: "Moderate",
+    durationMin: 11,
+    objectives: [
+      "Perform the adult BLS sequence: danger, response, shouting for help, airway and breathing assessment, then high-quality compressions.",
+      "Explain the quality standards — rate, depth, recoil, minimal interruption — and why they, not the equipment, determine outcome.",
+      "Apply BLS as a team: calling 112 for the Ghana National Ambulance Service, using the AED, documenting times, and stopping correctly.",
+    ],
+    tags: ["bls", "cpr", "resuscitation", "aed"],
+    sourceStatus: "PROPOSED",
+    sections: [
+      {
+        type: "text",
+        title: "What this lesson is about",
+        body: "A man collapses in the market, in the corridor, in the bathroom of your ward — and your training has to outrun your fear. Cardiac arrest is rare enough that you must think it through now, because in the event, the first two minutes belong to reflexes.\n\nBasic life support is those reflexes, organised: a short sequence of checks and actions — compressions, breaths, an automated defibrillator — that keeps oxygenated blood moving to the brain until advanced help arrives. Started early and done well, it doubles or triples survival. Started late or done gently, it is theatre. This lesson builds the sequence, the quality standards, and the teamwork that keeps it calm.",
+      },
+      {
+        type: "text",
+        title: "The sequence — D-R-S-A-B-C",
+        body: "**Danger** before anything: traffic, live wires, an aggressive patient, a wet floor — a second victim helps nobody. **Response**: shout and gently shake — 'Are you alright?' **Shout for help**: call the emergency line — **112, the Ghana National Ambulance Service** — and send a *specific* runner with a *specific* task: bring the AED, bring the bag-mask and oxygen. Note the time. **Airway**: head-tilt, chin-lift; jaw-thrust without head movement if the neck may be injured. **Breathing**: look, listen and feel for no more than ten seconds. Breathing normally? — recovery position, monitor closely, keep watching. Absent or **abnormal — and gasping, snoring or irregular agonal breaths are abnormal** — compressions begin immediately.\n\n**Compressions**: heel of one hand on the centre of the chest, the second hand clasped over it, arms straight, shoulders above the hands, over the **lower half of the sternum**; push **hard and fast — 5 to 6 centimetres deep, 100 to 120 a minute**; let the chest **recoil fully** between compressions, because the heart refills as you come *up*; and **minimise every interruption** — the blood pressure your compressions build drains away within seconds of stopping. Give **two rescue breaths after every thirty compressions** if you are trained and willing, each breath over about one second, just enough to make the chest rise; untrained or unwilling? — continuous compressions, without pause. Swap the compressor about every two minutes — fatigue quietly destroys depth within minutes, even when the compressor still feels strong.",
+      },
+      {
+        type: "text",
+        title: "The defibrillator and the aftermath",
+        body: "**Defibrillation is the only cure for ventricular fibrillation**, the chaotic rhythm behind most sudden adult collapses — so the AED is fetched, not admired. Bare the chest, dry it, attach the pads where the pictures on them say, let the machine analyse, and follow its voice exactly: shock delivered, then **compressions resume immediately** — do not pause to feel for a pulse after a shock; a reorganised rhythm without circulation is still arrest, and it is the compressions you resume that convert rhythm into a beating heart. Continue the cycles until the patient recovers, a qualified team takes over, or you are relieved.\n\nIf normal breathing returns, into the **recovery position** — on the side, airway open, watched breath by breath until the ambulance arrives, because arrest loves an encore. Record everything: time found, time CPR started, shocks given, rhythm changes, drugs and outcomes when the advanced team arrives — the times are the spine of the resuscitation record and of every audit. And when it is over, whoever you are: the debrief belongs to the next lesson, and it is part of the resuscitation, not a luxury.",
+      },
+      {
+        type: "callout",
+        title: "The quality checklist — chant it while you pump",
+        body: "- Centre of the chest, lower half of the sternum; arms straight, shoulders above hands.\n- Hard and fast: 5–6 cm deep, 100–120 per minute — roughly the beat of a familiar highlife chorus.\n- Full recoil every time — the heart refills on the upstroke.\n- Thirty compressions, two breaths; swap the compressor every two minutes.\n- Hands move only when they must — every pause drains the brain's supply.\n- Agonal gasps are not breathing. They are the dying heart's echo — and the most misread sign at any bedside.",
+      },
+      {
+        type: "clinical_pearl",
+        body: "The commonest bystander mistake is waiting to be sure. The unresponsive patient who is not breathing *normally* — including the one who is gasping or snoring — is in cardiac arrest until proven otherwise, and certainty takes ten seconds. The second mistake is gentle compressions: a cracked rib heals; a brain starved at half-depth does not.",
+      },
+      {
+        type: "case",
+        title: "On the ward",
+        body: "Walking to the sluice at 23:40, you find an elderly patient collapsed in the bathroom, unresponsive. You shake and shout — nothing. You tilt his head back and look, listen, feel: you cannot be sure — the chest seems to move, but the breaths are slow, noisy and irregular.\n\nWhat are your actions in the next two minutes?\n\nAnswer: He is unresponsive with breathing that is not normal — slow, noisy, irregular breaths are agonal until proven otherwise, so this is treated as arrest. Shout for the night team, send a runner for the arrest trolley and the defibrillator, and note the time. On the floor, compressions begin now: centre of the chest, 5–6 cm, 100–120 a minute, full recoil, 30:2 with the bag-mask once the second nurse arrives, swapping compressors every two minutes. The AED is attached the moment it arrives — chest bare and dry, pads as pictured, analyse, shock if instructed, compressions resuming the instant the shock lands. Recovery means breathing turns normal: into the recovery position and monitored until help arrives. Afterwards — the record of times and shocks, and the ten-minute debrief. Two minutes of reflex, built years before this night.",
+      },
+      {
+        type: "memory_trick",
+        body: "DRS-ABCD, in order and out loud: **D**anger, **R**esponse, **S**hout and send for the defib and the 112 line, **A**irway, **B**reathing — not normal means **C**ompressions, hard and fast, 30 to 2 — and the **D**efibrillator as soon as it lands. Underneath it all, the chant: hard, fast, deep, full-up, no stopping.",
+      },
+      {
+        type: "summary",
+        body: "- BLS sequence: Danger, Response, Shout for help (call 112, send for the AED), Airway, Breathing check within ten seconds, then compressions.\n- Compress the centre of the chest: 5–6 cm, 100–120 per minute, full recoil, minimal pauses, swap every two minutes; 30:2 with breaths if trained — otherwise continuous compressions.\n- Agonal gasps are not breathing: unresponsive plus not-normal breathing equals arrest — start.\n- AED early, follow the voice, resume compressions immediately after every shock; recovery position once normal breathing returns — and keep watching.\n- Record the times; debrief the team. Survival is built in the first minutes, by the hands that arrive first.",
+      },
+    ],
+    questions: [
+      {
+        topic: "Basic Life Support",
+        type: "MCQ",
+        difficulty: "Easy",
+        stem: "What are the correct compression standards for adult CPR?",
+        options: [
+          "5–6 cm deep, 100–120 per minute, full recoil, minimal interruptions",
+          "2–3 cm deep, 60 per minute, pausing after each set to feel the pulse",
+          "As deep and as fast as the ribs allow, at any rhythm",
+          "Compressions are only for trained physicians",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Depth 5–6 cm, rate 100–120 per minute, complete recoil between compressions and minimal interruption define effective CPR — the chest is both pump and valve, and the heart refills only when you release fully upward.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Basic Life Support",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "An unresponsive man is taking slow, noisy, irregular breaths. What does this mean, and what must you do?",
+        options: [
+          "He is breathing — place him in the recovery position and watch",
+          "He is sleeping deeply — check again in five minutes",
+          "These are agonal gasps: treat as cardiac arrest — call for help and start compressions immediately",
+          "He needs an airway adjunct and hourly observations",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Agonal gasps are the dying brain's reflex breathing, present in many arrests — and the single most misread sign at a bedside: they are not normal breathing. The unresponsive patient who is not breathing normally gets CPR, now.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Basic Life Support",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "You are alone on a ward with no phone at hand. After confirming cardiac arrest in an adult, what is the order of priorities?",
+        options: [
+          "Search the surroundings for the cause before touching the patient",
+          "Check danger, response, shout for help — send a runner to call 112 and fetch the AED — open the airway, check breathing, then start compressions as help travels",
+          "Give rescue breaths for two minutes before any compressions",
+          "Run to inform the senior nurse before starting anything at the bedside",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Danger, response, summoning help with specific tasks per runner, airway and breathing check — then immediate compressions. Help that is not coming cannot restart a heart, and compressions cannot wait while the runner travels: begin as help moves.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Basic Life Support",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "The AED delivers a shock and prompts you to continue. What comes next?",
+        options: [
+          "Feel for a pulse to see whether the shock worked",
+          "Wait thirty seconds for the rhythm to stabilise",
+          "Remove the pads and switch to mouth-to-mouth",
+          "Resume compressions immediately and continue cycles until the AED analyses again or the patient recovers",
+        ],
+        correctIndex: 3,
+        explanation:
+          "After a shock, resume CPR immediately: a reorganised rhythm without circulation is still arrest, and it is the compressions that restore output. Pulse checks interrupt the pump for little gain; the AED will analyse again on its own cycle.",
+        courseSlug: "critical-care-nursing",
+      },
+    ],
+    flashcards: [
+      {
+        topic: "Basic Life Support",
+        front: "State the adult BLS sequence in order.",
+        back: "Danger → Response (shout and shake) → Shout for help: call 112, send for the AED → Airway (head-tilt chin-lift; jaw-thrust if the neck may be hurt) → Breathing check within 10 seconds → CPR 30:2, or compressions only → Defibrillator as early as possible.",
+      },
+      {
+        topic: "Basic Life Support",
+        front: "Agonal gasps — what are they, and what do they trigger?",
+        back: "Slow, noisy, irregular reflex breaths from the dying brain, present in many arrests — NOT normal breathing. Unresponsive plus not breathing normally equals cardiac arrest: start compressions.",
+      },
+      {
+        topic: "Basic Life Support",
+        front: "Four quality standards for compressions?",
+        back: "Depth 5–6 cm; rate 100–120 per minute; full chest recoil; minimal pauses — and swap compressors every two minutes, because fatigue quietly halves depth while the compressor still feels strong.",
+      },
+      {
+        topic: "Basic Life Support",
+        front: "Why resume compressions immediately after an AED shock?",
+        back: "The shock reorganises the rhythm, but circulation is still absent until compressions restore it — pausing to check pulses or waiting only drains the cerebral supply that CPR built.",
+      },
+    ],
+    sources: [
+      {
+        organization: "Ghana National Ambulance Service",
+        title: "Emergency medical services and first-response training resources",
+        note: "National emergency line 112; verify current training materials.",
+      },
+      {
+        organization: "World Health Organization",
+        title: "Basic Emergency Care: approach to the acutely ill and injured",
+        note: "Structured resuscitation teaching for frontline providers; verify current edition.",
+      },
+      {
+        organization: "Nursing and Midwifery Council of Ghana",
+        title: "Curriculum for the Registered General Nursing (RGN) Programme",
+        year: "2015",
+      },
+    ],
+  },
+
+  // ── 7 ──────────────────────────────────────────────────────
+  {
+    courseSlug: "critical-care-nursing",
+    moduleTitle: "Airway, Breathing & Resuscitation",
+    lessonTitle: "Choking & Airway Emergencies",
+    description:
+      "The blocked airway at any age — back blows, abdominal thrusts, and the everyday manoeuvres that keep the airway you were given open.",
+    difficulty: "Moderate",
+    durationMin: 10,
+    objectives: [
+      "Distinguish mild from severe airway obstruction using speech, cough and colour — and act on the difference.",
+      "Apply the age-correct response: five back blows and five abdominal thrusts in adults and children, the infant sequence, and CPR for the unconscious choker.",
+      "Use the everyday airway skills — head-tilt chin-lift, jaw thrust, suction, recovery position — and know which swollen airways to transfer fast.",
+    ],
+    tags: ["choking", "airway", "obstruction", "first aid"],
+    sourceStatus: "PROPOSED",
+    sections: [
+      {
+        type: "text",
+        title: "What this lesson is about",
+        body: "The blocked airway is the emergency with the shortest fuse and the simplest tools. A bolus of fufu at the family table, a groundnut at a durbar, a fish bone in a chop bar — and between breathing and silence stands whoever is nearest, with two bare hands and about a minute.\n\nThis lesson trains those hands: telling the cough that is working from the airway that is closing, the blow-and-thrust sequence that clears an adult, its gentler cousin for the infant, and the airway manoeuvres you will use every week of your working life.",
+      },
+      {
+        type: "text",
+        title: "Reading the obstruction",
+        body: "Ask one question first — and watch the answer: **'Are you choking? Can you speak?'**\n\nThe patient who answers, coughs loudly and can still speak has **mild obstruction**: the cough is still moving air. The treatment is encouragement — keep coughing, stay beside them, do not slap a back yet and do not reach into the mouth; an interrupted cough is a lost cough. The patient who cannot speak, whose cough is silent or ineffective, who clutches the throat — the universal distress sign — and darkens toward cyanosis, has **severe obstruction**: no air is moving, and the clock runs toward hypoxic cardiac arrest within minutes. Two signs confirm closure: a silent chest that moves nothing, and an attempted rescue breath in a choking victim that goes nowhere — but do not wait to auscultate. A patient who cannot speak needs your hands, now.",
+      },
+      {
+        type: "text",
+        title: "Clearing it — five and five",
+        body: "Shout for help and start the cycle: **five firm back blows** — heel of your hand between the shoulder blades, the patient leaned well forward (over your knee in a small child, over a chair or your arm in an adult), each blow delivered separately with the mouth checked between them. Still obstructed: **five abdominal thrusts** — the heel of one hand just above the navel, the other fist clasped over it, sharp inward-and-upward thrusts, again checking the mouth between each. Alternate **five and five** until the object flies out, help takes over, or the patient becomes unconscious — at which point the drill changes to **CPR beginning with compressions**: the compressions push the obstruction as effectively as anything, so lower them to the floor, begin the sequence, and check the mouth between cycles, removing only what you can *see*. Never perform a blind finger sweep — fingers wedge objects deeper. In the pregnant or very obese patient, abdominal thrusts become **chest thrusts**, aimed straight back toward the spine.\n\n**Infants under one year are different**: five back blows with the head supported and lowered over your forearm, then **five chest thrusts** with two fingers on the lower sternum — and never abdominal thrusts, because the infant's liver and spleen sit exposed under a soft ribcage. And any patient saved by abdominal or chest thrusts, or rendered unconscious, is examined afterwards: thrusts injure abdominal organs quietly, so medical review is part of the rescue, not an optional extra.",
+      },
+      {
+        type: "text",
+        title: "The airway you can fix without tools",
+        body: "Behind choking sits the wider craft of keeping airways open. The **tongue** is the commonest airway obstruction of the unconscious patient — the head-tilt, chin-lift you perform a dozen times a shift is a life-saving manoeuvre disguised as a small one. **Jaw thrust** without head movement when the neck may be injured. **Suction** for the vomit, blood and secretions that drown the unprotected airway — mouth before nose, only what you can see, never deep and blind. The **recovery position** protects the airway of every breathing unconscious patient until help and full assessment arrive.\n\nAnd the airways that swell rather than block: burns and smoke inhalation with soot in the nose and singed nasal hair, angioedema, deep neck infections, and the anaphylaxis of the last lesson. They share one nursing law: keep the patient calm and sitting upright, keep them nil by mouth, call for airway help early, and transfer with the person most able to secure an airway. Swollen airways get worse before they get better — the moment of worse is not the moment to start planning.",
+      },
+      {
+        type: "case",
+        title: "On the ward",
+        body: "During the ward's evening meal, a visitor suddenly stands, hands to his throat, unable to answer his wife's question — no sound, no cough, his face darkening over seconds.\n\nWhat is happening, and what are your actions in the next sixty seconds?\n\nAnswer: Cannot speak, cannot cough, universal distress sign — severe airway obstruction. Shout for help, lean him forward and deliver **five sharp back blows between the shoulder blades**, checking the mouth after each; no relief means **five abdominal thrusts** above the navel, inward and upward; alternate five-and-five until the bolus clears — usually with a cough and one very shaken patient — or he collapses, at which point he goes to the floor and compressions begin, with the mouth checked between cycles. Once the object clears, the story is not over: he is examined for what the thrusts may have done, and observed for swallowed fragments — a wheeze or persistent cough afterwards means something has slipped down into a lung, needing chest review and imaging. He is also taught, gently, to chew slowly and to sit while eating at his age. The relatives will tell this story for years; the ones they tell are the ones where somebody knew the sixty seconds.",
+      },
+      {
+        type: "clinical_pearl",
+        body: "A cough that speaks is a cough that works — encourage it, never interrupt it. Silence is the danger sign: the choking patient who goes quiet is the one your hands must answer. And after any successful set of abdominal thrusts, examine the abdomen even when the dinner seems saved: the rescue is not finished until the patient is reviewed.",
+      },
+      {
+        type: "memory_trick",
+        body: "**Five and five — blow, then shove.** Blows between the shoulder blades, thrusts above the navel, mouth checked between every five. Baby under one: blows and chest thrusts only — never shove the infant belly. Unconscious means compressions; the mouth gives up only what your eyes can see.",
+      },
+      {
+        type: "summary",
+        body: "- Ask 'can you speak?': speech and a strong cough mean mild obstruction — encourage coughing, observe. Silence, ineffective cough, the distress sign and cyanosis mean severe — act immediately.\n- Severe obstruction: five back blows, then five abdominal thrusts, alternating five-and-five, mouth checked between each set; chest thrusts in pregnancy and obesity.\n- The unconscious choker gets CPR from compressions; remove only visible objects; no blind finger sweeps, ever.\n- Infant under one: five back blows with the head low and supported, then five chest thrusts — abdominal thrusts are forbidden.\n- After any rescue: medical review for thrust injuries and inhaled fragments.\n- Everyday airway care: head-tilt chin-lift, jaw thrust, suction, recovery position — and early, urgent transfer for the swelling airways (burns, angioedema, infection, anaphylaxis).",
+      },
+    ],
+    questions: [
+      {
+        topic: "Choking",
+        type: "MCQ",
+        difficulty: "Easy",
+        stem: "Which patient has SEVERE airway obstruction and needs immediate intervention?",
+        options: [
+          "The patient coughing loudly between sentences",
+          "The patient who can whisper 'I am fine' with an occasional cough",
+          "The patient with a silent, ineffective cough, clutching the throat, going blue",
+          "The patient with a night cough and a runny nose for two days",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Silence is the signature: no speech, no effective cough, the universal distress sign and cyanosis mean no air is moving. The loud coucher is still moving air — encourage and observe.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Choking",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "What is the correct response sequence for severe choking in a responsive adult?",
+        options: [
+          "Five back blows, checking the mouth, then five abdominal thrusts — alternating five-and-five until relief or unconsciousness",
+          "An immediate blind finger sweep to hook the object out",
+          "Water to wash the bolus down, then back blows",
+          "Lay the patient flat and start CPR before any blows",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Blows and thrusts alternate, with the mouth checked between sets; objects must never be swept blindly because fingers wedge them deeper, fluids cannot pass a dry obstruction, and CPR belongs to the unconscious patient.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Choking",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "An 8-month-old baby has severe airway obstruction. What is the correct technique?",
+        options: [
+          "Abdominal thrusts as in adults, with less force",
+          "A blind finger sweep with the little finger",
+          "Back blows with the baby held upright at eye level",
+          "Five back blows with the head supported and lowered, then five chest thrusts with two fingers on the lower sternum",
+        ],
+        correctIndex: 3,
+        explanation:
+          "Infants get back blows with the head low over the supported forearm, then chest thrusts — abdominal thrusts are forbidden under one year, where the liver and spleen lie exposed under the soft ribcage, and blind sweeps drive objects deeper.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Choking",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "An adult's obstruction clears after one round of abdominal thrusts; he is laughing, breathing normally and declines any review. What must you insist on, and why?",
+        options: [
+          "Nothing — successful clearance ends the emergency",
+          "Medical review before he leaves: thrusts can injure abdominal organs, and a fragment retained in the airway causes later wheeze, collapse or infection",
+          "A glass of water to prove the airway is clear",
+          "A week of prophylactic antibiotics to prevent aspiration",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Two late dangers follow a save: occult abdominal injury from the thrusts, and an inhaled fragment slipping into a bronchus — signalled by persistent wheeze, cough or later fever. The rescue ends with a review, not a laugh. Prophylactic antibiotics are not routine.",
+        courseSlug: "critical-care-nursing",
+      },
+    ],
+    flashcards: [
+      {
+        topic: "Choking",
+        front: "How do you distinguish mild from severe airway obstruction?",
+        back: "Speech and an effective cough mean mild — encourage coughing, observe closely. No speech, a silent or ineffective cough, hands to the throat and cyanosis mean severe — act immediately.",
+      },
+      {
+        topic: "Choking",
+        front: "The adult sequence for severe choking?",
+        back: "Five back blows (patient leaned forward) → five abdominal thrusts (above the navel, inward and upward) → alternate five-and-five, checking the mouth between sets. Unconscious: CPR starting with compressions; remove only what is visible.",
+      },
+      {
+        topic: "Choking",
+        front: "What changes in the infant under one year?",
+        back: "Five back blows with the head supported and lowered over the forearm, then five chest thrusts — two fingers on the lower sternum. Abdominal thrusts and blind finger sweeps are never performed on infants.",
+      },
+      {
+        topic: "Choking",
+        front: "Why does a successful choking rescue still require hospital review?",
+        back: "Abdominal thrusts can quietly injure abdominal organs, and fragments may remain in the airway to cause later wheeze, collapse or infection — the rescue ends with a review, not a handshake.",
+      },
+    ],
+    sources: [
+      {
+        organization: "World Health Organization",
+        title: "Basic Emergency Care: approach to the acutely ill and injured",
+        note: "Airway and choking management for frontline providers; verify current edition.",
+      },
+      {
+        organization: "Ghana National Ambulance Service",
+        title: "First responder training resources",
+        note: "National emergency line 112; verify current materials.",
+      },
+      {
+        organization: "World Health Organization / UNICEF",
+        title: "Emergency Triage Assessment and Treatment (ETAT) course materials",
+        note: "Verify the current ETAT adaptation used in Ghana.",
+      },
+    ],
+  },
+
+  // ── 8 ──────────────────────────────────────────────────────
+  {
+    courseSlug: "critical-care-nursing",
+    moduleTitle: "Airway, Breathing & Resuscitation",
+    lessonTitle: "Acute Coronary Syndromes & Stroke Response",
+    description:
+      "The two time-critical emergencies of adults — the pathways, the minutes that are myocardium and brain, and the nurse who defends the clock.",
+    difficulty: "Hard",
+    durationMin: 12,
+    objectives: [
+      "Recognise acute coronary syndromes — typical and atypical — and initiate the response: ECG within ten minutes, aspirin per protocol, monitored transfer.",
+      "Apply the stroke response: FAST recognition, glucose check, CT to separate clot from bleed, and time-critical referral.",
+      "Explain the time-is-muscle, time-is-brain logic, and document the two timestamps that govern every downstream decision.",
+    ],
+    tags: ["acs", "stroke", "chest pain", "fast"],
+    sourceStatus: "PROPOSED",
+    sections: [
+      {
+        type: "text",
+        title: "What this lesson is about",
+        body: "Two emergencies own the adult time-clock: the heart starving of blood and the brain starving of blood. Both are common in Ghana — hypertension and diabetes quietly load the gun for years — and both reward the same scarce resource: **minutes**. In a myocardial infarction, dying heart muscle is counted in minutes; in stroke, dying brain tissue is counted the same way, and the treatments that save both run in narrow windows measured from the moment symptoms began.\n\nThe district nurse cannot perform angioplasty or thrombolysis. What the district nurse does — the history, the ECG, the aspirin, the clock, the calm, the referral — decides whether any of those things can still succeed. This is the lesson of being the first ten minutes of a pathway that ends in a regional hospital.",
+      },
+      {
+        type: "text",
+        title: "Acute coronary syndromes — the spectrum and the response",
+        body: "A heart attack begins when a plaque cracks inside a coronary artery and a clot grows over the crack. The spectrum — **unstable angina, NSTEMI, STEMI** — matters less to your first response than the recognition. The classic story: **central chest pain or heaviness — a stone on the chest — lasting more than about fifteen minutes**, radiating to the left arm, jaw or back, with sweating, nausea, breathlessness, and the fear patients describe as 'something bad is happening'. Atypical presentations are the trap: **the diabetic, the elderly and many women** arrive with breathlessness, epigastric 'ulcer' pain, sweating alone, sudden fatigue or confusion — nearly painless events that get misfiled as gastritis and die at home.\n\nThe response, district-hospital standard: **an ECG within ten minutes of first contact** — painless, cheap, and the only thing that separates the ST-elevation of a STEMI from everything else; **aspirin chewed per protocol** unless truly contraindicated (ask about allergy and bleeding); **oxygen only if saturations are low**, because routine oxygen adds nothing and may harm; nitrate per protocol with the pressure checked; IV access, continuous monitoring, troponin where available. Then the decision: STEMI needs **reperfusion — angioplasty at a capable centre, or thrombolysis within the golden hours where transfer is impossible** — which means the referral phone call happens now, ECG described and SBAR given, to the receiving hospital. While you wait: watch for the arrhythmias and the arrest that complicate the first hours — the defibrillator lives beside this patient. And afterwards the counselling begins, because this is a disease of decades and the admission is only its opening scene.",
+      },
+      {
+        type: "text",
+        title: "Stroke — the brain's clock",
+        body: "Most strokes are **ischaemic** — a clot plugging a brain artery; the rest are **haemorrhagic**, a vessel burst into the tissue. The two look identical at the bedside and demand opposite treatments, which is why **imaging decides** before any clot-dissolving drug is drawn: a thrombolytic helps the ischaemic stroke and is catastrophic in a bleed. The recognition tool is **FAST**: a **F**ace that droops on one side when asked to smile; **A**rms that drift or fall when raised; **S**peech turned slurred, jumbled or absent; **T**ime — when symptoms began, or the last moment the person was seen well, because the clot-dissolving window is measured from there, commonly **up to four and a half hours**.\n\nNursing the first hour: check **glucose** — hypoglycaemia is the great stroke mimic, and a sugar fix cures a 'stroke' in minutes; **nil by mouth** until swallow is tested, because stroke patients aspirate silently; head of bed at about thirty degrees, head midline; careful IV access; blood pressure managed per protocol, never reflexly crushed; the onset time documented in red; a calm, quiet space; and the referral call to the CT-capable centre with the FAST findings, glucose, timings and any anticoagulants the patient takes — the answer changes everything. Family education closes the loop: every household should know FAST the way it knows fire, because the patient who arrives inside the window is the patient somebody recognised early. In Ghana, where hypertension strikes young, 'it cannot be a stroke, he is only fifty-two' is a sentence audited in every stroke registry.",
+      },
+      {
+        type: "table",
+        title: "The two clocks, side by side",
+        body: "| | Acute coronary syndrome | Stroke |\n|---|---|---|\n| The starving organ | Heart muscle | Brain tissue |\n| Recognition | Central pressure-like pain over 15 minutes, sweating; atypical in diabetics, the elderly, women | FAST — facial droop, arm drift, speech change; note the onset or last-seen-well time |\n| First tools | ECG within 10 minutes; aspirin chewed per protocol; monitoring | Glucose check; CT scan; nil by mouth pending the swallow test |\n| The window | Reperfusion within the golden hours — thrombolysis or transfer for angioplasty | Thrombolysis commonly within 4.5 hours of last seen well |\n| The nurse's crown jewel | The 10-minute ECG and the early referral call | The documented onset time — every eligibility decision hangs on it |\n| The trap | The 'gastritis' that was an infarct | The hypoglycaemia mimic; the late arrival |\n\nBoth pathways run on one currency: time. Chart it, protect it, and hand it over with the patient.",
+      },
+      {
+        type: "clinical_pearl",
+        body: "Two timestamps save more lives than any drug you will ever give: the **first ECG time** and the **last-seen-well time**. Write them large, hand them over loudly, and let no one move a stroke patient without them. And in the diabetic, the heart shouts quietly — epigastric discomfort with sweat deserves an ECG, not an antacid.",
+      },
+      {
+        type: "case",
+        title: "On the ward",
+        body: "A 58-year-old teacher with known diabetes arrives at the OPD at 08:20, sweating and gripping his epigastrium: 'my ulcer has returned'. The pain is 6 out of 10, he feels sick, and he looks grey. Meanwhile, in the corner, an elderly woman's face has begun to droop — her daughter says the smile 'went crooked' while she ate at 06:40, and her right arm will not hold the cup.\n\nTwo clocks are running. What do you do for each?\n\nAnswer: The teacher is a diabetic with a probable atypical infarction — epigastric pain, sweat and grey in a known diabetic is a cardiac story until an ECG says otherwise: ECG within ten minutes, aspirin chewed per protocol once true allergy is excluded, monitoring, IV access, and the referral call with the ECG to the reperfusion-capable centre, defibrillator at hand. The woman is FAST-positive with a last-seen-well of 06:40 — under two hours ago: glucose checked first (the mimic), nil by mouth, head midline at thirty degrees, calm — the onset time written large — and immediate transfer to the CT-capable hospital, with her anticoagulant history hunted for the lysis conversation. Both patients needed the same thing from you: recognition, the first tools, and the defence of the clock. The regional hospital may hold the miracles; the miracles belong only to patients who arrive inside the window you kept open.",
+      },
+      {
+        type: "memory_trick",
+        body: "For the brain: **FAST** — Face, Arms, Speech, Time. For the heart: **TEN** — The ECG Now, within ten minutes of arrival. And the drum under both: time is muscle, time is brain — one clock per patient, written in red.",
+      },
+      {
+        type: "summary",
+        body: "- ACS: central pressure-like pain over 15 minutes with sweating — but diabetics, the elderly and many women present atypically (breathlessness, epigastric pain, collapse). ECG within 10 minutes, aspirin chewed per protocol, oxygen only if hypoxic, monitoring, early referral for reperfusion.\n- STEMI is ST elevation on the ECG; the golden hours decide thrombolysis or transfer — the referral call competes with everything else on your list.\n- Stroke: FAST; exclude the mimic with glucose; CT separates clot from bleed; thrombolysis commonly within 4.5 hours of last seen well.\n- Stroke nursing: nil by mouth until the swallow test, head midline at about 30 degrees, BP per protocol, onset time documented, urgent transfer to the CT-capable centre.\n- Two timestamps rule the chart: the first ECG and the last-seen-well — write them where nobody can miss them.",
+      },
+    ],
+    questions: [
+      {
+        topic: "ACS & Stroke",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "A known diabetic presents with epigastric discomfort, sweating and nausea, calling it 'ulcer pain'. What is the correct interpretation?",
+        options: [
+          "Gastritis until proven otherwise — antacid and review in one hour",
+          "Atypical acute coronary syndrome until excluded — ECG within ten minutes",
+          "Anxiety — reassure and observe",
+          "Malaria with gastric irritation — test and treat for malaria first",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Diabetics, the elderly and many women have infarctions with little or no chest pain — epigastric discomfort with sweating and a grey look is a cardiac story until the ECG says otherwise. The antacid hour is the hour of myocardium lost.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "ACS & Stroke",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "In suspected stroke, which piece of information most determines treatment eligibility?",
+        options: [
+          "The blood pressure at triage",
+          "The patient's weight",
+          "The temperature",
+          "The time symptoms began — or the last time the person was seen well",
+        ],
+        correctIndex: 3,
+        explanation:
+          "Clot-dissolving therapy is governed by the clock — commonly up to four and a half hours from last seen well — so the onset story is the most valuable data anyone can collect at the bedside. Everything downstream is scheduled by it.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "ACS & Stroke",
+        type: "MCQ",
+        difficulty: "Hard",
+        stem: "Why must a CT scan precede thrombolysis in stroke?",
+        options: [
+          "To measure the infarct volume for research purposes",
+          "Because the scanner calibrates the drug dose",
+          "Because strokes are either clots or bleeds: thrombolysis helps the clot and is catastrophic if a bleed caused the symptoms",
+          "To exclude migraine before any treatment",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Ischaemic and haemorrhagic strokes look identical at the bedside and need opposite treatments — imaging tells them apart before the lytic is drawn. Giving a clot-buster into a bleed converts a survivable stroke into a disaster.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "ACS & Stroke",
+        type: "MCQ",
+        difficulty: "Easy",
+        stem: "What does FAST stand for in stroke recognition?",
+        options: [
+          "Fever, Anaemia, Swelling, Tenderness",
+          "Face drooping, Arm weakness, Speech difficulty, Time to call help",
+          "Full history, Auscultation, Scan, Treatment",
+          "Family history, Age, Smoking, Trauma",
+        ],
+        correctIndex: 1,
+        explanation:
+          "FAST is the recognition tool taught worldwide: facial droop, arm drift or weakness, speech change — and Time, the reminder that the clock started at symptom onset, not at arrival.",
+        courseSlug: "critical-care-nursing",
+      },
+    ],
+    flashcards: [
+      {
+        topic: "ACS & Stroke",
+        front: "Atypical ACS presentations — in whom, and how do they look?",
+        back: "Diabetics, the elderly and many women: breathlessness, epigastric pain mistaken for 'ulcer', sweating, fatigue, confusion or collapse with little chest pain. Suspicion plus ECG within ten minutes.",
+      },
+      {
+        topic: "ACS & Stroke",
+        front: "Stroke bedside assessment: FAST plus the first checks.",
+        back: "Face droop, arm drift, speech change, onset time (last seen well) — then check glucose to exclude the mimic, keep nil by mouth pending the swallow test, and transfer to the CT-capable centre.",
+      },
+      {
+        topic: "ACS & Stroke",
+        front: "Why 'time is muscle and time is brain'?",
+        back: "Infarcting heart muscle and brain tissue die by the minute; reperfusion for STEMI and thrombolysis for ischaemic stroke (commonly within 4.5 hours of last seen well) exist only inside their windows — windows you defend with the documented clock.",
+      },
+      {
+        topic: "ACS & Stroke",
+        front: "First nursing actions in suspected ACS at district level?",
+        back: "ECG within 10 minutes, aspirin chewed per protocol after the allergy check, oxygen only if hypoxic, IV access, continuous monitoring, the defibrillator at hand — and the early referral call with the ECG to the reperfusion-capable centre.",
+      },
+    ],
+    sources: [
+      {
+        organization: "World Health Organization",
+        title: "Package of Essential Noncommunicable Disease Interventions (WHO PEN)",
+        note: "Chest pain and cerebrovascular pathways for first-referral facilities; verify current edition.",
+      },
+      {
+        organization: "CDC",
+        title: "Heart attack signs and F.A.S.T. stroke public education resources",
+        note: "Public recognition campaigns; verify current pages on the CDC website.",
+      },
+      {
+        organization: "Ghana Health Service",
+        title: "Standard Treatment Guidelines",
+        note: "Cardiovascular and cerebrovascular emergencies in district practice; verify current edition.",
+      },
+      {
+        organization: "Nursing and Midwifery Council of Ghana",
+        title: "Curriculum for the Registered General Nursing (RGN) Programme",
+        year: "2015",
+      },
+    ],
+  },
+
+  // ── 9 ──────────────────────────────────────────────────────
+  {
+    courseSlug: "critical-care-nursing",
+    moduleTitle: "Organising Emergency Care",
+    lessonTitle: "Triage: Sorting the Waiting Room",
+    description:
+      "Who is seen first and why — the ETAT minute, the colours, and the running of a waiting room whose story keeps changing.",
+    difficulty: "Moderate",
+    durationMin: 11,
+    objectives: [
+      "Explain triage as clinical sorting by urgency — not arrival order, wealth or loudness — and the WHO ETAT colour system.",
+      "Apply the rapid assessment — airway, breathing, circulation, disability — in about a minute per patient.",
+      "Run the waiting room safely: re-triage cycles, documentation, honest communication, and the instinct that promotes quiet patients.",
+    ],
+    tags: ["triage", "priorities", "etat", "emergency"],
+    sourceStatus: "PROPOSED",
+    sections: [
+      {
+        type: "text",
+        title: "What this lesson is about",
+        body: "07:45 at a district hospital OPD: forty people in the queue, a man quietly clutching his chest, a child breathing fast on her mother's back, a teenager with a gashed hand from a workshop machine, a grandmother here for a two-month refill. Seen by arrival order, the queue is fair. Seen by urgency, the queue is a lottery — and the man with the chest pain is losing it.\n\n**Triage** — from the French *trier*, to sort — is the discipline that replaces the lottery with clinical judgement: a fast, structured sorting of every arriving patient by how urgently they need care. WHO's **ETAT** (Emergency Triage Assessment and Treatment) taught it for children; the same architecture runs in emergency rooms for all ages. This lesson teaches the minute, the colours, and the running of a room whose story keeps changing.",
+      },
+      {
+        type: "text",
+        title: "The minute — assessing an arrival",
+        body: "Sorting must be fast to be honest, so it is structured. For each arrival, within about a minute, run **ABCD** — the ETAT survey: **A**irway — is it obstructed, noisy, or silent when it should not be? **B**reathing — count the rate and look for distress: cyanosis, severe recession, a silent chest in an asthmatic. **C**irculation — pulse, capillary refill, pallor, **severe bleeding**, the cold clammy skin of shock. **D**isability — level of consciousness (AVPU: alert, responds to voice, responds to pain, unresponsive), convulsions, and in children the danger signs parents whisper: cannot drink, cannot stand, vomits everything. Add the thermometer's question and the pain question — and decide the colour.\n\n**RED — emergency signs** — an obstructed airway, severe respiratory distress, cyanosis, signs of shock, a convulsing or comatose patient, severe active bleeding, chest pain with sweating: treatment begins immediately, the clinician is called now, monitoring is continuous. **YELLOW — priority signs** — the front-of-queue patients who will not die in the next hour but may in the next day: a fast-breathing child without emergency signs, moderate dehydration, a fever lasting five days or more, a febrile infant under two months, severe wasting, known sickle-cell disease in crisis, uncontrolled pain, an ingestion or overdose. **GREEN — non-urgent** — the refill, the mild illness, the stable injury: the ordinary queue, held safe by the patrol.",
+      },
+      {
+        type: "table",
+        title: "The colours — who and what",
+        body: "| Colour | Meaning | Response | Examples at the door |\n|---|---|---|---|\n| RED | Emergency signs — a life-threat now | Immediate care; clinician called now; continuous monitoring | Obstructed airway, severe respiratory distress, cyanosis, shock, severe bleeding, convulsions or coma, chest pain with sweating |\n| YELLOW | Priority signs — danger within hours | Seen next, ahead of the queue; observed while waiting | Fast breathing without emergency signs, moderate dehydration, febrile infant under 2 months, sickle-cell crisis, uncontrolled pain, ingestion or overdose, severe wasting |\n| GREEN | Non-urgent | The ordinary queue; re-checked every 30–60 minutes | Mild illness, chronic-disease refill, stable minor injuries, wound review |\n\nIn mass-casualty disasters the colour code changes its ethics — that is the next lesson. The triage nurse also holds the unwritten fifth category: anyone whose look, smell or story makes the spine prickle — the colour of instinct is red until examined.",
+      },
+      {
+        type: "text",
+        title: "Running the room",
+        body: "Triage is not one decision at the door; it is a patrol. **Re-triage the whole waiting room every thirty to sixty minutes**, because queues change: the child who was fast-breathing and calm becomes the child who is quiet and limp; the 'gastritis' becomes a grey, sweating silence. Walk the room, eyes on the breathing of every patient, hands on the drowsy ones — the quiet ones are the dangerous ones. Document the category and the time for every sort; the OPD register is the audit trail that shows your hospital what its emergencies really are.\n\nTalk to the room as well. The man whose refill waited an hour behind a chest pain deserves the honest sentence: 'that patient was seen first because his heart was failing; you are next for the malaria review.' The waiting room that understands triage defends it; the one kept in the dark becomes a crowd when the wait outruns patience. And protect the triage desk itself — drunk, violent or distressed relatives may need security, and your safety is a condition of everyone else's.",
+      },
+      {
+        type: "case",
+        title: "On the ward",
+        body: "Monday morning queue; you are the triage nurse. Four arrivals within five minutes: a 55-year-old man, pale and sweaty, gripping his chest since 07:00; a two-year-old on her mother's back, breathing fast with a 'hot body', but drinking and alert; a young man with a bleeding hand from a workshop machine, cloth wrapped tight, walking and talking; and a 70-year-old here for a hypertension refill who mentions, casually, that her left arm 'feels heavy today'.\n\nSort them — and say why.\n\nAnswer: The chest-pain man — **RED**: pain, pallor, sweat, probable acute coronary syndrome; clinician now, ECG within ten minutes, monitored while waiting for nobody. The 'casual' grandmother — urgent as well, because arm heaviness in a known hypertensive is a possible atypical stroke or angina: she goes to immediate assessment, not the refill queue — the casualness is the trap. The child — **YELLOW**: fever with fast breathing but drinking and alert, no emergency signs; front of the paediatric queue, assessed and treated per ETAT and national guidance, watched closely while waiting. The laceration — first-minute care is triage: elevate, re-wrap firmly, confirm the pressure stops the ooze and the fingertip pulses remain; then **GREEN** once controlled, with one more question asked — dirty wound, last tetanus years ago, so today is the vaccination conversation. The lesson of the morning: the refill queue was not the emergency; the quietest symptom in it nearly was.",
+      },
+      {
+        type: "quiz_prompt",
+        title: "The quiet child",
+        body: "A mother sits in the corner with an 18-month-old who has been febrile since yesterday. He is not crying — he is asleep on her chest, breathing fast, and she says 'at least he is finally resting.' What does triage say about 'quiet' — and what do you do?\n\nAnswer: Quiet is not a good sign in a sick child — it is often exhaustion. A febrile child breathing fast while 'asleep' may be hypoxic or sliding toward shock; the drink test (can he wake, drink and stay roused?) and the counted respiratory rate decide the colour. Walk to the corner now, wake him gently, count a full minute of breathing, check AVPU and pallor — and the odds are this child moves to YELLOW at least, sometimes RED. 'Finally resting' is the sentence triage exists to interrupt.",
+      },
+      {
+        type: "memory_trick",
+        body: "**ABCD at the door, every arrival, one minute: A**irway, **B**reathing, **C**irculation, **D**isability — then colour the patient: **Red** now, **Yellow** next, **Green** the queue. And patrol — because the room that was safe at 8 am is a different room by 9.",
+      },
+      {
+        type: "summary",
+        body: "- Triage sorts by clinical urgency — not arrival order, loudness, wealth or age; ETAT taught it for children, and emergency rooms run it for everyone.\n- The minute: ABCD — airway, breathing (counted), circulation (perfusion, bleeding), disability (AVPU, convulsions) — plus temperature and pain.\n- RED = emergency signs, immediate care; YELLOW = priority signs, front of the queue; GREEN = non-urgent — with instinct allowed to promote anyone.\n- Re-triage the room every 30–60 minutes: the quiet patient is the dangerous patient.\n- Document category and time; explain the logic honestly to the waiting room; keep the triage desk safe.",
+      },
+    ],
+    questions: [
+      {
+        topic: "Triage",
+        type: "MCQ",
+        difficulty: "Easy",
+        stem: "What does triage actually sort patients by?",
+        options: [
+          "Clinical urgency — how quickly each patient needs care to survive",
+          "Arrival order and ticket numbers",
+          "Whoever paid first",
+          "The loudest complaints, to keep the peace",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Triage replaces queue fairness with survival fairness: the chest pain before the refill, the silent child before the shouting one. Arrival order is only the tiebreaker within a colour — and payment was never a clinical sign.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Triage",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "What does the ETAT rapid survey of an arrival cover?",
+        options: [
+          "A full history and complete physical examination",
+          "Airway, breathing, circulation, disability — the emergency-sign check, in about a minute",
+          "Laboratory results and a chest X-ray",
+          "A financial and insurance assessment",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The ETAT minute screens the systems that kill fastest — airway, breathing, circulation and consciousness — enough to colour the patient; the full work-up belongs to the clinical encounter that follows. It is fast because it must be: sorting forty arrivals with full examinations is a queue by another name.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Triage",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "Among these waiting-room patients, who goes RED — immediate care?",
+        options: [
+          "An adult with a two-day mild cough",
+          "A teenager needing a dressing change",
+          "A man here for a refill whose blood pressure was fine last month",
+          "A pale, sweating man clutching his chest for the past hour",
+        ],
+        correctIndex: 3,
+        explanation:
+          "Chest pain with pallor and sweat is a probable acute coronary syndrome — an emergency sign: clinician now, ECG within ten minutes. Coughs and dressings wait; and the refill stays safe only because the patrol keeps checking it.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Triage",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "Why must the waiting room be re-triaged every 30–60 minutes?",
+        options: [
+          "To reissue tickets in a fresh order",
+          "Because policy requires paperwork each hour",
+          "Because waiting patients change: quiet deterioration — the sleepy child, the 'resting' patient, the grey silence — appears with time, and colours must follow the physiology",
+          "To give latecomers a fair chance to be seen early",
+        ],
+        correctIndex: 2,
+        explanation:
+          "The room you sorted at 8 am is a different room by 9: children drift, bleeders re-bleed, 'mild' becomes 'grey'. The patrol — walking, watching every patient's breathing, waking the quiet ones — is the difference between triage as a moment and triage as a system.",
+        courseSlug: "critical-care-nursing",
+      },
+    ],
+    flashcards: [
+      {
+        topic: "Triage",
+        front: "The ETAT rapid survey — which four systems, in what time?",
+        back: "Airway (obstructed? noisy?), Breathing (counted rate, distress, cyanosis), Circulation (perfusion, severe bleeding), Disability (AVPU, convulsions) — in about one minute per arrival, plus temperature and pain.",
+      },
+      {
+        topic: "Triage",
+        front: "Name the three triage colours and their response.",
+        back: "RED — emergency signs: immediate care, clinician called now, continuous monitoring. YELLOW — priority signs: seen next, ahead of the queue, observed while waiting. GREEN — non-urgent: the queue — every colour re-checked by the 30–60-minute patrol.",
+      },
+      {
+        topic: "Triage",
+        front: "Why is the quiet febrile child a triage red flag?",
+        back: "Quiet in a sick child often means exhaustion, hypoxia or early shock — not rest. The triage nurse wakes, rouses and counts; 'finally resting' is the sentence triage exists to interrupt.",
+      },
+      {
+        topic: "Triage",
+        front: "What honest sentence keeps a waiting room calm when someone is seen first?",
+        back: "Explain the logic simply — 'that patient was seen first because his heart is failing; you are next for your malaria review.' Understanding converts an angry queue into a partner in the sorting.",
+      },
+    ],
+    sources: [
+      {
+        organization: "World Health Organization / UNICEF",
+        title: "Emergency Triage Assessment and Treatment (ETAT) course materials",
+        note: "Verify the current ETAT adaptation used in Ghana.",
+      },
+      {
+        organization: "Ghana Health Service",
+        title: "Outpatient and emergency care protocols",
+        note: "District-level triage practice; verify current edition.",
+      },
+      {
+        organization: "Nursing and Midwifery Council of Ghana",
+        title: "Curriculum for the Registered General Nursing (RGN) Programme",
+        year: "2015",
+      },
+    ],
+  },
+
+  // ── 10 ─────────────────────────────────────────────────────
+  {
+    courseSlug: "critical-care-nursing",
+    moduleTitle: "Organising Emergency Care",
+    lessonTitle: "Emergency Preparedness & Mass Casualties",
+    description:
+      "The crash, the fire, the bus overturning — the ethics and structures of disaster triage, and the nurse who was ready before the sirens.",
+    difficulty: "Moderate",
+    durationMin: 11,
+    objectives: [
+      "Define a mass casualty incident and explain the ethical shift to the greatest good for the greatest number.",
+      "Apply disaster triage categories — immediate, delayed, minimal, expectant, deceased — and re-assess them as resources change.",
+      "Describe the hospital incident command structure, the nurse's roles within it, and personal readiness including the Ghanaian notification chain.",
+    ],
+    tags: ["disaster", "preparedness", "mass casualty", "command"],
+    sourceStatus: "PROPOSED",
+    sections: [
+      {
+        type: "text",
+        title: "What this lesson is about",
+        body: "Ghana has lived the mass casualty: the stadium disaster of May 9, 2001, that killed over a hundred; the tanker fires — Atomic Junction in 2017, Apiate in 2022 — with burn casualties counted in the dozens; the trotro and bus crashes on our highways every year; the floods that arrive with the rains and the harmattan fires that follow the dryness.\n\nA **mass casualty incident (MCI)** is any event whose casualties overwhelm what the facility can normally manage — and the difference between a hospital that copes and a hospital that collapses is not luck or equipment. It is whether the plan was written, drilled and believed before the sirens. This lesson is the plan, the ethics, and the nurse's place in both.",
+      },
+      {
+        type: "text",
+        title: "What changes in a mass casualty",
+        body: "Everyday triage and disaster triage obey different moral arithmetic. Every day, the **sickest comes first**, whatever the cost. In an MCI, **resources are the fixed pie** — three nurses, one doctor, four emergency beds, two ventilators, forty patients — and the ethics invert: **the greatest good for the greatest number** means treating first those whose lives can be saved by what you actually have. The categories follow it. **RED — immediate**: life-threatening injuries that treatment *now* makes survivable — an obstructed airway, a compressible arterial bleed, a tension pneumothorax. **YELLOW — delayed**: patients needing theatre and serious care who remain stable for hours — most closed fractures, many penetrating injuries without active shock. **GREEN — minimal**: the walking wounded, treated and even recruited as helpers. **Expectant (grey or blue)**: injuries unsurvivable with the resources present — comfort and dignity become the treatment, and the category is re-assessed as resources arrive. **BLACK — deceased**: confirmed dead, moved to the designated area, never through the treatment floor.\n\nTwo laws hold the system honest. Categories are **provisional** — as staff, blood and ambulances arrive, yesterday's expectant patient may become salvageable, and today's walking wounded can quietly bleed into tomorrow's shock. And the decision is **clinical, not personal**: the triage officer with the best training stands at the door doing the sorting — which means the most experienced hands may treat the *fewest* patients, and that is correct, not cruel. Doing the greatest good is the hardest discipline in this course; it is also the discipline that saves the most people.",
+      },
+      {
+        type: "table",
+        title: "Everyday triage versus disaster triage",
+        body: "| | Everyday emergency | Mass casualty incident (MCI) |\n|---|---|---|\n| The arithmetic | Sickest first, cost no object | Greatest good for the greatest number — resources are finite |\n| RED | Immediate, full effort | Immediate: survivable and treatable now — airway, compressible bleed, tension pneumothorax |\n| YELLOW | Next in the urgent queue | Delayed: stable for hours despite serious injury |\n| GREEN | The queue | Minimal: walking wounded — treated, tagged, sometimes drafted as helpers |\n| Further categories | — | Expectant (comfort-focused, re-assessed) and deceased (designated area) |\n| The clock | Continuous treatment | Continuous re-triage — categories move as resources move |\n| The record | Full notes | Tag on the patient, a minimal log — the tracking team fills the gap later |\n\nThe colour words are the same; the meanings are not. The best-prepared teams say the difference out loud in drills, so it does not have to be discovered mid-disaster.",
+      },
+      {
+        type: "text",
+        title: "Command — and the nurse's place in it",
+        body: "Chaos is managed by structure. The hospital's disaster plan puts one **incident commander** at the top — usually the senior administrator or clinician on site — with defined roles around them: **triage** at the entrance, **treatment areas** divided by colour, **transport and ambulance loading**, **morgue and family reception**, **security** holding the perimeter, and **communications** — one radio channel, one runner system, one spokesperson, so the plan does not drown in noise. Nurses carry the spine of it: the triage officer is very often a senior nurse; the treatment areas are staffed by nurses; and the **patient tracking log** — number, name if known, tag colour, destination — is a nursing discipline that reunites families days later.\n\nThe personal half of the plan matters as much. Know where your facility's disaster plan lives and what your own role says. Know the stock — where the fluids, dressings, blankets and generator live, and who holds their keys. Have your **family's own emergency plan** — a nurse whose family is safe and reachable can stay at her post, and that is a hospital asset, not a private luxury. The Ghanaian chain: **call 112 for the Ghana National Ambulance Service**, and the **National Disaster Management Organisation (NADMO)** is notified through your facility's agreed channel. After every event — real or drill — comes the **after-action review**: what worked, what failed, what changes before the next siren. A plan that survives contact is a plan that was drilled.",
+      },
+      {
+        type: "case",
+        title: "On the ward",
+        body: "A head-on trotro crash on the main road. Your district hospital — four emergency beds, one doctor on call, three nurses on shift — receives word that at least fourteen casualties will arrive within twenty minutes, some in private cars.\n\nWhat happens in those twenty minutes?\n\nAnswer: Activate the disaster plan: the call to the doctor, the administrator and — through the agreed channel — GNAS on 112 and NADMO; the off-duty call-out list activated; runners clearing the emergency room and the nearby ward spaces into RED, YELLOW and GREEN areas; fluids, dressings and blankets pulled to the triage point; security warned to hold the perimeter, because the public arrives with the ambulances, bringing both love and noise. At the door: the most senior nurse becomes the triage officer, tags on, colours assigned and re-assessed as the flow continues; every casualty gets a number, name if known, colour and destination in one log; the walking wounded go GREEN, treated and recruited as carriers and interpreters; an expectant area is designated with one nurse whose assignment is comfort — written into the plan so nobody has to improvise it in tears. The doctor rotates among the RED casualties; the stable, referrable patients are staged for GNAS transfer to the regional hospital; the morgue pathway is prepared. And the after-action review is booked before the last casualty leaves — because the next trotro is already somewhere on the road.",
+      },
+      {
+        type: "clinical_pearl",
+        body: "In a disaster, the best-trained hands go to the door, not to the loudest patient — the triage officer saves more lives than any single rescuer. And the walking wounded are the most dangerous category of all: GREEN today can be the silent bleed of tomorrow. Tag, log, and keep looking.",
+      },
+      {
+        type: "memory_trick",
+        body: "Readiness is **S-T-A-N-D**: **S**tock (where it lives, who holds the keys), **T**eam (call-out list and your family's plan), **A**reas (RED, YELLOW, GREEN mapped in advance), **N**otify (112 for GNAS, NADMO through the channel), **D**rill and debrief — a plan undrilled is a wish. And the ethics in one line: the greatest good for the greatest number, re-triaged every time the resources move.",
+      },
+      {
+        type: "summary",
+        body: "- MCI = casualties overwhelm normal capacity; Ghana's history makes the lesson practical, not theoretical.\n- Disaster ethics: the greatest good for the greatest number — RED (survivable, treatable now), YELLOW (stable for hours), GREEN (walking wounded), expectant (comfort, dignity, re-assessed), deceased (designated area).\n- Categories are clinical and provisional: re-triage as resources change — GREEN patients still bleed.\n- Structure: incident commander, triage at the door (often a senior nurse), colour areas, tracking log, security, one communication channel; call 112 (GNAS), notify NADMO.\n- Personal readiness is professional: know the plan, the stock and your role — and your family's own plan. Then drill, review, revise.",
+      },
+    ],
+    questions: [
+      {
+        topic: "Mass Casualties",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "What ethical principle governs triage during a mass casualty incident?",
+        options: [
+          "First come, first treated",
+          "The sickest patient is treated first, whatever the cost, as on every ordinary day",
+          "Patients with the loudest relatives receive priority",
+          "The greatest good for the greatest number — resources go first to the salvageable patients that available care can save now",
+        ],
+        correctIndex: 3,
+        explanation:
+          "When casualties overwhelm resources, everyday sickest-first ethics would consume everything on the unsalvageable while salvageable patients wait and die. The MCI principle — greatest good for the greatest number — is hard, clinical, and re-assessed as resources change. It is not abandonment; it is arithmetic with compassion.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Mass Casualties",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "What does the expectant (grey or blue) category mean in disaster triage?",
+        options: [
+          "Patients expected to complain most, kept for last",
+          "Patients expected to recover fully without treatment",
+          "Patients whose injuries are unlikely to be survivable with the resources available — care focuses on comfort and dignity, with re-assessment if resources improve",
+          "Patients expected by relatives, held in reception",
+        ],
+        correctIndex: 2,
+        explanation:
+          "The expectant category is the hardest label in disaster medicine: injuries that available resources cannot save, so comfort and dignity become the treatment — assigned in the plan, not improvised in tears, and re-assessed whenever staff or supplies arrive.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Mass Casualties",
+        type: "MCQ",
+        difficulty: "Easy",
+        stem: "A district hospital receives early warning of multiple casualties from a highway crash. What is among the FIRST actions?",
+        options: [
+          "Activate the disaster plan — alert the call-out list, call GNAS on 112 and the notification chain, and begin clearing and mapping the treatment areas",
+          "Lock the gates and continue routine clinic, since the casualties may not arrive",
+          "Wait for the first ambulance, then decide the scale",
+          "Discharge all current inpatients immediately to create empty beds",
+        ],
+        correctIndex: 0,
+        explanation:
+          "The twenty minutes before the ambulances are worth more than the two hours after them: plan activation, staff recall, area preparation and notification — 112 for the ambulance service, NADMO through the agreed channel — convert chaos into command. Waiting for scale, or discharging patients into the street, are the classic false economies.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Mass Casualties",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "During an MCI, why are the walking wounded (GREEN) still watched carefully?",
+        options: [
+          "They are assigned to guard the perimeter instead of being treated",
+          "Their category is provisional: a quiet internal bleed can turn a walking patient into a shocked RED casualty hours later — tags are re-checked on a cycle",
+          "They receive no treatment at all during an MCI",
+          "They are always sent home on the first available transport",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The walking wounded are the dangerous category: stable-looking patients with splenic or pelvic injuries drift into shock quietly. Tags are provisional; the re-triage cycle — and the tracking log — catch the drift before the collapse does.",
+        courseSlug: "critical-care-nursing",
+      },
+    ],
+    flashcards: [
+      {
+        topic: "Mass Casualties",
+        front: "Define a mass casualty incident.",
+        back: "Any event whose casualties exceed what the facility can manage with normal staffing and resources — a full waiting room is workload; an MCI is a different ethical and operational world.",
+      },
+      {
+        topic: "Mass Casualties",
+        front: "The disaster triage categories and their meanings.",
+        back: "RED — immediate: survivable, treatable now (airway, compressible bleed, tension pneumothorax). YELLOW — delayed: stable for hours. GREEN — minimal: walking wounded. Expectant — unsurvivable with available resources: comfort, dignity, re-assessed. BLACK — deceased, designated area.",
+      },
+      {
+        topic: "Mass Casualties",
+        front: "How does disaster ethics differ from everyday triage ethics?",
+        back: "Every day: sickest first, cost unlimited. MCI: the greatest good for the greatest number — finite resources go where they save the most lives, and categories move as resources move.",
+      },
+      {
+        topic: "Mass Casualties",
+        front: "The nurse's personal readiness before any disaster?",
+        back: "Know the plan and your role in it, the stock locations and key-holders, the call-out list — and hold your own family's emergency plan: a nurse whose family is safe can stay at the post. Call 112 for GNAS; NADMO is notified through the facility channel.",
+      },
+    ],
+    sources: [
+      {
+        organization: "World Health Organization",
+        title: "Hospital emergency preparedness and mass casualty management guidance",
+        note: "WHO emergency preparedness and response resources; verify current edition.",
+      },
+      {
+        organization: "National Disaster Management Organisation (NADMO)",
+        title: "Disaster response coordination in Ghana",
+        note: "National disaster coordination body; verify current structures and contacts.",
+      },
+      {
+        organization: "Ghana National Ambulance Service",
+        title: "National emergency medical line 112 — training and coordination resources",
+        note: "Verify current materials.",
+      },
+      {
+        organization: "Ghana Health Service",
+        title: "Hospital disaster preparedness guidance",
+        note: "Facility-level planning; verify current edition.",
+      },
+    ],
+  },
+
+  // ── 11 ─────────────────────────────────────────────────────
+  {
+    courseSlug: "critical-care-nursing",
+    moduleTitle: "Organising Emergency Care",
+    lessonTitle: "After the Emergency: The Family & the Team",
+    description:
+      "Breaking bad news with structure and warmth, bereavement care that honours Ghanaian families, and the debrief that keeps the team standing.",
+    difficulty: "Moderate",
+    durationMin: 11,
+    objectives: [
+      "Structure difficult conversations with SPIKES — setting, perception, invitation, knowledge, empathy, strategy.",
+      "Apply culturally humble bereavement care: plain words, viewing and time, rites asked about, documentation explained, follow-up arranged.",
+      "Apply post-event team care: the hot debrief, no-blame incident reporting, and recognising lasting distress in yourself and colleagues.",
+    ],
+    tags: ["family", "bereavement", "communication", "debriefing"],
+    sourceStatus: "PROPOSED",
+    sections: [
+      {
+        type: "text",
+        title: "What this lesson is about",
+        body: "The resuscitation ends. For the team, the emergency is over; for the family standing in the corridor, it is just beginning — and the difference between a family that grieves well and a family that breaks is very often the nurse standing in front of them.\n\nThis closing lesson of the course is about the two groups who were hit by the same event and are left standing when the adrenaline drains: the family — how bad news is broken, how death is announced, how grief is accompanied with cultural humility — and the team itself, how a shift that hurt is unpacked so that it does not become the wound that never closes.",
+      },
+      {
+        type: "text",
+        title: "Breaking bad news — SPIKES",
+        body: "Bad news is a procedure, and like any procedure it has steps — the widely taught **SPIKES** sequence.\n\n**S — Setting**: a private space, everyone seated, phones away, enough time — and the question that matters in a Ghanaian context: *who should be present?* Decision-making often flows through the family head or elders; ask early and include respectfully rather than circumvent. **P — Perception**: ask what they already understand — 'tell me what the doctors have said so far' — so you build on their truth, not your assumption. **I — Invitation**: how much do they want to know now, and what can wait? **K — Knowledge**: a warning shot first — 'I am sorry, I have difficult news' — then the news itself in **plain words, in short sentences, in the family's own language where possible**, with silence allowed to do its work. A frightened family hears one sentence in ten; say the essential one slowly, and say it again later. **E — Empathy**: name the feeling, do not argue with it, do not bury it in platitudes — and answer the question underneath the questions, which is usually guilt: did we bring her too late? **S — Strategy and Summary**: what happens next, what has been agreed, who they will hear from and when — one consistent voice across the days, not a parade of strangers updating in riddles. Check understanding with a gentle 'tell me what you have understood so far' — teach-back belongs in grief as much as in health education.",
+      },
+      {
+        type: "text",
+        title: "When the patient has died",
+        body: "Death is communicated in the same architecture — SPIKES with a heavier K. Warn, then use the word: **'I am so sorry. He has died.'** Not 'he passed', not 'he is gone', not 'we lost him' — euphemisms a shocked listener can mishear as discharge or transfer, and false hope is the cruelest inheritance of a vague sentence.\n\nThen the accompaniment: **silence**, offered without discomfort; permission to **see the body**, prepared with dignity, with unhurried time in a private space; the practical, compassionate details — belongings listed and returned, the death certificate and burial documentation pathway explained one step at a time and written down, because grief remembers nothing. Ask about the **rites and customs** rather than assuming them — the pastor or imam, the family head, the arrangements that matter in this family's tradition; and where death is sudden, violent or unexplained, explain the medico-legal pathway gently and honestly, because it is law, and families fear it less when it is not a surprise. Memory-making has a place at every age — photographs, a lock of hair, the naming of a baby who died — offered, never imposed. And follow-up is part of the care: a call or visit in the weeks after tells the family that the person who died was a person, not a bed number. You do not need perfect words. You need honest ones, offered with warmth, repeated as often as it takes.",
+      },
+      {
+        type: "text",
+        title: "The team after the code",
+        body: "The patient and the family were not the only people in the room. A resuscitation, a death, a bad shift land in the bodies of the staff who were there, and the profession's old culture of 'just carry on' is how yesterday's unprocessed event becomes next year's burned-out nurse.\n\nThe **hot debrief** is ten minutes, right after the event, wherever there is a corner — three questions only: *What went well? What would we change? Is anyone struggling?* No rank, no blame, no file: its purpose is decompression and learning, and teams that hold it function better the next time. The **formal review** comes later — the audit and the incident report, written in a **no-blame culture** that treats errors as system news rather than personal shame, with the documentation completed honestly, because the notes are the patient's last voice.\n\nThen watch yourself and each other across the weeks: the sleeplessness that stays, the intrusive images, the dread of a ward or a task. These are not weakness — they are the normal aftermath of abnormal events, and they answer to talking, to peer support, to counselling wherever your facility or the wider health system offers it, and to time. The nurse who looks after herself is not stealing anything from patients. She is maintaining the instrument the patients need.",
+      },
+      {
+        type: "case",
+        title: "On the ward",
+        body: "The okada rider from the shock lesson dies at 02:10 despite everything. At 05:30 his wife, his mother and three men from the extended family arrive — loud, frightened, angry. A cousin has already said on the phone that 'nobody even called', which is not true. They are standing at the OPD entrance while the morning queue watches.\n\nWhat happens in the next twenty minutes?\n\nAnswer: Meet the anger without matching it — calm voices, no argument at the door. Move the family to the private room: everyone seated, water offered, phones set aside; ask for the family head or senior member, and if the family's first language differs, find the interpreter before the news, not after. Then SPIKES: perception — what did the cousin tell them? A warning shot — 'I am so sorry; I have very difficult news' — then the plain sentence: 'he died this morning. We tried everything, and he died.' Silence, held as long as it needs. The story afterwards, in small honest pieces: the crash, the bleeding, the transfusion, the moment his heart stopped — and the guilt question answered before it festers: nobody's delay brought him too late; his injuries were beyond what surgery could save — said plainly and kindly. Then the accompaniment: seeing the body together, prepared with dignity; the medico-legal steps of a sudden death explained in writing, one step at a time; the belongings listed; a contact name and number for the questions that come at midnight. One staff member stays assigned to the family all morning. And before the shift ends — the hot debrief, because the night team fought and lost at 02:10, and the ones who were there need the ten minutes that says: you did well, and this one was not yours to win.",
+      },
+      {
+        type: "clinical_pearl",
+        body: "Warn, then say the word. Silence is the space where grief breathes; euphemism is the space where false hope grows. And the sentence that helps most is rarely a sentence at all — it is the chair you pull up, the silence you can sit in, and the name of the person you promise will call them back.",
+      },
+      {
+        type: "memory_trick",
+        body: "**SPIKES: S**etting (private, seated, who should be present?), **P**erception (what do they already know?), **I**nvitation (how much now?), **K**nowledge (warn, then plain words), **E**mpathy (name the feeling), **S**trategy (what happens next — one consistent voice). And for the team: **the ten-minute debrief is part of the resuscitation, not an afterthought.**",
+      },
+      {
+        type: "summary",
+        body: "- Breaking bad news is a procedure: SPIKES — setting with the right elders present, perception, invitation, knowledge in plain language, empathy, strategy — with teach-back to check understanding.\n- In death: warn, then say 'died' — never euphemisms that mishear into false hope; allow silence, viewing and time; explain documentation and medico-legal steps in writing; offer memory-making and follow-up.\n- Work with the family's structure and faith — the family head, the pastor or imam, the customs — asked about, never assumed.\n- The team needs the hot debrief (ten minutes: what went well, what changes, is anyone struggling) and the no-blame incident culture; lasting distress is normal aftermath, not weakness.\n- The nurse who cares for herself is maintaining the instrument patients need.",
+      },
+    ],
+    questions: [
+      {
+        topic: "Family & Team",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "In SPIKES, what does the K step require of the news-giver?",
+        options: [
+          "Precise medical terminology, so the family respects the information",
+          "Delaying the news until every relative has gathered, however long it takes",
+          "A warning sentence, then the news in plain short words — in the family's own language where possible — with silence allowed",
+          "A euphemism such as 'she passed on', to soften the impact",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Knowledge lands when it is warned and then translated: 'I have difficult news' prepares the ear; plain short sentences deliver the truth; the family's language carries it; silence lets it arrive. Jargon distances, and euphemism — as the next question shows — creates its own casualties.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Family & Team",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "Why are phrases like 'he passed' or 'we lost him' dangerous when telling a family about a death?",
+        options: [
+          "They are too medically technical for most families",
+          "They can be misheard as discharge, transfer or a missing person — planting false hope, then deeper anger; the clear word 'died' leaves no room for misunderstanding",
+          "They are only dangerous when translators are present",
+          "They are actually the recommended form in professional guidelines",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Euphemism is meant kindly and lands cruelly: shocked listeners genuinely mishear 'we lost him' as a search problem and 'passed' as a procedure. The plain word hurts once, honestly; the vague word hurts twice — once as hope, once as betrayal.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Family & Team",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "What is the purpose of a hot debrief after a resuscitation?",
+        options: [
+          "To identify and reprimand whoever performed worst, for accountability",
+          "Ten minutes of decompression and learning — what went well, what we would change, is anyone struggling — no blame, no rank, no file",
+          "To complete the patient's notes as a group while memories are fresh",
+          "To decide the staffing rota for the next similar emergency",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The hot debrief treats the team as patients of the event: decompressing the adrenaline, capturing the learning while fresh, surfacing anyone struggling — with no blame and no rank. Documentation and rosters are real tasks that belong elsewhere; blame has no place in a learning debrief.",
+        courseSlug: "critical-care-nursing",
+      },
+      {
+        topic: "Family & Team",
+        type: "CLINICAL_SCENARIO",
+        difficulty: "Moderate",
+        stem: "An angry, loud family arrives hours after their relative died in your hospital. What is the best first response?",
+        options: [
+          "Meet the volume with firm authority — a strong voice restores order",
+          "Have security remove the loudest relatives immediately",
+          "Explain the clinical details at the entrance so everyone hears at once",
+          "Stay calm, move the family to a private room, seat them, identify the family head and an interpreter — then deliver the news with SPIKES",
+        ],
+        correctIndex: 3,
+        explanation:
+          "Anger at the door is grief wearing armour: it is lowered by calm, privacy, seating and inclusion — not by counter-volume or force. Clinical detail shouted across an entrance is neither SPIKES nor dignity. The sequence — room, seats, head, interpreter, then the plain truth — is how the same family becomes a partner in the hours ahead.",
+        courseSlug: "critical-care-nursing",
+      },
+    ],
+    flashcards: [
+      {
+        topic: "Family & Team",
+        front: "Name the six SPIKES steps.",
+        back: "Setting (private, seated, the right people present); Perception (what do they already know?); Invitation (how much now?); Knowledge (warn, then plain words); Empathy (name the feeling); Strategy (next steps, one consistent voice).",
+      },
+      {
+        topic: "Family & Team",
+        front: "How should death be communicated, in one rule?",
+        back: "Warn — 'I have difficult news' — then the plain word: 'he has died.' No euphemisms that mishear into false hope. Then silence, viewing, time, rites asked about, and documentation explained in writing.",
+      },
+      {
+        topic: "Family & Team",
+        front: "What is a hot debrief, and what are its three questions?",
+        back: "Ten minutes straight after the event: What went well? What would we change? Is anyone struggling? No blame, no rank — decompression and learning before the team disperses.",
+      },
+      {
+        topic: "Family & Team",
+        front: "Why is the nurse's own recovery part of professional care?",
+        back: "Unprocessed events become burnout, errors and exits from the profession; debriefs, peer support and counselling keep the instrument — the nurse — in working order. Self-care is patient care at one remove.",
+      },
+    ],
+    sources: [
+      {
+        organization: "Nursing and Midwifery Council of Ghana",
+        title: "Code of Professional Conduct for Nurses",
+        note: "Professional obligations in communication and confidentiality; verify current edition.",
+      },
+      {
+        organization: "World Health Organization",
+        title: "Patient Safety Curriculum Guide: Multi-professional Edition",
+        year: "2011",
+        note: "Communication, teamwork and incident-reporting culture; verify current edition.",
+      },
+      {
+        organization: "Ghana Health Service",
+        title: "Quality assurance and staff support guidance",
+        note: "Incident reporting and staff welfare pathways; verify current materials.",
       },
     ],
   },

@@ -84,7 +84,7 @@ export function PrintablePaper({ job, onDone }: { job: PaperPrintJob; onDone: ()
           {/* ── paper header ── */}
           <div className="flex items-baseline justify-between">
             <p style={{ fontSize: "8.5pt", letterSpacing: "0.22em", textTransform: "uppercase", color: "#8d4f6b", fontWeight: 700 }}>
-              Mimie&apos;s Study · Midwifery Academy
+              Mimie&apos;s Study · Nursing Academy
             </p>
             <p style={{ fontSize: "8.5pt", color: "#4a3f45", fontVariantNumeric: "tabular-nums" }}>{paperCode}</p>
           </div>

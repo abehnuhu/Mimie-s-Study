@@ -41,7 +41,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "During a night shift you review a woman three days after caesarean section. Her wound edges are red and hot, the surrounding tissue is swollen, and she says even the bedsheet brushing it hurts. Her temperature is 37.9 °C, and a colleague documented 'dressing clean, wound fine' at morning review. Which cardinal signs are present, and what should happen next?\n\nAnswer: Redness, heat, swelling and pain — four of the five cardinal signs — with mild fever point to an inflamed, probably infected wound rather than normal healing. Describe exactly what you see in the notes, take a wound swab if protocol allows, and report to the senior midwife or doctor today. A wound infection needs treatment of its cause, not just a fresh dressing and reassurance.",
+        body: "During a night shift you review a woman three days after caesarean section. Her wound edges are red and hot, the surrounding tissue is swollen, and she says even the bedsheet brushing it hurts. Her temperature is 37.9 °C, and a colleague documented 'dressing clean, wound fine' at morning review. Which cardinal signs are present, and what should happen next?\n\nAnswer: Redness, heat, swelling and pain — four of the five cardinal signs — with mild fever point to an inflamed, probably infected wound rather than normal healing. Describe exactly what you see in the notes, take a wound swab if protocol allows, and report to the senior nurse or doctor today. A wound infection needs treatment of its cause, not just a fresh dressing and reassurance.",
       },
       {
         type: "memory_trick",

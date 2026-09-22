@@ -1329,7 +1329,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives (17th edition)",
+        title: "Myles Textbook for Nurses (17th edition)",
         note: "Educational source — verify current edition.",
       },
     ],
@@ -2080,7 +2080,7 @@ export const lessons: SeedFullLesson[] = [
         topic: "Contact Dermatitis",
         type: "MCQ",
         difficulty: "Moderate",
-        stem: "A midwife develops itchy, red, blistered hands a day after wearing gloves — worse each month. Which type and trigger?",
+        stem: "A nurse develops itchy, red, blistered hands a day after wearing gloves — worse each month. Which type and trigger?",
         options: [
           "Type I immediate anaphylaxis to latex proteins",
           "Type II cytotoxic attack on her red cells",
@@ -2123,7 +2123,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives (17th edition)",
+        title: "Myles Textbook for Nurses (17th edition)",
         note: "Educational source — verify current edition.",
       },
     ],

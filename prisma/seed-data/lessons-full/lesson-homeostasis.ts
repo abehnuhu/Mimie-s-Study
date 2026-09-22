@@ -20,7 +20,7 @@ export const lessonHomeostasis: SeedFullLesson = {
     {
       type: "callout",
       title: "Why this matters",
-      body: "Homeostasis is the reason a body can be quietly unwell before it looks unwell. Midwives read compensation for a living — the pulse that rises before the pressure falls, the fever that spikes before the shiver. Master the loop behind these shifts, and the observation chart becomes a story you can actually read.",
+      body: "Homeostasis is the reason a body can be quietly unwell before it looks unwell. Nurses read compensation for a living — the pulse that rises before the pressure falls, the fever that spikes before the shiver. Master the loop behind these shifts, and the observation chart becomes a story you can actually read.",
     },
     {
       type: "text",
@@ -60,17 +60,17 @@ export const lessonHomeostasis: SeedFullLesson = {
     {
       type: "text",
       title: "When the loop fights for your patient: compensation",
-      body: "Here is where homeostasis becomes clinical. When blood volume drops — say, after a childbirth haemorrhage — the baroreceptor loop does not wait politely. The heart rate climbs and vessels tighten, so blood pressure holds almost normal... for a while.\n\nThe loop is winning, so the chart looks reassuring. But it is paying for that appearance, and the pulse rate is the price tag. A young woman with a rising pulse and a 'normal' blood pressure after delivery is not stable — she is compensated, and compensation has a deadline.\n\nThis is why observations matter as a trend, not as single numbers. A pulse of 96, then 110, then 124 across three checks is a story the loop is telling you. Read it early, escalate early — recognition and reporting are the student midwife's superpower.",
+      body: "Here is where homeostasis becomes clinical. When blood volume drops — say, after a childbirth haemorrhage — the baroreceptor loop does not wait politely. The heart rate climbs and vessels tighten, so blood pressure holds almost normal... for a while.\n\nThe loop is winning, so the chart looks reassuring. But it is paying for that appearance, and the pulse rate is the price tag. A young woman with a rising pulse and a 'normal' blood pressure after delivery is not stable — she is compensated, and compensation has a deadline.\n\nThis is why observations matter as a trend, not as single numbers. A pulse of 96, then 110, then 124 across three checks is a story the loop is telling you. Read it early, escalate early — recognition and reporting are the student nurse's superpower.",
     },
     {
       type: "quiz_prompt",
       title: "The quiet postpartum trend",
-      body: "One hour after birth, a woman's pulse moves from 84 to 102 to 118 across three observations. Her blood pressure is still 108/70, and she is pale but calm. Which single observation should concern you most — and what does it say about the blood pressure reading?\n\nAnswer: The rising pulse is the concerning finding — in a compensated patient, tachycardia appears before blood pressure falls, so a 'normal' BP must not be read as reassurance. The pattern calls for immediate reporting to the midwife in charge so bleeding can be ruled out early.",
+      body: "One hour after birth, a woman's pulse moves from 84 to 102 to 118 across three observations. Her blood pressure is still 108/70, and she is pale but calm. Which single observation should concern you most — and what does it say about the blood pressure reading?\n\nAnswer: The rising pulse is the concerning finding — in a compensated patient, tachycardia appears before blood pressure falls, so a 'normal' BP must not be read as reassurance. The pattern calls for immediate reporting to the nurse in charge so bleeding can be ruled out early.",
     },
     {
       type: "case",
       title: "The quiet delivery room",
-      body: "Mimie, you are the student midwife on the evening shift. Madam Adjoa delivered a healthy boy 40 minutes ago. She is chatty, breastfeeding, and says she feels 'fine, just tired'. The midwife asks you to do the 40-minute fourth-stage observations while she attends another woman.\n\nYou find: fundus firm and central, moderate lochia, pulse 112 (it was 88 during labour), blood pressure 106/64, skin slightly cool and pale, and a little restlessness between her sentences.\n\nWhich observation is out of step with her own baseline? What could a quietly rising pulse at 40 minutes postpartum mean even when the fundus feels firm? What is your best move as the student — recheck quietly in an hour, or report now? And what exactly would you say to the midwife in charge so she can act fast?\n\nNotice the shape of this case: nothing is dramatic, and that is precisely the trap. Compensation is quiet by design — your job is to notice the pattern and report it, not to diagnose it alone.",
+      body: "Mimie, you are the student nurse on the evening shift. Madam Adjoa delivered a healthy boy 40 minutes ago. She is chatty, breastfeeding, and says she feels 'fine, just tired'. The nurse asks you to do the 40-minute fourth-stage observations while she attends another woman.\n\nYou find: fundus firm and central, moderate lochia, pulse 112 (it was 88 during labour), blood pressure 106/64, skin slightly cool and pale, and a little restlessness between her sentences.\n\nWhich observation is out of step with her own baseline? What could a quietly rising pulse at 40 minutes postpartum mean even when the fundus feels firm? What is your best move as the student — recheck quietly in an hour, or report now? And what exactly would you say to the nurse in charge so she can act fast?\n\nNotice the shape of this case: nothing is dramatic, and that is precisely the trap. Compensation is quiet by design — your job is to notice the pattern and report it, not to diagnose it alone.",
     },
     {
       type: "quiz_prompt",
@@ -116,7 +116,7 @@ export const lessonHomeostasis: SeedFullLesson = {
       stem: "One hour after a normal delivery, a woman's pulse is 118 (booking baseline 88), blood pressure 104/66, skin pale and cool, and she is calm. Which interpretation fits best?",
       options: [
         "She is stable because her blood pressure is normal",
-        "Her signs suggest she may be compensating for blood loss; the tachycardia deserves immediate escalation to the midwife in charge",
+        "Her signs suggest she may be compensating for blood loss; the tachycardia deserves immediate escalation to the nurse in charge",
         "The tachycardia is a positive feedback loop triggered by breastfeeding and needs no action",
         "She is most likely chronically anaemic and can wait for review at the next routine visit",
       ],
@@ -277,7 +277,7 @@ export const lessonHomeostasis: SeedFullLesson = {
     },
     {
       organization: "Elsevier",
-      title: "Myles Textbook for Midwives",
+      title: "Myles Textbook for Nurses",
       year: "2020 (17th edition)",
       note: "Educational source — verify current edition.",
     },

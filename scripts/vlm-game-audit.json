@@ -28,7 +28,7 @@
  "cord-clamp": "OK",
  "gloves-wearing": "OK",
  "hand-sanitizer": "OK",
- "midwife-ghana": "MISMATCH: a nurse or midwife standing alone in a hospital room",
+ "nurse-ghana": "MISMATCH: a nurse or nurse standing alone in a hospital room",
  "pinard": "OK",
  "sharps-bin": "OK",
  "sharps-full": "MISMATCH: an empty sharps bin with the lid open",

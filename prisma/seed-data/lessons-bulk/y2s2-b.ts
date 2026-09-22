@@ -133,7 +133,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives (17th edition)",
+        title: "Myles Textbook for Nurses (17th edition)",
       },
     ],
   },
@@ -172,7 +172,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "A woman at 34 weeks is admitted with headache and a blood pressure of 172/114, protein ++ on dipstick. The midwife in charge asks you to give oral nifedipine 10 mg as prescribed and prepare magnesium sulfate per protocol.\n\nWhat do you check before the dose, and what is the goal of treatment?\n\nAnswer: Confirm the reading with the right cuff and check the fetal heart first. Then re-check the blood pressure at your unit's intervals — nifedipine can drop pressure quickly, and a precipitous fall reduces placental blood flow. The goal is a controlled reduction to your protocol's range, while magnesium sulfate protects against seizures and delivery is planned.",
+        body: "A woman at 34 weeks is admitted with headache and a blood pressure of 172/114, protein ++ on dipstick. The nurse in charge asks you to give oral nifedipine 10 mg as prescribed and prepare magnesium sulfate per protocol.\n\nWhat do you check before the dose, and what is the goal of treatment?\n\nAnswer: Confirm the reading with the right cuff and check the fetal heart first. Then re-check the blood pressure at your unit's intervals — nifedipine can drop pressure quickly, and a precipitous fall reduces placental blood flow. The goal is a controlled reduction to your protocol's range, while magnesium sulfate protects against seizures and delivery is planned.",
       },
       {
         type: "memory_trick",
@@ -265,7 +265,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives (17th edition)",
+        title: "Myles Textbook for Nurses (17th edition)",
       },
     ],
   },
@@ -554,12 +554,12 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "About one person in four will face a mental health condition in a lifetime — and postnatal depression, anxiety and psychosis sit squarely inside midwifery territory. The medicines that treat them are ordinary tools of recovery, yet stigma makes patients hide them, stop them, and suffer twice.\n\nThis lesson introduces the three families you will meet — antidepressants, antipsychotics and anxiolytics — in plain, judgment-free language, with the watching points that keep them safe.",
+        body: "About one person in four will face a mental health condition in a lifetime — and postnatal depression, anxiety and psychosis sit squarely inside nursing territory. The medicines that treat them are ordinary tools of recovery, yet stigma makes patients hide them, stop them, and suffer twice.\n\nThis lesson introduces the three families you will meet — antidepressants, antipsychotics and anxiolytics — in plain, judgment-free language, with the watching points that keep them safe.",
       },
       {
         type: "text",
         title: "The core ideas",
-        body: "**Antidepressants**: the SSRIs (sertraline, fluoxetine) raise serotonin signalling by blocking its re-uptake. They are first-line for depression and anxiety, and sertraline is among the preferred choices in pregnancy and breastfeeding. Patients must know two things: benefit takes two to four weeks, and stopping must be gradual and supervised — abrupt stop brings withdrawal. In younger adults, watch the early weeks for new agitation or thoughts of self-harm and report them.\n\n**Antipsychotics** (risperidone, haloperidol) settle the disordered thinking of psychosis. Watch for extrapyramidal effects — the stiff, shuffling body or restless legs — and, long-term, weight gain and metabolic changes. The **benzodiazepines**, like diazepam, calm acute anxiety fast, but they sedate, interact dangerously with alcohol, and create dependence when used for weeks; you have met IV diazepam in obstetrics, the old eclampsia treatment before magnesium took over. Whatever the drug, the midwife's work is the same: guard confidentiality, confront stigma gently — the brain is an organ like any other, and its medicine is spectacles for poor vision, not a confession of weakness — and check adherence without interrogating.",
+        body: "**Antidepressants**: the SSRIs (sertraline, fluoxetine) raise serotonin signalling by blocking its re-uptake. They are first-line for depression and anxiety, and sertraline is among the preferred choices in pregnancy and breastfeeding. Patients must know two things: benefit takes two to four weeks, and stopping must be gradual and supervised — abrupt stop brings withdrawal. In younger adults, watch the early weeks for new agitation or thoughts of self-harm and report them.\n\n**Antipsychotics** (risperidone, haloperidol) settle the disordered thinking of psychosis. Watch for extrapyramidal effects — the stiff, shuffling body or restless legs — and, long-term, weight gain and metabolic changes. The **benzodiazepines**, like diazepam, calm acute anxiety fast, but they sedate, interact dangerously with alcohol, and create dependence when used for weeks; you have met IV diazepam in obstetrics, the old eclampsia treatment before magnesium took over. Whatever the drug, the nurse's work is the same: guard confidentiality, confront stigma gently — the brain is an organ like any other, and its medicine is spectacles for poor vision, not a confession of weakness — and check adherence without interrogating.",
       },
       {
         type: "clinical_pearl",
@@ -642,7 +642,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         topic: "Psychotropic Medications",
-        front: "The midwife's stance toward psychotropic medication and stigma?",
+        front: "The nurse's stance toward psychotropic medication and stigma?",
         back: "Confidential, non-judgmental support; mental illness is a health condition like any other. Encourage adherence and follow-up, involve the family, and report any thoughts of self-harm.",
       },
     ],
@@ -780,7 +780,7 @@ export const lessons: SeedFullLesson[] = [
     sources: [
       {
         organization: "WHO",
-        title: "Managing complications in pregnancy and childbirth: a guide for midwives and doctors",
+        title: "Managing complications in pregnancy and childbirth: a guide for nurses and doctors",
         year: "2017",
       },
       {
@@ -1209,7 +1209,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "A disaster is not simply a bad event. WHO describes it as a serious disruption that overwhelms a community's ability to cope using its own resources. By that definition, a three-car crash can be a disaster for a CHPS compound with one midwife — while the same crash is a busy Tuesday in a teaching hospital.\n\nPreparedness is everything a facility and community do before the event so that the day itself is survivable. It is unglamorous work — meetings, checklists, drills — and it is the difference between a flood that drowns and a flood that is survived.",
+        body: "A disaster is not simply a bad event. WHO describes it as a serious disruption that overwhelms a community's ability to cope using its own resources. By that definition, a three-car crash can be a disaster for a CHPS compound with one nurse — while the same crash is a busy Tuesday in a teaching hospital.\n\nPreparedness is everything a facility and community do before the event so that the day itself is survivable. It is unglamorous work — meetings, checklists, drills — and it is the difference between a flood that drowns and a flood that is survived.",
       },
       {
         type: "text",
@@ -1349,12 +1349,12 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         type: "clinical_pearl",
-        body: "The most useful sentence on the day is not 'I want to help' but 'Midwife X reporting for assignment — where do you need me?' Identify yourself, take a role, keep the loop closed.",
+        body: "The most useful sentence on the day is not 'I want to help' but 'Nurse X reporting for assignment — where do you need me?' Identify yourself, take a role, keep the loop closed.",
       },
       {
         type: "case",
         title: "On the ward",
-        body: "At 2 a.m., floodwater reaches the district hospital compound. Off-duty staff arrive spontaneously; some wade straight toward the maternity ward to 'help move the mothers.' A student midwife phones you from home.\n\nWhat do you tell her?\n\nAnswer: Come safe, come into the system. Travel by a safe route, report to the staging point rather than into the water, and take the role assigned — moving stable mothers upstairs, tracking names on the ward list, or the supply run. Do not wade into moving floodwater and do not self-assign to the labour room; and if sent home because staffing is enough, rest with the phone on — the response will outlast the first shift, and the second crew matters as much as the first.",
+        body: "At 2 a.m., floodwater reaches the district hospital compound. Off-duty staff arrive spontaneously; some wade straight toward the maternity ward to 'help move the mothers.' A student nurse phones you from home.\n\nWhat do you tell her?\n\nAnswer: Come safe, come into the system. Travel by a safe route, report to the staging point rather than into the water, and take the role assigned — moving stable mothers upstairs, tracking names on the ward list, or the supply run. Do not wade into moving floodwater and do not self-assign to the labour room; and if sent home because staffing is enough, rest with the phone on — the response will outlast the first shift, and the second crew matters as much as the first.",
       },
       {
         type: "memory_trick",
@@ -1475,7 +1475,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The core ideas",
-        body: "**Tools.** Two-way radios with spare batteries, charged at designated points; **runners** carrying written messages both ways, because paper does not misremember; whiteboards listing patients, tags and destinations; megaphones for crowds. Text messages sometimes survive when calls cannot — and one designated person calling one designated number beats a hundred everyone-calls.\n\n**Words.** The closed loop: the sender names the receiver and sends the message in short chunks; the receiver reads it back; the sender confirms. Without that read-back, orders mutate as they travel. Use names ('Midwife Adjoa, give ampicillin one gram now — read back please'), avoid codes, speak in numbers: 'respiratory rate twenty-four', not 'breathing fast-ish'. For handovers, SBAR still rules — Situation, Background, Assessment, Recommendation, with the decision stated outright. And the structure holds it together: briefings at set intervals from the incident commander; one channel for orders; a scribe logging times and decisions; a visible tracking board. The speak-up culture that patient safety built survives the disaster — the quietest 'I think that dose is wrong' may be the most important sentence of the shift.",
+        body: "**Tools.** Two-way radios with spare batteries, charged at designated points; **runners** carrying written messages both ways, because paper does not misremember; whiteboards listing patients, tags and destinations; megaphones for crowds. Text messages sometimes survive when calls cannot — and one designated person calling one designated number beats a hundred everyone-calls.\n\n**Words.** The closed loop: the sender names the receiver and sends the message in short chunks; the receiver reads it back; the sender confirms. Without that read-back, orders mutate as they travel. Use names ('Nurse Adjoa, give ampicillin one gram now — read back please'), avoid codes, speak in numbers: 'respiratory rate twenty-four', not 'breathing fast-ish'. For handovers, SBAR still rules — Situation, Background, Assessment, Recommendation, with the decision stated outright. And the structure holds it together: briefings at set intervals from the incident commander; one channel for orders; a scribe logging times and decisions; a visible tracking board. The speak-up culture that patient safety built survives the disaster — the quietest 'I think that dose is wrong' may be the most important sentence of the shift.",
       },
       {
         type: "clinical_pearl",
@@ -1602,7 +1602,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "After the flood recedes and the wounds are dressed, something invisible remains: people shaking, mute, wandering or wailing. Psychological first aid — PFA — is the first response to that suffering. It requires no psychology degree: it is humane, practical presence, offered until professional help is available.\n\nPFA belongs to midwifery as much as to disasters. The mother who has delivered a stillborn baby at midnight is a survivor of a crisis too, and the same quiet skills hold her.",
+        body: "After the flood recedes and the wounds are dressed, something invisible remains: people shaking, mute, wandering or wailing. Psychological first aid — PFA — is the first response to that suffering. It requires no psychology degree: it is humane, practical presence, offered until professional help is available.\n\nPFA belongs to nursing as much as to disasters. The mother who has delivered a stillborn baby at midnight is a survivor of a crisis too, and the same quiet skills hold her.",
       },
       {
         type: "text",
@@ -1851,13 +1851,13 @@ export const lessons: SeedFullLesson[] = [
     moduleTitle: "Public Health Foundations",
     lessonTitle: "What Is Public Health?",
     description:
-      "From clean water to health policy — the discipline that treats whole populations, and why every midwife already works in it.",
+      "From clean water to health policy — the discipline that treats whole populations, and why every nurse already works in it.",
     difficulty: "Easy",
     durationMin: 12,
     objectives: [
       "Define public health in Winslow's terms and describe the population lens.",
       "Describe the core functions and the three levels of prevention.",
-      "Identify Ghana's public health structures and the midwife's role within them.",
+      "Identify Ghana's public health structures and the nurse's role within them.",
     ],
     tags: ["public health", "foundations", "prevention levels", "chps", "ghana health service"],
     sourceStatus: "GCU_ALIGNED",
@@ -1865,12 +1865,12 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "You treat one mother; public health asks why forty mothers in this district were anaemic before they ever reached you. That shift of lens — from the patient in front of you to the population behind her — is the whole of public health.\n\nCharles-Edward Winslow's 1920 definition still stands: public health is the science and art of preventing disease, prolonging life and promoting health through organized community effort. As a midwife you are not adjacent to that effort; you are one of its frontline workers.",
+        body: "You treat one mother; public health asks why forty mothers in this district were anaemic before they ever reached you. That shift of lens — from the patient in front of you to the population behind her — is the whole of public health.\n\nCharles-Edward Winslow's 1920 definition still stands: public health is the science and art of preventing disease, prolonging life and promoting health through organized community effort. As a nurse you are not adjacent to that effort; you are one of its frontline workers.",
       },
       {
         type: "text",
         title: "The core ideas",
-        body: "Public health's **core functions** are three: **assessment** — measuring the population's health (how many home deliveries? which community's children are stunted?); **policy development** — turning evidence into rules (salt iodisation, tobacco taxation, free maternal care); and **assurance** — making sure services actually reach people (CHPS zones, outreach clinics, immunization days). Its classic tool is prevention at three levels: **primary** — stop disease starting (vaccination, clean water, insecticide-treated nets); **secondary** — find it early (ANC screening for anaemia and pre-eclampsia, growth monitoring); **tertiary** — limit the damage (physiotherapy after stroke, surgery and reintegration for the woman with obstetric fistula).\n\nThis quiet discipline's achievements are the reason you practise comfortably: smallpox eradicated, Guinea worm nearly gone from Ghana, polio pushed to the brink, iodised salt, safer childbirth, life expectancy climbing. In Ghana's structure you will meet it as the Ghana Health Service with its district health directorates, the CHPS compound bringing care door-to-door, the National Health Insurance Scheme, disease control officers and health promotion teams. And the midwife sits at the junction: every ANC visit is surveillance, every education talk is health promotion, every home visit is community assessment — the individual care you give feeds the population's data, and the population's programmes send you the next mother.",
+        body: "Public health's **core functions** are three: **assessment** — measuring the population's health (how many home deliveries? which community's children are stunted?); **policy development** — turning evidence into rules (salt iodisation, tobacco taxation, free maternal care); and **assurance** — making sure services actually reach people (CHPS zones, outreach clinics, immunization days). Its classic tool is prevention at three levels: **primary** — stop disease starting (vaccination, clean water, insecticide-treated nets); **secondary** — find it early (ANC screening for anaemia and pre-eclampsia, growth monitoring); **tertiary** — limit the damage (physiotherapy after stroke, surgery and reintegration for the woman with obstetric fistula).\n\nThis quiet discipline's achievements are the reason you practise comfortably: smallpox eradicated, Guinea worm nearly gone from Ghana, polio pushed to the brink, iodised salt, safer childbirth, life expectancy climbing. In Ghana's structure you will meet it as the Ghana Health Service with its district health directorates, the CHPS compound bringing care door-to-door, the National Health Insurance Scheme, disease control officers and health promotion teams. And the nurse sits at the junction: every ANC visit is surveillance, every education talk is health promotion, every home visit is community assessment — the individual care you give feeds the population's data, and the population's programmes send you the next mother.",
       },
       {
         type: "clinical_pearl",
@@ -1887,7 +1887,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         type: "summary",
-        body: "- Winslow: preventing disease, prolonging life, promoting health through organized community effort.\n- Lens shift: from one patient to the population's patterns.\n- Core functions: assessment, policy development, assurance.\n- Prevention: primary (vaccines, nets, clean water), secondary (screening), tertiary (limiting damage).\n- Ghana's structures: GHS districts, CHPS, NHIS, health promotion teams.\n- The midwife is a public health worker: ANC is surveillance, education is promotion.",
+        body: "- Winslow: preventing disease, prolonging life, promoting health through organized community effort.\n- Lens shift: from one patient to the population's patterns.\n- Core functions: assessment, policy development, assurance.\n- Prevention: primary (vaccines, nets, clean water), secondary (screening), tertiary (limiting damage).\n- Ghana's structures: GHS districts, CHPS, NHIS, health promotion teams.\n- The nurse is a public health worker: ANC is surveillance, education is promotion.",
       },
     ],
     questions: [
@@ -1911,7 +1911,7 @@ export const lessons: SeedFullLesson[] = [
         topic: "What Is Public Health",
         type: "MCQ",
         difficulty: "Moderate",
-        stem: "A midwife notices several mothers from one community arriving anaemic over two months and reports the pattern to the district. Which core public health function is she performing?",
+        stem: "A nurse notices several mothers from one community arriving anaemic over two months and reports the pattern to the district. Which core public health function is she performing?",
         options: [
           "Assurance",
           "Policy development",
@@ -1920,7 +1920,7 @@ export const lessons: SeedFullLesson[] = [
         ],
         correctIndex: 2,
         explanation:
-          "Assessment is the ongoing measurement of community health. Spotting, counting and reporting a pattern is surveillance — the assessment function working through a midwife's eyes.",
+          "Assessment is the ongoing measurement of community health. Spotting, counting and reporting a pattern is surveillance — the assessment function working through a nurse's eyes.",
         courseSlug: "public-health-nursing",
       },
       {
@@ -1953,7 +1953,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         topic: "What Is Public Health",
-        front: "One example each of primary, secondary and tertiary prevention in midwifery?",
+        front: "One example each of primary, secondary and tertiary prevention in nursing?",
         back: "Primary: ITNs and vaccination in pregnancy. Secondary: ANC screening for anaemia and pre-eclampsia. Tertiary: surgical repair and reintegration for obstetric fistula.",
       },
     ],
@@ -2129,12 +2129,12 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "A mother dies of postpartum haemorrhage not in one moment but in a chain of moments: the family waited to decide; the river crossing took two hours; the facility had no blood. Safe motherhood at community level is the discipline of shortening that chain before the emergency ever begins.\n\nThis is midwifery seen from the population side: where maternal health meets roads, money, tradition and community design — and where your ANC counselling becomes a health-system intervention.",
+        body: "A mother dies of postpartum haemorrhage not in one moment but in a chain of moments: the family waited to decide; the river crossing took two hours; the facility had no blood. Safe motherhood at community level is the discipline of shortening that chain before the emergency ever begins.\n\nThis is nursing seen from the population side: where maternal health meets roads, money, tradition and community design — and where your ANC counselling becomes a health-system intervention.",
       },
       {
         type: "text",
         title: "The core ideas",
-        body: "The framework that changed the world is the **three delays** (Thaddeus and Maine, 1994): delay in **deciding** to seek care (family authority, cost, fear, memories of disrespect); delay in **reaching** care (distance, roads, rivers, no transport at night); delay in **receiving** care once arrived (staff, supplies, blood, attitude). Every maternal death review walks this chain, and every community intervention targets one of its links.\n\nThe community arsenal maps onto it. Against delay one: ANC education, women's and mothers' groups, involving husbands and mothers-in-law, durbars on danger signs — and respectful care at the facility, because a woman scolded once will not return in an emergency. Against delay two: **birth preparedness and complication readiness** — every pregnant family plans the delivery place, saves money in advance, identifies transport and who commands it at 2 a.m., identifies a blood donor, and knows the danger signs; community emergency transport schemes and maternity waiting homes near the referral facility shorten the distance itself. Against delay three: facility readiness — skilled staff, essential drugs, functioning theatre, blood — which the midwife influences by reporting gaps honestly. Progress is measured with the **maternal mortality ratio** (deaths per 100,000 live births), skilled birth attendance and ANC coverage. Ghana has cut maternal deaths substantially over two decades; the unfinished work sits precisely in those three delays.",
+        body: "The framework that changed the world is the **three delays** (Thaddeus and Maine, 1994): delay in **deciding** to seek care (family authority, cost, fear, memories of disrespect); delay in **reaching** care (distance, roads, rivers, no transport at night); delay in **receiving** care once arrived (staff, supplies, blood, attitude). Every maternal death review walks this chain, and every community intervention targets one of its links.\n\nThe community arsenal maps onto it. Against delay one: ANC education, women's and mothers' groups, involving husbands and mothers-in-law, durbars on danger signs — and respectful care at the facility, because a woman scolded once will not return in an emergency. Against delay two: **birth preparedness and complication readiness** — every pregnant family plans the delivery place, saves money in advance, identifies transport and who commands it at 2 a.m., identifies a blood donor, and knows the danger signs; community emergency transport schemes and maternity waiting homes near the referral facility shorten the distance itself. Against delay three: facility readiness — skilled staff, essential drugs, functioning theatre, blood — which the nurse influences by reporting gaps honestly. Progress is measured with the **maternal mortality ratio** (deaths per 100,000 live births), skilled birth attendance and ANC coverage. Ghana has cut maternal deaths substantially over two decades; the unfinished work sits precisely in those three delays.",
       },
       {
         type: "clinical_pearl",
@@ -2261,7 +2261,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Epidemiology is the detective department of health: who fell sick, where, when — and what connected them. Its most famous case solved cholera decades before anyone could see the germ: John Snow mapped London's deaths, followed them to one water pump, removed the handle, and the outbreak died.\n\nYour district uses the same method, just with boreholes instead of Broad Street — and midwives are among its field eyes.",
+        body: "Epidemiology is the detective department of health: who fell sick, where, when — and what connected them. Its most famous case solved cholera decades before anyone could see the germ: John Snow mapped London's deaths, followed them to one water pump, removed the handle, and the outbreak died.\n\nYour district uses the same method, just with boreholes instead of Broad Street — and nurses are among its field eyes.",
       },
       {
         type: "text",
@@ -2392,7 +2392,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Surveillance is public health standing on watch: the continuous, systematic collection of health data, its analysis, and — the part that makes it matter — action taken on what appears. A health system without surveillance is a town without a fire bell.\n\nIn Ghana the bell is the IDSR system — Integrated Disease Surveillance and Response — and every nurse and midwife who fills a register or makes a phone call is one of its sensors.",
+        body: "Surveillance is public health standing on watch: the continuous, systematic collection of health data, its analysis, and — the part that makes it matter — action taken on what appears. A health system without surveillance is a town without a fire bell.\n\nIn Ghana the bell is the IDSR system — Integrated Disease Surveillance and Response — and every nurse and nurse who fills a register or makes a phone call is one of its sensors.",
       },
       {
         type: "text",

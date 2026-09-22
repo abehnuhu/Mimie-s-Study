@@ -37,7 +37,7 @@ export const QUERIES: Query[] = [
   { c: "endocrine", q: "pancreas insulin islets histology", t: ["pancreas", "insulin", "endocrine"], cap: "The pancreas — both a digestive helper and a hormone factory." },
 
   // ── Year 1–2: reproductive & pregnancy ──────────────────
-  { c: "repro-female", q: "female reproductive system anatomy diagram", t: ["reproductive", "female", "uterus", "anatomy"], cap: "The female reproductive system — the anatomy at the heart of midwifery." },
+  { c: "repro-female", q: "female reproductive system anatomy diagram", t: ["reproductive", "female", "uterus", "anatomy"], cap: "The female reproductive system — the anatomy at the heart of nursing." },
   { c: "repro-female", q: "uterus anatomy layers diagram", t: ["uterus", "reproductive", "anatomy"], cap: "The uterus — a muscle that grows a baby and then powers it out." },
   { c: "repro-female", q: "ovaries fallopian tubes anatomy", t: ["ovaries", "fallopian", "reproductive"], cap: "Ovaries and tubes — where eggs ripen and fertilisation happens." },
   { c: "repro-female", q: "cervix anatomy diagram", t: ["cervix", "reproductive", "anatomy"], cap: "The cervix — the gateway that softens and opens in labour." },
@@ -47,8 +47,8 @@ export const QUERIES: Query[] = [
   { c: "repro-embryo", q: "embryo development stages week by week", t: ["embryo", "development", "pregnancy"], cap: "The embryo week by week — from a dot to a recognisable baby." },
   { c: "repro-genetics", q: "human chromosomes karyotype", t: ["chromosomes", "genetics", "dna"], cap: "A karyotype — the 46 chromosomes that carry the instruction manual." },
   { c: "pregnancy", q: "pregnant woman third trimester belly", t: ["pregnancy", "trimester", "antenatal"], cap: "Third trimester — the uterus now reaches the ribs and the walk changes." },
-  { c: "pregnancy", q: "midwife measuring fundal height pregnant woman", t: ["fundal", "height", "antenatal", "measurement"], cap: "Fundal height — centimetres from pubic bone to fundus roughly matching weeks after 20." },
-  { c: "pregnancy", q: "midwife palpating pregnant abdomen", t: ["palpation", "abdomen", "fetal", "position"], cap: "Abdominal palpation — hands reading the baby's lie and position." },
+  { c: "pregnancy", q: "nurse measuring fundal height pregnant woman", t: ["fundal", "height", "antenatal", "measurement"], cap: "Fundal height — centimetres from pubic bone to fundus roughly matching weeks after 20." },
+  { c: "pregnancy", q: "nurse palpating pregnant abdomen", t: ["palpation", "abdomen", "fetal", "position"], cap: "Abdominal palpation — hands reading the baby's lie and position." },
   { c: "pregnancy", q: "fetal ultrasound scan screen image", t: ["ultrasound", "fetus", "scan"], cap: "An ultrasound scan — seeing the baby before meeting the baby." },
   { c: "pregnancy", q: "fetus inside womb illustration", t: ["fetus", "womb", "uterus"], cap: "The fetus in the womb — floating, cushioned and growing." },
   { c: "pregnancy", q: "antenatal care check up pregnant woman clinic Africa", t: ["antenatal", "check", "pregnancy", "clinic"], cap: "Antenatal check-up — the visit that catches problems before they catch mother or baby." },
@@ -57,7 +57,7 @@ export const QUERIES: Query[] = [
   { c: "pregnancy", q: "pregnant woman taking iron folate tablets", t: ["iron", "folate", "anaemia", "pregnancy"], cap: "Iron and folate tablets — the daily shield against anaemia." },
 
   // ── Labour & birth ──────────────────────────────────────
-  { c: "labour", q: "midwife assisting woman during labour delivery", t: ["labour", "delivery", "midwife", "birth"], cap: "A midwife supporting a mother through birth — calm hands, watchful eyes." },
+  { c: "labour", q: "nurse assisting woman during labour delivery", t: ["labour", "delivery", "nurse", "birth"], cap: "A nurse supporting a mother through birth — calm hands, watchful eyes." },
   { c: "labour", q: "woman in labour supported breathing", t: ["labour", "support", "breathing"], cap: "Breathing with the contraction — support that changes the experience of pain." },
   { c: "labour", q: "stages of labor cervical dilation diagram", t: ["cervix", "dilation", "labour", "stages"], cap: "Cervical dilation from 1 to 10 — the doorway opening for the baby." },
   { c: "labour", q: "partograph WHO form filled example", t: ["partograph", "labour", "monitoring"], cap: "The partograph — one page that tracks labour and flags danger early." },
@@ -89,7 +89,7 @@ export const QUERIES: Query[] = [
   { c: "ppe", q: "donning sterile surgical gloves", t: ["gloves", "sterile", "aseptic"], cap: "Sterile gloving — the hands stay sterile from pack to patient." },
   { c: "ppe", q: "surgical face mask and shield", t: ["mask", "shield", "ppe"], cap: "Mask and shield — protecting eyes, nose and mouth from splashes." },
   { c: "instruments", q: "sterile surgical instruments tray forceps scissors", t: ["instruments", "forceps", "sterile", "tray"], cap: "A sterile instrument tray — every tool laid out and counted." },
-  { c: "instruments", q: "midwifery delivery kit instruments", t: ["delivery", "kit", "instruments"], cap: "The delivery kit — what a midwife checks before every birth." },
+  { c: "instruments", q: "nursing delivery kit instruments", t: ["delivery", "kit", "instruments"], cap: "The delivery kit — what a nurse checks before every birth." },
   { c: "sterilization", q: "autoclave machine hospital sterilization", t: ["autoclave", "sterilization", "instruments"], cap: "The autoclave — steam under pressure for true sterilisation." },
   { c: "wounds", q: "nurse dressing wound bandage", t: ["wound", "dressing", "bandage"], cap: "Wound dressing — clean technique, gentle hands, dated tape." },
   { c: "wounds", q: "pressure ulcer stages wound care", t: ["pressure", "ulcer", "wound", "skin"], cap: "Pressure ulcers — what unrelieved pressure does to skin over bone." },

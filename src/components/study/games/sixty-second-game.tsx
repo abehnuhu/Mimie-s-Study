@@ -96,7 +96,7 @@ export function SixtySecondGame() {
   return (
     <GameShell
       slug="sixty-second"
-      title="60-Second Midwife"
+      title="60-Second Nurse"
       description="Rapid fire. Trust yourself. Go."
       icon="Zap"
       onRestart={load}

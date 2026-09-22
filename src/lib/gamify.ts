@@ -166,7 +166,7 @@ export async function checkAndAwardBadges(userId: string): Promise<
     "perfect-quiz": perfectQuiz >= 1,
     "clinical-thinker": reviewDone >= 5,
     "baby-whisperer": await topicMastered(userId, "Newborn Assessment"),
-    "future-midwife": completedLessons >= 50,
+    "future-nurse": completedLessons >= 50,
     "research-girl": false,
     "anatomy-queen": await courseCompleted(userId, "anatomy-physiology-1"),
   };

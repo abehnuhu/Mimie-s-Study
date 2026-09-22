@@ -40,7 +40,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "It is 12:00 on the postnatal ward. Madam Adjoa delivered this morning; at 08:00 her pulse was 88 and her blood pressure 110/70. Walking past now, you notice she is lying flat and unusually quiet. Her lips look pale. You recheck: pulse 104, blood pressure 108/68. The chart says 'normal'.\n\nShould the unchanged blood pressure reassure you, and what should you do next?\n\nAnswer: No. A rising pulse with pallor and quietness in a day-one postnatal woman means bleeding or infection until proven otherwise. Young women keep their blood pressure normal while compensating. Check her fundus for tone, check the pads and check for trickling blood, then inform the midwife in charge immediately. You do not wait for the blood pressure to fall — by then she is already in trouble.",
+        body: "It is 12:00 on the postnatal ward. Madam Adjoa delivered this morning; at 08:00 her pulse was 88 and her blood pressure 110/70. Walking past now, you notice she is lying flat and unusually quiet. Her lips look pale. You recheck: pulse 104, blood pressure 108/68. The chart says 'normal'.\n\nShould the unchanged blood pressure reassure you, and what should you do next?\n\nAnswer: No. A rising pulse with pallor and quietness in a day-one postnatal woman means bleeding or infection until proven otherwise. Young women keep their blood pressure normal while compensating. Check her fundus for tone, check the pads and check for trickling blood, then inform the nurse in charge immediately. You do not wait for the blood pressure to fall — by then she is already in trouble.",
       },
       {
         type: "memory_trick",
@@ -73,7 +73,7 @@ export const lessons: SeedFullLesson[] = [
         stem: "A day-one postnatal woman has gone from pulse 88 to 104 over four hours. She is pale and quietly restless; her blood pressure is unchanged. What is the best interpretation and action?",
         options: [
           "Reassuring — both pulse and blood pressure are still within the normal range",
-          "Possible early haemorrhage — assess the fundus, pads and lochia, and inform the midwife in charge now",
+          "Possible early haemorrhage — assess the fundus, pads and lochia, and inform the nurse in charge now",
           "Simple anxiety — sit with her and recheck in the evening",
           "Early infection — start paracetamol and document the temperature only",
         ],
@@ -115,7 +115,7 @@ export const lessons: SeedFullLesson[] = [
     sources: [
       {
         organization: "World Health Organization",
-        title: "Managing complications in pregnancy and childbirth: a guide for midwives and doctors",
+        title: "Managing complications in pregnancy and childbirth: a guide for nurses and doctors",
         note: "Educational source — verify current edition.",
       },
       {
@@ -167,7 +167,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "Madam Esi delivered by caesarean section yesterday. This morning she says she wants to walk to the bathroom herself — 'I am strong.' She swings her legs off the bed and sways, gripping the bedside. You are alone with her. What do you do, and why is this moment dangerous?\n\nAnswer: Sit her back on the edge, stay with her, and check she is steady before she stands — then walk with her to the bathroom or bring the commode. After a caesarean she may be anaemic, recovering from spinal anaesthesia, and unused to being upright; fainting on the first ambulation is a classic post-operative event. Call the midwife if you cannot stay. 'I am strong' is her pride talking; your job is the quiet safety net under it.",
+        body: "Madam Esi delivered by caesarean section yesterday. This morning she says she wants to walk to the bathroom herself — 'I am strong.' She swings her legs off the bed and sways, gripping the bedside. You are alone with her. What do you do, and why is this moment dangerous?\n\nAnswer: Sit her back on the edge, stay with her, and check she is steady before she stands — then walk with her to the bathroom or bring the commode. After a caesarean she may be anaemic, recovering from spinal anaesthesia, and unused to being upright; fainting on the first ambulation is a classic post-operative event. Call the nurse if you cannot stay. 'I am strong' is her pride talking; your job is the quiet safety net under it.",
       },
       {
         type: "memory_trick",
@@ -183,7 +183,7 @@ export const lessons: SeedFullLesson[] = [
         topic: "Fall Prevention",
         type: "MCQ",
         difficulty: "Easy",
-        stem: "A woman is standing for the first time after a caesarean section. What is the safest practice for the student midwife?",
+        stem: "A woman is standing for the first time after a caesarean section. What is the safest practice for the student nurse?",
         options: [
           "Encourage her to walk alone to build her strength and independence",
           "Stay with her, let her sit on the edge first, then rise slowly with support",
@@ -590,7 +590,7 @@ export const lessons: SeedFullLesson[] = [
         stem: "You have just drawn up a drug and notice the needle is uncapped on the trolley. Which action is correct?",
         options: [
           "Recap the needle carefully using both hands before carrying it to the patient",
-          "Pick it up and pass it to the midwife so she can deal with it",
+          "Pick it up and pass it to the nurse so she can deal with it",
           "Drop it directly into the puncture-proof sharps container at the point of use",
           "Leave it — housekeeping collects sharps during evening cleaning",
         ],
@@ -651,12 +651,12 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Caring for the sick is as old as humanity — someone has always fetched water, wiped a brow and stayed through the night. But **trained** nursing is young, barely two centuries old, and its story is one of the most dramatic upgrades in human welfare. Wherever the care of the sick improved, survival followed.\n\nThis lesson walks the long road: healing temples, monastery infirmaries, the grim charity hospitals of the 1700s, and the reform movement that turned nursing from an act of kindness into a science-based profession. It ends in your own country, where Ghanaian midwives now carry a professional lineage that is at once global and proudly local.",
+        body: "Caring for the sick is as old as humanity — someone has always fetched water, wiped a brow and stayed through the night. But **trained** nursing is young, barely two centuries old, and its story is one of the most dramatic upgrades in human welfare. Wherever the care of the sick improved, survival followed.\n\nThis lesson walks the long road: healing temples, monastery infirmaries, the grim charity hospitals of the 1700s, and the reform movement that turned nursing from an act of kindness into a science-based profession. It ends in your own country, where Ghanaian nurses now carry a professional lineage that is at once global and proudly local.",
       },
       {
         type: "text",
         title: "The core ideas",
-        body: "In the ancient world, care lived in temples and homes. Egyptian and Greek priest-healers tended the sick; in the early Islamic world, hospitals called bimaristans had trained staff, separate wards and teaching — centuries ahead of Europe. In medieval Europe, monasteries ran infirmaries where monks and nuns nursed with prayer and practical care.\n\nThen came the low point. Between roughly the 1500s and 1800s, European hospitals were places of last resort: overcrowded, filthy, and staffed by untrained, poorly paid women. Charles Dickens gave the era its lasting caricature — the drunken, careless nurse Sairey Gamp.\n\nReform arrived with Florence Nightingale and her generation after the Crimean War, and trained nursing spread worldwide with astonishing speed. In the Gold Coast, mission societies and colonial medical services built hospitals and dispensaries in the late 1800s and early 1900s; Korle Bu opened in 1923, and training schools grew with them. After independence, Ghana expanded nurse and midwife training across every region, and today the Nursing and Midwifery Council sets the standard your own registration will carry.",
+        body: "In the ancient world, care lived in temples and homes. Egyptian and Greek priest-healers tended the sick; in the early Islamic world, hospitals called bimaristans had trained staff, separate wards and teaching — centuries ahead of Europe. In medieval Europe, monasteries ran infirmaries where monks and nuns nursed with prayer and practical care.\n\nThen came the low point. Between roughly the 1500s and 1800s, European hospitals were places of last resort: overcrowded, filthy, and staffed by untrained, poorly paid women. Charles Dickens gave the era its lasting caricature — the drunken, careless nurse Sairey Gamp.\n\nReform arrived with Florence Nightingale and her generation after the Crimean War, and trained nursing spread worldwide with astonishing speed. In the Gold Coast, mission societies and colonial medical services built hospitals and dispensaries in the late 1800s and early 1900s; Korle Bu opened in 1923, and training schools grew with them. After independence, Ghana expanded nurse and nurse training across every region, and today the Nursing and Midwifery Council sets the standard your own registration will carry.",
       },
       {
         type: "clinical_pearl",
@@ -734,7 +734,7 @@ export const lessons: SeedFullLesson[] = [
       {
         topic: "Nursing in Ghana",
         front: "When did Korle Bu Hospital open, and what followed it?",
-        back: "1923 — hospital care and nurse/midwife training expanded around it and across the country, growing further after independence into today's Nursing and Midwifery Council-regulated profession.",
+        back: "1923 — hospital care and nurse/nurse training expanded around it and across the country, growing further after independence into today's Nursing and Midwifery Council-regulated profession.",
       },
     ],
     sources: [
@@ -794,7 +794,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         type: "summary",
-        body: "- Nightingale went to Scutari in 1854 and found soldiers dying of the environment, not just wounds.\n- Mortality fell about ten-fold after sanitation reform: sewers, ventilation, clean water, food and linen.\n- She was a statistician: polar-area diagrams made death data visible; first woman elected to the Royal Statistical Society.\n- Notes on Nursing (1859): pure air, pure water, efficient drainage, cleanliness, light.\n- The Nightingale Training School (1860, St Thomas') is the ancestor of every registered nurse and midwife today.",
+        body: "- Nightingale went to Scutari in 1854 and found soldiers dying of the environment, not just wounds.\n- Mortality fell about ten-fold after sanitation reform: sewers, ventilation, clean water, food and linen.\n- She was a statistician: polar-area diagrams made death data visible; first woman elected to the Royal Statistical Society.\n- Notes on Nursing (1859): pure air, pure water, efficient drainage, cleanliness, light.\n- The Nightingale Training School (1860, St Thomas') is the ancestor of every registered nurse and nurse today.",
       },
     ],
     questions: [
@@ -898,7 +898,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The core ideas",
-        body: "**Registration changed everything.** When a country registers nurses — as Britain did by law in 1919, with many nations following — it creates a public list of people who have proven competence. A patient can no longer be cared for by anyone who simply claims the title. The International Council of Nurses, founded in 1899, spread this idea worldwide: a defined scope of practice, education standards, a code of ethics, and accountability.\n\n**Education moved with the science.** As medicine discovered infection, antibiotics, resuscitation and monitoring, nursing knowledge grew too deep to absorb by tradition alone. Curricula, supervised skill competency and examinations replaced imitation. Modern research links better-educated nursing to better patient survival — which is why the direction of travel is toward higher entry education, including degree-level midwifery.\n\n**Regulation protects both sides.** Ghana's Nursing and Midwifery Council licenses practitioners, sets standards and can discipline misconduct. That protects the public — and protects you, the honest practitioner, from being undercut by the unqualified. Specialisation continues upward: post-basic and college pathways now produce midwives with advanced skills, right here in Ghana.",
+        body: "**Registration changed everything.** When a country registers nurses — as Britain did by law in 1919, with many nations following — it creates a public list of people who have proven competence. A patient can no longer be cared for by anyone who simply claims the title. The International Council of Nurses, founded in 1899, spread this idea worldwide: a defined scope of practice, education standards, a code of ethics, and accountability.\n\n**Education moved with the science.** As medicine discovered infection, antibiotics, resuscitation and monitoring, nursing knowledge grew too deep to absorb by tradition alone. Curricula, supervised skill competency and examinations replaced imitation. Modern research links better-educated nursing to better patient survival — which is why the direction of travel is toward higher entry education, including degree-level nursing.\n\n**Regulation protects both sides.** Ghana's Nursing and Midwifery Council licenses practitioners, sets standards and can discipline misconduct. That protects the public — and protects you, the honest practitioner, from being undercut by the unqualified. Specialisation continues upward: post-basic and college pathways now produce nurses with advanced skills, right here in Ghana.",
       },
       {
         type: "clinical_pearl",
@@ -907,7 +907,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "Your aunt trained as an enrolled nurse in the 1970s, hospital-based and apprenticed. Visiting your school, she asks why you must attend college, pass licensing exams and complete continuing education 'to do the same work we did'. How do you answer her respectfully — and truthfully?\n\nAnswer: Her generation built the wards you stand on, and her dedication is real. What changed is the work and the evidence: today's midwife manages partographs, resuscitates newborns, makes referral decisions and is legally accountable for them — a body of knowledge too large and too life-critical to pass on by tradition alone. Registration, licensing and continuing education are the public's guarantee that competence was examined, not assumed. The title she was proud of and the licence you will earn are the same promise, renewed for a harder age.",
+        body: "Your aunt trained as an enrolled nurse in the 1970s, hospital-based and apprenticed. Visiting your school, she asks why you must attend college, pass licensing exams and complete continuing education 'to do the same work we did'. How do you answer her respectfully — and truthfully?\n\nAnswer: Her generation built the wards you stand on, and her dedication is real. What changed is the work and the evidence: today's nurse manages partographs, resuscitates newborns, makes referral decisions and is legally accountable for them — a body of knowledge too large and too life-critical to pass on by tradition alone. Registration, licensing and continuing education are the public's guarantee that competence was examined, not assumed. The title she was proud of and the licence you will earn are the same promise, renewed for a harder age.",
       },
       {
         type: "memory_trick",
@@ -955,7 +955,7 @@ export const lessons: SeedFullLesson[] = [
         options: [
           "The hospital's board of directors",
           "The Nursing and Midwifery Council of Ghana",
-          "The ward sister or midwife in charge",
+          "The ward sister or nurse in charge",
           "The district chief executive",
         ],
         correctIndex: 1,
@@ -1019,7 +1019,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The core ideas",
-        body: "Nightingale made the environment the treatment: air, water, drainage, cleanliness and light. Henderson defined nursing as assisting the individual — sick or well — to perform activities contributing to health or recovery that she would perform unaided if she had the strength, doing this in a way that helps her gain independence as rapidly as possible. Notice what that becomes in your hands: a checklist at admission (can she breathe, eat, drink, sleep, eliminate, move, feel safe?) and a goal for discharge.\n\nOrem's **self-care theory** says people naturally care for themselves, and nurses step in only where a self-care deficit appears — anaemia in pregnancy, pain after delivery, a mother unsure how to attach the baby. Peplau saw nursing as an interpersonal process: the relationship itself is the treatment vehicle — which is why the trust you build at antenatal clinic decides whether a woman tells you the truth. Roy's adaptation model and Watson's caring theory round out the family.\n\nFor a midwife, Orem and Peplau are almost job descriptions: the woman does the work of pregnancy and birth; you support, educate and step in where the deficit or danger appears.",
+        body: "Nightingale made the environment the treatment: air, water, drainage, cleanliness and light. Henderson defined nursing as assisting the individual — sick or well — to perform activities contributing to health or recovery that she would perform unaided if she had the strength, doing this in a way that helps her gain independence as rapidly as possible. Notice what that becomes in your hands: a checklist at admission (can she breathe, eat, drink, sleep, eliminate, move, feel safe?) and a goal for discharge.\n\nOrem's **self-care theory** says people naturally care for themselves, and nurses step in only where a self-care deficit appears — anaemia in pregnancy, pain after delivery, a mother unsure how to attach the baby. Peplau saw nursing as an interpersonal process: the relationship itself is the treatment vehicle — which is why the trust you build at antenatal clinic decides whether a woman tells you the truth. Roy's adaptation model and Watson's caring theory round out the family.\n\nFor a nurse, Orem and Peplau are almost job descriptions: the woman does the work of pregnancy and birth; you support, educate and step in where the deficit or danger appears.",
       },
       {
         type: "clinical_pearl",
@@ -1036,7 +1036,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         type: "summary",
-        body: "- A nursing theory organises what nursing is for — it is a lens, not an essay topic.\n- The metaparadigm has four concepts: person, environment, health, nursing.\n- Nightingale: the environment is the treatment. Henderson: assist toward independence — your admission checklist.\n- Orem: step in where self-care has a deficit; Peplau: the relationship itself carries care.\n- Midwifery lives inside these: the woman does the work, you support, educate and act on danger.",
+        body: "- A nursing theory organises what nursing is for — it is a lens, not an essay topic.\n- The metaparadigm has four concepts: person, environment, health, nursing.\n- Nightingale: the environment is the treatment. Henderson: assist toward independence — your admission checklist.\n- Orem: step in where self-care has a deficit; Peplau: the relationship itself carries care.\n- Nursing lives inside these: the woman does the work, you support, educate and act on danger.",
       },
     ],
     questions: [
@@ -1127,7 +1127,7 @@ export const lessons: SeedFullLesson[] = [
     objectives: [
       "List the hallmarks that make nursing a profession rather than a job.",
       "Define accountability and describe its three faces — legal, professional and ethical.",
-      "Apply the concept of scope of practice to the position of a student midwife.",
+      "Apply the concept of scope of practice to the position of a student nurse.",
     ],
     tags: ["profession", "accountability", "standards", "scope of practice", "regulation"],
     sourceStatus: "GCU_ALIGNED",
@@ -1140,7 +1140,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The core ideas",
-        body: "**Standards** are the profession's written promises. The Nursing and Midwifery Council's code of conduct and standards of practice tell you what good care looks like, and your facility's policies make them local. They are not obstacles to your initiative — they are your defence when you followed them and your map when you are unsure.\n\n**Accountability** means you are answerable for what you do and what you fail to do. It has three faces: legal (answerable in law for negligence or harm), professional (answerable to the Council, which can suspend or strike you off) and ethical (answerable to your own conscience and to the patient). It is why documentation matters — the record is the evidence of your care.\n\n**Scope of practice** defines the boundary of what you may safely and lawfully do. As a student, yours is narrower than a registered midwife's, and that is not a slight — it is scaffolding. Working within it, asking for supervision and saying 'I have not been trained for this' are professional acts, not confessions of weakness.",
+        body: "**Standards** are the profession's written promises. The Nursing and Midwifery Council's code of conduct and standards of practice tell you what good care looks like, and your facility's policies make them local. They are not obstacles to your initiative — they are your defence when you followed them and your map when you are unsure.\n\n**Accountability** means you are answerable for what you do and what you fail to do. It has three faces: legal (answerable in law for negligence or harm), professional (answerable to the Council, which can suspend or strike you off) and ethical (answerable to your own conscience and to the patient). It is why documentation matters — the record is the evidence of your care.\n\n**Scope of practice** defines the boundary of what you may safely and lawfully do. As a student, yours is narrower than a registered nurse's, and that is not a slight — it is scaffolding. Working within it, asking for supervision and saying 'I have not been trained for this' are professional acts, not confessions of weakness.",
       },
       {
         type: "clinical_pearl",
@@ -1149,7 +1149,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "The ward is short-staffed during a busy evening. The midwife on duty, who knows you are capable, says: 'Set up the oxytocin infusion for bed 6 and monitor her — I am with another delivery.' You have watched infusions being set up but never done one unsupervised, and as a student this is not in your scope. What is the professional response — and how do you say it?\n\nAnswer: Decline the unsupervised task clearly and without apology-theatre: 'I have not been signed off for setting up oxytocin, and I am not permitted to do it unsupervised — I will prepare the drip stand and the bag, and fetch you the moment anything changes.' Then escalate: call the second midwife, the doctor, or the ward supervisor so bed 6 is covered by a competent practitioner. Protecting the patient from a well-meaning student is the professional act — and covering the staffing gap is management's problem to solve, not yours to absorb unsafely.",
+        body: "The ward is short-staffed during a busy evening. The nurse on duty, who knows you are capable, says: 'Set up the oxytocin infusion for bed 6 and monitor her — I am with another delivery.' You have watched infusions being set up but never done one unsupervised, and as a student this is not in your scope. What is the professional response — and how do you say it?\n\nAnswer: Decline the unsupervised task clearly and without apology-theatre: 'I have not been signed off for setting up oxytocin, and I am not permitted to do it unsupervised — I will prepare the drip stand and the bag, and fetch you the moment anything changes.' Then escalate: call the second nurse, the doctor, or the ward supervisor so bed 6 is covered by a competent practitioner. Protecting the patient from a well-meaning student is the professional act — and covering the staffing gap is management's problem to solve, not yours to absorb unsafely.",
       },
       {
         type: "memory_trick",
@@ -1179,12 +1179,12 @@ export const lessons: SeedFullLesson[] = [
         topic: "Accountability",
         type: "MCQ",
         difficulty: "Moderate",
-        stem: "A student midwife is asked to perform a procedure she has never been trained or signed off to perform. What is the professionally correct response?",
+        stem: "A student nurse is asked to perform a procedure she has never been trained or signed off to perform. What is the professionally correct response?",
         options: [
-          "Attempt it carefully — the midwife asked, so responsibility now transfers to her",
+          "Attempt it carefully — the nurse asked, so responsibility now transfers to her",
           "Perform it if the patient looks stable and it seems straightforward",
           "Decline politely, explain it is outside her student scope, offer to help within her role, and escalate to a competent practitioner",
-          "Refuse and report the midwife to the police",
+          "Refuse and report the nurse to the police",
         ],
         correctIndex: 2,
         explanation: "Being asked does not transfer competence — accountability follows the person who performs the act. The professional answer is to decline with a reason, assist within scope, and ensure a qualified practitioner covers the task. Escalation goes to supervisors, not to criminal process.",
@@ -1257,12 +1257,12 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Professional identity is the quiet shift that happens somewhere in your training: you stop being someone who is studying midwifery and become a midwife. Sociologists call the process professional socialisation — the values, habits and self-respect of the profession slowly becoming yours, until they hold even when nobody is watching.\n\nIt is built from small things. Arriving before your shift, not five minutes into it. A clean uniform and a visible name badge. Speaking about patients with respect even in the staff room. Handing over properly when you are tired. Choosing not to photograph anything on the ward. Over four years these either become your character or never do — and the habits of your first year are the hardest to unlearn later.",
+        body: "Professional identity is the quiet shift that happens somewhere in your training: you stop being someone who is studying nursing and become a nurse. Sociologists call the process professional socialisation — the values, habits and self-respect of the profession slowly becoming yours, until they hold even when nobody is watching.\n\nIt is built from small things. Arriving before your shift, not five minutes into it. A clean uniform and a visible name badge. Speaking about patients with respect even in the staff room. Handing over properly when you are tired. Choosing not to photograph anything on the ward. Over four years these either become your character or never do — and the habits of your first year are the hardest to unlearn later.",
       },
       {
         type: "text",
         title: "The core ideas",
-        body: "**Boundaries** protect the caring relationship. You may be warm without becoming the patient's friend: no lending money, no personal phone numbers, no accepting significant gifts, no special favours that compromise judgement. The relationship is professional precisely so that the patient can trust your advice is clinical, not personal.\n\n**Social media** is where identities are now lost. Nothing from the ward belongs on your status — no newborn photos, no delivery stories, no complaints about patients or colleagues. A photo without a name still identifies a mother to her whole community; on a small-town ward, anonymity is an illusion. Consent is a legal process, not a friendly nod.\n\n**Role models and mentors** accelerate you: pick the midwife whose practice you admire and study her — ask her why she does things, and let her correct you. And guard your own fuel: sleep, faith or rest, friendships outside the ward. Compassion fatigue is a professional hazard; caring for yourself is maintenance, not indulgence. The nurse you admire was built by a thousand small choices, repeated.",
+        body: "**Boundaries** protect the caring relationship. You may be warm without becoming the patient's friend: no lending money, no personal phone numbers, no accepting significant gifts, no special favours that compromise judgement. The relationship is professional precisely so that the patient can trust your advice is clinical, not personal.\n\n**Social media** is where identities are now lost. Nothing from the ward belongs on your status — no newborn photos, no delivery stories, no complaints about patients or colleagues. A photo without a name still identifies a mother to her whole community; on a small-town ward, anonymity is an illusion. Consent is a legal process, not a friendly nod.\n\n**Role models and mentors** accelerate you: pick the nurse whose practice you admire and study her — ask her why she does things, and let her correct you. And guard your own fuel: sleep, faith or rest, friendships outside the ward. Compassion fatigue is a professional hazard; caring for yourself is maintenance, not indulgence. The nurse you admire was built by a thousand small choices, repeated.",
       },
       {
         type: "clinical_pearl",
@@ -1279,7 +1279,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         type: "summary",
-        body: "- Professional identity is the shift from 'studying midwifery' to 'being a midwife' — built from daily habits, not declarations.\n- Small behaviours compound: punctuality, uniform, name badge, respectful speech about patients, proper handover.\n- Boundaries keep care trustworthy: no money, no personal numbers, no significant gifts, no favours that bend judgement.\n- Nothing from the ward goes on social media — unnamed photos are still identifiable, and a smile is not consent.\n- Choose role models, use mentors, and protect your own rest: self-care is professional maintenance.",
+        body: "- Professional identity is the shift from 'studying nursing' to 'being a nurse' — built from daily habits, not declarations.\n- Small behaviours compound: punctuality, uniform, name badge, respectful speech about patients, proper handover.\n- Boundaries keep care trustworthy: no money, no personal numbers, no significant gifts, no favours that bend judgement.\n- Nothing from the ward goes on social media — unnamed photos are still identifiable, and a smile is not consent.\n- Choose role models, use mentors, and protect your own rest: self-care is professional maintenance.",
       },
     ],
     questions: [
@@ -1301,7 +1301,7 @@ export const lessons: SeedFullLesson[] = [
         topic: "Professional Socialisation",
         type: "MCQ",
         difficulty: "Moderate",
-        stem: "What does 'professional socialisation' mean for a student midwife?",
+        stem: "What does 'professional socialisation' mean for a student nurse?",
         options: [
           "Attending enough social events to network with senior staff",
           "The process by which the values, behaviours and identity of the profession gradually become one's own",
@@ -1317,7 +1317,7 @@ export const lessons: SeedFullLesson[] = [
         difficulty: "Moderate",
         stem: "A grateful postnatal mother offers you an expensive gift and asks for your personal phone number so she can 'call you for advice anytime'. What is the professionally best response?",
         options: [
-          "Accept both — building warm relationships is the heart of midwifery",
+          "Accept both — building warm relationships is the heart of nursing",
           "Accept the gift and give the clinic's number instead, keeping the gift quietly",
           "Politely decline the gift and personal number while warmly giving her proper channels — clinic line, next appointment, counselling services — so your clinical judgement stays free",
           "Report her immediately for attempting to bribe staff",
@@ -1378,7 +1378,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Watch a well-run emergency — a postpartum haemorrhage, a resuscitation — and you are not watching individuals; you are watching an organism. One midwife works on the uterus, another calls the doctor, a third runs for blood, a porter clears the corridor, the records officer finds the folder. The analysis of preventable harm keeps finding the same root cause, and it is rarely ignorance: it is communication that failed between people who each knew something.\n\nThe team is larger than the people in uniforms. The cleaner who disinfects the delivery room is doing infection prevention. The records officer who files correctly is protecting the next decision. The security man who controls visitors at night is part of newborn safety. Respect for every role is not politeness — it is clinical accuracy.",
+        body: "Watch a well-run emergency — a postpartum haemorrhage, a resuscitation — and you are not watching individuals; you are watching an organism. One nurse works on the uterus, another calls the doctor, a third runs for blood, a porter clears the corridor, the records officer finds the folder. The analysis of preventable harm keeps finding the same root cause, and it is rarely ignorance: it is communication that failed between people who each knew something.\n\nThe team is larger than the people in uniforms. The cleaner who disinfects the delivery room is doing infection prevention. The records officer who files correctly is protecting the next decision. The security man who controls visitors at night is part of newborn safety. Respect for every role is not politeness — it is clinical accuracy.",
       },
       {
         type: "text",
@@ -1392,7 +1392,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "In your district hospital's delivery room, a woman delivered forty minutes ago. You have been counting the pads: five fully soaked since birth, and the bowl you weighed suggests over 500 ml lost so far. The woman is restless; her pulse is 108 and rising on your recheck. The midwife, busy with the baby, glances over and says, 'That's normal post-delivery oozing, she's fine.' Your stomach is not so sure. What do you say — and to whom?\n\nAnswer: Speak up now, with data, in her hearing: 'Sister, I am concerned — I have counted five soaked pads, over 500 ml, and her pulse has risen to 108. Could you check the fundus?' SBAR-style specifics make the concern actionable and hard to wave away. If she reassures you but the pulse keeps climbing and bleeding continues, escalate one level yourself — call the senior midwife or doctor; in postpartum haemorrhage, minutes matter, and being wrong about speaking up costs nothing. Closed-loop the requests: 'Confirming — you want me to run for the IV set and call the doctor?' The patient is the referee of this conversation, not the hierarchy.",
+        body: "In your district hospital's delivery room, a woman delivered forty minutes ago. You have been counting the pads: five fully soaked since birth, and the bowl you weighed suggests over 500 ml lost so far. The woman is restless; her pulse is 108 and rising on your recheck. The nurse, busy with the baby, glances over and says, 'That's normal post-delivery oozing, she's fine.' Your stomach is not so sure. What do you say — and to whom?\n\nAnswer: Speak up now, with data, in her hearing: 'Sister, I am concerned — I have counted five soaked pads, over 500 ml, and her pulse has risen to 108. Could you check the fundus?' SBAR-style specifics make the concern actionable and hard to wave away. If she reassures you but the pulse keeps climbing and bleeding continues, escalate one level yourself — call the senior nurse or doctor; in postpartum haemorrhage, minutes matter, and being wrong about speaking up costs nothing. Closed-loop the requests: 'Confirming — you want me to run for the IV set and call the doctor?' The patient is the referee of this conversation, not the hierarchy.",
       },
       {
         type: "memory_trick",
@@ -1422,7 +1422,7 @@ export const lessons: SeedFullLesson[] = [
         topic: "Closed-Loop Communication",
         type: "MCQ",
         difficulty: "Moderate",
-        stem: "During an emergency, the midwife shouts a medication order across the room. What does closed-loop communication require?",
+        stem: "During an emergency, the nurse shouts a medication order across the room. What does closed-loop communication require?",
         options: [
           "The receiver repeats the message back and the sender confirms it, before acting",
           "The receiver writes the order down quietly and acts after the emergency ends",
@@ -1441,7 +1441,7 @@ export const lessons: SeedFullLesson[] = [
           "Only registered professionals contribute to patient outcomes; support staff are purely administrative",
           "A student who notices a safety concern should stay quiet until she has qualified",
           "Every role, including cleaners, records officers and porters, contributes to patient safety and outcomes — and anyone may voice a concern",
-          "Teamwork means the senior midwife's judgement always overrides all new information",
+          "Teamwork means the senior nurse's judgement always overrides all new information",
         ],
         correctIndex: 2,
         explanation: "Outcomes are produced by the whole system — the cleaner does infection prevention, the records officer protects information flow — and modern safety culture invites anyone, at any level, to voice a concern. Hierarchy that silences the newest eyes is how known dangers stay unreported.",
@@ -1626,12 +1626,12 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Ask a woman if she is healthy and she will check for symptoms: no fever, no pain — 'I am well.' It feels like two boxes, sick or well. The World Health Organization, since 1948, has insisted on something bigger: health is a state of complete physical, mental and social well-being, and not merely the absence of disease or infirmity. By that measure, a woman with no fever who is exhausted, anaemic and anxious is not fully healthy — even if she says she is fine.\n\nSo picture health not as a box but as a **continuum** — a scale from peak wellness to serious illness and death. Everyone alive is somewhere on it, and nobody stays in one place: malaria, hunger or fear push a woman toward the illness end; treatment, rest, support and knowledge pull her back. Your job as a midwife is to meet her wherever she stands, and help her move the right way.",
+        body: "Ask a woman if she is healthy and she will check for symptoms: no fever, no pain — 'I am well.' It feels like two boxes, sick or well. The World Health Organization, since 1948, has insisted on something bigger: health is a state of complete physical, mental and social well-being, and not merely the absence of disease or infirmity. By that measure, a woman with no fever who is exhausted, anaemic and anxious is not fully healthy — even if she says she is fine.\n\nSo picture health not as a box but as a **continuum** — a scale from peak wellness to serious illness and death. Everyone alive is somewhere on it, and nobody stays in one place: malaria, hunger or fear push a woman toward the illness end; treatment, rest, support and knowledge pull her back. Your job as a nurse is to meet her wherever she stands, and help her move the right way.",
       },
       {
         type: "text",
         title: "The core ideas",
-        body: "What moves people along the scale? Partly biology — genes, age, infection. But the bigger engine is what WHO calls the **social determinants of health**: the conditions in which people are born, grow, live, work and age. Income. Education. Clean water and sanitation. Food security. Housing. Transport to the clinic. The status of women, and who decides about money and permission to travel for care. Culture and beliefs. Access to services — which in Ghana is why the CHPS strategy and the National Health Insurance Scheme exist.\n\nThis lens changes your clinical behaviour. A woman who has missed two antenatal visits is rarely 'careless' — she is more likely broke, far from the road, needing her husband's consent, or in the farming season. Labelling her non-compliant treats the symptom and ignores the cause; asking 'what made it hard to come?' is diagnosis of the determinant.\n\nThe continuum also maps your interventions: health **promotion** keeps the well well (nutrition, family planning education); prevention catches drift early (iron, tetanus, blood pressure screening); treatment pulls back from illness; rehabilitation restores after it. A midwife works the whole scale — the well woman at ANC is as much your patient as the emergency in theatre.",
+        body: "What moves people along the scale? Partly biology — genes, age, infection. But the bigger engine is what WHO calls the **social determinants of health**: the conditions in which people are born, grow, live, work and age. Income. Education. Clean water and sanitation. Food security. Housing. Transport to the clinic. The status of women, and who decides about money and permission to travel for care. Culture and beliefs. Access to services — which in Ghana is why the CHPS strategy and the National Health Insurance Scheme exist.\n\nThis lens changes your clinical behaviour. A woman who has missed two antenatal visits is rarely 'careless' — she is more likely broke, far from the road, needing her husband's consent, or in the farming season. Labelling her non-compliant treats the symptom and ignores the cause; asking 'what made it hard to come?' is diagnosis of the determinant.\n\nThe continuum also maps your interventions: health **promotion** keeps the well well (nutrition, family planning education); prevention catches drift early (iron, tetanus, blood pressure screening); treatment pulls back from illness; rehabilitation restores after it. A nurse works the whole scale — the well woman at ANC is as much your patient as the emergency in theatre.",
       },
       {
         type: "clinical_pearl",
@@ -1648,7 +1648,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         type: "summary",
-        body: "- WHO (1948): health is complete physical, mental and social well-being — not merely the absence of disease.\n- The health-illness continuum is a moving scale: everyone is somewhere on it, all the time, drifting either way.\n- Social determinants — income, education, water, food, housing, transport, gender, culture, services — move people more than biology alone.\n- 'Defaulted' patients usually have determinants behind them: ask 'what made it hard to come?' before judging.\n- Promotion keeps the well well, prevention catches drift, treatment pulls back, rehabilitation restores — midwifery works the whole scale.",
+        body: "- WHO (1948): health is complete physical, mental and social well-being — not merely the absence of disease.\n- The health-illness continuum is a moving scale: everyone is somewhere on it, all the time, drifting either way.\n- Social determinants — income, education, water, food, housing, transport, gender, culture, services — move people more than biology alone.\n- 'Defaulted' patients usually have determinants behind them: ask 'what made it hard to come?' before judging.\n- Promotion keeps the well well, prevention catches drift, treatment pulls back, rehabilitation restores — nursing works the whole scale.",
       },
     ],
     questions: [
@@ -1664,7 +1664,7 @@ export const lessons: SeedFullLesson[] = [
           "A normal set of vital signs and laboratory results",
         ],
         correctIndex: 1,
-        explanation: "WHO's 1948 definition deliberately reaches beyond 'not sick': a woman free of disease but exhausted, isolated or anxious is not yet healthy. This is why midwifery assesses the whole life, not just the chart.",
+        explanation: "WHO's 1948 definition deliberately reaches beyond 'not sick': a woman free of disease but exhausted, isolated or anxious is not yet healthy. This is why nursing assesses the whole life, not just the chart.",
       },
       {
         topic: "Health-Illness Continuum",

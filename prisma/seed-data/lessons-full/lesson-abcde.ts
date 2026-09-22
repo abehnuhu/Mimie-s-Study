@@ -1,0 +1,246 @@
+import type { SeedFullLesson } from "../types";
+
+export const lessonAbcde: SeedFullLesson = {
+  courseSlug: "critical-care-nursing",
+  moduleTitle: "The Deteriorating Patient",
+  lessonTitle: "The ABCDE Approach",
+  description: "One fixed order of looking — airway, breathing, circulation, disability, exposure — that works on every emergency, from a CHPS compound to the district hospital. Learn it once and it will carry you through every crisis you meet.",
+  difficulty: "Clinical Reasoning",
+  durationMin: 12,
+  objectives: [
+    "By the end you can list the five letters of the ABCDE approach in order and state what each letter asks you to assess.",
+    "By the end you can describe the red flags to look for at each letter and the first nursing action each one demands.",
+    "By the end you can apply the 'treat as you find' principle — fixing a life-threatening problem before moving to the next letter.",
+    "By the end you can explain why ABCDE is a loop you restart after every intervention, and how it fits WHO ETAT guidance for district-level care.",
+  ],
+  tags: ["abcde", "emergency assessment", "deterioration", "critical care", "primary survey"],
+  sourceStatus: "PROPOSED",
+  sections: [
+    {
+      type: "callout",
+      title: "Why this matters",
+      body: "Emergencies in Ghana do not send a warning card. A patient collapses in the waiting area, a motorbike arrives at the compound gate, or a patient you admitted calmly last night simply 'doesn't look right' at 02:00. In all three situations, the ABCDE approach gives you one fixed order of looking that works without machines, without senior staff beside you yet, and without panic. The letters are the same whether you are the first person at the scene or the fifth — and every emergency team you ever join will speak this language.",
+    },
+    {
+      type: "text",
+      title: "What the ABCDE approach actually is",
+      body: "**ABCDE** stands for **Airway, Breathing, Circulation, Disability, Exposure** — a systematic primary assessment performed in that exact order, treating each life-threatening problem **as you find it** before moving to the next letter.\n\nTwo rules make it powerful. First, the order never changes: airway before breathing, breathing before circulation, every single time. Second, you do not finish the alphabet before you start treating. If the airway is blocked at A, you open it at A — you do not 'come back to it later'.\n\nIt is the backbone of the WHO's emergency-care teaching for frontline workers, including the **Emergency Triage Assessment and Treatment (ETAT)** tradition and the WHO/ICRC Basic Emergency Care course, and it is drilled into nursing and medical staff worldwide for one reason: it works, everywhere, with nothing but your eyes, your hands and your voice.",
+    },
+    {
+      type: "text",
+      title: "A is for Airway — is the pipe open?",
+      body: "Your first question is brutally simple: can air get in and out? Start with the **talk test** — say the patient's name and ask them to speak to you. A patient who answers in full sentences has a patent airway and breathing good enough for speech, two letters answered in one sentence.\n\nWhen the airway is threatened, it is usually **noisy**. **Gurgling** means fluid — saliva, vomit or blood — in the airway: turn the head, suction if you are trained and the machine is there, and shout for help. **Snoring** means the tongue has fallen back, classically in a drowsy patient lying flat on their back: a **head tilt with chin lift** (or a **jaw thrust** if you suspect a neck injury) often restores the airway before any gadget exists. **Stridor** — a harsh sound on breathing in — means swelling or obstruction somewhere from the throat down, and it is an urgent 'get senior help now' sound.\n\nThe quiet patient is not automatically the safe one: a silent chest with no breath sounds is the most frightening finding of all. If the patient is unconscious but breathing, the **recovery position** (on the side, airway angled down) protects the airway while help comes. Never force anything between the teeth of a convulsing patient — protect them from injury and let the fit follow its course while you call for help.",
+    },
+    {
+      type: "text",
+      title: "B is for Breathing — is the exchange happening?",
+      body: "Look before you touch. Is the chest **rising symmetrically**? Is the patient using **accessive muscles** — shoulders heaving, neck cords standing out? Are the lips and tongue pink or blue (**central cyanosis**)? Count the respiratory rate for a **full minute**, without announcing it — the same discipline you learned in vital signs.\n\nRed flags at B: a rate that is **too fast (30 or more)** or **too slow (8 or fewer)**, breathing that becomes shallow and exhausted, see-saw movement of the chest, cyanosis, or a patient **too breathless to finish a sentence**.\n\nFirst nursing actions: sit the patient **upright** if breathing is the problem (flat if she is fainting), give **oxygen as prescribed and as your facility protocol directs** — including a controlled target for patients with chronic lung disease — and prepare what the team will need: spacer, bag-valve-mask, suction. And call for help early: exhausted patients do not tire politely, they tip over.",
+    },
+    {
+      type: "text",
+      title: "C is for Circulation — is the blood moving?",
+      body: "Feel the **pulse**: its rate, its rhythm and — just as importantly — its **strength**. A weak, thready pulse at a 'normal' number is carrying bad news. Check **capillary refill**: press a fingernail or the sternum for five seconds, release, and count how long the colour takes to return — longer than two seconds suggests poor perfusion. Look at the skin: cold, clammy, pale or mottled skin says the circulation is diverting blood to the core.\n\n**Blood pressure is the late sign** — it holds until compensation fails, so a normal blood pressure never reassures you by itself. Look for **bleeding, visible and concealed**: check drains, check under the patient, check the bedding, and remember that bleeding after surgery or injury can pool quietly inside the abdomen. Where urine output is charted, a falling output is circulation speaking.\n\nFirst nursing actions: control any catastrophic external bleeding with **firm direct pressure**; keep the patient **flat with legs raised** if fainting; help obtain **IV access**; give fluids only **as prescribed**; and keep the patient **warm** — a cold patient bleeds worse and perfuses worse.",
+    },
+    {
+      type: "text",
+      title: "D is for Disability — is the brain working?",
+      body: "Disability is a short letter with three jobs. First, level of consciousness: use **AVPU** — is she **A**lert, responding to **V**oice, only to **P**ain, or **U**nresponsive — or the **Glasgow Coma Scale** if your ward uses it. Second, the **pupils**: are they equal in size, and do they react to light? Unequal or fixed pupils in a head-injury context are a call-the-team-now finding.\n\nThird — the one everybody forgets — **check the blood glucose**. Hypoglycaemia is the great mimic: it looks like confusion, stroke, drunkenness or even coma, it is common in treated diabetes, severe malaria and prolonged illness, and it is one of the few emergencies you can completely reverse at the bedside with sugar given per protocol. In a confused or drowsy patient, glucose is the cheapest, fastest, highest-yield check you have.\n\nNote also any new confusion — it is not 'just tiredness'; new confusion reflects the brain's oxygen and sugar supply, and it is an early deterioration sign. Protect the drowsy patient from falls, position them safely, and document what you found, including the time.",
+    },
+    {
+      type: "text",
+      title: "E is for Exposure — see what is hidden",
+      body: "The last letter earns its place at every drowsy, injured or feverish bedside: **undress the patient enough to actually see**. Under the wrapper and the two blankets may be the rash of meningitis, the bleeding wound from the fall, the swelling nobody has looked at, the burn, the distending abdomen.\n\nExposure has two duties that travel together: **dignity and warmth**. Uncover **one region at a time**, examine it, cover it again. In harmattan, and in every shocked patient, **heat loss is a clinical harm** — a cold patient is a worse patient, and shivering burns oxygen the patient may not have. Close the curtains, keep a sheet over what you are not examining, and involve a chaperone where the examination is intimate.\n\nE is also where **temperature** gets measured — both fever and hypothermia are findings that change the whole story.",
+    },
+    {
+      type: "table",
+      title: "The five letters at a glance",
+      body: "| Letter | Question you are asking | Red flags | First nursing actions |\n|---|---|---|---|\n| **A** — Airway | Can air get in and out? | Gurgling, snoring, stridor, silent chest | Talk test; head tilt–chin lift or jaw thrust; suction if trained; recovery position; shout for help |\n| **B** — Breathing | Is gas exchange happening? | Rate 30+ or 8 or fewer, cyanosis, accessory muscles, too breathless to speak | Sit upright; oxygen per prescription and protocol; count rate for a full minute; prepare equipment |\n| **C** — Circulation | Is blood reaching the tissues? | Weak rapid pulse, capillary refill over 2 seconds, cold mottled skin, obvious or concealed bleeding, falling urine output | Firm pressure on bleeding; flat with legs raised if fainting; IV access; fluids as prescribed; keep warm |\n| **D** — Disability | Is the brain perfused and fed? | V, P or U on AVPU, unequal pupils, new confusion, fits | AVPU or GCS; pupils; check glucose; protect from injury; document times |\n| **E** — Exposure | What is hidden under the clothes? | Rash, wounds, distension, fever or hypothermia | Expose one region at a time, cover again, keep warm, preserve dignity |",
+    },
+    {
+      type: "clinical_pearl",
+      title: "Treat as you find",
+      body: "You never leave C to go chasing D. If a problem at any letter is life-threatening, you fix or manage it right there — with position, pressure, oxygen, a shout for help — before moving on. The alphabet is an order of *asking*, not a queue of *waiting*.",
+    },
+    {
+      type: "clinical_pearl",
+      title: "The two-letters-in-one test",
+      body: "A patient who answers you in full sentences has, for that moment, a patent airway and breathing adequate for speech — A and B answered at once. It is a snapshot, not a promise: repeat it whenever anything changes, and remember that a patient can speak and still be desperately ill at C, D or E.",
+    },
+    {
+      type: "quiz_prompt",
+      title: "The forgotten check",
+      body: "A patient on the medical ward has become confused overnight. Apart from level of consciousness and pupils, which cheap bedside check must not be skipped during D — and why?\n\nAnswer: Blood glucose. Hypoglycaemia mimics almost any brain problem — confusion, aggression, one-sided weakness, coma — and it is common with treated diabetes, severe malaria and poor intake. It is also one of the few emergencies completely reversed at the bedside with sugar given per protocol, so missing it wastes the easiest save of the whole night shift.",
+    },
+    {
+      type: "case",
+      title: "The quiet drift on night duty",
+      body: "It is 02:10 on the medical ward of a district hospital. Madam Ama, 45, is on day three of treatment for severe malaria. The night nurse says she 'was not herself at supper'. You find her drowsy, lying flat on her back, breathing 28 shallow breaths a minute with a soft gurgling noise, snoring each time she relaxes. Her fingers are cold and the nail beds look pale. Pulse 112 and weak; capillary refill 4 seconds; blood pressure 104/66 — 'normal', says the chart. She responds to her name but answers slowly. You have a pulse oximeter, a glucometer and one pair of hands.\n\nWalk the letters. What comes first, and what exactly do you do? Why is the 'normal' blood pressure the least reassuring number in this set? At D, which bedside check do you perform — and what does a glucose of 3.1 mmol/L demand? What do you look for at E when you gently lift the wrapper? Finally: what belongs to you, and what belongs to the team you are about to wake?\n\nAnswer: Start at A — the gurgling and snoring say the airway is partially obstructed in a drowsy, flat patient: call for help, suction or turn the head to drain the secretions, lift the chin, and position her on her side once you have assessed her. At B, sit her up if her conscious level allows, count the rate properly, apply oxygen as your ward protocol directs and watch the oximeter. At C, the cold fingers, weak 112 pulse and 4-second refill say 'shock brewing' — the normal blood pressure is compensation, and compensation is a debt being called in; get IV access ready and hand the finding to the team. At D, check glucose: 3.1 mmol/L is hypoglycaemia — report it for treatment per protocol immediately, because sugar is the reversible part of this picture. At E, expose region by region — a malaria rash, hidden bleeding, or a distending abdomen changes the referral. Your job: assess, stabilise, document times, and escalate loudly. Diagnosis and prescriptions belong to the clinical team — but their head start belongs to you.",
+    },
+    {
+      type: "quiz_prompt",
+      title: "Why go back to A?",
+      body: "You have suctioned Madam Ama, positioned her on her side, and the team is on the way. Why do you now go back and check A and B again instead of moving on to finish your drug chart?\n\nAnswer: Because ABCDE is a loop, not a ladder. Every intervention can fail, wear off, or create a new problem — airways re-obstruct, drowsy patients roll onto their backs, oxygen tubing disconnects during dumsor. After every treatment, re-assess from the top. The patient is re-secured only while you keep checking.",
+    },
+    {
+      type: "memory_trick",
+      title: "The order is the clock",
+      body: "If panic ever wipes the sequence from your mind, ask one question: what kills fastest? A blocked airway kills in minutes. No breathing kills in minutes. No circulation stops the brain within minutes. A starving or injured brain (D) changes the whole plan. And hidden under the clothes (E) waits the clue nobody has seen yet. The letters are arranged in the order the body fails — so your assessment runs on the same clock.",
+    },
+    {
+      type: "text",
+      title: "Where ABCDE fits in Ghana's emergency system",
+      body: "ABCDE is not only for the patient in front of you — it is the shared language of the whole emergency pathway. WHO ETAT-based triage at district level uses the same logic to sort waiting patients; the referring facility's note describing 'A patent, B 30 and shallow, C weak pulse' tells the receiving team more than a page of adjectives; and your **SBAR** call for help (Situation, Background, Assessment, Recommendation) is simply ABCDE translated into a sentence.\n\nDocument as you go: what you found at each letter, the time, and what you did. Keep the family informed in brief, honest words — 'her breathing needs help, the team is with her now' — because families who understand do not obstruct, and you never abandon the patient even while running for help. In emergencies, the nurse who knows the order is the one the team instinctively follows.",
+    },
+    {
+      type: "summary",
+      title: "In one minute",
+      body: "- **ABCDE**: Airway, Breathing, Circulation, Disability, Exposure — assessed in that fixed order, at every emergency, with no equipment required to begin.\n- **Treat as you find**: a life-threatening problem is managed at its own letter before you move on.\n- A: talk test; gurgling means fluid, snoring means tongue, stridor means swelling; recovery position for the unconscious breather.\n- B: look, count for a full minute, position upright, oxygen per prescription and protocol — never withhold it from the hypoxic.\n- C: pulse strength, capillary refill, skin temperature and colour, bleeding visible and concealed; blood pressure is the late sign.\n- D: AVPU or GCS, pupils, and always the glucose — the cheap, reversible mimic.\n- E: expose one region at a time, then cover for warmth and dignity; measure temperature.\n- ABCDE is a **loop** — re-assess from the top after every intervention.\n- It is the backbone of WHO ETAT-style emergency care and the language of triage, referral notes and SBAR calls.",
+    },
+  ],
+  questions: [
+    {
+      topic: "The ABCDE Approach",
+      type: "MCQ",
+      difficulty: "Easy",
+      stem: "Which statement best describes the ABCDE approach to the acutely ill patient?",
+      options: [
+        "A fixed-order assessment — airway, breathing, circulation, disability, exposure — in which each life-threatening problem is treated as it is found, before moving to the next letter",
+        "A documentation format for recording observations in five boxes on the chart",
+        "A scoring system, like the Glasgow Coma Scale, that converts findings into one number",
+        "A triage tool used only when many casualties arrive at the facility at once",
+      ],
+      correctIndex: 0,
+      explanation: "ABCDE is a systematic primary assessment with a fixed order — A before B before C — combined with the 'treat as you find' rule: a life-threatening problem at any letter is managed immediately rather than queued for later. It is the backbone of WHO emergency-care teaching, it needs no equipment to begin, and it is drilled worldwide precisely because it works everywhere. It is not a chart format, not a single score, and although triage borrows the same logic, ABCDE belongs to every single emergency patient.",
+      whyOthers: {
+        B: "ABCDE may shape how you document, but its essence is the order of assessment and treatment — not the paperwork.",
+        C: "GCS scores one dimension (consciousness, the D of disability); ABCDE is a whole-body ordered assessment, not a single summed number.",
+        D: "Triage and mass-casualty sorting use the same physiology, but ABCDE is the bedside approach to the individual patient in any emergency, however quiet the ward.",
+      },
+      courseSlug: "critical-care-nursing",
+    },
+    {
+      topic: "Disability Assessment",
+      type: "MCQ",
+      difficulty: "Moderate",
+      stem: "During the D of an ABCDE assessment, what should the assessment include?",
+      options: [
+        "Level of consciousness (AVPU or Glasgow Coma Scale), pupil size and reaction, and a blood glucose check",
+        "Blood pressure and temperature trends only",
+        "Muscle strength testing in all four limbs only",
+        "The response to a stethoscope placed on the chest",
+      ],
+      correctIndex: 0,
+      explanation: "Disability is the brain's chapter, and it has three parts: the level of consciousness by AVPU (Alert, Voice, Pain, Unresponsive) or GCS; the pupils — equal and reactive or not; and crucially a bedside glucose, because hypoglycaemia mimics almost any brain problem and is one of the few emergencies fully reversible at the bedside. Blood pressure belongs to C, temperature to E, and detailed limb power is a fuller neurological examination that comes after the primary survey, never instead of it.",
+      whyOthers: {
+        B: "Blood pressure lives at C and temperature at E — neither tells you directly whether the brain is perfused and fuelled at this moment.",
+        C: "Limb power is useful in a fuller neurological exam, but disability in the primary survey is consciousness, pupils and glucose — checking power first wastes the minutes that matter.",
+        D: "A stethoscope assesses breathing at B; it says nothing about level of consciousness, pupils or glucose.",
+      },
+      courseSlug: "critical-care-nursing",
+    },
+    {
+      topic: "Airway First",
+      type: "CLINICAL_SCENARIO",
+      difficulty: "Clinical Reasoning",
+      stem: "You are called to a drowsy patient lying flat on the ward. His breathing is noisy and snoring, his colour is greyish, and he only responds to his name. What is your FIRST action?",
+      options: [
+        "Open the airway with a head tilt and chin lift (or jaw thrust if injury is suspected) while calling for help",
+        "Apply high-flow oxygen immediately, before touching the patient",
+        "Take his blood pressure to check for shock",
+        "Insert an oropharyngeal airway without any prior assessment",
+      ],
+      correctIndex: 0,
+      explanation: "Snoring in a drowsy patient lying flat is the classic sound of the tongue falling back and partially obstructing the airway — an A problem, and A comes first. A simple head tilt with chin lift (jaw thrust if you suspect a neck injury) often restores the airway immediately, and calling for help starts the team moving in parallel. Oxygen does nothing for a patient whose pipe is blocked — air must physically get in first. Blood pressure is a C question and a late sign, and airway adjuncts are chosen only after an assessment tells you they are needed and someone trained confirms it.",
+      whyOthers: {
+        B: "Oxygen delivered into a blocked airway never reaches the lungs — open the pipe first, then give the oxygen.",
+        C: "Blood pressure is assessed at C and falls late; the snoring airway in front of you is the immediate threat.",
+        D: "Reaching for a gadget before assessing is the wrong order — position the head first, and let the assessment (with senior support) decide whether an adjunct is appropriate.",
+      },
+      courseSlug: "critical-care-nursing",
+    },
+    {
+      topic: "Airway Assessment",
+      type: "TRUE_FALSE",
+      difficulty: "Moderate",
+      stem: "A patient who answers your question in full sentences has, for that moment, a patent airway and breathing adequate enough for speech. True or False?",
+      options: ["True", "False"],
+      correctIndex: 0,
+      explanation: "True. Producing a full sentence requires an open airway and enough gas exchange to power the voice — so the 'speak to me' test answers A and B together in seconds. It is a genuine bedside tool, but treat it as a snapshot, not a guarantee: patients with a patent airway and working breathing can still be in shock at C, hypoglycaemic at D, or hiding a crisis under the wrapper at E — and a patient who was speaking normally an hour ago may not be now. Re-assess whenever anything changes.",
+      whyOthers: {
+        B: "'False' ignores the physiology of speech — but the wise user of the test remembers it is momentary and partial, pairing it with the full ABCDE sweep.",
+      },
+      courseSlug: "critical-care-nursing",
+    },
+    {
+      topic: "ABCDE Red Flags",
+      type: "MULTI_SELECT",
+      difficulty: "Moderate",
+      stem: "During an ABCDE assessment, which findings must stop you from moving on until they are managed and escalated? Select ALL that apply.",
+      options: [
+        "Gurgling, noisy breathing in a drowsy patient",
+        "Cold, mottled skin with a weak rapid pulse and capillary refill of 4 seconds",
+        "A patient too breathless to finish a sentence",
+        "A calm patient who answers your questions clearly and comfortably",
+      ],
+      correctIndexes: [0, 1, 2],
+      explanation: "Gurgling says the airway is flooding with fluid (an A emergency), cold mottled skin with a weak pulse and sluggish refill says the circulation is failing (a C emergency), and being too breathless to complete a sentence marks severe breathing compromise (a B emergency). Each of these is a treat-as-you-find finding: manage it, call for help, and only then continue the survey. The calm patient who converses comfortably is precisely what you hope to find — though the survey still finishes, because D and E can still hold surprises.",
+      whyOthers: {
+        D: "Comfortable, clear conversation is a reassuring sign — it completes A and B for this moment and invites you to continue the assessment, not to stop it.",
+      },
+      courseSlug: "critical-care-nursing",
+    },
+  ],
+  flashcards: [
+    {
+      topic: "The ABCDE Approach",
+      front: "What do the five letters of ABCDE stand for, and what does each assess?",
+      back: "Airway — can air get in and out; Breathing — is gas exchange happening; Circulation — is blood reaching the tissues; Disability — is the brain perfused, and what is the glucose; Exposure — what is hidden under the clothes, and what is the temperature.",
+    },
+    {
+      topic: "The ABCDE Approach",
+      front: "Why does A come before B, and B before C?",
+      back: "The letters are ordered by how fast each failure kills: a blocked airway kills in minutes, absent breathing in minutes, failed circulation stops the brain within minutes — the assessment runs on the same clock as the body's failure.",
+    },
+    {
+      topic: "The ABCDE Approach",
+      front: "What three things does the D of Disability include?",
+      back: "Level of consciousness (AVPU: Alert, Voice, Pain, Unresponsive — or GCS), pupil size and reaction to light, and a bedside blood glucose check — hypoglycaemia is the great mimic and the easiest save.",
+    },
+    {
+      topic: "The ABCDE Approach",
+      front: "What does the 'treat as you find' rule mean?",
+      back: "A life-threatening problem found at any letter is managed right there — with position, pressure, oxygen or a call for help — before you move on to the next letter. The alphabet is an order of asking, not a queue of waiting.",
+    },
+    {
+      topic: "The ABCDE Approach",
+      front: "Why do you go back to A after every intervention?",
+      back: "ABCDE is a loop, not a ladder: airways re-obstruct, patients roll flat, tubing disconnects and treatments wear off — so after every treatment, re-assess from the top.",
+    },
+  ],
+  sources: [
+    {
+      organization: "World Health Organization / ICRC",
+      title: "Basic Emergency Care: Approach to the Acutely Ill and Injured",
+      year: "2020",
+      note: "The WHO open-access emergency care course built on the ABCDE approach.",
+    },
+    {
+      organization: "World Health Organization",
+      title: "Emergency Triage Assessment and Treatment (ETAT) course materials",
+      year: "2005",
+      note: "District-level emergency assessment and triage tradition for resource-limited settings.",
+    },
+    {
+      organization: "Nursing and Midwifery Council of Ghana",
+      title: "Curriculum for the Registered General Nursing (RGN) Programme",
+      year: "2015",
+      note: "Professional expectations for emergency recognition and escalation.",
+    },
+    {
+      organization: "Ghana Health Service",
+      title: "Standard Treatment Guidelines",
+      year: "2017",
+      note: "National emergency management and referral guidance.",
+    },
+  ],
+};

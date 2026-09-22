@@ -14,10 +14,10 @@ export interface CaseImage {
 export const caseImages: CaseImage[] = [
   {
     src: "/images/games/case-1.jpg",
-    alt: "A Ghanaian midwife gently checking on a young mother resting in a warm, softly-lit district hospital postnatal ward — the quiet opening scene of a postpartum haemorrhage case.",
+    alt: "A Ghanaian nurse gently checking on an older man resting in a warm, softly-lit district hospital ward at night — the quiet opening scene of a sepsis case.",
   },
   {
     src: "/images/games/case-2.jpg",
-    alt: "A Ghanaian midwife measuring the blood pressure of a quietly worried young pregnant woman at a bright antenatal clinic — the opening scene of a pre-eclampsia case.",
+    alt: "A Ghanaian nurse measuring the blood pressure of a middle-aged woman with a worried expression at her bedside — the opening scene of a chest pain case.",
   },
 ];

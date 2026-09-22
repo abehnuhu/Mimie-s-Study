@@ -1583,7 +1583,7 @@ function SettingsTab() {
             <Input
               value={settings.tagline ?? ""}
               onChange={(e) => setSettings({ ...settings, tagline: e.target.value })}
-              placeholder="Her little corner to become an amazing midwife."
+              placeholder="Her little corner to become an amazing nurse."
             />
           </div>
           <div className="flex items-center gap-2.5">

@@ -1,0 +1,241 @@
+import type { SeedFullLesson } from "../types";
+
+export const lessonHeadToToe: SeedFullLesson = {
+  courseSlug: "clinical-nursing-skills-3",
+  moduleTitle: "Assessment Skills That Matter",
+  lessonTitle: "The Head-to-Toe Assessment",
+  description: "A senior student's superpower: one confident sweep from head to toe that catches the quiet things — the pale conjunctiva, the warm calf, the sacrum nobody has looked at — before they become emergencies.",
+  difficulty: "Moderate",
+  durationMin: 12,
+  objectives: [
+    "By the end you can describe the four assessment techniques and their usual order — and explain the abdomen's famous exception.",
+    "By the end you can conduct a systematic head-to-toe sweep, region by region, comparing left with right and today with the patient's own baseline.",
+    "By the end you can identify findings during the sweep that demand same-day escalation.",
+    "By the end you can document the survey so that absent findings count as much as present ones.",
+  ],
+  tags: ["head-to-toe assessment", "physical examination", "assessment skills", "clinical nursing"],
+  sourceStatus: "PROPOSED",
+  sections: [
+    {
+      type: "callout",
+      title: "Why this matters",
+      body: "Ward rounds are diagnosis-focused: the team asks about the diabetes, the malaria, the operation. The head-to-toe assessment is the nurse's own safety net — a fixed, full-body sweep that catches what the diagnosis-focused questions never asked about. By Year 3, you are the student the ward trusts to do this properly at admission, before transfer, and whenever something feels 'off'. Done well, it finds the sacral pressure area on day two rather than day eight, and the swollen calf before the clot travels.",
+    },
+    {
+      type: "text",
+      title: "The four tools in your hands",
+      body: "Every region of the body is examined with the same four tools, in the same order: **inspection** (look — with good light and, where you can, with the region fully exposed), **palpation** (feel — warm hands, gentle first), **percussion** (tap — to map what lies underneath), and **auscultation** (listen — with a stethoscope warmed between your palms).\n\nTwo truths about the tools. First, **inspection is the biggest earner**: most findings in a full examination are made with your eyes before your hands touch the patient. Second, the order — inspection, palpation, percussion, auscultation — holds for almost every region of the body. The **abdomen is the famous exception**, and there is a reason you will never forget once you hear it.\n\nA senior nurse can complete the whole sequence with nothing but eyes, hands, a stethoscope and a watch. In a district hospital where monitors go off during dumsor, that is exactly the skill set worth owning.",
+    },
+    {
+      type: "text",
+      title: "Before you touch: consent, privacy, and the general survey",
+      body: "Introduce yourself, confirm the patient's name, and **explain what you are about to do** — a body examination is intimate work, and consent is both a right and a doorway to cooperation. Pull the curtain or screen, close the door, wash your hands, and position the patient comfortably. Expose **one region at a time**, examine it, and cover it again — dignity preserved is cooperation earned, and in harmattan a patient kept warm is a patient kept stable. For intimate examinations, work with a **chaperone**.\n\nThen — before any technique — comes the **general survey**, the most underrated data of the whole assessment. As you greet the patient and watch her walk to the bed: does she look **well or unwell**? How is her **nutrition** — thin, wasted, or carrying extra weight? Her **gait** — steady, limping, unsteady? Her **speech** — clear, slurred, breathless in single words? Her **hygiene and dress** — can they hint at self-neglect, depression, or a home situation that will matter at discharge? Her **odour**? None of this needs an instrument, and all of it shapes your interpretation of everything that follows.",
+    },
+    {
+      type: "text",
+      title: "Head and neck",
+      body: "Start at the top. **Eyes**: are the pupils **equal** and do they react to light? Pull the lower lid down gently and look at the **conjunctiva** — pale inner lids are one of the bedside's best flags for **anaemia**, a daily reality in Ghana where malaria, hookworm and poor diet keep haemoglobins low. Check the sclera (the white of the eye) for yellowing — **jaundice** suggests liver or blood problems.\n\n**Mouth**: with consent and a light, look at the mucosa — **dry, sticky membranes** signal dehydration; a coated tongue or white patches can mean infection; mouth ulcers and gum disease tell their own stories. **Neck**: ask her to touch chin to chest — **neck stiffness** with fever or headache is a meningitis-belt emergency, and in Ghana's dry season that finding must never be sat on. Feel gently for **enlarged lymph nodes**; look for neck veins that stand out when she is at 45 degrees (**raised JVP** — a fluid-overload sign); and check the trachea is **central**.",
+    },
+    {
+      type: "text",
+      title: "Chest — front and back",
+      body: "Inspect first: is the chest **moving symmetrically** — or does one side lag, which happens when one lung is compromised? Look for **scars**, deformities, and the **breathing effort**: are the shoulders heaving, the neck cords standing out — accessory muscle use that says work of breathing is high? Count the respiratory rate for a **full minute** with your fingers resting on the wrist, the honest trick from your vital-signs lesson.\n\nThen listen. Compare **like with like**: upper zones front and back, then bases front and back, left against right — abnormal sounds announce themselves by being different from their mirror image. Note whether you hear normal breath sounds or added sounds, and whether air entry sounds equal. For the heart, find the **apex beat** — normally at the **fifth intercostal space on the left, at the mid-clavicular line** — its position tells you about the heart's size, and its drift outward is a bedside sign of strain no machine is needed to detect. End with the hands: warm or cold, **cyanosed** fingertips, and nails that curve like little watch glasses (**clubbing**) — a quiet sign of long-standing lung or heart disease.",
+    },
+    {
+      type: "text",
+      title: "The abdomen and its famous exception",
+      body: "Here the order changes: **inspect, auscultate, palpate, percuss** — listen **before** you knead. The reason is simple: palpation and percussion stir the gut and can **change bowel sounds**, so the honest listener goes first.\n\nBefore touching anywhere, **ask about pain** — where it is, and permission to examine. Keep your hands **warm** (a cold hand makes abdominal muscles guard and ruins your examination), start **away from the painful area**, and **palpate the painful quadrant last**, so pain does not guard the rest of your map. Watch the patient's **face**, not your hands — the face tells you about tenderness before any words do. Note **distension**, the shape, any visible movement; feel for **guarding** (muscles rigidly protecting the abdomen) and **rebound tenderness** if indicated; and check what the bowel sounds are — present, absent, or high-pitched and tinkling. All of it, systematically, quadrant by quadrant.",
+    },
+    {
+      type: "text",
+      title: "Limbs, skin, and the easy-to-miss places",
+      body: "Compare the **limbs as pairs** — arms with arms, legs with legs. Feel the **pulses** (radial at the wrist; dorsalis pedis on the top of the foot) and note their presence, rate and strength. Check **capillary refill** on a fingertip. Look at the **skin**: colour, moisture, and **turgor** — a pinch of skin on the forearm that tents and returns slowly says dehydration.\n\nNow the places the sweeps of the world miss. **Calves**: measure or compare by look and gentle feel — a **warm, swollen, tender calf** on one side only, especially after a long trotro journey or days in bed, is a possible deep vein thrombosis until reviewed — **never massage it**, report it. **Pressure areas**: in dark skin, redness may be hard to see — look for a patch that is **darker, firmer, warmer or boggy compared with the skin beside it**, over the sacrum, heels, hips and shoulders. **Feet and between the toes**: fissures and fungal cracks matter when a patient is diabetic. Check **movement and sensation** — 'can you lift your legs? push against my hands? feel me touch both feet?' — and note oedema: where it sits, and whether it **pits** when pressed.",
+    },
+    {
+      type: "table",
+      title: "One sweep, region by region",
+      body: "| Region | What to inspect | What to feel / listen for | Red flags worth escalation |\n|---|---|---|---|\n| General survey | Well or unwell, nutrition, gait, speech, hygiene, odour | — | Looks unwell, new unsteadiness, new confusion |\n| Head & neck | Conjunctiva colour, sclera, mouth, neck movement | Lymph nodes, neck stiffness, JVP, trachea | Pale conjunctiva, jaundice, neck stiffness with fever |\n| Chest | Symmetry of movement, effort, scars, accessory muscles | Breath sounds compared side to side; apex beat; full-minute respiratory rate | One-sided findings, wheeze or silent chest, displaced apex beat |\n| Abdomen | Contour, distension, visible movement | Bowel sounds before palpation; tenderness, guarding, organ edges | Guarding, rigidity, absent bowel sounds, new distension |\n| Limbs & skin | Colour, swelling (compare pairs), pressure areas, wounds | Pulses, capillary refill, skin turgor, calf symmetry, pitting oedema, sensation | Warm swollen tender calf, non-blanching pressure area, absent pulses |",
+    },
+    {
+      type: "quiz_prompt",
+      title: "Why the abdomen breaks the rule",
+      body: "For most of the body the order is inspect → palpate → percuss → auscultate. Why does the abdomen switch to inspect → auscultate → palpate → percuss?\n\nAnswer: Because palpation and percussion physically stir the bowel, and can change or abolish bowel sounds — so once you have kneaded the abdomen, you can never again hear what it sounded like before you touched it. The honest listener goes first.",
+    },
+    {
+      type: "clinical_pearl",
+      title: "Compare like with like",
+      body: "The single habit that lifts a head-to-toe assessment from good to excellent: compare **left with right**, and compare **today with this patient's own baseline**. A calf 3 cm fuller than its partner is a finding; a heart rate of 88 in a woman whose home rate is 64 is a finding. Write the baseline where the next shift can see it — the most valuable instrument on the ward is a previous observation.",
+    },
+    {
+      type: "case",
+      title: "The sweep that found three things",
+      body: "Madam Akosua, 68, is admitted to the medical ward of your district hospital with poorly controlled diabetes and a small ulcer on her left foot. The ward is short-staffed, and the nurse in charge asks you — the senior student — to do the full head-to-toe admission assessment. You take your stethoscope and start with the general survey: she walks slowly to the bed, thin, quiet, and you notice she did not finish her greeting.\n\nYour sweep finds: conjunctiva pale; mouth dry; chest moving symmetrically with vesicular breath sounds throughout; apex beat where you expected it; abdomen soft with bowel sounds present and mild epigastric tenderness; and — the part nobody mentioned — a right calf that is visibly fuller than the left, warm and mildly tender; and over the sacrum, a patch of skin darker and firmer than the skin around it, intact but not blanching when pressed.\n\nWhich of these findings belong on your 'report today' list, and why? What must you NOT do to that calf, however comforting a rub might feel? What does the pale conjunctiva plus the dry mouth suggest together, and what simple bedside checks would help? For the sacral patch — what does 'intact but not blanching' mean, and what must start today? Finally: which parts of this assessment belong to you, and which to the team you report to?\n\nAnswer: Three findings need escalation: the **warm, swollen, tender calf** (possible DVT — never massage a suspected clot; report, document, escalate, and ask about the journey here), the **pale conjunctiva with dry mucous membranes** (anaemia plus dehydration — both common and both measurable: a haemoglobin request and hydration plan belong to the team), and the **sacral patch that is intact but non-blanching** — that is an early pressure injury in the making, and pressure-area care (repositioning, offloading, skin care, nutrition) starts today, not when the skin breaks. Your role: assess systematically, document clearly, escalate the three findings, and start the preventive nursing care that is already within your scope. Diagnosis and prescriptions belong to the team — but all three of these problems will be found by a nurse, and found by one who swept properly.",
+    },
+    {
+      type: "quiz_prompt",
+      title: "The calf rule",
+      body: "Your sweep finds a right calf that is warmer, fuller and more tender than the left in a patient two days into a ward stay. What must you NOT do — and what must you do instead?\n\nAnswer: Do not massage or rub it — a suspected deep vein thrombosis can dislodge and travel to the lungs. Instead: report the finding the same day, document your comparison carefully (measure both calves if your ward does this), keep the limb still and comfortable as directed, and ask about the risk story — long journey, bed rest, recent surgery — while the team reviews it.",
+    },
+    {
+      type: "memory_trick",
+      title: "Look longer than you touch",
+      body: "Three honest words for any sweep: **Look, Listen, Feel**. Look longer than you touch — most findings are visual before they are manual. Listen before you knead the belly — the gut tells the truth only once. And feel with **warm hands, saving the painful part for last**, watching the face and not your fingers. Compare every left with every right, and today with her yesterday — the finding is the *change*.",
+    },
+    {
+      type: "text",
+      title: "Writing it down: negatives are findings too",
+      body: "The assessment only becomes patient care when it survives into the chart. Document **immediately** — memory is a treacherous colleague. Record **what is present** with plain, professional words ('warm, swollen right calf; tender'; 'pale conjunctiva'), and — the habit of the excellent — record **what is absent**: 'chest clear, air entry equal', 'calves symmetrical', 'sacrum intact, skin blanches'.\n\nWhy do absent findings matter? Two reasons. They prove the assessment was actually done — 'sacrum intact' cannot be written by someone who never looked. And they hand the next shift a **baseline**: if tomorrow's note says the sacrum is now dusky, the change is visible instantly. Note the patient's own words where they carry weight, record the time, and end any abnormal finding with what you did about it — reported to whom, when. An unreported finding might as well not exist.",
+    },
+    {
+      type: "summary",
+      title: "In one minute",
+      body: "- Four techniques, one fixed order: **inspection, palpation, percussion, auscultation** — except the **abdomen**, where you auscultate before palpating so the gut is heard before it is stirred.\n- Before touching: introduce, consent, privacy, warm hands, one region exposed at a time — and the **general survey** (well or unwell, gait, speech, nutrition, hygiene) as data set number one.\n- Head & neck: pupils, conjunctiva for pallor, sclera for jaundice, mouth for hydration, neck stiffness, nodes, JVP, central trachea.\n- Chest: symmetry and effort first, breath sounds compared side to side, apex beat at the fifth intercostal space mid-clavicular line, respiratory rate for a full minute.\n- Abdomen: ask about pain first, palpate the **painful quadrant last**, watch the face, note guarding and bowel sounds.\n- Limbs & skin: compare pairs — pulses, refill, turgor, oedema, calves (never massage a suspected clot), pressure areas (in dark skin: darker, firmer, warmer patches), sensation and movement.\n- Compare like with like, and against the patient's own baseline — the finding is the change.\n- Document present **and absent** findings immediately: negatives prove you looked and give the next shift its baseline.",
+    },
+  ],
+  questions: [
+    {
+      topic: "Assessment Techniques",
+      type: "MCQ",
+      difficulty: "Easy",
+      stem: "For most regions of the body, what is the usual order of the four physical assessment techniques?",
+      options: [
+        "Inspection, then palpation, then percussion, then auscultation",
+        "Auscultation first, then inspection, palpation and percussion",
+        "Palpation first — feeling must come before looking so the eyes are not biased",
+        "Percussion, auscultation, inspection, palpation",
+      ],
+      correctIndex: 0,
+      explanation: "The classic sequence is inspection → palpation → percussion → auscultation (look, feel, tap, listen), used for nearly every region of the body. Looking comes first because most findings in a full examination are visual, and palpation before percussion follows the tradition from head-to-toe examination teaching. The one famous exception is the abdomen, where auscultation moves ahead of palpation and percussion for a physiological reason — touching the gut can change the bowel sounds you are trying to hear.",
+      whyOthers: {
+        B: "This reverses the logic — only the abdomen promotes auscultation to second place, and no region listens first.",
+        C: "Palpating before inspecting discards your richest source of findings — the eyes — and can startle the patient before rapport is built.",
+        D: "Percussion first is a random shuffle with no teaching tradition behind it, and listening last everywhere would repeat the abdominal mistake in reverse.",
+      },
+      courseSlug: "clinical-nursing-skills-3",
+    },
+    {
+      topic: "Abdominal Assessment",
+      type: "MCQ",
+      difficulty: "Moderate",
+      stem: "Why is the abdomen the famous exception to the usual order of assessment techniques — auscultating before palpating and percussing?",
+      options: [
+        "Because palpation and percussion physically disturb the bowel and can alter or abolish the bowel sounds you are listening for",
+        "Because the stethoscope must be warmed on abdominal skin before it can work elsewhere",
+        "Because patients find listening more comfortable than touching, so it builds rapport",
+        "There is no reason — it is simply an old tradition with no physiology behind it",
+      ],
+      correctIndex: 0,
+      explanation: "Palpating and percussing the abdomen mechanically stir the gut — peristalsis can be stimulated or quietened — so the bowel sounds you hear afterwards may no longer be the sounds the abdomen was making on its own. Listening first captures the honest baseline. This is one of those small rules that separates a proper assessment from a ritual, and examiners love it precisely because the physiology is real.",
+      whyOthers: {
+        B: "Warming the stethoscope between your palms is good manners, but it is not the reason for the abdominal sequence.",
+        C: "Rapport matters, but the order is physiology-driven, not comfort-driven — and percussion is hardly more comfortable than palpation anyway.",
+        D: "There is excellent physiology behind it — which is exactly why it is taught as the exception rather than as habit.",
+      },
+      courseSlug: "clinical-nursing-skills-3",
+    },
+    {
+      topic: "Calf Assessment",
+      type: "CLINICAL_SCENARIO",
+      difficulty: "Clinical Reasoning",
+      stem: "During a routine head-to-toe sweep, you find a right calf that is warmer, visibly fuller and more tender than the left, in a patient admitted two days ago after a long bus journey. What must you NOT do, and what must you do?",
+      options: [
+        "Do not massage the calf — a suspected deep vein thrombosis can dislodge and travel to the lungs; instead document the comparison, report it the same day and keep the limb still while the team reviews",
+        "Massage the calf firmly to disperse the swelling, then recheck in the morning",
+        "Apply a tight bandage from toes to knee to squeeze the swelling out",
+        "Note it as minor bruising, since the patient says the journey was long and uncomfortable",
+      ],
+      correctIndex: 0,
+      explanation: "A unilateral warm, swollen, tender calf in a recently immobile patient — a long bus journey is a classic Ghanaian risk story — is a possible deep vein thrombosis until reviewed. Massaging a suspected clot risks dislodging it into the circulation, where it can travel to the lungs as a life-threatening embolism; tight bandaging is equally unhelpful and painful. The nursing duty is to recognise, document the comparison precisely, escalate the same day, and keep the limb still and supported as the team directs. This is the calf rule of every head-to-toe assessment: compare, but never rub.",
+      whyOthers: {
+        B: "Massaging a suspected DVT is the classic error — the clot can break free and embolise to the lungs.",
+        C: "Tight bandaging does not treat a clot and adds pain and constriction to an already compromised limb.",
+        D: "Dismissing it as journey bruising assumes away the exact finding — asymmetry, warmth and tenderness — that DVT presents with; Long journeys raise, not lower, the concern.",
+      },
+      courseSlug: "clinical-nursing-skills-3",
+    },
+    {
+      topic: "General Survey",
+      type: "MULTI_SELECT",
+      difficulty: "Moderate",
+      stem: "Which observations belong to the general survey — the data gathered with your eyes and ears before any technique is applied? Select ALL that apply.",
+      options: [
+        "Whether the patient looks well or unwell at first glance",
+        "The patient's gait and posture while walking to the bed",
+        "The exact span of the liver measured with percussion",
+        "Speech and personal hygiene as observed during your greeting",
+      ],
+      correctIndexes: [0, 1, 3],
+      explanation: "The general survey is unaided observation: appearance (well or unwell), nutrition, gait and posture, speech, hygiene and odour — everything you absorb in the first minute of greeting and walking. It shapes the interpretation of everything that follows and needs no instrument. The liver span measured by percussion is part of the later abdominal examination — a technique-based measurement, not a survey observation.",
+      whyOthers: {
+        C: "Percussing a liver span requires a technique on a region — it is examination, not survey; the survey is what your eyes and ears gather before you ever touch or percuss.",
+      },
+      courseSlug: "clinical-nursing-skills-3",
+    },
+    {
+      topic: "Documentation",
+      type: "TRUE_FALSE",
+      difficulty: "Moderate",
+      stem: "Writing 'chest clear, air entry equal' and 'calves symmetrical' in a normal head-to-toe assessment is unnecessary padding. True or False?",
+      options: ["True", "False"],
+      correctIndex: 1,
+      explanation: "False — negative findings are findings. They prove the assessment was actually performed ('sacrum intact' cannot be written by someone who never looked), and they hand the next shift a baseline against which any change becomes instantly visible: the day the sacral note changes from 'intact, blanches' to 'dusky, firm' is the day prevention failed and must escalate. Charts without negatives cannot distinguish 'checked and normal' from 'never checked at all' — and that difference is where patient safety lives.",
+      whyOthers: {
+        A: "This is precisely the mindset that lets deterioration hide: if you only ever record the abnormal, nobody can tell whether the normal was ever confirmed.",
+      },
+      courseSlug: "clinical-nursing-skills-3",
+    },
+  ],
+  flashcards: [
+    {
+      topic: "Assessment Skills",
+      front: "What is the usual order of the four assessment techniques — and the abdomen's exception?",
+      back: "Inspection → palpation → percussion → auscultation. The exception is the abdomen: auscultate before palpating and percussing, because touching the gut can change the bowel sounds you are listening for.",
+    },
+    {
+      topic: "Assessment Skills",
+      front: "Why do you palpate the painful abdominal quadrant last?",
+      back: "Because palpating the painful area first makes the abdominal muscles guard, spoiling your examination of the rest of the belly — and hurting a patient early costs their trust. Ask about pain first, start away from it, watch the face, and visit the tender quadrant last.",
+    },
+    {
+      topic: "Assessment Skills",
+      front: "A calf that is warmer, fuller and more tender than its partner suggests what — and what must you never do?",
+      back: "Possible deep vein thrombosis — never massage or tightly bandage it (a clot can dislodge and travel to the lungs). Document the comparison, report the same day, keep the limb still as directed.",
+    },
+    {
+      topic: "Assessment Skills",
+      front: "How do you check for pallor at the bedside — and why does it matter in Ghana?",
+      back: "Gently pull down the lower eyelid and look at the conjunctiva; pale inner lids flag anaemia. With malaria, hookworm and dietary lack so common in Ghana, this 5-second check is one of the highest-yield moves in any head-to-toe assessment.",
+    },
+    {
+      topic: "Assessment Skills",
+      front: "Why record negative findings like 'chest clear' or 'sacrum intact'?",
+      back: "Negatives are findings: they prove the assessment was done, and they give the next shift a baseline so any change is instantly visible — the day 'blanches' becomes 'dusky and firm' is the day prevention must escalate.",
+    },
+  ],
+  sources: [
+    {
+      organization: "Elsevier",
+      title: "Jarvis: Physical Examination and Health Assessment",
+      year: "2020 (8th edition)",
+      note: "The classic head-to-toe examination text — technique order, regional examination and documentation.",
+    },
+    {
+      organization: "Elsevier",
+      title: "Potter and Perry: Fundamentals of Nursing",
+      year: "2021 (10th edition)",
+      note: "Assessment as the first step of the nursing process; general survey and documentation standards.",
+    },
+    {
+      organization: "Nursing and Midwifery Council of Ghana",
+      title: "Curriculum for the Registered General Nursing (RGN) Programme",
+      year: "2015",
+      note: "Physical assessment competencies expected of the senior student nurse.",
+    },
+    {
+      organization: "World Health Organization",
+      title: "Package of Essential Noncommunicable Disease (PEN) Interventions",
+      year: "2020",
+      note: "Structured assessment and risk checks for chronic-disease patients at first-level facilities.",
+    },
+  ],
+};

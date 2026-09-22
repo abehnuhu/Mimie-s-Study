@@ -21,9 +21,9 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Mimie's Study — Her little corner to become an amazing midwife",
+  title: "Mimie's Study — Her little corner to become an amazing nurse",
   description:
-    "A private, beautiful learning companion for Mimie's BSc Midwifery journey. Study smart. Grow confident.",
+    "A private, beautiful learning companion for Mimie's BSc Nursing journey. Study smart. Grow confident.",
   robots: { index: false, follow: false, nocache: true, noarchive: true },
   manifest: "/manifest.webmanifest",
   icons: {

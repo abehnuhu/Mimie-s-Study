@@ -30,7 +30,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Almost everything a midwife does happens in and around the pelvis. You will palpate the fundus above it, guide a baby through it, and support the pelvic floor that closes its outlet. If you know this bowl of bone well, every other skill you learn has somewhere to live. If you don't, each new skill floats loose.\n\nIn this first overview we name the bones, divide the pelvis into its working parts, and meet the landmarks you will use daily on the labour ward. Think of it as drawing the map before you learn the roads.",
+        body: "Almost everything a nurse does happens in and around the pelvis. You will palpate the fundus above it, guide a baby through it, and support the pelvic floor that closes its outlet. If you know this bowl of bone well, every other skill you learn has somewhere to live. If you don't, each new skill floats loose.\n\nIn this first overview we name the bones, divide the pelvis into its working parts, and meet the landmarks you will use daily on the labour ward. Think of it as drawing the map before you learn the roads.",
       },
       {
         type: "text",
@@ -44,7 +44,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "During a busy evening on a district hospital labour ward, your senior midwife calls you to review a partograph together. You read aloud: cervix six centimetres dilated, station zero, cephalic presentation, contractions every four minutes. The mother dozes calmly between contractions and the fetal heart is steady. Then the senior turns to you and asks: station zero is measured against which landmark, and what does it tell you about the baby's journey?\n\nAnswer: Station zero means the lowest part of the baby's head is level with the ischial spines of the mother's true pelvis. It tells you descent is progressing: station minus two means the head is still above the spines, while station plus two means it has travelled below them, moving toward the outlet and birth. Making the spines your zero turns the whole passage into a simple number line you can chart across shifts.",
+        body: "During a busy evening on a district hospital labour ward, your senior nurse calls you to review a partograph together. You read aloud: cervix six centimetres dilated, station zero, cephalic presentation, contractions every four minutes. The mother dozes calmly between contractions and the fetal heart is steady. Then the senior turns to you and asks: station zero is measured against which landmark, and what does it tell you about the baby's journey?\n\nAnswer: Station zero means the lowest part of the baby's head is level with the ischial spines of the mother's true pelvis. It tells you descent is progressing: station minus two means the head is still above the spines, while station plus two means it has travelled below them, moving toward the outlet and birth. Making the spines your zero turns the whole passage into a simple number line you can chart across shifts.",
       },
       {
         type: "memory_trick",
@@ -138,9 +138,9 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
-        note: "Standard midwifery text — pelvic assessment and labour mechanics.",
+        note: "Standard nursing text — pelvic assessment and labour mechanics.",
       },
     ],
   },
@@ -179,7 +179,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "A woman on your postnatal ward has not passed urine for six hours after birth, and the senior midwife asks you to prepare to catheterise her. As you set up your sterile trolley, a classmate whispering beside you admits she always feels unsure — the openings look so close together on every woman. She asks you, before anything is inserted: which opening takes the catheter, and where exactly does it sit?\n\nAnswer: The catheter passes into the urethral meatus — the small opening that lies anterior (toward the front) to the vaginal opening and just below the clitoris, within the vestibule. Cleanse from front to back, and if the catheter slips into the vaginal opening by mistake, discard it and start again with a fresh sterile one. Naming the doors before you touch them is how you protect this woman from trauma and infection.",
+        body: "A woman on your postnatal ward has not passed urine for six hours after birth, and the senior nurse asks you to prepare to catheterise her. As you set up your sterile trolley, a classmate whispering beside you admits she always feels unsure — the openings look so close together on every woman. She asks you, before anything is inserted: which opening takes the catheter, and where exactly does it sit?\n\nAnswer: The catheter passes into the urethral meatus — the small opening that lies anterior (toward the front) to the vaginal opening and just below the clitoris, within the vestibule. Cleanse from front to back, and if the catheter slips into the vaginal opening by mistake, discard it and start again with a fresh sterile one. Naming the doors before you touch them is how you protect this woman from trauma and infection.",
       },
       {
         type: "memory_trick",
@@ -273,9 +273,9 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
-        note: "Clinical application of pelvic anatomy to midwifery practice.",
+        note: "Clinical application of pelvic anatomy to nursing practice.",
       },
     ],
   },
@@ -545,9 +545,9 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
-        note: "Clinical midwifery application of cycle physiology.",
+        note: "Clinical nursing application of cycle physiology.",
       },
     ],
   },
@@ -816,7 +816,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
         note: "Ectopic pregnancy recognition and referral pathways.",
       },
@@ -1088,7 +1088,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
         note: "Genetic screening and counselling in antenatal care.",
       },
@@ -1115,7 +1115,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Pregnancy is the healthiest state in which the body does the most dramatic remodelling of a woman's life. Almost every system changes — blood, heart, lungs, kidneys, gut, skin — and most of what looks strange on a chart is actually adaptation, not illness.\n\nYour future job as a midwife is to stand at the border between normal adaptation and disease. This lesson is your first map of that border.",
+        body: "Pregnancy is the healthiest state in which the body does the most dramatic remodelling of a woman's life. Almost every system changes — blood, heart, lungs, kidneys, gut, skin — and most of what looks strange on a chart is actually adaptation, not illness.\n\nYour future job as a nurse is to stand at the border between normal adaptation and disease. This lesson is your first map of that border.",
       },
       {
         type: "text",
@@ -1217,7 +1217,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
         note: "Maternal adaptations to pregnancy and clinical implications.",
       },
@@ -1392,7 +1392,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The core ideas",
-        body: "Before any move, assess and plan: can she move herself with a little coaching? Is the bed at your hip height, wheels locked, floor clear? Do you need a second pair of hands? Then protect your back with the golden rules: **base wide, load close, knees bent** — and turn your feet instead of twisting your spine. Push and pivot wherever possible; the strongest midwife is the one who never lifts what can be rolled or slid.\n\nPositioning has a clinical purpose beyond comfort. **Fowler's** (sitting upright) helps breathing and eating; **semi-Fowler's** eases reflux; **lateral** — for a pregnant woman, specifically left lateral — keeps the heavy uterus off the major veins; **Sim's** (half-prone) suits an unconscious or nauseated patient. For anyone confined to bed, reposition at least every two hours, float the heels off the mattress with a pillow, and check the skin over the sacrum and heels each time — pressure injuries form quietly in hours.\n\nAfter childbirth or surgery, mobility becomes medicine. Walking contracts the calf muscles — the body's second heart — pushing blood back and preventing clots; deep breaths clear the lungs; movement wakes the bowel. That first walk is a treatment, and it is yours to deliver.",
+        body: "Before any move, assess and plan: can she move herself with a little coaching? Is the bed at your hip height, wheels locked, floor clear? Do you need a second pair of hands? Then protect your back with the golden rules: **base wide, load close, knees bent** — and turn your feet instead of twisting your spine. Push and pivot wherever possible; the strongest nurse is the one who never lifts what can be rolled or slid.\n\nPositioning has a clinical purpose beyond comfort. **Fowler's** (sitting upright) helps breathing and eating; **semi-Fowler's** eases reflux; **lateral** — for a pregnant woman, specifically left lateral — keeps the heavy uterus off the major veins; **Sim's** (half-prone) suits an unconscious or nauseated patient. For anyone confined to bed, reposition at least every two hours, float the heels off the mattress with a pillow, and check the skin over the sacrum and heels each time — pressure injuries form quietly in hours.\n\nAfter childbirth or surgery, mobility becomes medicine. Walking contracts the calf muscles — the body's second heart — pushing blood back and preventing clots; deep breaths clear the lungs; movement wakes the bowel. That first walk is a treatment, and it is yours to deliver.",
       },
       {
         type: "clinical_pearl",
@@ -1672,7 +1672,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "Two hours after a straightforward vaginal delivery on your postnatal ward, you do your routine check and find the fundus soft and two finger-breadths above the umbilicus, with a round bulge appearing above the pubic bone. She has not passed urine since delivery and says she does not feel any urge. Your classmate suggests charting it and waiting for the doctor's rounds. What do you suspect — and what is your first action?\n\nAnswer: You suspect a full bladder holding the uterus up so it cannot clamp — the soft fundus and suprapubic bulge say so, and haemorrhage is the danger if nothing changes. First, help her empty the bladder herself: walk her to the toilet if steady, give privacy, run the tap or trickle warm water over the perineum, then recheck — the fundus should firm and drop toward the umbilicus. If she cannot void within about six hours, inform the senior midwife; catheterisation per protocol follows.",
+        body: "Two hours after a straightforward vaginal delivery on your postnatal ward, you do your routine check and find the fundus soft and two finger-breadths above the umbilicus, with a round bulge appearing above the pubic bone. She has not passed urine since delivery and says she does not feel any urge. Your classmate suggests charting it and waiting for the doctor's rounds. What do you suspect — and what is your first action?\n\nAnswer: You suspect a full bladder holding the uterus up so it cannot clamp — the soft fundus and suprapubic bulge say so, and haemorrhage is the danger if nothing changes. First, help her empty the bladder herself: walk her to the toilet if steady, give privacy, run the tap or trickle warm water over the perineum, then recheck — the fundus should firm and drop toward the umbilicus. If she cannot void within about six hours, inform the senior nurse; catheterisation per protocol follows.",
       },
       {
         type: "memory_trick",
@@ -1753,7 +1753,7 @@ export const lessons: SeedFullLesson[] = [
     sources: [
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
         note: "Postnatal bladder care and immediate postpartum monitoring.",
       },

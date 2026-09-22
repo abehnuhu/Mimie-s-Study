@@ -1,7 +1,7 @@
 // ─────────────────────────────────────────────────────────────
 // MIMIE'S STUDY — BULK LESSON CONTENT
-// Year 3, Semester 2 — Batch C (Neonatal & Paediatric Nursing)
-// 16 lessons anchored to prisma/seed-data/anchors/y3s2-c.json
+// Year 3, Semester 2 — Batch C (High-Risk Maternal & Newborn Care)
+// 12 lessons anchored to prisma/seed-data/curriculum.ts
 // Match key: courseSlug::moduleTitle::lessonTitle
 // ─────────────────────────────────────────────────────────────
 import type { SeedFullLesson } from "../types";
@@ -9,52 +9,1034 @@ import type { SeedFullLesson } from "../types";
 export const lessons: SeedFullLesson[] = [
   // ── 1 ──────────────────────────────────────────────────────
   {
-    courseSlug: "neonatal-nursing",
-    moduleTitle: "The At-Risk Newborn",
-    lessonTitle: "Neonatal Danger Signs",
+    courseSlug: "high-risk-maternal-newborn",
+    moduleTitle: "Spotting Trouble Early",
+    lessonTitle: "Risk Assessment: The First Visit Onwards",
     description:
-      "A newborn cannot say where it hurts — but the body speaks through a short list of warning signs. Learn the list, and you will know the baby who needs hospital today.",
-    difficulty: "Easy",
-    durationMin: 12,
+      "Some mothers carry their risks quietly — the booking visit is where a nurse's questions turn a hidden danger into a written plan.",
+    difficulty: "Moderate",
+    durationMin: 11,
     objectives: [
-      "Describe the WHO/UNICEF neonatal danger signs and what each one may mean.",
-      "Explain why newborn illness presents with vague, non-specific signs.",
-      "Apply the danger signs to assess a baby at a CHPS compound and arrange urgent care.",
+      "Describe the history, examination and baseline tests that make up the first-visit risk assessment.",
+      "Explain the obstetric, medical and social risk factors that change where a mother should give birth.",
+      "Apply a booking-visit plan that flags high-risk mothers, treats what is treatable and builds the birth plan early.",
     ],
-    tags: ["danger signs", "newborn", "referral", "assessment"],
+    tags: ["risk assessment", "booking visit", "antenatal", "birth plan", "referral"],
     sourceStatus: "GCU_ALIGNED",
     sections: [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Big people fall ill loudly and tell you the story. Newborns fall ill quietly — a feed refused here, a temperature drifting there — and by the time they look obviously sick, hours have already been lost. Where home births and early discharge are common, the day-three visit may be this baby's only safety net.\n\nSo WHO and UNICEF distilled neonatal illness into a short list of **danger signs**. The idea is simple: any one sign, in any baby, means this child needs assessment and urgent referral — not home advice and a review next week.",
+        body: "Most pregnancies end well, and that happy fact can make a busy clinic sleepy. But every mother who walks through the door carries her own level of risk — and the visit where that risk is first measured is the visit where it is cheapest to manage.\n\nHigh-risk maternal care begins long before any emergency. It begins with a nurse who asks the right questions at booking, writes down what she finds, and lets that information shape a plan: extra visits, extra iron, a different birth place, a waiting home near term. In this course doctors and senior maternity clinicians lead the definitive care — but it is usually the nurse who first notices, counts, flags and prepares. That work starts at visit one.",
       },
       {
         type: "text",
         title: "The core ideas",
-        body: "The list: **not feeding well** (or stopped feeding since birth); **convulsions**; **fast breathing** (60 breaths per minute or more); **severe chest in-drawing**; **fever 38°C or above, or cold below 35.5°C**; **movement only when stimulated, or no movement at all**; and **jaundice on day one, or yellow palms and soles**. Behind one sign can hide sepsis, meningitis, pneumonia, hypothermia or haemolysis — the sign is the alarm, not the diagnosis.\n\nYour response is a package: keep the baby warm (skin-to-skin on the mother, a hat, dry clothes — a cold baby must be rewarmed even while you refer), give the pre-referral first dose of antibiotics and any treatment your national protocol directs, arrange transport, tell the mother honestly what you are doing and why, and phone ahead if you can.",
+        body: "Sort risk into four baskets.\n\n**Her obstetric history** — a previous caesarean or ruptured uterus, pre-eclampsia, stillbirth or newborn death, preterm birth, low birth weight, three or more miscarriages, postpartum haemorrhage, or a previous obstructed labour. **Her body today** — anaemia, hypertension, diabetes, cardiac disease, epilepsy, sickle cell disease, HIV or tuberculosis. **Her background** — age under 18 or over 35, five or more previous births, less than two years since the last birth, long distance from a facility, no transport plan, or a family that decides for her. **Her numbers** — blood pressure at every contact, weight and height, fundal height against dates, haemoglobin, urine for protein and infection, and the booking screens: syphilis, HIV and hepatitis B.\n\nThen let the findings act. Risk factors **stack** — two moderate risks behave like one strong one, so weigh the whole mother, not single findings. Every serious flag moves the birth plan toward a facility with blood, theatre and newborn care — and the time to write that plan is the first visit, not the forty-second week.",
+      },
+      {
+        type: "table",
+        title: "The four baskets at a glance",
+        body: "| Basket | Examples | What changes in the plan |\n| --- | --- | --- |\n| Past pregnancies | Previous caesarean, pre-eclampsia, stillbirth, preterm birth, PPH | Plan birth where theatre and blood exist; extra surveillance |\n| Body conditions | Anaemia, hypertension, diabetes, heart disease, HIV, sickle cell | Treat or stabilise now; more frequent visits; medicines per protocol |\n| Background life | Teenage or over 35, grand multiparity, spacing under two years, distance, poverty | Counselling, iron and net, waiting home, transport plan, social support |\n| Baseline numbers | BP, weight, Hb, urine, syphilis, HIV, hepatitis B screens | Treat positives, document results, set the follow-up schedule |",
       },
       {
         type: "clinical_pearl",
-        body: "A mother who says \"the baby just isn't feeding like yesterday\" has handed you the earliest warning in neonatal medicine. Examine that baby fully — temperature, breathing, activity, colour — before you reassure anyone.",
+        body: "The cheapest risk-screening trio in Ghana is the blood pressure cuff, the haemoglobin result and the tape measure. Any one of them can change a birth plan — and all three fit in a CHPS cupboard.",
       },
       {
         type: "case",
         title: "On the ward",
-        body: "At a CHPS compound postnatal visit, a day-three baby takes two weak sucks and stops. The mother says he has been \"sleeping too much\". His temperature is 35.6°C, and when you undress him he stirs briefly and goes still again. There is no fast breathing and the chest is clear.\n\nWhich danger signs has this baby already shown, and what are your next actions?\n\nAnswer: Poor feeding, abnormal temperature (below 35.5°C is a danger sign, and he is nearly there), and reduced movement fit the list — and hypothermia itself can be the face of sepsis. Rewarm him now with skin-to-skin contact and a hat while you complete your assessment, then give the pre-referral treatment your protocol directs, explain to the mother, and arrange urgent transport to the district hospital.",
+        body: "Ataa, 17, books for antenatal care at your district clinic at 16 weeks. It is her first pregnancy. She looks pale, her haemoglobin returns 9.4 g/dL, and she walked two hours from her village because the river road has no transport. Her blood pressure is 104/64 and her urine is clear.\n\nWhat does her risk assessment add up to, and what is your plan today?\n\nAnswer: Her risks stack — adolescence in a first pregnancy, anaemia, and real distance from emergency care. Start treatment now: iron with folic acid per protocol, counselling to take it with a vitamin C-rich drink and never with tea, and a treated mosquito net. Book more frequent visits with a haemoglobin recheck, open the conversation about a facility birth with a named transport plan or a maternity waiting home near term, and teach the danger signs that mean come immediately — severe headache, blurred vision, swelling of the face and hands, bleeding, fever, reduced fetal movement. Write the whole plan in her antenatal book so every nurse who meets her next reads the same story.",
       },
       {
         type: "memory_trick",
-        body: "Chant the list like a counting rhyme: \"Won't FEED, FITS, breathes FAST, chest SUCKED IN, HOT or COLD, STILL as stone, YELLOW too soon.\" Any single line of the rhyme sends the baby to hospital — you never need two signs to act.",
+        body: "Remember the four Baskets of booking: Babies (her obstetric history), Body (her medical conditions), Background (her social situation and distance), Basics (the numbers and screens). A mother with findings in two baskets is never a low-risk mother.",
       },
       {
         type: "summary",
-        body: "- Danger signs: poor feeding, convulsions, fast breathing (≥60/min), severe chest in-drawing, fever ≥38°C or cold <35.5°C, no movement or movement only when stimulated, jaundice on day one or yellow palms and soles.\n- Newborn illness is vague by nature — one quiet sign can hide sepsis, meningitis or pneumonia.\n- One sign equals urgent referral: warm the baby, give pre-referral treatment per protocol, counsel the mother, transport, document.\n- Hypothermia in a newborn is never \"just cold weather\" — it may be the first sign of sepsis.",
+        body: "- Booking is where risk is cheapest to manage: history, examination, baseline tests, and a birth plan written early.\n- Four baskets: obstetric history, current medical conditions, social background, baseline numbers.\n- Risk factors stack — two moderate findings behave like one strong indication for a higher-level birth plan.\n- Every serious flag — previous caesarean, severe anaemia, teenage first pregnancy, distance from care — moves the plan toward blood, theatre and newborn care.\n- The nurse does not wait for danger to declare itself: extra visits, iron, nets, transport plans and danger-sign teaching all start at visit one.",
       },
     ],
     questions: [
       {
-        topic: "Neonatal Danger Signs",
+        topic: "Risk Assessment",
+        type: "MCQ",
+        difficulty: "Easy",
+        stem: "Which previous obstetric history most strongly changes where a mother should give birth?",
+        options: [
+          "One previous miscarriage at 8 weeks, fully treated",
+          "A previous caesarean birth",
+          "A previous baby weighing 3.1 kg born at term",
+          "Two previous normal births at a facility",
+        ],
+        correctIndex: 1,
+        explanation:
+          "A previous caesarean leaves a scarred uterus that can rupture in labour, so such mothers give birth where theatre, blood and monitoring exist — a plan made at booking, not in labour. The other histories do not change the birth place this way.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Risk Assessment",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "A mother books at 16 weeks: Hb 9.4 g/dL, age 17, first pregnancy, and two hours from the nearest facility. What is the best plan?",
+        options: [
+          "Reassure her that young mothers usually do well",
+          "Start iron per protocol, plan closer follow-up, and begin planning birth at a higher-level facility",
+          "Refer immediately for blood transfusion today",
+          "Ask her to return only if she feels unwell",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Her risks stack — adolescence, anaemia and distance. Treatment and a strengthened plan start now: iron, more frequent visits, a haemoglobin recheck, and a birth plan with transport solved. Transfusion is not first-line for Hb 9.4, and waiting for symptoms wastes the whole advantage of screening.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Risk Assessment",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "Why does the booking visit ask about birth spacing — the time since the last birth?",
+        options: [
+          "Spacing under about two years raises risks such as anaemia, preterm birth and low birth weight",
+          "It is only collected for clinic statistics",
+          "Close spacing improves the next baby's growth",
+          "Spacing matters only for mothers who had a caesarean",
+        ],
+        correctIndex: 0,
+        explanation:
+          "The mother needs roughly two years to rebuild iron and recovery after a live birth — WHO advises this interval because shorter spacing raises prematurity, low birth weight and maternal depletion. It is a clinical question, not a statistical one.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Risk Assessment",
+        type: "MCQ",
+        difficulty: "Hard",
+        stem: "Which baseline booking result changes plans for BOTH the mother and her newborn?",
+        options: [
+          "Maternal weight of 70 kg",
+          "A positive syphilis screen",
+          "Blood group O rhesus positive",
+          "Clear urine on dipstick",
+        ],
+        correctIndex: 1,
+        explanation:
+          "A positive syphilis screen means treatment for the mother now, treatment for the partner, and a documented plan to assess the newborn at birth — untreated, it causes stillbirth and congenital syphilis. The other results change nothing for the baby.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+    ],
+    flashcards: [
+      {
+        topic: "Risk Assessment",
+        front: "Name the four baskets of booking-visit risk.",
+        back: "Babies (obstetric history), Body (current medical conditions), Background (social situation and distance from care), Basics (numbers and screening tests).",
+      },
+      {
+        topic: "Risk Assessment",
+        front: "Why do risk factors stack?",
+        back: "Two moderate risks behave like one strong indication — the whole picture, not single findings, sets the level of care and the birth place.",
+      },
+      {
+        topic: "Risk Assessment",
+        front: "Which previous pregnancy finding most changes the birth plan?",
+        back: "A previous caesarean or ruptured uterus — this mother births where theatre, blood and one-to-one monitoring exist.",
+      },
+      {
+        topic: "Risk Assessment",
+        front: "What is the cheapest risk-screening trio at booking?",
+        back: "Blood pressure, haemoglobin and the tape measure (fundal height against dates) — three tools that fit in a CHPS cupboard.",
+      },
+    ],
+    sources: [
+      {
+        organization: "Nursing and Midwifery Council of Ghana",
+        title: "Curriculum for the Registered General Nursing (RGN) Programme",
+        year: "2015",
+      },
+      {
+        organization: "World Health Organization",
+        title: "WHO Recommendations on Antenatal Care for a Positive Pregnancy Experience",
+        year: "2016",
+        url: "https://www.who.int/publications/i/item/9789241549912",
+      },
+      {
+        organization: "Ghana Health Service",
+        title: "National Reproductive Health Service Policy and Standards",
+        note: "National reference — verify the current edition at your facility.",
+      },
+    ],
+  },
+
+  // ── 2 ──────────────────────────────────────────────────────
+  {
+    courseSlug: "high-risk-maternal-newborn",
+    moduleTitle: "Spotting Trouble Early",
+    lessonTitle: "Hypertensive Disorders of Pregnancy",
+    description:
+      "From gestational hypertension to eclampsia — the spectrum every nurse must know cold, and the first-response drills that keep a mother safe while help is called.",
+    difficulty: "Hard",
+    durationMin: 12,
+    objectives: [
+      "Describe the spectrum of hypertensive disorders from gestational hypertension to eclampsia.",
+      "Explain accurate blood pressure measurement and the symptom screen that reveals severe disease.",
+      "Apply first-response nursing actions — positioning, IV access, seizure safety, protocol medicines and call-ahead referral — for the pre-eclamptic mother.",
+    ],
+    tags: ["pre-eclampsia", "hypertension", "eclampsia", "danger signs", "referral"],
+    sourceStatus: "GCU_ALIGNED",
+    sections: [
+      {
+        type: "text",
+        title: "What this lesson is about",
+        body: "Blood pressure is the reading you take at every single antenatal contact, because the disease it screens for — pre-eclampsia — can turn a healthy mother into a critically ill one between two visits. Hypertensive disorders touch about one pregnancy in ten.\n\nIn Ghana most births are led by senior maternity clinicians and doctors, but it is very often the nurse who takes the blood pressure, asks the three symptom questions, and raises the alarm first. This lesson walks the full spectrum and the numbers and symptoms that move a mother from monitor to refer now — including what you do in the first minutes of a convulsion.",
+      },
+      {
+        type: "text",
+        title: "The core ideas",
+        body: "**Gestational hypertension**: BP 140/90 or higher first arising after 20 weeks, without proteinuria or organ signs. **Pre-eclampsia**: that same rise plus protein in the urine or organ involvement — falling platelets, rising liver enzymes, a persistent headache, visual disturbance or epigastric pain. **Eclampsia**: convulsions — an obstetric emergency. **Chronic hypertension** predates pregnancy or persists beyond it, and can have pre-eclampsia superimposed.\n\nMeasure well before you call anything: correct cuff, mother seated and rested, and repeat an abnormal reading before acting. Risk factors include first pregnancy, previous pre-eclampsia, twins, diabetes, obesity, age over 35, chronic hypertension or kidney disease. Ask the three symptom questions at every visit — headache, blurred or flashing vision, upper belly pain — because severe disease can declare itself while the numbers still look modest. Severe elevation (160/110) or dangerous symptoms mean referral, an antihypertensive per protocol (methyldopa, labetalol or nifedipine — never ACE inhibitors) and magnesium sulfate to prevent seizures. The only cure is delivery of the placenta, timed against the baby's maturity by the responsible clinician — and keep checking after the birth, because pre-eclampsia can appear or worsen in the first postpartum days.\n\nIf she convulses before transfer: protect the airway, turn her onto her left side, do not restrain her or force anything into her mouth, note the time, and give magnesium sulfate per protocol with the senior clinician informed — then urgent referral.",
+      },
+      {
+        type: "table",
+        title: "The spectrum ladder",
+        body: "| Stage | Definition | First response |\n| --- | --- | --- |\n| Gestational hypertension | BP 140/90+ after 20 weeks, no protein, no symptoms | Close monitoring, repeat BP, symptom screen every visit |\n| Pre-eclampsia | BP rise plus proteinuria or organ signs | Inform senior, urine dip, IV access, refer per protocol |\n| Severe pre-eclampsia | BP 160/110+, or danger symptoms whatever the number | Magnesium sulfate per protocol, antihypertensive, urgent call-ahead referral |\n| Eclampsia | Convulsions | Airway, left lateral, timing, magnesium per protocol, emergency transfer |",
+      },
+      {
+        type: "clinical_pearl",
+        body: "Treat the woman, not the number. A mother with BP 138/88, headache and visual flashing is sicker than one with 150/95 who feels well. Symptoms upgrade your assessment; numbers alone do not finish the story.",
+      },
+      {
+        type: "case",
+        title: "On the ward",
+        body: "Efua, 19, is 34 weeks into her first pregnancy. At today's ANC her BP is 148/96, repeated at 146/94. Her urine dips protein 2+, she reports a frontal headache since yesterday, and her fingers are so swollen her ring had to be cut off. She was planning to walk home after the visit.\n\nWhat is your assessment, and what are your next four actions as the nurse?\n\nAnswer: This is pre-eclampsia with severe features — new hypertension after 20 weeks, proteinuria and a danger symptom, in a first pregnancy at a facility without definitive care. Next actions: keep her seated and calm in a quiet corner; repeat the BP and urine dip and inform the senior nurse and clinician immediately; insert an IV line and keep her nil by mouth while plans are made; prepare magnesium sulfate and an antihypertensive per protocol for administration as directed, and arrange urgent call-ahead referral with a written note and a relative. She must not walk home with a next-week appointment — headache plus proteinuria plus rising BP is exactly how eclampsia introduces itself.",
+      },
+      {
+        type: "memory_trick",
+        body: "The spectrum ladder: G-H-P-E — Good Health Progresses Easily: Gestational hypertension → Pre-eclampsia → Eclampsia. And the three places a pre-eclamptic mother hurts: HEAD, VISION, EPIGASTRIUM — any one of them makes the BP urgent, whatever the number says.",
+      },
+      {
+        type: "summary",
+        body: "- Spectrum: gestational hypertension (140/90+ after 20 weeks alone), pre-eclampsia (BP plus proteinuria or organ signs), eclampsia (seizures); chronic hypertension can be complicated by superimposed pre-eclampsia.\n- Measure properly and repeat: correct cuff, seated, rested — and ask every visit about headache, visual disturbance and epigastric pain.\n- Severe range (160/110) or danger symptoms: inform senior, IV access, protocol medicines (magnesium sulfate, antihypertensive — never ACE inhibitors), urgent call-ahead referral.\n- In a convulsion: airway, left lateral, do not restrain or force objects into the mouth, time it, magnesium per protocol, emergency transfer.\n- Pre-eclampsia can arise or escalate after birth — check blood pressure at postnatal contacts too.",
+      },
+    ],
+    questions: [
+      {
+        topic: "Hypertensive Disorders",
+        type: "MCQ",
+        difficulty: "Easy",
+        stem: "A mother at 32 weeks has BP 142/92 on repeated measurement, no proteinuria and no symptoms. What is the label?",
+        options: [
+          "Gestational hypertension",
+          "Eclampsia",
+          "Chronic hypertension",
+          "Severe pre-eclampsia",
+        ],
+        correctIndex: 0,
+        explanation:
+          "New hypertension after 20 weeks without proteinuria or organ signs is gestational hypertension — still high risk, so monitor closely for progression to pre-eclampsia with urine dips and symptom screens at every visit.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Hypertensive Disorders",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "Which set of symptoms most strongly suggests severe pre-eclampsia, whatever the exact BP reading?",
+        options: [
+          "Heartburn after meals and constipation",
+          "Morning nausea that eases by noon",
+          "Persistent headache, flashing lights and epigastric pain",
+          "Evening ankle swelling that is gone by morning",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Headache, visual disturbance and epigastric pain signal brain and liver involvement — severe disease needing immediate escalation. Evening ankle oedema alone is a normal finding of late pregnancy, and heartburn and morning nausea are common discomforts.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Hypertensive Disorders",
+        type: "CLINICAL_SCENARIO",
+        difficulty: "Hard",
+        stem: "In the waiting area, a mother with known pre-eclampsia begins to convulse. Which nursing sequence is correct?",
+        options: [
+          "Restrain her firmly, put a spoon between her teeth and call for a doctor",
+          "Note the time, protect her airway, turn her left lateral, give magnesium sulfate per protocol and arrange emergency transfer",
+          "Give her water to drink and let the convulsion pass before doing anything",
+          "Walk her to the ward quickly so she can lie on a proper bed",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Eclampsia first response is airway protection and positioning — left lateral — with the time noted, never restraint and never objects forced into the mouth (they break teeth and block the airway). Magnesium sulfate per protocol prevents further seizures, and she needs emergency transfer. Moving her during a convulsion is unsafe.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Hypertensive Disorders",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "Which antihypertensive is contraindicated in pregnancy?",
+        options: [
+          "Methyldopa",
+          "Labetalol",
+          "Nifedipine",
+          "Enalapril, an ACE inhibitor",
+        ],
+        correctIndex: 3,
+        explanation:
+          "ACE inhibitors harm the developing fetal kidneys and are stopped in pregnancy. Methyldopa, labetalol and nifedipine are the standard pregnancy options per protocol.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+    ],
+    flashcards: [
+      {
+        topic: "Hypertensive Disorders",
+        front: "Define pre-eclampsia.",
+        back: "New BP 140/90 or higher after 20 weeks plus proteinuria or organ involvement — low platelets, raised liver enzymes, persistent headache, visual disturbance or epigastric pain.",
+      },
+      {
+        topic: "Hypertensive Disorders",
+        front: "The three danger symptoms to ask at every antenatal visit?",
+        back: "Headache, visual disturbance (blurring or flashing), epigastric pain — any one upgrades the assessment toward severe disease, whatever the BP number.",
+      },
+      {
+        topic: "Hypertensive Disorders",
+        front: "What is the only cure for pre-eclampsia?",
+        back: "Delivery of the placenta — antihypertensives and magnesium sulfate buy safe time while the clinician weighs the timing of birth against the baby's maturity and the mother's danger.",
+      },
+      {
+        topic: "Hypertensive Disorders",
+        front: "First-response nursing sequence for a convulsing mother?",
+        back: "Note the time, protect the airway, left lateral position, no restraint and nothing forced into the mouth, magnesium sulfate per protocol, then emergency call-ahead transfer.",
+      },
+    ],
+    sources: [
+      {
+        organization: "World Health Organization",
+        title: "WHO Recommendations for Prevention and Treatment of Pre-eclampsia and Eclampsia",
+        year: "2011",
+        url: "https://www.who.int/publications/i/item/9789241548335",
+      },
+      {
+        organization: "World Health Organization",
+        title: "Pregnancy, Childbirth, Postpartum and Newborn Care: A Guide for Essential Practice",
+        year: "2015",
+        url: "https://www.who.int/publications/i/item/9789241549356",
+      },
+      {
+        organization: "Nursing and Midwifery Council of Ghana",
+        title: "Curriculum for the Registered General Nursing (RGN) Programme",
+        year: "2015",
+      },
+    ],
+  },
+
+  // ── 3 ──────────────────────────────────────────────────────
+  {
+    courseSlug: "high-risk-maternal-newborn",
+    moduleTitle: "Spotting Trouble Early",
+    lessonTitle: "Bleeding in Pregnancy",
+    description:
+      "Bleeding is the red alarm of every trimester — from the rupturing ectopic to the low-lying placenta. Learn the signatures and the drills that buy time.",
+    difficulty: "Clinical Reasoning",
+    durationMin: 12,
+    objectives: [
+      "Describe the major causes of bleeding in early and late pregnancy with their bedside signatures.",
+      "Explain why maternal vital signs beat the pad in judging blood loss, and why vaginal examination is withheld until praevia is excluded.",
+      "Apply the first-response drills for early and late pregnancy bleeding, including IV access, pre-referral treatment and call-ahead transfer.",
+    ],
+    tags: ["bleeding", "ectopic", "praevia", "abruption", "referral"],
+    sourceStatus: "GCU_ALIGNED",
+    sections: [
+      {
+        type: "text",
+        title: "What this lesson is about",
+        body: "Bleeding in pregnancy is the alarm that rings in two very different rooms. In the early weeks it rings for ectopic pregnancy and miscarriage; after 20 weeks it rings for the placenta — praevia and abruption. The causes differ, but your first moves overlap: assess the mother and her baby, secure the circulation, and move her safely.\n\nThis lesson organises the causes by trimester, gives you the bedside signature of each, and drills the responses — including the two sentences that have saved more lives than any scan, and the one examination you must never perform.",
+      },
+      {
+        type: "text",
+        title: "Early pregnancy: the bleeding that hides",
+        body: "**Ectopic pregnancy** implants outside the womb, usually in the tube, and writes a countdown: around six to ten weeks the tube can burst and bleed into the abdomen. The classic triad is a **positive pregnancy test, one-sided lower abdominal pain and light dark vaginal bleeding** — often described as prune juice. The danger words are fainting, dizziness on standing, shoulder-tip pain and collapse: shoulder-tip pain means blood irritating the diaphragm. Internal bleeding hides, so her pad may show almost nothing while her abdomen fills — watch the pulse, pallor and blood pressure, not the pad.\n\n**Miscarriage** classifies on two findings — the cervical os and what has passed: threatened (bleeding, closed os, pregnancy alive), inevitable (os open), incomplete (part passed, bleeding continues), complete (all passed, settling) and missed (found on scan). About half of early losses carry abnormal chromosomes — random, not the mother's fault, so say that plainly. The emergency is **septic abortion**: fever, foul-smelling discharge and uterine tenderness, often after an unsafe termination — IV antibiotics per protocol and urgent referral, with judgement-free care. And remember hyperemesis with a uterus larger than dates: a **molar pregnancy** also presents with bleeding and needs referral.",
+      },
+      {
+        type: "text",
+        title: "Late pregnancy: the placenta speaks",
+        body: "**Placenta praevia** sits low, covering or reaching the cervix, and announces itself with **painless, bright red, recurrent** bleeding in the second half of pregnancy — the mother looks well between episodes, the uterus stays soft, and the baby often lies transverse or stays high. **Placental abruption** is the opposite: the normally sited placenta separates before birth, bringing sudden severe constant pain, a hard tender woody uterus, dark revealed bleeding — or barely any visible bleeding when the loss is concealed — fetal distress, and shock out of proportion to the pad. **Vasa praevia**, fetal vessels running across the cervix, bleeds the baby rather than the mother: light bleeding with sudden fetal heart collapse.\n\nThe iron rule: nothing — no fingers, no speculum — enters the vagina of a woman bleeding after 20 weeks until ultrasound has located the placenta. A praevia disturbed by a finger can bleed catastrophically in minutes. With heavy bleeding and no scan available, treat her as praevia: IV line, fluids, crossmatch if possible, and transfer. Give anti-D to rhesus-negative mothers. In a labouring mother with a previous caesarean, bleeding with scar pain and fetal distress means rupture until excluded.",
+      },
+      {
+        type: "table",
+        title: "Three bleeders, three signatures",
+        body: "| Cause | Pain | Uterus | Blood | First response |\n| --- | --- | --- | --- | --- |\n| Ectopic (ruptured) | One-sided, then diffuse | Not pregnant-large | Light, dark; shock beyond the pad | NBM, wide-bore IV fluids, call-ahead transfer — surgery and blood |\n| Placenta praevia | Painless | Soft, non-tender | Bright red, recurrent | No vaginal examination, IV line, monitor fetal heart, transfer for scan |\n| Placental abruption | Severe, constant | Hard, woody, tender | Dark or concealed; fetal distress | IV access, crossmatch, continuous fetal heart monitoring, urgent review |",
+      },
+      {
+        type: "clinical_pearl",
+        body: "Two sentences save lives: every woman of reproductive age with lower abdominal pain is pregnant until a test says otherwise — and every positive test with one-sided pain is ectopic until proven otherwise. Estimate blood loss by how the mother looks, not how the pad looks: the cleanest pad of all belongs to the fully concealed abruption.",
+      },
+      {
+        type: "case",
+        title: "On the ward",
+        body: "Hawa, 26, gravida 2 at 35 weeks, is carried into your health centre having soaked two cloths since dawn. She is pale and frightened, pulse 112, BP 96/60; the uterus is soft and non-tender and the fetal heart is 150. Your centre has no ultrasound.\n\nWhat do you do in the next fifteen minutes — and what must you not do?\n\nAnswer: This is antepartum haemorrhage with early shock — tachycardia, low BP and pallor, with a soft painless bleed that could well be praevia. Treat first: keep her warm and flat, insert a wide-bore IV with fluids running, take blood for grouping and crossmatch if possible, monitor pulse, BP and fetal heart every 15 minutes, and arrange urgent call-ahead referral. Do not examine her vagina — without an ultrasound the bleeding must be assumed praevial, and a digital examination could turn bleeding into haemorrhage. Send a written note with her vitals and times, send a relative who can consent, and remember anti-D if she is rhesus negative.",
+      },
+      {
+        type: "memory_trick",
+        body: "Early bleeding: PPB — Positive test, one-sided Pain, light Bleeding — ectopic till proven otherwise. Late bleeding: PAIN divides it — Painless and bright is Praevia; Painful, hard and dark is the Abrupted placenta. And the forbidden letter in late bleeding is V — no Vaginal examination until the scan clears the placenta.",
+      },
+      {
+        type: "summary",
+        body: "- Early bleeding: ectopic (positive test, one-sided pain, light dark loss, shoulder-tip pain), miscarriage (classify by os and passed tissue) and molar pregnancy — plus septic abortion as the infection emergency.\n- Late bleeding: praevia (painless, bright, soft uterus), abruption (painful, hard, tender, dark or concealed, fetal distress) and rare vasa praevia (light bleed, fetal collapse).\n- Judge severity by pulse, pallor and blood pressure — the pad lies; concealed bleeding hides.\n- Never examine the vagina in bleeding after 20 weeks before ultrasound excludes praevia.\n- Response package: IV access, fluids, crossmatch, fetal heart monitoring, anti-D if rhesus negative, call-ahead referral with a written note.",
+      },
+    ],
+    questions: [
+      {
+        topic: "Bleeding in Pregnancy",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "Why can a mother with a ruptured ectopic have massive internal bleeding but only spotting on her pad?",
+        options: [
+          "The tube contracts and seals itself after rupture",
+          "Most of the blood is reabsorbed into the circulation",
+          "The bleeding is inside the peritoneal cavity, so the vagina shows only a fraction of it",
+          "Ectopic bleeding is always light and harmless",
+        ],
+        correctIndex: 2,
+        explanation:
+          "A ruptured tube bleeds into the peritoneal cavity, where litres can collect out of sight; the small vaginal loss tells you nothing about the true volume — the rising pulse and falling pressure tell the truth.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Bleeding in Pregnancy",
+        type: "MCQ",
+        difficulty: "Easy",
+        stem: "Painless, bright-red, recurrent bleeding at 32 weeks with a soft uterus and transverse lie points to:",
+        options: [
+          "Placental abruption",
+          "Uterine rupture",
+          "Placenta praevia",
+          "Septic abortion",
+        ],
+        correctIndex: 2,
+        explanation:
+          "That is the textbook signature of praevia — a low placenta bleeding painlessly as the lower segment forms. Abruption is painful with a hard uterus, rupture belongs to labour with a scar, and septic abortion complicates miscarriage with fever.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Bleeding in Pregnancy",
+        type: "CLINICAL_SCENARIO",
+        difficulty: "Hard",
+        stem: "A mother at 34 weeks arrives bleeding heavily at a health centre without ultrasound. The night nurse asks you to examine the vagina to see where the blood is coming from. Your best response?",
+        options: [
+          "Perform a gentle digital examination to assess the cervix",
+          "Insert a speculum to visualise the bleeding site",
+          "Refuse any vaginal examination, treat as possible praevia — IV line, fetal heart check and urgent call-ahead transfer",
+          "Give ergometrine to close down the bleeding before transfer",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Until ultrasound excludes praevia, nothing enters the vagina — a finger or speculum on a low placenta can convert bleeding into exsanguination. Ergometrine is dangerous before birth. IV access, fetal assessment and call-ahead referral are the safe first fifteen minutes.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Bleeding in Pregnancy",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "Light vaginal bleeding at term with sudden loss of the fetal heart but a well mother suggests:",
+        options: [
+          "Vasa praevia — the torn vessels belong to the baby",
+          "Placenta praevia",
+          "Threatened miscarriage",
+          "Cervicitis",
+        ],
+        correctIndex: 0,
+        explanation:
+          "In vasa praevia the torn vessels are the baby's own — even a small bleed is a large share of fetal blood volume, so the fetal heart collapses before the mother shows any sign. Maternal shock with heavy bleeding points instead to praevia or abruption.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+    ],
+    flashcards: [
+      {
+        topic: "Bleeding in Pregnancy",
+        front: "The classic triad of ectopic pregnancy?",
+        back: "Positive pregnancy test, one-sided lower abdominal pain, light dark vaginal bleeding — with cervical excitation on gentle examination; shoulder-tip pain means blood under the diaphragm.",
+      },
+      {
+        topic: "Bleeding in Pregnancy",
+        front: "Praevia versus abruption in one line each?",
+        back: "Praevia — painless, bright, recurrent, soft uterus, malpresentation. Abruption — sudden severe constant pain, hard woody tender uterus, dark or concealed blood, fetal distress.",
+      },
+      {
+        topic: "Bleeding in Pregnancy",
+        front: "Why is vaginal examination forbidden in late-pregnancy bleeding?",
+        back: "A digital examination can tear a low-lying placenta and convert bleeding into exsanguination — the placenta must be located by ultrasound first.",
+      },
+      {
+        topic: "Bleeding in Pregnancy",
+        front: "How do you classify miscarriage at the bedside?",
+        back: "Two questions: open or closed os, and passed or not? Closed with bleeding = threatened; open = inevitable; part passed = incomplete; all passed and settling = complete; silent and scan-diagnosed = missed.",
+      },
+      {
+        topic: "Bleeding in Pregnancy",
+        front: "What is the emergency face of miscarriage care?",
+        back: "Septic abortion — fever, foul-smelling discharge, uterine tenderness, often after unsafe termination: IV antibiotics per protocol and urgent referral, with judgement-free care.",
+      },
+    ],
+    sources: [
+      {
+        organization: "World Health Organization",
+        title: "Managing Complications in Pregnancy and Childbirth: A Guide for Nurses and Doctors",
+        year: "2017",
+        url: "https://www.who.int/publications/i/item/9789241565493",
+      },
+      {
+        organization: "World Health Organization",
+        title: "Pregnancy, Childbirth, Postpartum and Newborn Care: A Guide for Essential Practice",
+        year: "2015",
+        url: "https://www.who.int/publications/i/item/9789241549356",
+      },
+      {
+        organization: "Ghana Health Service",
+        title: "National Reproductive Health Service Policy and Standards",
+        note: "National reference — verify the current edition at your facility.",
+      },
+    ],
+  },
+
+  // ── 4 ──────────────────────────────────────────────────────
+  {
+    courseSlug: "high-risk-maternal-newborn",
+    moduleTitle: "Emergencies of Pregnancy & Birth",
+    lessonTitle: "Medical Disorders Complicating Pregnancy",
+    description:
+      "Anaemia, sugar, vomiting, infection and a straining heart — the conditions mothers arrive with, and how pregnancy turns up their volume.",
+    difficulty: "Hard",
+    durationMin: 12,
+    objectives: [
+      "Describe how anaemia, hyperemesis gravidarum, gestational diabetes, infection and cardiac disease complicate pregnancy.",
+      "Explain the screening thresholds and red flags for each condition at the community and district level.",
+      "Apply nursing plans — supportive care, counselling, protocol treatment and referral — for mothers with medical disorders.",
+    ],
+    tags: ["anaemia", "gestational diabetes", "hyperemesis", "infection", "cardiac disease"],
+    sourceStatus: "GCU_ALIGNED",
+    sections: [
+      {
+        type: "text",
+        title: "What this lesson is about",
+        body: "Pregnancy is a stress test the body runs on itself: blood volume rises, sugar drifts, hormones pour, and every organ works harder. A mother who was coping quietly before conception can arrive at your clinic with a condition now amplified — and a mother whose condition was never diagnosed can meet it for the first time pregnant.\n\nThe doctor leads the treatment of these disorders, but the nurse runs the early detection net: the haemoglobin result read, the fasting sugar followed, the mother who cannot keep water down spotted for what she is, the booking screen acted upon. This lesson gathers the five great companions of high-risk pregnancy.",
+      },
+      {
+        type: "text",
+        title: "The core ideas",
+        body: "**Anaemia** — the commonest medical problem of pregnancy. The WHO cut-off is Hb below 11 g/dL; below 7 g/dL it is severe and needs urgent referral. Pregnancy dilutes the blood — plasma rises more than red cells — so Hb drifts to its lowest around 28 to 32 weeks, but 11 still defines true deficiency. In Ghana malaria, hookworm and diet drain stores further: treat causes, not just the number. Counsel honestly: iron with a vitamin C-rich drink, never with tea, dark stools are normal, and stores refill slowly so the tablets continue for months. An anaemic mother tolerates haemorrhage poorly — blood every anaemic mother accordingly, and plan her birth near help.\n\n**Hyperemesis gravidarum** is vomiting that becomes dangerous: weight loss over 5% of pre-pregnancy weight, dehydration, ketones on the dipstick. Screen for the mimics that change the plan — one-sided pain (ectopic until excluded), a uterus larger than dates (molar), jaundice or fever. She needs IV rehydration and referral — with thiamine before any glucose-containing fluid, because glucose first can trigger Wernicke's encephalopathy.\n\n**Gestational diabetes** arrives with risk factors — obesity, age over 35, a previous baby over 4 kg, family history — though many Ghanaian mothers have none. WHO's 75 g glucose tolerance thresholds are fasting 5.1, one-hour 10.0 or two-hour 8.5 mmol/L or above. Manage with food and movement first; insulin or metformin per protocol when targets are missed. Remember the two faces of the GDM baby: BIG in the womb — macrosomia and shoulder dystocia — and LOW after birth — hypoglycaemia from insulin overshoot: feed within the first hour, then every 2-3 hours.\n\n**Infection**: the booking screens are syphilis, HIV and hepatitis B, with urine where indicated — treat syphilis with benzathine penicillin per protocol together with the partner; start lifelong ART the same day for HIV-positive mothers per Ghana's Option B+; immunise the hepatitis-B-exposed newborn within 24 hours. Malaria prevention is the ITN every night plus IPTp-SP monthly from the second trimester. **Cardiac disease** hides the deepest: a mother who cannot finish a sentence, who sleeps propped on two pillows, whose pulse never settles — refer to a centre that can manage it, and warn against fluid overload in labour.",
+      },
+      {
+        type: "callout",
+        title: "The condition that whispers",
+        body: "Cardiac disease in pregnancy announces itself with breathlessness on minor effort, a cough that will not settle, and the need to sleep sitting up. In a country where walking far is normal, mothers describe it as 'just tired'. Ask the functional question — can she climb the two steps to your room and still speak a full sentence? — and refer early: a damaged heart meeting the blood volume of the third trimester is a scheduled emergency.",
+      },
+      {
+        type: "clinical_pearl",
+        body: "Anaemia in pregnancy is a postpartum haemorrhage risk factor in disguise. A mother with Hb 8 g/dL has roughly half the reserve of a healthy one — the same 500 mL bleed that tires one can kill the other. Blood every anaemic mother accordingly: plan birth where help is close.",
+      },
+      {
+        type: "case",
+        title: "On the ward",
+        body: "Adjoa, gravida 3 at 31 weeks, attends your district ANC with an Hb of 6.8 g/dL. Her palms and conjunctivae are pale, she is breathless walking from the tro-tro but comfortable sitting, and she finished her iron tablets three weeks ago — taking them each morning with her tea. She has no fever and no net at home.\n\nWhat is your plan for her today?\n\nAnswer: This is severe anaemia in the third trimester — treat actively. Refer urgently for hospital assessment, where IV iron and transfusion decisions belong, while you treat the causes: test and treat malaria, check for hookworm, and re-educate on iron — the tablet must leave the tea cup and travel with vitamin C. Give her a net, a hospital birth plan and an Hb recheck within two weeks; breathlessness at rest with a fast pulse makes her an emergency.",
+      },
+      {
+        type: "memory_trick",
+        body: "The five companions that travel with pregnancy: Anaemia, Sugar, Sickness (hyperemesis), infection and a Straining heart. Screen for all five at booking — and remember the two iron numbers: 11 is the floor, 7 is the door.",
+      },
+      {
+        type: "summary",
+        body: "- Anaemia: Hb below 11 g/dL in pregnancy, severe below 7 — refer; physiological dip at 28-32 weeks; treat malaria, hookworm and diet; iron with vitamin C, never with tea; plan birth near help.\n- Hyperemesis: over 5% weight loss, ketones, dehydration — exclude ectopic and molar; IV fluids, thiamine before glucose, referral.\n- GDM: screen risk factors, WHO OGTT cut-offs 5.1/10.0/8.5 mmol/L; diet and activity first; the baby risks macrosomia then hypoglycaemia — feed within the first hour.\n- Infections: booking screens for syphilis, HIV and hepatitis B; partner treatment for syphilis; same-day ART under Option B+; ITN plus IPTp-SP for malaria.\n- Cardiac disease whispers: breathlessness, orthopnoea, a sentence she cannot finish — refer early and fear fluid overload.",
+      },
+    ],
+    questions: [
+      {
+        topic: "Medical Disorders in Pregnancy",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "A mother at 34 weeks has Hb 6.5 g/dL with pallor and breathlessness on walking, comfortable at rest. What is the appropriate action?",
+        options: [
+          "Double the oral iron dose and review in four weeks",
+          "Refer urgently for hospital assessment — IV iron or transfusion, cause-finding and a hospital birth plan",
+          "Advise more dark green leaves and review next month",
+          "Transfuse two units at your health centre before referral",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Hb below 7 g/dL in late pregnancy is severe anaemia and needs hospital-level decisions. Doubling tablets, diet alone, or transfusing at a centre without blood safety capability all expose her to the one danger she cannot survive — bleeding while anaemic.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Medical Disorders in Pregnancy",
+        type: "MCQ",
+        difficulty: "Easy",
+        stem: "Why is thiamine given before IV glucose to a woman with prolonged severe vomiting?",
+        options: [
+          "It reduces nausea directly",
+          "It prevents gastric bleeding",
+          "It protects the brain from Wernicke's encephalopathy",
+          "It corrects low potassium",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Prolonged vomiting depletes thiamine, and glucose given without thiamine can precipitate Wernicke's encephalopathy — confusion, abnormal eye movements and unsteadiness.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Medical Disorders in Pregnancy",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "Two hours after a normal birth, the term baby of a diabetic mother is jittery. The most likely cause is:",
+        options: [
+          "Overheating under the warmer",
+          "Early sepsis from prolonged rupture of membranes",
+          "Neonatal hypoglycaemia — the baby's insulin overshoots once the sugar supply stops",
+          "Normal newborn jitteriness needing no check",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Chronic maternal hyperglycaemia made the fetus hyperinsulinaemic; at birth the glucose supply stops but the insulin persists. Check the glucose, feed early — within the first hour and then 2-3 hourly — and never dismiss jitteriness as normal in this baby.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Medical Disorders in Pregnancy",
+        type: "MCQ",
+        difficulty: "Hard",
+        stem: "How does malaria in pregnancy harm the baby's growth?",
+        options: [
+          "It causes the placenta to detach in the first trimester",
+          "Parasites sequester in the placenta, causing maternal anaemia, low birth weight and preterm birth",
+          "It causes macrosomia like gestational diabetes",
+          "It protects the baby by transferring maternal antibodies",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Parasite-infected red cells clog the placental vessels, so nutrition and oxygen transfer fail — anaemia, low birth weight and prematurity follow. The ITN nightly plus IPTp-SP from the second trimester attack exactly this mechanism.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+    ],
+    flashcards: [
+      {
+        topic: "Medical Disorders in Pregnancy",
+        front: "Hb cut-offs for anaemia in pregnancy, and the physiological low point?",
+        back: "Anaemia below 11 g/dL; severe below 7 g/dL. Plasma rises more than red cells, so Hb falls to its lowest at 28-32 weeks — expected dip, deficiency still counts at 11.",
+      },
+      {
+        topic: "Medical Disorders in Pregnancy",
+        front: "The line between morning sickness and hyperemesis?",
+        back: "Severe persistent vomiting with over 5% weight loss, dehydration and ketonuria — screen for ectopic and molar pregnancy, rehydrate IV with thiamine before glucose, and refer.",
+      },
+      {
+        topic: "Medical Disorders in Pregnancy",
+        front: "WHO 75 g OGTT thresholds in pregnancy?",
+        back: "Fasting 5.1, one-hour 10.0, or two-hour 8.5 mmol/L or above — any one of the three makes the diagnosis of gestational diabetes.",
+      },
+      {
+        topic: "Medical Disorders in Pregnancy",
+        front: "The malaria prevention package in pregnancy?",
+        back: "Sleep under an insecticide-treated net every night; IPTp-SP monthly from the second trimester, at least three doses — it prevents maternal anaemia, low birth weight and preterm birth.",
+      },
+      {
+        topic: "Medical Disorders in Pregnancy",
+        front: "Which screening question uncovers cardiac disease at booking?",
+        back: "The functional one: can she climb a short flight and still speak a full sentence — breathlessness on minor effort, orthopnoea and a cough that will not settle all point to a heart that needs referral.",
+      },
+    ],
+    sources: [
+      {
+        organization: "World Health Organization",
+        title: "WHO Recommendations on Antenatal Care for a Positive Pregnancy Experience",
+        year: "2016",
+        url: "https://www.who.int/publications/i/item/9789241549912",
+      },
+      {
+        organization: "World Health Organization",
+        title: "Diagnostic Criteria and Classification of Hyperglycaemia First Detected in Pregnancy",
+        year: "2013",
+        url: "https://www.who.int/publications/i/item/WHO-NMH-MND-13.2",
+      },
+      {
+        organization: "Ministry of Health, Ghana",
+        title: "Standard Treatment Guidelines",
+        note: "National reference — verify the current edition at your facility.",
+      },
+    ],
+  },
+
+  // ── 5 ──────────────────────────────────────────────────────
+  {
+    courseSlug: "high-risk-maternal-newborn",
+    moduleTitle: "Emergencies of Pregnancy & Birth",
+    lessonTitle: "Obstructed Labour & Its Consequences",
+    description:
+      "The labour that will not progress is the diagnosis that punishes waiting — the partograph, the shut door and the transfer that protects a mother from rupture and fistula.",
+    difficulty: "Hard",
+    durationMin: 12,
+    objectives: [
+      "Describe the causes of prolonged and obstructed labour using the 4 Ps framework and the partograph.",
+      "Explain the signs of the shut door — caput, moulding, no descent, urinary retention and Bandl's ring — and the consequences of neglect.",
+      "Apply the nursing response: no oxytocin, bladder care, first antibiotic dose and stabilise-and-transfer.",
+    ],
+    tags: ["obstructed labour", "partograph", "fistula", "referral", "uterine rupture"],
+    sourceStatus: "GCU_ALIGNED",
+    sections: [
+      {
+        type: "text",
+        title: "What this lesson is about",
+        body: "Labour is meant to move. When it stalls, every standing-still hour costs the mother energy, the baby oxygen, and the soft tissues trapped between the baby's head and her bladder their blood supply — the anatomy that fails into fistula. In Ghana obstructed labour remains a major cause of maternal death and of vesico-vaginal fistula.\n\nSenior clinicians lead the management decisions in labour, but the nurse is often the one keeping the partograph — and the partograph is the early warning system of the whole labour ward. This lesson teaches why labour slows, what the plotted line is telling you, the signs that the door is truly shut, and the response that saves both patients.",
+      },
+      {
+        type: "text",
+        title: "The core ideas",
+        body: "Think in Ps. **Power**: contractions too weak or too infrequent — active labour should bring three to four moderate contractions in ten minutes. **Passenger**: a big baby, a persistent malposition like occipito-posterior, or a deflexed head. **Passage**: a pelvis that is small or unforgiving. **Psyche**: exhaustion, fear, an empty stomach and a full bladder — the frightened, dehydrated mother contracts badly.\n\nThe partograph converts time into a picture. Plot dilatation from active labour at about 4-5 cm: the **alert line** runs at 1 cm per hour; the **action line** sits four hours to its right. Cross the alert line and you reassess — the 4 Ps, hydration, position; cross the action line and the responsible clinician must decide — augment if the fault is Power, or move to caesarean if the head refuses to descend.\n\nThe signs the door is shut, whatever the contractions do: **no descent between examinations**, a fully dilated cervix with a head still high, growing caput — a boggy scalp swelling that can make the head feel lower than it is — and **moulding**, skull bones overlapping under pressure. Add a bladder she cannot empty because the head crushes the urethra, a mother becoming quiet and still, foul-smelling liquor, a deteriorating fetal heart — and the red flag of red flags: a rising, tender, palpable ridge across the abdomen, **Bandl's ring**, which says the lower segment is thinning and rupture is near.\n\nYour response must be firm. Obstruction is resolved by caesarean, not by patience, and never by oxytocin — augmenting a block drives the uterus toward rupture. At the referring level: insert an IV line, pass a catheter gently and leave it draining, give nothing by mouth, give the first antibiotic dose per protocol, explain to the family that the baby cannot pass this way, call ahead and transfer urgently. The baby may already be lost; your decisions now protect the mother from rupture, sepsis and a fistula that would change her life forever.",
+      },
+      {
+        type: "clinical_pearl",
+        body: "The cervix should open roughly a centimetre an hour once active labour is running. Plot every dilatation at the time you felt it — a line on paper cannot be argued with at 3 am, but a memory can. And moulding and caput are not trophies of hard labour; they are the skull's surrender to force.",
+      },
+      {
+        type: "case",
+        title: "On the ward",
+        body: "At 4 pm Gifty, gravida 2, has been fully dilated and pushing for three hours at your health centre. Your partograph shows the head has not descended for the past two hours — still 3/5 palpable above the brim, with a large caput and overlapping skull bones on examination. She has not passed urine for six hours, the liquor draining is thin and offensive, and she has become quiet and still. Her mother-in-law urges, 'She is strong, let her push more.' The district hospital is 45 minutes away.\n\nWhat is your assessment, and what are your next four actions?\n\nAnswer: This is obstructed labour — no descent despite full dilatation and strong pushing, caput and moulding from a skull forced against resistance, a bladder compressed dry, offensive liquor signalling infection, and a mother sliding into exhaustion. The next actions: no oxytocin and no instrumental attempt at this level; insert an IV line and pass a catheter to drain the bladder, leaving it in place; give the first antibiotic dose per protocol; then call the hospital ahead and transfer urgently with a written note and a relative who can consent — explaining to the family that strength cannot open a mechanical block, and more pushing invites rupture, a dead baby and a fistula rather than a birth.",
+      },
+      {
+        type: "memory_trick",
+        body: "The 4 Ps of the stalled labour — Power, Passenger, Passage, Psyche — ask in order: is she too tired and empty to contract? Is the baby too big or badly turned? Is the way too small? Then the baby that is not coming makes its own five knocks on a shut door: the head swells (caput), the skull overlaps (moulding), the bladder is crushed dry, the mother goes quiet, and the uterus draws a line across the abdomen (Bandl's ring). Five knocks = theatre — never oxytocin.",
+      },
+      {
+        type: "summary",
+        body: "- Prolonged labour has four interacting causes: Power, Passenger, Passage and Psyche — resuscitate the Psyche before reaching for drugs.\n- Partograph: plot from active labour (~4-5 cm); alert line 1 cm/hour, action line four hours to its right — alert means reassess, action means the clinician decides.\n- Signs of the shut door: no descent between examinations, caput and moulding, urinary retention, offensive liquor, exhaustion — late: Bandl's ring and a deteriorating fetal heart.\n- Obstruction is treated by caesarean — never oxytocin, never instrumental birth at a low-level facility, never one more hour of pushing.\n- Transfer package: IV line, catheter draining and in situ, first antibiotic dose, nil by mouth, call-ahead — protect the mother from rupture, sepsis and fistula.",
+      },
+    ],
+    questions: [
+      {
+        topic: "Obstructed Labour",
+        type: "MCQ",
+        difficulty: "Easy",
+        stem: "On the WHO partograph, where does the action line sit?",
+        options: [
+          "On the same point as the alert line",
+          "Four hours to the left of the alert line",
+          "Twelve hours to the right of the alert line",
+          "Four hours to the right of the alert line",
+        ],
+        correctIndex: 3,
+        explanation:
+          "The action line lies parallel to and four hours to the right of the alert line — crossing it means progress has failed for four hours and a decision (augment, refer, or deliver) must now be made.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Obstructed Labour",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "Which picture most strongly indicates obstructed labour?",
+        options: [
+          "Cervix 8 cm after four hours with improving contractions",
+          "Full dilatation with rapid descent after amniotomy",
+          "A second stage of 30 minutes in a multipara",
+          "No descent between two examinations despite full dilatation, strong contractions, caput and moulding",
+        ],
+        correctIndex: 3,
+        explanation:
+          "A fixed station with full dilatation and good contractions, plus the skull showing pressure changes, means the baby is mechanically stuck — obstruction until proven otherwise. The other pictures all show progress.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Obstructed Labour",
+        type: "CLINICAL_SCENARIO",
+        difficulty: "Hard",
+        stem: "A nurse at a health centre suspects obstructed labour in a mother who has pushed for three hours without descent. A relative asks why she cannot simply be given medicine to make the contractions stronger. Why is oxytocin the wrong answer?",
+        options: [
+          "Oxytocin stops lactation permanently",
+          "Oxytocin is too expensive for health centres",
+          "Oxytocin would drive forceful contractions against a mechanical block, inviting uterine rupture",
+          "Oxytocin only works after the baby is born",
+        ],
+        correctIndex: 2,
+        explanation:
+          "The uterus is already contracting against a baby that cannot descend; oxytocin multiplies that force on a thinning lower segment — the direct road to rupture and maternal death. The correct package is IV line, catheter, first antibiotic dose and urgent transfer for caesarean.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Obstructed Labour",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "A rising, tender ridge across the abdomen (Bandl's ring) tells you that:",
+        options: [
+          "The uterus is thinning at its lower segment and rupture threatens — transfer now",
+          "The bladder is full and only needs catheterisation",
+          "The baby has rotated into an ideal position",
+          "Labour is progressing normally and faster",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Bandl's ring is the pathological retraction ring: the upper segment thickens while the lower thins — the last warning before uterine rupture. It demands immediate transfer for theatre, not reassurance. (Catheterisation is still done — but as part of the emergency package, not the diagnosis.)",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+    ],
+    flashcards: [
+      {
+        topic: "Obstructed Labour",
+        front: "Define obstructed labour.",
+        back: "A mechanical impediment to birth despite a contracting uterus — the baby cannot fit through the pelvis because of cephalopelvic disproportion, malposition or fetal enlargement.",
+      },
+      {
+        topic: "Obstructed Labour",
+        front: "What is Bandl's ring?",
+        back: "A rising, palpable ridge between the thickened upper and thinned lower uterine segments during prolonged obstructed labour — the pathological retraction ring warning of imminent rupture.",
+      },
+      {
+        topic: "Obstructed Labour",
+        front: "The 4 Ps of prolonged labour?",
+        back: "Power (contractions), Passenger (fetal size and position), Passage (pelvis), Psyche (exhaustion, fear, dehydration) — treat the Psyche before reaching for drugs.",
+      },
+      {
+        topic: "Obstructed Labour",
+        front: "Why must oxytocin never be given in obstructed labour?",
+        back: "It drives forceful contractions against a mechanical block, multiplying force on a thinning lower segment — the direct route to uterine rupture and maternal death.",
+      },
+    ],
+    sources: [
+      {
+        organization: "World Health Organization",
+        title: "WHO Recommendations: Intrapartum Care for a Positive Childbirth Experience",
+        year: "2018",
+        url: "https://www.who.int/publications/i/item/9789241550215",
+      },
+      {
+        organization: "World Health Organization",
+        title: "Managing Complications in Pregnancy and Childbirth: A Guide for Nurses and Doctors",
+        year: "2017",
+        url: "https://www.who.int/publications/i/item/9789241565493",
+      },
+      {
+        organization: "Ghana Health Service",
+        title: "National Reproductive Health Service Policy and Standards",
+        note: "National reference — verify the current edition at your facility.",
+      },
+    ],
+  },
+
+  // ── 6 ──────────────────────────────────────────────────────
+  {
+    courseSlug: "high-risk-maternal-newborn",
+    moduleTitle: "Emergencies of Pregnancy & Birth",
+    lessonTitle: "Sepsis & Hemorrhage After Birth",
+    description:
+      "The two great killers of the hours after birth — heavy bleeding and the smelly fever. Both are beatable with fast hands, a clear framework and no delay.",
+    difficulty: "Clinical Reasoning",
+    durationMin: 12,
+    objectives: [
+      "Describe primary postpartum haemorrhage and the tone-trauma-tissue-thrombin framework.",
+      "Explain how puerperal sepsis presents and why it is the emergency of the first week after birth.",
+      "Apply the first-response drills for both — in parallel, not in sequence — including protocol medicines and referral.",
+    ],
+    tags: ["pph", "puerperal sepsis", "uterotonics", "emergency", "referral"],
+    sourceStatus: "GCU_ALIGNED",
+    sections: [
+      {
+        type: "text",
+        title: "What this lesson is about",
+        body: "The hours after birth are the most dangerous of the whole maternity journey. Postpartum haemorrhage can take a mother from fit to critical in under two hours; puerperal sepsis can take her by the end of the first week. Both kill quietly in communities where the danger signs are not known, and both are beaten by exactly the same discipline: recognise early, act in parallel, escalate fast.\n\nYou will meet both on postnatal wards and in postnatal clinics, and in the community after home births. Learn these two drills like your own name.",
+      },
+      {
+        type: "text",
+        title: "Postpartum haemorrhage: the four Ts",
+        body: "PPH is blood loss of 500 mL or more after a vaginal birth (1,000 mL after caesarean), or any loss that makes the mother shocked — whatever the pad says. **Tone** — a floppy, atonic uterus — causes about 70 of every 100 PPHs. Rub the uterus up through the abdominal wall, empty the bladder with a catheter, and give a uterotonic: oxytocin 10 units IV or IM is first choice; ergometrine 0.2 mg if her blood pressure is normal; misoprostol 600 micrograms sublingually where no oxytocin or cold chain exists — the realistic backbone of community care in Ghana. **Trauma** means tears of the perineum, vagina or cervix: if the uterus is well contracted and she still bleeds, inspect with good light. **Tissue** means a placenta or clots retained inside — check the placenta is complete. **Thrombin** — a clotting problem — is suspected when bleeding continues despite the other three.\n\nThroughout, act in parallel, not in sequence: call for help, two large-bore IV lines, fluids running, vital signs every 15 minutes, keep her warm. Visual estimation always under-reads — often by nearly half — so trust her pulse, pallor and restlessness. If bleeding continues: bimanual compression of the uterus while the senior team and theatre plan take over; transfusion decisions rest on her condition, not the swabs.",
+      },
+      {
+        type: "text",
+        title: "Puerperal sepsis: the smelly fever",
+        body: "Infection after birth is the emergency of the first days and weeks. Suspect **puerperal sepsis** in any mother with fever of 38°C or more after the first 24 hours, foul-smelling lochia, uterine tenderness, or pain and fever out of proportion to examination findings — particularly after prolonged labour, prolonged rupture of membranes, many vaginal examinations, retained products, or a birth outside a facility. The loss can progress within hours to severe sepsis and septicaemia, so the response is immediate: first dose of antibiotics per protocol (given before transfer, not after), IV fluids, a full set of vital signs, and urgent referral.\n\nPrevention is your daily work: clean birth practices, hand hygiene for everyone who touches mother or baby, strictly limited vaginal examinations, clean cord care, and teaching the danger signs to every family before discharge — fever, offensive discharge, spreading belly pain, and a mother who 'just is not herself'.",
+      },
+      {
+        type: "clinical_pearl",
+        body: "The pulse is the monitor that never lies. In bleeding, a rising pulse with pallor and restlessness means compensating shock before the pad looks frightening; in infection, a fast pulse with fever means the antibiotics start today, not tomorrow. And a lochia that smells offensive is never normal — sepsis until excluded.",
+      },
+      {
+        type: "quiz_prompt",
+        title: "The six-hour fever",
+        body: "Six hours after a difficult 18-hour labour, a mother has a temperature of 38.6°C, offensive-smelling lochia and a tender uterus. What is the working diagnosis, and what are your first three actions?\n\nAnswer: Puerperal sepsis until excluded — fever with foul lochia and uterine tenderness after prolonged labour. Actions: give the first dose of antibiotics per protocol now, start IV fluids and monitor vital signs, and arrange urgent referral with a written note — never wait for tomorrow's clinic to begin treatment.",
+      },
+      {
+        type: "case",
+        title: "On the ward",
+        body: "Twenty minutes after a normal vaginal birth, a 26-year-old mother of three soaks a fresh pad and the blood runs onto the sheet. Her uterus feels soft and difficult to outline. Her pulse has climbed from 76 to 108 and she looks pale around the lips. Estimated loss so far is 700 mL.\n\nWhat is the most likely cause, and what are your first five actions?\n\nAnswer: The soft uterus with heavy bleeding after birth is uterine atony — the tone cause, the commonest PPH. Call for help; rub the uterus up firmly and keep a hand there; give oxytocin 10 units IV or IM (misoprostol 600 micrograms sublingually if oxytocin is unavailable); catheterise to empty the bladder; start two large-bore lines with fluids and record vitals every 15 minutes. Then check the placenta and perineum as the uterus firms, keep her warm, and escalate to bimanual compression and the theatre plan if bleeding does not settle — the first hour is where mothers are won or lost.",
+      },
+      {
+        type: "memory_trick",
+        body: "The four Ts: Tone is a Tired womb, Trauma is a Tear, Tissue is something left inside, Thrombin is Thin blood. Then 'PHONE': call for help, Hands on the uterus, Oxytocin, catheterise the Bladder, Examine placenta, perineum and vitals. And sepsis in three words: Fever, Foul, Fundal.",
+      },
+      {
+        type: "summary",
+        body: "- PPH is 500 mL or more after vaginal birth (1,000 mL after caesarean) — or any loss causing shock; the four Ts are Tone (about 70%), Trauma, Tissue and Thrombin.\n- First response in parallel: call help, rub up the contraction, empty the bladder, give a uterotonic — misoprostol where no oxytocin or cold chain exists.\n- Visual estimates under-read — trust a rising pulse, pallor and restlessness; escalate to bimanual compression and theatre if bleeding persists.\n- Puerperal sepsis: fever 38°C or more after 24 hours, foul lochia, uterine tenderness — first antibiotic dose per protocol before referral, IV fluids, urgent transfer.\n- Prevention is nursing territory: clean birth, hand hygiene, limited examinations, clean cord care, danger-sign teaching for every family.",
+      },
+    ],
+    questions: [
+      {
+        topic: "Postpartum Emergencies",
+        type: "MCQ",
+        difficulty: "Easy",
+        stem: "What is the definition of primary postpartum haemorrhage after a vaginal birth?",
+        options: [
+          "Any bleeding within six weeks of birth",
+          "Blood loss of 500 mL or more within 24 hours of birth",
+          "Blood loss of 100 mL or more within one hour of birth",
+          "Any bleeding that occurs after a caesarean section",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Primary PPH is blood loss of 500 mL or more in the first 24 hours after a vaginal birth (1,000 mL or more after caesarean), or any loss that makes the mother clinically shocked — the definition includes her condition, not just the measured volume.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Postpartum Emergencies",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "In a CHPS compound with no functioning refrigeration, a mother bleeds heavily from an atonic uterus. Which uterotonic is the practical first choice?",
+        options: [
+          "Intravenous oxytocin infusion",
+          "Ergometrine 0.2 mg in a woman with severe hypertension",
+          "Misoprostol 600 micrograms sublingually",
+          "Wait for transfer before any drug",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Misoprostol is heat-stable, needs no cold chain or injection skills, and 600 micrograms sublingually is an effective first-line uterotonic at community level. Oxytocin needs a cold chain, ergometrine is avoided in severe hypertension, and never delay a uterotonic while waiting for transport.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Postpartum Emergencies",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "A mother's uterus is well contracted after birth, but bright red bleeding continues. Which of the four Ts moves to the top of your list?",
+        options: [
+          "Tone — give more uterotonics",
+          "Thrombin — send clotting studies immediately",
+          "None — some bleeding is normal for hours",
+          "Trauma or Tissue — inspect the birth canal and check the placenta",
+        ],
+        correctIndex: 3,
+        explanation:
+          "Bleeding despite a firm, well-contracted uterus points away from atony: examine for tears of the perineum, vagina or cervix, and ensure the placenta and membranes are complete. Clotting problems come later in the framework — after trauma and tissue are excluded.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Postpartum Emergencies",
+        type: "CLINICAL_SCENARIO",
+        difficulty: "Hard",
+        stem: "On day three after a birth at home, a mother is brought to your clinic: temperature 38.8°C, offensive lochia, tender uterus, pulse 116. What is the correct response?",
+        options: [
+          "Give paracetamol and review at the welfare clinic next week",
+          "Advise increased hygiene at home and traditional care",
+          "First dose of antibiotics per protocol, IV fluids, vital signs and urgent referral",
+          "Reassure that fever after birth is normal for the first week",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Fever with foul lochia and a tender uterus is puerperal sepsis — an emergency of the first week that can progress to severe sepsis within hours. Treatment starts before transfer: the first antibiotic dose per protocol, fluids and urgent referral. Analgesia and reassurance alone gamble with her life.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+    ],
+    flashcards: [
+      {
+        topic: "Postpartum Emergencies",
+        front: "What are the four Ts of PPH, and which is commonest?",
+        back: "Tone (atony — roughly 70% of cases), Trauma (tears), Tissue (retained placenta or clots), Thrombin (clotting failure). Run through all four in every single case.",
+      },
+      {
+        topic: "Postpartum Emergencies",
+        front: "First-line uterotonics at birth, with the community fallback?",
+        back: "Oxytocin 10 units IV/IM first line; ergometrine 0.2 mg IM if blood pressure is normal; misoprostol 600 micrograms sublingually where oxytocin and a cold chain are unavailable.",
+      },
+      {
+        topic: "Postpartum Emergencies",
+        front: "The three-word screen for puerperal sepsis?",
+        back: "Fever, Foul (offensive lochia), Fundal (uterine) tenderness — any combination after birth means antibiotics per protocol and urgent referral, not observation.",
+      },
+      {
+        topic: "Postpartum Emergencies",
+        front: "Why trust the pulse more than the pad in PPH?",
+        back: "Visual estimation of blood loss under-reads — often by nearly half. A rising pulse with pallor and restlessness signals compensating shock earlier than any swab count.",
+      },
+      {
+        topic: "Postpartum Emergencies",
+        front: "Why does postnatal nursing observations matter after every birth?",
+        back: "The first hours hold the PPH risk and the first week the sepsis risk — pulse, fundal tone, lochia and temperature checks catch both before they become fatal.",
+      },
+    ],
+    sources: [
+      {
+        organization: "World Health Organization",
+        title: "WHO Recommendations for the Prevention and Treatment of Postpartum Haemorrhage",
+        year: "2022",
+      },
+      {
+        organization: "World Health Organization",
+        title: "Pregnancy, Childbirth, Postpartum and Newborn Care: A Guide for Essential Practice",
+        year: "2015",
+        url: "https://www.who.int/publications/i/item/9789241549356",
+      },
+      {
+        organization: "Ghana Health Service",
+        title: "National Reproductive Health Service Policy and Standards",
+        note: "National reference — verify the current edition at your facility.",
+      },
+    ],
+  },
+
+  // ── 7 ──────────────────────────────────────────────────────
+  {
+    courseSlug: "high-risk-maternal-newborn",
+    moduleTitle: "The Struggling Newborn",
+    lessonTitle: "The Compromised Newborn: Recognition",
+    description:
+      "The baby who needed help arriving, and the baby who was fine then faded — newborns fall ill quietly, and the nurse is the one who hears the whisper.",
+    difficulty: "Clinical Reasoning",
+    durationMin: 12,
+    objectives: [
+      "Describe the signs of newborn compromise at birth and in the first days of life.",
+      "Explain the WHO/UNICEF neonatal danger signs and why newborn illness presents non-specifically.",
+      "Apply the response package — warm, assess, pre-referral treatment per protocol, urgent transport — for the baby in trouble.",
+    ],
+    tags: ["danger signs", "newborn", "apgar", "recognition", "referral"],
+    sourceStatus: "GCU_ALIGNED",
+    sections: [
+      {
+        type: "text",
+        title: "What this lesson is about",
+        body: "A newborn cannot say where it hurts. At birth it shows you through colour, tone, breathing and cry; in the days after, through feeding, temperature and movement. Learn these two languages and you hold the recognition net for the smallest patients in the building.\n\nThis lesson covers both windows. First the arrival — the baby who does not cry or breathe, what you assess and how you describe it. Then the fade — the WHO/UNICEF danger signs that turn a vague maternal worry into a clear decision: this baby needs hospital today.",
+      },
+      {
+        type: "text",
+        title: "At birth: reading the first minute",
+        body: "In the first minute, assess in order: is the baby **term**, is he **breathing or crying**, is his **tone** good, is his **colour** pink? A term baby who cries and moves needs routine care: drying, skin-to-skin and watching. A baby who is limp, silent or **gasping** — gasping is not breathing — needs the resuscitation sequence you will meet later in this module.\n\nThe **Apgar score** (Appearance, Pulse, Grimace, Activity, Respiratory effort) at 1, 5 and 10 minutes is the shared language of that first assessment. It communicates how the baby is responding to transition and to help — it does not predict the future, and it never delays hands-on care. The heart rate carries the most weight: count it by listening to the chest or feeling pulsation in the cord stump, and remember that a baby who is blue, limp and slow is a baby whose circulation needs support now. Every observation, with its time, goes into the record — the resuscitation story is retold from your notes.",
+      },
+      {
+        type: "text",
+        title: "After birth: the seven danger signs",
+        body: "WHO and UNICEF distilled newborn illness into a short list. **Not feeding well** (or stopped feeding since birth); **convulsions**; **fast breathing** (60 breaths per minute or more); **severe chest in-drawing**; **fever 38°C or above, or cold below 35.5°C**; **movement only when stimulated, or no movement at all**; and **jaundice on day one, or yellow palms and soles**. Behind one sign can hide sepsis, meningitis, pneumonia, hypothermia or haemolysis — the sign is the alarm, not the diagnosis.\n\nYour response is a package, and it travels together: keep the baby warm (skin-to-skin on the mother, a hat, dry clothes — a cold baby must be rewarmed even while you refer), give the pre-referral first dose of antibiotics and any treatment the national protocol directs, arrange transport, tell the mother honestly what you are doing and why, and phone ahead if you can. Any one sign, in any baby, means assessment and urgent referral — not home advice and a review next week.",
+      },
+      {
+        type: "clinical_pearl",
+        body: "A mother who says the baby just isn't feeding like yesterday has handed you the earliest warning in neonatal medicine. Examine that baby fully — temperature, breathing, activity, colour — before you reassure anyone, including yourself. And count a fast breathing baby for a full minute while the baby is calm: crying counts are wrong counts.",
+      },
+      {
+        type: "case",
+        title: "On the ward",
+        body: "At a CHPS compound postnatal visit, a day-three baby takes two weak sucks and stops. The mother says he has been sleeping too much. His temperature is 35.6°C, and when you undress him he stirs briefly and goes still again. There is no fast breathing and the chest is clear.\n\nWhich danger signs has this baby already shown, and what are your next actions?\n\nAnswer: Poor feeding, near-hypothermia and reduced movement fit the danger list — and hypothermia itself can be the face of sepsis in a newborn. Rewarm him now with skin-to-skin contact and a hat while you complete your assessment, then give the pre-referral treatment your protocol directs, explain to the mother what you are doing, and arrange urgent transport to the district hospital with a call ahead. This is not a baby to review next week.",
+      },
+      {
+        type: "quiz_prompt",
+        title: "The fast-breathing baby",
+        body: "A term baby on day two has a respiratory rate of 70 per minute counted while calm, with grunting on expiry and a temperature of 36.2°C. Which danger signs are present, and what do they mean together?\n\nAnswer: Fast breathing (70 ≥ the 60/min threshold) plus grunting — a sign of respiratory distress — plus a low temperature. Together they point to pneumonia or early sepsis announcing itself through the lungs: keep the baby warm, give pre-referral treatment per protocol, and refer urgently.",
+      },
+      {
+        type: "memory_trick",
+        body: "Chant the list like a counting rhyme: Won't FEED, FITS, breathes FAST, chest SUCKED IN, HOT or COLD, STILL as stone, YELLOW too soon. Any single line of the rhyme sends the baby to hospital — you never need two signs to act.",
+      },
+      {
+        type: "summary",
+        body: "- At birth assess term, breathing, tone and colour; gasping is not breathing — it is an emergency; the Apgar at 1, 5 and 10 minutes communicates, it does not predict, and it never delays hands-on care.\n- Count the heart rate by chest auscultation or cord pulsation; a blue, limp, slow baby needs support now.\n- The seven danger signs: poor feeding, convulsions, fast breathing ≥60/min, severe chest in-drawing, fever ≥38°C or cold <35.5°C, movement only when stimulated or none, jaundice on day one or yellow palms and soles.\n- Newborn illness is vague by nature — one quiet sign can hide sepsis, meningitis or pneumonia.\n- One sign = urgent referral: warm the baby, pre-referral treatment per protocol, counsel the mother, transport, document.",
+      },
+    ],
+    questions: [
+      {
+        topic: "Compromised Newborn",
         type: "MCQ",
         difficulty: "Easy",
         stem: "Which finding in a one-week-old baby counts as a WHO danger sign requiring urgent referral?",
@@ -62,15 +1044,15 @@ export const lessons: SeedFullLesson[] = [
           "Passing five soft yellow stools a day while feeding well",
           "Feeding poorly and moving only when stimulated",
           "Startling at sudden noises during sleep",
-          "Having mild jaundice of the face on day five with good feeding",
+          "Mild jaundice of the face on day five with good feeding",
         ],
         correctIndex: 1,
         explanation:
-          "Poor feeding and movement only when stimulated are both danger signs — either alone means urgent assessment and referral. Frequent soft stools, a startle (Moro) reflex and mild facial jaundice peaking around day three to five in a well-feeding baby are normal findings.",
-        courseSlug: "neonatal-nursing",
+          "Poor feeding and movement only when stimulated are both danger signs — either alone means urgent assessment and referral. Frequent soft stools, the startle (Moro) reflex and mild facial jaundice peaking around day three to five in a well-feeding baby are normal findings.",
+        courseSlug: "high-risk-maternal-newborn",
       },
       {
-        topic: "Neonatal Danger Signs",
+        topic: "Compromised Newborn",
         type: "MCQ",
         difficulty: "Moderate",
         stem: "A newborn at your CHPS compound has a temperature of 35.2°C but is breathing quietly and feeding reasonably. What is the correct interpretation and action?",
@@ -82,41 +1064,67 @@ export const lessons: SeedFullLesson[] = [
         ],
         correctIndex: 1,
         explanation:
-          "A temperature below 35.5°C is a danger sign in its own right and may be the presenting sign of sepsis. Rewarming with skin-to-skin contact and a hat starts immediately, and the baby is managed as a danger-sign newborn with referral — never cold baths, which worsen heat loss, and never simple observation at home.",
-        courseSlug: "neonatal-nursing",
+          "A temperature below 35.5°C is a danger sign in its own right and may be the presenting sign of sepsis. Rewarming with skin-to-skin contact and a hat starts immediately, and the baby is managed as a danger-sign newborn with referral — never warm baths, which worsen heat loss, and never simple observation at home.",
+        courseSlug: "high-risk-maternal-newborn",
       },
       {
-        topic: "Neonatal Danger Signs",
+        topic: "Compromised Newborn",
         type: "MCQ",
         difficulty: "Moderate",
         stem: "Why are danger signs so non-specific in newborns compared with older children?",
         options: [
           "Because newborns cannot develop severe infections in the first month",
-          "Because the newborn brain and immune defences are immature, so illness shows as feeding, temperature, tone and breathing changes rather than local complaints",
+          "Because the newborn brain and immune defences are immature, so illness shows as feeding, temperature, tone and breathing changes",
           "Because danger signs are designed to detect surgical problems only",
           "Because newborns always show a rash before becoming seriously ill",
         ],
         correctIndex: 1,
         explanation:
           "An immature nervous and immune system means serious disease in a neonate surfaces as poor feeding, temperature instability, floppiness or abnormal breathing — vague signs that can each hide sepsis or meningitis. That is exactly why the WHO list uses whole-baby clues rather than specific complaints.",
-        courseSlug: "neonatal-nursing",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Compromised Newborn",
+        type: "CLINICAL_SCENARIO",
+        difficulty: "Hard",
+        stem: "At one minute, a term baby is blue, limp, not breathing; you feel pulsation in the cord stump at about 90 beats per minute. What does this baby need first?",
+        options: [
+          "Immediate chest compressions for the slow heart rate",
+          "Effective positive-pressure ventilation with a bag-mask in room air",
+          "Warming only, and observation for five minutes",
+          "Oxygen by nasal prongs while waiting for the paediatrician",
+        ],
+        correctIndex: 1,
+        explanation:
+          "A baby who is not breathing needs air in the lungs before anything else — a heart rate around 90 usually recovers once ventilation is effective, so bag-mask ventilation comes before compressions (which are reserved for a heart rate below 60 despite effective ventilation). Warming and oxygen alone do not ventilate an apnoeic baby.",
+        courseSlug: "high-risk-maternal-newborn",
       },
     ],
     flashcards: [
       {
-        topic: "Neonatal Danger Signs",
+        topic: "Compromised Newborn",
         front: "List the WHO/UNICEF neonatal danger signs.",
-        back: "Poor feeding; convulsions; fast breathing (≥60/min); severe chest in-drawing; fever ≥38°C or temperature <35.5°C; movement only when stimulated or none; jaundice on day one or yellow palms and soles. Any one sign = urgent referral.",
+        back: "Poor feeding; convulsions; fast breathing (≥60/min); severe chest in-drawing; fever ≥38°C or temperature below 35.5°C; movement only when stimulated or none; jaundice on day one or yellow palms and soles. Any one sign = urgent referral.",
       },
       {
-        topic: "Neonatal Danger Signs",
-        front: "A newborn's temperature is 35.4°C. What is this and what does it demand?",
-        back: "Hypothermia — a danger sign. Rewarm immediately with skin-to-skin contact and a hat, look for other signs, give pre-referral care per protocol, and refer urgently; hypothermia can signal sepsis.",
-      },
-      {
-        topic: "Neonatal Danger Signs",
+        topic: "Compromised Newborn",
         front: "Why does jaundice on day one qualify as a danger sign?",
-        back: "Jaundice appearing within 24 hours suggests haemolysis (Rhesus or ABO incompatibility, G6PD deficiency), which can climb fast to bilirubin levels that damage the brain — it needs urgent assessment, not watching.",
+        back: "Jaundice within 24 hours suggests haemolysis (Rhesus or ABO incompatibility, G6PD deficiency), which can climb fast to bilirubin levels that damage the brain — it needs urgent assessment, not watching.",
+      },
+      {
+        topic: "Compromised Newborn",
+        front: "What does the Apgar score communicate, and what does it not do?",
+        back: "It communicates how the baby is handling transition and resuscitation at 1, 5 and 10 minutes — Appearance, Pulse, Grimace, Activity, Respiratory effort. It does not predict the future and must never delay hands-on care.",
+      },
+      {
+        topic: "Compromised Newborn",
+        front: "How do you count a newborn heart rate without a monitor?",
+        back: "Listen to the chest with a stethoscope or feel for pulsation in the umbilical cord stump — near the base, close to the baby's body.",
+      },
+      {
+        topic: "Compromised Newborn",
+        front: "A mother says the baby is not feeding like yesterday. What is the correct next move?",
+        back: "Full examination before any reassurance: temperature, breathing for a full minute while calm, activity, colour — poor feeding is the earliest warning in neonatal medicine and may hide sepsis.",
       },
     ],
     sources: [
@@ -129,59 +1137,59 @@ export const lessons: SeedFullLesson[] = [
       {
         organization: "World Health Organization / UNICEF",
         title: "Integrated Management of Childhood Illness (IMCI) chart booklet",
-        note: "Danger-sign and young-infant assessment content. Verify the current national adaptation used in Ghana.",
+        note: "Danger-sign and young-infant assessment content — verify the current national adaptation used in Ghana.",
       },
       {
         organization: "Ghana Health Service",
-        title: "Newborn care guidelines and referral protocols",
-        note: "Verify the current national version for pre-referral dosing and transport advice.",
+        title: "National newborn care guidelines and referral protocols",
+        note: "Verify the current national version for pre-referral treatment and transport advice.",
       },
     ],
   },
 
-  // ── 2 ──────────────────────────────────────────────────────
+  // ── 8 ──────────────────────────────────────────────────────
   {
-    courseSlug: "neonatal-nursing",
-    moduleTitle: "The At-Risk Newborn",
-    lessonTitle: "Prematurity: The Baby Who Came Early",
+    courseSlug: "high-risk-maternal-newborn",
+    moduleTitle: "The Struggling Newborn",
+    lessonTitle: "Prematurity: The First Days",
     description:
-      "Before 37 weeks, every system of the baby is still under construction. Meet the challenges of the preterm newborn — and the simple care that saves them.",
-    difficulty: "Moderate",
+      "Before 37 weeks every system is still under construction — the first days of warmth, milk and clean hands are where small babies are won.",
+    difficulty: "Hard",
     durationMin: 12,
     objectives: [
-      "Define prematurity and its gestational-age categories.",
-      "Explain how immaturity affects the lungs, skin, brain, gut, liver, blood and eyes of the preterm baby.",
-      "Apply core preterm care principles — warmth, feeding support, gentle handling and infection prevention.",
+      "Define prematurity and its categories, and describe the system-by-system immaturity that shapes care.",
+      "Explain the three predictable failures of small reserves — heat, sugar and germs — and their counter-plans.",
+      "Apply first-days nursing care for the preterm and low-birth-weight baby, and recognise when to escalate.",
     ],
-    tags: ["prematurity", "preterm", "rds", "kangaroo mother care", "lbw"],
+    tags: ["prematurity", "preterm", "kangaroo mother care", "lbw", "newborn care"],
     sourceStatus: "GCU_ALIGNED",
     sections: [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "A baby born before 37 completed weeks is **preterm**. We describe them as late preterm (34–36 weeks), moderate (32–33), very (28–31) and extremely preterm (below 28). In Ghana, infection, malaria, hypertension, anaemia and teenage pregnancy push many babies out early.\n\nThe key insight: prematurity is not one problem but a whole-body state — every system needs your plan.",
+        body: "A baby born before 37 completed weeks is **preterm** — late preterm (34-36 weeks), moderate (32-33), very (28-31) and extremely preterm (below 28). A baby weighing under 2500 g at birth is **low birth weight**, whatever the cause — born early, or grown poorly at term. In Ghana infection, malaria, hypertension, anaemia and teenage pregnancy push many babies into these groups.\n\nPrematurity is not one problem but a whole-body state. The good news is that most of what saves these babies in the first days is not machinery — it is warmth, the mother's milk, gentle hands and clean technique, all of them nursing work. This lesson walks the immaturity system by system, then the first-days plan.",
       },
       {
         type: "text",
         title: "The core ideas",
-        body: "The **lungs** lack mature surfactant, so breathing is stiff and fast and respiratory distress syndrome can develop. The **skin** is thin with little fat, so heat escapes fast — hypothermia is one of the most preventable killers. The **brain** has fragile vessels; handle gently, avoid bumps and rapid fluid changes. The **gut** cannot yet coordinate suck and swallow reliably (this matures around 32–34 weeks), so feeds may come as expressed breast milk by cup or tube, started carefully to protect against necrotising enterocolitis. The **liver** clears bilirubin poorly, so jaundice comes earlier, climbs higher and lasts longer. **Immunity** is thin-skinned and naive — hand hygiene is a treatment. The **eyes** of very preterm babies are vulnerable to retinopathy of prematurity.\n\nYour cornerstones are beautifully low-tech: warmth (skin-to-skin or **kangaroo mother care** for stable babies, with a hat and cap), the mother's own milk, minimal gentle handling, strict cleanliness, and early referral when a baby needs oxygen or tube feeding you cannot provide. Antenatal corticosteroids for the mother in threatened preterm labour mature the lungs.",
+        body: "The **lungs** lack mature surfactant, so breathing is stiff and fast, and respiratory distress syndrome can develop — grunting, in-drawing, a baby working to breathe. The **skin** is thin with little fat, so heat escapes fast: hypothermia is one of the most preventable killers of small babies. The **brain** has fragile vessels — handle gently, no bumps, no rapid fluid swings, and watch for apnoea. The **gut** cannot yet coordinate suck and swallow reliably (this matures around 32-34 weeks), so feeds may come as expressed breast milk by cup or tube, started early and built carefully to protect against necrotising enterocolitis. The **liver** clears bilirubin poorly, so jaundice comes earlier, climbs higher and lasts longer. **Immunity** is thin — hand hygiene is a treatment, not a courtesy.\n\nThe first-days plan: **warmth** — dry at birth, skin-to-skin or continuous **kangaroo mother care** for stable babies with a hat, and the mother as the incubator; **milk** — the mother's own expressed milk, early and often, by cup or nasogastric tube, including through the night, because small glycogen stores cannot survive long fasts; **gentleness** — minimal handling, clustered care, light and noise kept low; **cleanliness** — hand hygiene before every touch, clean cord care; and **watching** — temperature, feeding tolerance, jaundice, apnoea and daily weight. Escalate when breathing worsens, jaundice appears early or climbs, feeds are not tolerated, the temperature will not hold, or apnoea appears — that baby needs a special care baby unit. And remember what could have been done before the birth: antenatal corticosteroids for the mother and transfer before delivery, not after.",
       },
       {
         type: "clinical_pearl",
-        body: "The preterm baby loses heat through thin skin faster than a big water tank loses water through a crack. Warmth, milk and clean hands save more preterm babies in district facilities than any machine you are waiting for.",
+        body: "The preterm baby loses heat through thin skin faster than a big water tank loses water through a crack. Warmth, milk and clean hands save more preterm babies in district facilities than any machine you are waiting for. And a term baby weighing 2.4 kg is not just a small mother's baby — a growth-restricted baby tolerates cold and hunger like a preterm, so treat smallness itself as a risk.",
       },
       {
         type: "case",
         title: "On the ward",
-        body: "A 33-week baby is born at your district hospital, limp and grunting. You dry him under a radiant warmer, and his breathing settles to fast but unlaboured. He is 1.8 kg, temperature holding at 36.5°C, and the mother asks anxiously whether she can breastfeed.\n\nWhat are your priorities in the first hours, and how do you answer her?\n\nAnswer: Keep him warm — continuous skin-to-skin with a hat once stable — and start expressed colostrum within the first hour by cup or tube, because his suck is not yet reliable, with the mother expressing every few hours to build her supply. Handle him gently, keep hands clean, watch for jaundice and apnoea, and review with the team for oxygen or specialist needs. Her milk is exactly the medicine he needs, so she is not a visitor — she is part of the treatment.",
+        body: "A 33-week baby is born at your district hospital, limp and grunting. He is dried and warmed, and his breathing settles to fast but unlaboured. He is 1.8 kg, temperature holding at 36.5°C, and the mother asks anxiously whether she can breastfeed.\n\nWhat are your priorities in the first hours, and how do you answer her?\n\nAnswer: Keep him warm — continuous skin-to-skin with a hat once stable — and start expressed colostrum within the first hour by cup or tube, because his suck is not yet reliable, with the mother expressing every few hours to build her supply. Handle him gently, keep hands clean, watch for jaundice and apnoea, and review with the team for oxygen or specialist needs. Her milk is exactly the medicine he needs, so she is not a visitor — she is part of the treatment.",
       },
       {
         type: "memory_trick",
-        body: "The whole-baby alphabet: **L**ungs (surfactant), **S**kin (heat leaks), **B**rain (handle gently), **G**ut (feeds by cup or tube), **L**iver (jaundice), **I**mmunity (clean hands), **E**yes (retinopathy). Then chant the care: **Warm, Milk, Gentle, Clean**.",
+        body: "The whole-baby alphabet: Lungs (surfactant), Skin (heat leaks), Brain (handle gently), Gut (feeds by cup or tube), Liver (jaundice), Immunity (clean hands), Eyes (retinopathy). Then chant the care: Warm, Milk, Gentle, Clean. And for any small baby remember the three battles: Heat, Sugar, Germs.",
       },
       {
         type: "summary",
-        body: "- Preterm = birth before 37 completed weeks; late (34–36), moderate (32–33), very (28–31), extreme (<28).\n- Every system is immature: surfactant-poor lungs, leaky skin, fragile brain, uncoordinated suck, slow bilirubin clearance, naive immunity.\n- Care cornerstones: warmth and kangaroo mother care, expressed breast milk by cup or tube, gentle minimal handling, strict hand hygiene.\n- Antenatal corticosteroids for the mother in threatened preterm labour mature the lungs — escalate early.\n- Jaundice arrives earlier and climbs higher in preterm babies — watch daily.",
+        body: "- Preterm = birth before 37 completed weeks; LBW = under 2500 g at birth whatever the gestation — and a term growth-restricted baby shares the risks of smallness.\n- Every system is immature: surfactant-poor lungs, leaky skin, fragile brain, uncoordinated suck, slow bilirubin clearance, naive immunity.\n- First-days care: warmth and kangaroo mother care with a hat, expressed breast milk by cup or tube early and through the night, gentle clustered handling, strict hand hygiene, daily weighing.\n- Watch for the escalations: worsening breathing, early or climbing jaundice, feed intolerance, unstable temperature, apnoea — refer to a special care baby unit.\n- Before birth, the best gifts were antenatal corticosteroids and in-utero transfer — escalate threatened preterm labour early.",
       },
     ],
     questions: [
@@ -198,8 +1206,8 @@ export const lessons: SeedFullLesson[] = [
         ],
         correctIndex: 1,
         explanation:
-          "Late preterm covers 34 to 36 weeks. The baby is preterm regardless of his weight; 28–31 weeks is very preterm and below 28 weeks is extremely preterm.",
-        courseSlug: "neonatal-nursing",
+          "Late preterm covers 34 to 36 weeks — preterm regardless of weight. Very preterm is 28-31 weeks, and below 28 weeks is extremely preterm.",
+        courseSlug: "high-risk-maternal-newborn",
       },
       {
         topic: "Prematurity",
@@ -215,7 +1223,7 @@ export const lessons: SeedFullLesson[] = [
         correctIndex: 1,
         explanation:
           "Surfactant lowers surface tension and keeps the air sacs open; without it the lungs become stiff and each breath re-inflates collapsed alveoli — seen clinically as grunting, fast breathing and in-drawing. Antenatal corticosteroids accelerate surfactant maturation.",
-        courseSlug: "neonatal-nursing",
+        courseSlug: "high-risk-maternal-newborn",
       },
       {
         topic: "Prematurity",
@@ -230,130 +1238,13 @@ export const lessons: SeedFullLesson[] = [
         ],
         correctIndex: 2,
         explanation:
-          "Around 32 weeks the suck-swallow coordination is still maturing, so the mother's expressed milk is given early by cup or tube in frequent small feeds — her milk protects the immature gut. Delaying feeds, bottle formula and glucose water routines all increase risk.",
-        courseSlug: "neonatal-nursing",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Prematurity",
-        front: "Define preterm birth and give the four categories.",
-        back: "Birth before 37 completed weeks: late preterm 34–36, moderately preterm 32–33, very preterm 28–31, extremely preterm below 28 weeks.",
+          "Around 32 weeks the suck-swallow coordination is still maturing, so the mother's expressed milk is given early by cup or tube in frequent small feeds — her milk protects the immature gut. Delaying feeds, bottle formula and glucose-water routines all increase risk.",
+        courseSlug: "high-risk-maternal-newborn",
       },
       {
         topic: "Prematurity",
-        front: "Which single drug given to the mother before a preterm birth can mature the baby's lungs?",
-        back: "Antenatal corticosteroids (typically two doses) given in threatened preterm labour accelerate surfactant production and reduce respiratory distress syndrome and death.",
-      },
-      {
-        topic: "Prematurity",
-        front: "Name the four cornerstones of preterm care in a district facility.",
-        back: "Warmth (kangaroo mother care and a hat for stable babies), the mother's expressed milk by cup or tube, gentle minimal handling, and strict infection prevention — then refer for oxygen or specialist needs.",
-      },
-    ],
-    sources: [
-      {
-        organization: "World Health Organization",
-        title: "Recommendations for the care of the preterm or low-birth-weight infant",
-        year: "2022",
-        url: "https://www.who.int/publications/i/item/9789240058262",
-      },
-      {
-        organization: "World Health Organization",
-        title: "Pocket Book of Hospital Care for Children (2nd edition)",
-        year: "2013",
-        url: "https://www.who.int/publications/i/item/9789241548373",
-      },
-      {
-        organization: "Elsevier",
-        title: "Myles Textbook for Midwives (17th edition)",
-        note: "Newborn care chapters. Educational source — verify current edition.",
-      },
-    ],
-  },
-
-  // ── 3 ──────────────────────────────────────────────────────
-  {
-    courseSlug: "neonatal-nursing",
-    moduleTitle: "The At-Risk Newborn",
-    lessonTitle: "Low Birth Weight: Small but Vulnerable",
-    description:
-      "Under 2.5 kg, a baby's small reserves run out fast — heat, sugar and germ-fighting power all run short. Learn to spot the LBW baby and guard the three things that fail first.",
-    difficulty: "Moderate",
-    durationMin: 12,
-    objectives: [
-      "Define low birth weight and distinguish preterm LBW from term small-for-gestational-age babies.",
-      "Explain the three headline risks of the LBW newborn: hypothermia, hypoglycaemia and infection.",
-      "Apply a practical care plan for a small baby at a CHPS compound or district hospital.",
-    ],
-    tags: ["lbw", "growth", "hypoglycaemia", "hypothermia", "newborn"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "Every baby must be weighed at birth — that single number sorts the vulnerable from the robust. **Low birth weight (LBW)** means less than 2500 g whatever the cause; below 1500 g is very low birth weight. Its roots run through malaria, maternal anaemia, hypertension, malnutrition, teenage pregnancy and short birth spacing.\n\nTwo roads lead to the same reading: a **preterm** baby came early; a **small-for-gestational-age (SGA)** baby reached term but grew poorly inside. The preterm one adds immature lungs and feeding to the risks of smallness.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "Small reserves fail in three predictable ways. **Heat**: a large skin surface wrapped around little fat loses warmth fast — hypothermia. **Sugar**: a small liver stores little glycogen, so feeding gaps drop the blood glucose — watch for jitteriness, poor feeding, lethargy or apnoea. **Germs**: thin skin and a naive immune system invite infection, which in a small baby may present as cold rather than fever.\n\nThe counter-plan: warm the baby (skin-to-skin or kangaroo care with a hat — a wrapper does not make heat, a person does), feed early and often (within the first hour, then at least three-hourly **including at night**, expressed milk by cup if the suck is weak), and protect with clean hands, clean cord care and prompt treatment of danger signs. Weigh daily — steady gain is your proof.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "A term SGA baby can look wonderfully mature — alert, pink, vigorous. Do not be charmed: their glycogen tank is tiny, so the night feed you skip becomes the morning hypoglycaemia you treat.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "A term baby boy delivered at your CHPS compound weighs 2100 g. He is pink and active, feeds with enthusiasm, and his temperature is 36.6°C in a wrapped shawl on the bed. The mother, a first-time 19-year-old, plans to give plain water at night \"so he can sleep longer\".\n\nWhat are the risks here, and what is your counselling and care plan before discharge?\n\nAnswer: He is term SGA — mature-looking, but with small heat and sugar reserves. Plan skin-to-skin or kangaroo mother care with a hat, exclusive breastfeeding within the hour and at least three-hourly **including at night** — water at night is precisely the fast his small glycogen store cannot afford, and it also displaces milk. Keep the cord clean and dry, weigh him at the welfare clinic, teach the danger signs, and review the mother's own health — nutrition, anaemia and malaria prevention matter for both.",
-      },
-      {
-        type: "memory_trick",
-        body: "Remember **2500** as the line, then the three battles a small baby loses: **Heat, Sugar, Germs** — and your three replies: **a person's chest, milk at night, clean hands**.",
-      },
-      {
-        type: "summary",
-        body: "- Low birth weight = below 2500 g at birth, whatever the gestation; very low birth weight = below 1500 g.\n- Two roads to the same scale: preterm (early) and SGA (grown poorly at term) — the preterm baby carries extra problems.\n- Three predictable failures: hypothermia (big surface, little fat), hypoglycaemia (small glycogen store), infection (thin skin, naive immunity).\n- Counter-plan: warmth by skin-to-skin/kangaroo care with a hat, early and frequent feeds including at night, clean hands and cord, daily weighing.\n- Weigh every baby at birth — you cannot manage a risk you never measured.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Low Birth Weight",
         type: "MCQ",
-        difficulty: "Easy",
-        stem: "Which baby is classified as low birth weight?",
-        options: [
-          "A term baby weighing 3.4 kg",
-          "Any live-born baby weighing less than 2500 g",
-          "A 40-week baby weighing 2800 g",
-          "Only babies born before 34 weeks",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Low birth weight is defined purely by weight — under 2500 g at birth, regardless of gestational age. It includes both preterm babies and term babies who are small for gestational age.",
-        courseSlug: "neonatal-nursing",
-      },
-      {
-        topic: "Low Birth Weight",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "Two babies weigh 2.2 kg each: one is 34 weeks preterm, the other is 39 weeks and SGA. What is the key difference in their care needs?",
-        options: [
-          "There is no difference — weight alone dictates management",
-          "The preterm baby may also need support for immature lungs, feeding and temperature regulation, while the term SGA baby mainly needs warmth, frequent feeding and infection vigilance",
-          "The SGA baby always needs phototherapy",
-          "The preterm baby should be fed only after 48 hours",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Same scale, different stories. The term SGA baby is mature but depleted — warmth, frequent milk and watching suffice. The preterm baby adds prematurity problems: surfactant-poor lungs, an uncoordinated suck and even poorer temperature control. Gestational age, not weight alone, shapes the plan.",
-        courseSlug: "neonatal-nursing",
-      },
-      {
-        topic: "Low Birth Weight",
-        type: "MCQ",
-        difficulty: "Moderate",
+        difficulty: "Hard",
         stem: "A grandmother advises waking a 2.1 kg newborn every three hours at night for feeds. Why is this correct rather than cruel?",
         options: [
           "It is not correct — night feeds should be avoided so the baby sleeps and grows",
@@ -363,25 +1254,35 @@ export const lessons: SeedFullLesson[] = [
         ],
         correctIndex: 1,
         explanation:
-          "The LBW baby's liver stores little glycogen, so a long fast can drop blood glucose low enough to cause jitteriness, lethargy, apnoea or convulsions. Frequent feeds, day and night, keep the small tank topped up — with either breast milk or formula, the principle holds.",
-        courseSlug: "neonatal-nursing",
+          "The small baby's liver stores little glycogen, so a long fast can drop blood glucose low enough to cause jitteriness, lethargy, apnoea or convulsions. Frequent feeds day and night keep the small tank topped up — the principle holds whatever the milk.",
+        courseSlug: "high-risk-maternal-newborn",
       },
     ],
     flashcards: [
       {
-        topic: "Low Birth Weight",
-        front: "Define LBW and VLBW.",
-        back: "LBW = birth weight under 2500 g regardless of gestation. VLBW = under 1500 g. Causes in Ghana include maternal malaria, anaemia, hypertension, malnutrition, adolescence and short birth spacing.",
+        topic: "Prematurity",
+        front: "Define preterm birth and give the four categories.",
+        back: "Birth before 37 completed weeks: late preterm 34-36, moderately preterm 32-33, very preterm 28-31, extremely preterm below 28 weeks.",
       },
       {
-        topic: "Low Birth Weight",
-        front: "Which three problems threaten the LBW baby first, and why?",
-        back: "Hypothermia (large surface area, little fat), hypoglycaemia (small glycogen stores) and infection (thin skin, immature immunity).",
+        topic: "Prematurity",
+        front: "Which single treatment given to the mother before a preterm birth matures the baby's lungs?",
+        back: "Antenatal corticosteroids given in threatened preterm labour accelerate surfactant production and reduce respiratory distress syndrome and death.",
       },
       {
-        topic: "Low Birth Weight",
-        front: "How do you prevent hypoglycaemia in a term SGA baby at home?",
-        back: "Exclusive, early, frequent feeding — at least every three hours including overnight — using direct breastfeeding or expressed milk by cup if the suck is weak; watch for jitteriness, lethargy or poor feeding as warning signs.",
+        topic: "Prematurity",
+        front: "Name the four cornerstones of first-days preterm care in a district facility.",
+        back: "Warmth (kangaroo mother care and a hat for stable babies), the mother's expressed milk by cup or tube, gentle minimal handling, and strict infection prevention — then refer for oxygen or specialist needs.",
+      },
+      {
+        topic: "Prematurity",
+        front: "Why must feeds continue through the night for a small baby?",
+        back: "Small glycogen stores cannot survive long fasts — waking for feeds every three hours prevents hypoglycaemia (jitteriness, lethargy, apnoea, convulsions).",
+      },
+      {
+        topic: "Prematurity",
+        front: "Why is kangaroo mother care described as the district solution for small babies?",
+        back: "Continuous skin-to-skin in a wrapper on the mother's chest keeps the baby warm, stabilises breathing and heart rate, supports exclusive breastfeeding and reduces mortality in stable low-birth-weight babies — no incubator required.",
       },
     ],
     sources: [
@@ -393,348 +1294,232 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "World Health Organization",
-        title: "Managing newborn problems: a guide for doctors, nurses and midwives",
-        note: "Classic WHO newborn guide — verify the current edition used by your programme.",
+        title: "Pocket Book of Hospital Care for Children (2nd edition)",
+        year: "2013",
+        url: "https://www.who.int/publications/i/item/9789241548373",
+      },
+      {
+        organization: "UNICEF",
+        title: "Kangaroo Mother Care implementation guidance for low-resource settings",
+        note: "Educational source — verify the current UNICEF and WHO guidance used in your programme.",
+      },
+    ],
+  },
+
+  // ── 9 ──────────────────────────────────────────────────────
+  {
+    courseSlug: "high-risk-maternal-newborn",
+    moduleTitle: "The Struggling Newborn",
+    lessonTitle: "The Newborn With a Birth Defect",
+    description:
+      "About one baby in thirty is born with a structural difference — the day-one examination is the safety net, and the first hours decide feeding, protection and referral.",
+    difficulty: "Hard",
+    durationMin: 11,
+    objectives: [
+      "Describe the common congenital anomalies found on the day-one examination and the finding that needs same-day referral for each.",
+      "Explain the immediate nursing care for the baby with a cleft, an open back, a heart defect or a bowel wall defect.",
+      "Apply periconception prevention messages and family-support principles for parents of a baby with a birth defect.",
+    ],
+    tags: ["birth defects", "congenital anomalies", "newborn examination", "referral", "folic acid"],
+    sourceStatus: "PROPOSED",
+    sections: [
+      {
+        type: "text",
+        title: "What this lesson is about",
+        body: "Worldwide roughly one baby in every 33 is born with a structural difference, and in Ghana the common ones — neural tube defects, cleft lip and palate, congenital heart disease, and the bowel wall defects — still arrive regularly at district facilities. Many are survivable with early recognition, feeding support, protection of the exposed parts and timely referral.\n\nThe nurse rarely repairs any of them. What the nurse does is often the difference between a treatable defect and a tragedy: the head-to-toe examination that finds it on day one, the milk that gets in around it, the covering that keeps infection out, and the words that keep the family standing. This lesson takes the day-one examination defect by defect.",
+      },
+      {
+        type: "text",
+        title: "Head, face and eyes",
+        body: "**Neural tube defects** — spina bifida — appear as a sac or an open lesion on the baby's back, usually lumbar or sacral, sometimes with a hair tuft or dimple over the area. Cover the intact sac with a sterile saline-moistened dressing and keep the baby off the lesion (prone or side-lying); refer urgently the same day. Ask about kicking of the legs and watch for a poorly draining bladder — and remember the prevention: **folic acid daily before conception and through the first trimester**, which is why it belongs in every family planning and preconception conversation.\n\n**Cleft lip and palate** make feeding the day-one problem. The baby can feed: hold him upright, aim the nipple or a special teat toward the intact side, let him work slowly, and consider expressed milk squeezed gently into the cleft. Watch for milk coming back through the nose, burp often, and refer for surgical repair in the coming months — but the calories must start today. **Eyes**: a white or absent **red reflex** is never normal on day one — congenital cataract or retinoblastoma — and needs same-day ophthalmological referral.",
+      },
+      {
+        type: "text",
+        title: "Heart, tummy, bottom and hips",
+        body: "**Congenital heart disease** whispers on day one and shouts on day three. Check the femoral pulses in every newborn — weak or absent pulses raise coarctation of the aorta. Central blueness that does not improve with warming, fast breathing and poor feeding are the duct-dependent heart presenting; these babies can collapse suddenly after the duct closes, so refer early, before the collapse. **Bowel wall defects** — gastroschisis (bowel outside through a small wall gap, not covered) or an omphalocele (a sac covering the contents) — need immediate covering with a sterile plastic wrap or a clean plastic bag, nothing by mouth, an IV line, and urgent transfer; never try to push the bowel back.\n\n**Bottom**: examine the anus of every newborn and check the clock — no meconium by 24-48 hours means **imperforate anus** until examined; also note a single stream versus a sprayed or dribbling urine stream. **Hips**: with warm hands on a calm baby, perform Ortolani and Barlow — a clunk, a click that repeats, or limited abduction needs orthopaedic referral for developmental dysplasia. Finally, a baby with **Down syndrome** features — hypotonia, upslanting eyes, a single palm crease, often with feeding difficulty and heart defects — needs a full cardiac assessment, feeding support and honest, warm family counselling.",
+      },
+      {
+        type: "clinical_pearl",
+        body: "The day-one feeding assessment is a defect detector: a baby who cannot feed has a reason, and the reason is usually findable — look in the mouth for a cleft, at the back for a spine lesion, at the heart for a duct-dependent defect, at the hips for a dislocation. And when you speak to parents, their baby is not a diagnosis — say her name first, the findings second.",
+      },
+      {
+        type: "case",
+        title: "On the ward",
+        body: "A baby girl is born at your district hospital with a wide cleft of the lip extending into the palate. Her mother's first words are quiet: will she ever eat normally?\n\nWhat do you do today, and what do you say?\n\nAnswer: She can eat today — hold her upright, offer the breast aimed toward the intact side, and use expressed milk squeezed gently into the cleft if needed; expect slow feeds, frequent burps and some milk returning through the nose, and weigh her daily to prove the intake is enough. Refer to the surgical team for repair in the coming months and to any local cleft feeding programme. To the mother: her milk is still the best food, the repair is planned and staged, and the feeding skills she learns this week are the treatment she herself gives. Ask her what she would like to call her — and use the name in the notes.",
+      },
+      {
+        type: "memory_trick",
+        body: "The six S's of the day-one search: Spine, Smile, Sight, Systole, Stools, Steps — plus a seventh S that travels with all of them: Support for the family. Spine covered, cleft fed, red reflex present, femoral pulses felt, meconium seen by 48 hours, hips stable — six findings, one safe baby.",
+      },
+      {
+        type: "summary",
+        body: "- Neural tube defect: cover the lesion with a sterile saline dressing, keep the baby off it, refer same day — and prevent the next one with periconception folic acid.\n- Cleft lip and palate: feeding is the day-one treatment — upright, toward the intact side, expressed milk into the cleft; surgical repair comes later, calories come first.\n- White or absent red reflex = same-day ophthalmological referral (cataract or retinoblastoma).\n- Heart: feel femoral pulses in every newborn; blue, fast-breathing, poor-feeding babies need referral before the duct closes.\n- Bowel wall defects: cover with sterile plastic, nil by mouth, IV, urgent transfer — never push the bowel back.\n- No meconium by 24-48 hours means imperforate anus until examined; hip clunks or limited abduction need orthopaedic referral.",
+      },
+    ],
+    questions: [
+      {
+        topic: "Birth Defects",
+        type: "MCQ",
+        difficulty: "Easy",
+        stem: "During the first-day examination, the left eye of a newborn shows a dull white reflection where the right shows a red reflex. What does this finding require?",
+        options: [
+          "No action — it often settles in the first month",
+          "Same-day ophthalmological referral",
+          "Eye drops for one week and review",
+          "Washing the eye with clean water twice daily",
+        ],
+        correctIndex: 1,
+        explanation:
+          "A white or absent red reflex raises congenital cataract or retinoblastoma — both time-critical for vision and life. Early referral preserves sight; waiting, drops and washing all waste the days that matter.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Birth Defects",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "A newborn has a lumbar swelling covered by thin membrane. What is the immediate nursing care before transfer?",
+        options: [
+          "Press the swelling gently back into place and bandage it",
+          "Cover with a sterile saline-moistened dressing, keep the baby off the lesion, and refer urgently",
+          "Apply traditional powder and watch feeding for two days",
+          "Nothing — these swellings always resolve without treatment",
+        ],
+        correctIndex: 1,
+        explanation:
+          "An uncovered neural tube defect is a route straight to infection: cover it with a sterile saline dressing, position the baby prone or side-lying off the lesion, and refer the same day. Pressing it is harmful, and powders and waiting invite meningitis.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Birth Defects",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "Which prevention belongs in every preconception and family planning conversation, because it reduces neural tube defects?",
+        options: [
+          "Iron supplementation in the third trimester",
+          "Daily folic acid before conception and through the first trimester",
+          "Vitamin K for the newborn",
+          "Avoiding all medicines during pregnancy",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The neural tube closes in the first weeks — often before a woman knows she is pregnant — so folic acid must already be on board at conception. That is why the message belongs with family planning clients, not only with antenatal bookings.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Birth Defects",
+        type: "CLINICAL_SCENARIO",
+        difficulty: "Hard",
+        stem: "A term newborn has passed no meconium by 48 hours, has a distended abdomen and has begun vomiting. What is the working assumption, and what must be checked?",
+        options: [
+          "Simple constipation — give water and glucose and wait two more days",
+          "Breast milk is too thin — start formula immediately",
+          "Imperforate anus or another bowel obstruction until examined — inspect the anus and refer urgently",
+          "Normal pattern of a breastfed baby — reassure the mother",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Almost every newborn passes meconium within 24-48 hours; failure with distension and vomiting means obstruction — imperforate anus until proven otherwise. Examine the perineum, keep the baby nil by mouth, insert an IV line and refer urgently. Water, formula and reassurance all delay the diagnosis.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+    ],
+    flashcards: [
+      {
+        topic: "Birth Defects",
+        front: "The six S's of the day-one defect search?",
+        back: "Spine, Smile, Sight (red reflex), Systole (heart and femoral pulses), Stools (anus and meconium by 48 hours), Steps (hips) — plus Support for the family.",
+      },
+      {
+        topic: "Birth Defects",
+        front: "Day-one care of the cleft lip and palate baby in one line?",
+        back: "Feed upright toward the intact side, use expressed milk into the cleft if needed, weigh daily to prove intake — calories today, repair later.",
+      },
+      {
+        topic: "Birth Defects",
+        front: "Why feel femoral pulses in every newborn?",
+        back: "Weak or absent femoral pulses raise coarctation of the aorta — a duct-dependent defect that can collapse a baby after day two, so catching it on day one buys time.",
+      },
+      {
+        topic: "Birth Defects",
+        front: "Immediate care of gastroschisis before transfer?",
+        back: "Cover the exposed bowel with a sterile plastic wrap or bag, nil by mouth, IV fluids, urgent transfer — never push the bowel back.",
+      },
+    ],
+    sources: [
+      {
+        organization: "World Health Organization",
+        title: "Pocket Book of Hospital Care for Children (2nd edition)",
+        year: "2013",
+        url: "https://www.who.int/publications/i/item/9789241548373",
+      },
+      {
+        organization: "CDC",
+        title: "Birth Defects — Data and Facts for Families and Providers",
+        note: "Verify the latest CDC update used in your teaching.",
       },
       {
         organization: "Ghana Health Service",
         title: "National newborn care guidelines",
-        note: "Verify current national protocols for LBW care and referral.",
+        note: "Verify current national referral pathways for congenital anomalies.",
       },
     ],
   },
 
-  // ── 4 ──────────────────────────────────────────────────────
+  // ── 10 ─────────────────────────────────────────────────────
   {
-    courseSlug: "neonatal-nursing",
-    moduleTitle: "The At-Risk Newborn",
-    lessonTitle: "Neonatal Jaundice: The Yellow Warning",
+    courseSlug: "high-risk-maternal-newborn",
+    moduleTitle: "Refer, Stabilise, Transport",
+    lessonTitle: "Neonatal Resuscitation Beyond the Basics",
     description:
-      "Most newborns turn a little yellow — but the timing, the pace and the colour of stool tell you which yellow is harmless and which one can harm a brain.",
-    difficulty: "Moderate",
-    durationMin: 12,
+      "The Golden Minute you already know — this is the baby who does not respond to it: the still chest, the slow heart, thick meconium and the very early baby.",
+    difficulty: "Hard",
+    durationMin: 13,
     objectives: [
-      "Describe how physiological jaundice differs from pathological jaundice.",
-      "Explain bilirubin production in the newborn and the risk of kernicterus.",
-      "Apply timing, spread and stool colour to decide when jaundice is an emergency.",
+      "Describe the systematic correction of ineffective ventilation using the airway ladder.",
+      "Explain the criteria and technique for chest compressions, and the special considerations for meconium and the preterm baby.",
+      "Apply post-resuscitation care and the communication, documentation and debriefing that follow every resuscitation.",
     ],
-    tags: ["jaundice", "bilirubin", "phototherapy", "g6pd", "newborn"],
+    tags: ["resuscitation", "ventilation", "compressions", "meconium", "newborn"],
     sourceStatus: "GCU_ALIGNED",
     sections: [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Newborn red cells are numerous and short-lived, and their bilirubin load lands on a liver whose processing enzymes are still waking up. The result is a yellow tide, visible first in the face and flowing downward. Most of the time this is **physiological jaundice** — a normal event of the first week.\n\nThe midwife's job is to read the tide: when it starts, how fast it rises, how far it spreads, and whether urine and stool look right — four clues separating the harmless tide from the flood that can poison a brain.",
+        body: "About one newborn in ten needs help to breathe, and for most of them the basic sequence is enough: dry, stimulate, ventilate with a bag-mask in room air. You know the Golden Minute.\n\nThis lesson is about the rest — the baby whose chest will not rise, whose heart will not recover, the baby born through thick meconium, and the very small baby whose margin for cold and rough handling is zero. It also covers what happens after the crisis: the watching, the warming, the mother's sentence, and the record. In every one of these scenes the nurse is not an assistant — she is often the person performing the whole sequence while the team gathers.",
       },
       {
         type: "text",
-        title: "The core ideas",
-        body: "**Physiological** jaundice appears after 24 hours, peaks around day three to five in a term baby, stays below the face-chest zone, and clears within one to two weeks; the baby feeds and behaves normally. **Pathological** jaundice raises four alarms: it appears **within the first 24 hours** (haemolysis — Rhesus or ABO incompatibility, G6PD deficiency), it **climbs fast**, it **lasts beyond two weeks** in a term baby, or it comes with **pale stools and dark urine** — a sign of obstruction that needs surgical review. A deeply yellow baby who is sleepy at the breast, irritable, high-pitched in cry or arching the back may be developing **kernicterus** — lifelong disability.\n\nJaundice advances from head to toe, so the further down the yellow travels, the higher the bilirubin: yellow **palms and soles** always means severe — measure and refer now. Treatment is **phototherapy** (eyes shielded, extra fluids, temperature and bilirubin monitored) or exchange transfusion at extreme levels. Ghana's G6PD lesson: keep naphthalene (camphor) balls out of baby clothes — in a G6PD-deficient baby they trigger sudden haemolysis.",
+        title: "The airway ladder: when the chest will not rise",
+        body: "Chest rise is the dashboard light of newborn resuscitation. If the chest is not moving, air is not reaching the lungs — and the most common cause of a baby who will not respond to ventilation is **ineffective ventilation**, not a baby who cannot be saved. Work the ladder in order, about thirty seconds per step, and announce it aloud so the team hears where you are: **M** — Mask adjustment (reseat it over mouth and nose with a good seal); **R** — Reposition the head neutral (slight extension, not flexed or overextended); **S** — clear the airway by suction if the mouth or nose is obstructed with thick material; **O** — slightly Open the mouth; **P** — increase the Pressure you squeeze with; **A** — move to an Alternative airway only if you are trained in one (for example a laryngeal mask or endotracheal tube).\n\nCheck the heart rate the whole time — by listening to the chest or feeling pulsation at the cord stump. If the rate stays **below 60 beats per minute despite at least 30-60 seconds of effective ventilation** (chest visibly rising), add **chest compressions**: the two-thumb technique over the lower third of the sternum, coordinated with ventilation at a ratio of **3:1** — three compressions to one breath, roughly 120 events per minute. Recheck the heart rate every minute or so; most babies who need compressions recover once ventilation is truly effective, and compressions without effective ventilation accomplish nothing.",
+      },
+      {
+        type: "text",
+        title: "Special scenes: meconium and the preterm",
+        body: "**Thick meconium**: a baby born through pea-soup liquor who is vigorous — crying, breathing well — needs observation, not routine suction. A baby who is limp or not breathing needs the ventilation sequence now; clear the mouth of obstructing thick material only if the airway is blocked — blind deep suction of every meconium baby delays the air the lungs need.\n\n**The very preterm baby** doubles every rule about warmth: prepare a pre-warmed surface, a hat, and plastic wrap or a clean plastic bag to cover the body immediately after drying (leaving the face free); handle with gentle, slow movements; and start ventilation earlier rather than later — a 28-week baby does not get the luxury of waiting to see. Room air remains the starting gas for ventilation for babies at every gestation, moving to supplemental oxygen only when saturation targets are not met and oximetry guides you.\n\nCall for senior help early — at the latest when a baby needs compressions, when gasping persists beyond the first minutes, or when the heart rate has not recovered after five minutes of effective ventilation. A baby who needed more than brief ventilation is a baby to watch for hours: warmth, early feeding or expressed milk, monitoring for apnoea, and usually referral.",
       },
       {
         type: "clinical_pearl",
-        body: "Day one is the deadline: yellow within the first 24 hours is haemolysis until proven otherwise, and it can double in hours. That baby needs urgent assessment and phototherapy, not a review appointment.",
+        body: "The most common cause of a baby who will not respond to resuscitation is ineffective ventilation — fix the mask, the head position and the pressure before you blame the baby. Say the ladder out loud while you work it; the team calms down when it can hear the next step.",
       },
       {
         type: "case",
         title: "On the ward",
-        body: "A 20-hour-old baby is brought to your postnatal ward. The face and chest are clearly yellow; he breastfeeds lazily and is sleepy. The mother is blood group O, the baby A. There is no pallor, no fever, and the stool is yellow-brown.\n\nWhat is your reading of this jaundice, and what do you do next?\n\nAnswer: Jaundice within 24 hours is pathological, and the O-mother/A-baby combination makes ABO incompatibility the leading suspect. This is beyond home watching: assess urgently, arrange bilirubin measurement and phototherapy (or referral where measurement is unavailable), keep him warm and feeding, shield the eyes during phototherapy, and monitor for anaemia and rising levels.",
+        body: "At your district hospital a term baby is born through thick meconium-stained liquor, limp and silent. You dry and stimulate him for thirty seconds: no cry, no breathing effort. You start bag-mask ventilation — but the chest is not moving.\n\nWhat is your next sequence of actions, and how do you know when it is working?\n\nAnswer: Work the airway ladder aloud: readjust the mask for seal, reposition the head neutral, clear the mouth of thick meconium if it is obstructing, slightly open the mouth, then increase squeeze pressure — checking between steps. You know it is working when the chest rises with each squeeze, then when the heart rate climbs (check by cord pulsation), colour improves and tone returns. If the rate stayed below 60 despite visible chest rise, you would add two-thumb compressions at 3:1. Afterwards: keep him warm, monitor for apnoea, feed early, and document every step with its time — then talk the team through it, and the mother in one calm sentence.",
       },
       {
         type: "memory_trick",
-        body: "Two rhymes carry the lesson. First, the spread: \"**Face, chest, belly, legs, hands — the further down the yellow, the higher the bilirubin stands.**\" Second, the timing: \"**Yellow on day one? Haemolysis has begun. Pale stool and dark pee? Send for surgery, three-by-three.**\"",
+        body: "MR SOPA climbs the still chest: Mask reseat, Reposition the head, Suction if obstructing, Open the mouth, Pressure increase, Alternative airway. And the numbers that matter: 30-60 seconds of effective ventilation before compressions; 3:1 compressions to breaths; 60 is the heart rate that changes everything.",
       },
       {
         type: "summary",
-        body: "- Physiological jaundice: after 24 hours, peaks day 3–5, clears by 2 weeks in a term baby, baby well and feeding.\n- Pathological alarms: jaundice within 24 hours, rapid rise, lasting beyond 2 weeks, or pale stools with dark urine.\n- Yellow palms and soles always indicate severe hyperbilirubinaemia — measure and treat urgently.\n- Watch for kernicterus: sleepiness, poor feeding, high-pitched cry, irritability, arching back.\n- Phototherapy shields the eyes, adds fluids and needs monitoring; G6PD babies must avoid naphthalene in clothes and bedding.",
+        body: "- A still chest means ineffective ventilation — work the MR SOPA ladder aloud, about thirty seconds per step, before concluding the baby is not responding.\n- Chest compressions: two thumbs on the lower third of the sternum, only when the heart rate stays below 60 despite effective ventilation, in a 3:1 ratio with breaths.\n- Check the heart rate by chest auscultation or cord-stump pulsation throughout; most babies needing compressions recover once ventilation is truly effective.\n- Meconium: a vigorous baby needs observation; a depressed baby needs ventilation now — clear the airway only if obstructed, no routine blind suction.\n- The preterm baby: doubled warmth (hat, plastic wrap, pre-warmed surface), gentle handling, room air to start, and earlier rather than later ventilation.\n- After the crisis: warmth, early feeds, apnoea watch, referral — one calm sentence to the mother, times in the notes, and a team debrief.",
       },
     ],
     questions: [
       {
-        topic: "Neonatal Jaundice",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "When does physiological jaundice normally appear and peak in a term baby?",
-        options: [
-          "At birth, peaking on day one",
-          "After 24 hours, peaking around day 3–5",
-          "Only after the second week of life",
-          "In the first month, peaking at week four",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Physiological jaundice appears after the first 24 hours, peaks around day three to five and fades by one to two weeks in a term baby. Yellow at birth or in the first day is never physiological.",
-        courseSlug: "neonatal-nursing",
-      },
-      {
-        topic: "Neonatal Jaundice",
+        topic: "Neonatal Resuscitation",
         type: "MCQ",
         difficulty: "Moderate",
-        stem: "A grandmother has packed a newborn's clothes with naphthalene balls against insects. Why must they be removed?",
-        options: [
-          "They cause physiological jaundice in all newborns",
-          "In a G6PD-deficient baby they can trigger sudden red cell destruction and a dangerous bilirubin surge",
-          "They stain the skin yellow and mimic jaundice",
-          "They only matter after the baby turns one month",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Naphthalene is a classic trigger of acute haemolysis in G6PD deficiency, which is common in Ghana. The sudden red cell destruction floods the blood with bilirubin and can push a modest jaundice into kernicterus range within hours.",
-        courseSlug: "neonatal-nursing",
-      },
-      {
-        topic: "Neonatal Jaundice",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "A five-day-old baby has yellow palms and soles but is breastfeeding normally. How do you interpret this finding?",
-        options: [
-          "Reassuring — jaundice on the hands of a feeding baby is always physiological",
-          "Severe hyperbilirubinaemia until measured and treated — this baby needs urgent assessment",
-          "Normal, because jaundice always spreads to the hands by day five",
-          "A sign of intestinal obstruction",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Jaundice spreads head to toe with rising bilirubin, so yellow palms and soles mark the end of the journey and a severe level, even in a baby who is still feeding. This baby needs urgent bilirubin measurement, phototherapy or referral — a calm surface can hide a deep tide.",
-        courseSlug: "neonatal-nursing",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Neonatal Jaundice",
-        front: "Which four features mark pathological jaundice?",
-        back: "Onset within 24 hours (haemolysis), a rapid rise, duration beyond two weeks in a term baby, and pale stools with dark urine (obstructive pattern).",
-      },
-      {
-        topic: "Neonatal Jaundice",
-        front: "Why does yellow in the palms and soles signal a severe level?",
-        back: "Bilirubin deposits spread from head to toe as levels rise; reaching the hands and feet means the level is high enough to threaten the brain — measure and treat urgently.",
-      },
-      {
-        topic: "Neonatal Jaundice",
-        front: "Name three nursing priorities during phototherapy.",
-        back: "Shield the eyes, increase feeds or fluids and monitor weight, temperature and bilirubin; watch for the bronze-baby effect and skin care, and keep treating the underlying cause.",
-      },
-    ],
-    sources: [
-      {
-        organization: "National Institute for Health and Care Excellence (NICE)",
-        title: "Jaundice in newborn babies under 28 days (Clinical guideline CG98)",
-        url: "https://www.nice.org.uk/guidance/cg98",
-      },
-      {
-        organization: "World Health Organization",
-        title: "Pocket Book of Hospital Care for Children (2nd edition)",
-        year: "2013",
-        url: "https://www.who.int/publications/i/item/9789241548373",
-      },
-      {
-        organization: "Elsevier",
-        title: "Myles Textbook for Midwives (17th edition)",
-        note: "Educational source — verify current edition.",
-      },
-    ],
-  },
-
-  // ── 5 ──────────────────────────────────────────────────────
-  {
-    courseSlug: "neonatal-nursing",
-    moduleTitle: "The At-Risk Newborn",
-    lessonTitle: "Neonatal Infection: The Quiet Threat",
-    description:
-      "Sepsis in a newborn whispers where an older child shouts. Learn where the germs come from, what the whispers sound like, and why waiting is the enemy.",
-    difficulty: "Moderate",
-    durationMin: 12,
-    objectives: [
-      "Distinguish early-onset from late-onset neonatal infection and their sources.",
-      "Explain how neonatal sepsis presents and why signs are subtle and non-specific.",
-      "Apply prevention and first-response measures, including clean cord care and urgent referral.",
-    ],
-    tags: ["neonatal sepsis", "infection", "cord care", "referral", "newborn"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "A newborn's immune army is small and untrained, so bacteria that a toddler would shrug off can overrun a baby in hours. **Early-onset infection** (within about the first 72 hours) is usually inherited from the mother — ascending from prolonged rupture of membranes (over 18 hours), chorioamnionitis, maternal fever or urinary infection.\n\n**Late-onset infection** (after 72 hours) comes from the world the baby lives in: the cord stump, the skin, feeding utensils, crowded hands and health-facility equipment — staphylococci, E. coli and Klebsiella.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "The newborn whispers. Look for **poor or erratic feeding**, **temperature instability** (fever or, just as worrying, hypothermia), **tone changes** (floppy or irritable), **breathing changes** (fast, grunting, or pauses), vomiting, abdominal distension, early or worsening jaundice, and umbilical redness or discharge around the cord. One baby shows two of these, another shows all — what matters is that any exist in a baby under a month.\n\nThe rule that saves lives: **a sick-looking newborn has sepsis until proven otherwise.** Blood cultures may guide the doctors, but treatment starts on suspicion — injectable antibiotics per national protocol (typically a penicillin plus gentamicin), never oral medicine alone, with warmth, feeding support and urgent referral for any danger-sign baby. Prevention is beautifully midwifery-shaped: clean hands at every contact, clean birth, clean cutting and tying of the cord, chlorhexidine on the stump as national policy directs with nothing else applied, and exclusive breastfeeding.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "In a baby under one month, cold can be the new fever: a temperature below 35.5°C in a home-delivered newborn is sepsis until the blood culture says otherwise.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "A day-five home-delivered baby is brought to your CHPS compound. Feeds have been weak and infrequent since last night. The cord stump is moist with a faint smell, the temperature is 35.4°C, and the baby stirs only when handled. There is no fever.\n\nWhat does this picture most likely represent, and what are your actions?\n\nAnswer: Poor feeding, hypothermia and reduced movement in a newborn with an unhealthy cord are the classic whisper of sepsis — most likely a late-onset cord-related infection. Treat as sepsis until proven otherwise: rewarm with skin-to-skin, give the pre-referral dose of injectable antibiotics per protocol, keep the cord clean, arrange urgent transport, counsel the mother, and document your findings and times. Oral medicine and a next-day review would gamble with this baby's life.",
-      },
-      {
-        type: "memory_trick",
-        body: "Sepsis in a newborn whispers in four voices: \"**Feed** off, **Fever-or-cold**, **Floppy**, **Fast** (or paused) breathing.\" Any voice in a baby under one month demands four responses: **Warm**, **Inject** (never oral alone), **Refer** urgently, **Record** exactly.",
-      },
-      {
-        type: "summary",
-        body: "- Early-onset infection (≤72 hours) comes from the mother: prolonged ROM, chorioamnionitis, maternal fever.\n- Late-onset infection comes from the baby's world: cord, skin, feeds, equipment and hands.\n- Signs are subtle: poor feeding, temperature instability (fever or hypothermia), floppiness, breathing changes, early jaundice, unhealthy cord.\n- Rule: a sick newborn has sepsis until proven otherwise — injectable antibiotics per protocol plus warmth and urgent referral; oral treatment alone is not enough.\n- Prevention: clean hands, clean birth, clean cord with chlorhexidine per national policy, exclusive breastfeeding.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Neonatal Infection",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "A mother's membranes ruptured 30 hours before delivery and she ran a fever in labour. Which type of neonatal infection is this baby most at risk of developing?",
-        options: [
-          "Late-onset infection from the cord stump",
-          "Early-onset infection acquired from the mother during labour",
-          "No increased risk, because labour was monitored",
-          "Infection that always waits until the second week of life",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Prolonged rupture of membranes (over 18 hours) plus maternal fever are classic risk factors for early-onset infection, acquired vertically — the baby should be watched closely and treated promptly at the first whisper of illness.",
-        courseSlug: "neonatal-nursing",
-      },
-      {
-        topic: "Neonatal Infection",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "Which sign in a one-week-old baby should raise the strongest suspicion of neonatal sepsis rather than a minor problem?",
-        options: [
-          "A single loose stool after a feed",
-          "Hypothermia with poor feeding and reduced activity",
-          "Mild facial jaundice on day six with normal feeding",
-          "Startling during sleep",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Hypothermia in a newborn is as significant as fever and, combined with poor feeding and reduced movement, forms the classic quiet presentation of sepsis. The other findings are within normal behaviour for a baby of this age.",
-        courseSlug: "neonatal-nursing",
-      },
-      {
-        topic: "Neonatal Infection",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "You suspect sepsis in a four-day-old at a CHPS compound without laboratory facilities. Which response is correct?",
-        options: [
-          "Give oral antibiotics and review the next day",
-          "Tell the mother to watch at home and return if things worsen",
-          "Give the pre-referral first dose of injectable antibiotics per protocol, keep the baby warm, and arrange urgent referral",
-          "Give paracetamol and extra fluids while waiting for the fever to settle",
-        ],
-        correctIndex: 2,
-        explanation:
-          "Suspected neonatal sepsis needs parenteral antibiotics started on suspicion and urgent referral, with warmth maintained during preparation and transport. Oral drugs, watchful waiting at home and antipyretics all lose hours the septic newborn does not have.",
-        courseSlug: "neonatal-nursing",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Neonatal Infection",
-        front: "How do early-onset and late-onset neonatal infections differ?",
-        back: "Early-onset (within ~72 hours) is acquired from the mother — prolonged ROM, chorioamnionitis, maternal fever; group B strep and E. coli. Late-onset comes from the baby's surroundings — cord, skin, feeds, equipment, hands.",
-      },
-      {
-        topic: "Neonatal Infection",
-        front: "What are the quiet signs of neonatal sepsis?",
-        back: "Poor feeding, temperature instability (fever or hypothermia), floppiness or irritability, fast or irregular breathing, vomiting, abdominal distension, early or worsening jaundice, and an unhealthy cord.",
-      },
-      {
-        topic: "Neonatal Infection",
-        front: "State the golden rule for a sick-looking newborn under one month.",
-        back: "Sepsis until proven otherwise: start injectable antibiotics per national protocol, keep the baby warm, refer urgently — never rely on oral treatment or a next-day review.",
-      },
-    ],
-    sources: [
-      {
-        organization: "World Health Organization",
-        title: "Pocket Book of Hospital Care for Children (2nd edition)",
-        year: "2013",
-        url: "https://www.who.int/publications/i/item/9789241548373",
-      },
-      {
-        organization: "World Health Organization",
-        title: "Recommendations for the management of common childhood conditions and maternal conditions affecting the newborn",
-        note: "Covers neonatal infection management — verify the current edition.",
-      },
-      {
-        organization: "Ghana Health Service",
-        title: "National cord care policy (chlorhexidine for the newborn cord)",
-        note: "Verify the current national guidance on application and duration.",
-      },
-    ],
-  },
-
-  // ── 6 ──────────────────────────────────────────────────────
-  {
-    courseSlug: "neonatal-nursing",
-    moduleTitle: "The At-Risk Newborn",
-    lessonTitle: "Newborn Resuscitation: Core Concepts",
-    description:
-      "About one baby in ten needs help to breathe. Own the golden minute and the airway-breathing sequence, and you will carry the skill that changes everything.",
-    difficulty: "Moderate",
-    durationMin: 12,
-    objectives: [
-      "Describe the steps of basic newborn resuscitation within the Golden Minute.",
-      "Explain why effective ventilation with room air is the core lifesaving intervention.",
-      "Apply the decision points that escalate care to chest compressions and referral.",
-    ],
-    tags: ["resuscitation", "abc", "ventilation", "golden minute", "newborn"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "Roughly one newborn in ten needs help to begin breathing, and for most of them the problem is simple: fluid has not been cleared and air has not reached the lungs. What you do in the **first minute — the Golden Minute** — decides whether this becomes a footnote in the notes or a tragedy in the family's story.\n\nResuscitation is not drama: it is a short, orderly sequence any trained midwife can run calmly — dry, position, stimulate, and if the baby stays silent, ventilate.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "The sequence begins the moment the baby arrives. **Dry** the baby thoroughly (the rubbing itself stimulates breathing) and replace the wet towel. **Assess**: is the baby crying or breathing well, term, with good tone? If yes — routine care: skin-to-skin and observation. If not breathing or only gasping: **position the head neutral** (slight extension), clear the mouth only if the airway is obstructed, **stimulate** again briefly, and if there is still no breathing, start **bag-mask ventilation with room air** at about 30 breaths per minute, watching for chest rise.\n\nIf the heart rate stays below 60 beats per minute despite effective ventilation, add **chest compressions** in a 3:1 ratio with ventilation. Most babies respond to ventilation alone, so bag-mask skill is the most valuable resuscitation asset you own. Before every delivery, check your equipment — bag-mask and a clean warm surface. Tell the mother what is happening in one calm sentence: your calm is her anaesthesia.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "Chest rise is the dashboard light of newborn resuscitation: if the chest is not moving, air is not reaching the lungs — reposition the head and reseal the mask before you reach for anything else.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "At a district hospital, a term baby is born through thin meconium-stained fluid and arrives limp and silent. You dry and stimulate him for thirty seconds: no cry, no breathing effort, no chest movement.\n\nWhat is your next action, and how do you judge whether it is working?\n\nAnswer: Start positive-pressure ventilation with a bag-mask in room air now — the Golden Minute is passing. Position the head neutrally, seal the mask over mouth and nose, and ventilate at about 30 breaths per minute. Working means visible chest rise, then a rising heart rate, improving colour and returning tone; add compressions only if the rate stays below 60 despite effective ventilation. Afterwards, keep him warm and monitor closely — a ventilated baby needs watching tonight.",
-      },
-      {
-        type: "memory_trick",
-        body: "Carry the sequence as three words: **WARM — AIR — WORK**: warm them (dry, stimulate, assess), open the **AIR** (neutral head), make the lungs **WORK** (ventilate, watch the chest rise). Compressions join only when the heart stays under 60 despite air.",
-      },
-      {
-        type: "summary",
-        body: "- The Golden Minute: by sixty seconds after birth, a non-breathing baby should be drying under your hands or receiving ventilation.\n- Sequence: dry and stimulate, assess breathing and tone, position head neutrally, clear the airway only if obstructed, ventilate with room air if silent or gasping.\n- Ventilation at about 30 breaths per minute with visible chest rise is the core lifesaving skill — most babies need nothing more.\n- Escalate to chest compressions (3:1 with ventilation) only if heart rate remains below 60 despite effective ventilation.\n- Check equipment before every birth; every resuscitated baby needs continued monitoring.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Newborn Resuscitation",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "A term baby remains limp and silent after thorough drying and thirty seconds of stimulation. What is the immediate next step?",
-        options: [
-          "Wait another two minutes for breathing to start spontaneously",
-          "Start positive-pressure ventilation with a bag-mask in room air",
-          "Give chest compressions immediately",
-          "Give oxygen by nasal prongs and continue stimulating",
-        ],
-        correctIndex: 1,
-        explanation:
-          "If drying and stimulation do not establish breathing within the Golden Minute, positive-pressure ventilation with a bag-mask is the immediate priority — air in the lungs is the treatment. Compressions come only later, if the heart rate stays below 60 despite effective ventilation.",
-        courseSlug: "neonatal-nursing",
-      },
-      {
-        topic: "Newborn Resuscitation",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "During bag-mask ventilation, the baby's chest is not rising. What should you do first?",
+        stem: "During bag-mask ventilation the newborn's chest is not rising. What should you do first?",
         options: [
           "Squeeze the bag faster and harder",
           "Reposition the head neutrally and reseal the mask over mouth and nose",
@@ -743,41 +1528,78 @@ export const lessons: SeedFullLesson[] = [
         ],
         correctIndex: 1,
         explanation:
-          "The commonest causes of a still chest are a poorly positioned head and a leaking mask. Correct the head position to slight extension and reseal the mask before changing anything else; the ventilating rate and compressions are not the first answers when air is simply not arriving.",
-        courseSlug: "neonatal-nursing",
+          "The commonest causes of a still chest are a poorly positioned head and a leaking mask. Correct the position to slight extension and reseal the mask before changing anything else — squeezing harder into a blocked airway only inflates the stomach.",
+        courseSlug: "high-risk-maternal-newborn",
       },
       {
-        topic: "Newborn Resuscitation",
+        topic: "Neonatal Resuscitation",
         type: "MCQ",
-        difficulty: "Moderate",
-        stem: "Which statement about the gas used for basic newborn resuscitation is correct?",
+        difficulty: "Hard",
+        stem: "When do chest compressions start in newborn resuscitation, and in what ratio with ventilation?",
         options: [
-          "Newborns need 100% oxygen from the first breath",
-          "Room air (21% oxygen) is the recommended starting gas for basic newborn ventilation",
-          "Oxygen concentration does not matter in newborns",
-          "Room air is only for preterm babies",
+          "Immediately for every baby who does not cry, ratio 15:2",
+          "When the heart rate stays below 60 despite at least 30-60 seconds of effective ventilation, ratio 3:1",
+          "When the baby is blue but the heart rate is 120, ratio 5:1",
+          "Only after transfer to a neonatal unit, ratio 30:2",
         ],
         correctIndex: 1,
         explanation:
-          "Guidelines recommend starting newborn ventilation with room air; it is effective for the vast majority and avoids the risks of excess oxygen. Supplemental oxygen is added only when saturation targets are not met, guided by pulse oximetry where available.",
-        courseSlug: "neonatal-nursing",
+          "Compressions are reserved for a heart rate below 60 that has not responded to genuinely effective ventilation — chest visibly rising — and are coordinated with breaths at 3:1 (three compressions to one breath, about 120 events per minute). The other timings and ratios belong to older children and adults.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Neonatal Resuscitation",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "A baby is born through thick meconium-stained liquor, limp and not breathing after drying and stimulation. What is the correct approach?",
+        options: [
+          "Suction deeply on the way in, then start ventilation only after the airway is fully clear",
+          "Start positive-pressure ventilation now, clearing the mouth only if it is obstructed with thick material",
+          "Wait two minutes — meconium babies often start breathing late",
+          "Give chest compressions immediately because of the meconium",
+        ],
+        correctIndex: 1,
+        explanation:
+          "A depressed baby born through thick meconium needs air in the lungs without delay; clear only obstructing material from the mouth. Routine deep suction delays ventilation, waiting burns reserve, and compressions without ventilation accomplish nothing.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Neonatal Resuscitation",
+        type: "CLINICAL_SCENARIO",
+        difficulty: "Hard",
+        stem: "A term baby needed bag-mask ventilation for three minutes after birth and now looks pink, cries and feeds hungrily. The nurse suggests routine care on the postnatal ward with mother. What is the safer plan?",
+        options: [
+          "Routine rooming-in — a recovered baby needs no special observation",
+          "Discharge home the same day since feeding is established",
+          "Close monitoring for apnoea and deterioration, warmth, early feeds and clear documentation of the resuscitation with referral where indicated",
+          "Formula feeding every four hours to prevent hypoglycaemia",
+        ],
+        correctIndex: 2,
+        explanation:
+          "A baby who needed positive-pressure ventilation has shown he can decompensate — he needs close observation for apnoea and colour changes, warmth, early feeding and a documented handover (and referral where local policy directs). Same-day discharge and routine four-hourly formula both gamble with a baby who has already warned you once.",
+        courseSlug: "high-risk-maternal-newborn",
       },
     ],
     flashcards: [
       {
-        topic: "Newborn Resuscitation",
-        front: "What is the Golden Minute?",
-        back: "By sixty seconds after birth every baby should be either breathing well on the mother's chest or receiving help — dried, stimulated, and if still silent, ventilated with a bag-mask in room air.",
+        topic: "Neonatal Resuscitation",
+        front: "What is MR SOPA?",
+        back: "The airway ladder for a chest that will not rise: Mask reseat, Reposition head neutral, Suction if obstructing, Open the mouth, Pressure increase, Alternative airway — worked aloud, about thirty seconds per step.",
       },
       {
-        topic: "Newborn Resuscitation",
-        front: "What single physical sign tells you ventilation is effective?",
-        back: "Visible chest rise with each squeeze, followed by a rising heart rate, improving colour and returning tone. No chest rise means reposition the head and reseal the mask.",
+        topic: "Neonatal Resuscitation",
+        front: "When and how do chest compressions start?",
+        back: "Heart rate below 60 despite at least 30-60 seconds of effective ventilation — two thumbs on the lower third of the sternum, 3:1 with breaths, about 120 events per minute.",
       },
       {
-        topic: "Newborn Resuscitation",
-        front: "When do chest compressions start in newborn resuscitation, and in what ratio?",
-        back: "When the heart rate stays below 60 beats per minute despite effective ventilation — compressions coordinated with ventilation at a ratio of 3:1 (three compressions to one breath).",
+        topic: "Neonatal Resuscitation",
+        front: "How do you count the newborn heart rate without a monitor?",
+        back: "Listen to the chest, or feel for pulsation in the umbilical cord stump near the baby's body — check it before, during and after each change you make.",
+      },
+      {
+        topic: "Neonatal Resuscitation",
+        front: "What are the doubled rules for the very preterm baby at birth?",
+        back: "Doubled warmth — pre-warmed surface, hat, plastic wrap after drying — plus gentle handling, earlier start of ventilation, and room air as the starting gas.",
       },
     ],
     sources: [
@@ -790,1331 +1612,334 @@ export const lessons: SeedFullLesson[] = [
       {
         organization: "American Academy of Pediatrics",
         title: "Helping Babies Breathe (2nd edition)",
-        note: "Golden Minute training programme. Educational source — verify current edition.",
-      },
-      {
-        organization: "World Health Organization",
-        title: "Managing newborn problems: a guide for doctors, nurses and midwives",
-        note: "Verify current edition.",
-      },
-    ],
-  },
-
-  // ── 7 ──────────────────────────────────────────────────────
-  {
-    courseSlug: "paediatric-nursing",
-    moduleTitle: "The Growing Child",
-    lessonTitle: "Growth and Development: The Roadmap of Childhood",
-    description:
-      "Growth is the centimetres, development is the skills — and both follow a roadmap you can read. Learn the milestones and the red flags that mean a child needs help.",
-    difficulty: "Easy",
-    durationMin: 12,
-    objectives: [
-      "Describe the difference between growth and development and the main developmental domains.",
-      "Explain how WHO growth charts and milestones are used to monitor children.",
-      "Apply milestone red flags to decide when a child needs referral.",
-    ],
-    tags: ["growth", "development", "milestones", "growth charts", "screening"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "A child's body tells two stories at once. **Growth** is the measurable story — weight, length and head circumference plotted over time. **Development** is the skill story — how the child gains control of head, hands, words and friendships, domain by domain. Ghana's growth monitoring and promotion (GMP) clinics weigh the first story; a wise nurse reads both at every contact.\n\nBecause both stories follow a roadmap, you need the broad mile-markers and, above all, the signs a child has left the road.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "The motor roadmap: a social smile by six to eight weeks; steady head control by about four months; rolling over and reaching by four to six months; sitting without support by six to eight; crawling and pulling to stand by nine to twelve; first steps around the first birthday; and running, climbing and feeding themselves in the second year. Language grows in step: babbling by six months, first true words around the first birthday, two-word phrases by age two. Plot growth on WHO charts — weight-for-age, weight-for-height (**wasting** = recent hunger or illness) and height-for-age (**stunting** = long-term deprivation).\n\nNow the red flags: **no social smile by three months; not sitting by nine months; not walking by eighteen months; no words by sixteen to eighteen months; any loss of a skill already learned; and a head circumference or weight crossing centile lines sharply up or down.** None of these is a \"wait and see\" finding — each deserves assessment and referral. Remember also that two children can grow differently and both be normal: the roadmap has lanes, not tramlines.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "Loss of a skill is never normal, at any age, in any domain. A child who stops saying the words he had, or stops walking after an illness, needs assessment the same week.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "At a welfare clinic, a mother mentions that her eighteen-month-old son has never walked. He sits confidently, pulls to stand against the bench, babbles happily and transfers objects hand to hand. He was born at term with a normal birth weight, and his growth chart follows his line nicely.\n\nWhich domain concerns you, and what is your next move?\n\nAnswer: His fine motor, language and social skills and his growth look on course, but no independent walking at eighteen months is a motor red flag — especially with pulling-to-stand present, which localises the concern and makes further assessment essential. Examine tone, reflexes and leg symmetry, ask about illness and feeding, and refer for developmental assessment rather than reassuring the family that he will \"walk when ready\" — though some children do walk late, the red flag rule exists because some do not.",
-      },
-      {
-        type: "memory_trick",
-        body: "Rhyme the red flags: \"**No smile by three, no sit by nine, no word or walk by eighteen — refer, don't wait in line.**\" And keep the year-map on one hand: by each **birthday** a new chapter — first steps and first words at one, two-word chat at two.",
-      },
-      {
-        type: "summary",
-        body: "- Growth is measurable size over time; development is gaining skills across gross motor, fine motor, language and social domains.\n- Milestones arrive in ranges: smile by 6–8 weeks, sit by 6–8 months, first steps around the first birthday, words by 12–15 months, two-word phrases by two years.\n- WHO charts turn measurements into meaning: wasting (weight-for-height) signals recent trouble; stunting (height-for-age) signals long-term deprivation.\n- Red flags: no smile by 3 months, not sitting by 9, not walking or no words by 16–18 months, skill regression, or growth crossing centiles sharply.\n- Every contact is a screening opportunity — glance at the chart, watch the child play, ask the parent one question.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Growth and Development",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "Which finding in an infant is a developmental red flag requiring referral?",
-        options: [
-          "Sitting unsupported at eight months",
-          "Not sitting without support by nine months",
-          "Rolling over at five months",
-          "Crawling at ten months",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Most infants sit unsupported by six to eight months, so not sitting by nine months is a red flag needing assessment. The other milestones are comfortably within normal ranges.",
-        courseSlug: "paediatric-nursing",
-      },
-      {
-        topic: "Growth and Development",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "A three-year-old who was speaking in short sentences six months ago now says only single words. How do you interpret this?",
-        options: [
-          "A normal phase of selective speech",
-          "Skill regression — never normal, and needing prompt assessment",
-          "Expected after the second birthday",
-          "Only significant if growth has also slowed",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Losing a skill already mastered is a red flag in every domain at every age. Language regression in particular demands urgent developmental and neurological assessment — it is not a phase, and growth trends do not make it safe to wait.",
-        courseSlug: "paediatric-nursing",
-      },
-      {
-        topic: "Growth and Development",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "On a WHO growth chart, a child's weight-for-height is far below the expected range while height-for-age is normal. What does this pattern suggest?",
-        options: [
-          "Long-term chronic undernutrition",
-          "Recent or acute weight loss — wasting",
-          "Normal variation of toddler growth",
-          "Excess weight for height",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Weight-for-height compares current weight to current size, so a sharp fall signals recent weight loss — wasting, typically from acute illness or hunger. Stunting (low height-for-age) is the marker of long-term deprivation, and here height is normal.",
-        courseSlug: "paediatric-nursing",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Growth and Development",
-        front: "Distinguish growth from development.",
-        back: "Growth is the measurable increase in size — weight, length, head circumference plotted over time. Development is the progressive gain of function — gross motor, fine motor, language, social and cognitive skills.",
-      },
-      {
-        topic: "Growth and Development",
-        front: "Quote four developmental red flags.",
-        back: "No social smile by 3 months; not sitting by 9 months; not walking and no words by 16–18 months; any loss of already-learned skills. Add growth that crosses centile lines sharply.",
-      },
-      {
-        topic: "Growth and Development",
-        front: "What do wasting and stunting each represent on WHO charts?",
-        back: "Wasting = low weight-for-height, acute recent undernutrition or illness; stunting = low height-for-age, chronic long-term deprivation.",
-      },
-    ],
-    sources: [
-      {
-        organization: "World Health Organization",
-        title: "WHO Child Growth Standards",
-        url: "https://www.who.int/tools/child-growth-standards",
-      },
-      {
-        organization: "World Health Organization",
-        title: "Pocket Book of Hospital Care for Children (2nd edition)",
-        year: "2013",
-        url: "https://www.who.int/publications/i/item/9789241548373",
+        note: "Golden Minute and airway-ladder training programme — educational source, verify current edition.",
       },
       {
         organization: "Ghana Health Service",
-        title: "Growth Monitoring and Promotion (GMP) programme materials",
-        note: "Verify the current national GMP guidance and chart editions.",
-      },
-    ],
-  },
-
-  // ── 8 ──────────────────────────────────────────────────────
-  {
-    courseSlug: "paediatric-nursing",
-    moduleTitle: "The Growing Child",
-    lessonTitle: "The Newborn-to-Infant Transition",
-    description:
-      "Reflexes that arrive at birth and retire on schedule, stools that change colour like traffic lights, and a weight journey with its own rules — the first weeks explained.",
-    difficulty: "Easy",
-    durationMin: 12,
-    objectives: [
-      "Describe the primitive reflexes, their timing and their clinical meaning.",
-      "Explain the expected weight changes and stool patterns of early infancy.",
-      "Apply normal-transition knowledge to reassure parents appropriately and spot genuine problems.",
-    ],
-    tags: ["infant", "transition", "primitive reflexes", "stools", "weight gain"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "The newborn arrives fitted with automatic programmes — the primitive reflexes — which run the show until the thinking brain takes over. Presence at birth confirms the wiring works; polite retirement over the first months confirms the cortex is maturing.\n\nThe same visits bring the two questions parents ask most: \"Is this weight normal?\" and \"are these stools normal?\" Both follow rules, and knowing them turns anxiety into reassurance.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "Meet the reflexes: **Moro** (startle), **rooting** (cheek touched, head turns), **sucking**, **palmar grasp** (your finger is captured), **plantar grasp**, **stepping** and the asymmetric tonic neck (fencer's posture) — all fading over the first four to six months as voluntary control arrives. Abnormal comes in two flavours: **absent at birth** (worrying) or **persisting too long** (development may be delayed). A one-sided Moro — one arm flies, one stays — suggests nerve or bone injury on the quiet side.\n\nWeight rules: newborns lose up to about seven to ten percent in the first days, regain birth weight by ten to fourteen days, then gain roughly 150–200 g weekly for the first three months, doubling birth weight by about five to six months. Stool rules: black tarry **meconium** for a day or two, greenish transitional stools, then the breastfed norm — soft, seedy, mustard-yellow, from six times daily to once every few days, both fine if feeding and growth are good. Formula stools are firmer and smellier.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "Watch a feed before you weigh the worries: a baby who latches, suckles audibly, swallows and settles is almost always thriving, however strange the stool diary looks. The scale and the stool together settle the question.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "A mother brings her six-week-old, fully breastfed baby to your CHPS compound: \"He passes stool six times a day — loose and yellow with seeds. My mother says my milk is too weak and I should add porridge.\" The baby feeds eagerly, has six heavy wet nappies a day, and his weight tracks his line — 200 g up on last week.\n\nHow do you counsel her?\n\nAnswer: This is the textbook normal breastfed stool — frequent, loose, seedy, mustard-yellow — and it signals a good milk supply, not weak milk. With eager feeding, heavy wet nappies and steady weight gain, there is nothing to fix: exclusive breastfeeding covers all his needs until six months, and porridge now would displace milk and bring infection risk. Reassure, plot the weight so she sees the story, and give the return signs: blood or mucus in stool, vomiting, poor feeding, or a weight line that flattens.",
-      },
-      {
-        type: "memory_trick",
-        body: "The stool rainbow of week one: \"**Black tar, then army green, then mustard seeds** — after that, six-a-day or once-a-week can both be seen.\" Reflexes retire by six months, except the plantar grasp, the last to leave near the first birthday.",
-      },
-      {
-        type: "summary",
-        body: "- Primitive reflexes (Moro, rooting, sucking, palmar and plantar grasp, stepping) confirm healthy wiring at birth and fade by 4–6 months as voluntary control grows.\n- Absent reflexes at birth, reflexes persisting well beyond six months, or a one-sided Moro all warrant assessment.\n- Weight: lose up to 7–10% in the first days, regain birth weight by 10–14 days, then gain ~150–200 g weekly, doubling birth weight by 5–6 months.\n- Breastfed stools are soft, seedy, mustard-yellow and may come six times a day or every few days — frequency plus growth defines normal.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Newborn-to-Infant Transition",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "A two-week-old breastfed baby passes frequent loose, seedy, mustard-yellow stools, feeds eagerly and is gaining weight. What is your interpretation?",
-        options: [
-          "Normal breastfed stool pattern — reassure the mother",
-          "Lactose intolerance requiring formula change",
-          "Diarrhoea needing ORS",
-          "A reason to start complementary feeds early",
-        ],
-        correctIndex: 0,
-        explanation:
-          "Frequent, loose, seedy, mustard-yellow stools are the healthy norm for an exclusively breastfed baby. With eager feeding and good weight gain there is nothing pathological — reassure, and no feeds should be added before six months.",
-        courseSlug: "paediatric-nursing",
-      },
-      {
-        topic: "Newborn-to-Infant Transition",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "A newborn startles violently when the cot is bumped, but only the right arm flings out; the left stays still. What does this asymmetry suggest?",
-        options: [
-          "A normal, stronger side of the body",
-          "Possible injury to the left arm's nerves or bone — the quiet side needs examination",
-          "A normal early form of the Moro reflex",
-          "Overfeeding",
-        ],
-        correctIndex: 1,
-        explanation:
-          "The Moro should be symmetric. A one-sided Moro points to a problem on the motionless side — classically an upper brachial plexus (Erb's) injury or a fractured clavicle or humerus. Examine that arm, check the grip, and refer per protocol.",
-        courseSlug: "paediatric-nursing",
-      },
-      {
-        topic: "Newborn-to-Infant Transition",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "A term baby loses 8% of birth weight on day three and is feeding well. On which day should the baby be back at birth weight if all is well?",
-        options: [
-          "By day 5 at the latest",
-          "By day 10–14",
-          "By the end of the first month",
-          "Babies never regain the early loss",
-        ],
-        correctIndex: 1,
-        explanation:
-          "A loss of up to about 7–10% is physiological, but birth weight should be regained by ten to fourteen days. Continued loss beyond the first week, or failure to regain by two weeks, points to feeding problems and needs review.",
-        courseSlug: "paediatric-nursing",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Newborn-to-Infant Transition",
-        front: "Name four primitive reflexes and state when they normally fade.",
-        back: "Moro (startle), rooting, sucking, palmar grasp — present at birth and fading over the first 4–6 months; the plantar grasp persists longer, to around the first birthday.",
-      },
-      {
-        topic: "Newborn-to-Infant Transition",
-        front: "What does a persisting primitive reflex beyond six months suggest?",
-        back: "Delayed cortical maturation — persistent reflexes beyond the usual window (or reflexes absent at birth) warrant developmental assessment.",
-      },
-      {
-        topic: "Newborn-to-Infant Transition",
-        front: "Describe the normal stool journey of the first week.",
-        back: "Black tarry meconium for the first day or two, then greenish transitional stools, then the breastfed norm: soft, seedy, mustard-yellow — frequent or infrequent, both fine if feeding and growth are good.",
-      },
-    ],
-    sources: [
-      {
-        organization: "World Health Organization",
-        title: "Infant and young child feeding counselling tools",
-        note: "Verify the current WHO edition used in your programme.",
-      },
-      {
-        organization: "OpenStax (Rice University)",
-        title: "Anatomy and Physiology 2e — development and reflexes",
-        year: "2022",
-        url: "https://openstax.org/books/anatomy-and-physiology-2e",
-      },
-      {
-        organization: "Elsevier",
-        title: "Wong's Essentials of Pediatric Nursing",
-        note: "Educational source — verify current edition.",
-      },
-    ],
-  },
-
-  // ── 9 ──────────────────────────────────────────────────────
-  {
-    courseSlug: "paediatric-nursing",
-    moduleTitle: "The Growing Child",
-    lessonTitle: "Child Assessment: A Different Approach",
-    description:
-      "You cannot ask a baby where it hurts — but a screaming toddler on a mother's lap will tell you almost everything, if you know how to look before you touch.",
-    difficulty: "Moderate",
-    durationMin: 12,
-    objectives: [
-      "Describe the paediatric assessment triangle and WHO emergency signs for rapid triage.",
-      "Explain how observation-first sequencing adapts the physical examination for children.",
-      "Apply a child-friendly examination order and accurate measurement to everyday practice.",
-    ],
-    tags: ["assessment", "paediatrics", "triage", "observation", "vital signs"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "Adults walk in and narrate. Children arrive crying, clinging or asleep, and the first minutes decide everything: is this child dying, sick, or frightened and well? WHO's emergency signs catch the critical few; the paediatric assessment triangle grades the rest within seconds.\n\nThen comes the second skill: examining without destroying your own data — a screaming, pinned-down child has a fast pulse, heaving chest and rigid tummy whether ill or not. Order and manner matter as much as findings.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "The **paediatric assessment triangle** has three corners: **appearance** (alert, interactive, consolable or floppy and distant), **work of breathing** (how hard the child breathes — in-drawing, grunting, nasal flaring) and **circulation to the skin** (pale, mottled or blue). Any corner looking wrong marks the child urgent. WHO emergency signs go further: obstructed or severely distressed breathing, central cyanosis, signs of shock (cold hands with a long capillary refill and a fast weak pulse), coma or convulsion, and severe dehydration in a lethargic child — any one means treatment now, queue never.\n\nWork **from least to most intrusive**: watch and play first, listen to the chest while the child is calm, feel the tummy when the child trusts you, and leave the ears and throat for last — one look at a tongue depressor and your quiet child is gone. Count the respiratory rate for a full minute before touching. **Weigh every child** — weight is the denominator for every drug dose. Add temperature, and MUAC at welfare contacts.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "Count the respiratory rate while the child sleeps or rests on the mother's lap, before any examination — crying doubles it, and a wrong number becomes a wrong referral or a missed pneumonia.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "A twenty-month-old is carried into your OPD crying loudly, hot to touch. The queue is long; a colleague suggests \"just give paracetamol first and see.\" From the doorway you see him crying with a strong voice, kicking, clinging to his mother. His colour is pink; as she settles him on her lap and offers the breast he quiets, and you count 38 breaths per minute.\n\nHow do you use the assessment triangle here, and what is your next step?\n\nAnswer: All three corners look safe — appearance strong (loud cry, clinging, consolable), breathing unlaboured at 38 per minute (under the 40 threshold for his age), circulation pink. So settle him, take his temperature, weigh him, examine the throat and ears last, test for malaria, and treat the cause you find. Had any corner been abnormal, he would have gone straight to emergency care.",
-      },
-      {
-        type: "memory_trick",
-        body: "Three words for the triangle: **Look, Listen, Feel — eyes first, hands last.** For the examination order: \"**Play, Chest, Belly, then Throat last.**\" And \"**no weight, no dose**\" — weigh every child before prescribing.",
-      },
-      {
-        type: "summary",
-        body: "- Paediatric assessment triangle: appearance, work of breathing, circulation to skin — three looks in seconds, before any touch.\n- Examine least-intrusive first: observe and play, then chest, then abdomen, ears and throat last; count the respiratory rate for one full minute while calm.\n- Weigh every child — weight drives every paediatric drug dose; add MUAC and growth review at welfare contacts.\n- A calm, ordered examination on the mother's lap produces better data than a pinned-down struggle ever will.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Child Assessment",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "When is the best moment to count a child's respiratory rate accurately?",
-        options: [
-          "While the child is crying during undressing",
-          "While the child is calm or asleep on the caregiver's lap, before any examination",
-          "Immediately after examining the throat",
-          "During a feed with the child struggling",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Crying and struggling can double the respiratory rate, so count for one full minute while the child is calm or asleep and before touching them — ideally before the examination begins.",
-        courseSlug: "paediatric-nursing",
-      },
-      {
-        topic: "Child Assessment",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "Which finding is a WHO emergency sign requiring immediate treatment rather than triage to the queue?",
-        options: [
-          "A temperature of 38.5°C in a drinking, alert child",
-          "Cold hands with capillary refill over three seconds and a fast, weak pulse",
-          "A clear runny nose in an otherwise playful child",
-          "Mild jaundice without fever in a five-year-old",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Cold hands, prolonged capillary refill and a fast weak pulse describe shock — an emergency sign treated immediately. Fever in an alert, drinking child and a runny nose in a playful child are triaged, not treated as emergencies.",
-        courseSlug: "paediatric-nursing",
-      },
-      {
-        topic: "Child Assessment",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "Why should the ears and throat be examined last in a young child?",
-        options: [
-          "Because those findings are the least important",
-          "Because children find them the most distressing, and once the child cries the rest of the examination data is spoilt",
-          "Because the equipment must be sterilised between children",
-          "Because the throat can only be seen after feeding",
-        ],
-        correctIndex: 1,
-        explanation:
-          "A tongue depressor or auriscope often triggers the tears — and a crying child gives a fast pulse, heaving chest and rigid abdomen that no longer mean anything clinically. Save the intrusive parts for last so the earlier, quieter findings stay trustworthy.",
-        courseSlug: "paediatric-nursing",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Child Assessment",
-        front: "Name the three corners of the paediatric assessment triangle.",
-        back: "Appearance (alert, interactive, consolable), work of breathing (in-drawing, grunting, flaring), and circulation to the skin (pale, mottled, blue). Any abnormal corner makes the child urgent.",
-      },
-      {
-        topic: "Child Assessment",
-        front: "Why is every child weighed at a paediatric visit?",
-        back: "Weight is the denominator for nearly every paediatric drug dose — prescribing without a current, measured weight invites under- or overdose. It also feeds the growth record.",
-      },
-      {
-        topic: "Child Assessment",
-        front: "State a child-friendly examination order.",
-        back: "Watch and play first, listen to the chest while calm, feel the abdomen, and leave ears and throat for last — least intrusive to most intrusive, ideally on the caregiver's lap.",
-      },
-    ],
-    sources: [
-      {
-        organization: "World Health Organization",
-        title: "Pocket Book of Hospital Care for Children (2nd edition)",
-        year: "2013",
-        url: "https://www.who.int/publications/i/item/9789241548373",
-      },
-      {
-        organization: "World Health Organization / UNICEF",
-        title: "Emergency Triage Assessment and Treatment (ETAT) course materials",
-        note: "Verify the current ETAT adaptation used in Ghana.",
-      },
-      {
-        organization: "Elsevier",
-        title: "Wong's Essentials of Pediatric Nursing",
-        note: "Educational source — verify current edition.",
-      },
-    ],
-  },
-
-  // ── 10 ─────────────────────────────────────────────────────
-  {
-    courseSlug: "paediatric-nursing",
-    moduleTitle: "Feeding and Protecting",
-    lessonTitle: "Nutrition for Infants and Children",
-    description:
-      "From the first hour of breastfeeding to the family plate at two years — the feeding journey, the Ghanaian plate, and the signs of malnutrition you must never miss.",
-    difficulty: "Easy",
-    durationMin: 12,
-    objectives: [
-      "Describe the infant feeding timeline: exclusive breastfeeding, complementary feeding and continued breastfeeding.",
-      "Explain what a balanced complementary meal looks like in a Ghanaian setting.",
-      "Apply recognition of severe acute malnutrition and key supplementation practices.",
-    ],
-    tags: ["nutrition", "feeding", "breastfeeding", "malnutrition", "vitamin a"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "A child's first thousand days build the body they will use for life, and feeding is the construction material. The timeline is simple: **nothing but breast milk for the first six months**, family foods **from six months**, breastfeeding continuing **to two years and beyond**. Most feeding problems you meet come from breaking that timeline — water at two months, thin porridge alone at eight.\n\nThis lesson walks the timeline, builds the Ghanaian plate, and teaches you to recognise malnutrition.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "Exclusive breastfeeding means no water, no tea, no formula — breast milk is about 87% water, and a thirsty baby needs more feeds, not other fluids; extra fluids displace milk and bring germs. At six months add **complementary foods**: thick porridge (koko enriched with groundnut paste, not thin soup), and meals combining a staple (rice, banku, yam), a legume or animal food (beans, fish, egg) and vegetables or fruit (kontomire, pawpaw). Feed responsively, two to three meals plus snacks from six to eight months, rising to three to four by two years. The myths you will dismantle weekly: eggs are not \"for adults only\"; porridge alone is not a meal.\n\nRecognition: **kwashiorkor** shows puffy feet and face, flaky-peel skin, thin sparse hair, apathy; **marasmus** shows extreme wasting and an old-man face. Screen with **MUAC** — under 11.5 cm in a 6–59-month-old, or any oedema, means severe acute malnutrition needing therapeutic care. Vitamin A from six months and deworming from one year close common gaps.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "Two hands make the screening: MUAC tape on the left upper arm, thumb pressed on the feet for pits. Under 11.5 cm or pitting oedema means therapeutic feeding today — no home counselling substitutes.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "At a growth monitoring session, a mother of a four-month-old says her own mother insists the baby needs water during the harmattan heat, and that he \"cries too much in the evenings — my milk is not enough.\" He is exclusively breastfed, weighs steadily along his line, and passes six heavy wet nappies a day.\n\nWhat do you tell her, and what will change your advice?\n\nAnswer: Her milk is enough — steady weight gain and six heavy wet nappies prove it. Breast milk adjusts to thirst, so in hot weather she offers the breast more often; water at four months fills the stomach, displaces milk and brings diarrhoea risk. Evening fussiness in a growing four-month-old is common, not a feeding failure. What would change your advice: a flattening weight line, fewer wet nappies, or poor attachment — and at six months complementary foods begin while breastfeeding continues.",
-      },
-      {
-        type: "memory_trick",
-        body: "The **6-6-2 rule**: nothing but breast for **6** months, family food from **6** months, breastfeeding to **2** years and beyond. And the Ghanaian baby plate on three fingers: a **staple**, a **protein** (beans, fish, egg), and a **colour** (kontomire, garden eggs, pawpaw).",
-      },
-      {
-        type: "summary",
-        body: "- Exclusive breastfeeding to six months: no water, no other fluids — breast milk is ~87% water and more frequent feeds meet thirst.\n- From six months: thick, enriched complementary meals — staple plus legume or animal food plus vegetables or fruit — with responsive feeding, continuing breastfeeding to two years and beyond.\n- Meals grow with age: 2–3 from 6–8 months, 3–4 by 9–23 months, plus snacks and milk.\n- Kwashiorkor = oedema, flaky skin, thin hair; marasmus = extreme wasting. MUAC <11.5 cm or oedema = severe acute malnutrition → therapeutic care.\n- Vitamin A from six months and deworming from one year are part of routine protection in Ghana.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Infant and Child Nutrition",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "A mother asks whether to give her three-month-old water during the hot season. What is the correct advice?",
-        options: [
-          "Give cooled boiled water twice a day",
-          "Offer the breast more frequently — breast milk meets both thirst and hunger, and extra water is not needed before six months",
-          "Give diluted porridge instead of water",
-          "Give glucose water to prevent weakness",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Breast milk is about 87% water and supply adjusts to the baby's thirst, so more frequent feeds cover hot weather. Water or other fluids before six months displace milk, reduce milk production and introduce infection risk.",
-        courseSlug: "paediatric-nursing",
-      },
-      {
-        topic: "Infant and Child Nutrition",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "An eighteen-month-old has swollen feet and a puffy face, sparse reddish hair and peeling skin patches, and is apathetic. What does this picture suggest, and what is the priority?",
-        options: [
-          "Simple anaemia — start iron syrup and review in a month",
-          "Kwashiorkor (severe acute malnutrition with oedema) — refer for therapeutic feeding",
-          "Nephrotic syndrome — restrict fluids at home",
-          "Normal toddler puffiness of the dry season",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Oedema with flaky-peel skin, thin discoloured hair and apathy is the classic picture of kwashiorkor. Bilateral pitting oedema in a young child defines severe acute malnutrition and needs urgent therapeutic care — home counselling or iron alone would be a dangerous delay.",
-        courseSlug: "paediatric-nursing",
-      },
-      {
-        topic: "Infant and Child Nutrition",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "Which combination best describes a balanced complementary meal for a nine-month-old in Ghana?",
-        options: [
-          "Thin rice water with sugar only",
-          "Thick enriched porridge or a soft family meal combining a staple with beans, fish or egg and vegetables",
-          "Breast milk alone, since solids are unnecessary until one year",
-          "Fruit juice and biscuits between breastfeeds",
-        ],
-        correctIndex: 1,
-        explanation:
-          "From six months meals should be energy-dense and varied: a staple (banku, rice, porridge made thick), plus legume or animal protein (beans, groundnut, fish, egg) plus vegetables or fruit. Thin rice water, milk alone and juice-and-biscuits all fail energy, protein or micronutrient needs.",
-        courseSlug: "paediatric-nursing",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Infant and Child Nutrition",
-        front: "State the 6-6-2 feeding rule.",
-        back: "Exclusive breastfeeding to 6 months (no water or other fluids), complementary family foods from 6 months, and continued breastfeeding to 2 years and beyond.",
-      },
-      {
-        topic: "Infant and Child Nutrition",
-        front: "What MUAC reading in a child aged 6–59 months indicates severe acute malnutrition?",
-        back: "Mid-upper arm circumference below 11.5 cm — or bilateral pitting oedema at any circumference — both require urgent therapeutic feeding.",
-      },
-      {
-        topic: "Infant and Child Nutrition",
-        front: "Distinguish kwashiorkor from marasmus on sight.",
-        back: "Kwashiorkor: oedematous feet and face, flaky-peel skin, sparse discoloured hair, apathy. Marasmus: severe wasting, visible ribs, old-man facies, alert but ravenous.",
-      },
-    ],
-    sources: [
-      {
-        organization: "World Health Organization",
-        title: "Guideline: Updates on the management of severe acute malnutrition in infants and children",
-        year: "2013",
-        url: "https://www.who.int/publications/i/item/9789241506328",
-      },
-      {
-        organization: "World Health Organization / UNICEF",
-        title: "Infant and young child feeding counselling cards",
-        note: "Verify the current Ghana-adapted version.",
-      },
-      {
-        organization: "Ghana Health Service",
-        title: "Child Health Records Booklet and nutrition counselling materials",
-        note: "Verify the current national edition for feeding and supplementation schedules.",
+        title: "National newborn care guidelines",
+        note: "Verify current national protocols for resuscitation and post-resuscitation monitoring.",
       },
     ],
   },
 
   // ── 11 ─────────────────────────────────────────────────────
   {
-    courseSlug: "paediatric-nursing",
-    moduleTitle: "Feeding and Protecting",
-    lessonTitle: "Immunization: Schedules and Safety",
+    courseSlug: "high-risk-maternal-newborn",
+    moduleTitle: "Refer, Stabilise, Transport",
+    lessonTitle: "Stabilising for Transport",
     description:
-      "The little drops and jabs on Ghana's immunization schedule have silenced diseases our grandparents feared. Learn the timetable, the true contraindications, and the words that reassure a hesitant parent.",
-    difficulty: "Moderate",
+      "The road is part of the treatment — a referral that leaves before stabilising arrives as a smaller emergency than it left as.",
+    difficulty: "Clinical Reasoning",
     durationMin: 12,
     objectives: [
-      "Describe Ghana's routine immunization schedule by age.",
-      "Explain common side effects and distinguish them from true contraindications.",
-      "Apply catch-up rules and counselling skills to keep children protected.",
+      "Explain the principle of stabilise-before-transfer and the pre-transport package for the mother with haemorrhage, eclampsia, sepsis or obstruction.",
+      "Apply the newborn transport package — warmth, airway, feeding, monitoring and the escort — for a small or sick baby.",
+      "Describe safe transfer practice: escort, documentation that travels, monitoring en route and the call ahead.",
     ],
-    tags: ["immunization", "vaccines", "epi", "ghana schedule", "cold chain"],
+    tags: ["transport", "stabilisation", "referral", "preterm", "emergency care"],
     sourceStatus: "GCU_ALIGNED",
     sections: [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Every antigen on the schedule is a disease Ghana once watched kill children in numbers. The schedule is your map of that protection, and the child health record booklet is the family's passport through it. Your job: know the timetable, keep it honest (a missed dose is continued, never restarted), and hold the hands of parents who heard a rumour at the market.\n\nThis lesson walks Ghana's routine schedule, flags the true contraindications (very little qualifies), and gives you counselling language for the everyday worries — fever, crying, \"he is sick today.\"",
+        body: "A referral is treatment in motion. The road between your facility and the district hospital is not neutral ground: every bump is a fluid challenge, every hour is an infection growing or a uterus tiring, and a baby who left warm can arrive cold. The discipline is simple to say and demanding to keep — stabilise first, then move.\n\nThis lesson packages the pre-transport moves for the two patients of high-risk maternal care: the mother with haemorrhage, eclampsia, sepsis or obstructed labour, and the newborn who is small, early or struggling.",
       },
       {
         type: "text",
-        title: "The core ideas",
-        body: "Ghana's routine schedule in outline: **at birth** — BCG, OPV-0, hepatitis B; **at 6, 10, 14 weeks** — oral polio, pentavalent (DPT-HepB-Hib), PCV and rotavirus, with IPV at 14 weeks; **at 9 months** — measles-rubella, yellow fever and meningitis A; **15–18 months** — a second MR. Vitamin A accompanies measles contacts per policy, and HPV protects pre-teen girls where the programme operates. Always confirm against the current record booklet.\n\nThe commonest reactions are a tender lump at the BCG site (and its small, honourable scar), mild fever, fretfulness and a day of poor appetite — all brief, treatable with fluids, a cool cloth and weight-based paracetamol. **Minor illness — a cold, low fever, mild diarrhoea — is not a reason to postpone vaccination.** True contraindications are rare: severe allergic reaction to a previous dose, and, for live vaccines, significantly weakened immunity. A missed dose continues the series — never restart from zero. Behind every visit stands the **cold chain**: vaccines live between 2 and 8°C, and a vaccine left on a sunny windowsill quietly ruins itself.",
+        title: "The mother: lines, drugs, catheter, position, note",
+        body: "For the mother in shock or bleeding: two wide-bore IV lines with fluids running, blood grouped and crossmatched where possible, the uterus rubbed up and a uterotonic given per protocol before the wheels turn. For severe pre-eclampsia or eclampsia: magnesium sulfate loading per protocol with the time charted, left lateral position, airway watched, a catheter in place with urine output recorded, and nothing by mouth. For sepsis — abortion-related or puerperal: the first antibiotic dose per protocol, fluids, and vitals charted before departure. For obstructed labour: IV access, the catheter draining and left in, nil by mouth, first antibiotic dose, and no oxytocin — ever.\n\nTwo golden details: for cord prolapse, the lifting hand travels inside the vehicle with her, holding the presenting part off the cord until theatre takes over. And she never travels alone — an escort who can monitor vitals and hand over, plus a relative who knows her story and can consent. Every drug given, with dose and clock time, goes into the note that travels.",
+      },
+      {
+        type: "text",
+        title: "The newborn: the mother's chest is the ambulance",
+        body: "For the small or sick newborn, warmth is the whole first half of the transfer. Skin-to-skin on the mother's chest in kangaroo position with a hat and wrapper is the warmest, most stable way a baby can travel on a Ghanaian road — the mother is the incubator, and the escort watches them both. For the very small baby, add a plastic wrap and keep the face free. Feed expressed breast milk before departure and at rest stops if the journey is long and the baby is stable — small glycogen stores do not survive long roads — and keep the airway clear with the head neutral. Monitor at stops: heart rate by cord stump or chest, colour, breathing, and a temperature check on arrival. If the baby is on oxygen or needs suction, the equipment travels too.\n\nWhenever possible, transfer the mother before the birth — a baby inside travels warm, fed and oxygenated; a newborn in transit battles cold and unstable breathing. And the call ahead is part of stabilisation: the receiving team prepares warmth, theatre, blood or a special care cot before the vehicle door opens.",
       },
       {
         type: "clinical_pearl",
-        body: "A runny nose never postponed a life-saving vaccine. A child who is feeding, playing and febrile below 38.5°C is immunized today — the disease prevented is far more dangerous than the cold already there.",
+        body: "Never send an empty patient down the road: lines running, drugs given and timed, note in the escort's hand. And the warmest incubator on any Ghanaian road is the mother's chest — a transferred baby who arrives cold, hypoglycaemic and unmonitored was referred too fast, not too early.",
       },
       {
         type: "case",
         title: "On the ward",
-        body: "A mother arrives for her baby's 14-week vaccines but refuses them: \"He has a small fever since last night and he is sneezing.\" Temperature is 37.6°C, he is breastfeeding well, playful and his chest is clear.\n\nWhat do you say and do?\n\nAnswer: This is a mild illness, not a contraindication — vaccinate today, because postponing risks a real disease while waiting for a perfect day that never comes. Cover the expected after-effects (fussiness, low fever, a tender leg) with fluids, breastfeeding, a cool cloth and weight-based paracetamol, and record the doses. If she still declines, respect her, agree a return date and document — a refused visit you can re-invite is recoverable; a lost family is not.",
+        body: "A 32-week baby is born at your health centre at 7 pm. She is 1.7 kg, breathing comfortably, and sucks weakly. The nearest special care baby unit is 90 minutes away, and the ambulance will come in the next hour. The father asks whether they should simply wait for morning, since she looks 'not too bad'.\n\nWhat do you do in this hour?\n\nAnswer: Use the hour to stabilise, not to wait: place her skin-to-skin on her mother in kangaroo position with a hat, cover them both, and feed expressed colostrum by cup now — and again shortly before departure — to protect her small glucose stores. Call the special care baby unit ahead so a warm cot and feeding support are ready; write the note with birth time, weight, temperature, feeds given and findings; and arrange for a nurse or trained escort plus the mother to travel with her, checking colour and feeding at rest stops. Waiting for morning risks a baby who arrives cold, hypoglycaemic and sicker — the quiet-looking 32-weeker is exactly the baby the road punishes.",
       },
       {
         type: "memory_trick",
-        body: "Chant the ages: \"**Birth — six — ten — fourteen — nine — eighteen.**\" Birth: BCG, OPV, hepatitis B. Six-ten-fourteen: OPV, penta, PCV, rota (IPV at fourteen). Nine months: MR, yellow fever, MenA. Eighteen: MR again. Golden catch-up rule: \"**Continue, never restart.**\"",
+        body: "Two patients, four needs: Warm, Fed, Lined, Documented — plus one phone call before the wheels turn. For the mother remember: lines, drugs, catheter, position, note. For the baby: mother's chest, hat, milk, monitor.",
       },
       {
         type: "summary",
-        body: "- Ghana routine schedule: birth (BCG, OPV-0, HepB); 6, 10, 14 weeks (OPV, pentavalent, PCV, rotavirus; IPV at 14 weeks); 9 months (MR, yellow fever, MenA); 15–18 months (MR2) — verify against the current record booklet.\n- Common effects are brief: tender site, low fever, fretfulness — fluids, comfort, weight-based paracetamol.\n- Minor illness is NOT a contraindication — vaccinate the child with the sniffles; true contraindications are rare (severe reaction to a prior dose, significant immune compromise for live vaccines).\n- Missed doses continue the series — never restart it.\n- The cold chain (2–8°C) is part of the dose: a vaccine cooked in the sun is a placebo with paperwork.",
+        body: "- Stabilise before transfer: IV lines running, protocol medicines given and timed, catheter where indicated, position protected, note written.\n- Mother packages: haemorrhage — lines, crossmatch, uterotonic; eclampsia — magnesium loading per protocol, left lateral, airway, catheter, urine charted; sepsis — first antibiotic dose; obstruction — catheter draining, nil by mouth, no oxytocin.\n- Cord prolapse: the lifting hand travels with her until theatre takes over.\n- Newborn package: skin-to-skin kangaroo warmth with a hat, feeds of expressed milk before and during travel, airway neutral, monitoring at stops, escort trained to check.\n- Transfer the mother before the birth whenever possible — in-utero transport beats newborn transport — and always call ahead.",
       },
     ],
     questions: [
       {
-        topic: "Immunization",
+        topic: "Stabilising for Transport",
         type: "MCQ",
         difficulty: "Easy",
-        stem: "A child missed her 10-week vaccines because the family travelled. She returns healthy at 14 weeks. What is the correct approach?",
+        stem: "Why give magnesium sulfate per protocol before transfer rather than on arrival?",
         options: [
-          "Restart the whole schedule from the birth doses",
-          "Continue the series — give the missed 10-week doses now and keep to the programme with adjusted spacing",
-          "Skip the missed doses and give only the 14-week set",
-          "Wait until her first birthday and give a full fresh series",
+          "Medicines are cheaper at the health centre",
+          "The receiving doctor prefers to start all drugs personally",
+          "Treatment started before transfer improves survival — the road and facility delays cost hours, and eclampsia worsens by the hour",
+          "Family consent is required before the hospital can give drugs",
         ],
-        correctIndex: 1,
+        correctIndex: 2,
         explanation:
-          "Interrupted schedules continue, they do not restart: give the missed doses now and complete the remaining ones with appropriate spacing. Skipping doses or restarting both leave avoidable gaps in protection.",
-        courseSlug: "paediatric-nursing",
+          "Pre-referral treatment is one of the strongest survival levers in district obstetrics: the loading dose buys the hours the road would otherwise steal. Waiting until arrival spends them.",
+        courseSlug: "high-risk-maternal-newborn",
       },
       {
-        topic: "Immunization",
+        topic: "Stabilising for Transport",
         type: "MCQ",
         difficulty: "Moderate",
-        stem: "A mother refuses vaccination because the baby has a cold and a temperature of 37.6°C, feeding and playing normally. What is the best response?",
+        stem: "Why is skin-to-skin kangaroo position recommended for a stable 1.7 kg baby during a 90-minute transfer?",
         options: [
-          "Agree to postpone for two weeks to be safe",
-          "Explain that mild illness is not a contraindication and immunize today, covering expected side effects and comfort measures",
-          "Give half doses now and the other half next month",
-          "Refer to hospital before any vaccination",
+          "It is the warmest and most stable transport position — the mother is the incubator, and it supports feeding at rest stops",
+          "It makes the baby easier for the driver to observe",
+          "It is required by ambulance policy",
+          "It replaces the need for any monitoring on the way",
         ],
-        correctIndex: 1,
+        correctIndex: 0,
         explanation:
-          "Mild illness in an otherwise well, feeding child does not reduce vaccine safety or effectiveness, and deferring only opens a window for disease. Vaccinate fully (never in halves), counsel on the mild expected reactions, and document.",
-        courseSlug: "paediatric-nursing",
+          "Kangaroo position keeps the baby warm continuously — far better than a cot on a moving vehicle — stabilises heart rate and breathing, and keeps feeding possible. It does not replace monitoring: the escort still checks colour, breathing and feeding at stops.",
+        courseSlug: "high-risk-maternal-newborn",
       },
       {
-        topic: "Immunization",
+        topic: "Stabilising for Transport",
         type: "MCQ",
         difficulty: "Moderate",
-        stem: "Which vaccines are routinely given at nine months on Ghana's schedule?",
+        stem: "In obstructed labour, why does the urinary catheter stay in and draining during transfer?",
         options: [
-          "BCG and hepatitis B only",
-          "Measles-rubella, yellow fever and meningitis A",
-          "Pentavalent, PCV and rotavirus",
-          "HPV and a second BCG",
+          "So the receiving team can measure urine output continuously and relieve the pressure of a full bladder",
+          "Because a full bladder helps the baby descend",
+          "It is only for comfort and can be removed en route",
+          "Catheterisation is contraindicated in obstructed labour",
+        ],
+        correctIndex: 0,
+        explanation:
+          "The impacted head compresses the urethra — a full bladder returns the pressure and worsens tissue damage; a draining catheter protects the bladder wall and records output, a key vital sign for the theatre team.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Stabilising for Transport",
+        type: "CLINICAL_SCENARIO",
+        difficulty: "Hard",
+        stem: "Before a long referral journey, a mother asks whether her stable 2.0 kg baby should be fed just before departure. What is the correct advice, and why?",
+        options: [
+          "No — a full stomach makes travel unsafe, so withhold milk until arrival",
+          "Yes — feed expressed breast milk before departure and at rest stops: small glycogen stores do not survive long roads",
+          "Only plain water is safe during travel",
+          "Feeding should wait until the hospital team has examined the baby",
         ],
         correctIndex: 1,
         explanation:
-          "At nine months Ghana gives the first measles-rubella dose alongside yellow fever and meningitis A vaccines, with the second MR following at 15–18 months. Pentavalent, PCV and rotavirus belong to the 6-10-14 week visits, and BCG to birth.",
-        courseSlug: "paediatric-nursing",
+          "Small babies hold tiny glycogen reserves; a long fast in a cold vehicle is the classic road to hypoglycaemia. For a stable baby, expressed milk before departure (and at stops if the journey is long) is part of stabilisation. Withholding all milk or substituting water is the unsafe choice.",
+        courseSlug: "high-risk-maternal-newborn",
       },
     ],
     flashcards: [
       {
-        topic: "Immunization",
-        front: "Recite Ghana's routine immunization ages and their vaccines.",
-        back: "Birth: BCG, OPV-0, hepatitis B. 6, 10, 14 weeks: OPV, pentavalent, PCV, rotavirus (IPV at 14 weeks). 9 months: MR, yellow fever, MenA. 15–18 months: MR2. Confirm against the current child health record booklet.",
+        topic: "Stabilising for Transport",
+        front: "The pre-transport package for the mother in five words.",
+        back: "Lines, drugs, catheter, position, note — with a phone call ahead and an escort; never transfer alone.",
       },
       {
-        topic: "Immunization",
-        front: "What is the rule for a child who missed doses?",
-        back: "Continue the series from where it stopped, with appropriate spacing — never restart from the beginning and never skip the missed doses.",
+        topic: "Stabilising for Transport",
+        front: "Why is the mother's chest called the ambulance's incubator?",
+        back: "Continuous skin-to-skin in kangaroo position with a hat is the warmest, most stable way a small baby travels — it holds temperature, heart rate and breathing while allowing feeding at rest stops.",
       },
       {
-        topic: "Immunization",
-        front: "Name the common side effects of infant vaccines and two true contraindications.",
-        back: "Common: tender injection site (BCG scar), mild fever, fretfulness, poor appetite for a day. True contraindications: severe allergic reaction to a previous dose, and significant immune compromise for live vaccines.",
+        topic: "Stabilising for Transport",
+        front: "What travels with a cord prolapse referral?",
+        back: "The lifting hand — fingers hold the presenting part off the cord for the whole journey, until the theatre team takes over.",
+      },
+      {
+        topic: "Stabilising for Transport",
+        front: "Why transfer the mother before birth rather than the baby after?",
+        back: "In-utero transport keeps the baby warm, fed and oxygenated; a transferred newborn battles cold stress and unstable breathing on the road.",
       },
     ],
     sources: [
       {
+        organization: "World Health Organization",
+        title: "Pregnancy, Childbirth, Postpartum and Newborn Care: A Guide for Essential Practice",
+        year: "2015",
+        url: "https://www.who.int/publications/i/item/9789241549356",
+      },
+      {
+        organization: "World Health Organization",
+        title: "Recommendations for the care of the preterm or low-birth-weight infant",
+        year: "2022",
+        url: "https://www.who.int/publications/i/item/9789240058262",
+      },
+      {
         organization: "Ghana Health Service",
-        title: "Expanded Programme on Immunization — national schedule and child health record booklet",
-        note: "Verify against the current national booklet, as schedule details are updated periodically.",
-      },
-      {
-        organization: "World Health Organization",
-        title: "Immunization coverage and vaccine safety resources",
-        note: "Verify current WHO guidance and fact sheets.",
-      },
-      {
-        organization: "World Health Organization",
-        title: "Pocket Book of Hospital Care for Children (2nd edition)",
-        year: "2013",
-        url: "https://www.who.int/publications/i/item/9789241548373",
+        title: "Referral protocols for maternal and newborn emergencies",
+        note: "Verify the current national version with your district health directorate.",
       },
     ],
   },
 
   // ── 12 ─────────────────────────────────────────────────────
   {
-    courseSlug: "paediatric-nursing",
-    moduleTitle: "When Children Fall Ill",
-    lessonTitle: "Common Childhood Conditions",
+    courseSlug: "high-risk-maternal-newborn",
+    moduleTitle: "Refer, Stabilise, Transport",
+    lessonTitle: "The Referral Conversation & Documentation",
     description:
-      "Malaria, measles, anaemia and sickle cell disease — the everyday illnesses of Ghanaian children, and the IMCI habit of asking, looking, treating and teaching that keeps them survivable.",
+      "A referral is a conversation, a phone call and a piece of paper — all three travel with the patient, and the weakest of the three is the one that fails.",
     difficulty: "Moderate",
-    durationMin: 12,
+    durationMin: 11,
     objectives: [
-      "Describe the presentation and management of malaria and measles in children.",
-      "Explain sickle cell disease crises and why fever in these children is an emergency.",
-      "Apply the IMCI sequence — assess, classify, treat, counsel — to everyday presentations.",
+      "Describe the family conversation that overcomes the first delay — honest, kind and clear about why moving beats waiting.",
+      "Explain the SBAR call-ahead and the structured written referral note with times, vitals, drugs and recommendations.",
+      "Apply documentation discipline — objective, timed, complete — and close the referral loop by calling back for the outcome.",
     ],
-    tags: ["childhood illness", "malaria", "measles", "sickle cell", "imci", "anaemia"],
+    tags: ["referral", "sbar", "documentation", "communication", "three delays"],
     sourceStatus: "GCU_ALIGNED",
     sections: [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "In a Ghanaian clinic, four names appear on the register daily: malaria, measles in season, anaemia and sickle cell disease. IMCI — Integrated Management of Childhood Illness — keeps them orderly: ask the danger signs, look and count, classify, treat, then teach the mother before she leaves.\n\nThis lesson tours the big four: recognising each, treating correctly, and knowing which version needs the ambulance rather than the pharmacy shelf.",
+        body: "Between your recognition of an emergency and the receiving doctor's hands stands a chain of human moments: a family deciding, a vehicle finding, a phone call connecting, a note being read. The three delays model names them — deciding to seek care, reaching care, and receiving adequate care — and your referral craft attacks all three.\n\nThe clinical stabilisation you practised in the last lesson fails quietly if the conversation is cold, the call is confused or the note is thin. This lesson is about those three carriers: the conversation, the call, and the paper.",
       },
       {
         type: "text",
-        title: "The core ideas",
-        body: "**Malaria**: test every fever (RDT) and treat positives with weight-based artemether-lumefantrine **with food or milk** — fat doubles absorption — completed over three days. Danger signs, convulsion, coma, severe pallor or inability to drink mean severe malaria: first-dose injectable artesunate and urgent referral — a within-hours disease. **Measles**: fever with cough, runny nose and red eyes, Koplik spots inside the cheeks, then a rash spreading down from behind the ears. Complications — pneumonia, diarrhoea, ear and eye damage — kill: give **vitamin A**, feed well and refer the complicated. The MR vaccine is the prevention.\n\n**Anaemia** in Ghanaian children is usually malaria plus diet plus worms: check pallor of palms and conjunctiva, confirm with haemoglobin, treat causes and feed the fix. **Sickle cell disease** touches thousands of families: painful crises (in infants, the swollen hand-foot dactylitis), with two standing rules — fever in a sickler is an emergency, and daily folic acid plus relentless malaria prevention keep crises away. Teach families the warning words: fever, chest pain, breathing trouble, swollen painful part, sudden pallor.",
+        title: "The conversation and the call",
+        body: "**The family conversation.** Explain what you have found, what it threatens, and what moving now changes — in plain words, with the treatment you have already given named. A mother-in-law urging 'let her push more, she is strong' is not an obstacle; she is a frightened family member who has never been told what a blocked labour means. Kindness here is clinical: a family that understands the why consents faster, raises transport money faster, and travels tonight instead of tomorrow. Ask who can consent for her at the receiving hospital and send that person in the vehicle.\n\n**The call.** Use **SBAR** so the receiving team hears a story, not a list: Situation — who she is and what is happening now; Background — relevant history and what has been done; Assessment — her current vitals and your working diagnosis; Recommendation — what she needs and when, plus your travel time and escort. 'This is Nana from Bawjiase CHPS: situation — para 3, term labour, now 7 cm with fresh bleeding; background — booked with a previous caesarean; assessment — BP 158/104, pulse 102, fetal heart 140; recommendation — she needs theatre tonight, we are transferring now, 40 minutes, escort is a nurse.' Then write down who took the call and at what time.",
+      },
+      {
+        type: "text",
+        title: "The paper and the loop",
+        body: "The referral note is written as if the reader will never speak to you — because often they will not. It carries: the identification and the situation; vitals with times, not 'stable'; your findings, with the partogram or relevant chart attached; every drug and fluid given, with dose, route and clock time; what you recommend and the urgency; and your name with a contact number. Write it in duplicate — one copy travels, one stays in your records. Time and sign every entry; a note without times cannot be audited and cannot defend anyone.\n\nCharting discipline is the same everywhere: objective (what you saw, not what you concluded about people), timed, complete, and free of blame. Finally, close the loop — telephone the receiving unit the next day, ask for the outcome, and record it in your copy. This is how a facility learns: which referrals arrived in time, which arrived too late, and which conversations to hold differently next time. It also tells the receiving team that someone upstream is following the patient — and that changes how carefully your next note is read.",
+      },
+      {
+        type: "quiz_prompt",
+        title: "The referral note, from memory",
+        body: "Before you scroll on: what six things must a referral note carry, and why does one copy stay behind?\n\nAnswer: Identification and situation; vitals with times; findings with the partogram or chart attached; drugs and fluids given with doses and clock times; your recommendation with urgency; and your name and contact — written in duplicate because the copy that stays lets you audit the referral and follow up the outcome.",
       },
       {
         type: "clinical_pearl",
-        body: "Artemether-lumefantrine swallowed on an empty stomach is a dose half-taken — fat is needed for absorption. Every AL prescription travels with the instruction: give with milk or food, and finish all three days even when the fever leaves.",
+        body: "A blank column in a referral note is a hole in the next team's care. Vitals with times, drugs with doses and clock times, findings in your own words — the note is both clinical memory and legal record, and it is the only version of your assessment that travels.",
       },
       {
         type: "case",
         title: "On the ward",
-        body: "A three-year-old reaches your OPD with two days of fever and one vomit this morning. She is alert, drinks eagerly, has no convulsions, no pallor and a normal chest. RDT positive; temperature 38.4°C; weight 13 kg.\n\nHow do you classify and manage this child?\n\nAnswer: This is uncomplicated malaria — alert, drinking, no danger signs, positive test. Treat with weight-based artemether-lumefantrine for three days, with milk or food, plus paracetamol and fluids. The teaching completes the prescription: finish all doses even as she improves, and return immediately for convulsion, refusing to drink, worsening vomiting, new pallor or fast breathing. Remind the family about treated bed nets.",
+        body: "At 2 am, a 38-year-old gravida 6 at term has been fully dilated and pushing for two hours in your facility. The head has not descended for the past hour: still 3/5 palpable above the brim, with a large caput and overlapping skull bones. Her mother-in-law urges, 'let her push more, she is strong'. The district hospital is 45 minutes away.\n\nHow do you manage the conversation, the call, and the paper?\n\nAnswer: The conversation: explain gently that strength cannot open a mechanical block — the baby cannot pass this way, and waiting risks a torn womb, a lost baby and a fistula; the safe route is surgery at the district hospital tonight, and the family member who can consent should travel with her. The call: SBAR to the receiving unit — obstructed second stage, vitals with times, what has been given — and record who took it. The paper: IV line in, catheter draining, nil by mouth, all written with times; the note in duplicate with your recommendation (needs theatre) and contact. She travels with an escort, not alone — and tomorrow you call back for the outcome and file it.",
       },
       {
         type: "memory_trick",
-        body: "The fever frame: \"**Test, Treat, Teach**\" — RDT first, full treatment with food, danger-sign counselling at the door. Measles in one line: \"**Cough, Coryza, Conjunctivitis — Koplik — then the rash from the ears down.**\" Sickle cell standing orders: \"Fever is not a symptom in a sickler — it is an emergency.\"",
+        body: "A referral must travel S-A-N-D: Stabilised (lines, drugs, catheter), Announced (SBAR call ahead, documented), Noted (duplicate written note with times, doses, recommendation), Delivered with a Decision-maker (a relative who knows her story and can consent). Sand packs tight — so do these four.",
       },
       {
         type: "summary",
-        body: "- IMCI at every sick child: ask danger signs, look and count, classify, treat, teach the mother before discharge.\n- Malaria: test every fever; uncomplicated cases get weight-based AL for three days WITH food or milk; danger signs mean severe malaria — first-dose injectable artesunate and urgent referral.\n- Measles: cough, coryza, conjunctivitis, Koplik spots, rash from the ears downward; give vitamin A and hunt complications (pneumonia, diarrhoea, eye damage).\n- Anaemia: think malaria, diet and worms together — treat causes and feed the cure.\n- Sickle cell disease: dactylitis in infants, painful crises later; fever = emergency; daily folic acid and malaria prevention stand permanently.",
+        body: "- The three delays: deciding to seek care, reaching care, receiving adequate care — the conversation attacks the first, the vehicle and escort the second, the SBAR call the third.\n- Family conversation: plain words for the finding, the threat and what moving changes; send the person who can consent.\n- SBAR tells a story: Situation, Background, Assessment, Recommendation — then document who took the call and when.\n- The note: identification, timed vitals, findings with chart attached, drugs with doses and clock times, recommendation, your contact — in duplicate, timed and signed.\n- Chart objectively — what you saw, not what you concluded about people.\n- Close the loop: call back for the outcome, record it, and let it teach your next referral.",
       },
     ],
     questions: [
       {
-        topic: "Common Childhood Conditions",
+        topic: "Referral & Documentation",
         type: "MCQ",
         difficulty: "Easy",
-        stem: "Why must artemether-lumefantrine be given with milk or food?",
+        stem: "What does SBAR stand for in a referral phone call?",
         options: [
-          "To prevent vomiting in all children",
-          "Because fat in the meal greatly improves absorption of the drug",
-          "To mask the taste only",
-          "Because food prevents sleepiness",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Artemether-lumefantrine is poorly absorbed on an empty stomach; dietary fat roughly doubles uptake. Giving it with milk or food is part of the prescription, not a comfort measure.",
-        courseSlug: "paediatric-nursing",
-      },
-      {
-        topic: "Common Childhood Conditions",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "Which feature in a febrile child turns malaria from uncomplicated to severe, requiring first-dose injectable artesunate and urgent referral?",
-        options: [
-          "Fever for two days with a positive RDT in a drinking, alert child",
-          "A convulsion or inability to drink",
-          "A temperature of 38.5°C in a playful child",
-          "Mild pallor with normal activity",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Danger signs — convulsion, coma, inability to drink or breastfeed, severe pallor, repeated vomiting — define severe malaria, treated with pre-referral injectable artesunate and urgent transfer. Alert, drinking children with fever and a positive test are treated orally at outpatient level.",
-        courseSlug: "paediatric-nursing",
-      },
-      {
-        topic: "Common Childhood Conditions",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "A mother of a child with sickle cell disease calls the clinic: her son has a temperature of 38.6°C and mild body pains. What is the correct response?",
-        options: [
-          "Advise paracetamol at home and clinic review if not better in three days",
-          "Treat it as an emergency — the child needs urgent assessment and treatment because fever can signal overwhelming infection in sickle cell disease",
-          "Reassure that fever is normal in sicklers",
-          "Advise increasing folic acid at home",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Children with sickle cell disease have impaired defences against encapsulated bacteria, so fever can be the first sign of overwhelming sepsis or a chest crisis. Fever in a sickler is a same-hour emergency — assess, investigate, start treatment; home observation with paracetamol is how these children die.",
-        courseSlug: "paediatric-nursing",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Common Childhood Conditions",
-        front: "Give the three-step fever frame for malaria management.",
-        back: "Test (RDT or blood film on every fever), Treat (weight-based AL for three days, with food or milk, completed fully), Teach (danger signs requiring immediate return: convulsion, refusing drinks, vomiting everything, worsening breathing or pallor).",
-      },
-      {
-        topic: "Common Childhood Conditions",
-        front: "Describe the clinical picture of measles.",
-        back: "Fever with cough, coryza and conjunctivitis, Koplik spots on the buccal mucosa, then a maculopapular rash beginning behind the ears and spreading downward. Treat with vitamin A and refer complications.",
-      },
-      {
-        topic: "Common Childhood Conditions",
-        front: "Why is fever an emergency in a child with sickle cell disease?",
-        back: "Impaired splenic function and immunity allow fast, overwhelming bacterial infection — a fever of 38.5°C or more needs urgent assessment and treatment, never home watch-and-wait.",
-      },
-    ],
-    sources: [
-      {
-        organization: "World Health Organization",
-        title: "Guidelines for the treatment of malaria (current edition)",
-        note: "Verify the latest WHO edition and the Ghana-adapted treatment policy used in your facility.",
-      },
-      {
-        organization: "World Health Organization / UNICEF",
-        title: "Integrated Management of Childhood Illness (IMCI) chart booklet",
-        note: "Verify the current national adaptation.",
-      },
-      {
-        organization: "Ghana Health Service",
-        title: "Standard Treatment Guidelines",
-        note: "Verify the current edition for national dosing and referral criteria.",
-      },
-    ],
-  },
-
-  // ── 13 ─────────────────────────────────────────────────────
-  {
-    courseSlug: "paediatric-nursing",
-    moduleTitle: "When Children Fall Ill",
-    lessonTitle: "Dehydration in Children: Assess and Act",
-    description:
-      "A child can lose a whole water bottle through a day of diarrhoea — the pinch of skin, the sunken eyes and the offer of a drink tell you how much, and the plan letter tells you what to do.",
-    difficulty: "Moderate",
-    durationMin: 12,
-    objectives: [
-      "Describe the WHO classification of dehydration: none, some and severe.",
-      "Explain Treatment Plans A, B and C and what each contains.",
-      "Apply the assessment signs to choose the correct plan without delay.",
-    ],
-    tags: ["dehydration", "fluids", "ors", "diarrhoea", "who plans"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "Diarrhoea is ordinary; dehydration is what kills. A small child's body is mostly water, and loose stools drain it fast. The WHO system turns the emergency into three questions answered with eyes and hands alone: how does the child behave, are the eyes sunken, and what happens to a pinched fold of skin?\n\nThe answers sort every child into **no, some or severe dehydration** — and each class carries a plan letter: A for home, B for the rehydration bench, C for the vein. Choose the letter fast, and you save more children than with any other skill.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "**No dehydration**: well and drinking normally, eyes normal, pinch returns instantly — Plan A: ORS after each loose stool at home, continued feeding and breastfeeding, zinc, and clear return advice. **Some dehydration**: restless, drinks eagerly, sunken eyes, pinch returns slowly — Plan B: ORS **75 ml/kg over four hours** at the facility, reassess, then resume feeding with the mother taught to mix and give ORS. **Severe dehydration**: lethargic, **unable to drink**, eyes very sunken, pinch very slow — Plan C: IV Ringer's lactate **100 ml/kg** (30 ml/kg fast, the rest over hours by age), switching to ORS as soon as the child can drink; if IV access is impossible, refer urgently.\n\nTwo habits finish the system: **zinc for 10–14 days** shortens the illness and prevents the next one, and **feeding continues** — food is part of the treatment. For severely malnourished children use ReSoMal instead of standard ORS. And never send a dehydrated child home with anti-diarrhoeal medicine and false comfort.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "The offer of a drink is a diagnostic test: eager drinking means some dehydration; inability to drink means severe — an IV line, not a queue ticket.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "An eighteen-month-old is carried in after two days of loose stools. She is drowsy and floppy, does not cry when handled, and when you offer ORS by cup she does not swallow. Her eyes are deeply sunken; the skin pinch over the abdomen stays tented for more than two seconds.\n\nWhich dehydration class is this, and what is your immediate management?\n\nAnswer: Lethargy with inability to drink and a very slow pinch is severe dehydration — Plan C. Start IV Ringer's lactate 100 ml/kg (30 ml/kg over the first half hour in a child over 12 months, the remaining 70 ml/kg over the next two and a half hours), reassess hourly, and switch to oral ORS the moment she can drink. Continue breastfeeding when she wakes, start zinc, look for the cause — cholera if stools are rice-water — and teach the mother Plan A before discharge.",
-      },
-      {
-        type: "memory_trick",
-        body: "Grading signs: \"**Pinch, Eyes, Drink**\" — normal pinch and eyes with a drinking child = none; slow pinch, sunken eyes, drinking eagerly = some; very slow pinch, very sunken eyes, cannot drink = severe. Then the plan letters: \"**A at home, B on the bench, C in the vein.**\"",
-      },
-      {
-        type: "summary",
-        body: "- Dehydration grades: none (well, drinking, normal pinch) / some (restless, drinks eagerly, sunken eyes, slow pinch) / severe (lethargic, cannot drink, very sunken eyes, very slow pinch).\n- Plan A: home ORS after each stool, continued feeding and breastfeeding, zinc 10–14 days, return advice.\n- Plan B: 75 ml/kg ORS over four hours at the facility with reassessment, then feeding resumes.\n- Plan C: IV Ringer's lactate 100 ml/kg for severe dehydration — reassess and step down to ORS as soon as the child can drink.\n- Zinc shortens this illness and the next; feeding is treatment, not a pause; ReSoMal replaces ORS in severe malnutrition.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Dehydration in Children",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "A child with diarrhoea is restless, drinks eagerly when offered ORS, has sunken eyes and a skin pinch that returns slowly. Which classification and plan fit?",
-        options: [
-          "No dehydration — Plan A, home care",
-          "Some dehydration — Plan B, ORS 75 ml/kg over four hours at the facility",
-          "Severe dehydration — Plan C, IV fluids",
-          "Cholera until proven otherwise — antibiotics first",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Restlessness, eager drinking, sunken eyes and a slowly returning pinch define some dehydration, treated with Plan B — 75 ml/kg of ORS over about four hours with reassessment, then continued feeding and Plan A advice.",
-        courseSlug: "paediatric-nursing",
-      },
-      {
-        topic: "Dehydration in Children",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "Which single finding upgrades a child with diarrhoea to severe dehydration?",
-        options: [
-          "Drinking eagerly but fretfully",
-          "Being lethargic or unable to drink",
-          "Passing four loose stools in a day",
-          "Sunken eyes with a normal pinch and good drinking",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Lethargy, unconsciousness or inability to drink marks severe dehydration — the class that needs IV Ringer's lactate (Plan C) immediately. Eager drinking, sunken eyes with good drinking, or stool counts alone do not.",
-        courseSlug: "paediatric-nursing",
-      },
-      {
-        topic: "Dehydration in Children",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "Besides rehydration, which additional treatment shortens the current diarrhoeal episode and reduces recurrence?",
-        options: [
-          "A course of routine antibiotics for all diarrhoea",
-          "Zinc supplementation for 10–14 days",
-          "Anti-diarrhoeal syrup",
-          "Stopping all feeds for 24 hours",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Zinc for 10–14 days reduces the duration of the episode and the risk of the next one, and continues alongside feeding. Routine antibiotics, anti-diarrhoeal drugs and fasting are not part of WHO management and some cause harm.",
-        courseSlug: "paediatric-nursing",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Dehydration in Children",
-        front: "Name the three WHO dehydration classes with one signature sign each.",
-        back: "None: well and drinking, normal pinch. Some: restless, drinks eagerly, slow pinch. Severe: lethargic, cannot drink, very slow pinch with very sunken eyes.",
-      },
-      {
-        topic: "Dehydration in Children",
-        front: "What fluids and volumes define Plans B and C?",
-        back: "Plan B: ORS 75 ml/kg over about four hours at the facility. Plan C: IV Ringer's lactate 100 ml/kg — 30 ml/kg rapidly, the rest over the following hours by age — reassessing to step down to ORS when the child can drink.",
-      },
-      {
-        topic: "Dehydration in Children",
-        front: "What extra prescription accompanies every diarrhoea treatment plan, and why?",
-        back: "Zinc for 10–14 days — it shortens the current episode and lowers the risk of recurrence; feeding and breastfeeding also continue throughout.",
-      },
-    ],
-    sources: [
-      {
-        organization: "World Health Organization",
-        title: "The treatment of diarrhoea: a manual for physicians and senior health workers",
-        note: "Classic WHO diarrhoea manual with Plans A–C. Verify the current edition.",
-      },
-      {
-        organization: "World Health Organization / UNICEF",
-        title: "Integrated Management of Childhood Illness (IMCI) chart booklet",
-        note: "Verify the current national adaptation used in Ghana.",
-      },
-      {
-        organization: "World Health Organization",
-        title: "Pocket Book of Hospital Care for Children (2nd edition)",
-        year: "2013",
-        url: "https://www.who.int/publications/i/item/9789241548373",
-      },
-    ],
-  },
-
-  // ── 14 ─────────────────────────────────────────────────────
-  {
-    courseSlug: "paediatric-nursing",
-    moduleTitle: "When Children Fall Ill",
-    lessonTitle: "Fever in Children",
-    description:
-      "The frightened parent's first words at triage — and the calm sequence behind them: undress, fluids, dose, test, and the signs that mean the hospital, today.",
-    difficulty: "Easy",
-    durationMin: 12,
-    objectives: [
-      "Define fever in children and list its common Ghanaian causes.",
-      "Explain the assessment that separates a safe fever from a dangerous one.",
-      "Apply correct antipyretic dosing and first aid for febrile convulsions.",
-    ],
-    tags: ["fever", "assessment", "malaria", "febrile convulsion", "paracetamol"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "\"Doctor, my child is hot!\" — six words you will hear before the family sits down. Fever — an axillary temperature of **37.5°C or more** — is a symptom, not a disease, and in Ghana it wears many costumes: malaria first, then chest and throat infections, urinary infection, typhoid, measles in season. The fever itself is rarely the danger; what it travels with is.\n\nSo this lesson is a sorting exercise: finding the dangerous fevers, cooling safely, and handling the moment every feverish family dreads — the convulsion.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "Assess with the IMCI questions: how long, any convulsion, drinking, vomiting everything, unusually sleepy? Then look: stiff neck, bulging fontanelle, petechial rash, severe pallor, fast breathing, a child who cannot be woken. Any of these, **or any fever under three months of age**, means treat and refer urgently. Test every febrile child for malaria and treat positives; hunt other causes when negative.\n\nSafe care: undress to a single layer, offer fluids often, give **paracetamol 15 mg per kg** every six hours (max four doses daily) from today's measured weight, and treat the cause. No cold baths, alcohol rubs or guessed doses — harm without benefit. A **febrile convulsion** (six months to five years) is frightening but usually brief: lay the child on the side, protect from injury, put **nothing in the mouth**, time it, then assess fully — malaria and meningitis must be ruled out before anyone calls it \"just a fit\". A fit beyond five minutes, a repeat, or drowsiness that will not lift needs urgent hospital care.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "A feverish baby under three months is a referral, whatever the malaria test says — that immune system cannot yet argue with bacteria. The threshold is the age, not the temperature.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "A two-year-old convulsed at home for about a minute during yesterday's fever. He is now awake and irritable, temperature 38.9°C, drinking from his mother's hand. RDT negative; no stiff neck, fontanelle closed. The mother is terrified of another fit.\n\nWhat is this event, and what are your next steps?\n\nAnswer: A brief convulsion with fever in a two-year-old fits a febrile convulsion — but only after malaria and meningitis are excluded. With a negative RDT, an awake drinking child and an unremarkable examination, treat the fever: undress him, keep fluids coming, paracetamol 15 mg/kg, and hunt the source (throat, ears, urine, chest). Teach the mother the first aid — side-lying, nothing in the mouth, protect the head, time the fit — and the return rules: a fit beyond five minutes, a repeat, or a child who cannot be woken means hospital now.",
-      },
-      {
-        type: "memory_trick",
-        body: "Fever care in four beats: \"**Strip, Sip, Dose, Diagnose**\" — undress to one layer, fluids again and again, paracetamol 15 mg per kilo, then find and treat the cause. Convulsion first aid: \"**Side, Safe, Stop-watch, and nothing in the mouth.**\"",
-      },
-      {
-        type: "summary",
-        body: "- Fever = axillary 37.5°C or above; a symptom to investigate, not a disease to suppress.\n- Dangerous companions: convulsion, stiff neck, bulging fontanelle, petechiae, not drinking, unrousable — and ANY fever under three months of age: treat and refer.\n- Safe care: undress, fluids, paracetamol 15 mg/kg every 6 hours from measured weight; test and treat malaria; no cold baths or alcohol rubs.\n- Febrile convulsion: side-lying, protect from injury, nothing in the mouth, time it; afterwards exclude malaria and meningitis before calling it simple.\n- Return immediately if: fit lasting over five minutes, repeated fits, no waking, or refusal of all fluids.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Fever in Children",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "What is the correct paracetamol dose and frequency for a feverish child?",
-        options: [
-          "15 mg per kg per dose, up to every six hours with a maximum of four doses a day",
-          "A quarter of an adult tablet at any age",
-          "500 mg for every child over one year",
-          "As much as needed until the fever goes",
+          "Situation, Background, Assessment, Recommendation",
+          "Screen, Brief, Advise, Refer",
+          "Symptoms, Bloods, Auscultation, Radiology",
+          "Stabilise, Bag, Ambulate, Record",
         ],
         correctIndex: 0,
         explanation:
-          "Paracetamol is dosed by weight, not by age or tablet fractions: 15 mg/kg per dose, given every six hours, with a maximum of four doses in 24 hours. Today's measured weight is part of the prescription.",
-        courseSlug: "paediatric-nursing",
+          "SBAR — Situation, Background, Assessment, Recommendation — structures the call so the receiving team hears a story in under a minute and can prepare before the patient arrives.",
+        courseSlug: "high-risk-maternal-newborn",
       },
       {
-        topic: "Fever in Children",
+        topic: "Referral & Documentation",
         type: "MCQ",
         difficulty: "Moderate",
-        stem: "A three-week-old baby has an axillary temperature of 38°C. What is the correct management?",
+        stem: "Why send a relative who knows the patient's story in the referral vehicle?",
         options: [
-          "Home paracetamol and review in two days if fever continues",
-          "Urgent referral — any fever in an infant under three months needs hospital assessment and treatment",
-          "Treat as malaria if the RDT is positive, home care if negative",
-          "Tepid sponging with cold water at home",
+          "To keep the patient company during a boring ride",
+          "To carry her belongings safely",
+          "Because that person can give consent and give history if she cannot speak for herself at the receiving facility",
+          "Because the ambulance cannot travel with staff",
+        ],
+        correctIndex: 2,
+        explanation:
+          "A knowing companion provides consent for surgery or transfusion and history if she deteriorates — a practical answer to the delays that kill at the receiving door. Companionship and belongings are by-products, not the reason.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Referral & Documentation",
+        type: "MCQ",
+        difficulty: "Moderate",
+        stem: "Which practice best closes the referral loop after transferring a patient to the district hospital?",
+        options: [
+          "File your copy of the note and move on to the next patient",
+          "Wait for the hospital to call you if they need anything",
+          "Call the receiving unit the next day to ask her outcome and record it",
+          "Send a family member to check on her every week",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Calling back completes the loop: the receiving team knows someone is following up, you learn what happened to your patient, and the record becomes evidence for auditing your own referrals. Passive waiting teaches you nothing and loses the follow-up.",
+        courseSlug: "high-risk-maternal-newborn",
+      },
+      {
+        topic: "Referral & Documentation",
+        type: "CLINICAL_SCENARIO",
+        difficulty: "Hard",
+        stem: "You are writing the referral note for a mother with severe pre-eclampsia before transfer. Which entry meets the documentation standard?",
+        options: [
+          "BP high, given some medicines, patient stable",
+          "BP 158/104 at 02:15, repeated 156/102 at 02:30; magnesium sulfate loading given per protocol at 02:20; painless vaginal bleeding since 01:00 — recommend theatre-ready review tonight",
+          "Refer for BP check",
+          "Referred to district hospital. See card for details.",
         ],
         correctIndex: 1,
         explanation:
-          "Infants under three months cannot localise infection and can deteriorate within hours, so fever at this age is always an urgent referral for full assessment and treatment — regardless of the malaria test result.",
-        courseSlug: "paediatric-nursing",
-      },
-      {
-        topic: "Fever in Children",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "A child is having a febrile convulsion in your consulting room. Which action is correct?",
-        options: [
-          "Force a spoon between the teeth to protect the tongue",
-          "Lay the child on the side, protect from injury, put nothing in the mouth and time the convulsion",
-          "Pour cold water over the child immediately",
-          "Hold the child upright and shake gently to rouse them",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Correct first aid is side-lying to protect the airway, removing hazards, nothing forced into the mouth (it breaks teeth and blocks breathing), and timing the fit. After it ends, assess fully — in Ghana, exclude malaria and meningitis before labelling it a simple febrile convulsion.",
-        courseSlug: "paediatric-nursing",
+          "The standard is objective, timed and complete: vitals with times, drugs with clock times, the finding in plain words, and a clear recommendation. Vague entries — 'stable', 'see card', 'BP high' — are unauditable and leave holes in the next team's care.",
+        courseSlug: "high-risk-maternal-newborn",
       },
     ],
     flashcards: [
       {
-        topic: "Fever in Children",
-        front: "Define fever in a child and state the paracetamol dose.",
-        back: "Fever = axillary temperature 37.5°C or higher. Paracetamol 15 mg/kg per dose, every 6 hours, maximum four doses in 24 hours, calculated from a measured weight.",
+        topic: "Referral & Documentation",
+        front: "What does the three delays model describe?",
+        back: "Delay in deciding to seek care, in reaching care, and in receiving adequate care at the facility — the family conversation, the transport plan and the SBAR call-ahead each attack one delay.",
       },
       {
-        topic: "Fever in Children",
-        front: "Which children with fever must be referred urgently regardless of test results?",
-        back: "Any infant under three months with fever; and any child with convulsion, stiff neck, bulging fontanelle, petechial rash, refusal of fluids, or unrousable drowsiness.",
+        topic: "Referral & Documentation",
+        front: "What six things must a referral note carry?",
+        back: "Identification and situation; vitals with times; findings with the partogram or chart attached; drugs and fluids with doses and clock times; your recommendation with urgency; your name and contact — written in duplicate.",
       },
       {
-        topic: "Fever in Children",
-        front: "Give the four steps of febrile convulsion first aid.",
-        back: "Lay the child on the side, protect from injury, put nothing in the mouth, and time the seizure — then, once it has ended, assess fully and exclude malaria and meningitis.",
+        topic: "Referral & Documentation",
+        front: "How do you run a referral phone call?",
+        back: "SBAR — Situation, Background, Assessment, Recommendation — then record who took the call and at what time.",
+      },
+      {
+        topic: "Referral & Documentation",
+        front: "What does SAND remind you about referrals?",
+        back: "Stabilised, Announced (call ahead), Noted (duplicate written note with times, doses and recommendation), Delivered with a decision-maker who can consent.",
       },
     ],
     sources: [
       {
-        organization: "World Health Organization / UNICEF",
-        title: "Integrated Management of Childhood Illness (IMCI) chart booklet",
-        note: "Verify the current national adaptation used in Ghana.",
+        organization: "World Health Organization",
+        title: "Pregnancy, Childbirth, Postpartum and Newborn Care: A Guide for Essential Practice",
+        year: "2015",
+        url: "https://www.who.int/publications/i/item/9789241549356",
       },
       {
-        organization: "World Health Organization",
-        title: "Pocket Book of Hospital Care for Children (2nd edition)",
-        year: "2013",
-        url: "https://www.who.int/publications/i/item/9789241548373",
+        organization: "Nursing and Midwifery Council of Ghana",
+        title: "Curriculum for the Registered General Nursing (RGN) Programme",
+        year: "2015",
       },
       {
         organization: "Ghana Health Service",
-        title: "Standard Treatment Guidelines",
-        note: "Verify the current edition for national antipyretic and referral guidance.",
-      },
-    ],
-  },
-
-  // ── 15 ─────────────────────────────────────────────────────
-  {
-    courseSlug: "paediatric-nursing",
-    moduleTitle: "When Children Fall Ill",
-    lessonTitle: "Respiratory Disease in Children",
-    description:
-      "A child's airways are narrow and their breathing tells the truth — learn the age-band breath counts, the warning shapes of the chest, and the conditions behind the cough.",
-    difficulty: "Moderate",
-    durationMin: 12,
-    objectives: [
-      "Describe the WHO fast-breathing thresholds by age and their use in classifying pneumonia.",
-      "Explain severe respiratory signs requiring referral and oxygen.",
-      "Apply management principles for pneumonia, croup and bronchiolitis.",
-    ],
-    tags: ["pneumonia", "respiratory", "fast breathing", "croup", "bronchiolitis"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "Children breathe faster than adults, and what counts as fast depends on age. WHO turns this into three numbers you will carry forever — **60, 50, 40**: under two months, 60 or more breaths per minute is fast; two to twelve months, 50 or more; one to five years, 40 or more. Count a full minute in a calm child, and the number plus the chest's shape sorts most coughs into treatable categories.\n\nBecause a child's airways are narrow and soft, infections an adult shrugs into a cough become, in a child, a struggle for air — read the struggle early.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "**Pneumonia** is cough or difficult breathing plus fast breathing for age; add **lower chest wall in-drawing** or other danger signs (grunting, flaring, cyanosis, inability to drink, convulsions, lethargy) and it is severe — first-dose antibiotics, oxygen if saturation is low, and urgent referral. Non-severe pneumonia gets weight-based **oral amoxicillin** with follow-up in two days and danger-sign teaching. Cough beyond two weeks asks for TB screening.\n\n**Croup** (viral, parainfluenza) strikes six months to three years with a barking seal-like cough, hoarse voice and inspiratory stridor, worse at night: keep the child calm — crying deepens the obstruction — give corticosteroids per protocol, avoid steam inhalation (scalds, no benefit), and refer stridor at rest. **Bronchiolitis** is the first wheeze in an under-two with coryza: supportive care — small frequent feeds, gentle nose clearing, oxygen if needed — antibiotics adding nothing. And charcoal and cooking smoke worsen all of these: smoke-free counselling is respiratory medicine.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "In-drawing is a shape, not a sound: watch the lower chest wall sink inward in a bare-chested child. With cough, that look reclassifies pneumonia as severe in one glance.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "A fourteen-month-old is brought with three days of cough and mild fever. He is alert, drinking from his cup, and you count 54 breaths per minute while he rests on his mother's lap. No chest in-drawing, no grunting, saturation normal, chest clear of wheeze.\n\nHow do you classify this illness, and what is the plan?\n\nAnswer: For a 14-month-old the threshold is 40, so 54 breaths per minute with cough is fast breathing — pneumonia without severe signs. Plan: weight-based oral amoxicillin, teach the danger signs (in-drawing, inability to drink, worsening breathing, fever that will not settle), review in two days, and counsel on smoke-free air. Any danger sign turns this into severe pneumonia — first-dose treatment and referral.",
-      },
-      {
-        type: "memory_trick",
-        body: "The breath bands: \"**Sixty before two months, Fifty to a year, Forty to five years**\" — count a full minute in a calm child first. For the cough dictionary: \"**Pneumonia = fast breathing; Croup = seal cough at night; Bronchiolitis = first wheeze under two.**\"",
-      },
-      {
-        type: "summary",
-        body: "- Fast-breathing thresholds (WHO): ≥60/min under 2 months; ≥50/min at 2–12 months; ≥40/min at 1–5 years — always counted for a full minute in a calm child.\n- Cough plus fast breathing = pneumonia; add lower chest in-drawing, grunting, cyanosis, or drinking refusal = severe — first-dose antibiotics, oxygen if needed, urgent referral.\n- Non-severe pneumonia: weight-based oral amoxicillin, danger-sign teaching, review in two days; cough over two weeks needs TB screening.\n- Croup: barking cough, hoarseness, night stridor — keep calm, steroids per protocol, no steam, refer stridor at rest.\n- Bronchiolitis: first wheeze under two — supportive feeding, nose care, oxygen if needed; antibiotics add nothing.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Respiratory Disease in Children",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "A six-month-old with cough has a respiratory rate of 52 per minute when calm. What does this mean?",
-        options: [
-          "Normal breathing for a six-month-old",
-          "Fast breathing — meets the pneumonia threshold of 50 for a child aged 2–12 months",
-          "Only worrying if it reaches 60",
-          "Fast breathing, but the threshold for this age is 40",
-        ],
-        correctIndex: 1,
-        explanation:
-          "For a child aged two to twelve months, 50 or more breaths per minute counts as fast breathing, so 52 with a cough classifies as pneumonia. The 40 threshold applies to 1–5 years and 60 to infants under two months.",
-        courseSlug: "paediatric-nursing",
-      },
-      {
-        topic: "Respiratory Disease in Children",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "Which sign, added to cough and fast breathing, reclassifies pneumonia as severe and requires referral?",
-        options: [
-          "A runny nose",
-          "Lower chest wall in-drawing",
-          "A temperature of 37.8°C",
-          "Coughing at night only",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Lower chest wall in-drawing shows the small airways are working hard enough to collapse the soft chest wall — a severe sign. With grunting, cyanosis, refusal to drink or lethargy, it demands first-dose antibiotics, oxygen when indicated, and urgent referral.",
-        courseSlug: "paediatric-nursing",
-      },
-      {
-        topic: "Respiratory Disease in Children",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "A two-year-old wakes at night with a barking cough, a hoarse voice and noisy inspiration but is drinking and not cyanosed. What is the best immediate management?",
-        options: [
-          "Steam inhalation over a bowl of hot water",
-          "Keep the child calm, give corticosteroids per protocol, and refer if stridor persists at rest",
-          "Start oral amoxicillin immediately",
-          "Encourage running around to clear the airway",
-        ],
-        correctIndex: 1,
-        explanation:
-          "This is classic viral croup. Calm (crying worsens obstruction) plus corticosteroids per protocol is the evidence-based response; steam risks scalds without benefit, antibiotics treat nothing viral, and exertion deepens the struggle. Stridor at rest or distress needs referral.",
-        courseSlug: "paediatric-nursing",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Respiratory Disease in Children",
-        front: "Quote the WHO fast-breathing thresholds by age.",
-        back: "Under 2 months: 60 breaths/min or more; 2–12 months: 50 or more; 1–5 years: 40 or more. Count for one full minute in a calm child before classifying.",
-      },
-      {
-        topic: "Respiratory Disease in Children",
-        front: "Which physical signs make pneumonia 'severe'?",
-        back: "Lower chest wall in-drawing, grunting, nasal flaring, central cyanosis, inability to drink, convulsions or lethargy — give first-dose antibiotics, oxygen if indicated, and refer urgently.",
-      },
-      {
-        topic: "Respiratory Disease in Children",
-        front: "How do you recognise croup and what is its cornerstone of care?",
-        back: "Barking seal-like cough, hoarse voice, inspiratory stridor, worse at night, aged 6 months–3 years. Keep the child calm, give corticosteroids per protocol, avoid steam, and refer stridor at rest.",
-      },
-    ],
-    sources: [
-      {
-        organization: "World Health Organization",
-        title: "Pocket Book of Hospital Care for Children (2nd edition)",
-        year: "2013",
-        url: "https://www.who.int/publications/i/item/9789241548373",
-      },
-      {
-        organization: "World Health Organization / UNICEF",
-        title: "Integrated Management of Childhood Illness (IMCI) chart booklet",
-        note: "Verify the current national adaptation used in Ghana.",
-      },
-      {
-        organization: "Elsevier",
-        title: "Nelson Textbook of Pediatrics",
-        note: "Educational source — verify current edition.",
-      },
-    ],
-  },
-
-  // ── 16 ─────────────────────────────────────────────────────
-  {
-    courseSlug: "paediatric-nursing",
-    moduleTitle: "Keeping Children Safe",
-    lessonTitle: "Child Protection: Recognising Abuse and Neglect",
-    description:
-      "Some stories do not match the injuries that walk in with them. Learn to recognise abuse and neglect, document what you truly see, and act within Ghana's child protection system.",
-    difficulty: "Moderate",
-    durationMin: 12,
-    objectives: [
-      "Describe the four types of child abuse and their recognition patterns.",
-      "Explain the documentation and reporting duties of a health worker who suspects abuse.",
-      "Apply a safeguarding response that protects the child while following national law and policy.",
-    ],
-    tags: ["safeguarding", "abuse", "neglect", "child protection", "documentation"],
-    sourceStatus: "GCU_ALIGNED",
-    sections: [
-      {
-        type: "text",
-        title: "What this lesson is about",
-        body: "Children cannot book appointments to report their own harm. They arrive with burns \"from spilling water\", bruises a toddler cannot reach, or a silence louder than the caregiver's story. Abuse takes four forms — **physical, sexual, emotional and neglect** — and Ghana's Children's Act 1998 (Act 560) places a duty on health workers to notice and act.\n\nThis is sensitive work, and the families may be your neighbours. The lesson is not about accusation — it is about pattern recognition, honest documentation, and knowing what to do next.",
-      },
-      {
-        type: "text",
-        title: "The core ideas",
-        body: "Injuries speak: a **non-mobile baby** should not bruise anywhere (\"those who don't cruise rarely bruise\"); patterned marks mirror the object (belt lines, stick streaks, cigarette shapes); burns with **glove-and-stocking** symmetry and clean waterlines speak of immersion, not spilling; torn frenulum, fractures or injuries at different healing stages tell a different story than the one given. **Neglect** shows chronically: a dirty child with untreated sores, missed immunisations, weight falling off the chart without organic cause. **Sexual abuse** may present with genital injury, an STI or pregnancy in a young adolescent, sexualised behaviour, or a disclosure — the most serious evidence. **Emotional** abuse shows in behaviour: flinching, frozen watchfulness, aggression, regression.\n\nYour duty when suspicion rises: treat the injuries, **document verbatim** — the child's words in quotation marks, diagrams with measurements, times — ask open questions only (\"tell me what happened\"), never leading ones, never promise secrecy. Then report to the Department of Social Welfare, the police DOVVSU unit or your facility's child protection focal person, with a safety plan before discharge — a child should not go home unprotected while the report waits. Stay non-accusatory with the caregiver; your job is evidence and safety, not confrontation.",
-      },
-      {
-        type: "clinical_pearl",
-        body: "When the story and the injury disagree, believe the injury — a symmetrical burn with a clean border does not come from a spilt cup.",
-      },
-      {
-        type: "case",
-        title: "On the ward",
-        body: "A three-year-old is brought to the emergency room with burns to both feet and ankles. The mother says he pulled a bowl of hot water onto himself \"this morning, around six\" — but the burn is symmetrical like a pair of socks, with a sharp line at the ankles, and she waited until afternoon to come. The child is withdrawn, meeting no one's eyes.\n\nWhat features trouble you, and what are your next actions?\n\nAnswer: Spilled water scalds splash asymmetrically down one side; a stocking-pattern burn with a clean waterline on both feet speaks of immersion, and the hours of delay deepen the concern. Treat the burn fully, document with diagrams and measured descriptions, record the mother's account in her own words with times, ask open non-leading questions, and report to Social Welfare and DOVVSU — with a safety plan agreed before discharge. Confronting the mother yourself is not your role; safeguarding is.",
-      },
-      {
-        type: "memory_trick",
-        body: "The four doubts of harm: \"**Doesn't match** (story vs injury), **Development** (can this child reach that?), **Different** (does the story stay the same?), **Delay** (why did help come so late?).\" Any two doubts and your duty begins: **Treat, Record verbatim, Report.**",
-      },
-      {
-        type: "summary",
-        body: "- Four abuse types — physical, sexual, emotional, neglect — and Ghana's Children's Act 1998 (Act 560) places a duty to act on every health worker.\n- Injury patterns: bruises in non-walking babies, patterned marks, glove-and-stocking burns, injuries at different healing stages, torn frenulum.\n- Neglect: chronic dirtiness, untreated illness, failing weight; sexual abuse: genital injury, STI, pregnancy in a young adolescent, disclosure.\n- Documentation is evidence: exact words in quotes, diagrams and measurements, times, open questions, no promises of secrecy.\n- Report to Social Welfare, DOVVSU or your child protection focal person, with a safety plan before discharge; stay non-accusatory.",
-      },
-    ],
-    questions: [
-      {
-        topic: "Child Protection",
-        type: "MCQ",
-        difficulty: "Easy",
-        stem: "A four-month-old baby who cannot yet roll is found to have bruises on the back and thighs. How should you interpret this?",
-        options: [
-          "Normal bruising from everyday baby care",
-          "Highly suspicious for physical abuse — babies who cannot move themselves should not bruise",
-          "A sign of vitamin deficiency only",
-          "Safe as long as the mother explains it",
-        ],
-        correctIndex: 1,
-        explanation:
-          "\"Those who don't cruise rarely bruise\" — a non-mobile infant with bruises cannot have made them accidentally, so non-accidental injury must be assumed until excluded: examine fully, document, and follow child protection procedures.",
-        courseSlug: "paediatric-nursing",
-      },
-      {
-        topic: "Child Protection",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "You suspect a child's burn is non-accidental. Which set of actions matches your duty as a health worker?",
-        options: [
-          "Confront the caregiver directly and demand the true story",
-          "Treat the injury, document findings and quotes exactly, and report to social welfare or the police DOVVSU unit with a safety plan before discharge",
-          "Note your private suspicion in the chart and leave the family to resolve it",
-          "Discharge quickly to avoid embarrassing the family",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Your duty is treatment, verbatim documentation, open non-leading questions, formal report through child protection channels, and a safety plan before discharge. Private notes, confrontation and quick discharge all leave the child unprotected.",
-        courseSlug: "paediatric-nursing",
-      },
-      {
-        topic: "Child Protection",
-        type: "MCQ",
-        difficulty: "Moderate",
-        stem: "Which burn pattern most strongly suggests an inflicted (immersion) injury rather than an accidental spill?",
-        options: [
-          "Irregular splash marks down one side of the chest",
-          "Symmetrical glove-or-stocking distribution with a sharp, clean border",
-          "A single small blister on one fingertip",
-          "Diffuse redness across the face",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Accidental spills splash and trickle, producing irregular, one-sided patterns. Forced immersion produces symmetrical stocking or glove burns with crisp waterlines — the shape of the container, not the splash. A history inconsistent with that pattern deepens the suspicion.",
-        courseSlug: "paediatric-nursing",
-      },
-    ],
-    flashcards: [
-      {
-        topic: "Child Protection",
-        front: "Name the four types of child abuse and the Ghanaian law that frames your duty.",
-        back: "Physical, sexual, emotional abuse and neglect — with duty framed by the Children's Act 1998 (Act 560) and reporting through the Department of Social Welfare and the police DOVVSU unit.",
-      },
-      {
-        topic: "Child Protection",
-        front: "What documentation rules protect both the child and you in a suspected abuse case?",
-        back: "Record the child's words verbatim in quotation marks, describe and diagram injuries with measurements and times, note the stated history and who gave it, ask only open questions, and never promise secrecy.",
-      },
-      {
-        topic: "Child Protection",
-        front: "State the four recognition doubts (the four D's) that should trigger safeguarding.",
-        back: "Doesn't match (injury vs story), Development (the child is too young for the explanation), Different (the story changes), and Delay (presentation came unreasonably late).",
-      },
-    ],
-    sources: [
-      {
-        organization: "Republic of Ghana",
-        title: "Children's Act, 1998 (Act 560)",
-        note: "Primary national legislation on child rights and protection — verify the current consolidated version.",
-      },
-      {
-        organization: "World Health Organization",
-        title: "Responding to children and adolescents who have been sexually abused: WHO clinical guidelines",
-        year: "2017",
-        note: "Verify current edition.",
-      },
-      {
-        organization: "World Health Organization",
-        title: "Child maltreatment — fact sheet and prevention resources",
-        note: "Verify the latest WHO update.",
+        title: "National Reproductive Health Service Policy and Standards",
+        note: "National reference — verify the current edition at your facility.",
       },
     ],
   },

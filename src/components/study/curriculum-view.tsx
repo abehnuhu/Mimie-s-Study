@@ -16,7 +16,7 @@ import type { YearNode } from "@/lib/types";
 const YEAR_TITLES: Record<number, string> = {
   1: "The Foundation Era",
   2: "The Medical-Surgical Era",
-  3: "Your Midwifery Era 💗",
+  3: "The Clinical Practice Era 💗",
   4: "The Final Stretch 🎓",
 };
 

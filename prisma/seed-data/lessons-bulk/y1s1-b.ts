@@ -30,7 +30,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The core ideas",
-        body: "The working unit of the kidney is the nephron, and each kidney holds about a million of them. A nephron does three jobs in order: it filters the blood, reabsorbs the useful parts — glucose, water, salts — back into the bloodstream, and excretes the rest as urine. Your kidneys filter around 180 litres of fluid a day, yet you pass only 1–2 litres of urine. Almost everything is reabsorbed. Nothing the body still needs is thrown away.\n\nThe kidneys also help control blood pressure through the hormone renin, tell the bone marrow to make red blood cells using erythropoietin, and activate vitamin D for strong bones.\n\nOne detail matters greatly to you as a midwife: a woman's urethra is short — around 4 cm — and sits close to the anus and the birth canal. That is why urinary tract infections are common in women, and even more common in pregnancy. After birth, the body also sheds the extra fluid it carried for nine months, so women pass large amounts of urine on days two to five.",
+        body: "The working unit of the kidney is the nephron, and each kidney holds about a million of them. A nephron does three jobs in order: it filters the blood, reabsorbs the useful parts — glucose, water, salts — back into the bloodstream, and excretes the rest as urine. Your kidneys filter around 180 litres of fluid a day, yet you pass only 1–2 litres of urine. Almost everything is reabsorbed. Nothing the body still needs is thrown away.\n\nThe kidneys also help control blood pressure through the hormone renin, tell the bone marrow to make red blood cells using erythropoietin, and activate vitamin D for strong bones.\n\nOne detail matters greatly to you as a nurse: a woman's urethra is short — around 4 cm — and sits close to the anus and the birth canal. That is why urinary tract infections are common in women, and even more common in pregnancy. After birth, the body also sheds the extra fluid it carried for nine months, so women pass large amounts of urine on days two to five.",
       },
       {
         type: "clinical_pearl",
@@ -39,7 +39,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "You are a student midwife on the postnatal ward of a district hospital. Madam Efua delivered six hours ago after a moderately heavy blood loss. The midwife inserted a catheter to monitor her urine. You check the drainage bag: 60 mL over the last three hours — about 20 mL each hour. Her pulse is 104, her skin feels cool, the fundus is firm and her blood pressure is still 100/68.\n\nWhy is her urine output low, and what should you do?\n\nAnswer: Her kidneys are receiving less blood because the circulation is stretched after blood loss — the low urine output, rising pulse and cool skin all point the same way, even while the blood pressure still looks normal. This is compensation, and it buys time, not safety. Your job is to report the urine output and the observations to the midwife in charge now, keep fluids running exactly as ordered, and keep measuring. Urine output is one of the clearest signs of whether she is improving or slipping.",
+        body: "You are a student nurse on the postnatal ward of a district hospital. Madam Efua delivered six hours ago after a moderately heavy blood loss. The nurse inserted a catheter to monitor her urine. You check the drainage bag: 60 mL over the last three hours — about 20 mL each hour. Her pulse is 104, her skin feels cool, the fundus is firm and her blood pressure is still 100/68.\n\nWhy is her urine output low, and what should you do?\n\nAnswer: Her kidneys are receiving less blood because the circulation is stretched after blood loss — the low urine output, rising pulse and cool skin all point the same way, even while the blood pressure still looks normal. This is compensation, and it buys time, not safety. Your job is to report the urine output and the observations to the nurse in charge now, keep fluids running exactly as ordered, and keep measuring. Urine output is one of the clearest signs of whether she is improving or slipping.",
       },
       {
         type: "memory_trick",
@@ -87,7 +87,7 @@ export const lessons: SeedFullLesson[] = [
         options: [
           "Polyuria — encourage more fluids and recheck tomorrow",
           "Normal postpartum diuresis — no action needed",
-          "Oliguria — report to the midwife in charge, because the kidneys may be receiving too little blood",
+          "Oliguria — report to the nurse in charge, because the kidneys may be receiving too little blood",
           "Anuria — remove the catheter immediately",
         ],
         correctIndex: 2,
@@ -121,7 +121,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
         note: "Educational source — verify current edition.",
       },
@@ -148,7 +148,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "The nervous system is the body's control network — the fastest messaging service you own. It has two great divisions. The central nervous system (CNS) is the headquarters: the brain and the spinal cord. The peripheral nervous system (PNS) is the courier service: the nerves that run to every corner of the body, carrying messages in both directions. Sensory nerves bring news inward — heat, pain, a full bladder. Motor nerves carry orders outward — contract, relax, grip.\n\nFor a midwife, this system is personal. It runs the contractions a woman feels, the stress her body shows, and every reflex you will check on a newborn baby. When you assess a patient's level of consciousness, you are assessing the brain. When you watch a baby startle at a sound and both arms spring out, the whole network has just answered you.",
+        body: "The nervous system is the body's control network — the fastest messaging service you own. It has two great divisions. The central nervous system (CNS) is the headquarters: the brain and the spinal cord. The peripheral nervous system (PNS) is the courier service: the nerves that run to every corner of the body, carrying messages in both directions. Sensory nerves bring news inward — heat, pain, a full bladder. Motor nerves carry orders outward — contract, relax, grip.\n\nFor a nurse, this system is personal. It runs the contractions a woman feels, the stress her body shows, and every reflex you will check on a newborn baby. When you assess a patient's level of consciousness, you are assessing the brain. When you watch a baby startle at a sound and both arms spring out, the whole network has just answered you.",
       },
       {
         type: "text",
@@ -162,7 +162,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "You are helping with newborn checks at a CHPS compound an hour after a difficult delivery. The baby feeds sleepily and the colour is pink. But when you test the Moro reflex, both arms should spring out — the right arm does, and the left stays still at the baby's side. You also notice the baby holds that left arm close and does not move it.\n\nWhat might an asymmetric Moro reflex tell you, and what happens next?\n\nAnswer: A Moro reflex that is missing on one side suggests the problem is not in the brain but somewhere on that side's pathway — classically a fractured clavicle or an injury to the brachial plexus nerves, both known complications of a difficult delivery such as shoulder dystocia. Handle the arm gently, support it as instructed, and report immediately for review by the senior midwife or the referring clinician. Document exactly what you saw and when — that quiet note travels with the baby.",
+        body: "You are helping with newborn checks at a CHPS compound an hour after a difficult delivery. The baby feeds sleepily and the colour is pink. But when you test the Moro reflex, both arms should spring out — the right arm does, and the left stays still at the baby's side. You also notice the baby holds that left arm close and does not move it.\n\nWhat might an asymmetric Moro reflex tell you, and what happens next?\n\nAnswer: A Moro reflex that is missing on one side suggests the problem is not in the brain but somewhere on that side's pathway — classically a fractured clavicle or an injury to the brachial plexus nerves, both known complications of a difficult delivery such as shoulder dystocia. Handle the arm gently, support it as instructed, and report immediately for review by the senior nurse or the referring clinician. Document exactly what you saw and when — that quiet note travels with the baby.",
       },
       {
         type: "memory_trick",
@@ -244,7 +244,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
         note: "Educational source — verify current edition.",
       },
@@ -262,7 +262,7 @@ export const lessons: SeedFullLesson[] = [
     objectives: [
       "Explain how hormones travel and why they act only on cells with matching receptors.",
       "Contrast nervous and endocrine messaging in speed and duration.",
-      "Name the major glands and the hormones that matter most in midwifery.",
+      "Name the major glands and the hormones that matter most in nursing.",
       "Explain gestational diabetes in words a mother can understand.",
     ],
     tags: ["hormones", "endocrine", "oxytocin", "prolactin", "gestational diabetes"],
@@ -276,7 +276,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The core ideas",
-        body: "The pituitary, hanging just below the brain, is the conductor of the orchestra: its hormones order the other glands around. In the neck, the thyroid sets the speed of metabolism. The adrenal glands pour out cortisol for long-term stress and adrenaline for instant alarm. In the pancreas, insulin lowers blood glucose after meals while glucagon raises it between them.\n\nThen the hormones you will meet daily as a midwife. Oestrogen builds the womb lining and shapes the pregnancy. Progesterone quiets the uterus and holds a pregnancy in place. Oxytocin drives contractions in labour and squeezes milk toward the nipple afterwards. Prolactin makes the milk in the first place. And the placenta makes hCG — human chorionic gonadotropin — the hormone a urine pregnancy test detects.\n\nNotice how hormones travel: from gland to blood to distant target. No duct, no wire — just chemistry riding the circulation until it finds its lock.",
+        body: "The pituitary, hanging just below the brain, is the conductor of the orchestra: its hormones order the other glands around. In the neck, the thyroid sets the speed of metabolism. The adrenal glands pour out cortisol for long-term stress and adrenaline for instant alarm. In the pancreas, insulin lowers blood glucose after meals while glucagon raises it between them.\n\nThen the hormones you will meet daily as a nurse. Oestrogen builds the womb lining and shapes the pregnancy. Progesterone quiets the uterus and holds a pregnancy in place. Oxytocin drives contractions in labour and squeezes milk toward the nipple afterwards. Prolactin makes the milk in the first place. And the placenta makes hCG — human chorionic gonadotropin — the hormone a urine pregnancy test detects.\n\nNotice how hormones travel: from gland to blood to distant target. No duct, no wire — just chemistry riding the circulation until it finds its lock.",
       },
       {
         type: "clinical_pearl",
@@ -385,7 +385,7 @@ export const lessons: SeedFullLesson[] = [
     objectives: [
       "Name the parts of the female reproductive tract and describe the job of each.",
       "Outline the events of a 28-day cycle, including ovulation and implantation.",
-      "Locate the cervix and fundus and say why both matter in midwifery care.",
+      "Locate the cervix and fundus and say why both matter in nursing care.",
     ],
     tags: ["reproductive system", "menstrual cycle", "uterus", "ovulation", "anatomy"],
     sourceStatus: "GCU_ALIGNED",
@@ -398,7 +398,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The core ideas",
-        body: "Follow one cycle, about 28 days long. On days one to five, the womb sheds its lining — that is menstruation. Meanwhile hormones instruct an ovary to ripen one egg inside its own follicle. Around day 14 comes ovulation: the follicle bursts, and the fimbriae sweep the egg into the fallopian tube. If sperm is waiting there — or arrives within about a day — fertilisation happens in the tube, not in the womb. The new embryo then drifts down into the uterus over several days and embeds in the soft, hormone-prepared lining: implantation.\n\nIf no sperm meets the egg, the egg dies within about a day, hormone levels fall, the lining sheds, and the cycle begins again.\n\nThis is also your first map of labour: the cervix you will feel during vaginal examination, the muscle you will watch contracting, the birth canal the baby must pass through. Anatomy and midwifery meet right here.",
+        body: "Follow one cycle, about 28 days long. On days one to five, the womb sheds its lining — that is menstruation. Meanwhile hormones instruct an ovary to ripen one egg inside its own follicle. Around day 14 comes ovulation: the follicle bursts, and the fimbriae sweep the egg into the fallopian tube. If sperm is waiting there — or arrives within about a day — fertilisation happens in the tube, not in the womb. The new embryo then drifts down into the uterus over several days and embeds in the soft, hormone-prepared lining: implantation.\n\nIf no sperm meets the egg, the egg dies within about a day, hormone levels fall, the lining sheds, and the cycle begins again.\n\nThis is also your first map of labour: the cervix you will feel during vaginal examination, the muscle you will watch contracting, the birth canal the baby must pass through. Anatomy and nursing meet right here.",
       },
       {
         type: "clinical_pearl",
@@ -489,7 +489,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
         note: "Educational source — verify current edition.",
       },
@@ -530,7 +530,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "You attend a birth at a CHPS compound on a harmattan morning. Thirty minutes after delivery you dried and wrapped the baby. Later you check: the temperature reads 35.6 °C, the feet feel cool, and the baby is sleepy and not rooting well.\n\nWhat is happening, and what do you do first?\n\nAnswer: This baby is cold — hypothermia. The newborn's own negative feedback loop is not yet strong enough to hold the set point, and heat is being lost to the dry, cool air. Your first moves are the warm chain: change the damp cloth for a dry one, place the baby skin-to-skin on the mother's chest under a blanket, cover the head with a cap, and keep the room free of draughts. Recheck the temperature in 30 minutes. If it has not risen, or the baby still feeds poorly, report to the midwife in charge for review — a cold baby can quickly become a sick baby.",
+        body: "You attend a birth at a CHPS compound on a harmattan morning. Thirty minutes after delivery you dried and wrapped the baby. Later you check: the temperature reads 35.6 °C, the feet feel cool, and the baby is sleepy and not rooting well.\n\nWhat is happening, and what do you do first?\n\nAnswer: This baby is cold — hypothermia. The newborn's own negative feedback loop is not yet strong enough to hold the set point, and heat is being lost to the dry, cool air. Your first moves are the warm chain: change the damp cloth for a dry one, place the baby skin-to-skin on the mother's chest under a blanket, cover the head with a cap, and keep the room free of draughts. Recheck the temperature in 30 minutes. If it has not risen, or the baby still feeds poorly, report to the nurse in charge for review — a cold baby can quickly become a sick baby.",
       },
       {
         type: "memory_trick",
@@ -639,12 +639,12 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Welcome to the profession. A job pays you for your hours; a profession holds you to a standard. Nursing and midwifery earned the title of profession the hard way: long training, examinations, licensure, a code of ethics, and accountability to the public — standards nobody is allowed to skip.\n\nIn Ghana, the Nursing and Midwifery Council regulates who may practise. Pass your exams, register with the Council, and only then may you lawfully call yourself a nurse or midwife and care for the public. Every qualified midwife you admire carries that registration. From Florence Nightingale's lamp-lit wards to the labour wards of Accra and Bawku, the idea has stayed the same: skilled hands, trained minds, and trust.",
+        body: "Welcome to the profession. A job pays you for your hours; a profession holds you to a standard. Nursing and nursing earned the title of profession the hard way: long training, examinations, licensure, a code of ethics, and accountability to the public — standards nobody is allowed to skip.\n\nIn Ghana, the Nursing and Midwifery Council regulates who may practise. Pass your exams, register with the Council, and only then may you lawfully call yourself a nurse or nurse and care for the public. Every qualified nurse you admire carries that registration. From Florence Nightingale's lamp-lit wards to the labour wards of Accra and Bawku, the idea has stayed the same: skilled hands, trained minds, and trust.",
       },
       {
         type: "text",
         title: "The core ideas",
-        body: "What are you actually joining? A profession built on values you will be examined on and will live by. Compassion — care that feels, not just functions. Integrity — truth in your charting, your words and your dealings. Confidentiality — what you see on the ward stays on the ward. Accountability — you own your actions and their consequences. Respect for patients, families and colleagues. And lifelong learning, because midwifery knowledge changes and you must change with it.\n\nThe International Council of Nurses' Code of Ethics says it plainly: nurses care with respect, protect dignity and confidentiality, act with integrity, and keep their competence current.\n\nThen there is trust itself. People meet you on the worst days of their lives — in pain, exposed, frightened. They allow you close because of the badge you wear, and that badge is a promise. As a student you work under supervision, but the values apply from your very first day.",
+        body: "What are you actually joining? A profession built on values you will be examined on and will live by. Compassion — care that feels, not just functions. Integrity — truth in your charting, your words and your dealings. Confidentiality — what you see on the ward stays on the ward. Accountability — you own your actions and their consequences. Respect for patients, families and colleagues. And lifelong learning, because nursing knowledge changes and you must change with it.\n\nThe International Council of Nurses' Code of Ethics says it plainly: nurses care with respect, protect dignity and confidentiality, act with integrity, and keep their competence current.\n\nThen there is trust itself. People meet you on the worst days of their lives — in pain, exposed, frightened. They allow you close because of the badge you wear, and that badge is a promise. As a student you work under supervision, but the values apply from your very first day.",
       },
       {
         type: "clinical_pearl",
@@ -661,7 +661,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         type: "summary",
-        body: "- Nursing is a profession: standardised training, licensure, a code of ethics and public accountability.\n- The Nursing and Midwifery Council of Ghana registers and regulates nurses and midwives — no registration, no practice.\n- Core values: compassion, integrity, confidentiality, accountability, respect and lifelong learning.\n- The ICN Code of Ethics: care with respect, protect dignity and confidentiality, act with integrity, keep learning.\n- Confidentiality includes the fact of admission itself — guard it even at the market, especially in uniform.",
+        body: "- Nursing is a profession: standardised training, licensure, a code of ethics and public accountability.\n- The Nursing and Midwifery Council of Ghana registers and regulates nurses and nurses — no registration, no practice.\n- Core values: compassion, integrity, confidentiality, accountability, respect and lifelong learning.\n- The ICN Code of Ethics: care with respect, protect dignity and confidentiality, act with integrity, keep learning.\n- Confidentiality includes the fact of admission itself — guard it even at the market, especially in uniform.",
       },
     ],
     questions: [
@@ -669,7 +669,7 @@ export const lessons: SeedFullLesson[] = [
         topic: "Regulation",
         type: "MCQ",
         difficulty: "Easy",
-        stem: "Which body regulates and licenses nurses and midwives to practise in Ghana?",
+        stem: "Which body regulates and licenses nurses and nurses to practise in Ghana?",
         options: [
           "The Nursing and Midwifery Council of Ghana",
           "The Ghana Health Service",
@@ -711,7 +711,7 @@ export const lessons: SeedFullLesson[] = [
     flashcards: [
       {
         topic: "Regulation",
-        front: "Which organisation licenses nurses and midwives in Ghana?",
+        front: "Which organisation licenses nurses and nurses in Ghana?",
         back: "The Nursing and Midwifery Council of Ghana — it sets standards, examines and keeps the register.",
       },
       {
@@ -734,26 +734,26 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Nursing and Midwifery Council of Ghana",
-        title: "Code of conduct and standards of practice for nurses and midwives in Ghana",
+        title: "Code of conduct and standards of practice for nurses and nurses in Ghana",
         note: "Educational source — verify the current version with the Council.",
       },
     ],
   },
 
-  // ── 7. The Role of the Nurse and Midwife ──────────────────────
+  // ── 7. The Role of the Nurse and Nurse ──────────────────────
   {
     courseSlug: "foundations-nursing-1",
     moduleTitle: "The Profession & the Process",
-    lessonTitle: "The Role of the Nurse and Midwife",
+    lessonTitle: "The Role of the Nurse and Nurse",
     description: "Caregiver, advocate, teacher, detective — the many hats you'll wear and how they fit together.",
     difficulty: "Easy",
     durationMin: 10,
     objectives: [
-      "List the main roles of the nurse-midwife and give an everyday example of each.",
-      "Explain advocacy and practise presenting a concern to the midwife in charge.",
-      "Describe the midwife's scope of practice within the Ghanaian health system.",
+      "List the main roles of the nurse-nurse and give an everyday example of each.",
+      "Explain advocacy and practise presenting a concern to the nurse in charge.",
+      "Describe the nurse's scope of practice within the Ghanaian health system.",
     ],
-    tags: ["roles", "advocacy", "scope of practice", "midwife", "referral"],
+    tags: ["roles", "advocacy", "scope of practice", "nurse", "referral"],
     sourceStatus: "GCU_ALIGNED",
     sections: [
       {
@@ -764,16 +764,16 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The core ideas",
-        body: "Two of these hats deserve a closer look because they surprise new students.\n\nThe first is advocate. To advocate is to speak for someone whose voice is too weak, too frightened, or too junior to be heard. On a Ghanaian ward, that is often the labouring woman. When you notice her pulse creeping up and the family is debating whether to wait for morning to travel, advocacy is what you do next: bring the midwife in charge, present what you found, and push for the decision the woman's body is begging for.\n\nThe second is detective. Skilled midwives read the ordinary signs that others pass over: the quiet woman who answered 'fine' but did not eat; the fundus a finger higher than an hour ago; the baby feeding less since midnight. Noticing is a role, not luck.\n\nYour midwifery scope, in the Ghanaian system, spans antenatal care, skilled delivery, postnatal and newborn care, family planning and health education — with a sharp eye for danger signs and swift referral when they appear.",
+        body: "Two of these hats deserve a closer look because they surprise new students.\n\nThe first is advocate. To advocate is to speak for someone whose voice is too weak, too frightened, or too junior to be heard. On a Ghanaian ward, that is often the labouring woman. When you notice her pulse creeping up and the family is debating whether to wait for morning to travel, advocacy is what you do next: bring the nurse in charge, present what you found, and push for the decision the woman's body is begging for.\n\nThe second is detective. Skilled nurses read the ordinary signs that others pass over: the quiet woman who answered 'fine' but did not eat; the fundus a finger higher than an hour ago; the baby feeding less since midnight. Noticing is a role, not luck.\n\nYour nursing scope, in the Ghanaian system, spans antenatal care, skilled delivery, postnatal and newborn care, family planning and health education — with a sharp eye for danger signs and swift referral when they appear.",
       },
       {
         type: "clinical_pearl",
-        body: "Escalation is a role, not a failure. When you cannot fix what you have found, moving it fast to the midwife in charge is clinical care. Say what you saw, say what you are worried about, and say it early.",
+        body: "Escalation is a role, not a failure. When you cannot fix what you have found, moving it fast to the nurse in charge is clinical care. Say what you saw, say what you are worried about, and say it early.",
       },
       {
         type: "case",
         title: "On the ward",
-        body: "You are on outreach with a senior midwife at a CHPS compound. A woman has laboured since midnight; contractions now come every five minutes and are strong, but her pulse is 110 and she is exhausted. The compound cannot manage a complication if one comes. The family is hesitant: 'Let us wait for morning; the road is bad at night.'\n\nWhich role must lead now, and what does it look like in practice?\n\nAnswer: Advocate and coordinator, working together. Your findings — a tiring mother with a rising pulse, far from backup — belong in front of the midwife in charge immediately, not filed for later. Present the observations plainly, support the discussion of early referral to the district hospital while travel is still possible, and help the family weigh the real risk of waiting against the discomfort of the road. Document the discussion. The woman's body has already voted; your job is to make sure that vote is heard.",
+        body: "You are on outreach with a senior nurse at a CHPS compound. A woman has laboured since midnight; contractions now come every five minutes and are strong, but her pulse is 110 and she is exhausted. The compound cannot manage a complication if one comes. The family is hesitant: 'Let us wait for morning; the road is bad at night.'\n\nWhich role must lead now, and what does it look like in practice?\n\nAnswer: Advocate and coordinator, working together. Your findings — a tiring mother with a rising pulse, far from backup — belong in front of the nurse in charge immediately, not filed for later. Present the observations plainly, support the discussion of early referral to the district hospital while travel is still possible, and help the family weigh the real risk of waiting against the discomfort of the road. Document the discussion. The woman's body has already voted; your job is to make sure that vote is heard.",
       },
       {
         type: "memory_trick",
@@ -781,7 +781,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         type: "summary",
-        body: "- The nurse-midwife wears many hats: caregiver, communicator, teacher, advocate, counsellor, coordinator, record-keeper, researcher.\n- Advocacy means speaking up when the patient's own voice cannot — and it is clinical care, not attitude.\n- Detective work is noticing the quiet signs others pass over: appetite, tone, trends.\n- The midwife's span: antenatal care, skilled delivery, postnatal and newborn care, family planning, health education.\n- Danger signs belong to the referral system — recognise fast, escalate fast.",
+        body: "- The nurse-nurse wears many hats: caregiver, communicator, teacher, advocate, counsellor, coordinator, record-keeper, researcher.\n- Advocacy means speaking up when the patient's own voice cannot — and it is clinical care, not attitude.\n- Detective work is noticing the quiet signs others pass over: appetite, tone, trends.\n- The nurse's span: antenatal care, skilled delivery, postnatal and newborn care, family planning, health education.\n- Danger signs belong to the referral system — recognise fast, escalate fast.",
       },
     ],
     questions: [
@@ -789,7 +789,7 @@ export const lessons: SeedFullLesson[] = [
         topic: "Advocacy",
         type: "MCQ",
         difficulty: "Easy",
-        stem: "A patient's family is delaying a referral the patient urgently needs. Which role is the nurse-midwife performing when she raises it with the charge midwife?",
+        stem: "A patient's family is delaying a referral the patient urgently needs. Which role is the nurse-nurse performing when she raises it with the charge nurse?",
         options: [
           "Advocate",
           "Recorder",
@@ -797,16 +797,16 @@ export const lessons: SeedFullLesson[] = [
           "Pharmacist",
         ],
         correctIndex: 0,
-        explanation: "Advocacy is speaking and acting on the patient's behalf when her own voice cannot move the decision — exactly what raising an urgent referral with the charge midwife achieves.",
+        explanation: "Advocacy is speaking and acting on the patient's behalf when her own voice cannot move the decision — exactly what raising an urgent referral with the charge nurse achieves.",
       },
       {
-        topic: "Role of the Midwife",
+        topic: "Role of the Nurse",
         type: "MCQ",
         difficulty: "Moderate",
         stem: "Which action best demonstrates the advocate role for an exhausted labouring woman with a rising pulse whose family is hesitant to travel?",
         options: [
           "Respecting the family's wishes and waiting for morning",
-          "Presenting the findings to the midwife in charge and supporting an urgent discussion of referral",
+          "Presenting the findings to the nurse in charge and supporting an urgent discussion of referral",
           "Telling the woman to decide alone so the family is bypassed",
           "Documenting the pulse and reviewing it at the next scheduled check",
         ],
@@ -817,7 +817,7 @@ export const lessons: SeedFullLesson[] = [
         topic: "Scope of Practice",
         type: "MCQ",
         difficulty: "Easy",
-        stem: "Which of these sits within a midwife's scope of practice?",
+        stem: "Which of these sits within a nurse's scope of practice?",
         options: [
           "Antenatal care, skilled delivery, postnatal and newborn care, with referral of complications",
           "Performing caesarean sections at a CHPS compound",
@@ -825,7 +825,7 @@ export const lessons: SeedFullLesson[] = [
           "Independent diagnosis and treatment of complicated disease without referral",
         ],
         correctIndex: 0,
-        explanation: "The midwife's scope covers normal pregnancy, birth and the postnatal period — including health promotion, family planning and the recognition and referral of complications. Surgery and complex treatment belong to doctors and hospitals.",
+        explanation: "The nurse's scope covers normal pregnancy, birth and the postnatal period — including health promotion, family planning and the recognition and referral of complications. Surgery and complex treatment belong to doctors and hospitals.",
       },
     ],
     flashcards: [
@@ -835,8 +835,8 @@ export const lessons: SeedFullLesson[] = [
         back: "To speak and act on her behalf when her own voice cannot — raising concerns to the right people, fast.",
       },
       {
-        topic: "Roles of the Midwife",
-        front: "Name five roles of the nurse-midwife.",
+        topic: "Roles of the Nurse",
+        front: "Name five roles of the nurse-nurse.",
         back: "Caregiver, advocate, teacher, counsellor, coordinator — also communicator and record-keeper.",
       },
       {
@@ -854,7 +854,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
         note: "Educational source — verify current edition.",
       },
@@ -894,7 +894,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "Madam Dede delivered her first baby this morning. Tonight she is awake and tearful, and tells you she is afraid to hold him — 'what if I drop him?' She has not slept and refuses to feed him while you watch.\n\nTake this through the nursing process: what comes first, and what does each step look like?\n\nAnswer: Assess first — sit down, listen, and rule out physical causes such as pain or heavy bleeding before labelling anything. Diagnose: anxiety related to first-time motherhood and fear of harming the baby. Plan a goal that can be checked: 'Madam Dede will hold and feed her baby with a midwife beside her before midnight, and will voice her fears.' Implement: stay with her, place the baby in her arms, coach the latch, praise each attempt, invite her questions. Evaluate at the goal's deadline: is she feeding him with you present, and did she speak her fears aloud? Then begin the next circle — assessment, again, of how she manages alone.",
+        body: "Madam Dede delivered her first baby this morning. Tonight she is awake and tearful, and tells you she is afraid to hold him — 'what if I drop him?' She has not slept and refuses to feed him while you watch.\n\nTake this through the nursing process: what comes first, and what does each step look like?\n\nAnswer: Assess first — sit down, listen, and rule out physical causes such as pain or heavy bleeding before labelling anything. Diagnose: anxiety related to first-time motherhood and fear of harming the baby. Plan a goal that can be checked: 'Madam Dede will hold and feed her baby with a nurse beside her before midnight, and will voice her fears.' Implement: stay with her, place the baby in her arms, coach the latch, praise each attempt, invite her questions. Evaluate at the goal's deadline: is she feeding him with you present, and did she speak her fears aloud? Then begin the next circle — assessment, again, of how she manages alone.",
       },
       {
         type: "memory_trick",
@@ -1000,7 +1000,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Assessment is the detective's work: collecting clues before drawing conclusions. Every diagnosis you will ever act on stands on the data you gathered first — and weak data topples everything built on it.\n\nYour clues come in two families. Subjective data is what the patient says: 'my head is aching,' 'the baby is not moving as before.' Objective data is what you find: blood pressure 150/100, pale palms, a urine dipstick reading of protein. One lives in her words, the other in your measurements, and a full picture needs both. Your sources are the woman herself first, then family or carers, her antenatal records, and your own examination. In midwifery, records carry special weight — the last blood pressure, the last haemoglobin, the trend of the growth curve.",
+        body: "Assessment is the detective's work: collecting clues before drawing conclusions. Every diagnosis you will ever act on stands on the data you gathered first — and weak data topples everything built on it.\n\nYour clues come in two families. Subjective data is what the patient says: 'my head is aching,' 'the baby is not moving as before.' Objective data is what you find: blood pressure 150/100, pale palms, a urine dipstick reading of protein. One lives in her words, the other in your measurements, and a full picture needs both. Your sources are the woman herself first, then family or carers, her antenatal records, and your own examination. In nursing, records carry special weight — the last blood pressure, the last haemoglobin, the trend of the growth curve.",
       },
       {
         type: "text",
@@ -1014,7 +1014,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "At a busy antenatal clinic, 34 weeks into her second pregnancy, Madam Yaa mentions almost in passing: 'My head aches small in the mornings.' Her blood pressure at booking was 112/70.\n\nWhat do you ask next, and what do you measure?\n\nAnswer: A headache at 34 weeks is a danger sign until proved otherwise. Screen with the questions that matter: blurred vision? pain in the upper belly? swelling of the face and hands? has the baby been moving well? Then measure: blood pressure now, urine for protein, and compare against her booking baseline — a rise to 140/90 or above with protein changes the whole day. Report your findings to the midwife in charge promptly, document them clearly, and stay with the woman. Pre-eclampsia moves quietly and fast, and a casually mentioned headache is sometimes its opening line.",
+        body: "At a busy antenatal clinic, 34 weeks into her second pregnancy, Madam Yaa mentions almost in passing: 'My head aches small in the mornings.' Her blood pressure at booking was 112/70.\n\nWhat do you ask next, and what do you measure?\n\nAnswer: A headache at 34 weeks is a danger sign until proved otherwise. Screen with the questions that matter: blurred vision? pain in the upper belly? swelling of the face and hands? has the baby been moving well? Then measure: blood pressure now, urine for protein, and compare against her booking baseline — a rise to 140/90 or above with protein changes the whole day. Report your findings to the nurse in charge promptly, document them clearly, and stay with the woman. Pre-eclampsia moves quietly and fast, and a casually mentioned headache is sometimes its opening line.",
       },
       {
         type: "memory_trick",
@@ -1058,7 +1058,7 @@ export const lessons: SeedFullLesson[] = [
         topic: "Obstetric History",
         type: "MCQ",
         difficulty: "Easy",
-        stem: "Why does the midwife ask for the first day of the last menstrual period at booking?",
+        stem: "Why does the nurse ask for the first day of the last menstrual period at booking?",
         options: [
           "To estimate the gestational age and the expected date of delivery",
           "To calculate how much weight she should gain",
@@ -1216,7 +1216,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
         note: "Educational source — verify current edition.",
       },
@@ -1247,7 +1247,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The core ideas",
-        body: "Interventions come in three families, and knowing the family tells you who may act. Dependent interventions need a prescriber's order — giving prescribed oxytocin, IV fluids or antibiotics. Independent interventions sit inside your own nursing authority: positioning, hygiene, comfort, health education, monitoring observations, encouraging early breastfeeding. Collaborative interventions need the team together — planning discharge feeding support, or working with a physiotherapist after a prolonged bed rest.\n\nAs a student you act under supervision, and the boundary matters daily: what you may do alone, what you may do with your supervisor present, and what belongs to the licensed midwife only. Learn the boundary early and you will never be caught guessing at 3 a.m.\n\nSafety threads through it all: hand hygiene before and after every contact, patient identity checked, drug rights honoured, chart after care — not hours later. The best implementation is quiet, unhurried and exact, even when the ward is loud.",
+        body: "Interventions come in three families, and knowing the family tells you who may act. Dependent interventions need a prescriber's order — giving prescribed oxytocin, IV fluids or antibiotics. Independent interventions sit inside your own nursing authority: positioning, hygiene, comfort, health education, monitoring observations, encouraging early breastfeeding. Collaborative interventions need the team together — planning discharge feeding support, or working with a physiotherapist after a prolonged bed rest.\n\nAs a student you act under supervision, and the boundary matters daily: what you may do alone, what you may do with your supervisor present, and what belongs to the licensed nurse only. Learn the boundary early and you will never be caught guessing at 3 a.m.\n\nSafety threads through it all: hand hygiene before and after every contact, patient identity checked, drug rights honoured, chart after care — not hours later. The best implementation is quiet, unhurried and exact, even when the ward is loud.",
       },
       {
         type: "clinical_pearl",
@@ -1256,7 +1256,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "Following the plan, you give Madam Fatima her prescribed analgesia at 8 a.m. for post-caesarean pain, chart it, and move on to your other patients. At 8:45 she calls you. She has not moved from the chair where she sat to feed the baby, the pain is still 7/10, and she is close to tears.\n\nWhat do you do next — and what does this tell you about the plan?\n\nAnswer: First, respond to her now. Reassess the pain properly, position her comfortably with pillows supporting the wound, and report to the midwife in charge that the prescribed analgesia has not relieved her pain — a stronger or different plan may be needed, and that decision is not yours to make alone. Chart the reassessment time and the findings. Unrelieved pain is not an inconvenience; it is data telling you the plan is inadequate, and acting on that data is exactly what the nursing process is for.",
+        body: "Following the plan, you give Madam Fatima her prescribed analgesia at 8 a.m. for post-caesarean pain, chart it, and move on to your other patients. At 8:45 she calls you. She has not moved from the chair where she sat to feed the baby, the pain is still 7/10, and she is close to tears.\n\nWhat do you do next — and what does this tell you about the plan?\n\nAnswer: First, respond to her now. Reassess the pain properly, position her comfortably with pillows supporting the wound, and report to the nurse in charge that the prescribed analgesia has not relieved her pain — a stronger or different plan may be needed, and that decision is not yours to make alone. Chart the reassessment time and the findings. Unrelieved pain is not an inconvenience; it is data telling you the plan is inadequate, and acting on that data is exactly what the nursing process is for.",
       },
       {
         type: "memory_trick",
@@ -1288,7 +1288,7 @@ export const lessons: SeedFullLesson[] = [
         difficulty: "Moderate",
         stem: "Forty-five minutes after prescribed analgesia, the patient still rates her pain 7/10. What is your best next action?",
         options: [
-          "Reassess the pain, apply comfort measures, and report to the midwife in charge that relief is inadequate",
+          "Reassess the pain, apply comfort measures, and report to the nurse in charge that relief is inadequate",
           "Repeat the dose yourself since the first one did not work",
           "Tell her to wait for the next scheduled dose and chart nothing",
           "Ask the family to buy stronger pain tablets from the pharmacy",
@@ -1325,7 +1325,7 @@ export const lessons: SeedFullLesson[] = [
       {
         topic: "Response to Care",
         front: "The prescribed analgesia did not work. What is this finding, and what does it mean?",
-        back: "New data — an unmet goal. It means the plan needs revision, reported to the midwife in charge.",
+        back: "New data — an unmet goal. It means the plan needs revision, reported to the nurse in charge.",
       },
     ],
     sources: [
@@ -1337,7 +1337,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
         note: "Educational source — verify current edition.",
       },
@@ -1368,11 +1368,11 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The core ideas",
-        body: "When a goal is not met, the professional response is curiosity, not embarrassment. Ask why, in order. Was the assessment incomplete — a different problem hiding under the one you named? Was the goal realistic for this patient, in this ward, today? Were the interventions actually carried out, and carried out well? Has something new appeared since the plan was written? The answer sends you back around the cycle: reassess, adjust the diagnosis if needed, rewrite the goal, change the steps. The circle turning is the process working, not failing.\n\nEvaluation also listens to the patient's side. The numbers may improve while she still tells you the night was terrible. Both findings count — one measures the body, the other the person, and midwifery serves both.\n\nDocument the verdict in the same language as the goal: what you found, what it means, what you changed. An un-evaluated care plan is an unfinished story, and on a busy ward unfinished stories get lost.",
+        body: "When a goal is not met, the professional response is curiosity, not embarrassment. Ask why, in order. Was the assessment incomplete — a different problem hiding under the one you named? Was the goal realistic for this patient, in this ward, today? Were the interventions actually carried out, and carried out well? Has something new appeared since the plan was written? The answer sends you back around the cycle: reassess, adjust the diagnosis if needed, rewrite the goal, change the steps. The circle turning is the process working, not failing.\n\nEvaluation also listens to the patient's side. The numbers may improve while she still tells you the night was terrible. Both findings count — one measures the body, the other the person, and nursing serves both.\n\nDocument the verdict in the same language as the goal: what you found, what it means, what you changed. An un-evaluated care plan is an unfinished story, and on a busy ward unfinished stories get lost.",
       },
       {
         type: "clinical_pearl",
-        body: "A goal not met is not a wrong answer — it is new information. The midwife who asks 'why not?' is safer than the one who quietly moves on. Evaluate honestly, revise openly, and write it down.",
+        body: "A goal not met is not a wrong answer — it is new information. The nurse who asks 'why not?' is safer than the one who quietly moves on. Evaluate honestly, revise openly, and write it down.",
       },
       {
         type: "case",
@@ -1476,7 +1476,7 @@ export const lessons: SeedFullLesson[] = [
     objectives: [
       "Describe therapeutic communication techniques and use them deliberately.",
       "Recognise blocking habits and replace them with listening.",
-      "Use SBAR to raise a concern clearly to the midwife in charge.",
+      "Use SBAR to raise a concern clearly to the nurse in charge.",
       "Communicate respectfully across culture, especially in grief.",
     ],
     tags: ["communication", "therapeutic communication", "sbar", "active listening", "grief support"],
@@ -1490,7 +1490,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The core ideas",
-        body: "Some habits block the very door you are trying to open. False reassurance — 'everything will be fine' — comforts you, not her, and quietly closes the conversation. Interrupting, judging, advising too fast, hiding behind jargon ('she is a G2P1 with PID') — all of it teaches patients to stop telling you things.\n\nNon-verbal language speaks too: your posture, your tone, your face while she talks. Read hers as well, and read it culturally — a younger person may show respect by looking down, so do not read downcast eyes as evasion; read warmth in the voice and openness in the shoulders. Where you can, meet people in their own language, and when the message is serious, find the words in the language she thinks in.\n\nFor structured reporting, use SBAR: Situation, Background, Assessment, Recommendation. It turns a wandering worry into a sentence the midwife in charge can act on immediately.",
+        body: "Some habits block the very door you are trying to open. False reassurance — 'everything will be fine' — comforts you, not her, and quietly closes the conversation. Interrupting, judging, advising too fast, hiding behind jargon ('she is a G2P1 with PID') — all of it teaches patients to stop telling you things.\n\nNon-verbal language speaks too: your posture, your tone, your face while she talks. Read hers as well, and read it culturally — a younger person may show respect by looking down, so do not read downcast eyes as evasion; read warmth in the voice and openness in the shoulders. Where you can, meet people in their own language, and when the message is serious, find the words in the language she thinks in.\n\nFor structured reporting, use SBAR: Situation, Background, Assessment, Recommendation. It turns a wandering worry into a sentence the nurse in charge can act on immediately.",
       },
       {
         type: "clinical_pearl",
@@ -1499,7 +1499,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "A woman on your ward delivered a stillborn baby girl last night. This morning you enter the room with her drugs. She turns her face to the wall and begins to cry.\n\nWhat do you say — and what must you not say?\n\nAnswer: Often the best first words are none. Sit where she can see you if she turns, stay quietly present, and acknowledge simply: 'I am so sorry about your baby.' Let her lead. If she speaks, listen without correcting or consoling away her pain — her words are the work. Do not say 'at least,' do not promise what you cannot know, and do not fill the silence with chatter. Ask gently what she needs: to talk, to be alone, to see a senior midwife or a counsellor, or a faith leader of her choice. Before you leave, tell her you will come back — then come back. Presence, kept honestly, is therapeutic communication at its deepest.",
+        body: "A woman on your ward delivered a stillborn baby girl last night. This morning you enter the room with her drugs. She turns her face to the wall and begins to cry.\n\nWhat do you say — and what must you not say?\n\nAnswer: Often the best first words are none. Sit where she can see you if she turns, stay quietly present, and acknowledge simply: 'I am so sorry about your baby.' Let her lead. If she speaks, listen without correcting or consoling away her pain — her words are the work. Do not say 'at least,' do not promise what you cannot know, and do not fill the silence with chatter. Ask gently what she needs: to talk, to be alone, to see a senior nurse or a counsellor, or a faith leader of her choice. Before you leave, tell her you will come back — then come back. Presence, kept honestly, is therapeutic communication at its deepest.",
       },
       {
         type: "memory_trick",
@@ -1558,7 +1558,7 @@ export const lessons: SeedFullLesson[] = [
       {
         topic: "SBAR",
         front: "What does SBAR stand for, and when do you use it?",
-        back: "Situation, Background, Assessment, Recommendation — for handover and for raising a concern the midwife in charge can act on.",
+        back: "Situation, Background, Assessment, Recommendation — for handover and for raising a concern the nurse in charge can act on.",
       },
       {
         topic: "Therapeutic Techniques",
@@ -1610,7 +1610,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The core ideas",
-        body: "Good charting follows FACT: factual, accurate, complete, timely. Factual — write what you observed and did, in measurable terms, quoting the patient's own words for symptoms. Accurate — right patient, right times, right numbers; 2 a.m. is not 3 a.m. Complete — the whole event: the finding, the report, the order, the response. Timely — chart as close to the event as possible, because notes written at the moment carry the most trust. Never pre-chart care; the future has a way of disagreeing with you.\n\nCorrections have a protocol: one line through the error, still readable; the correction beside it; your initials and the time. Erasing, correction fluid and blacking-out are forbidden — a record that hides its past looks like a record that lies.\n\nIn Ghana, your midwifery records include the antenatal record, the partograph in labour, and the referral notes that travel with the woman. Sign with your name and designation — student included. Your entry is your word.",
+        body: "Good charting follows FACT: factual, accurate, complete, timely. Factual — write what you observed and did, in measurable terms, quoting the patient's own words for symptoms. Accurate — right patient, right times, right numbers; 2 a.m. is not 3 a.m. Complete — the whole event: the finding, the report, the order, the response. Timely — chart as close to the event as possible, because notes written at the moment carry the most trust. Never pre-chart care; the future has a way of disagreeing with you.\n\nCorrections have a protocol: one line through the error, still readable; the correction beside it; your initials and the time. Erasing, correction fluid and blacking-out are forbidden — a record that hides its past looks like a record that lies.\n\nIn Ghana, your nursing records include the antenatal record, the partograph in labour, and the referral notes that travel with the woman. Sign with your name and designation — student included. Your entry is your word.",
       },
       {
         type: "clinical_pearl",
@@ -1619,7 +1619,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "At 2 a.m. you checked Madam Serwaa's blood pressure: 150/100, up from 110/70 at 10 p.m. You reported it immediately; the midwife in charge reviewed her and treatment was started. At 7 a.m. the incoming midwife asks what happened overnight — and finds nothing in the notes, because by morning you had been pulled into two emergencies and the entry was never written.\n\nWhat is at stake here, and how should it have been handled?\n\nAnswer: Continuity and legal protection are both at stake. The morning shift cannot build on care they cannot see, and if questions ever arose about that night, the treatment given — real as it was — cannot be proven. The rule is contemporaneous recording: chart the finding, the time of reporting, the midwife's response and the treatment as close to 2 a.m. as possible, even briefly. The honest fix now is a late entry labelled as such, with both the event time and the writing time stated. Care that happened deserves to exist on paper too.",
+        body: "At 2 a.m. you checked Madam Serwaa's blood pressure: 150/100, up from 110/70 at 10 p.m. You reported it immediately; the nurse in charge reviewed her and treatment was started. At 7 a.m. the incoming nurse asks what happened overnight — and finds nothing in the notes, because by morning you had been pulled into two emergencies and the entry was never written.\n\nWhat is at stake here, and how should it have been handled?\n\nAnswer: Continuity and legal protection are both at stake. The morning shift cannot build on care they cannot see, and if questions ever arose about that night, the treatment given — real as it was — cannot be proven. The rule is contemporaneous recording: chart the finding, the time of reporting, the nurse's response and the treatment as close to 2 a.m. as possible, even briefly. The honest fix now is a late entry labelled as such, with both the event time and the writing time stated. Care that happened deserves to exist on paper too.",
       },
       {
         type: "memory_trick",
@@ -1700,7 +1700,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "World Health Organization",
-        title: "Managing complications in pregnancy and childbirth: a guide for midwives and doctors",
+        title: "Managing complications in pregnancy and childbirth: a guide for nurses and doctors",
         year: "2017 (2nd edition)",
         note: "Educational source — verify current edition and follow local protocols.",
       },

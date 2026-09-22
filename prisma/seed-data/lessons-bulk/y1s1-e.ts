@@ -18,7 +18,7 @@ export const lessons: SeedFullLesson[] = [
     objectives: [
       "Describe the difference between medical (clean) asepsis and surgical (sterile) asepsis.",
       "Explain why tasks that break skin or enter the body always need sterile technique.",
-      "Apply the right level of asepsis to everyday midwifery tasks, from bed baths to cutting the cord.",
+      "Apply the right level of asepsis to everyday nursing tasks, from bed baths to cutting the cord.",
     ],
     tags: ["asepsis", "sterile technique", "clean technique", "infection control"],
     sourceStatus: "GCU_ALIGNED",
@@ -26,7 +26,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Asepsis simply means keeping germs away from people who are vulnerable — and in midwifery you meet vulnerable people all day. Newborns with fresh cord stumps, mothers with healing perineums, women in labour whose defences are stretched. Your defence comes in two strengths, and knowing which one a task needs is one of the most practical skills of your first year.\n\nMedical asepsis, or clean technique, reduces the number of germs until they cannot cause harm. Washing hands, wearing clean gloves for a bed bath, using clean linen and clean equipment — this is the level most of your day runs on. Surgical asepsis, or sterile technique, aims higher: removing organisms completely, including tough bacterial spores, using sterilized instruments, sterile gloves and a sterile field.",
+        body: "Asepsis simply means keeping germs away from people who are vulnerable — and in nursing you meet vulnerable people all day. Newborns with fresh cord stumps, mothers with healing perineums, women in labour whose defences are stretched. Your defence comes in two strengths, and knowing which one a task needs is one of the most practical skills of your first year.\n\nMedical asepsis, or clean technique, reduces the number of germs until they cannot cause harm. Washing hands, wearing clean gloves for a bed bath, using clean linen and clean equipment — this is the level most of your day runs on. Surgical asepsis, or sterile technique, aims higher: removing organisms completely, including tough bacterial spores, using sterilized instruments, sterile gloves and a sterile field.",
       },
       {
         type: "text",
@@ -40,7 +40,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "You are on a delivery ward in a district hospital. Madam Adjoa has just given birth to a healthy girl, and the midwife hands you the sterile scissors and clamps for the cord. Twenty minutes later the same midwife asks you to give Madam Adjoa a fresh bed bath and help her into a clean nightgown.\n\nWhich of the two tasks needs surgical asepsis, and which needs only medical asepsis — and what changes if, while bathing her, you notice her perineal wound dressing has slipped loose?\n\nAnswer: Cutting the cord needs surgical asepsis — the cord stump is an open door into the newborn's bloodstream, so only sterilized instruments and sterile gloves may touch it. The bed bath needs medical asepsis: clean hands, clean gloves, clean water, because you are touching intact skin. The loose dressing changes things — a healing wound is a portal of entry, so redressing becomes a sterile procedure done by someone trained for it, reported to the midwife, not simply tucked back.",
+        body: "You are on a delivery ward in a district hospital. Madam Adjoa has just given birth to a healthy girl, and the nurse hands you the sterile scissors and clamps for the cord. Twenty minutes later the same nurse asks you to give Madam Adjoa a fresh bed bath and help her into a clean nightgown.\n\nWhich of the two tasks needs surgical asepsis, and which needs only medical asepsis — and what changes if, while bathing her, you notice her perineal wound dressing has slipped loose?\n\nAnswer: Cutting the cord needs surgical asepsis — the cord stump is an open door into the newborn's bloodstream, so only sterilized instruments and sterile gloves may touch it. The bed bath needs medical asepsis: clean hands, clean gloves, clean water, because you are touching intact skin. The loose dressing changes things — a healing wound is a portal of entry, so redressing becomes a sterile procedure done by someone trained for it, reported to the nurse, not simply tucked back.",
       },
       {
         type: "memory_trick",
@@ -103,7 +103,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         topic: "Levels of Asepsis",
-        front: "Name three midwifery tasks that need sterile technique.",
+        front: "Name three nursing tasks that need sterile technique.",
         back: "Any task that breaks skin or enters a sterile body part: cutting the cord, suturing an episiotomy, catheterisation, IV insertion, assisting a delivery.",
       },
       {
@@ -126,7 +126,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
         note: "Educational source — verify current edition.",
       },
@@ -252,7 +252,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
         note: "Educational source — verify current edition.",
       },
@@ -394,7 +394,7 @@ export const lessons: SeedFullLesson[] = [
     durationMin: 12,
     objectives: [
       "Explain the reasoning behind standard precautions.",
-      "List the main parts of standard precautions in daily midwifery care.",
+      "List the main parts of standard precautions in daily nursing care.",
       "Apply standard precautions correctly after a body fluid exposure.",
     ],
     tags: ["standard precautions", "ppe", "infection control", "body fluids"],
@@ -417,7 +417,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "You are assisting at a delivery in the evening. As the baby is born, a gush of amniotic fluid mixed with blood splashes across your face — your mask caught most of it, but one drop reached your right eye. The midwife is busy with the newborn and the room is full of joy and noise.\n\nWhat should happen in the next few minutes — for your eye, and for the event itself?\n\nAnswer: Rinse your eye at once with clean running water or saline, thoroughly and for several minutes. Then report the exposure to the midwife in charge and follow your facility's protocol for documentation and assessment, which may include testing and post-exposure prophylaxis for HIV — most effective when started within hours. The mother's known status does not change your response: standard precautions and exposure follow-up run the same for everyone, because that is exactly what they were designed for.",
+        body: "You are assisting at a delivery in the evening. As the baby is born, a gush of amniotic fluid mixed with blood splashes across your face — your mask caught most of it, but one drop reached your right eye. The nurse is busy with the newborn and the room is full of joy and noise.\n\nWhat should happen in the next few minutes — for your eye, and for the event itself?\n\nAnswer: Rinse your eye at once with clean running water or saline, thoroughly and for several minutes. Then report the exposure to the nurse in charge and follow your facility's protocol for documentation and assessment, which may include testing and post-exposure prophylaxis for HIV — most effective when started within hours. The mother's known status does not change your response: standard precautions and exposure follow-up run the same for everyone, because that is exactly what they were designed for.",
       },
       {
         type: "memory_trick",
@@ -532,7 +532,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The core ideas",
-        body: "The people matter as much as the places. The ward in-charge — often called the sister or senior midwife — runs the unit. Staff midwives care for the mothers, obstetricians and medical officers handle complications, and nurses, orderlies and cleaners keep the whole machine turning. Treat every one of them as a teacher and an ally.\n\nIn your first days, be an excellent guest. Introduce yourself to the in-charge and confirm she knows you are starting. Ask for orientation to the emergency trolley, the oxygen, the wash points and the exits. Learn the handover times, and find out who your preceptor is. Ask before you act, watch everything, and write things down — a small notebook is a student's best friend.\n\nQuestions asked in week one are expected. The same questions in month three are expensive.",
+        body: "The people matter as much as the places. The ward in-charge — often called the sister or senior nurse — runs the unit. Staff nurses care for the mothers, obstetricians and medical officers handle complications, and nurses, orderlies and cleaners keep the whole machine turning. Treat every one of them as a teacher and an ally.\n\nIn your first days, be an excellent guest. Introduce yourself to the in-charge and confirm she knows you are starting. Ask for orientation to the emergency trolley, the oxygen, the wash points and the exits. Learn the handover times, and find out who your preceptor is. Ask before you act, watch everything, and write things down — a small notebook is a student's best friend.\n\nQuestions asked in week one are expected. The same questions in month three are expensive.",
       },
       {
         type: "clinical_pearl",
@@ -585,7 +585,7 @@ export const lessons: SeedFullLesson[] = [
         topic: "Clinical Placement",
         type: "MCQ",
         difficulty: "Easy",
-        stem: "Why is attending handover valuable for a student midwife?",
+        stem: "Why is attending handover valuable for a student nurse?",
         options: [
           "It is a chance to rest before work starts",
           "It passes essential patient information from the outgoing to the incoming team — and tells you what the team is watching for",
@@ -605,7 +605,7 @@ export const lessons: SeedFullLesson[] = [
       {
         topic: "Clinical Placement",
         front: "Who is your first point of reporting on a new ward?",
-        back: "The ward in-charge (sister or senior midwife), together with your assigned preceptor or clinical supervisor.",
+        back: "The ward in-charge (sister or senior nurse), together with your assigned preceptor or clinical supervisor.",
       },
       {
         topic: "Clinical Placement",
@@ -621,12 +621,12 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Nursing and Midwifery Council of Ghana",
-        title: "Standards for Midwifery Education and Practice",
+        title: "Standards for Nursing Education and Practice",
         note: "Educational reference — verify current edition.",
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
         note: "Educational source — verify current edition.",
       },
@@ -642,7 +642,7 @@ export const lessons: SeedFullLesson[] = [
     difficulty: "Easy",
     durationMin: 11,
     objectives: [
-      "Describe the professional appearance expected of a student midwife on placement.",
+      "Describe the professional appearance expected of a student nurse on placement.",
       "Explain why punctuality and phone discipline matter for trust and safety.",
       "Apply confidentiality rules to conversations and social media during placement.",
     ],
@@ -666,7 +666,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "During a quiet afternoon, a woman you know from your own neighbourhood is admitted to the postnatal ward after a difficult birth. That evening a relative calls you: 'I hear your hospital delivered our Ama — how is she? What actually happened?' Your phone is in your hand, and you would love to reassure her.\n\nWhat can you share — and what is the kindest thing to say?\n\nAnswer: Nothing about Ama's care — not her condition, not the baby, not even confirmation that she is on your ward. Patient information belongs to the patient and the care team, and sharing it with anyone else, however loving, breaches confidentiality. Say warmly that you cannot discuss patients from your workplace, but she is welcome to call Ama directly or visit through the ward. It may feel harsh, but it protects Ama — and it builds the trust every patient must be able to place in student midwives.",
+        body: "During a quiet afternoon, a woman you know from your own neighbourhood is admitted to the postnatal ward after a difficult birth. That evening a relative calls you: 'I hear your hospital delivered our Ama — how is she? What actually happened?' Your phone is in your hand, and you would love to reassure her.\n\nWhat can you share — and what is the kindest thing to say?\n\nAnswer: Nothing about Ama's care — not her condition, not the baby, not even confirmation that she is on your ward. Patient information belongs to the patient and the care team, and sharing it with anyone else, however loving, breaches confidentiality. Say warmly that you cannot discuss patients from your workplace, but she is welcome to call Ama directly or visit through the ward. It may feel harsh, but it protects Ama — and it builds the trust every patient must be able to place in student nurses.",
       },
       {
         type: "memory_trick",
@@ -699,7 +699,7 @@ export const lessons: SeedFullLesson[] = [
         stem: "A classmate sends you a photo of a newborn taken on the ward and asks you to share it in your study group's chat. What is the correct response?",
         options: [
           "Share it — the baby's face is small in the photo",
-          "Share it only with midwifery students, not the public",
+          "Share it only with nursing students, not the public",
           "Refuse, and remind them the photo breaches patient confidentiality and must not circulate",
           "Save it quietly but do not forward it",
         ],
@@ -751,7 +751,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
         note: "Educational source — verify current edition.",
       },
@@ -878,7 +878,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
         note: "Educational source — verify current edition.",
       },
@@ -918,7 +918,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "On the postnatal ward you take Madam Esi's observations six hours after delivery: temperature 38.2°C, pulse 112 beats per minute, blood pressure 104/64. She says she feels warm and her breasts are heavy, and you remember that her placenta was removed by hand in theatre. The staff midwife is at the far end of the ward.\n\nWhat do these numbers suggest, and what is your next move?\n\nAnswer: A temperature of 38.2°C with a fast pulse suggests possible postnatal infection — puerperal sepsis — for which manual removal of the placenta was a risk factor. Recheck to confirm accuracy, note the findings with the time in her chart, and inform the staff midwife now, not at handover. Do not wait for the fever to climb or the pulse to race further: early reporting is what turns a treatable infection into a short story.",
+        body: "On the postnatal ward you take Madam Esi's observations six hours after delivery: temperature 38.2°C, pulse 112 beats per minute, blood pressure 104/64. She says she feels warm and her breasts are heavy, and you remember that her placenta was removed by hand in theatre. The staff nurse is at the far end of the ward.\n\nWhat do these numbers suggest, and what is your next move?\n\nAnswer: A temperature of 38.2°C with a fast pulse suggests possible postnatal infection — puerperal sepsis — for which manual removal of the placenta was a risk factor. Recheck to confirm accuracy, note the findings with the time in her chart, and inform the staff nurse now, not at handover. Do not wait for the fever to climb or the pulse to race further: early reporting is what turns a treatable infection into a short story.",
       },
       {
         type: "memory_trick",
@@ -951,7 +951,7 @@ export const lessons: SeedFullLesson[] = [
         stem: "At a 34-week antenatal visit you record a blood pressure of 156/104. The client feels completely well. What should you do?",
         options: [
           "Reassure her and record it for review at the next visit",
-          "Recheck after she rests quietly, record accurately, and inform the midwife — raised BP can signal pre-eclampsia even without symptoms",
+          "Recheck after she rests quietly, record accurately, and inform the nurse — raised BP can signal pre-eclampsia even without symptoms",
           "Advise her to reduce salt and increase walking",
           "Repeat the measurement next week",
         ],
@@ -998,7 +998,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
         note: "Educational source — verify current edition.",
       },
@@ -1118,7 +1118,7 @@ export const lessons: SeedFullLesson[] = [
     sources: [
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
         note: "Educational source — verify current edition.",
       },
@@ -1254,7 +1254,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
         note: "Educational source — verify current edition.",
       },
@@ -1419,7 +1419,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "The midwife is about to suture a second-degree tear and asks you to open the sterile suturing pack onto the trolley. You open the outer wrapper and tip the inner pack onto the prepared sterile drape — but as you pass it across, your sleeve brushes over the top of the open field. Nobody else seems to have noticed.\n\nWhat happens next — and what do you say?\n\nAnswer: Say it immediately: the field is contaminated, because your sleeve passed across it and sleeves are never sterile. The pack is discarded and a fresh one opened, with you reaching around the field, not across it. Continuing silently would risk carrying bacteria into the wound — suturing means entering tissue, and the sterile standard is absolute. The midwife may sigh about the wasted pack, but a contaminated field is never a bargain; it is tomorrow's wound infection.",
+        body: "The nurse is about to suture a second-degree tear and asks you to open the sterile suturing pack onto the trolley. You open the outer wrapper and tip the inner pack onto the prepared sterile drape — but as you pass it across, your sleeve brushes over the top of the open field. Nobody else seems to have noticed.\n\nWhat happens next — and what do you say?\n\nAnswer: Say it immediately: the field is contaminated, because your sleeve passed across it and sleeves are never sterile. The pack is discarded and a fresh one opened, with you reaching around the field, not across it. Continuing silently would risk carrying bacteria into the wound — suturing means entering tissue, and the sterile standard is absolute. The nurse may sigh about the wasted pack, but a contaminated field is never a bargain; it is tomorrow's wound infection.",
       },
       {
         type: "memory_trick",
@@ -1504,7 +1504,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
         note: "Educational source — verify current edition.",
       },
@@ -1544,7 +1544,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "It is 02:00 on the postnatal ward. You have been watching Bed 7 since your last round: Madam Yaa, six hours after a normal birth, now looks pale and sweaty. Her pad is heavier than before, her pulse is 118, and she says she feels 'small small dizzy'. The staff midwife is at the far end of the ward with another patient.\n\nWhat do you do in the next two minutes — and what exactly do you say?\n\nAnswer: Go straight to the staff midwife, interrupt politely and immediately — heavy bleeding after birth kills quickly, and pale, sweaty, fast pulse and dizziness are its warning signs. Give the facts: 'Madam, Bed 7, Madam Yaa, six hours postpartum. She is pale and sweaty, pulse 118, the pad is heavier than at midnight, and she feels dizzy. I am worried about bleeding — what should we do?' Do not wait to be more certain and do not save it for handover. Afterwards, document what you measured, whom you told and when. At 02:00, your voice is the safety net.",
+        body: "It is 02:00 on the postnatal ward. You have been watching Bed 7 since your last round: Madam Yaa, six hours after a normal birth, now looks pale and sweaty. Her pad is heavier than before, her pulse is 118, and she says she feels 'small small dizzy'. The staff nurse is at the far end of the ward with another patient.\n\nWhat do you do in the next two minutes — and what exactly do you say?\n\nAnswer: Go straight to the staff nurse, interrupt politely and immediately — heavy bleeding after birth kills quickly, and pale, sweaty, fast pulse and dizziness are its warning signs. Give the facts: 'Madam, Bed 7, Madam Yaa, six hours postpartum. She is pale and sweaty, pulse 118, the pad is heavier than at midnight, and she feels dizzy. I am worried about bleeding — what should we do?' Do not wait to be more certain and do not save it for handover. Afterwards, document what you measured, whom you told and when. At 02:00, your voice is the safety net.",
       },
       {
         type: "memory_trick",
@@ -1560,11 +1560,11 @@ export const lessons: SeedFullLesson[] = [
         topic: "Escalation",
         type: "MCQ",
         difficulty: "Moderate",
-        stem: "At 02:00 you notice a postnatal woman bleeding heavily, pale, with a pulse of 118. The staff midwife is busy with another patient. What do you do?",
+        stem: "At 02:00 you notice a postnatal woman bleeding heavily, pale, with a pulse of 118. The staff nurse is busy with another patient. What do you do?",
         options: [
-          "Wait until the midwife is free to approach her",
+          "Wait until the nurse is free to approach her",
           "Write it in the chart for the morning handover",
-          "Interrupt the midwife immediately and report what you are seeing",
+          "Interrupt the nurse immediately and report what you are seeing",
           "Ask a relative to keep watching the bed",
         ],
         correctIndex: 2,

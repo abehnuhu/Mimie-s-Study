@@ -25,7 +25,7 @@ export const lessonAnatomicalPosition: SeedFullLesson = {
     {
       type: "text",
       title: "The one position everyone agrees on",
-      body: "Picture a person standing upright, facing you, with feet flat on the floor and toes pointing straight ahead. The arms hang relaxed at the sides and — the part everyone forgets — the palms face forward, so the thumbs point away from the body. The head is level and the eyes look straight ahead.\n\nThat single pose is standard anatomical position, and every direction word in medicine is defined from it. It feels oddly stiff because it is a reference, not a habit — nobody stands like that in real life, and that is exactly the point.\n\nLike the zero mark on a ruler, it only works if it never changes. Clinically, that is its whole power: when any midwife in any facility says inferior, you already know which way she means.",
+      body: "Picture a person standing upright, facing you, with feet flat on the floor and toes pointing straight ahead. The arms hang relaxed at the sides and — the part everyone forgets — the palms face forward, so the thumbs point away from the body. The head is level and the eyes look straight ahead.\n\nThat single pose is standard anatomical position, and every direction word in medicine is defined from it. It feels oddly stiff because it is a reference, not a habit — nobody stands like that in real life, and that is exactly the point.\n\nLike the zero mark on a ruler, it only works if it never changes. Clinically, that is its whole power: when any nurse in any facility says inferior, you already know which way she means.",
     },
     {
       type: "quiz_prompt",
@@ -75,7 +75,7 @@ export const lessonAnatomicalPosition: SeedFullLesson = {
     {
       type: "case",
       title: "The ward round note",
-      body: "Mimie, you are the student midwife on the postnatal ward. A woman delivered six hours ago. The midwife palpates and asks you to record the findings: the fundus is firm, in the midline, about three finger-breadths superior to the umbilicus; a small dressing covers a wound two centimetres lateral to the midline on the anterior abdominal wall.\n\nBefore the midwife glances over: which single word tells the next shift exactly where the wound sits without any diagram? Rewrite 'below the belly button' in words a midwife in another region could picture instantly. And if you were asked whether the wound is superficial or deep, what extra information would you need?\n\nNotice how much precision four little words carry: superior, midline, lateral, anterior. Zero ambiguity, no diagram required — that is the entire promise of anatomical language.",
+      body: "Mimie, you are the student nurse on the postnatal ward. A woman delivered six hours ago. The nurse palpates and asks you to record the findings: the fundus is firm, in the midline, about three finger-breadths superior to the umbilicus; a small dressing covers a wound two centimetres lateral to the midline on the anterior abdominal wall.\n\nBefore the nurse glances over: which single word tells the next shift exactly where the wound sits without any diagram? Rewrite 'below the belly button' in words a nurse in another region could picture instantly. And if you were asked whether the wound is superficial or deep, what extra information would you need?\n\nNotice how much precision four little words carry: superior, midline, lateral, anterior. Zero ambiguity, no diagram required — that is the entire promise of anatomical language.",
     },
     {
       type: "quiz_prompt",
@@ -113,7 +113,7 @@ export const lessonAnatomicalPosition: SeedFullLesson = {
       topic: "Directional Terms",
       type: "MCQ",
       difficulty: "Moderate",
-      stem: "A midwife charts a newborn's cord stump as '2 cm inferior to the umbilicus, midline, anterior abdominal wall'. Which restatement of that note is correct?",
+      stem: "A nurse charts a newborn's cord stump as '2 cm inferior to the umbilicus, midline, anterior abdominal wall'. Which restatement of that note is correct?",
       options: [
         "The stump is 2 cm below the umbilicus, on the front of the body, in the midline",
         "The stump is 2 cm above the umbilicus, on the front of the body, in the midline",
@@ -136,7 +136,7 @@ export const lessonAnatomicalPosition: SeedFullLesson = {
       stem: "Day one after a normal birth, the fundus is firm but palpable three finger-breadths above the umbilicus. Using directional language and what you know of normal postnatal involution, which interpretation fits best?",
       options: [
         "The fundus is inferior to the umbilicus, which is expected on day one",
-        "The fundus is superior to the umbilicus; at one day postpartum it is usually much closer to the umbilicus, so this height should prompt checks such as bladder fullness and a report to the midwife in charge",
+        "The fundus is superior to the umbilicus; at one day postpartum it is usually much closer to the umbilicus, so this height should prompt checks such as bladder fullness and a report to the nurse in charge",
         "The fundus is posterior to the umbilicus, suggesting an abnormally tilted uterus",
         "The fundus is lateral to the umbilicus, which is a harmless variation needing no action",
       ],

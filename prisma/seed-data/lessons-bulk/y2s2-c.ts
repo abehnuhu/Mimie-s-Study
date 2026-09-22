@@ -410,7 +410,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "When you hear 'mental health', your mind may jump straight to illness. The WHO picture is bigger: mental health is a state of wellbeing in which a person realizes her own abilities, copes with the normal stresses of life, works productively, and contributes to her community. Notice what is missing — any mention of madness. Every client has mental health, just as they all have physical health.\n\nThat matters in midwifery because most of the women you meet are mentally healthy people under stress — first pregnancies, losses, fears, poverty. Your work is double: protect and promote their wellbeing, and notice when the balance tips.",
+        body: "When you hear 'mental health', your mind may jump straight to illness. The WHO picture is bigger: mental health is a state of wellbeing in which a person realizes her own abilities, copes with the normal stresses of life, works productively, and contributes to her community. Notice what is missing — any mention of madness. Every client has mental health, just as they all have physical health.\n\nThat matters in nursing because most of the women you meet are mentally healthy people under stress — first pregnancies, losses, fears, poverty. Your work is double: protect and promote their wellbeing, and notice when the balance tips.",
       },
       {
         type: "text",
@@ -1035,7 +1035,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Nursing and Midwifery Council of Ghana",
-        title: "Code of Professional Conduct for Nurses and Midwives",
+        title: "Code of Professional Conduct for Nurses and Nurses",
         note: "Professional boundaries and conduct — obtain current version from NMC Ghana.",
       },
     ],
@@ -1572,7 +1572,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Nursing and Midwifery Council of Ghana",
-        title: "Code of Professional Conduct for Nurses and Midwives",
+        title: "Code of Professional Conduct for Nurses and Nurses",
         note: "Obtain current version from NMC Ghana.",
       },
     ],
@@ -1705,7 +1705,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Nursing and Midwifery Council of Ghana",
-        title: "Code of Professional Conduct for Nurses and Midwives",
+        title: "Code of Professional Conduct for Nurses and Nurses",
         note: "Obtain current version from NMC Ghana.",
       },
     ],
@@ -1736,16 +1736,16 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The core ideas",
-        body: "Prioritise by risk, not by noise. Unstable before stable; actual problems before potential ones; and ABC first — **airway, breathing, circulation** — which in maternity translates to: bleeding, convulsion, respiratory distress and fetal distress outrank routine observations, paperwork and comfort. Add Maslow's logic: life before safety, safety before comfort — a woman with pre-eclampsia symptoms comes before a newborn's routine vitamin K, and both come before the notes.\n\nThen organise the possible. Start the shift with a walk-through: lay eyes on every patient and rank the list. **Cluster care** — combine observations, medications and charting for the same woman into one visit instead of three. Delegate within scope — the aide can walk her, a colleague can cover the other labour room. Document in real time, even one line, because an unrecorded event doubles later. Protect the plan from interruptions by triaging them too: ask who is asking, for whom, and how sick. And when two emergencies pull you in opposite directions, the first clinical act is to **call for help** — one midwife cannot split herself, and a shouted 'come now' is therapy for both patients. Accept that not everything will be done; the skill is choosing correctly what must.",
+        body: "Prioritise by risk, not by noise. Unstable before stable; actual problems before potential ones; and ABC first — **airway, breathing, circulation** — which in maternity translates to: bleeding, convulsion, respiratory distress and fetal distress outrank routine observations, paperwork and comfort. Add Maslow's logic: life before safety, safety before comfort — a woman with pre-eclampsia symptoms comes before a newborn's routine vitamin K, and both come before the notes.\n\nThen organise the possible. Start the shift with a walk-through: lay eyes on every patient and rank the list. **Cluster care** — combine observations, medications and charting for the same woman into one visit instead of three. Delegate within scope — the aide can walk her, a colleague can cover the other labour room. Document in real time, even one line, because an unrecorded event doubles later. Protect the plan from interruptions by triaging them too: ask who is asking, for whom, and how sick. And when two emergencies pull you in opposite directions, the first clinical act is to **call for help** — one nurse cannot split herself, and a shouted 'come now' is therapy for both patients. Accept that not everything will be done; the skill is choosing correctly what must.",
       },
       {
         type: "clinical_pearl",
-        body: "When two emergencies pull you at once, call for help before you move — one midwife cannot be in two rooms, and summoning support is the first treatment, not a confession of failure.",
+        body: "When two emergencies pull you at once, call for help before you move — one nurse cannot be in two rooms, and summoning support is the first treatment, not a confession of failure.",
       },
       {
         type: "case",
         title: "On the ward",
-        body: "07:30 on a district maternity ward: bed 1 is 8 cm dilated with meconium-stained liquor; bed 3, day 1 after caesarean, has a blood pressure of 150/100 and now complains of headache and blurred vision; a newborn is due vitamin K and a first feed; the night notes are unsigned.\n\nIn what order do you act?\n\nAnswer: Two women are simultaneously high-risk, so first call for help — alert the senior midwife and obstetric review so both rooms can be covered in parallel. You stay with bed 3: severe pre-eclampsia with neurological signs is a convulsion waiting, so you assess, position her safely, prepare magnesium sulphate per protocol and keep her never alone. The labour room with meconium needs continuous fetal heart monitoring and preparation for possible urgent delivery — your summoned colleague and review take that, with a clear SBAR. Vitamin K and the first feed are essential but not minute-critical; once acute coverage is secured, they go to the next capable pair of hands. The unsigned notes are last, and the delay itself is documented. Priority follows risk, not the order of bells.",
+        body: "07:30 on a district maternity ward: bed 1 is 8 cm dilated with meconium-stained liquor; bed 3, day 1 after caesarean, has a blood pressure of 150/100 and now complains of headache and blurred vision; a newborn is due vitamin K and a first feed; the night notes are unsigned.\n\nIn what order do you act?\n\nAnswer: Two women are simultaneously high-risk, so first call for help — alert the senior nurse and obstetric review so both rooms can be covered in parallel. You stay with bed 3: severe pre-eclampsia with neurological signs is a convulsion waiting, so you assess, position her safely, prepare magnesium sulphate per protocol and keep her never alone. The labour room with meconium needs continuous fetal heart monitoring and preparation for possible urgent delivery — your summoned colleague and review take that, with a clear SBAR. Vitamin K and the first feed are essential but not minute-critical; once acute coverage is secured, they go to the next capable pair of hands. The unsigned notes are last, and the delay itself is documented. Priority follows risk, not the order of bells.",
       },
       {
         type: "memory_trick",
@@ -1802,7 +1802,7 @@ export const lessons: SeedFullLesson[] = [
         ],
         correctIndex: 1,
         explanation:
-          "One midwife cannot cover two rooms, so summoning help is the first clinical act — it starts coverage for both patients at once. Choosing one, waiting or documenting first all leave someone unwatched.",
+          "One nurse cannot cover two rooms, so summoning help is the first clinical act — it starts coverage for both patients at once. Choosing one, waiting or documenting first all leave someone unwatched.",
         courseSlug: "clinical-practice",
       },
     ],
@@ -1820,7 +1820,7 @@ export const lessons: SeedFullLesson[] = [
       {
         topic: "Organising Care",
         front: "What is the rule when two emergencies pull at once?",
-        back: "Call for help first — summoning support is the first clinical act, not an admission of failure; one midwife cannot cover two rooms.",
+        back: "Call for help first — summoning support is the first clinical act, not an admission of failure; one nurse cannot cover two rooms.",
       },
     ],
     sources: [
@@ -1838,7 +1838,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Nursing and Midwifery Council of Ghana",
-        title: "Code of Professional Conduct for Nurses and Midwives",
+        title: "Code of Professional Conduct for Nurses and Nurses",
         note: "Delegation and scope — obtain current version from NMC Ghana.",
       },
     ],
@@ -1878,7 +1878,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "A student midwife keeps replaying a night PPH: when the senior called for IV access she froze for what felt like a minute, and someone else got the line. The woman was transfused and survived, but the student now cannot sleep on postnatal wards.\n\nHow does she turn this into growth instead of a scar?\n\nAnswer: She runs Gibbs on paper. Description: she was asked for an IV during a PPH and did not attempt it. Feelings: terror, and shame at being seen frozen. Evaluation: the outcome was good, but her delay was real. Analysis: she had never practised cannulation on a call-shift, and no one had told her who hands over which tasks in emergencies. Conclusion: it was a skill gap and a system gap, not a character verdict. Action plan: ten supervised cannulations on her next rostered shifts; a one-card 'emergency roles' summary agreed with her senior; a request to debrief the case at the next staff meeting. The loop ends in plans — that is reflection. Playing the frozen minute nightly, with no plan, would be rumination — and it cures nothing.",
+        body: "A student nurse keeps replaying a night PPH: when the senior called for IV access she froze for what felt like a minute, and someone else got the line. The woman was transfused and survived, but the student now cannot sleep on postnatal wards.\n\nHow does she turn this into growth instead of a scar?\n\nAnswer: She runs Gibbs on paper. Description: she was asked for an IV during a PPH and did not attempt it. Feelings: terror, and shame at being seen frozen. Evaluation: the outcome was good, but her delay was real. Analysis: she had never practised cannulation on a call-shift, and no one had told her who hands over which tasks in emergencies. Conclusion: it was a skill gap and a system gap, not a character verdict. Action plan: ten supervised cannulations on her next rostered shifts; a one-card 'emergency roles' summary agreed with her senior; a request to debrief the case at the next staff meeting. The loop ends in plans — that is reflection. Playing the frozen minute nightly, with no plan, would be rumination — and it cures nothing.",
       },
       {
         type: "memory_trick",
@@ -1971,7 +1971,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Nursing and Midwifery Council of Ghana",
-        title: "Code of Professional Conduct for Nurses and Midwives",
+        title: "Code of Professional Conduct for Nurses and Nurses",
         note: "Frames lifelong-learning obligations; reflection doubles as portfolio evidence — obtain current version.",
       },
     ],
@@ -2011,7 +2011,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "You reach for oxytocin and ergometrine vials that sit side by side and look nearly identical. Something makes you pause — and you find you were one label away from the wrong drug. No harm done. A colleague shrugs: 'Nothing happened, why fill a form?'\n\nWhat do you do, and why?\n\nAnswer: You report the near miss the same day, on the incident form, in facts: the vials, the shelf, the near pick. Nothing happened this time because you paused — but the next midwife will be busier, the light dimmer, and the pause may not come. Latent conditions like look-alike storage produce active errors exactly when the holes align; your form is the new cheese slice. Then act at the bedside too: physically separate the vials, label the shelf, and raise it at the next meeting. Staying silent to avoid 'trouble' protects no one — it just schedules the error for someone else. In a just culture the report is welcomed, not punished; that is the culture you are building by writing it.",
+        body: "You reach for oxytocin and ergometrine vials that sit side by side and look nearly identical. Something makes you pause — and you find you were one label away from the wrong drug. No harm done. A colleague shrugs: 'Nothing happened, why fill a form?'\n\nWhat do you do, and why?\n\nAnswer: You report the near miss the same day, on the incident form, in facts: the vials, the shelf, the near pick. Nothing happened this time because you paused — but the next nurse will be busier, the light dimmer, and the pause may not come. Latent conditions like look-alike storage produce active errors exactly when the holes align; your form is the new cheese slice. Then act at the bedside too: physically separate the vials, label the shelf, and raise it at the next meeting. Staying silent to avoid 'trouble' protects no one — it just schedules the error for someone else. In a just culture the report is welcomed, not punished; that is the culture you are building by writing it.",
       },
       {
         type: "memory_trick",
@@ -2104,7 +2104,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Nursing and Midwifery Council of Ghana",
-        title: "Code of Professional Conduct for Nurses and Midwives",
+        title: "Code of Professional Conduct for Nurses and Nurses",
         note: "Duty of candour and reporting — obtain current version.",
       },
     ],
@@ -2130,12 +2130,12 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "When a woman haemorrhages at midnight, the people who save her include the midwife who saw it first, the anaesthetist who takes her to theatre, the laboratory scientist who crossmatches blood in twenty minutes, the porter who runs, and the cleaner who kept the theatre ready. Modern maternity care is a relay of specialists — and the midwife is often the one holding the baton for the whole lap.\n\nTeamwork is therefore a clinical skill, not a soft one. This lesson covers who brings what — and, just as vital, how to speak up when you see something wrong, even when you are the most junior person in the room.",
+        body: "When a woman haemorrhages at midnight, the people who save her include the nurse who saw it first, the anaesthetist who takes her to theatre, the laboratory scientist who crossmatches blood in twenty minutes, the porter who runs, and the cleaner who kept the theatre ready. Modern maternity care is a relay of specialists — and the nurse is often the one holding the baton for the whole lap.\n\nTeamwork is therefore a clinical skill, not a soft one. This lesson covers who brings what — and, just as vital, how to speak up when you see something wrong, even when you are the most junior person in the room.",
       },
       {
         type: "text",
         title: "The core ideas",
-        body: "Know the cast. The **obstetrician** leads surgical and complex care; the **anaesthetist** owns pain relief, epidurals and the airway in theatre; the **paediatrician or newborn team** receives the compromised baby; the **pharmacist** guards doses and interactions — your phone call about a magnesium sulphate concentration is cheaper than an overdose; the **laboratory and blood bank** deliver the haemoglobin and crossmatched units; **physiotherapists**, **dietitians** and **social welfare** rebuild function, nutrition and safe discharge. Each sees one piece; the midwife often sees the whole woman across time — which is why your summary is valuable at every team meeting.\n\nTeams function on five pillars: shared goals spoken aloud at huddles, clear roles, **closed-loop communication** — orders repeated back and confirmed — mutual support, and situation monitoring, where everyone cross-checks everyone. Under them all sits **psychological safety**: the belief that you can speak without being punished. Tools give it teeth: **CUS** — 'I am Concerned / I am Uncomfortable / this is a Safety issue' — and the **two-challenge rule**: raise your concern twice; if it is unresolved, escalate to the next senior, respectfully and immediately. Speaking up is not disrespect; in aviation and in medicine alike, silence at the table has cost more lives than boldness ever has.",
+        body: "Know the cast. The **obstetrician** leads surgical and complex care; the **anaesthetist** owns pain relief, epidurals and the airway in theatre; the **paediatrician or newborn team** receives the compromised baby; the **pharmacist** guards doses and interactions — your phone call about a magnesium sulphate concentration is cheaper than an overdose; the **laboratory and blood bank** deliver the haemoglobin and crossmatched units; **physiotherapists**, **dietitians** and **social welfare** rebuild function, nutrition and safe discharge. Each sees one piece; the nurse often sees the whole woman across time — which is why your summary is valuable at every team meeting.\n\nTeams function on five pillars: shared goals spoken aloud at huddles, clear roles, **closed-loop communication** — orders repeated back and confirmed — mutual support, and situation monitoring, where everyone cross-checks everyone. Under them all sits **psychological safety**: the belief that you can speak without being punished. Tools give it teeth: **CUS** — 'I am Concerned / I am Uncomfortable / this is a Safety issue' — and the **two-challenge rule**: raise your concern twice; if it is unresolved, escalate to the next senior, respectfully and immediately. Speaking up is not disrespect; in aviation and in medicine alike, silence at the table has cost more lives than boldness ever has.",
       },
       {
         type: "clinical_pearl",
@@ -2144,7 +2144,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "During an emergency for a woman with eclampsia, you hear the resident order 'magnesium 10 grams IV now'. Your understanding of the protocol is a 4-gram IV loading dose — 10 grams IV could stop her breathing.\n\nHow do you raise it?\n\nAnswer: With graded assertiveness, anchored to the patient: 'I'm concerned — I understood the IV loading dose is 4 grams; can we re-verify?' If the resident confirms 10 grams, you challenge a second time, referencing the protocol aloud; if it is still unresolved, you escalate immediately to the consultant or senior midwife — that is the two-challenge rule, and it exists exactly for this minute. Meanwhile, closed-loop the eventual order: repeat the dose back before it is given. You do not silently assume seniors are right — fatigue and stress make seniors human — and you do not shout across the room. Patient safety outranks hierarchy, every single time; the team that thanks you afterwards is the team worth working on.",
+        body: "During an emergency for a woman with eclampsia, you hear the resident order 'magnesium 10 grams IV now'. Your understanding of the protocol is a 4-gram IV loading dose — 10 grams IV could stop her breathing.\n\nHow do you raise it?\n\nAnswer: With graded assertiveness, anchored to the patient: 'I'm concerned — I understood the IV loading dose is 4 grams; can we re-verify?' If the resident confirms 10 grams, you challenge a second time, referencing the protocol aloud; if it is still unresolved, you escalate immediately to the consultant or senior nurse — that is the two-challenge rule, and it exists exactly for this minute. Meanwhile, closed-loop the eventual order: repeat the dose back before it is given. You do not silently assume seniors are right — fatigue and stress make seniors human — and you do not shout across the room. Patient safety outranks hierarchy, every single time; the team that thanks you afterwards is the team worth working on.",
       },
       {
         type: "memory_trick",
@@ -2237,7 +2237,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Nursing and Midwifery Council of Ghana",
-        title: "Code of Professional Conduct for Nurses and Midwives",
+        title: "Code of Professional Conduct for Nurses and Nurses",
         note: "Obtain current version from NMC Ghana.",
       },
     ],
@@ -2249,7 +2249,7 @@ export const lessons: SeedFullLesson[] = [
     moduleTitle: "Growing into the Team",
     lessonTitle: "Caring for Yourself While Caring for Others",
     description:
-      "The ward gets the midwife you bring to it. Sleep, boundaries, debriefs and the courage to ask for help — the self-care that makes a long career possible.",
+      "The ward gets the nurse you bring to it. Sleep, boundaries, debriefs and the courage to ask for help — the self-care that makes a long career possible.",
     difficulty: "Easy",
     durationMin: 12,
     objectives: [
@@ -2268,16 +2268,16 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The core ideas",
-        body: "Learn the enemy's shape. Burnout has three dimensions: **emotional exhaustion** — nothing left in the tank; **depersonalization** — patients become 'the PPH in bed 3', and cynicism creeps into your voice; **reduced accomplishment** — 'nothing I do matters'. Its cousin, compassion fatigue, comes from repeated exposure to suffering. And after acute events — a maternal death, an aggressive relative, a resuscitated baby — stress reactions like replaying images, numbness and irritability are normal, and usually ease within days to a few weeks. What matters is the trend.\n\nBuild the defences while you are still well. The basics are boringly powerful: protected sleep even after nights, real food, movement, and your faith or spiritual practice as an anchor. Mark the border between ward and life with a small ritual — changing your clothes, a short walk, three lines in a notebook — so the shift does not follow you home. After every bad event, debrief with the team and talk it through with someone trusted; silence converts stress into sediment. Learn your own early warning signs — Sunday dread, a shortening temper at home, headaches, dreams about the ward — and check on colleagues the way you wish someone would check on you. And when the signs persist, asking for help — a mentor, a senior, counselling through your service or association — is professionalism, not weakness. The strongest midwives you will ever meet are the ones who learned this early.",
+        body: "Learn the enemy's shape. Burnout has three dimensions: **emotional exhaustion** — nothing left in the tank; **depersonalization** — patients become 'the PPH in bed 3', and cynicism creeps into your voice; **reduced accomplishment** — 'nothing I do matters'. Its cousin, compassion fatigue, comes from repeated exposure to suffering. And after acute events — a maternal death, an aggressive relative, a resuscitated baby — stress reactions like replaying images, numbness and irritability are normal, and usually ease within days to a few weeks. What matters is the trend.\n\nBuild the defences while you are still well. The basics are boringly powerful: protected sleep even after nights, real food, movement, and your faith or spiritual practice as an anchor. Mark the border between ward and life with a small ritual — changing your clothes, a short walk, three lines in a notebook — so the shift does not follow you home. After every bad event, debrief with the team and talk it through with someone trusted; silence converts stress into sediment. Learn your own early warning signs — Sunday dread, a shortening temper at home, headaches, dreams about the ward — and check on colleagues the way you wish someone would check on you. And when the signs persist, asking for help — a mentor, a senior, counselling through your service or association — is professionalism, not weakness. The strongest nurses you will ever meet are the ones who learned this early.",
       },
       {
         type: "clinical_pearl",
-        body: "You cannot pour from an empty calabash. The ward gets the midwife you bring to it — rested, fed and human. Protecting yourself is protecting them, and it is not negotiable.",
+        body: "You cannot pour from an empty calabash. The ward gets the nurse you bring to it — rested, fed and human. Protecting yourself is protecting them, and it is not negotiable.",
       },
       {
         type: "case",
         title: "On the ward",
-        body: "A week after a maternal death on her shift, a student midwife finds herself snapping at juniors, avoiding the ward where it happened, and dreaming of the family's crying. A colleague advises her to 'be strong and pray about it'.\n\nWhat is actually happening, and what should she do next?\n\nAnswer: She is having a stress reaction to a traumatic event, and it is persisting beyond the first days — the images, the avoidance and the irritability say it has not processed itself out. 'Be strong' is bad medicine here: strength means acting. First, a structured debrief with her senior and the team who were there, to give the event words and a shared narrative. Then the basics: protected sleep, food, lighter duties for a few days if the service allows, and one trusted person — mentor, counsellor or chaplain — to talk it through properly. If the dreams and avoidance are still there in a few weeks, she should seek formal counselling through her service or association without embarrassment; this is exactly what those pathways exist for. And the colleague who said 'be strong' needs the same lesson — checking in beats advising silence.",
+        body: "A week after a maternal death on her shift, a student nurse finds herself snapping at juniors, avoiding the ward where it happened, and dreaming of the family's crying. A colleague advises her to 'be strong and pray about it'.\n\nWhat is actually happening, and what should she do next?\n\nAnswer: She is having a stress reaction to a traumatic event, and it is persisting beyond the first days — the images, the avoidance and the irritability say it has not processed itself out. 'Be strong' is bad medicine here: strength means acting. First, a structured debrief with her senior and the team who were there, to give the event words and a shared narrative. Then the basics: protected sleep, food, lighter duties for a few days if the service allows, and one trusted person — mentor, counsellor or chaplain — to talk it through properly. If the dreams and avoidance are still there in a few weeks, she should seek formal counselling through her service or association without embarrassment; this is exactly what those pathways exist for. And the colleague who said 'be strong' needs the same lesson — checking in beats advising silence.",
       },
       {
         type: "memory_trick",
@@ -2309,9 +2309,9 @@ export const lessons: SeedFullLesson[] = [
         topic: "Self-Care and Burnout",
         type: "MCQ",
         difficulty: "Moderate",
-        stem: "Weeks after a maternal death on her ward, a midwife still has intrusive images, avoids the ward and is irritable at home. The most appropriate next step is:",
+        stem: "Weeks after a maternal death on her ward, a nurse still has intrusive images, avoids the ward and is irritable at home. The most appropriate next step is:",
         options: [
-          "Reassure her that this proves she is unsuited to midwifery",
+          "Reassure her that this proves she is unsuited to nursing",
           "Advise her to work more shifts to distract herself",
           "Wait another six months before acting",
           "Encourage structured debrief plus formal counselling through her service, since symptoms persisting weeks after trauma deserve care",
@@ -2329,7 +2329,7 @@ export const lessons: SeedFullLesson[] = [
         options: [
           "Because regulators require documented hobbies",
           "Because it looks good at interviews",
-          "Because fatigue and burnout degrade judgement and empathy — the ward receives the midwife you bring to it",
+          "Because fatigue and burnout degrade judgement and empathy — the ward receives the nurse you bring to it",
           "Because it reduces the number of shifts owed to colleagues",
         ],
         correctIndex: 2,
@@ -2371,7 +2371,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Nursing and Midwifery Council of Ghana",
-        title: "Code of Professional Conduct for Nurses and Midwives",
+        title: "Code of Professional Conduct for Nurses and Nurses",
         note: "Professional wellbeing and support — obtain current version.",
       },
     ],

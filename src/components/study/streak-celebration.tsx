@@ -12,12 +12,12 @@ export const STREAK_MILESTONES = [3, 7, 14, 30, 50, 100];
 export const STREAK_CELEBRATION_KEY = "mimie-streak-celebrated";
 
 const MILESTONE_MESSAGES: Record<number, string> = {
-  3: "Three days of showing up — that's how midwives are made.",
+  3: "Three days of showing up — that's how nurses are made.",
   7: "A full week! Your future patients are lucky to have you.",
   14: "Two weeks of steady fire — you're building real momentum.",
   30: "One whole month! This is dedication most people only dream of.",
   50: "Fifty days strong — your consistency is becoming clinical instinct.",
-  100: "One hundred days! This is the making of a truly dedicated midwife.",
+  100: "One hundred days! This is the making of a truly dedicated nurse.",
 };
 
 /**

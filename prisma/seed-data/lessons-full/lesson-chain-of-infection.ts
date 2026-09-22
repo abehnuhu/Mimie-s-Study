@@ -9,7 +9,7 @@ export const lessonChainOfInfection: SeedFullLesson = {
   durationMin: 15,
   objectives: [
     "By the end you can name the six links of the chain of infection in order.",
-    "By the end you can match each link to real midwifery examples — blood, instruments, hands and mucous membranes.",
+    "By the end you can match each link to real nursing examples — blood, instruments, hands and mucous membranes.",
     "By the end you can explain how hand hygiene, PPE, safe sharps handling and sterilisation each break specific links.",
     "By the end you can apply standard precautions — and explain why they protect you with every patient, not just the infected ones.",
     "By the end you can counsel a family kindly and practically about protecting a newborn from infection.",
@@ -29,7 +29,7 @@ export const lessonChainOfInfection: SeedFullLesson = {
     },
     {
       type: "table",
-      title: "The six links in midwifery colours",
+      title: "The six links in nursing colours",
       body: "| Link | What it means | Maternity example |\n|---|---|---|\n| Infectious agent | The organism itself — bacterium, virus, fungus, parasite | HIV, hepatitis B, group B streptococcus, staphylococci |\n| Reservoir | Where the agent lives and multiplies | Blood and body fluids, the birth canal, unwashed hands, unsterilised instruments, standing water |\n| Portal of exit | The route out of the reservoir | Blood splash, droplets from a cough, vaginal secretions, fluid on a used needle |\n| Mode of transmission | The road between hosts | Contact via hands, droplets, sharps injuries, contaminated instruments |\n| Portal of entry | The route into the new host | Broken skin, mucous membranes of eyes and mouth, the umbilical cord stump |\n| Susceptible host | A person whose defences can be overwhelmed | Newborns, pregnant women, people who are malnourished or unimmunised |",
     },
     {
@@ -45,7 +45,7 @@ export const lessonChainOfInfection: SeedFullLesson = {
     {
       type: "text",
       title: "You are part of the chain too",
-      body: "The chain of infection is not something that happens around you — you are a potential link in it. Hands are the classic road, but uniforms, phones, pens, shared trolleys and even a stethoscope can serve as reservoirs between patients.\n\nThis is why infection prevention discipline includes the small unglamorous habits: cleaning your stethoscope between patients, keeping personal items off beds and treatment surfaces, and changing out of contaminated clothing between tasks.\n\nFar from being paranoia, this is professional identity: the midwife who knows she is part of the chain is the one who keeps it broken — for her patients and for herself.",
+      body: "The chain of infection is not something that happens around you — you are a potential link in it. Hands are the classic road, but uniforms, phones, pens, shared trolleys and even a stethoscope can serve as reservoirs between patients.\n\nThis is why infection prevention discipline includes the small unglamorous habits: cleaning your stethoscope between patients, keeping personal items off beds and treatment surfaces, and changing out of contaminated clothing between tasks.\n\nFar from being paranoia, this is professional identity: the nurse who knows she is part of the chain is the one who keeps it broken — for her patients and for herself.",
     },
     {
       type: "clinical_pearl",
@@ -65,7 +65,7 @@ export const lessonChainOfInfection: SeedFullLesson = {
     {
       type: "case",
       title: "The naming ceremony visitor",
-      body: "Mimie, you are the student midwife on the postnatal ward. It is visiting hour, and the space around cot 3 is full of joy — Madam Dede's baby is being admired by relatives, passed from arm to arm, and kissed on the cheek by a cousin who has just mentioned 'a small cold sore' on her lip.\n\nWho is the susceptible host in this room, and which links are being passed around with the baby? With a cold sore on a lip, which portals of entry sit dangerously close to it? And what could you say to this happy family that keeps both the joy and the baby safe?\n\nNotice that nothing here requires a lecture or an alarm. You are breaking the chain with a warm sentence and a basin of water at the door: 'Please, everyone, hands washed before you hold her — and let's keep kisses off her face while that sore heals.' Kindness is a transmission-interruption strategy.",
+      body: "Mimie, you are the student nurse on the postnatal ward. It is visiting hour, and the space around cot 3 is full of joy — Madam Dede's baby is being admired by relatives, passed from arm to arm, and kissed on the cheek by a cousin who has just mentioned 'a small cold sore' on her lip.\n\nWho is the susceptible host in this room, and which links are being passed around with the baby? With a cold sore on a lip, which portals of entry sit dangerously close to it? And what could you say to this happy family that keeps both the joy and the baby safe?\n\nNotice that nothing here requires a lecture or an alarm. You are breaking the chain with a warm sentence and a basin of water at the door: 'Please, everyone, hands washed before you hold her — and let's keep kisses off her face while that sore heals.' Kindness is a transmission-interruption strategy.",
     },
     {
       type: "quiz_prompt",
@@ -113,15 +113,15 @@ export const lessonChainOfInfection: SeedFullLesson = {
       topic: "Newborn Infection Prevention",
       type: "CLINICAL_SCENARIO",
       difficulty: "Clinical Reasoning",
-      stem: "Visiting hour on the postnatal ward: a newborn is being passed happily among relatives, and one who mentions 'a small cold sore on my lip' leans in to kiss the baby's cheek. Which response is most appropriate for the student midwife?",
+      stem: "Visiting hour on the postnatal ward: a newborn is being passed happily among relatives, and one who mentions 'a small cold sore on my lip' leans in to kiss the baby's cheek. Which response is most appropriate for the student nurse?",
       options: [
         "Say nothing — cold sores are so common that mentioning it would embarrass the family",
-        "Kindly ask everyone to wash hands before holding the baby, gently suggest kisses stay off the baby's face until the sore heals, and mention the contact to the midwife in charge",
+        "Kindly ask everyone to wash hands before holding the baby, gently suggest kisses stay off the baby's face until the sore heals, and mention the contact to the nurse in charge",
         "Take the baby away from the mother until all visitors have left the ward",
         "Advise the mother to stop breastfeeding until the sore has completely healed",
       ],
       correctIndex: 1,
-      explanation: "Cold sores are caused by a virus that can be dangerous to newborns, and kissing is a direct route from a portal of exit (the sore) to portals of entry (the baby's skin and mouth). The chain can be broken kindly: hand hygiene for every handler, kisses deferred while the sore is active, and a report to the midwife in charge so the team can watch for any signs in the baby. Preventing infection and preserving the joy of the family are not opposites — the tone is part of the treatment.",
+      explanation: "Cold sores are caused by a virus that can be dangerous to newborns, and kissing is a direct route from a portal of exit (the sore) to portals of entry (the baby's skin and mouth). The chain can be broken kindly: hand hygiene for every handler, kisses deferred while the sore is active, and a report to the nurse in charge so the team can watch for any signs in the baby. Preventing infection and preserving the joy of the family are not opposites — the tone is part of the treatment.",
       whyOthers: {
         A: "Silence keeps the transmission route wide open — embarrassment is a small price compared with the risk of serious newborn infection.",
         C: "Separating mother and baby is disproportionate and harmful to bonding and feeding; the chain can be broken without isolating anyone.",
@@ -173,7 +173,7 @@ export const lessonChainOfInfection: SeedFullLesson = {
       topic: "Sharps Safety",
       type: "MCQ",
       difficulty: "Hard",
-      stem: "After a delivery, you are clearing the trolley when a used needle pierces your glove and skin. What is the most appropriate immediate action for a student midwife?",
+      stem: "After a delivery, you are clearing the trolley when a used needle pierces your glove and skin. What is the most appropriate immediate action for a student nurse?",
       options: [
         "Squeeze the wound hard to expel as much blood as possible, then finish your tasks quietly",
         "Wash the site with soap and running water, report immediately to your supervisor, and follow the facility's post-exposure management pathway",
@@ -256,7 +256,7 @@ export const lessonChainOfInfection: SeedFullLesson = {
     },
     {
       organization: "Elsevier",
-      title: "Myles Textbook for Midwives",
+      title: "Myles Textbook for Nurses",
       year: "2020 (17th edition)",
       note: "Educational source — verify current edition.",
     },

@@ -334,7 +334,7 @@ export function WardWatchGame() {
       fb = {
         kind,
         title: `Not ${picked.name.split("·").pop()?.trim() ?? "this bed"} 🌸`,
-        body: `${picked.context} is actually reassuring — every one of her observations sits in the safe range. The patient in danger was ${danger.context} (${danger.name}): ${danger.note ?? "her observations are deteriorating"}. The safe next step: ${best.text}.`,
+        body: `${picked.context} is actually reassuring — every one of their observations sits in the safe range. The patient in danger was ${danger.context} (${danger.name}): ${danger.note ?? "their observations are deteriorating"}. The safe next step: ${best.text}.`,
       };
     } else if (kind === "bad-action") {
       fb = {

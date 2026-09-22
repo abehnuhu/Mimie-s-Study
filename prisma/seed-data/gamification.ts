@@ -10,7 +10,7 @@ export const badges: SeedBadge[] = [
   {
     slug: "first-step",
     title: "First Step",
-    description: "The journey of a thousand midwifery hours begins with one quiet evening of study. You started — and starting is the hardest part.",
+    description: "The journey of a thousand nursing hours begins with one quiet evening of study. You started — and starting is the hardest part.",
     icon: "Footprints",
     criteria: "Complete your first lesson or quiz attempt.",
     xp: 50
@@ -26,31 +26,31 @@ export const badges: SeedBadge[] = [
   {
     slug: "anatomy-queen",
     title: "Anatomy Queen",
-    description: "Fundus to femur, myometrium to mitral valve — you wear the crown of the body's map. Own it, Your Majesty.",
+    description: "Cranium to calcaneus, mitral valve to medulla — you wear the crown of the body's map. Own it, Your Majesty.",
     icon: "Scan",
     criteria: "Score 80% or higher on 5 anatomy & physiology quizzes.",
     xp: 100
   },
   {
     slug: "labour-pro",
-    title: "Labour Pro",
-    description: "Show to crowning, first stage to fourth — the story of labour now plays in your head like a favourite song.",
+    title: "Ward Round Pro",
+    description: "Systematic to the last bed — observations, patterns, priorities. You walk the ward the way it should be walked, every single shift.",
     icon: "HeartPulse",
-    criteria: "Complete all Normal Labour lessons and score 80% or higher on the course quiz.",
+    criteria: "Complete the clinical nursing skills lessons and score 80% or higher on the course quiz.",
     xp: 120
   },
   {
     slug: "baby-whisperer",
     title: "Baby Whisperer",
-    description: "You know what newborns are saying before they say it — grunts, recessions and all. The babies of Ghana are in good hands.",
+    description: "You know what newborns and children are saying before they say it — grunts, recessions and all. The little ones of Ghana are in good hands.",
     icon: "Baby",
-    criteria: "Complete the newborn care lessons and win the Newborn Challenge game.",
+    criteria: "Complete the maternal & child health lessons and win the Newborn Challenge game.",
     xp: 100
   },
   {
     slug: "clinical-thinker",
     title: "Clinical Thinker",
-    description: "While others memorise, you reason. You spot the one finding that matters first — that instinct is what midwifery is made of.",
+    description: "While others memorise, you reason. You spot the one finding that matters first — that instinct is what nursing is made of.",
     icon: "Brain",
     criteria: "Correctly answer 10 clinical reasoning or clinical scenario questions.",
     xp: 120
@@ -80,9 +80,9 @@ export const badges: SeedBadge[] = [
     xp: 80
   },
   {
-    slug: "future-midwife",
-    title: "Future Midwife",
-    description: "Anatomy, labour, newborns, ethics, research — you have walked the whole road and it has grown you. The profession is almost yours.",
+    slug: "future-nurse",
+    title: "Future Nurse",
+    description: "Anatomy, med-surg, community, ethics, research — you have walked the whole road and it has grown you. The profession is almost yours.",
     icon: "GraduationCap",
     criteria: "Reach Level 10 and complete at least one lesson in every year of the curriculum.",
     xp: 150
@@ -102,17 +102,17 @@ export const games: SeedGame[] = [
     unlockLevel: 1
   },
   {
-    slug: "fetal-position",
-    title: "Fetal Position Challenge",
-    description: "Read the palpation findings and name the lie, presentation and position like a confident senior student.",
+    slug: "gcs-challenge",
+    title: "GCS Challenge",
+    description: "Read the eye, verbal and motor findings and score the Glasgow Coma Scale like a confident senior student.",
     icon: "Compass",
     xpReward: 25,
     unlockLevel: 1
   },
   {
-    slug: "labour-timeline",
-    title: "Labour Timeline",
-    description: "Reorder the events of labour from show to firm fundus until the whole journey makes perfect sense.",
+    slug: "nursing-process-timeline",
+    title: "Nursing Process Timeline",
+    description: "Reorder the ADPIE journey from first assessment to revised plan until the whole process makes perfect sense.",
     icon: "ListOrdered",
     xpReward: 25,
     unlockLevel: 1
@@ -120,7 +120,7 @@ export const games: SeedGame[] = [
   {
     slug: "clinical-priority",
     title: "Clinical Priority",
-    description: "Four findings, one urgent — practise spotting which mother or baby needs you first, every single time.",
+    description: "Four findings, one urgent — practise spotting which patient needs you first, every single time.",
     icon: "AlertTriangle",
     xpReward: 30,
     unlockLevel: 2
@@ -151,8 +151,8 @@ export const games: SeedGame[] = [
   },
   {
     slug: "sixty-second",
-    title: "60-Second Midwife",
-    description: "Rapid-fire questions against the clock — how much midwifery can you trust under pressure?",
+    title: "60-Second Nurse",
+    description: "Rapid-fire questions against the clock — how much nursing can you trust under pressure?",
     icon: "Zap",
     xpReward: 35,
     unlockLevel: 3
@@ -176,7 +176,7 @@ export const games: SeedGame[] = [
   {
     slug: "picture-memory",
     title: "Picture Memory Match",
-    description: "Flip real ward photos and match each picture to its midwifery term — see it, name it, know it.",
+    description: "Flip real ward photos and match each picture to its nursing term — see it, name it, know it.",
     icon: "Heart",
     xpReward: 20,
     unlockLevel: 1
@@ -184,7 +184,7 @@ export const games: SeedGame[] = [
   {
     slug: "diagram-dash",
     title: "Diagram Dash",
-    description: "Drop the labels onto real photos — the delivery tray, the palpating hands, the newborn check.",
+    description: "Drop the labels onto real ward photos — the assessment trolley, the infection control corner, the treatment room.",
     icon: "Target",
     xpReward: 25,
     unlockLevel: 1
@@ -208,7 +208,7 @@ export const games: SeedGame[] = [
   {
     slug: "word-bloom",
     title: "Word Bloom",
-    description: "Guess the midwifery term letter by letter and keep the rose in bloom — every wrong petal falls gently away.",
+    description: "Guess the nursing term letter by letter and keep the rose in bloom — every wrong petal falls gently away.",
     icon: "Flower2",
     xpReward: 25,
     unlockLevel: 1
@@ -224,8 +224,8 @@ export const personalMessages: SeedPersonalMessage[] = [
   { text: "Okay Mimie… that question was trying to humble you 😂", tone: "playful" },
   { text: "Look how far you've come.", tone: "proud" },
   { text: "You show up even on the hard days. That's the whole secret.", tone: "warm" },
-  { text: "Future Midwife Mimie has entered the chat 💗", tone: "playful" },
-  { text: "One lesson at a time — soon you'll be catching babies like it's nothing.", tone: "warm" },
+  { text: "Future Nurse Mimie has entered the chat 💗", tone: "playful" },
+  { text: "One lesson at a time — soon you'll be running the ward like it's nothing.", tone: "warm" },
   { text: "That streak is glowing. Keep it blooming 🌸", tone: "proud" },
   { text: "Your future patients are so lucky they haven't met you yet.", tone: "warm" },
   { text: "Rest is productive too. Water break, superstar.", tone: "playful" }

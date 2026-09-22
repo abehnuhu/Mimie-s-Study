@@ -41,7 +41,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "Monday morning at a rural CHPS compound. Since Saturday, three women from the same farming village have arrived at the antenatal clinic with watery diarrhoea and vomiting. A fourth has sent word that two of her neighbours are also unwell. There is one midwife, no doctor, and the rain has slowed the road to the district capital. The midwife is with a woman in labour.\n\nWhat is your most important contribution right now — and what must you not do?\n\nAnswer: Your job is to report the cluster clearly and fast: tell the midwife immediately, write down each woman's name, village, date of onset and symptoms, and support an immediate call to the district disease control officer under IDSR while starting oral rehydration and strict hand hygiene for those affected. What you must not do is wait a week to 'see if more come', investigate the village yourself, or treat anyone unsupervised. Reporting is the treatment the whole community needs.",
+        body: "Monday morning at a rural CHPS compound. Since Saturday, three women from the same farming village have arrived at the antenatal clinic with watery diarrhoea and vomiting. A fourth has sent word that two of her neighbours are also unwell. There is one nurse, no doctor, and the rain has slowed the road to the district capital. The nurse is with a woman in labour.\n\nWhat is your most important contribution right now — and what must you not do?\n\nAnswer: Your job is to report the cluster clearly and fast: tell the nurse immediately, write down each woman's name, village, date of onset and symptoms, and support an immediate call to the district disease control officer under IDSR while starting oral rehydration and strict hand hygiene for those affected. What you must not do is wait a week to 'see if more come', investigate the village yourself, or treat anyone unsupervised. Reporting is the treatment the whole community needs.",
       },
       {
         type: "memory_trick",
@@ -76,9 +76,9 @@ export const lessons: SeedFullLesson[] = [
         stem: "You are a student when three women from one village arrive with watery diarrhoea in two days. What is your best first action?",
         options: [
           "Wait for a fifth case so the cluster is beyond doubt before mentioning it",
-          "Tell the senior midwife the same shift and document names, village, onset dates and symptoms",
+          "Tell the senior nurse the same shift and document names, village, onset dates and symptoms",
           "Travel to the village yourself to find more cases and take samples",
-          "Give each woman antibiotics from the store to treat them while the midwife is busy",
+          "Give each woman antibiotics from the store to treat them while the nurse is busy",
         ],
         correctIndex: 1,
         explanation:
@@ -160,12 +160,12 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "The night before your first placement you will hardly sleep. You will worry about your uniform, your greeting, whether anyone will explain anything at all. Every midwife you admire once stood at that same gate, heart pounding — and most of them were rescued by the simple habits of arriving early, mapping the place and asking good questions.\n\nThis lesson is your practical map for the first week: who to introduce yourself to, where to walk, what must stay private, and how to be genuinely useful before you know very much.",
+        body: "The night before your first placement you will hardly sleep. You will worry about your uniform, your greeting, whether anyone will explain anything at all. Every nurse you admire once stood at that same gate, heart pounding — and most of them were rescued by the simple habits of arriving early, mapping the place and asking good questions.\n\nThis lesson is your practical map for the first week: who to introduce yourself to, where to walk, what must stay private, and how to be genuinely useful before you know very much.",
       },
       {
         type: "text",
         title: "The core ideas",
-        body: "Start with **geography**. Walk the ward once with a notebook and find the emergency trolley, oxygen and suction, the delivery room, the sharps bins, and every handwashing point between them. Learn the names and roles of the team — the ward in-charge, your preceptor, the theatre staff, the cleaners — because everybody matters and everybody can teach you something.\n\nThen practise **introduction**. To staff: your full name and 'student midwife'. To patients: your name, your role, and what you would like to do — 'May I sit in while the midwife examines you?' Permission is not politeness; it is the rule. Wear your ID badge, arrive before handover, and keep a small notebook for the day's new words, reviewed each evening.\n\nFinally, **confidentiality starts on day one**. No patient names or stories outside the ward, nothing on social media ever — not even 'anonymised' stories. Nobody expects skill from you in week one; they expect punctuality, honesty and kindness.",
+        body: "Start with **geography**. Walk the ward once with a notebook and find the emergency trolley, oxygen and suction, the delivery room, the sharps bins, and every handwashing point between them. Learn the names and roles of the team — the ward in-charge, your preceptor, the theatre staff, the cleaners — because everybody matters and everybody can teach you something.\n\nThen practise **introduction**. To staff: your full name and 'student nurse'. To patients: your name, your role, and what you would like to do — 'May I sit in while the nurse examines you?' Permission is not politeness; it is the rule. Wear your ID badge, arrive before handover, and keep a small notebook for the day's new words, reviewed each evening.\n\nFinally, **confidentiality starts on day one**. No patient names or stories outside the ward, nothing on social media ever — not even 'anonymised' stories. Nobody expects skill from you in week one; they expect punctuality, honesty and kindness.",
       },
       {
         type: "clinical_pearl",
@@ -174,7 +174,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "You are two days into placement on a busy labour ward. A woman in early labour has just been admitted, and your preceptor asks you to observe the admission assessment. You introduce yourself and explain that you are a student. The woman looks away and says she does not want a student present — she prefers only the midwife. The room is crowded and the midwife is already pulling on gloves.\n\nWhat should you do next, and how should you feel about it?\n\nAnswer: Step back graciously, thank her for her honesty, and inform your preceptor straight away. Her consent governs who attends her care, and refusing a student is her right, not an insult. Telling your preceptor also matters practically, since observing admissions will need to be arranged another day — but the decision itself is hers, and honouring it calmly is part of the professionalism you are here to learn.",
+        body: "You are two days into placement on a busy labour ward. A woman in early labour has just been admitted, and your preceptor asks you to observe the admission assessment. You introduce yourself and explain that you are a student. The woman looks away and says she does not want a student present — she prefers only the nurse. The room is crowded and the nurse is already pulling on gloves.\n\nWhat should you do next, and how should you feel about it?\n\nAnswer: Step back graciously, thank her for her honesty, and inform your preceptor straight away. Her consent governs who attends her care, and refusing a student is her right, not an insult. Telling your preceptor also matters practically, since observing admissions will need to be arranged another day — but the decision itself is hers, and honouring it calmly is part of the professionalism you are here to learn.",
       },
       {
         type: "memory_trick",
@@ -239,7 +239,7 @@ export const lessons: SeedFullLesson[] = [
       {
         topic: "Introductions",
         front: "How do you introduce yourself to a patient on placement?",
-        back: "Your name, your role ('student midwife'), what you would like to do — then ask permission and respect the answer, whatever it is.",
+        back: "Your name, your role ('student nurse'), what you would like to do — then ask permission and respect the answer, whatever it is.",
       },
       {
         topic: "Confidentiality",
@@ -255,7 +255,7 @@ export const lessons: SeedFullLesson[] = [
     sources: [
       {
         organization: "Nursing and Midwifery Council of Ghana",
-        title: "Code of Professional Conduct for Nurses and Midwives",
+        title: "Code of Professional Conduct for Nurses and Nurses",
         note: "Governs dress, identification, confidentiality and student conduct; consult the current edition.",
       },
       {
@@ -291,7 +291,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Your preceptor is the midwife assigned to teach and supervise you — she signs off your competencies and she remembers exactly how you behaved on day one. A mentor is something different: a longer-term guide you and she choose for each other, and the relationship can outlive any single placement.\n\nMaking the most of supervision is a skill, not luck. This lesson is about asking questions well, receiving correction without wilting, and becoming the student supervisors genuinely enjoy teaching.",
+        body: "Your preceptor is the nurse assigned to teach and supervise you — she signs off your competencies and she remembers exactly how you behaved on day one. A mentor is something different: a longer-term guide you and she choose for each other, and the relationship can outlive any single placement.\n\nMaking the most of supervision is a skill, not luck. This lesson is about asking questions well, receiving correction without wilting, and becoming the student supervisors genuinely enjoy teaching.",
       },
       {
         type: "text",
@@ -323,7 +323,7 @@ export const lessons: SeedFullLesson[] = [
         difficulty: "Easy",
         stem: "Which statement correctly describes a preceptor?",
         options: [
-          "A senior midwife assigned to supervise you and sign off clinical competencies during placement",
+          "A senior nurse assigned to supervise you and sign off clinical competencies during placement",
           "A fellow student paired with you for peer revision before exams",
           "A lecturer who only meets you at the college for tutorials",
           "Any staff member who happens to be friendly to you on the ward",
@@ -392,11 +392,11 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Nursing and Midwifery Council of Ghana",
-        title: "Code of Professional Conduct for Nurses and Midwives",
+        title: "Code of Professional Conduct for Nurses and Nurses",
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
       },
     ],
@@ -436,7 +436,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "You are asked to do the 8 am observations on six postnatal women. Your second patient, day one after a difficult delivery, has a blood pressure of 152/96 — and when you ask how she feels, she says her head is 'paining' her badly. Four more beds are waiting on your list, and the ward is loud.\n\nShould you finish the other four patients first, or act now?\n\nAnswer: Act now. A postnatal woman with a raised blood pressure and a severe headache is possible pre-eclampsia — this is report-immediately territory, not finish-the-round territory. Call the midwife in charge at once, recheck the pressure with her, and stay with the patient. The routine observations for the other mothers will wait a few minutes; a developing emergency never will.",
+        body: "You are asked to do the 8 am observations on six postnatal women. Your second patient, day one after a difficult delivery, has a blood pressure of 152/96 — and when you ask how she feels, she says her head is 'paining' her badly. Four more beds are waiting on your list, and the ward is loud.\n\nShould you finish the other four patients first, or act now?\n\nAnswer: Act now. A postnatal woman with a raised blood pressure and a severe headache is possible pre-eclampsia — this is report-immediately territory, not finish-the-round territory. Call the nurse in charge at once, recheck the pressure with her, and stay with the patient. The routine observations for the other mothers will wait a few minutes; a developing emergency never will.",
       },
       {
         type: "memory_trick",
@@ -461,7 +461,7 @@ export const lessons: SeedFullLesson[] = [
         ],
         correctIndex: 1,
         explanation:
-          "SBAR ends with your Recommendation — the action you are suggesting, such as review by the senior midwife or urgent recheck of the blood pressure. It is the sentence that turns information into action.",
+          "SBAR ends with your Recommendation — the action you are suggesting, such as review by the senior nurse or urgent recheck of the blood pressure. It is the sentence that turns information into action.",
         courseSlug: "basic-clinical-practice",
       },
       {
@@ -472,7 +472,7 @@ export const lessons: SeedFullLesson[] = [
         options: [
           "Chart the reading and continue with the remaining four patients first",
           "Recheck her pressure at the next routine round in four hours",
-          "Report to the midwife in charge immediately and stay with the patient",
+          "Report to the nurse in charge immediately and stay with the patient",
           "Give her paracetamol from the drug trolley for the headache",
         ],
         correctIndex: 2,
@@ -488,7 +488,7 @@ export const lessons: SeedFullLesson[] = [
         options: [
           "You may chart care at the end of the week if you remember it",
           "Care that is not documented cannot be known, continued or defended — for the patient, the next shift and the record",
-          "Only senior midwives are allowed to chart observations",
+          "Only senior nurses are allowed to chart observations",
           "Verbal reports to the next shift are a full replacement for notes",
         ],
         correctIndex: 1,
@@ -567,7 +567,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "Morning observations, day one after a caesarean section. The machine reads 85/50, and when you glance up the patient is pale and says the room is 'turning'. Your fingers find a pulse of 118, thin and fast. Five more beds are still on your list, and the ward round is due to start.\n\nWhat do you do with these numbers?\n\nAnswer: You do not simply chart them and move on. A falling blood pressure with a racing, thready pulse in a post-operative woman means bleeding or serious fluid loss until proven otherwise — call the midwife in charge immediately, stay with the patient, and describe exactly what you found and when. Numbers like these are not observations; they are an alarm. Finishing the round first would give a quiet abdomen time to hide a very loud problem.",
+        body: "Morning observations, day one after a caesarean section. The machine reads 85/50, and when you glance up the patient is pale and says the room is 'turning'. Your fingers find a pulse of 118, thin and fast. Five more beds are still on your list, and the ward round is due to start.\n\nWhat do you do with these numbers?\n\nAnswer: You do not simply chart them and move on. A falling blood pressure with a racing, thready pulse in a post-operative woman means bleeding or serious fluid loss until proven otherwise — call the nurse in charge immediately, stay with the patient, and describe exactly what you found and when. Numbers like these are not observations; they are an alarm. Finishing the round first would give a quiet abdomen time to hide a very loud problem.",
       },
       {
         type: "memory_trick",
@@ -620,7 +620,7 @@ export const lessons: SeedFullLesson[] = [
           "Chart the values and continue the observation round on the other beds",
           "Repeat the readings in four hours at the next scheduled round",
           "Encourage her to drink more water and reassess after breakfast",
-          "Report immediately to the midwife in charge and stay with the patient",
+          "Report immediately to the nurse in charge and stay with the patient",
         ],
         correctIndex: 3,
         explanation:
@@ -811,7 +811,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Your first midstream urine, your first high vaginal swab — collecting specimens with a real patient watching is a rite of passage. The good news is that the rules are few and they never change. Learn them once and every sample you collect will be worth the laboratory's time.\n\nThis lesson covers the rights of specimens, the technique for the common samples a midwifery student collects, and how to move them safely from bedside to bench.",
+        body: "Your first midstream urine, your first high vaginal swab — collecting specimens with a real patient watching is a rite of passage. The good news is that the rules are few and they never change. Learn them once and every sample you collect will be worth the laboratory's time.\n\nThis lesson covers the rights of specimens, the technique for the common samples a nursing student collects, and how to move them safely from bedside to bench.",
       },
       {
         type: "text",
@@ -942,7 +942,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "You already know the five moments and the thirty seconds. On the ward, though, knowledge is not the problem — habits are. At 2 a.m., with four babies crying and one midwife, what protects your patients is not memory but reflex.\n\nThis lesson is about turning hand hygiene and PPE from something you remember into something you simply do — especially when nobody is watching.",
+        body: "You already know the five moments and the thirty seconds. On the ward, though, knowledge is not the problem — habits are. At 2 a.m., with four babies crying and one nurse, what protects your patients is not memory but reflex.\n\nThis lesson is about turning hand hygiene and PPE from something you remember into something you simply do — especially when nobody is watching.",
       },
       {
         type: "text",
@@ -956,7 +956,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "Night duty in the special care baby unit. You are the only student on, three babies are crying, and the midwife is occupied with the sickest one. You move between the incubators — soothing one baby, adjusting a blanket on another, checking a feed chart for the third. You have not touched anything 'dirty'.\n\nWhat must happen between incubators, and why does it apply to you?\n\nAnswer: Hand hygiene between every single baby. Newborns are among the most susceptible hosts anywhere, and your hands carry whatever you last touched — including the previous baby's secretions. Comforting is still touching: both the before-touching and after-touching moments apply. Use the alcohol rub at the incubator if the sink is far away. The five seconds of rub is the cheapest protection these babies will receive all night, and 'the ward was busy' has never erased an infection.",
+        body: "Night duty in the special care baby unit. You are the only student on, three babies are crying, and the nurse is occupied with the sickest one. You move between the incubators — soothing one baby, adjusting a blanket on another, checking a feed chart for the third. You have not touched anything 'dirty'.\n\nWhat must happen between incubators, and why does it apply to you?\n\nAnswer: Hand hygiene between every single baby. Newborns are among the most susceptible hosts anywhere, and your hands carry whatever you last touched — including the previous baby's secretions. Comforting is still touching: both the before-touching and after-touching moments apply. Use the alcohol rub at the incubator if the sink is far away. The five seconds of rub is the cheapest protection these babies will receive all night, and 'the ward was busy' has never erased an infection.",
       },
       {
         type: "memory_trick",
@@ -1073,12 +1073,12 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "There is a sentence that has never harmed a patient, and you must learn to say it comfortably: 'I am not sure — I need help.' Knowing the edge of your competence is not weakness. It is the definition of a safe student, and one day it will be the definition of a safe midwife.\n\nThis lesson covers your scope as a student, the words to use when a task is beyond you, the escalation chain on any ward, and what to do when things go wrong anyway.",
+        body: "There is a sentence that has never harmed a patient, and you must learn to say it comfortably: 'I am not sure — I need help.' Knowing the edge of your competence is not weakness. It is the definition of a safe student, and one day it will be the definition of a safe nurse.\n\nThis lesson covers your scope as a student, the words to use when a task is beyond you, the escalation chain on any ward, and what to do when things go wrong anyway.",
       },
       {
         type: "text",
         title: "The core ideas",
-        body: "As a student you practise **under supervision**. Invasive procedures, medications and independent clinical decisions all require a supervisor — competencies are signed off one by one in your logbook, and until then, they are not yours to perform alone. You never take verbal orders, never chart as the qualified midwife, and never continue alone when unsure.\n\nLearn the **refusal script** and use it with a smile: 'I haven't been signed off for that yet — could you watch me do it?' No supervisor worth working for will punish that sentence. Know the **escalation chain**: your preceptor, the ward in-charge, the senior midwife, the medical officer — and know who is on call tonight. Deterioration, unexpected findings and your own uncertainty are all reportable events; you never need certainty to ask for help.\n\n**Errors** are handled in the open: recognise it, report it immediately, help put it right, and reflect on it afterwards. Errors reported are treated as training; errors hidden become disciplinary matters and harm patients twice.",
+        body: "As a student you practise **under supervision**. Invasive procedures, medications and independent clinical decisions all require a supervisor — competencies are signed off one by one in your logbook, and until then, they are not yours to perform alone. You never take verbal orders, never chart as the qualified nurse, and never continue alone when unsure.\n\nLearn the **refusal script** and use it with a smile: 'I haven't been signed off for that yet — could you watch me do it?' No supervisor worth working for will punish that sentence. Know the **escalation chain**: your preceptor, the ward in-charge, the senior nurse, the medical officer — and know who is on call tonight. Deterioration, unexpected findings and your own uncertainty are all reportable events; you never need certainty to ask for help.\n\n**Errors** are handled in the open: recognise it, report it immediately, help put it right, and reflect on it afterwards. Errors reported are treated as training; errors hidden become disciplinary matters and harm patients twice.",
       },
       {
         type: "clinical_pearl",
@@ -1087,7 +1087,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "Evening shift, short-staffed. The midwife in charge is in the delivery room with a woman in the second stage of labour. In the observation room next door, a postnatal woman calls you — her pad is soaked through, the second one in fifteen minutes, and when you feel her abdomen the fundus is soft. She looks pale and frightened.\n\nAs a student, what is your job in the next thirty seconds?\n\nAnswer: Raise the alarm loudly and immediately — call or shout for the midwife, press the call bell, and stay with the woman. Heavy bleeding with a soft fundus is a postpartum haemorrhage until proven otherwise, and this is not a condition a student manages alone. Your role is rapid escalation: fetch help, fetch instruments, stay with the patient and keep talking to her. In an emergency, the most dangerous student is the quiet one who tries to cope.",
+        body: "Evening shift, short-staffed. The nurse in charge is in the delivery room with a woman in the second stage of labour. In the observation room next door, a postnatal woman calls you — her pad is soaked through, the second one in fifteen minutes, and when you feel her abdomen the fundus is soft. She looks pale and frightened.\n\nAs a student, what is your job in the next thirty seconds?\n\nAnswer: Raise the alarm loudly and immediately — call or shout for the nurse, press the call bell, and stay with the woman. Heavy bleeding with a soft fundus is a postpartum haemorrhage until proven otherwise, and this is not a condition a student manages alone. Your role is rapid escalation: fetch help, fetch instruments, stay with the patient and keep talking to her. In an emergency, the most dangerous student is the quiet one who tries to cope.",
       },
       {
         type: "memory_trick",
@@ -1095,7 +1095,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         type: "summary",
-        body: "- Students practise under supervision: no medications, invasive procedures or independent decisions before sign-off.\n- Learn the script: 'I haven't been signed off for that — please watch me do it.'\n- Know your escalation chain — preceptor, ward in-charge, senior midwife, medical officer — and who is on call.\n- Uncertainty itself is a reason to escalate; you never need certainty to ask for help.\n- Errors: recognise, report, help put right, reflect. Hidden errors harm patients twice.",
+        body: "- Students practise under supervision: no medications, invasive procedures or independent decisions before sign-off.\n- Learn the script: 'I haven't been signed off for that — please watch me do it.'\n- Know your escalation chain — preceptor, ward in-charge, senior nurse, medical officer — and who is on call.\n- Uncertainty itself is a reason to escalate; you never need certainty to ask for help.\n- Errors: recognise, report, help put right, reflect. Hidden errors harm patients twice.",
       },
     ],
     questions: [
@@ -1119,11 +1119,11 @@ export const lessons: SeedFullLesson[] = [
         topic: "Escalation",
         type: "MCQ",
         difficulty: "Moderate",
-        stem: "The midwife in charge is busy with a delivery when you find a postnatal woman with a soaked pad and a soft fundus. What is your first action as a student?",
+        stem: "The nurse in charge is busy with a delivery when you find a postnatal woman with a soaked pad and a soft fundus. What is your first action as a student?",
         options: [
           "Begin managing the bleeding yourself — massage the fundus and fetch drugs",
           "Note it in the chart and mention it at handover",
-          "Call loudly for the midwife immediately, press the call bell, and stay with the woman",
+          "Call loudly for the nurse immediately, press the call bell, and stay with the woman",
           "Wait quietly for the delivery to finish so you do not disturb anyone",
         ],
         correctIndex: 2,
@@ -1157,7 +1157,7 @@ export const lessons: SeedFullLesson[] = [
       {
         topic: "Escalation",
         front: "Name the escalation chain on a typical ward.",
-        back: "Preceptor → ward in-charge → senior midwife → medical officer. Know who is on call each shift before you need them.",
+        back: "Preceptor → ward in-charge → senior nurse → medical officer. Know who is on call each shift before you need them.",
       },
       {
         topic: "Error Management",
@@ -1168,7 +1168,7 @@ export const lessons: SeedFullLesson[] = [
     sources: [
       {
         organization: "Nursing and Midwifery Council of Ghana",
-        title: "Code of Professional Conduct for Nurses and Midwives",
+        title: "Code of Professional Conduct for Nurses and Nurses",
       },
       {
         organization: "World Health Organization",
@@ -1203,7 +1203,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Long before you pick up a stethoscope, the diagnosis is walking toward you in words. Ask any experienced clinician and they will tell you: the history gives most of the answer, and examination and tests merely confirm it. That is why the best midwives are, first, very good listeners.\n\nThis lesson gives you a structure you can carry into every antenatal visit and every admission, so no part of the story that matters ever gets missed.",
+        body: "Long before you pick up a stethoscope, the diagnosis is walking toward you in words. Ask any experienced clinician and they will tell you: the history gives most of the answer, and examination and tests merely confirm it. That is why the best nurses are, first, very good listeners.\n\nThis lesson gives you a structure you can carry into every antenatal visit and every admission, so no part of the story that matters ever gets missed.",
       },
       {
         type: "text",
@@ -1309,7 +1309,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
       },
     ],
@@ -1349,7 +1349,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "A woman at 32 weeks waits her turn at a busy antenatal clinic and mentions, almost as an aside, that her head has been 'paining' her since yesterday. When you ask a little more, she says bright spots float in her eyes, her hands have looked 'thick' since the weekend, and her blood pressure reads 148/96. The waiting area is full and the queue is long.\n\nWhat does this cluster mean, and what happens now?\n\nAnswer: Severe headache with visual disturbance, swollen hands and a raised blood pressure at 32 weeks is pre-eclampsia until proven otherwise — a cluster of danger signs, not a headache. She must be seen by the senior midwife immediately and referred for urgent review the same day; her queue number is irrelevant now. Danger signs cancel routine — a finding only matters if it changes what happens next.",
+        body: "A woman at 32 weeks waits her turn at a busy antenatal clinic and mentions, almost as an aside, that her head has been 'paining' her since yesterday. When you ask a little more, she says bright spots float in her eyes, her hands have looked 'thick' since the weekend, and her blood pressure reads 148/96. The waiting area is full and the queue is long.\n\nWhat does this cluster mean, and what happens now?\n\nAnswer: Severe headache with visual disturbance, swollen hands and a raised blood pressure at 32 weeks is pre-eclampsia until proven otherwise — a cluster of danger signs, not a headache. She must be seen by the senior nurse immediately and referred for urgent review the same day; her queue number is irrelevant now. Danger signs cancel routine — a finding only matters if it changes what happens next.",
       },
       {
         type: "memory_trick",
@@ -1385,7 +1385,7 @@ export const lessons: SeedFullLesson[] = [
         options: [
           "Give paracetamol and let her complete the queue before review",
           "Book her for a routine follow-up next week to see if the headache settles",
-          "Immediate review by the senior midwife and same-day referral — treat as pre-eclampsia",
+          "Immediate review by the senior nurse and same-day referral — treat as pre-eclampsia",
           "Recheck her blood pressure at the next routine visit and compare",
         ],
         correctIndex: 2,
@@ -1441,7 +1441,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
       },
     ],
@@ -1472,7 +1472,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The core ideas",
-        body: "**Explain before touch**: 'I am going to feel your tummy now — is that okay?' Then, while your hands work, watch her face. The wince she hides is data — tenderness, fear and relief all announce themselves there before she says a word. Use her name, keep your words simple ('the baby's heartbeat', not 'auscultate the FHS'), and tell her what you are finding in plain language as you go.\n\n**Interpreters** need managing: brief them privately on what is coming, then speak to the woman — your eyes on her, not on him. Check understanding with **teach-back**: 'so I know I explained it well — tell me how you will take the tablets when you get home.' Her own words show you what actually landed. Allow silences instead of filling them, and when you hand over, pass on what you told her so the next midwife does not repeat or contradict it.",
+        body: "**Explain before touch**: 'I am going to feel your tummy now — is that okay?' Then, while your hands work, watch her face. The wince she hides is data — tenderness, fear and relief all announce themselves there before she says a word. Use her name, keep your words simple ('the baby's heartbeat', not 'auscultate the FHS'), and tell her what you are finding in plain language as you go.\n\n**Interpreters** need managing: brief them privately on what is coming, then speak to the woman — your eyes on her, not on him. Check understanding with **teach-back**: 'so I know I explained it well — tell me how you will take the tablets when you get home.' Her own words show you what actually landed. Allow silences instead of filling them, and when you hand over, pass on what you told her so the next nurse does not repeat or contradict it.",
       },
       {
         type: "clinical_pearl",
@@ -1481,7 +1481,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "You are practising abdominal palpation on a woman at 34 weeks, talking her through each step as taught. When you press on her right upper abdomen, her jaw tightens and she goes quiet — though she says she is 'fine'. Your fingers find definite tenderness in that spot, and she has no headache.\n\nWhat did the talking and watching add to your assessment — and what should you do with the finding?\n\nAnswer: Her face told you where to look before she told you anything — the tightening jaw flagged the tenderness your fingers then confirmed, and 'fine' was politeness, not data. Right-upper abdominal tenderness at 34 weeks, especially with headache, swelling or hypertension, can point to the liver involvement of severe pre-eclampsia. Report the finding to the midwife with her blood pressure and symptoms so the whole picture is judged — and chart exactly where the tenderness was. The conversation did not slow the examination; it found the finding.",
+        body: "You are practising abdominal palpation on a woman at 34 weeks, talking her through each step as taught. When you press on her right upper abdomen, her jaw tightens and she goes quiet — though she says she is 'fine'. Your fingers find definite tenderness in that spot, and she has no headache.\n\nWhat did the talking and watching add to your assessment — and what should you do with the finding?\n\nAnswer: Her face told you where to look before she told you anything — the tightening jaw flagged the tenderness your fingers then confirmed, and 'fine' was politeness, not data. Right-upper abdominal tenderness at 34 weeks, especially with headache, swelling or hypertension, can point to the liver involvement of severe pre-eclampsia. Report the finding to the nurse with her blood pressure and symptoms so the whole picture is judged — and chart exactly where the tenderness was. The conversation did not slow the examination; it found the finding.",
       },
       {
         type: "memory_trick",
@@ -1573,7 +1573,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2020 (17th edition)",
       },
     ],

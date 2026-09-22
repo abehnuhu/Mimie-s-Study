@@ -1,6 +1,6 @@
 # Mimie's Study
 
-A gamified midwifery learning academy — a single-page study app for midwifery students.
+A gamified nursing learning academy — a single-page study app for nursing students.
 Follow the curriculum, take quizzes, play review games, and watch your XP, level, and study streak grow.
 
 ## What's inside

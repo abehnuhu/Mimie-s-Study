@@ -17,7 +17,7 @@ export const lessons: SeedFullLesson[] = [
     difficulty: "Easy",
     durationMin: 12,
     objectives: [
-      "Define the six core pairs of directional terms used in anatomy and midwifery charting.",
+      "Define the six core pairs of directional terms used in anatomy and nursing charting.",
       "Explain why directional terms are always described from the patient's own body, never from yours.",
       "Apply directional terms to real ward descriptions such as fundal height, wounds and calf swelling.",
     ],
@@ -27,7 +27,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Every shift, you will describe what you see. The fundus is here. The wound is there. The baby's back lies against the mother's front. If your words are loose, the next midwife must guess — and guessing is how mistakes travel from shift to shift.\n\nAnatomy solves this with a small set of directional words. They are short, they are standard, and they mean exactly the same thing in every facility in Ghana and beyond. In this lesson you will meet the six working pairs and practise turning everyday descriptions into language any midwife can picture instantly.",
+        body: "Every shift, you will describe what you see. The fundus is here. The wound is there. The baby's back lies against the mother's front. If your words are loose, the next nurse must guess — and guessing is how mistakes travel from shift to shift.\n\nAnatomy solves this with a small set of directional words. They are short, they are standard, and they mean exactly the same thing in every facility in Ghana and beyond. In this lesson you will meet the six working pairs and practise turning everyday descriptions into language any nurse can picture instantly.",
       },
       {
         type: "text",
@@ -41,7 +41,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "It is a quiet night shift on a postnatal ward. A woman who delivered this morning complains of pain in her right leg. You find a tender, warm swelling on the medial side of her right calf, about six centimetres inferior to the back of the knee, and you report it in exactly those words. The senior midwife takes it seriously and orders a full assessment — calf pain after birth can signal a clot in a deep vein.\n\nWhy does your description work better than saying 'a painful spot on her leg'? And if she turns onto her left side to be examined, do any of your words change?\n\nAnswer: The standard words locate the swelling precisely for anyone reading the note, with no diagram needed — medial side of the right calf, inferior to the knee. None of the words change when she turns, because they are defined from her body in anatomical position, not from her posture or from where you happen to be standing.",
+        body: "It is a quiet night shift on a postnatal ward. A woman who delivered this morning complains of pain in her right leg. You find a tender, warm swelling on the medial side of her right calf, about six centimetres inferior to the back of the knee, and you report it in exactly those words. The senior nurse takes it seriously and orders a full assessment — calf pain after birth can signal a clot in a deep vein.\n\nWhy does your description work better than saying 'a painful spot on her leg'? And if she turns onto her left side to be examined, do any of your words change?\n\nAnswer: The standard words locate the swelling precisely for anyone reading the note, with no diagram needed — medial side of the right calf, inferior to the knee. None of the words change when she turns, because they are defined from her body in anatomical position, not from her posture or from where you happen to be standing.",
       },
       {
         type: "memory_trick",
@@ -49,7 +49,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         type: "summary",
-        body: "- Superior: toward the head. Inferior: toward the feet.\n- Anterior: front. Posterior: back — always the patient's front and back, not yours.\n- Medial: nearer the midline. Lateral: further from it.\n- Proximal: nearer the trunk along a limb. Distal: further from it — always relative, never absolute.\n- Superficial: near the surface. Deep: further in. Ipsilateral: same side. Contralateral: opposite side.\n- Chart from anatomical position so any midwife reads your note and sees exactly what you saw.",
+        body: "- Superior: toward the head. Inferior: toward the feet.\n- Anterior: front. Posterior: back — always the patient's front and back, not yours.\n- Medial: nearer the midline. Lateral: further from it.\n- Proximal: nearer the trunk along a limb. Distal: further from it — always relative, never absolute.\n- Superficial: near the surface. Deep: further in. Ipsilateral: same side. Contralateral: opposite side.\n- Chart from anatomical position so any nurse reads your note and sees exactly what you saw.",
       },
     ],
     questions: [
@@ -170,7 +170,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "A 20-year-old attends focused antenatal care at your CHPS compound at about 20 weeks by dates. The midwife palpates and asks you to chart the finding: fundus firm, midline, at the level of the umbilicus. Later she shows you the referral ultrasound report, which reads 'transverse view of the uterus, single fetus, active heart'.\n\nThe tutor asks you two questions. Which plane does the ultrasound slice run along, and what does that slice divide? And if a mid-sagittal view were taken instead, what would it show?\n\nAnswer: The transverse view slices along the horizontal transverse plane, dividing the body into superior and inferior parts — on the screen you see a cross-section. A mid-sagittal view would slice vertically through the exact midline, dividing the body into equal left and right halves and showing structures at the midline from front to back.",
+        body: "A 20-year-old attends focused antenatal care at your CHPS compound at about 20 weeks by dates. The nurse palpates and asks you to chart the finding: fundus firm, midline, at the level of the umbilicus. Later she shows you the referral ultrasound report, which reads 'transverse view of the uterus, single fetus, active heart'.\n\nThe tutor asks you two questions. Which plane does the ultrasound slice run along, and what does that slice divide? And if a mid-sagittal view were taken instead, what would it show?\n\nAnswer: The transverse view slices along the horizontal transverse plane, dividing the body into superior and inferior parts — on the screen you see a cross-section. A mid-sagittal view would slice vertically through the exact midline, dividing the body into equal left and right halves and showing structures at the midline from front to back.",
       },
       {
         type: "memory_trick",
@@ -413,12 +413,12 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         type: "clinical_pearl",
-        body: "Muscle cells stacked with mitochondria can work long and hard; cells short of fuel fail early. That is why in a long labour the midwife keeps the mother hydrated and encourages light, energy-giving food where the midwife in charge allows — you are feeding the uterus's mitochondria, not just the mother.",
+        body: "Muscle cells stacked with mitochondria can work long and hard; cells short of fuel fail early. That is why in a long labour the nurse keeps the mother hydrated and encourages light, energy-giving food where the nurse in charge allows — you are feeding the uterus's mitochondria, not just the mother.",
       },
       {
         type: "case",
         title: "On the ward",
-        body: "You are a student at a busy district hospital. A woman in early labour has been in the corridor since dawn with nothing to eat or drink, and she is visibly tiring. The senior midwife settles her, gives her sips of oral rehydration fluid, and arranges some light food, telling the worried relative, 'the womb is a muscle, and muscles need fuel'. She then turns to you with a question: which part of the woman's cells turns that food into usable energy, and why does a starved labour tire?\n\nAnswer: The mitochondria. They take glucose and oxygen and produce ATP, the fuel every cell runs on. The myometrium, the muscle wall of the uterus, spends ATP with every contraction — so a mother who is dehydrated and starved runs her uterine cells low on fuel, and contractions become weak and tired. Feeding and hydrating her supports the labour at the cellular level.",
+        body: "You are a student at a busy district hospital. A woman in early labour has been in the corridor since dawn with nothing to eat or drink, and she is visibly tiring. The senior nurse settles her, gives her sips of oral rehydration fluid, and arranges some light food, telling the worried relative, 'the womb is a muscle, and muscles need fuel'. She then turns to you with a question: which part of the woman's cells turns that food into usable energy, and why does a starved labour tire?\n\nAnswer: The mitochondria. They take glucose and oxygen and produce ATP, the fuel every cell runs on. The myometrium, the muscle wall of the uterus, spends ATP with every contraction — so a mother who is dehydrated and starved runs her uterine cells low on fuel, and contractions become weak and tired. Feeding and hydrating her supports the labour at the cellular level.",
       },
       {
         type: "memory_trick",
@@ -537,7 +537,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "At term, a woman is admitted for induction after her waters broke. The midwife starts a low-dose oxytocin drip and the contractions build steadily. Over tea afterwards, a classmate recalls a preterm patient she saw at another hospital whose uterus barely responded to much higher doses, and asks why the same drug is so timid at 34 weeks and so effective at 40. The tutor looks at you: explain.\n\nAnswer: The drug did not change — the membranes did. Oxytocin acts by binding to oxytocin receptors on the surface of uterine muscle cells; it never enters the cells. As pregnancy approaches term, the number of these receptors rises sharply, so the same dose finds far more locks to open and the uterus responds with strong contractions. Near term the membrane is listening; preterm it is almost deaf.",
+        body: "At term, a woman is admitted for induction after her waters broke. The nurse starts a low-dose oxytocin drip and the contractions build steadily. Over tea afterwards, a classmate recalls a preterm patient she saw at another hospital whose uterus barely responded to much higher doses, and asks why the same drug is so timid at 34 weeks and so effective at 40. The tutor looks at you: explain.\n\nAnswer: The drug did not change — the membranes did. Oxytocin acts by binding to oxytocin receptors on the surface of uterine muscle cells; it never enters the cells. As pregnancy approaches term, the number of these receptors rises sharply, so the same dose finds far more locks to open and the uterus responds with strong contractions. Near term the membrane is listening; preterm it is almost deaf.",
       },
       {
         type: "memory_trick",
@@ -785,7 +785,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "After a normal birth, a woman sustains a second-degree tear involving the perineal skin and muscles. The midwife repairs it in careful layers, explaining each one to you as she works: skin first, then muscle, then the underlying connective tissue. Afterwards she asks why she repairs layer by layer instead of closing everything with one big stitch through the depth of the wound.\n\nAnswer: Because the perineum is built from several tissue families — epithelial skin on the surface, muscle beneath, connective tissue binding and supporting below. Each layer has its own strength, blood supply and healing behaviour. Matching each layer back to its own kind restores the anatomy correctly, avoids leaving gaps where blood and infection could collect, and leaves a stronger, kinder-healing repair than one mass stitch dragged through mixed tissues.",
+        body: "After a normal birth, a woman sustains a second-degree tear involving the perineal skin and muscles. The nurse repairs it in careful layers, explaining each one to you as she works: skin first, then muscle, then the underlying connective tissue. Afterwards she asks why she repairs layer by layer instead of closing everything with one big stitch through the depth of the wound.\n\nAnswer: Because the perineum is built from several tissue families — epithelial skin on the surface, muscle beneath, connective tissue binding and supporting below. Each layer has its own strength, blood supply and healing behaviour. Matching each layer back to its own kind restores the anatomy correctly, avoids leaving gaps where blood and infection could collect, and leaves a stronger, kinder-healing repair than one mass stitch dragged through mixed tissues.",
       },
       {
         type: "memory_trick",
@@ -895,7 +895,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "The skin is the body's largest organ, and calling it a wrapper undersells it badly. It is a barrier, a thermostat, a sensor and a vitamin factory, all packed into about two square metres of living fabric. Hair and nails work alongside it as the rest of the integumentary system.\n\nFor a midwife, the skin is also a window: colour, temperature and moisture tell you about a mother's circulation and a baby's oxygen and warmth before any machine does. Learn to read it and you will spot trouble early.",
+        body: "The skin is the body's largest organ, and calling it a wrapper undersells it badly. It is a barrier, a thermostat, a sensor and a vitamin factory, all packed into about two square metres of living fabric. Hair and nails work alongside it as the rest of the integumentary system.\n\nFor a nurse, the skin is also a window: colour, temperature and moisture tell you about a mother's circulation and a baby's oxygen and warmth before any machine does. Learn to read it and you will spot trouble early.",
       },
       {
         type: "text",
@@ -909,7 +909,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "At a 2 a.m. delivery in a CHPS compound, a healthy baby cries at once. Before any weighing or bathing, the midwife briskly rubs the baby dry with a clean, warm cloth, caps the head, and lays the baby skin-to-skin on the mother's chest. The grandmother asks why the baby cannot be washed first, since 'the night is not even cold'.\n\nWhy does the order matter so much?\n\nAnswer: Evaporation. Water on a newborn's skin steals heat rapidly as it turns to vapour, and a small, wet newborn cannot generate warmth fast enough to compensate — body temperature can fall dangerously in the first minutes. Drying first, covering the head and skin-to-skin contact with the mother keep the heat in. Bathing waits until the baby is stable and warm. That is the WHO warm chain at work: drying comes before everything.",
+        body: "At a 2 a.m. delivery in a CHPS compound, a healthy baby cries at once. Before any weighing or bathing, the nurse briskly rubs the baby dry with a clean, warm cloth, caps the head, and lays the baby skin-to-skin on the mother's chest. The grandmother asks why the baby cannot be washed first, since 'the night is not even cold'.\n\nWhy does the order matter so much?\n\nAnswer: Evaporation. Water on a newborn's skin steals heat rapidly as it turns to vapour, and a small, wet newborn cannot generate warmth fast enough to compensate — body temperature can fall dangerously in the first minutes. Drying first, covering the head and skin-to-skin contact with the mother keep the heat in. Bathing waits until the baby is stable and warm. That is the WHO warm chain at work: drying comes before everything.",
       },
       {
         type: "memory_trick",
@@ -1019,7 +1019,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Bones look like dry, finished beams, but they are anything but. The skeleton is living tissue that grows, heals, stores and even manufactures blood. A newborn's skull flexes through the birth canal; a mother's pelvis cradles and guides the very baby those bones must pass.\n\nFor midwifery, the skeleton is not background architecture — it is part of the birth story. In this lesson you will meet its five jobs and learn to read the fontanelles, the soft windows on a baby's skull.",
+        body: "Bones look like dry, finished beams, but they are anything but. The skeleton is living tissue that grows, heals, stores and even manufactures blood. A newborn's skull flexes through the birth canal; a mother's pelvis cradles and guides the very baby those bones must pass.\n\nFor nursing, the skeleton is not background architecture — it is part of the birth story. In this lesson you will meet its five jobs and learn to read the fontanelles, the soft windows on a baby's skull.",
       },
       {
         type: "text",
@@ -1148,7 +1148,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Muscles are the body's movers, and more than movers: they hold you upright all day, squeeze blood back toward the heart, and generate most of your body heat. There are over 600 skeletal muscles alone, plus the heart's own muscle and the quiet muscle wrapping your hollow organs.\n\nIn midwifery, muscle is personal. The uterus is muscle. The pelvic floor is muscle. The shivering mother after delivery and the mother walking the day after a caesarean are both telling you a muscle story — if you know how to listen.",
+        body: "Muscles are the body's movers, and more than movers: they hold you upright all day, squeeze blood back toward the heart, and generate most of your body heat. There are over 600 skeletal muscles alone, plus the heart's own muscle and the quiet muscle wrapping your hollow organs.\n\nIn nursing, muscle is personal. The uterus is muscle. The pelvic floor is muscle. The shivering mother after delivery and the mother walking the day after a caesarean are both telling you a muscle story — if you know how to listen.",
       },
       {
         type: "text",
@@ -1162,7 +1162,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "Day one after a caesarean, a mother refuses to move: the wound hurts, and she believes rest heals best. The midwife, gently but firmly, teaches her ankle circles in bed and then walks her slowly to the chair, explaining that moving protects her legs from clots. The mother asks how moving her legs could protect anything beyond her legs.\n\nHow do you explain it to her?\n\nAnswer: Deep veins in the legs run between the calf muscles. When those muscles squeeze — during ankle circles, walking or simple flexing — they push venous blood upward toward the heart, and one-way valves keep it from sliding back. After surgery, immobility lets blood sit still in the legs, and still blood can clot, forming a deep vein thrombosis that may travel to the lungs. Moving the legs keeps the pump working, so her early walking protects her lungs and her life, not only her legs.",
+        body: "Day one after a caesarean, a mother refuses to move: the wound hurts, and she believes rest heals best. The nurse, gently but firmly, teaches her ankle circles in bed and then walks her slowly to the chair, explaining that moving protects her legs from clots. The mother asks how moving her legs could protect anything beyond her legs.\n\nHow do you explain it to her?\n\nAnswer: Deep veins in the legs run between the calf muscles. When those muscles squeeze — during ankle circles, walking or simple flexing — they push venous blood upward toward the heart, and one-way valves keep it from sliding back. After surgery, immobility lets blood sit still in the legs, and still blood can clot, forming a deep vein thrombosis that may travel to the lungs. Moving the legs keeps the pump working, so her early walking protects her lungs and her life, not only her legs.",
       },
       {
         type: "memory_trick",
@@ -1286,7 +1286,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "At a focused antenatal visit, a woman at 32 weeks registers a blood pressure of 150/100 mmHg. She mentions a headache since morning, and you notice puffiness of her feet. The midwife re-checks after rest, dips her urine, and prepares referral to the district hospital.\n\nWhat is blood pressure actually measuring, and why does this reading matter so much?\n\nAnswer: Blood pressure is the force the circulating blood exerts on the walls of the arteries. In pregnancy after 20 weeks, a reading this high — especially with headache, oedema and any protein on the dipstick — suggests pre-eclampsia, in which vessels and organs such as the kidneys, liver and brain come under attack, risking seizures and stroke. Referral is the correct action: she needs close monitoring, treatment and delivery planning at a higher level — the number on the cuff is the artery wall asking for help.",
+        body: "At a focused antenatal visit, a woman at 32 weeks registers a blood pressure of 150/100 mmHg. She mentions a headache since morning, and you notice puffiness of her feet. The nurse re-checks after rest, dips her urine, and prepares referral to the district hospital.\n\nWhat is blood pressure actually measuring, and why does this reading matter so much?\n\nAnswer: Blood pressure is the force the circulating blood exerts on the walls of the arteries. In pregnancy after 20 weeks, a reading this high — especially with headache, oedema and any protein on the dipstick — suggests pre-eclampsia, in which vessels and organs such as the kidneys, liver and brain come under attack, risking seizures and stroke. Referral is the correct action: she needs close monitoring, treatment and delivery planning at a higher level — the number on the cuff is the artery wall asking for help.",
       },
       {
         type: "memory_trick",
@@ -1382,7 +1382,7 @@ export const lessons: SeedFullLesson[] = [
     moduleTitle: "Body Systems Overview",
     lessonTitle: "Blood: The Living Transport Fluid",
     description:
-      "Plasma, red cells, white cells and platelets — the crowd that carries oxygen, fights infection and stops bleeding. Includes the anaemia numbers every midwife must know.",
+      "Plasma, red cells, white cells and platelets — the crowd that carries oxygen, fights infection and stops bleeding. Includes the anaemia numbers every nurse must know.",
     difficulty: "Moderate",
     durationMin: 14,
     objectives: [
@@ -1410,7 +1410,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "A 24-year-old at 16 weeks of pregnancy attends antenatal clinic looking pale, complaining of tiredness 'like the whole world is on me'. Her haemoglobin returns at 9.2 g/dL. The midwife starts iron and folic acid, counsels her on diet — dark green leaves, beans and small whole fish, taken with vitamin C-rich fruits to help absorption — and books a follow-up check.\n\nWhat does that number define, and why is it treated so seriously?\n\nAnswer: Anaemia in pregnancy — the WHO defines it as haemoglobin below 11 g/dL, and this woman is well under it. With too little haemoglobin, her red cells carry too little oxygen, shortchanging her own tissues and her baby's. Treated early with iron, folate and diet support, it recovers; neglected, it drains her strength for labour, magnifies any bleeding, and may force a transfusion where blood is scarce. Her tiredness was real data — the number confirmed it.",
+        body: "A 24-year-old at 16 weeks of pregnancy attends antenatal clinic looking pale, complaining of tiredness 'like the whole world is on me'. Her haemoglobin returns at 9.2 g/dL. The nurse starts iron and folic acid, counsels her on diet — dark green leaves, beans and small whole fish, taken with vitamin C-rich fruits to help absorption — and books a follow-up check.\n\nWhat does that number define, and why is it treated so seriously?\n\nAnswer: Anaemia in pregnancy — the WHO defines it as haemoglobin below 11 g/dL, and this woman is well under it. With too little haemoglobin, her red cells carry too little oxygen, shortchanging her own tissues and her baby's. Treated early with iron, folate and diet support, it recovers; neglected, it drains her strength for labour, magnifies any bleeding, and may force a transfusion where blood is scarce. Her tiredness was real data — the number confirmed it.",
       },
       {
         type: "memory_trick",
@@ -1510,7 +1510,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Every cell of the body burns fuel with oxygen and makes carbon dioxide it must dump. The respiratory system is both the supplier and the waste service, renewing the blood every time it sweeps through the lungs.\n\nIt also owns a midwife's most dramatic moment: the first breath, when a baby who has never used lungs inflates them and cries. Nothing you learn this year matters more than understanding that breath — and knowing when breathing counts as danger.",
+        body: "Every cell of the body burns fuel with oxygen and makes carbon dioxide it must dump. The respiratory system is both the supplier and the waste service, renewing the blood every time it sweeps through the lungs.\n\nIt also owns a nurse's most dramatic moment: the first breath, when a baby who has never used lungs inflates them and cries. Nothing you learn this year matters more than understanding that breath — and knowing when breathing counts as danger.",
       },
       {
         type: "text",

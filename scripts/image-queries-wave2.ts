@@ -10,7 +10,7 @@ export interface Query {
 export const QUERIES: Query[] = [
   // pregnancy & antenatal (core!)
   { c: "pregnancy", q: "pregnant woman antenatal clinic examination Africa", t: ["antenatal", "pregnancy", "clinic", "check"], cap: "Antenatal care in a clinic — the visit that catches problems early." },
-  { c: "pregnancy", q: "midwife antenatal checkup pregnant patient", t: ["antenatal", "midwife", "pregnancy"], cap: "A midwife conducting an antenatal check." },
+  { c: "pregnancy", q: "nurse antenatal checkup pregnant patient", t: ["antenatal", "nurse", "pregnancy"], cap: "A nurse conducting an antenatal check." },
   { c: "pregnancy", q: "obstetric ultrasound examination sonographer", t: ["ultrasound", "pregnancy", "scan"], cap: "Obstetric ultrasound — seeing before meeting." },
   { c: "pregnancy", q: "pregnant woman third trimester portrait", t: ["pregnancy", "trimester"], cap: "Third trimester — near term, watchful waiting." },
   { c: "pregnancy", q: "fundal height measurement tape pregnant", t: ["fundal", "height", "measurement", "antenatal"], cap: "Fundal height — centimetres that track growth." },
@@ -22,7 +22,7 @@ export const QUERIES: Query[] = [
   { c: "labour", q: "partograph chart labour monitoring who", t: ["partograph", "labour", "monitoring"], cap: "The partograph — labour on one page." },
   { c: "labour", q: "placenta examination after delivery", t: ["placenta", "examination", "birth"], cap: "Placenta checked — completeness matters." },
   { c: "labour", q: "skin to skin mother newborn immediately after birth", t: ["skin", "skin", "newborn", "birth"], cap: "Skin-to-skin straight after birth." },
-  { c: "labour", q: "midwife helping woman birth delivery", t: ["labour", "midwife", "delivery", "birth"], cap: "A midwife guiding a birth." },
+  { c: "labour", q: "nurse helping woman birth delivery", t: ["labour", "nurse", "delivery", "birth"], cap: "A nurse guiding a birth." },
   // newborn care
   { c: "newborn", q: "newborn baby wrapped blanket hospital", t: ["newborn", "baby", "warmth"], cap: "A warm, wrapped newborn — thermoregulation lesson one." },
   { c: "newborn", q: "newborn baby held by doctor examination", t: ["newborn", "examination"], cap: "The newborn exam — head to toe." },

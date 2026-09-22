@@ -28,7 +28,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Open any treatment sheet and a small dictionary stares back at you: stat doses, loading doses, half-lives, trough levels. Nobody hands you a translation guide on your first ward round — you are expected to already speak the language.\n\nThis lesson is your phrasebook. You will meet the words that describe how much of a drug reaches the blood, how long it stays, and how we keep it working at a safe level. These are the terms midwives, doctors and pharmacists use to talk to each other about every woman in your care.",
+        body: "Open any treatment sheet and a small dictionary stares back at you: stat doses, loading doses, half-lives, trough levels. Nobody hands you a translation guide on your first ward round — you are expected to already speak the language.\n\nThis lesson is your phrasebook. You will meet the words that describe how much of a drug reaches the blood, how long it stays, and how we keep it working at a safe level. These are the terms nurses, doctors and pharmacists use to talk to each other about every woman in your care.",
       },
       {
         type: "text",
@@ -42,7 +42,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "A woman on the postnatal ward is being treated for puerperal sepsis with once-daily gentamicin. On rounds the midwife mentions that the team has requested 'drug levels' — blood samples timed precisely to the dose — and you are asked to explain to the evening student why the timing matters.\n\nWhy do we measure gentamicin at specific times rather than at random?\n\nAnswer: Gentamicin has a narrow therapeutic window. A peak level, drawn shortly after the dose, confirms the dose is strong enough to fight the infection. A trough level, drawn just before the next dose, confirms the drug is being cleared and is not accumulating towards kidney and hearing damage. A random sample gives a number with no meaning — the clock is part of the test.",
+        body: "A woman on the postnatal ward is being treated for puerperal sepsis with once-daily gentamicin. On rounds the nurse mentions that the team has requested 'drug levels' — blood samples timed precisely to the dose — and you are asked to explain to the evening student why the timing matters.\n\nWhy do we measure gentamicin at specific times rather than at random?\n\nAnswer: Gentamicin has a narrow therapeutic window. A peak level, drawn shortly after the dose, confirms the dose is strong enough to fight the infection. A trough level, drawn just before the next dose, confirms the drug is being cleared and is not accumulating towards kidney and hearing damage. A random sample gives a number with no meaning — the clock is part of the test.",
       },
       {
         type: "memory_trick",
@@ -175,7 +175,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "A woman who delivered an hour ago is on an oxytocin infusion. During a busy handover the giving set becomes kinked and the infusion effectively stops; within ten minutes her uterus feels soft and the blood loss creeps up. The midwife unkinks the line, massages the uterus firmly and summons help while you monitor the woman and count pads.\n\nWhy can uterine tone fade so quickly when an oxytocin infusion stops?\n\nAnswer: Oxytocin is broken down by enzymes in the blood within minutes, so its effect depends on continuous delivery. When the flow stops, blood levels collapse, the uterus loses its stimulation and atony returns. A kinked oxytocin line in the postpartum hour is not a nuisance — it is a bleeding risk to fix immediately.",
+        body: "A woman who delivered an hour ago is on an oxytocin infusion. During a busy handover the giving set becomes kinked and the infusion effectively stops; within ten minutes her uterus feels soft and the blood loss creeps up. The nurse unkinks the line, massages the uterus firmly and summons help while you monitor the woman and count pads.\n\nWhy can uterine tone fade so quickly when an oxytocin infusion stops?\n\nAnswer: Oxytocin is broken down by enzymes in the blood within minutes, so its effect depends on continuous delivery. When the flow stops, blood levels collapse, the uterus loses its stimulation and atony returns. A kinked oxytocin line in the postpartum hour is not a nuisance — it is a bleeding risk to fix immediately.",
       },
       {
         type: "memory_trick",
@@ -262,7 +262,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2021 (17th edition)",
       },
       {
@@ -294,7 +294,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Pharmacokinetics told you what the body does to the drug. Pharmacodynamics asks the other half of the question: what does the drug do to the body? This is where receptors, dose-response relationships and the phrase every midwife should respect — 'narrow therapeutic window' — make their home.\n\nThese ideas turn routine actions into understanding. When you check knee reflexes before a magnesium sulfate dose, you are not performing a ritual. You are reading a drug's effect on the body in real time.",
+        body: "Pharmacokinetics told you what the body does to the drug. Pharmacodynamics asks the other half of the question: what does the drug do to the body? This is where receptors, dose-response relationships and the phrase every nurse should respect — 'narrow therapeutic window' — make their home.\n\nThese ideas turn routine actions into understanding. When you check knee reflexes before a magnesium sulfate dose, you are not performing a ritual. You are reading a drug's effect on the body in real time.",
       },
       {
         type: "text",
@@ -316,7 +316,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         type: "summary",
-        body: "- Many drugs act by binding receptors: agonists switch them on, antagonists block them.\n- Oxytocin (uterine contraction) and salbutamol (uterine relaxation) are agonist examples from midwifery.\n- Dose-response rises only until receptors saturate; more drug beyond that adds risk, not effect.\n- The therapeutic window is the gap between the least effective and the least toxic levels.\n- Magnesium sulfate has a narrow window: check reflexes, respiration and urine before every maintenance dose.",
+        body: "- Many drugs act by binding receptors: agonists switch them on, antagonists block them.\n- Oxytocin (uterine contraction) and salbutamol (uterine relaxation) are agonist examples from nursing.\n- Dose-response rises only until receptors saturate; more drug beyond that adds risk, not effect.\n- The therapeutic window is the gap between the least effective and the least toxic levels.\n- Magnesium sulfate has a narrow window: check reflexes, respiration and urine before every maintenance dose.",
       },
     ],
     questions: [
@@ -400,7 +400,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2021 (17th edition)",
       },
     ],
@@ -426,7 +426,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "The same drug can be a slow tablet, a monthly injection or a push through a cannula — and the choice changes everything about its speed, its strength and its risks. Route selection is one of the everyday decisions hiding inside every prescription you will ever carry out.\n\nIn this lesson you will meet the common routes, learn the speed ladder they sit on, and see why some of your most important midwifery drugs — oxytocin, magnesium sulfate, misoprostol — travel by more than one path.",
+        body: "The same drug can be a slow tablet, a monthly injection or a push through a cannula — and the choice changes everything about its speed, its strength and its risks. Route selection is one of the everyday decisions hiding inside every prescription you will ever carry out.\n\nIn this lesson you will meet the common routes, learn the speed ladder they sit on, and see why some of your most important nursing drugs — oxytocin, magnesium sulfate, misoprostol — travel by more than one path.",
       },
       {
         type: "text",
@@ -440,7 +440,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "At a CHPS compound a woman delivers and begins to bleed heavily. The only cannula has failed, so the midwife gives oxytocin 10 units into the thigh muscle, places misoprostol under the woman's tongue, rubs up a contraction, calls for the ambulance and keeps counting pads. The uterus firms up as help is arranged.\n\nWhy do these non-intravenous routes still work quickly enough in an emergency?\n\nAnswer: The muscle of the thigh and the rich blood supply under the tongue absorb drugs rapidly, and both routes skip the gut and the liver's first-pass toll. They cannot match the instant arrival of intravenous drugs, but they deliver meaningful blood levels within minutes — enough to contract the uterus while transport and further help are on the way.",
+        body: "At a CHPS compound a woman delivers and begins to bleed heavily. The only cannula has failed, so the nurse gives oxytocin 10 units into the thigh muscle, places misoprostol under the woman's tongue, rubs up a contraction, calls for the ambulance and keeps counting pads. The uterus firms up as help is arranged.\n\nWhy do these non-intravenous routes still work quickly enough in an emergency?\n\nAnswer: The muscle of the thigh and the rich blood supply under the tongue absorb drugs rapidly, and both routes skip the gut and the liver's first-pass toll. They cannot match the instant arrival of intravenous drugs, but they deliver meaningful blood levels within minutes — enough to contract the uterus while transport and further help are on the way.",
       },
       {
         type: "memory_trick",
@@ -521,7 +521,7 @@ export const lessons: SeedFullLesson[] = [
     sources: [
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2021 (17th edition)",
       },
       {
@@ -562,7 +562,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "The core ideas",
-        body: "Before any drug leaves your hand, a short checklist walks beside it: the **right patient**, the **right drug**, the **right dose**, the **right route**, the **right time** — and afterwards the **right documentation** and the **right response** (did it work, did she react?). Read the label against the prescription three times: when you take the drug, when you prepare it, and when you give it. Ask about **allergies** in the woman's own words before any first dose.\n\nSome medicines earn extra respect. **High-alert** drugs — oxytocin, magnesium sulfate, insulin, heparin, opioids — are used every day, yet they cause the most harm when errors happen. For these, use an independent double-check: a second midwife verifies the drug, dose and calculation without being told your answer first. Never pre-draw syringes for later; never give from memory of a chart you saw earlier. WHO's Medication Without Harm campaign reminds us that a large share of medication harm is preventable — most of it by habits exactly like these.",
+        body: "Before any drug leaves your hand, a short checklist walks beside it: the **right patient**, the **right drug**, the **right dose**, the **right route**, the **right time** — and afterwards the **right documentation** and the **right response** (did it work, did she react?). Read the label against the prescription three times: when you take the drug, when you prepare it, and when you give it. Ask about **allergies** in the woman's own words before any first dose.\n\nSome medicines earn extra respect. **High-alert** drugs — oxytocin, magnesium sulfate, insulin, heparin, opioids — are used every day, yet they cause the most harm when errors happen. For these, use an independent double-check: a second nurse verifies the drug, dose and calculation without being told your answer first. Never pre-draw syringes for later; never give from memory of a chart you saw earlier. WHO's Medication Without Harm campaign reminds us that a large share of medication harm is preventable — most of it by habits exactly like these.",
       },
       {
         type: "clinical_pearl",
@@ -641,7 +641,7 @@ export const lessons: SeedFullLesson[] = [
       {
         topic: "Medication Safety",
         front: "What is an independent double-check and which drugs need it?",
-        back: "A second midwife verifies drug, dose and calculation from the chart itself without being told your conclusion. Needed for high-alert drugs: oxytocin, magnesium sulfate, insulin, heparin, opioids.",
+        back: "A second nurse verifies drug, dose and calculation from the chart itself without being told your conclusion. Needed for high-alert drugs: oxytocin, magnesium sulfate, insulin, heparin, opioids.",
       },
       {
         topic: "Medication Safety",
@@ -689,7 +689,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "A decimal point slips, a unit is assumed, a sum is done in a tired head — and a drug error is born. Medication arithmetic is not hard mathematics; it is careful arithmetic, done slowly in a place that rewards speed.\n\nIn this lesson you will drill the three calculations a midwife actually meets: unit conversions, weight-based doses drawn from stock, and drip rates for infusions. Every one of them is a place where writing your working saves a life.",
+        body: "A decimal point slips, a unit is assumed, a sum is done in a tired head — and a drug error is born. Medication arithmetic is not hard mathematics; it is careful arithmetic, done slowly in a place that rewards speed.\n\nIn this lesson you will drill the three calculations a nurse actually meets: unit conversions, weight-based doses drawn from stock, and drip rates for infusions. Every one of them is a place where writing your working saves a life.",
       },
       {
         type: "text",
@@ -703,7 +703,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "You are asked to give gentamicin 5 mg/kg to a woman weighing 60 kg. The stock vial contains 40 mg per mL. The prescription sheet has space for your calculation, and the senior midwife asks you to show it before you draw up.\n\nWhat dose does she need, and what volume do you draw?\n\nAnswer: 5 mg x 60 kg = 300 mg. Then 300 mg divided by 40 mg per mL = 7.5 mL. You write both steps with units, have the sum checked, draw exactly 7.5 mL, and chart the dose, route, time and site. The mathematics took two minutes; the habit behind it will protect every dose of your career.",
+        body: "You are asked to give gentamicin 5 mg/kg to a woman weighing 60 kg. The stock vial contains 40 mg per mL. The prescription sheet has space for your calculation, and the senior nurse asks you to show it before you draw up.\n\nWhat dose does she need, and what volume do you draw?\n\nAnswer: 5 mg x 60 kg = 300 mg. Then 300 mg divided by 40 mg per mL = 7.5 mL. You write both steps with units, have the sum checked, draw exactly 7.5 mL, and chart the dose, route, time and site. The mathematics took two minutes; the habit behind it will protect every dose of your career.",
       },
       {
         type: "memory_trick",
@@ -795,7 +795,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2021 (17th edition)",
       },
     ],
@@ -821,7 +821,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Long after you have forgotten the shift, the chart remembers it. Every dose you give becomes a written fact that the next midwife, the pharmacist, the auditor and — if things go wrong — the court will rely on. 'If it was not documented, it was not done' is not a threat; it is the honest truth of shared care.\n\nThis lesson covers the small, exact habits that make your drug documentation trustworthy: what to write, when to write it, and how to record the awkward moments — doses refused, doses omitted, drugs out of stock.",
+        body: "Long after you have forgotten the shift, the chart remembers it. Every dose you give becomes a written fact that the next nurse, the pharmacist, the auditor and — if things go wrong — the court will rely on. 'If it was not documented, it was not done' is not a threat; it is the honest truth of shared care.\n\nThis lesson covers the small, exact habits that make your drug documentation trustworthy: what to write, when to write it, and how to record the awkward moments — doses refused, doses omitted, drugs out of stock.",
       },
       {
         type: "text",
@@ -1098,7 +1098,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "case",
         title: "On the ward",
-        body: "A woman at term with one previous caesarean section arrives at the district hospital hoping for a vaginal birth. A student, revising pharmacology, suggests that misoprostol could ripen her cervix. The senior midwife stops the idea immediately and refers the decision to senior obstetric staff, who plan a different approach.\n\nWhy is misoprostol the wrong drug here?\n\nAnswer: A scarred uterus plus a powerful uterotonic is a dangerous pairing — strong contractions against tissue weakened by a previous incision carry a real risk of uterine rupture, which threatens both mother and baby. Induction after caesarean is a specialist decision made with safer methods and full monitoring. The student's willingness to raise it was correct; the setting for that decision belongs to senior staff.",
+        body: "A woman at term with one previous caesarean section arrives at the district hospital hoping for a vaginal birth. A student, revising pharmacology, suggests that misoprostol could ripen her cervix. The senior nurse stops the idea immediately and refers the decision to senior obstetric staff, who plan a different approach.\n\nWhy is misoprostol the wrong drug here?\n\nAnswer: A scarred uterus plus a powerful uterotonic is a dangerous pairing — strong contractions against tissue weakened by a previous incision carry a real risk of uterine rupture, which threatens both mother and baby. Induction after caesarean is a specialist decision made with safer methods and full monitoring. The student's willingness to raise it was correct; the setting for that decision belongs to senior staff.",
       },
       {
         type: "memory_trick",
@@ -1190,7 +1190,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2021 (17th edition)",
       },
     ],
@@ -1216,7 +1216,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "No drug arrives alone. It meets the other medicines in the woman's bag, the herbs in her tea, the antacid she bought from the chemical seller, and the drugs you are giving on the ward. Each newcomer can change what the others do — sometimes helpfully, sometimes dangerously.\n\nIn this lesson you will meet the two great families of interaction, the pairings midwives must know by heart, and the warm, non-judgmental question that uncovers what patients are really taking.",
+        body: "No drug arrives alone. It meets the other medicines in the woman's bag, the herbs in her tea, the antacid she bought from the chemical seller, and the drugs you are giving on the ward. Each newcomer can change what the others do — sometimes helpfully, sometimes dangerously.\n\nIn this lesson you will meet the two great families of interaction, the pairings nurses must know by heart, and the warm, non-judgmental question that uncovers what patients are really taking.",
       },
       {
         type: "text",
@@ -1321,7 +1321,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2021 (17th edition)",
       },
     ],
@@ -1481,7 +1481,7 @@ export const lessons: SeedFullLesson[] = [
       {
         type: "text",
         title: "What this lesson is about",
-        body: "Carbohydrates are the fuel the body reaches for first — the brain alone burns through a steady glucose supply every hour of every day. From the sugar in tea to the starch in banku, they arrive in different forms, and the form decides how fast the fuel floods in.\n\nIn this lesson you will meet the three faces of carbohydrate — sugars, starches and fibre — and follow glucose from plate to bloodstream to storage. You will also meet the two glucose dramas of midwifery: gestational diabetes and the newborn whose sugar dips after birth.",
+        body: "Carbohydrates are the fuel the body reaches for first — the brain alone burns through a steady glucose supply every hour of every day. From the sugar in tea to the starch in banku, they arrive in different forms, and the form decides how fast the fuel floods in.\n\nIn this lesson you will meet the three faces of carbohydrate — sugars, starches and fibre — and follow glucose from plate to bloodstream to storage. You will also meet the two glucose dramas of nursing: gestational diabetes and the newborn whose sugar dips after birth.",
       },
       {
         type: "text",
@@ -1985,7 +1985,7 @@ export const lessons: SeedFullLesson[] = [
       },
       {
         organization: "Elsevier",
-        title: "Myles Textbook for Midwives",
+        title: "Myles Textbook for Nurses",
         year: "2021 (17th edition)",
       },
     ],
@@ -1997,7 +1997,7 @@ export const lessons: SeedFullLesson[] = [
     moduleTitle: "Small but Mighty",
     lessonTitle: "Minerals: The Construction Crew",
     description:
-      "Iron, calcium, iodine and their crew — the minerals Ghanaian mothers most often lack, and the ones midwives fight for daily, from booking to birth.",
+      "Iron, calcium, iodine and their crew — the minerals Ghanaian mothers most often lack, and the ones nurses fight for daily, from booking to birth.",
     difficulty: "Moderate",
     durationMin: 13,
     objectives: [

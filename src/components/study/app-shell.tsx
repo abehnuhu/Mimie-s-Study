@@ -63,7 +63,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
               </div>
               <div>
                 <p className="font-display text-lg font-semibold leading-none text-foreground">Mimie&apos;s Study</p>
-                <p className="mt-1 text-[11px] text-muted-foreground">Midwifery Academy</p>
+                <p className="mt-1 text-[11px] text-muted-foreground">Nursing Academy</p>
               </div>
             </button>
 
@@ -214,7 +214,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           {/* footer */}
           <footer className="mt-auto border-t border-border/60 bg-card/40 px-4 py-5 pb-[max(1.25rem,env(safe-area-inset-bottom))] text-center lg:px-8">
             <p className="font-display text-sm text-foreground">Mimie&apos;s Study</p>
-            <p className="mt-0.5 text-xs text-muted-foreground">Made with love for Mimie 💗 · Educational platform for midwifery study</p>
+            <p className="mt-0.5 text-xs text-muted-foreground">Made with love for Mimie 💗 · Educational platform for nursing study</p>
             <div className="mt-2 flex flex-wrap items-center justify-center gap-3 text-xs text-muted-foreground/80">
               <span className="cursor-default hover:text-primary">Privacy</span>
               <span>·</span>

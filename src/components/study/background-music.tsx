@@ -31,6 +31,9 @@ const DEFAULT_VOL = 0.35; // background music should sit under everything
  *
  * - Starts playing the moment the site opens (browsers that block unmuted
  *   autoplay start it silently and offer a one-tap "sound on").
+ * - If even silent autoplay is refused, the very first sign of life from the
+ *   visitor — a tap, a click, a key, a scroll, even a mouse move — starts the
+ *   music automatically. No play button hunting required.
  * - Mute + volume preferences persist across visits.
  * - Plays every enabled track in order, looping forever.
  */
@@ -52,6 +55,8 @@ export function BackgroundMusic() {
   const [volume, setVolume] = useState(DEFAULT_VOL);
   const [expanded, setExpanded] = useState(false);
   const [blocked, setBlocked] = useState(false); // unmuted autoplay was refused
+  const [needsKick, setNeedsKick] = useState(false); // autoplay refused outright — first interaction starts it
+  const needsKickRef = useRef(false);
   const [hint, setHint] = useState(false);
 
   const current = tracks[idx] ?? null;
@@ -165,7 +170,11 @@ export function BackgroundMusic() {
             setBlocked(true);
             setHint(true);
           } catch {
-            setPlaying(false); // even silent autoplay refused — user presses play
+            // even silent autoplay was refused — the first interaction will start it
+            setPlaying(false);
+            needsKickRef.current = true;
+            setNeedsKick(true);
+            setHint(true);
             // don't leave it muted, or the Play button would be silent too
             audio.muted = prefMutedRef.current;
             setMuted(prefMutedRef.current);
@@ -249,6 +258,10 @@ export function BackgroundMusic() {
   function togglePlay() {
     const audio = audioRef.current;
     if (!audio || !current) return;
+    // a deliberate touch of the controls cancels any pending auto-start —
+    // after this, only she decides when the music runs
+    needsKickRef.current = false;
+    setNeedsKick(false);
     if (audio.paused) {
       audio.play().then(() => reportPlay(current.id)).catch(() => setPlaying(false));
     } else {
@@ -277,25 +290,90 @@ export function BackgroundMusic() {
     startTrack((idx + dir + tracks.length) % tracks.length, wasPlaying);
   }
 
-  /* ── unmute on the first interaction when autoplay was muted by the browser ── */
+  /* ── the moment she interacts at all, the music starts ──
+ *
+ * Two situations bring us here:
+ *  - `blocked`: the browser let muted autoplay through, so the song is already
+ *    playing silently — the first real gesture (tap / click / key) unmutes it.
+ *  - `needsKick`: autoplay was refused outright, so the song is paused — the
+ *    first sign of life (a tap, a key, a scroll, even a mouse move) starts it.
+ *
+ * Only activation-bearing gestures (pointer/key/touch/click) unmute, because
+ * browsers refuse silent→sound switches without a proper gesture. Soft events
+ * (scroll, wheel, mouse move) still start a paused song the moment the browser
+ * has already met the visitor — harmless everywhere else.
+ */
   useEffect(() => {
-    if (!blocked || prefMutedRef.current) return;
-    const onInteract = (e: Event) => {
+    if (!loaded || tracks.length === 0) return;
+    if (!blocked && !needsKick) return;
+
+    let kicked = false;
+    let lastMove = 0;
+
+    const kick = (e: Event, withActivation: boolean) => {
+      const audio = audioRef.current;
+      if (!audio || kicked) return;
       const target = e.target as HTMLElement | null;
-      if (target?.closest?.("[data-music-quiet]")) return; // they chose silence
-      smoothUnmute();
-      setBlocked(false);
-      setHint(false);
+      if (target?.closest?.("[data-music-player]")) return; // her own controls handle themselves
+
+      if (audio.paused) {
+        if (!needsKickRef.current) return;
+        kicked = true; // optimistic — retracted if the browser still refuses
+        audio.muted = prefMutedRef.current;
+        audio.volume = volRef.current;
+        const t = tracks[idx] ?? tracks[0];
+        audio
+          .play()
+          .then(() => {
+            needsKickRef.current = false;
+            setNeedsKick(false);
+            setHint(false);
+            reportPlay(t.id);
+          })
+          .catch(() => {
+            kicked = false;
+          });
+        return;
+      }
+
+      // playing silently because the browser muted autoplay — unmute on a real gesture
+      if (withActivation && blocked && audio.muted && !prefMutedRef.current) {
+        kicked = true;
+        smoothUnmute();
+        setBlocked(false);
+        setHint(false);
+      }
     };
-    window.addEventListener("pointerdown", onInteract, { capture: true });
-    window.addEventListener("keydown", onInteract, { capture: true });
-    window.addEventListener("touchstart", onInteract, { capture: true, passive: true });
+
+    const onGesture = (e: Event) => kick(e, true);
+    const onSoft = (e: Event) => kick(e, false);
+    const onMove = (e: Event) => {
+      const now = performance.now();
+      if (now - lastMove < 400) return; // a mouse trail fires dozens per second
+      lastMove = now;
+      kick(e, false);
+    };
+
+    window.addEventListener("pointerdown", onGesture, { capture: true });
+    window.addEventListener("keydown", onGesture, { capture: true });
+    window.addEventListener("touchstart", onGesture, { capture: true, passive: true });
+    window.addEventListener("touchend", onGesture, { capture: true, passive: true });
+    window.addEventListener("click", onGesture, { capture: true });
+    window.addEventListener("scroll", onSoft, { capture: true, passive: true });
+    window.addEventListener("wheel", onSoft, { capture: true, passive: true });
+    window.addEventListener("mousemove", onMove, { capture: true, passive: true });
+
     return () => {
-      window.removeEventListener("pointerdown", onInteract, { capture: true });
-      window.removeEventListener("keydown", onInteract, { capture: true });
-      window.removeEventListener("touchstart", onInteract, { capture: true });
+      window.removeEventListener("pointerdown", onGesture, { capture: true });
+      window.removeEventListener("keydown", onGesture, { capture: true });
+      window.removeEventListener("touchstart", onGesture, { capture: true });
+      window.removeEventListener("touchend", onGesture, { capture: true });
+      window.removeEventListener("click", onGesture, { capture: true });
+      window.removeEventListener("scroll", onSoft, { capture: true });
+      window.removeEventListener("wheel", onSoft, { capture: true });
+      window.removeEventListener("mousemove", onMove, { capture: true });
     };
-  }, [blocked]);
+  }, [blocked, needsKick, loaded, tracks, idx, reportPlay]);
 
   /* auto-hide the "tap for sound" hint */
   useEffect(() => {
@@ -312,6 +390,7 @@ export function BackgroundMusic() {
 
   return (
     <div
+      data-music-player
       className={cn(
         "fixed right-4 z-50 flex flex-col items-end gap-2",
         // on mobile with the bottom nav present, clear it + the iOS safe-area
@@ -350,7 +429,9 @@ export function BackgroundMusic() {
             role="status"
           >
             <p className="leading-snug">
-              The music is playing softly — tap anywhere to turn the sound on 💗
+              {needsKick
+                ? "One tiny tap anywhere and the music starts playing 💗"
+                : "The music is playing softly — tap anywhere to turn the sound on 💗"}
             </p>
             <button
               type="button"

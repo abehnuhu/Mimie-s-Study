@@ -153,7 +153,7 @@ export function LoginView({ onLogin }: { onLogin: (user: SessionUser) => void })
         >
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/25 bg-card/70 px-4 py-1.5 text-xs font-medium tracking-wide text-primary backdrop-blur">
             <Stethoscope className="h-3.5 w-3.5" aria-hidden />
-            MIDWIFERY LEARNING ACADEMY
+            NURSING LEARNING ACADEMY
           </div>
           <h1 className="font-display text-5xl font-semibold leading-[1.05] text-foreground sm:text-6xl">
             Mimie&apos;s
@@ -161,7 +161,7 @@ export function LoginView({ onLogin }: { onLogin: (user: SessionUser) => void })
             <span className="text-gradient italic">Study</span>
           </h1>
           <p className="mt-4 text-balance text-base leading-relaxed text-muted-foreground">
-            Her little corner to become an amazing midwife.
+            Her little corner to become an amazing nurse.
             <br />
             Study smart. Grow confident. One beautiful day at a time.
           </p>
@@ -517,7 +517,7 @@ export function LoginView({ onLogin }: { onLogin: (user: SessionUser) => void })
 
       <footer className="relative pb-6 text-center text-xs text-muted-foreground">
         <p>
-          Mimie&apos;s Study · Made with love for Mimie 💗 · Educational platform for midwifery study
+          Mimie&apos;s Study · Made with love for Mimie 💗 · Educational platform for nursing study
         </p>
       </footer>
     </main>

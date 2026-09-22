@@ -40,13 +40,13 @@ const REPLACEMENTS: Replacement[] = [
     out: "gloves-wearing",
     backupOld: true, // current photo is an infographic poster
     prompt:
-      "Photorealistic photo of a midwife's hands donning sterile surgical gloves from an open glove packet in an operating theatre, powder-free blue nitrile gloves, sterile field with green surgical drape beneath, clinical lighting, close-up on the hands, high quality, detailed",
+      "Photorealistic photo of a nurse's hands donning sterile surgical gloves from an open glove packet in an operating theatre, powder-free blue nitrile gloves, sterile field with green surgical drape beneath, clinical lighting, close-up on the hands, high quality, detailed",
   },
   {
-    out: "midwife-ghana",
+    out: "nurse-ghana",
     backupOld: true, // current photo shows a mother holding newborn
     prompt:
-      "Photorealistic portrait of a warm smiling Ghanaian midwife in pink scrubs with a stethoscope around her neck standing in a modest bright district hospital maternity ward in Ghana, beds with clean sheets softly blurred behind her, natural daylight, respectful, dignified, high quality photography",
+      "Photorealistic portrait of a warm smiling Ghanaian nurse in pink scrubs with a stethoscope around her neck standing in a modest bright district hospital maternity ward in Ghana, beds with clean sheets softly blurred behind her, natural daylight, respectful, dignified, high quality photography",
   },
   {
     out: "sharps-full",

@@ -2,54 +2,59 @@ import type { SeedQuestion } from "./types";
 
 // ─────────────────────────────────────────────────────────────
 // MIMIE'S STUDY — QUESTION BANK
-// 48 exam-grade questions covering the full 4-year BSc Midwifery journey (Ghana).
+// 48 exam-grade questions covering the full 4-year BSc Nursing journey (Ghana).
 // Style: prioritization, interpretation, exception and scenario questions — no "What is X?" drilling.
 // Safety: no doses; recognition + escalation focus; Ghanaian district-hospital context.
 // Mix: 18 MCQ · 16 CLINICAL_SCENARIO · 6 TRUE_FALSE · 4 MULTI_SELECT · 4 ORDERING
 // ─────────────────────────────────────────────────────────────
 
 export const questionBank: SeedQuestion[] = [
-  // ── YEAR 1 · ANATOMY & PHYSIOLOGY (5) ───────────────────────
+  // ── YEAR 1 · ANATOMY & PHYSIOLOGY (4) ───────────────────────
   {
     topic: "Pelvic Anatomy",
     type: "MCQ",
     difficulty: "Easy",
-    stem: "During a prenatal class at a community clinic, a student midwife is teaching expectant mothers about the pelvis. Which of the following is NOT part of the bony pelvis?",
+    stem: "During a health talk at a community clinic on preventing falls and hip injuries, a student nurse is explaining the hip region to a group of market women. Which of the following is NOT part of the bony pelvis?",
     options: ["Ilium", "Ischium", "Pubis", "Femur"],
     correctIndex: 3,
-    explanation: "The bony pelvis is formed by the two hip bones — each a fusion of ilium, ischium and pubis — together with the sacrum and coccyx at the back. The femur is the long thigh bone; it forms the hip joint with the acetabulum of the pelvis but is not part of the pelvis itself. Knowing the pelvic bones and their landmarks is the foundation for later lessons on the birth canal and engagement. The three hip-bone components in the other options are all genuinely pelvic bones.",
+    explanation: "The bony pelvis is formed by the two hip bones — each a fusion of ilium, ischium and pubis — together with the sacrum and coccyx at the back. The femur is the long thigh bone; it forms the hip joint with the acetabulum of the pelvis but is not part of the pelvis itself. Knowing the pelvic bones matters daily in general nursing: the iliac crest guides safe injection sites, the sacrum and heels are the landmarks checked during pressure-area care, and a broken femur at the hip is the classic injury of elderly women who fall. The three hip-bone components in the other options are all genuinely pelvic bones.",
     whyOthers: {
-      "A": "The ilium is the large, flared upper portion of each hip bone and is very much part of the bony pelvis.",
-      "B": "The ischium forms the lower, posterior part of the hip bone — the part that bears weight when a woman sits — so it belongs to the pelvis.",
-      "C": "The pubis is the front portion of each hip bone, meeting its partner at the pubic symphysis, a landmark midwives palpate constantly."
+      "A": "The ilium is the large, flared upper portion of each hip bone and is very much part of the bony pelvis — its crest is a landmark for injections and examinations.",
+      "B": "The ischium forms the lower, posterior part of the hip bone — the part that bears weight when a person sits — so it belongs to the pelvis.",
+      "C": "The pubis is the front portion of each hip bone, meeting its partner at the pubic symphysis in the midline of the lower abdomen."
     },
     courseSlug: "anatomy-physiology-1"
   },
   {
-    topic: "Fundal Height Assessment",
+    topic: "Apex Beat Location",
     type: "CLINICAL_SCENARIO",
     difficulty: "Easy",
-    stem: "At a busy antenatal clinic in a district hospital, a student midwife measures a 24-week fundal height by placing the tape at the umbilicus and reads 14 cm. Her preceptor tells her the technique is wrong. Where should the tape measure have started?",
-    options: ["At the upper border of the symphysis pubis", "At the umbilicus, which is a fixed landmark", "At the anterior superior iliac spine", "At the xiphoid process of the sternum"],
+    stem: "On a medical ward in a district hospital, a student nurse is asked to locate and mark a patient's apex beat before the evening round. She places her flat fingers below the patient's right clavicle and feels nothing pulsing. Her preceptor corrects her. Where should she be palpating, and why does the spot matter?",
+    options: [
+      "At the fifth intercostal space on the left, at the mid-clavicular line — where the tip of the left ventricle taps the chest wall, and where a displaced beat signals a strained or enlarged heart",
+      "Anywhere along the left side of the chest, since the whole heart has a pulse",
+      "Over the middle of the sternum, where all four heart chambers meet",
+      "Below the right clavicle, where the aorta begins its journey to the body"
+    ],
     correctIndex: 0,
-    explanation: "Fundal height is measured from the upper border of the symphysis pubis to the top of the fundus, with a non-elastic tape, after the woman has emptied her bladder. Around the middle of pregnancy the fundal height in centimetres roughly tracks gestational age, so a well-measured value at 24 weeks is near 24 cm. The umbilicus sits at a different height in every woman, so anchoring there makes every reading inconsistent. Accurate technique matters more than any single number — the trend across visits is what flags growth problems.",
+    explanation: "The apex beat is the lowest, outermost point at which the heart's contraction strikes the chest wall — normally at the fifth intercostal space on the left, at the mid-clavicular line, at the tip of the left ventricle. Finding it needs only fingers: count down from the sternal angle or feel just below the left nipple line. Its value is as a free bedside monitor: a beat displaced downwards and outwards suggests an enlarged or failing heart, and a weak or impalpable apex adds to a shock picture. She felt nothing on the right because the heart's apex lives on the left — the right chest holds the chambers' edges, not their beat.",
     whyOthers: {
-      "B": "The umbilicus lies at a variable level depending on body habitus, so measurements from it cannot be compared between women or visits.",
-      "C": "The anterior superior iliac spine is a lateral bony landmark of the pelvis, far from the midline path the tape must follow to the fundus.",
-      "D": "The xiphoid process marks the top of the abdomen near where the fundus reaches only at term; starting there would produce a meaningless figure."
+      "B": "'Anywhere on the left' wastes the precision that makes the apex beat useful — it is one defined point, and tracking its displacement is the clinical point.",
+      "C": "The sternum overlies the heart's midline structures; the apex — the part you can actually feel tapping — sits to the left of it.",
+      "D": "The aorta arches behind the sternum towards the left; no pulsing apex beat lives below the right clavicle."
     },
     courseSlug: "anatomy-physiology-1"
   },
   {
-    topic: "Uterine Position",
+    topic: "Kidney Position",
     type: "TRUE_FALSE",
     difficulty: "Easy",
-    stem: "In the majority of women, the non-pregnant uterus normally lies anteverted and anteflexed over the bladder. True or False?",
+    stem: "The right kidney normally sits slightly lower in the abdomen than the left kidney. True or False?",
     options: ["True", "False"],
     correctIndex: 0,
-    explanation: "This is true. The normal uterus is usually tilted forward over the bladder (anteversion) and additionally bent forward at the cervix (anteflexion). A retroverted uterus is a common and usually harmless variant, although a retroverted gravid uterus occasionally causes urinary retention in early pregnancy. Recognising normal positions prepares students to interpret pelvic examination findings confidently rather than assuming every variation is disease.",
+    explanation: "This is true. The large right lobe of the liver pushes the right kidney down a little, so it sits slightly lower than the left, which tucks up under the spleen. Nurses meet this anatomy at the bedside: the costovertebral angle — the corner between the twelfth rib and the spine — is where kidney tenderness is checked with gentle percussion, and knowing which kidney lives where explains right-sided versus left-sided flank findings on examination and on ultrasound reports. Expecting perfect symmetry misreads a normal body.",
     whyOthers: {
-      "B": "'False' is incorrect — the forward position over the bladder is the typical finding; retroversion exists but is the variant, not the majority."
+      "B": "'False' is incorrect — the liver's bulk makes the right kidney the lower of the pair; the asymmetry is normal, not a disorder."
     },
     courseSlug: "anatomy-physiology-1"
   },
@@ -57,7 +62,7 @@ export const questionBank: SeedQuestion[] = [
     topic: "Cardiac Circulation",
     type: "ORDERING",
     difficulty: "Moderate",
-    stem: "A tutor at a midwifery college asks a Year 1 class to trace the path of blood through the heart, starting where deoxygenated blood enters the heart. Arrange the steps in the correct order.",
+    stem: "A tutor at a nursing college asks a Year 1 class to trace the path of blood through the heart, starting where deoxygenated blood enters the heart. Arrange the steps in the correct order.",
     options: [
       "Deoxygenated blood enters the right atrium from the superior and inferior vena cava",
       "It passes through the tricuspid valve into the right ventricle",
@@ -65,48 +70,28 @@ export const questionBank: SeedQuestion[] = [
       "Oxygenated blood returns through the pulmonary veins into the left atrium",
       "The left ventricle pumps it through the aortic valve into the aorta to the body"
     ],
-    explanation: "The correct sequence is: vena cava → right atrium → tricuspid valve → right ventricle → pulmonary valve → pulmonary artery → lungs → pulmonary veins → left atrium → left ventricle → aorta. Remember that the right side of the heart handles deoxygenated blood while the left side handles oxygenated blood, which makes the pulmonary artery the only artery carrying deoxygenated blood and the pulmonary veins the only veins carrying oxygenated blood. Midwives need this circuit because pregnancy raises blood volume by 40–50% and stresses every part of it. Arranging the steps in order cements the one-way flow through the valves that keeps the circuit honest.",
-    courseSlug: "anatomy-physiology-1"
-  },
-  {
-    topic: "Blood Physiology in Pregnancy",
-    type: "MCQ",
-    difficulty: "Moderate",
-    stem: "A routine antenatal laboratory report for a well, non-pale woman at 32 weeks shows a haemoglobin of 10.5 g/dL, down from 12.8 g/dL in the first trimester. How should the student midwife interpret this result?",
-    options: [
-      "As the physiological haemodilution of pregnancy, interpreted together with clinical signs and the overall trend",
-      "As definite iron-deficiency anaemia requiring immediate treatment on the number alone",
-      "As concealed internal bleeding requiring urgent ultrasound",
-      "As a laboratory error, because haemoglobin should rise during pregnancy"
-    ],
-    correctIndex: 0,
-    explanation: "In pregnancy, plasma volume expands by roughly 40–50% while red cell mass rises only about 20–30%, so haemoglobin and haematocrit fall slightly — the well-known physiological anaemia or haemodilution of pregnancy. A value around 10.5 g/dL in late pregnancy in a well woman fits this picture, and the dilution actually improves blood flow to the placenta. Decisions about iron supplementation follow local guidelines and the woman's clinical state, not one number in isolation. Interpreting laboratory results with the woman in front of you — pale or not, breathless or not — is a core midwifery habit.",
-    whyOthers: {
-      "B": "Treating on a single number without pallor, symptoms or a falling trend is premature — mild dilutional drops are expected and screening plus clinical assessment guide decisions.",
-      "C": "Concealed bleeding in pregnancy typically announces itself with pain, contractions, fetal compromise or shock signs — none of which this woman has.",
-      "D": "Haemoglobin normally falls rather than rises in pregnancy because of dilution, so this report is exactly what physiology predicts at 32 weeks."
-    },
+    explanation: "The correct sequence is: vena cava → right atrium → tricuspid valve → right ventricle → pulmonary valve → pulmonary artery → lungs → pulmonary veins → left atrium → left ventricle → aorta. Remember that the right side of the heart handles deoxygenated blood while the left side handles oxygenated blood, which makes the pulmonary artery the only artery carrying deoxygenated blood and the pulmonary veins the only veins carrying oxygenated blood. Nurses need this circuit because anaemia, fluid overload and shock test every station of it — and because the pulses felt at the wrist and neck are this circuit's most accessible windows. Arranging the steps in order cements the one-way flow through the valves that keeps the circuit honest.",
     courseSlug: "anatomy-physiology-1"
   },
 
-  // ── YEAR 1 · FOUNDATIONS OF NURSING (4) ─────────────────────
+  // ── YEAR 1 · FOUNDATIONS OF NURSING (5) ─────────────────────
   {
     topic: "Vital Signs Interpretation",
     type: "CLINICAL_SCENARIO",
     difficulty: "Easy",
-    stem: "A student is reviewing four postnatal women on a district hospital ward. Which of these observations should concern her most as an early sign of deterioration?",
+    stem: "A student is reviewing four post-operative patients on the surgical ward of a district hospital. Which of these observations should concern her most as an early sign of deterioration?",
     options: [
-      "Respiratory rate of 28 breaths per minute in a woman who had a caesarean birth this morning",
-      "Blood pressure of 118/76 mmHg in a woman two days after a normal birth",
-      "Oral temperature of 36.8°C in a woman on her first postpartum day",
-      "Pulse of 72 beats per minute in a mother who is breastfeeding"
+      "Respiratory rate of 28 breaths per minute in a patient who had an appendicectomy this morning",
+      "Blood pressure of 118/76 mmHg in a patient two days after an appendicectomy",
+      "Oral temperature of 36.8°C in a patient on his first post-operative day",
+      "Pulse of 72 beats per minute in a patient who is sleeping soundly"
     ],
     correctIndex: 0,
-    explanation: "A rising respiratory rate is one of the earliest and most sensitive warning signs of deterioration — from sepsis, bleeding, pain or chest complications — and it usually changes before blood pressure or temperature do. A rate of 28 per minute is above the normal adult range and must be re-checked, the woman examined and the finding reported to a senior midwife. The other three values sit comfortably within normal postnatal ranges. Learning to notice the quiet, early numbers is what makes observations worth taking at all.",
+    explanation: "A rising respiratory rate is one of the earliest and most sensitive warning signs of deterioration — from sepsis, bleeding, pain or chest complications — and it usually changes before blood pressure or temperature do. A rate of 28 per minute is above the normal adult range and must be re-checked, the patient examined and the finding reported to a senior nurse. The other three values sit comfortably within normal post-operative ranges. Learning to notice the quiet, early numbers is what makes observations worth taking at all.",
     whyOthers: {
-      "B": "118/76 mmHg is a normal adult blood pressure and expected two days after an uncomplicated birth.",
+      "B": "118/76 mmHg is a normal adult blood pressure and expected two days after an uncomplicated operation.",
       "C": "36.8°C is within the normal range and reassuring on day one.",
-      "D": "A pulse of 72 beats per minute is normal; transient rises occur with pain or anxiety, but this value is unremarkable."
+      "D": "A pulse of 72 beats per minute is normal, and sleep naturally slows the pulse — transient rises occur with pain or anxiety, but this value is unremarkable."
     },
     courseSlug: "foundations-nursing-1"
   },
@@ -114,17 +99,17 @@ export const questionBank: SeedQuestion[] = [
     topic: "Recognising Shock",
     type: "MCQ",
     difficulty: "Clinical Reasoning",
-    stem: "A woman on the postnatal ward has a pulse of 118 beats per minute and a blood pressure of 88/54 mmHg, when her baseline was 124/78. What is the priority interpretation?",
+    stem: "A patient on the surgical ward, six hours after an appendicectomy, has a pulse of 118 beats per minute and a blood pressure of 88/54 mmHg, when his baseline was 124/78. What is the priority interpretation?",
     options: [
-      "She may be developing hypovolaemic shock and needs immediate assessment and escalation",
-      "This is a normal cardiovascular response to breastfeeding",
-      "She is probably just anxious about her baby and needs reassurance",
-      "She should be re-monitored after four hours before anyone is informed"
+      "He may be developing hypovolaemic shock — possibly from concealed internal bleeding — and needs immediate assessment and escalation",
+      "This is a normal cardiovascular response to walking about early after surgery",
+      "He is probably just anxious about his family and needs reassurance",
+      "He should be re-monitored after four hours before anyone is informed"
     ],
     correctIndex: 0,
-    explanation: "A rising pulse combined with a falling blood pressure in a postpartum woman suggests significant blood loss or shock until proven otherwise — and postpartum bleeding can be concealed, with little visible at the vulva. The safe response is to stay with the woman, call for help and have her reviewed immediately. Waiting four hours, or explaining the finding away as anxiety or a breastfeeding effect, risks missing a life-threatening emergency. Systematic interpretation of paired vital signs against the woman's baseline is a habit that saves lives on maternity wards.",
+    explanation: "A rising pulse combined with a falling blood pressure after surgery suggests significant blood loss or shock until proven otherwise — and post-operative bleeding can be concealed, pooling inside the abdomen with little visible in the drain or dressing. The safe response is to stay with the patient, call for help and have him reviewed immediately. Waiting four hours, or explaining the finding away as anxiety or a response to activity, risks missing a life-threatening emergency. Systematic interpretation of paired vital signs against the patient's baseline is a habit that saves lives on surgical wards.",
     whyOthers: {
-      "B": "Breastfeeding can cause small comfort-related changes, never a tachycardia of 118 with a 36-point systolic drop.",
+      "B": "Early ambulation causes mild, transient changes — never a tachycardia of 118 with a 36-point systolic drop.",
       "C": "Anxiety alone does not lower blood pressure — settling on reassurance delays emergency care.",
       "D": "Four hours of waiting turns a treatable emergency into a catastrophe; immediate review is the only safe interval."
     },
@@ -137,9 +122,9 @@ export const questionBank: SeedQuestion[] = [
     stem: "Assessment is not only the first step of the nursing process but also continues throughout every other phase. True or False?",
     options: ["True", "False"],
     correctIndex: 0,
-    explanation: "This is true. The nursing process moves through assessment, diagnosis, planning, implementation and evaluation — and assessment runs through all of them, because evaluation feeds fresh assessment data back into the cycle. Clients' conditions change, especially in maternity care, so every encounter is a new opportunity to observe, listen and re-assess. This is why midwives are taught to keep watching their clients between formal observations rather than relying solely on the admission assessment.",
+    explanation: "This is true. The nursing process moves through assessment, diagnosis, planning, implementation and evaluation — and assessment runs through all of them, because evaluation feeds fresh assessment data back into the cycle. Clients' conditions change, especially on busy wards, so every encounter is a new opportunity to observe, listen and re-assess. This is why nurses are taught to keep watching their clients between formal observations rather than relying solely on the admission assessment.",
     whyOthers: {
-      "B": "'False' treats assessment as a single admission event — a dangerous habit in maternity care where a woman's condition can change within the hour."
+      "B": "'False' treats assessment as a single admission event — a dangerous habit in clinical care, where a patient's condition can change within the hour."
     },
     courseSlug: "foundations-nursing-1"
   },
@@ -159,6 +144,21 @@ export const questionBank: SeedQuestion[] = [
     whyOthers: {
       "D": "Lunch in the common room is not one of the 5 Moments — the framework describes moments of care surrounding the client, not staff break times."
     },
+    courseSlug: "foundations-nursing-1"
+  },
+  {
+    topic: "Nursing Process Steps",
+    type: "ORDERING",
+    difficulty: "Moderate",
+    stem: "A nurse is using the nursing process to care for a newly admitted patient with uncontrolled diabetes. Arrange the steps in the order they are first carried out.",
+    options: [
+      "Assessment — take the history, examine the patient and review her records",
+      "Nursing diagnosis — state the patient's problems in measurable nursing language",
+      "Planning — set goals with the patient and choose the interventions to reach them",
+      "Implementation — carry out the planned care",
+      "Evaluation — check whether the goals were met and revise the plan"
+    ],
+    explanation: "The nursing process runs assessment, diagnosis, planning, implementation and evaluation. The order is logical: you cannot state problems before gathering data, cannot plan before stating problems, and cannot evaluate before implementing. Crucially, the last step feeds the first — evaluation findings become fresh assessment data, which is why the process is a cycle rather than a straight line, and why assessment never really stops at any phase. Every step is documented as it happens: the chart is the process made visible, and the next nurse's shift starts wherever the cycle now stands.",
     courseSlug: "foundations-nursing-1"
   },
 
@@ -182,19 +182,19 @@ export const questionBank: SeedQuestion[] = [
     topic: "Surgical Asepsis",
     type: "CLINICAL_SCENARIO",
     difficulty: "Moderate",
-    stem: "A student midwife is assisting at a delivery in a district hospital when a sterile cord clamp falls from the trolley onto the floor. Which action is most appropriate?",
+    stem: "A student nurse is assisting in the treatment room of a district hospital while a trader's deep forearm laceration is being sutured, when a sterile tissue forcep falls from the trolley onto the floor. Which action is most appropriate?",
     options: [
-      "Do not use it — obtain a new sterile clamp, and report the break in technique if the pattern keeps repeating",
-      "Rinse the clamp under the tap and put it back on the field",
+      "Do not use it — obtain a new sterile instrument, and report the break in technique if the pattern keeps repeating",
+      "Rinse the forcep under the tap and put it back on the field",
       "Wipe it with an alcohol swab and continue with it",
-      "Use it, reasoning that the baby's cord stump is not sterile anyway"
+      "Use it, reasoning that the wound is not sterile anyway"
     ],
     correctIndex: 0,
-    explanation: "Once a sterile item touches a non-sterile surface, both the item and the area of the field it landed on are considered contaminated — the only safe response is to discard the item and replace it from a newly opened sterile supply. A tap rinse adds microbes rather than removing them, and a quick alcohol swab disinfects but does not sterilise an instrument. The umbilical stump is a direct route to the newborn's bloodstream, and cord infections such as omphalitis and neonatal tetanus remain real dangers in our setting. Patient safety beats convenience every single time, and speaking up about repeated breaks is part of a student's professional duty.",
+    explanation: "Once a sterile item touches a non-sterile surface, both the item and the area of the field it landed on are considered contaminated — the only safe response is to discard the item and replace it from a newly opened sterile supply. A tap rinse adds microbes rather than removing them, and a quick alcohol swab disinfects but does not sterilise an instrument. A wound being sutured is a direct route into tissue and bloodstream, and infection — including tetanus from roadside and market injuries — remains a real danger in our setting. Patient safety beats convenience every single time, and speaking up about repeated breaks is part of a student's professional duty.",
     whyOthers: {
-      "B": "Tap water is not sterile and recontaminates the clamp instantly — this makes things worse, not better.",
+      "B": "Tap water is not sterile and recontaminates the instrument instantly — this makes things worse, not better.",
       "C": "Alcohol swabbing disinfects but does not achieve sterilisation, and the brief contact time on a dropped instrument is unreliable.",
-      "D": "Even where the cord site carries some flora, the goal is to introduce the fewest possible microbes — deliberate contamination of an instrument entering the cord stump is never acceptable."
+      "D": "The goal is always to introduce the fewest possible microbes into an open wound — deliberate use of a contaminated instrument is never acceptable."
     },
     courseSlug: "microbiology-1"
   },
@@ -214,21 +214,21 @@ export const questionBank: SeedQuestion[] = [
 
   // ── YEAR 1 · HEALTH PROMOTION (2) ───────────────────────────
   {
-    topic: "Malaria Prevention in Pregnancy",
+    topic: "Malaria Prevention",
     type: "CLINICAL_SCENARIO",
     difficulty: "Moderate",
-    stem: "A student midwife is giving a health talk to pregnant women at a CHPS compound in a rural community. Which message should she emphasise first for malaria prevention in pregnancy?",
+    stem: "A student nurse is giving a health talk at a community durbar organised by a CHPS compound on protecting families from malaria. Which message should she emphasise first for the community members most at risk?",
     options: [
-      "Sleep under an insecticide-treated bed net every night throughout the pregnancy",
+      "Sleep under an insecticide-treated bed net every night — especially pregnant women and children under five",
       "Take a weekly herbal cleansing remedy to drive out 'fever blood'",
       "Avoid all fresh fruit during the rainy season",
       "Stay indoors all day to avoid mosquito bites"
     ],
     correctIndex: 0,
-    explanation: "Malaria in pregnancy can cause severe anaemia, miscarriage, preterm birth and low birth weight, and it remains a leading killer of mothers and babies in Ghana. Consistent use of an insecticide-treated bed net is among the most effective protective measures a woman can control herself, which is why it heads the teaching list. Additional preventive measures are offered at ANC visits under national guidelines, but the health talk's daily actionable message is the treated net. The remaining options are harmful folklore, needless dietary fear, or simply bad mosquito biology.",
+    explanation: "Malaria hits hardest at the groups every guideline flags for priority protection — pregnant women and children under five. In pregnancy, malaria causes severe anaemia, miscarriage, preterm birth and low birth weight, and it remains a leading killer of mothers and babies in Ghana. Consistent use of an insecticide-treated bed net is among the most effective protective measures a family can control itself, which is why it heads the teaching list. Additional preventive medicines are offered at antenatal visits under national guidelines, but the durbar's daily actionable message is the treated net. The remaining options are harmful folklore, needless dietary fear, or simply bad mosquito biology.",
     whyOthers: {
-      "B": "Unregulated herbal preparations may harm the fetus and have no proven protective effect — and self-medication can delay proper care.",
-      "C": "Fresh fruit provides vitamins needed in pregnancy and has nothing to do with malaria transmission.",
+      "B": "Unregulated herbal preparations may harm a pregnant woman or a child and have no proven protective effect — and self-medication can delay proper care.",
+      "C": "Fresh fruit provides vitamins that support immunity and nutrition, and has nothing to do with malaria transmission.",
       "D": "The Anopheles mosquitoes that transmit malaria feed mainly at night, so daytime confinement is pointless — night-time protection with a treated net is the key behaviour."
     },
     courseSlug: "health-promotion-1"
@@ -239,13 +239,13 @@ export const questionBank: SeedQuestion[] = [
     difficulty: "Easy",
     stem: "A community health nurse in Ghana is planning her activities for the year. Which of the following is an example of SECONDARY prevention rather than primary prevention?",
     options: [
-      "Screening pregnant women for anaemia at the first antenatal visit",
+      "Screening adults for high blood pressure and anaemia at a community outreach clinic",
       "Health education on handwashing at the market square",
       "Immunising children against measles",
       "Providing a borehole for clean drinking water to a village"
     ],
     correctIndex: 0,
-    explanation: "Primary prevention stops disease before it starts — education, immunisation, sanitation and clean water all belong here. Secondary prevention detects existing disease early while it is easiest to treat, so screening for anaemia, hypertension, HIV or cervical changes at ANC is the classic example. Tertiary prevention limits the damage of established disease, such as physiotherapy after stroke. Sorting activities into these levels helps a nurse decide where limited community resources will do the most good.",
+    explanation: "Primary prevention stops disease before it starts — education, immunisation, sanitation and clean water all belong here. Secondary prevention detects existing disease early while it is easiest to treat, so screening for anaemia, hypertension, HIV or cervical changes at outreach clinics is the classic example. Tertiary prevention limits the damage of established disease, such as physiotherapy after stroke. Sorting activities into these levels helps a nurse decide where limited community resources will do the most good.",
     whyOthers: {
       "B": "Handwashing education prevents infection before it ever occurs — textbook primary prevention.",
       "C": "Immunisation protects children before exposure — the flagship example of primary prevention.",
@@ -254,44 +254,24 @@ export const questionBank: SeedQuestion[] = [
     courseSlug: "health-promotion-1"
   },
 
-  // ── YEAR 2 · MEDICAL-SURGICAL NURSING (3) ───────────────────
+  // ── YEAR 2 · MEDICAL-SURGICAL NURSING (2) ───────────────────
   {
-    topic: "Postnatal Fever",
+    topic: "Post-operative Fever",
     type: "MCQ",
     difficulty: "Moderate",
-    stem: "A woman two days after caesarean birth has an oral temperature of 38.6°C. What should the student's FIRST action be?",
+    stem: "A patient two days after an appendicectomy in a district hospital has an oral temperature of 38.6°C. What should the student's FIRST action be?",
     options: [
-      "Perform a focused assessment — wound, chest, urine, breasts — and report the findings",
+      "Perform a focused assessment — wound, chest, urine, IV site — and report the findings",
       "Give an antipyretic immediately and chart 'fever resolved' when the temperature falls",
       "Remove all blankets, wait thirty minutes, and decide then",
       "Document the finding only, because fever is routine after surgery"
     ],
     correctIndex: 0,
-    explanation: "Fever after birth has a long differential — endometritis, wound infection, mastitis, urinary infection, chest infection or malaria — and each is managed differently, so the first step is a focused assessment to find the source, followed by reporting and management under medical review. Simply lowering the number with an antipyretic masks the picture while the cause advances. Passive waiting or mere charting delays diagnosis of infection, which can progress to sepsis. Finding the source is what turns a fever from a number into a diagnosis.",
+    explanation: "Fever after surgery has a long differential — wound infection, chest infection, urinary infection, IV-site complications or malaria — and each is managed differently, so the first step is a focused assessment to find the source, followed by reporting and management under medical review. Simply lowering the number with an antipyretic masks the picture while the cause advances. Passive waiting or mere charting delays diagnosis of infection, which can progress to sepsis. Finding the source is what turns a fever from a number into a diagnosis.",
     whyOthers: {
       "B": "Suppressing the temperature does not treat the cause and may hide a deepening infection behind a normal-looking chart.",
       "C": "Cooling measures can play a role later, but assessment comes first — and 38.6°C on day two is far beyond 'low grade'.",
-      "D": "Mild fever within 24 hours can reflect the stress of surgery, but fever at 38.6°C on day two demands active investigation."
-    },
-    courseSlug: "medical-surgical-nursing-1"
-  },
-  {
-    topic: "Severe Anaemia in Pregnancy",
-    type: "CLINICAL_SCENARIO",
-    difficulty: "Clinical Reasoning",
-    stem: "A woman at 32 weeks attends ANC in a district hospital. She is pale and breathless after walking across the waiting area, and her haemoglobin from last month is 7.2 g/dL. What is the priority action?",
-    options: [
-      "Escalate immediately to the midwife in charge for medical review, because severe symptomatic anaemia threatens mother and baby",
-      "Reassure her that breathlessness is normal in late pregnancy and review next month",
-      "Start her on oral iron at the counter and send her home with advice",
-      "Tell her to eat more dark green leaves and return in four weeks"
-    ],
-    correctIndex: 0,
-    explanation: "A haemoglobin of 7.2 g/dL in pregnancy is severe anaemia, and breathlessness on minimal exertion signals the heart is already straining against the 30–50% rise in pregnancy blood volume — she risks heart failure, and the fetus risks hypoxia and death. Severe anaemia also strips away any reserve if she haemorrhages at birth, the single most dangerous moment of her pregnancy. The safe move is urgent escalation for medical review, which may include admission and transfusion decisions made by the clinical team. Long-term diet and iron have their place — after the emergency is addressed.",
-    whyOthers: {
-      "B": "Breathlessness can be normal in mild late pregnancy, but combined with pallor and an Hb of 7.2 g/dL it is a warning, not reassurance.",
-      "C": "Oral iron acts far too slowly for severe symptomatic anaemia, and starting it without medical review delays definitive care.",
-      "D": "Dietary advice supports the long term but is useless as the sole response to a life-threatening haemoglobin level."
+      "D": "Mild fever within the first 24 hours can reflect the stress of surgery, but fever at 38.6°C on day two demands active investigation."
     },
     courseSlug: "medical-surgical-nursing-1"
   },
@@ -316,7 +296,7 @@ export const questionBank: SeedQuestion[] = [
     courseSlug: "medical-surgical-nursing-1"
   },
 
-  // ── YEAR 2 · PATHOLOGY (2) ──────────────────────────────────
+  // ── YEAR 2 · PATHOLOGY (3) ──────────────────────────────────
   {
     topic: "Acute Inflammation",
     type: "MCQ",
@@ -341,20 +321,34 @@ export const questionBank: SeedQuestion[] = [
     topic: "Wound Healing",
     type: "CLINICAL_SCENARIO",
     difficulty: "Moderate",
-    stem: "Two women are on the postnatal ward with wounds. Woman A has a clean, closely approximated episiotomy sutured immediately after birth. Woman B has a perineal tear that was gaping and contaminated with stool when it was sutured several hours later. Which comparison is correct?",
+    stem: "Two patients are on the surgical ward of a district hospital with wounds. Patient A has a clean, closely approximated appendicectomy incision sutured immediately after surgery. Patient B is a farmer whose diabetic foot ulcer was gaping and contaminated when he first presented, and has been left open to heal after cleaning. Which comparison is correct?",
     options: [
       "A heals by first intention; B heals by second intention with a higher risk of infection",
-      "Both heal by first intention because both wounds were sutured",
+      "Both heal by first intention because both wounds were treated in hospital",
       "A heals by second intention; B heals by first intention",
-      "Both heal identically, because all perineal wounds behave the same"
+      "Both heal identically, because all surgical wounds behave the same"
     ],
     correctIndex: 0,
-    explanation: "Healing by first intention occurs in clean, well-approximated wounds with minimal tissue loss, whose edges knit together quickly with minimal scarring. Healing by second intention occurs in gaping, contaminated or infected wounds with more tissue loss: the wound fills with granulation tissue from the base, contracts slowly and scars more. Woman B's delay and faecal contamination further raise her infection risk, so she needs closer observation for spreading redness, discharge and fever, plus meticulous perineal hygiene teaching. Understanding the two pathways explains why apparently similar wounds can recover at very different speeds.",
+    explanation: "Healing by first intention occurs in clean, well-approximated wounds with minimal tissue loss, whose edges knit together quickly with minimal scarring. Healing by second intention occurs in gaping, contaminated or infected wounds with more tissue loss: the wound fills with granulation tissue from the base, contracts slowly and scars more. Patient B's diabetes, contamination and tissue loss further raise his infection risk and slow his healing, so he needs closer observation for spreading redness, discharge and fever, plus offloading and meticulous foot-care teaching. Understanding the two pathways explains why apparently similar wounds can recover at very different speeds.",
     whyOthers: {
-      "B": "Suturing does not guarantee first-intention healing — contamination, delay and tissue loss can still force slow second-intention healing.",
+      "B": "Hospital treatment does not guarantee first-intention healing — contamination, delay and tissue loss can still force slow second-intention healing.",
       "C": "This reverses the definitions: the clean, approximated wound is the textbook first-intention case.",
-      "D": "Healing depends on cleanliness, approximation, blood supply, nutrition and infection, all of which clearly differ between these two women."
+      "D": "Healing depends on cleanliness, approximation, blood supply, nutrition and infection, all of which clearly differ between these two patients."
     },
+    courseSlug: "pathology-1"
+  },
+  {
+    topic: "Wound Healing Phases",
+    type: "ORDERING",
+    difficulty: "Moderate",
+    stem: "A tutor asks a Year 2 class to arrange the phases of wound healing in their usual order, starting immediately after injury.",
+    options: [
+      "Haemostasis — blood vessels constrict and a clot seals the damaged vessels",
+      "Inflammation — the wound becomes red, swollen, hot and painful as white cells and fluid arrive",
+      "Proliferation — granulation tissue fills the gap, new vessels grow and skin edges creep inwards",
+      "Maturation (remodelling) — collagen reorganises and strengthens, and the scar shrinks and softens"
+    ],
+    explanation: "Wound healing classically runs through four phases: haemostasis, inflammation, proliferation and maturation — sealing, cleaning, filling and strengthening. Each phase explains what you see at the bedside: a clean surgical wound moving quietly towards a pale, soft scar, versus a chronic diabetic foot ulcer stuck red and oozing because cleaning never completes. It also explains the nursing: protein, vitamin C and iron feed the proliferating tissue, warmth and moisture support it, and unnecessary disturbance of a healing wound sets the clock back. Complications such as dehiscence and hypertrophic scarring are failures of specific phases, so the phases are the mental map for preventing them.",
     courseSlug: "pathology-1"
   },
 
@@ -363,7 +357,7 @@ export const questionBank: SeedQuestion[] = [
     topic: "Medication Safety",
     type: "MCQ",
     difficulty: "Moderate",
-    stem: "A student midwife is preparing a medication but finds the prescriber's handwriting illegible, and the name on the ward shelf looks confusingly similar to another drug. What should she do FIRST?",
+    stem: "A student nurse is preparing a medication but finds the prescriber's handwriting illegible, and the name on the ward shelf looks confusingly similar to another drug. What should she do FIRST?",
     options: [
       "Contact the prescriber to clarify the order before anything is given",
       "Ask the most senior colleague on duty to guess the most likely drug",
@@ -383,7 +377,7 @@ export const questionBank: SeedQuestion[] = [
     topic: "Safe Medication Practice",
     type: "MULTI_SELECT",
     difficulty: "Moderate",
-    stem: "Which of the following are SAFE medication practices for a student midwife? Select ALL that apply.",
+    stem: "Which of the following are SAFE medication practices for a student nurse? Select ALL that apply.",
     options: [
       "Checking the five rights against the original order before administration",
       "Documenting immediately after giving the medicine, not before",
@@ -404,7 +398,7 @@ export const questionBank: SeedQuestion[] = [
     stem: "If a student is unsure about a medication order, the safest approach is to administer about half of it first and observe the client closely. True or False?",
     options: ["True", "False"],
     correctIndex: 1,
-    explanation: "False. Inventing a 'half dose' is guessing with a client's life, and half of a wrong medicine is still the wrong medicine. The safe response when unsure is to stop, check and clarify with the prescriber, the pharmacist or the supervising midwife before anything is given. Giving nothing is always safer than giving something you do not understand. Asking questions early is exactly the habit supervisors want to see in a student — it is professionalism, not weakness.",
+    explanation: "False. Inventing a 'half dose' is guessing with a client's life, and half of a wrong medicine is still the wrong medicine. The safe response when unsure is to stop, check and clarify with the prescriber, the pharmacist or the supervising nurse before anything is given. Giving nothing is always safer than giving something you do not understand. Asking questions early is exactly the habit supervisors want to see in a student — it is professionalism, not weakness.",
     whyOthers: {
       "A": "'True' normalises guessing: an unverified medicine can harm even at a reduced amount, and no amount of observation can undo an error already given."
     },
@@ -450,10 +444,10 @@ export const questionBank: SeedQuestion[] = [
 
   // ── YEAR 2 · NUTRITION & DIETETICS (2) ──────────────────────
   {
-    topic: "Iron Nutrition in Pregnancy",
+    topic: "Iron Nutrition",
     type: "MCQ",
     difficulty: "Moderate",
-    stem: "A student midwife is counselling a pregnant woman with mild anaemia on diet at a district clinic. Which advice is the most useful and accurate about iron absorption in a Ghanaian setting?",
+    stem: "A student nurse is counselling a 24-year-old woman with mild iron-deficiency anaemia on diet at a district clinic. Which advice is the most useful and accurate about iron absorption in a Ghanaian setting?",
     options: [
       "Pair iron-rich meals with vitamin C sources like oranges or pawpaw, and keep tea away from mealtimes",
       "Take iron-rich foods together with strong tea to settle the stomach",
@@ -461,7 +455,7 @@ export const questionBank: SeedQuestion[] = [
       "Boil all leafy greens for several hours until completely soft"
     ],
     correctIndex: 0,
-    explanation: "Vitamin C strongly enhances absorption of the non-haem iron in plant foods such as dark green leaves, beans and fortified cereals, while the tannins in tea and coffee bind iron and block its absorption — a real issue in Ghana, where tea is often taken with meals. Practical advice is to pair meals with fruit and to move tea drinking at least an hour away from iron-rich foods. Time of day does not change absorption, and prolonged boiling destroys the very vitamin C and folate the woman needs, so greens should be lightly cooked. Simple food pairing is one of the most powerful nutritional tools a midwife carries.",
+    explanation: "Vitamin C strongly enhances absorption of the non-haem iron in plant foods such as dark green leaves, beans and fortified cereals, while the tannins in tea and coffee bind iron and block its absorption — a real issue in Ghana, where tea is often taken with meals. Practical advice is to pair meals with fruit and to move tea drinking at least an hour away from iron-rich foods. Time of day does not change absorption, and prolonged boiling destroys the very vitamin C and folate the body needs, so greens should be lightly cooked. Simple food pairing is one of the most powerful nutritional tools a nurse carries.",
     whyOthers: {
       "B": "Tea contains tannins that bind dietary iron in the gut — taking it with food directly blocks the absorption she needs.",
       "C": "The time of day has no effect on iron absorption; this advice adds nothing and may reduce adherence.",
@@ -470,29 +464,181 @@ export const questionBank: SeedQuestion[] = [
     courseSlug: "nutrition-dietetics"
   },
   {
-    topic: "Weight Patterns in Pregnancy",
+    topic: "Diabetes Diet Counselling",
     type: "CLINICAL_SCENARIO",
     difficulty: "Moderate",
-    stem: "At an antenatal clinic, a student reviews three women's records. Woman A has gained 9 kg by 30 weeks. Woman B has gained only 3 kg by 34 weeks and looks pale and tired. Woman C gained 1 kg in the last week alone and her ankles are newly swollen. Which woman's findings matter most right now?",
+    stem: "At a nutrition clinic in a district hospital, a student nurse is counselling a 52-year-old trader newly diagnosed with type 2 diabetes, whose usual day is one large evening meal of banku with heavy soup and frequent sugary drinks through the market day. Which advice best fits her reality?",
     options: [
-      "Woman C — sudden weight gain with new swelling may signal pre-eclampsia developing",
-      "Woman A — 9 kg by 30 weeks is excessive and needs diet restriction",
-      "Woman B — weight gain is naturally slow in late pregnancy, so there is no urgency",
-      "All three are normal patterns needing review only at the next routine visit"
+      "Cut the sugary drinks, spread food across smaller regular meals built around beans, fish, garden eggs and leafy greens with measured portions of banku, and lighten the evening meal",
+      "Ban all traditional Ghanaian foods — she should eat only imported 'diabetic' foods from the pharmacy",
+      "Skip breakfast entirely to cut the day's sugar, and keep the one large evening meal as it is",
+      "Replace her meals with palm wine in the evening, since it is natural and unprocessed"
     ],
     correctIndex: 0,
-    explanation: "A sudden jump in weight over one week with new-onset dependent oedema is a classic warning of pre-eclampsia, because the gain is retained fluid rather than tissue — and pre-eclampsia can progress to eclampsia within days. This finding should drive today's blood pressure check and urine testing for protein, and the plan that follows. Woman B also needs assessment of diet and anaemia, but a slow steady pattern is not the one that kills quickly. Woman A's gain is broadly within the usual 9–12 kg course of pregnancy, and pregnancy is never the time for restrictive dieting.",
+    explanation: "The highest-yield changes for a newly diagnosed Ghanaian trader are cutting sugar-sweetened drinks, restructuring the single heavy evening meal into smaller regular meals, and building plates around vegetables, beans and fish with controlled starch portions — practical, affordable and culturally familiar. Regular meal spacing also protects patients on glucose-lowering medicines from dangerous lows. Imported 'diabetic' foods are expensive marketing, not medicine; skipping breakfast promotes glucose swings and evening overeating; and palm wine carries its own sugar and alcohol load. Counselling that fits the patient's real day is the diet therapy she will actually follow.",
     whyOthers: {
-      "B": "Around 9 kg by 30 weeks is within the usual total gain for a normal pregnancy — restriction in pregnancy harms the baby.",
-      "C": "Grossly slow weight gain with pallor and fatigue suggests undernutrition and possible anaemia — she needs support and assessment, not dismissal.",
-      "D": "Treating three clearly different patterns as 'routine' would miss both growing undernutrition and a hypertensive warning sign."
+      "B": "Banning familiar foods buys neither adherence nor health — portion quality and regularity matter far more, and imported 'diabetic' foods are costly substitutes for skills she can learn.",
+      "C": "Skipping breakfast invites glucose swings and a ravenous evening meal — the exact pattern that needs unwinding, not reinforcing.",
+      "D": "Palm wine is a sugar- and alcohol-containing drink, not a meal replacement — 'natural' does not mean neutral for blood glucose."
     },
     courseSlug: "nutrition-dietetics"
   },
 
-  // ── YEAR 3 · NORMAL PREGNANCY (4) ───────────────────────────
+  // ── YEAR 3 · MEDICAL & SURGICAL NURSING III (3) ─────────────
   {
-    topic: "Quickening",
+    topic: "Sickle Cell Crisis",
+    type: "CLINICAL_SCENARIO",
+    difficulty: "Clinical Reasoning",
+    stem: "A 21-year-old student known with sickle cell disease arrives at the district hospital casualty area with three days of worsening back and leg pain after a cold, rainy overnight journey from campus. He is pale, obviously in severe pain, and has drunk nothing since morning. What is the priority nursing response?",
+    options: [
+      "Recognise a vaso-occlusive crisis: keep him warm, help him start fluids and pain relief as prescribed, monitor for fever and complications, and escalate for review",
+      "Give him a hot drink and send him home — sickle cell pain is something patients learn to live with",
+      "Treat it as ordinary travelling body pain and hand him simple analgesia from the counter without further assessment",
+      "Wait for the pain to settle by itself before involving senior staff, to avoid an unnecessary referral"
+    ],
+    correctIndex: 0,
+    explanation: "Sudden severe bone and joint pain in a patient with sickle cell disease is a vaso-occlusive crisis until proven otherwise — sickled cells trapping in small vessels and starving the tissue of oxygen. Cold, rain, dehydration and infection are classic triggers in Ghana, and this young man collected several on one journey. Management rests on warmth, fluids, pain relief and treating any trigger found — started promptly and monitored; fever, chest pain, breathlessness or falling oxygen saturation must be escalated urgently because acute chest syndrome kills. Dismissing the pain as 'something they live with' is the oldest error in sickle cell care: his pain is real, treatable and an emergency in its own right.",
+    whyOthers: {
+      "B": "Crisis pain is severe, escalating and treatable — sending him home cold and dehydrated walks him into the next crisis or a complication.",
+      "C": "Counter analgesia without assessment misses the crisis pattern, its triggers and its complications — and undertreating sickle pain is itself a standard-of-care failure.",
+      "D": "Waiting on an evolving crisis risks acute chest syndrome and sepsis; early review is the safe and expected pathway."
+    },
+    courseSlug: "medical-surgical-nursing-3"
+  },
+  {
+    topic: "TB Treatment Adherence",
+    type: "TRUE_FALSE",
+    difficulty: "Moderate",
+    stem: "A patient with pulmonary tuberculosis, two months into treatment, tells the student nurse he feels completely well and wants to stop his medicines now that his cough is gone. Stopping at this point is safe. True or False?",
+    options: ["True", "False"],
+    correctIndex: 1,
+    explanation: "False. Feeling well and losing the cough means the medicines are working — not that the bacteria are gone. TB treatment must run its full course under Ghana's National Tuberculosis Programme; stopping early leaves surviving bacteria to multiply again, causing relapse and breeding drug resistance, which transforms a curable six-month course into longer, costlier, more toxic treatment for the patient and a resistant strain in the community. Adherence support — treatment supporters, reminder systems, honest discussion of side effects and barriers — is core nursing work, because the hardest month of TB care is the month the patient feels fine.",
+    whyOthers: {
+      "A": "'True' mistakes symptom relief for cure — the fading of the cough at two months is exactly the danger zone where adherence lapses and resistance is bred."
+    },
+    courseSlug: "medical-surgical-nursing-3"
+  },
+  {
+    topic: "Oxygen Therapy in COPD",
+    type: "TRUE_FALSE",
+    difficulty: "Moderate",
+    stem: "A patient with chronic obstructive pulmonary disease has an oxygen saturation of 86 per cent on room air and is breathing fast. The nurse should withhold oxygen because it will stop his breathing. True or False?",
+    options: ["True", "False"],
+    correctIndex: 1,
+    explanation: "False. Hypoxia is the immediate threat, and a hypoxic patient should never be denied oxygen. The modern teaching is to give controlled oxygen — targeting the range your guideline sets for COPD, commonly about 88–92 per cent — and then monitor closely: rising drowsiness, confusion or slowing respirations signal carbon dioxide retention and are the cue to call for review and adjustment, not reasons to have withheld oxygen from the start. The old folklore that oxygen 'stops the COPD patient breathing' arose from uncontrolled high-flow oxygen, and it still causes the opposite error — nurses withholding a treatment the patient's body is starving for.",
+    whyOthers: {
+      "A": "'True' turns a monitorable, adjustable treatment decision into untreated hypoxia — by far the more dangerous mistake."
+    },
+    courseSlug: "medical-surgical-nursing-3"
+  },
+
+  // ── YEAR 3 · CLINICAL NURSING SKILLS III (1) ────────────────
+  {
+    topic: "Fluid Balance",
+    type: "MCQ",
+    difficulty: "Moderate",
+    stem: "A patient on the medical ward has a 24-hour fluid chart showing intake of 1,000 mL and urine output of 300 mL. His ankles have become noticeably more swollen since yesterday, and he says his slippers are tight. How should the student nurse interpret and act on this?",
+    options: [
+      "He is in positive fluid balance — output far below intake — so the finding must be reported, the chart continued honestly including 'hidden' fluids, and daily weights started",
+      "This is normal, as long as he is passing any urine at all",
+      "The chart is meaningless, because tea, porridge and pap do not count as fluid intake",
+      "He is dehydrated, because 300 mL of urine means the kidneys are conserving water — so push fluids rapidly by mouth"
+    ],
+    correctIndex: 0,
+    explanation: "Intake of 1,000 mL against 300 mL of urine is a strongly positive balance, and a urine output that low — well under roughly 0.5 mL per kilogram per hour — suggests the kidneys are struggling, with heart failure or kidney injury the leading explanations when oedema is growing. The nursing response is to report the pattern, complete the chart honestly (tea, pap, porridge and medicines taken with water all count as intake), weigh him daily at the same time (about one kilogram equals one litre of retained fluid), and watch for breathlessness as fluid builds. Positive balance is not a paperwork observation — it is a trajectory, and the nurse who reports it early changes where it ends.",
+    whyOthers: {
+      "B": "'Any urine at all' is a dangerous threshold — 300 mL in 24 hours is oliguria territory, and the widening gap between intake and output is the actual finding.",
+      "C": "Everything that enters the mouth counts on the chart — porridge, tea, pap and oral medicines in water are exactly the intake a balance can hide.",
+      "D": "The pattern is fluid retention, not dehydration — pushing fluids into a struggling heart or kidneys worsens the overload and the swelling."
+    },
+    courseSlug: "clinical-nursing-skills-3"
+  },
+
+  // ── YEAR 3 · MEDICAL & SURGICAL NURSING IV (3) ──────────────
+  {
+    topic: "Glasgow Coma Scale",
+    type: "MCQ",
+    difficulty: "Moderate",
+    stem: "A patient with a head injury opens his eyes only when the nurse calls his name loudly, answers with confused words, and obeys the command 'squeeze my fingers'. What is his Glasgow Coma Scale score, and what should the student do with it?",
+    options: [
+      "13 — reduced from a maximum of 15, so it must be charted with its components, reported, and re-checked at set intervals, because falling scores signal rising pressure",
+      "15 — normal, because he eventually responds to everything asked of him",
+      "8 — severe coma, so he needs immediate airway support now",
+      "The score cannot be calculated at the bedside without a brain scan"
+    ],
+    correctIndex: 0,
+    explanation: "Eyes opening to voice scores 3, confused verbal response scores 4, and obeying commands scores 6 — a GCS of 13, often written E3 V4 M6. The number itself matters less than its parts and its trend: chart all three components, report a reduced or falling score, and re-check at the frequency your ward sets, because a dropping GCS is the bedside signature of rising pressure inside the skull. The calculation needs only eyes, ears and a command — no scan, no machine — which is exactly why nurses, not imaging, are the early warning system for head injuries.",
+    whyOthers: {
+      "B": "Eventual response is not full response — eyes opening to voice rather than spontaneously, and confused speech, each cost points against the maximum of 15.",
+      "C": "A score of 8 describes a patient who opens his eyes to pain at most and speaks no words — deeply comatose. This patient is far better than that, though still impaired and needing close monitoring.",
+      "D": "GCS is a bedside clinical score built from eyes, voice and movement; imaging may explain a low score but never calculates it."
+    },
+    courseSlug: "medical-surgical-nursing-4"
+  },
+  {
+    topic: "Hypoglycaemia Recognition",
+    type: "CLINICAL_SCENARIO",
+    difficulty: "Clinical Reasoning",
+    stem: "At 03:00 on a medical ward, a 68-year-old woman with diabetes, admitted after a mild stroke, becomes sweaty, trembling and mildly confused. She was too unwell to eat supper, though her evening medicines went ahead as charted. What is the student nurse's priority?",
+    options: [
+      "Recognise probable hypoglycaemia: check her glucose if a meter is available, give fast-acting sugar per protocol while she can swallow safely, stay with her, and call for review",
+      "Let her sleep — confusion at 3 a.m. is normal in elderly patients and the morning round can sort it out",
+      "Document 'mild confusion' in the notes and continue the round",
+      "Withhold her breakfast and all diabetes medicines tomorrow, and give nothing by mouth until the doctors round at 08:00"
+    ],
+    correctIndex: 0,
+    explanation: "Cold sweat, trembling and new confusion in a treated diabetic patient — especially one who missed a meal — is hypoglycaemia until proven otherwise, and untreated hypoglycaemia causes seizures, brain injury and death far faster than high glucose ever does. The response is immediate: check glucose if a meter is available, give fast-acting sugar per your ward protocol while she can still swallow safely, re-check after about fifteen minutes, stay with her, and call for review — patients who cannot swallow or remain confused need the team's alternative pathway, not repeated oral attempts. In a patient recovering from a stroke the confusion is easy to misattribute; the sweating and tremor are the clues that the sugar, not the stroke, is speaking.",
+    whyOthers: {
+      "B": "Sleeping through hypoglycaemia is how it deepens — the brain quietly runs out of fuel, and the morning may find her fitting or unrousable.",
+      "C": "Documenting the confusion without acting records the deterioration while allowing it to continue — assessment findings demand response.",
+      "D": "Withholding food from a now-hypoglycaemic patient starves the treatment: the priority is sugar in, help called, cause reported — meal planning belongs to the review that follows."
+    },
+    courseSlug: "medical-surgical-nursing-4"
+  },
+  {
+    topic: "Pressure Injury Staging",
+    type: "MCQ",
+    difficulty: "Hard",
+    stem: "A 68-year-old woman, two days after a stroke, has been lying mostly on her right side. The skin over her right hip is intact, but it is darker than the skin beside it, does not turn pale when pressed, and feels firmer and warmer than the left hip. How should the student nurse classify and respond?",
+    options: [
+      "An early pressure injury — intact skin with non-blanching colour change over a pressure point: reposition her off the hip now, begin scheduled position changes and skin care, document precisely and report",
+      "No problem at all — the skin is unbroken, so there is no pressure damage until a wound appears",
+      "A stage 4 ulcer — the bone must already be exposed underneath the dark patch",
+      "A heat rash — apply powder and leave her positioned as she is comfortable"
+    ],
+    correctIndex: 0,
+    explanation: "Intact skin over a bony prominence that does not blanch — and in darker skin, that is darker, firmer or warmer than the surrounding skin — is an early pressure injury, the stage before the skin breaks. It is the moment prevention still works fully: reposition off the hip immediately, begin scheduled two-hourly position changes, relieve pressure with cushions as your ward directs, attend to skin moisture and nutrition, document exactly what was seen, and report it. Pressure injuries in dark skin are routinely missed because nurses look for redness; the firmness, warmth and colour difference are the early signatures. Left in position, the next stage is an open ulcer — painful, months-long and vastly harder to heal.",
+    whyOthers: {
+      "B": "Unbroken skin at the non-blanching stage is damage already begun — waiting for a wound means waiting until prevention has failed.",
+      "C": "Stage 4 means exposed bone or muscle through full-thickness tissue loss — nothing here suggests that depth, and the mislabel would still demand the same nursing now, plus far more later.",
+      "D": "Heat rash does not sit over pressure points with firmness and non-blanching colour change — and 'leave her as she is comfortable' is the one position guaranteed to worsen it."
+    },
+    courseSlug: "medical-surgical-nursing-4"
+  },
+
+  // ── YEAR 3 · MATERNAL & CHILD HEALTH I (3) ──────────────────
+  {
+    topic: "Blood Physiology in Pregnancy",
+    type: "MCQ",
+    difficulty: "Moderate",
+    stem: "A routine antenatal laboratory report for a well, non-pale woman at 32 weeks shows a haemoglobin of 10.5 g/dL, down from 12.8 g/dL in the first trimester. How should the student nurse interpret this result?",
+    options: [
+      "As the physiological haemodilution of pregnancy, interpreted together with clinical signs and the overall trend",
+      "As definite iron-deficiency anaemia requiring immediate treatment on the number alone",
+      "As concealed internal bleeding requiring urgent ultrasound",
+      "As a laboratory error, because haemoglobin should rise during pregnancy"
+    ],
+    correctIndex: 0,
+    explanation: "In pregnancy, plasma volume expands by roughly 40–50% while red cell mass rises only about 20–30%, so haemoglobin and haematocrit fall slightly — the well-known physiological anaemia or haemodilution of pregnancy. A value around 10.5 g/dL in late pregnancy in a well woman fits this picture, and the dilution actually improves blood flow to the placenta. Decisions about iron supplementation follow local guidelines and the woman's clinical state, not one number in isolation. Interpreting laboratory results with the woman in front of you — pale or not, breathless or not — is a core nursing habit.",
+    whyOthers: {
+      "B": "Treating on a single number without pallor, symptoms or a falling trend is premature — mild dilutional drops are expected and screening plus clinical assessment guide decisions.",
+      "C": "Concealed bleeding in pregnancy typically announces itself with pain, contractions, fetal compromise or shock signs — none of which this woman has.",
+      "D": "Haemoglobin normally falls rather than rises in pregnancy because of dilution, so this report is exactly what physiology predicts at 32 weeks."
+    },
+    courseSlug: "maternal-child-health-1"
+  },
+  {
+    topic: "Fetal Movement Awareness",
     type: "CLINICAL_SCENARIO",
     difficulty: "Moderate",
     stem: "A 19-year-old primigravida at 19 weeks attends ANC at a district hospital, worried because she has not yet felt her baby move. She has no pain or bleeding, the fetal heartbeat is present, and fundal height matches her dates. Which response is most appropriate?",
@@ -503,13 +649,13 @@ export const questionBank: SeedQuestion[] = [
       "Dismiss the concern because a first-time mother's perception of movement has no clinical meaning"
     ],
     correctIndex: 0,
-    explanation: "Quickening — the mother's first perception of fetal movement — is typically felt at about 18–20 weeks in a primigravida and 16–18 weeks in a multigravida, because a first-time mother is still learning what the fluttering feels like. At 19 weeks, with a fetal heartbeat and a fundal height matching dates, this pregnancy is progressing normally. Kind reassurance paired with clear safety-net advice — return if no movements are felt by about 24 weeks or if movements reduce once established — is both humane and safe. Announcing probable fetal death without a single supporting sign is as wrong as it is cruel.",
+    explanation: "Quickening — the mother's first perception of fetal movement — is typically felt at about 18–20 weeks in a primigravida and 16–18 weeks in a multigravida, because a first-time mother is still learning what the fluttering feels like. At 19 weeks, with a fetal heartbeat and a fundal height matching dates, this pregnancy is progressing normally. Kind reassurance paired with clear safety-net advice — return if no movements are felt by about 24 weeks or if movements reduce once established — is both humane and safe, and it plants the fetal-movement awareness that later becomes a danger sign she must act on. Announcing probable fetal death without a single supporting sign is as wrong as it is cruel.",
     whyOthers: {
       "B": "Nothing in the findings supports fetal death — a present heartbeat and a fundus grown to dates indicate a live, growing baby.",
       "C": "Many first-time mothers feel movement only after 18 weeks; this statement would create needless alarm.",
-      "D": "Quickening helps confirm gestational age and builds the maternal bond — and any worried mother deserves a real answer, not a brush-off."
+      "D": "Fetal movement awareness helps confirm gestational age and later serves as a danger sign — and any worried mother deserves a real answer, not a brush-off."
     },
-    courseSlug: "normal-pregnancy"
+    courseSlug: "maternal-child-health-1"
   },
   {
     topic: "Antenatal Triage",
@@ -523,194 +669,35 @@ export const questionBank: SeedQuestion[] = [
       "Mild morning nausea at 18 weeks"
     ],
     correctIndex: 0,
-    explanation: "A blood pressure of 150/96 with headache and visual disturbance at 34 weeks suggests severe pre-eclampsia, which can progress to eclamptic seizures or placental abruption with little warning. This combination is a referral trigger: urgent review today, with admission or transfer per local protocol and the midwife staying with the woman in the meantime. Fundal height slightly below dates deserves follow-up and ultrasound, but with a lively fetus it is not today's emergency. The remaining two findings sit within the normal range for pregnancy.",
+    explanation: "A blood pressure of 150/96 with headache and visual disturbance at 34 weeks suggests severe pre-eclampsia, which can progress to eclamptic seizures or placental abruption with little warning. This combination is a referral trigger: urgent review today, with admission or transfer per local protocol and the nurse staying with the woman in the meantime. Fundal height slightly below dates deserves follow-up and ultrasound, but with a lively fetus it is not today's emergency. The remaining two findings sit within the normal range for pregnancy.",
     whyOthers: {
       "B": "Possible growth faltering needs follow-up and ultrasound, but a lively fetus makes this important rather than emergent.",
       "C": "This weight gain pattern with trace oedema is normal in late pregnancy.",
       "D": "Morning nausea at 18 weeks is uncomfortable but common and non-urgent."
     },
-    courseSlug: "normal-pregnancy"
-  },
-  {
-    topic: "Signs of Pregnancy",
-    type: "TRUE_FALSE",
-    difficulty: "Easy",
-    stem: "A multigravida typically feels quickening earlier than a primigravida because she recognises the sensation sooner. True or False?",
-    options: ["True", "False"],
-    correctIndex: 0,
-    explanation: "True. Multigravidae usually report quickening around 16–18 weeks, about two weeks before primigravidae, because they have felt fetal movement before and recognise the fluttering earlier. The fetus actually moves from about 8–9 weeks but is far too small for the mother to feel. Quickening is one of the presumptive signs of pregnancy and can help confirm gestational age where ultrasound dates are unavailable. Teaching first-time mothers what to expect helps them neither panic nor miss reduced movements later on.",
-    whyOthers: {
-      "B": "'False' contradicts obstetric teaching — experience genuinely brings earlier recognition of the same fetal movements."
-    },
-    courseSlug: "normal-pregnancy"
-  },
-  {
-    topic: "Leopold's Maneuvers",
-    type: "ORDERING",
-    difficulty: "Moderate",
-    stem: "A midwife is performing Leopold's maneuvers at 36 weeks to determine lie, presentation and position. Arrange the four maneuvers in their correct order.",
-    options: [
-      "First maneuver — palpate the fundus to identify which pole occupies it",
-      "Second maneuver — place both hands on either side of the abdomen at umbilical level to locate the back and small parts",
-      "Third maneuver — use thumb and fingers just above the symphysis pubis to identify the presenting part and whether it is engaged",
-      "Fourth maneuver — face the woman's feet and palpate downward from the pelvic brim to judge the head's attitude and descent"
-    ],
-    explanation: "The correct sequence is: first, fundal palpation to determine whether the head or breech lies at the fundus; second, lateral palpation at umbilical level to map the smooth fetal back against the mother's left or right side; third, Pawlik's grip just above the pubis to identify the presenting part and engagement; and fourth, the pelvic grip facing the woman's feet, to judge flexion and descent of the head. The order is deliberate — you cannot reliably name the position before knowing where the back lies, nor judge engagement before identifying the presenting part. Performed gently on an emptied bladder, the four maneuvers give lie, presentation, position and engagement without any machine.",
-    courseSlug: "normal-pregnancy"
+    courseSlug: "maternal-child-health-1"
   },
 
-  // ── YEAR 3 · NORMAL LABOUR (4) ──────────────────────────────
+  // ── YEAR 3 · MATERNAL & CHILD HEALTH II (3) ─────────────────
   {
     topic: "Intrapartum Fetal Monitoring",
     type: "CLINICAL_SCENARIO",
     difficulty: "Clinical Reasoning",
     stem: "During the first stage of labour at a district hospital, a student listens to the fetal heart rate for a full minute after a contraction and counts 96 beats per minute. After turning the woman onto her left side, she re-counts 100 beats per minute. What should she do first?",
     options: [
-      "Recognise persistent fetal bradycardia, stay with the woman, call the midwife in charge and prepare for urgent action",
+      "Recognise persistent fetal bradycardia, stay with the woman, call the nurse in charge and prepare for urgent action",
       "Document the rate as within normal limits because 100 is a round number",
       "Continue routine two-hourly monitoring and re-listen at the next interval",
       "Tell her the baby is just sleeping and encourage her to walk around to speed things up"
     ],
     correctIndex: 0,
-    explanation: "A fetal heart rate persistently below about 110 beats per minute is fetal bradycardia — a danger sign of fetal compromise, often from cord compression or placental insufficiency. Two readings in this zone even after repositioning mean the student's job is to escalate now: call the midwife in charge, keep the woman on her side, stay with her and prepare for possible expedited birth. Charting it as normal, waiting for the next routine check or sending the mother walking all abandon the baby to ongoing hypoxia. Intermittent auscultation saves lives only when abnormal findings are acted on immediately.",
+    explanation: "A fetal heart rate persistently below about 110 beats per minute is fetal bradycardia — a danger sign of fetal compromise, often from cord compression or placental insufficiency. Two readings in this zone even after repositioning mean the student's job is to escalate now: call the nurse in charge, keep the woman on her side, stay with her and prepare for possible expedited birth. Charting it as normal, waiting for the next routine check or sending the mother walking all abandon the baby to ongoing hypoxia. Intermittent auscultation saves lives only when abnormal findings are acted on immediately.",
     whyOthers: {
       "B": "Neither 96 nor 100 is within normal fetal limits — rounding a number does not make distress disappear.",
       "C": "Two-hourly re-checking is the routine for a normal trace, not the response to repeated bradycardia.",
       "D": "Walking cannot fix a bradycardic fetus and 'the baby is sleeping' is not an interpretation — escalation with continuous presence is required."
     },
-    courseSlug: "normal-labour"
-  },
-  {
-    topic: "Stages of Labour",
-    type: "MCQ",
-    difficulty: "Moderate",
-    stem: "Which combination of findings best tells the midwife that a woman has moved from the first stage of labour into the second stage?",
-    options: [
-      "The cervix is fully dilated, contractions are strong, and the woman feels an irresistible urge to bear down",
-      "The membranes rupture, whatever the state of the cervix",
-      "Contractions become regular at five-minute intervals as labour begins",
-      "The woman becomes chatty and hungry between contractions"
-    ],
-    correctIndex: 0,
-    explanation: "The second stage begins at full cervical dilation and ends with the birth of the baby, and in practice the midwife confirms it by vaginal examination interpreted together with the woman's behaviour — strong contractions, involuntary grunting and the overwhelming urge to push. Rupture of membranes can happen at any point, even before labour begins, so it defines no stage. Regular five-minute contractions describe the active first stage. Transition typically makes a woman quieter and more inwardly focused, not talkative — but behaviour alone never replaces the vaginal examination.",
-    whyOthers: {
-      "B": "Membranes can rupture before labour or at any stage — the timing of rupture does not define the second stage.",
-      "C": "Regular contractions at 5-minute intervals early on describe established first-stage labour.",
-      "D": "Hunger and chattiness are early-labour features; transition usually brings withdrawal and quietness — and behaviour alone never replaces examination."
-    },
-    courseSlug: "normal-labour"
-  },
-  {
-    topic: "Second Stage Management",
-    type: "TRUE_FALSE",
-    difficulty: "Moderate",
-    stem: "In the second stage of labour, best practice is for the woman to push with every contraction as soon as the cervix is fully dilated, whether or not she feels the urge. True or False?",
-    options: ["True", "False"],
-    correctIndex: 1,
-    explanation: "False. Current good practice supports spontaneous pushing — waiting for the woman's own urge and bearing-down reflex — because directed pushing on every contraction, especially with prolonged breath-holding, can exhaust her and reduce blood flow between contractions. Full dilation alone does not mean the presenting part has descended enough; waiting for the urge often makes the active pushing phase shorter and more effective. The midwife's role is support, positioning and encouragement, not a countdown shouted at every contraction. Where pushing proves ineffective, coaching is adjusted to the woman and the descent — never imposed as a blanket rule.",
-    whyOthers: {
-      "A": "'True' describes outdated directed pushing — pushing without the reflex exhausts the mother and may not shorten the second stage at all."
-    },
-    courseSlug: "normal-labour"
-  },
-  {
-    topic: "Immediate Newborn Care",
-    type: "ORDERING",
-    difficulty: "Moderate",
-    stem: "A term baby has just been born at a district hospital, crying vigorously. Arrange the steps of immediate newborn care in their recommended order.",
-    options: [
-      "Thoroughly dry the baby on the mother's abdomen, assess breathing and colour, and cover the head",
-      "Clamp and cut the cord after a delay, once cord pulsation has stopped",
-      "Place the baby skin-to-skin on the mother's chest and cover both together",
-      "Support the mother to begin breastfeeding within the first hour",
-      "Complete the full head-to-toe examination and give the routine injections and eye care per ward protocol"
-    ],
-    explanation: "The recommended sequence of essential newborn care is: dry and assess at the mother's abdomen within the first minutes — drying simultaneously stimulates breathing; then delay cord clamping until pulsation stops or at least a minute has passed, unless the baby needs resuscitation; then place the baby skin-to-skin on the mother's chest and cover both for warmth; support the first breastfeed within the hour; and only then carry out the detailed examination and give the routine injections and eye care per protocol. Warmth is a thread running through every step, because a cold newborn burns energy it cannot spare. The single exception is a baby who is not breathing, who moves to resuscitation immediately, before anything else.",
-    courseSlug: "normal-labour"
-  },
-
-  // ── YEAR 3 · PUERPERIUM (2) ─────────────────────────────────
-  {
-    topic: "Fourth Stage Assessment",
-    type: "CLINICAL_SCENARIO",
-    difficulty: "Clinical Reasoning",
-    stem: "Twenty minutes after a normal birth at a district hospital, a student midwife palpates a soft, boggy fundus at the umbilicus with a steady trickle of dark blood. What should she do first?",
-    options: [
-      "Massage the uterine fundus until it becomes firm and reassess, keeping the baby skin-to-skin and calling for help if it will not firm up",
-      "Document the findings and re-assess in two hours",
-      "Push down hard on the uterus to force out any clots",
-      "Reassure the mother that all bleeding after birth is normal and observe quietly"
-    ],
-    correctIndex: 0,
-    explanation: "A soft, boggy uterus soon after birth is uterine atony — the commonest cause of early postpartum haemorrhage — and the immediate response is uterine massage until the uterus is firm, combined with encouraging bladder emptying and skin-to-skin suckling, both of which help the uterus contract naturally. If the uterus will not stay firm or bleeding continues, she must escalate without delay, because postpartum haemorrhage can kill within minutes. This is why the immediate postpartum period, the 'fourth stage', demands checks of vital signs, fundal tone and bleeding at frequent, scheduled intervals. A firm uterus is the mother's life insurance after every birth.",
-    whyOthers: {
-      "B": "Waiting two hours on a soft, bleeding uterus is how women die — fourth-stage checks are scheduled every 15 minutes for good reason.",
-      "C": "Forceful downward pressure on a freshly delivered uterus risks the rare but catastrophic complication of uterine inversion.",
-      "D": "A steady trickle from a soft uterus is not normal lochia — after birth the uterus should feel firm and blood loss should be moderate."
-    },
-    courseSlug: "puerperium"
-  },
-  {
-    topic: "Puerperal Involution",
-    type: "MCQ",
-    difficulty: "Moderate",
-    stem: "On the third day after a normal birth, a midwife palpates the fundus 4 cm above the umbilicus, tender, with foul-smelling lochia and a temperature of 38.4°C. What do these findings suggest?",
-    options: [
-      "Possible retained products of conception and/or uterine infection requiring medical review",
-      "Perfectly normal involution for the third postpartum day",
-      "Normal breastfeeding changes that need no attention",
-      "A full bladder only, so walking her to the toilet will solve everything"
-    ],
-    correctIndex: 0,
-    explanation: "Immediately after birth the fundus sits at about the level of the umbilicus and then descends roughly one centimetre per day, so by day three it should be palpable below the umbilicus. A fundus still well above it, together with tenderness, foul-smelling lochia and fever, points to retained products of conception and/or puerperal infection — a common and treatable condition that becomes deadly when referral is delayed. The response is prompt medical review, which may include ultrasound and antibiotic decisions by the clinical team. This exact cluster of signs is what postnatal checks exist to catch.",
-    whyOthers: {
-      "B": "A fundus above the umbilicus on day three means involution is lagging, and the reason must be found.",
-      "C": "Breastfeeding causes afterpains and at most a brief mild temperature — never a high, tender uterus with foul lochia.",
-      "D": "A full bladder can lift the fundus, but it does not explain fever, tenderness and malodorous lochia — and emptying the bladder alone would not resolve this picture."
-    },
-    courseSlug: "puerperium"
-  },
-
-  // ── YEAR 3 · NEONATAL NURSING (3) ───────────────────────────
-  {
-    topic: "Newborn Respiratory Distress",
-    type: "CLINICAL_SCENARIO",
-    difficulty: "Clinical Reasoning",
-    stem: "Two hours after a normal term birth, a student midwife notices the baby grunting with every breath, with chest recession and a respiratory rate of 72 per minute. The lips and tongue are pink. What should she do first?",
-    options: [
-      "Keep the baby warm, minimise handling, and arrange immediate review by the senior midwife while staying with the baby",
-      "Give glucose water by mouth to settle the grunting",
-      "Wrap the baby tightly and leave it to sleep in the nursery cot",
-      "Document the findings and repeat the assessment on the next routine round"
-    ],
-    correctIndex: 0,
-    explanation: "Grunting, chest recession and a respiratory rate above 60 per minute are danger signs of newborn respiratory distress — commonly transient tachypnoea of the newborn, but potentially sepsis or other causes that only review can separate. The priority is warmth, minimal handling and immediate escalation, because newborns can deteriorate within minutes. Feeding a grunting baby by mouth risks aspiration, and leaving a distressed baby unobserved in a distant cot turns minutes of reversible distress into catastrophe. Central pinkness is currently reassuring, but it does not cancel the other three warning signs.",
-    whyOthers: {
-      "B": "Grunting is a sign of respiratory distress, not hunger or wind — fluids given to a distressed baby can be aspirated.",
-      "C": "Tight swaddling and isolation neither treat nor monitor distress — this baby needs observation and escalation, not sleep in a far cot.",
-      "D": "A baby already showing danger signs needs assessment now; the next routine round is hours away."
-    },
-    courseSlug: "neonatal-nursing"
-  },
-  {
-    topic: "Newborn Examination",
-    type: "MCQ",
-    difficulty: "Easy",
-    stem: "A student midwife is examining a one-day-old term baby. All of the following findings are normal in a newborn EXCEPT one. Which is the exception?",
-    options: [
-      "Moulding of the skull bones after a vertex birth",
-      "A salmon-pink birthmark on the eyelid",
-      "Central cyanosis of the lips and tongue",
-      "Peeling skin on the hands and feet"
-    ],
-    correctIndex: 2,
-    explanation: "Central cyanosis — blue lips and tongue — is never normal; it signals poor oxygenation and demands immediate assessment of breathing and escalation. Moulding, the natural overlap of skull bones during passage through the birth canal, settles within days. Salmon-pink capillary marks on the eyelids, the common 'stork bites', fade during the first year. Dry, peeling skin of the hands and feet is normal adjustment of term skin, especially after 40 weeks. Sorting normal from abnormal on day one is the whole point of the newborn examination — and the lips and tongue are checked first for exactly this reason.",
-    whyOthers: {
-      "A": "Moulding is the expected overlap of skull bones in a vertex birth and resolves within a few days.",
-      "B": "These benign vascular marks are among the commonest newborn birthmarks and fade spontaneously.",
-      "D": "Desquamation of the hands and feet is normal in term babies, especially nearer and beyond 40 weeks."
-    },
-    courseSlug: "neonatal-nursing"
+    courseSlug: "maternal-child-health-2"
   },
   {
     topic: "Newborn Danger Signs",
@@ -728,29 +715,7 @@ export const questionBank: SeedQuestion[] = [
     whyOthers: {
       "D": "Passing meconium on day one is normal and expected — it is failure to pass meconium within 24 hours that warrants attention."
     },
-    courseSlug: "neonatal-nursing"
-  },
-
-  // ── YEAR 3 · REPRODUCTIVE HEALTH (3) ────────────────────────
-  {
-    topic: "Natural Family Planning",
-    type: "MCQ",
-    difficulty: "Moderate",
-    stem: "Which woman can rely on the lactational amenorrhoea method (LAM) with reasonable effectiveness, according to its three criteria?",
-    options: [
-      "A mother 4 months postpartum, exclusively breastfeeding day and night, whose menses have not returned",
-      "A mother 9 months postpartum, giving formula alongside two breastfeeds a day, whose menses returned",
-      "A mother 5 months postpartum, already giving water and porridge alongside breastfeeding, still amenorrhoeic",
-      "A mother 2 months postpartum, exclusively breastfeeding, whose menses returned last week"
-    ],
-    correctIndex: 0,
-    explanation: "LAM is about 98% effective while three criteria hold together: the baby is under six months old, the mother is fully or nearly fully breastfeeding with no long gaps day or night, and menstruation has not returned. The first woman meets all three. Once any criterion is lost — the baby passes six months, other foods and fluids begin, or menses return — protection fades and another family planning method is needed. Good counselling therefore always pairs LAM with a transition plan, and the postpartum period is the golden window for that conversation in Ghanaian maternity care.",
-    whyOthers: {
-      "B": "The baby is past six months, feeding is mixed and menses have returned — all three criteria have failed.",
-      "C": "Even with amenorrhoea, starting water and porridge breaks the fully-breastfeeding criterion, so LAM no longer protects.",
-      "D": "The return of menstruation ends LAM's protection regardless of how exclusive the breastfeeding is."
-    },
-    courseSlug: "reproductive-health"
+    courseSlug: "maternal-child-health-2"
   },
   {
     topic: "Partner Management in STIs",
@@ -770,35 +735,15 @@ export const questionBank: SeedQuestion[] = [
       "C": "Medicating anyone secretly is unethical and dangerous, and sharing a limited course undertreats them both while risking harm.",
       "D": "Re-infection of a treated woman by an untreated partner is precisely the reason partner treatment exists."
     },
-    courseSlug: "reproductive-health"
-  },
-  {
-    topic: "Cervical Cancer Prevention",
-    type: "MCQ",
-    difficulty: "Hard",
-    stem: "A 34-year-old mother of three attends a family planning clinic in Ghana and asks how she can protect herself from cervical cancer. Which advice is MOST appropriate?",
-    options: [
-      "Attend regular cervical screening where available, and support eligible girls to receive HPV vaccination — screening finds treatable early changes",
-      "Nothing can be done to prevent it, so she should simply watch for late symptoms",
-      "Rely on annual abdominal ultrasound scans, which show cervical cells directly",
-      "Use herbal douches monthly to cleanse the cervix"
-    ],
-    correctIndex: 0,
-    explanation: "Cervical cancer is caused by persistent infection with high-risk human papillomavirus, and prevention works on two fronts: HPV vaccination of girls before exposure, and regular screening of women — by visual inspection with acetic acid (VIA) or Pap smear — which detects precancerous changes that can be treated simply and affordably. Ghana's cervical cancer strategy depends on midwives and nurses encouraging women to come for screening, so this counselling moment is itself prevention work. The tragedy of cervical cancer is that most deaths occur in women who were never screened at all.",
-    whyOthers: {
-      "B": "Cervical cancer is among the most preventable cancers — fatalism costs lives that screening and vaccination save.",
-      "C": "Ultrasound images organs but cannot see the cellular changes of precancer — screening is a direct visual or cytology test of the cervix.",
-      "D": "Douching has no protective effect, disturbs healthy vaginal flora and may push infection upward toward the uterus."
-    },
-    courseSlug: "reproductive-health"
+    courseSlug: "maternal-child-health-2"
   },
 
-  // ── YEAR 4 · ABNORMAL PREGNANCY (1) ─────────────────────────
+  // ── YEAR 3 · HIGH-RISK MATERNAL & NEWBORN (2) ───────────────
   {
     topic: "Ectopic Pregnancy",
     type: "CLINICAL_SCENARIO",
     difficulty: "Clinical Reasoning",
-    stem: "A 26-year-old woman attends a district clinic with 7 weeks of amenorrhoea, sudden sharp right-sided lower abdominal pain, and fainting when she stood this morning. She is pale, with a pulse of 112 and a blood pressure of 86/54 mmHg. What should the student midwife do first?",
+    stem: "A 26-year-old woman attends a district clinic with 7 weeks of amenorrhoea, sudden sharp right-sided lower abdominal pain, and fainting when she stood this morning. She is pale, with a pulse of 112 and a blood pressure of 86/54 mmHg. What should the student nurse do first?",
     options: [
       "Recognise a probable ruptured ectopic pregnancy with shock and arrange immediate emergency referral, keeping her warm and monitored",
       "Give her an iron tablet and advise a week of rest at home",
@@ -812,51 +757,7 @@ export const questionBank: SeedQuestion[] = [
       "C": "Calling a collapsed pregnant woman a stomach upset is exactly how ruptured ectopics are missed — her vital signs are screaming emergency.",
       "D": "A routine scan next week is meaningless for a woman who may bleed to death today."
     },
-    courseSlug: "abnormal-pregnancy"
-  },
-
-  // ── YEAR 4 · ABNORMAL LABOUR (1) ────────────────────────────
-  {
-    topic: "Obstructed Labour",
-    type: "MCQ",
-    difficulty: "Hard",
-    stem: "A multigravida has been in labour for many hours at a district hospital. Which combination of findings most strongly indicates obstructed labour?",
-    options: [
-      "Full cervical dilation for hours with the head still high, a distended bladder, and a visible band forming above the pubis",
-      "Strong contractions every three minutes with steady descent of the head",
-      "Backache in labour with a vertex, anterior position",
-      "Membranes rupturing at the onset of labour with clear liquor"
-    ],
-    correctIndex: 0,
-    explanation: "Obstructed labour means the presenting part cannot descend despite adequate contractions — classically full dilation with a high head, a distended bladder, and the retraction band (Bandl's ring) rising between the upper and lower uterine segments as the uterus works against itself. Unrecognised, obstruction ends in uterine rupture, vesico-vaginal fistula or death, which is why prolonged labour demands continuous reassessment of descent, not just dilation. Steady descent with good contractions is the definition of normal progress. The remaining findings are routine labour events.",
-    whyOthers: {
-      "B": "Descent with effective contractions defines progress — the opposite of obstruction.",
-      "C": "An occipito-posterior position causes backache and slower progress, but the full signature of obstruction is absent here.",
-      "D": "Clear liquor at the start of labour is normal and even favourable — meconium-stained liquor would be the worrying variant."
-    },
-    courseSlug: "abnormal-labour"
-  },
-
-  // ── YEAR 4 · OBSTETRIC EMERGENCIES (2) ──────────────────────
-  {
-    topic: "Postpartum Haemorrhage",
-    type: "CLINICAL_SCENARIO",
-    difficulty: "Clinical Reasoning",
-    stem: "Ten minutes after a home-birth transfer arrives at a district hospital, a woman soaks a fresh pad within five minutes. Her fundus is soft, her pulse is 118, and she is pale and restless. What is the priority action while help is summoned?",
-    options: [
-      "Rub up the uterine fundus until it is firm while calling for help and preparing for full PPH management",
-      "Start a strict fluid-intake chart and wait for the doctor to arrive first",
-      "Sit her upright to 'let the blood drain out' and observe",
-      "Clean her up thoroughly for dignity before doing anything else"
-    ],
-    correctIndex: 0,
-    explanation: "This woman has primary postpartum haemorrhage — significant bleeding within 24 hours of birth, most often from an atonic (soft) uterus, and the first move is always to massage the fundus into contraction while calling for help. The team then works systematically: uterine massage, bladder emptying, uterotonics per protocol, examination for trauma, and escalation to further interventions or referral if bleeding continues. Tachycardia with pallor means the clock is already running, since postpartum haemorrhage can kill in under an hour. Charting, positioning and clean-up never precede stopping the bleed.",
-    whyOthers: {
-      "B": "A fluid chart answers kidney and intake questions — it does nothing about active bleeding and wastes irreplaceable minutes.",
-      "C": "Draining blood increases loss, and an upright position risks fainting; gravity is not a treatment for haemorrhage.",
-      "D": "Dignity is preserved during care, but scrubbing first while she bleeds out confuses comfort with priority."
-    },
-    courseSlug: "obstetric-emergencies"
+    courseSlug: "high-risk-maternal-newborn"
   },
   {
     topic: "Severe Pre-eclampsia",
@@ -874,7 +775,111 @@ export const questionBank: SeedQuestion[] = [
     whyOthers: {
       "D": "Evening ankle oedema is common and benign in late pregnancy — sudden facial and hand swelling or gross oedema is the warning version."
     },
-    courseSlug: "obstetric-emergencies"
+    courseSlug: "high-risk-maternal-newborn"
+  },
+
+  // ── YEAR 3 · COMMUNITY HEALTH NURSING (1) ───────────────────
+  {
+    topic: "Cervical Cancer Prevention",
+    type: "MCQ",
+    difficulty: "Hard",
+    stem: "A 34-year-old mother of three attends a community health outreach in Ghana and asks how she can protect herself from cervical cancer. Which advice is MOST appropriate?",
+    options: [
+      "Attend regular cervical screening where available, and support eligible girls to receive HPV vaccination — screening finds treatable early changes",
+      "Nothing can be done to prevent it, so she should simply watch for late symptoms",
+      "Rely on annual abdominal ultrasound scans, which show cervical cells directly",
+      "Use herbal douches monthly to cleanse the cervix"
+    ],
+    correctIndex: 0,
+    explanation: "Cervical cancer is caused by persistent infection with high-risk human papillomavirus, and prevention works on two fronts: HPV vaccination of girls before exposure, and regular screening of women — by visual inspection with acetic acid (VIA) or Pap smear — which detects precancerous changes that can be treated simply and affordably. Ghana's cervical cancer strategy depends on nurses in clinics and communities encouraging women to come for screening, so this counselling moment is itself prevention work. The tragedy of cervical cancer is that most deaths occur in women who were never screened at all.",
+    whyOthers: {
+      "B": "Cervical cancer is among the most preventable cancers — fatalism costs lives that screening and vaccination save.",
+      "C": "Ultrasound images organs but cannot see the cellular changes of precancer — screening is a direct visual or cytology test of the cervix.",
+      "D": "Douching has no protective effect, disturbs healthy vaginal flora and may push infection upward toward the uterus."
+    },
+    courseSlug: "community-health-nursing-1"
+  },
+
+  // ── YEAR 4 · CRITICAL CARE & EMERGENCY (4) ──────────────────
+  {
+    topic: "Early Warning Signs",
+    type: "CLINICAL_SCENARIO",
+    difficulty: "Clinical Reasoning",
+    stem: "On a night shift, a patient admitted with severe malaria has a respiratory rate of 26, pulse 112, temperature 37.9 °C and new mild confusion; her blood pressure is still 118/74, and her observations three hours ago were normal. What does the track-and-trigger principle of early warning systems require?",
+    options: [
+      "Immediate escalation — the combined pattern of raised respiratory rate, tachycardia, low-grade fever and new confusion crosses the trigger threshold, so the nurse in charge and clinical team are called now and she is kept under close observation",
+      "Reassurance — because the blood pressure is normal, the patient is stable and observations can continue at routine intervals",
+      "Wait and re-check at the 06:00 round, since fever is expected in malaria",
+      "Documentation only — chart the numbers and escalate only if the blood pressure falls"
+    ],
+    correctIndex: 0,
+    explanation: "Early warning scores exist because deterioration announces itself in exactly this pattern: rising respiratory rate, rising pulse, fever and new confusion each score points, and together they cross the trigger threshold that obliges the nurse to call for help now — not to wait for blood pressure to fall, which is the last and latest sign. New confusion alone is a high-scoring parameter because it reflects the brain's oxygenation and perfusion. The system works precisely so that 'she looks stable' cannot hide a trajectory: three hours ago she was normal, and the direction of travel is the finding. Calling early is the system working, never an overreaction.",
+    whyOthers: {
+      "B": "A normal blood pressure is maintained by compensation until it fails — the entire premise of early warning scores is that the earlier signs move first.",
+      "C": "Fever alone is expected in malaria; the rising respiratory rate, tachycardia and new confusion layered on it are not — and deterioration moves fastest at night, when watching is thinnest.",
+      "D": "Charting without escalating records the crash and lets it happen; blood pressure is the late sign that early warning systems were built to stop waiting for."
+    },
+    courseSlug: "critical-care-nursing"
+  },
+  {
+    topic: "The ABCDE Approach",
+    type: "MCQ",
+    difficulty: "Clinical Reasoning",
+    stem: "A patient arrives in the emergency area after a motorbike crash, bleeding steadily from a scalp wound and making a gurgling noise with every breath. Using the ABCDE approach, which problem must the nurse address first — and why?",
+    options: [
+      "The airway — gurgling suggests obstruction or flooding, and a blocked airway kills before any other problem on the list",
+      "The scalp bleeding, because visible blood loss is the most dramatic finding and is right in front of the eyes",
+      "The blood pressure, because shock is the biggest threat in trauma",
+      "Splinting the suspected fractures, because movement can worsen the injuries"
+    ],
+    correctIndex: 0,
+    explanation: "The ABCDE approach fixes problems in the order that kills fastest, and an obstructed or flooding airway kills first: the gurgling demands attention at A — position, suction if trained, help called — before anything else. The scalp bleeding is real and will be controlled with firm direct pressure at the C stage, but a patient whose airway is flooding dies with a perfectly bandaged scalp. Blood pressure is a late mover in shock, and fractures are assessed and splinted after the life-threats are cleared. The discipline of the fixed order is what stops the loudest, most visible problem from hijacking care away from the deadliest one.",
+    whyOthers: {
+      "B": "Visible bleeding pulls every instinct — but it is a C-stage problem controlled with pressure, and the gurgling airway is the A-stage threat that kills first.",
+      "C": "Blood pressure holds until compensation fails — waiting for it to fall before acting is precisely the trap ABCDE exists to prevent.",
+      "D": "Fractures are painful and real but not immediately lethal; they are managed after airway, breathing and circulation are secured."
+    },
+    courseSlug: "critical-care-nursing"
+  },
+  {
+    topic: "Triage Categories",
+    type: "MCQ",
+    difficulty: "Moderate",
+    stem: "A minibus accident on the main road sends six casualties to a small district hospital's emergency area within minutes. Which casualty should the triage nurse classify as the highest priority — the red, immediate category?",
+    options: [
+      "A silent, pale passenger breathing fast and shallow with bluish lips and drowsiness",
+      "A passenger screaming loudly with pain from an obviously broken forearm",
+      "A passenger walking around the yard with a bleeding scalp wound",
+      "A loudly complaining passenger with no visible injury, demanding to be seen first"
+    ],
+    correctIndex: 0,
+    explanation: "Triage means treating the worst first, not the loudest — and the quiet casualties are the dangerous ones. The silent, pale, drowsy passenger with fast, shallow breathing and bluish lips has threatened breathing and circulation, and cannot compete for attention by shouting, which is exactly why the red-immediate category exists: it rescues the patient who cannot advocate for herself. Screaming implies a working airway and enough perfusion and brain function to hurt loudly — a painful but stable fracture. The walking wounded with a controllable scalp wound waits after the red tag is secured, and the loudest complainer with no visible injury is reassured and re-checked, not promoted.",
+    whyOthers: {
+      "B": "Loud pain means airway, breathing and circulation are currently supporting protest — painful, but not the first threat to life.",
+      "C": "A walking casualty with a controllable scalp bleed is a delayed category; walking itself demonstrates a measure of stability.",
+      "D": "Volume is not a vital sign — triage runs on physiology, not on who demands attention, while ensuring he is re-checked and not quietly deteriorating."
+    },
+    courseSlug: "critical-care-nursing"
+  },
+  {
+    topic: "Anaphylaxis",
+    type: "CLINICAL_SCENARIO",
+    difficulty: "Clinical Reasoning",
+    stem: "Ten minutes after an antibiotic injection at a clinic, a 25-year-old patient develops a widespread itchy rash, swelling of the lips and tongue, a tight wheezy chest and a weak, rapid pulse. What must the student nurse do first?",
+    options: [
+      "Recognise anaphylaxis: stop the injection, shout for help, keep her still — flat with legs raised if she feels faint, sitting up if breathing is hardest — and support immediate treatment with the emergency medicines and oxygen the team directs",
+      "Give her an antihistamine tablet from the counter and let her wait her turn to be seen",
+      "Reassure her that medicine rashes are common and usually settle by themselves",
+      "Send her home to rest and return tomorrow if the swelling has not resolved"
+    ],
+    correctIndex: 0,
+    explanation: "Itchy rash plus lip and tongue swelling, wheeze and a weak pulse is anaphylaxis — a rapidly progressing allergic emergency that kills by airway swelling and shock, usually within minutes of the trigger. The first response is recognition and speed: stop the suspected drug, call loudly for help, and keep the patient still — flat with legs raised if faintness dominates, sitting up if breathing is the struggle — while adrenaline (given by the clinical team per protocol) and oxygen are brought. Antihistamines alone are far too slow and weak for anaphylaxis, oral anything is unsafe with a swelling mouth and throat, and sending the patient home forfeits the minutes that decide the outcome. Even after apparent recovery, the patient stays under observation because reactions can return.",
+    whyOthers: {
+      "B": "An antihistamine tablet is neither fast nor strong enough for an airway-closing reaction — and swallowing with a swelling throat risks aspiration.",
+      "C": "Ordinary medicine rashes do not swell the airway, wheeze the chest and drop the pulse — this pattern is anaphylaxis until proven otherwise.",
+      "D": "Anaphylaxis is a minutes-not-days emergency — home rest converts a treatable reaction into a cardiac arrest outside the clinic."
+    },
+    courseSlug: "critical-care-nursing"
   },
 
   // ── YEAR 4 · ETHICS & PROFESSIONAL PRACTICE (1) ─────────────
@@ -882,7 +887,7 @@ export const questionBank: SeedQuestion[] = [
     topic: "Confidentiality",
     type: "CLINICAL_SCENARIO",
     difficulty: "Hard",
-    stem: "A woman's husband arrives at the district hospital maternity ward and demands her test result from a student midwife, saying that as the husband and the person who paid for her care he is entitled to it. Which response best reflects professional ethics?",
+    stem: "A woman's husband arrives at a district hospital ward and demands his wife's test result from a student nurse, saying that as the husband and the person who paid for her care he is entitled to it. Which response best reflects professional ethics?",
     options: [
       "Politely explain that results are shared only with the client's consent, and offer to support the couple to talk with the counselling team",
       "Give him the result, since he is her husband and paid for the care",
@@ -904,17 +909,17 @@ export const questionBank: SeedQuestion[] = [
     topic: "Choosing a Research Design",
     type: "MCQ",
     difficulty: "Hard",
-    stem: "A final-year student wants to explore how newly delivered mothers at a district hospital experienced care during the COVID-19 visiting restrictions. Which study design suits this aim best?",
+    stem: "A final-year student wants to explore how patients and families at a district hospital experienced nursing care during the COVID-19 visiting restrictions. Which study design suits this aim best?",
     options: [
       "A qualitative descriptive study using semi-structured interviews",
       "A double-blind randomised controlled trial",
-      "A retrospective analysis of national birth statistics",
+      "A retrospective analysis of national hospital statistics",
       "A laboratory-based experimental study"
     ],
     correctIndex: 0,
-    explanation: "When the aim is to understand experience, meaning and perspective — how it felt, what mattered — a qualitative design with interviews is appropriate, because it yields rich narrative data that numbers cannot capture. A randomised controlled trial tests the effect of an intervention and is meaningless when there is nothing to allocate. Routine birth statistics might show what happened during the restrictions, but are silent on how mothers felt about it. Matching the design to the research question is the first and most consequential decision in any study — a beautifully analysed study of the wrong design answers nothing.",
+    explanation: "When the aim is to understand experience, meaning and perspective — how it felt, what mattered — a qualitative design with interviews is appropriate, because it yields rich narrative data that numbers cannot capture. A randomised controlled trial tests the effect of an intervention and is meaningless when there is nothing to allocate. Routine hospital statistics might show what happened during the restrictions, but are silent on how patients felt about it. Matching the design to the research question is the first and most consequential decision in any study — a beautifully analysed study of the wrong design answers nothing.",
     whyOthers: {
-      "B": "An RCT compares allocated interventions; you cannot randomise a mother's lived experience of a past policy.",
+      "B": "An RCT compares allocated interventions; you cannot randomise a patient's lived experience of a past policy.",
       "C": "Statistics describe population patterns — they cannot speak to personal experience, which is the study's entire aim.",
       "D": "There is no laboratory element to experiences of visiting restrictions; this design belongs to bench science."
     },
