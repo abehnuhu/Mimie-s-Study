@@ -43,12 +43,33 @@ function usageOf(img: LibraryImage): number {
 function pickImages(lessonTokens: string[], key: string, count: number, library: LibraryImage[]): LibraryImage[] {
   if (library.length === 0) return [];
   // strongly maternity/MCH vocabulary — such photos only belong to
-  // maternal & child health lessons, never in general med-surg fallbacks
+  // maternal & child health lessons, never in general med-surg lessons
   const MCH_WORDS = ["pregnancy", "pregnant", "antenatal", "labour", "labor", "birth", "delivery",
     "newborn", "postnatal", "postpartum", "fetal", "foetal", "maternal", "breastfeeding",
-    "preterm", "neonatal", "nicu", "partograph", "obstetric", "puerperium", "kangaroo", "infant"];
-  const lessonHasMch = lessonTokens.some((t) => MCH_WORDS.some((w) => t.includes(w) || w.includes(t)));
-  const scored = library.map((img) => {
+    "preterm", "neonatal", "nicu", "partograph", "obstetric", "puerperium", "kangaroo", "infant",
+    "caesarean", "cesarean", "episiotomy", "perineal", "fundal", "lochia", "meconium", "vernix",
+    "apgar", "fontanelle", "pinard", "doppler", "lactation", "weaning"];
+  // a token counts as MCH only if it IS the word or a longer extension of it
+  // (plural etc.) — "breast" must NOT match "breastfeeding", "term" not "preterm"
+  const lessonHasMch = lessonTokens.some((t) =>
+    MCH_WORDS.some((w) => t === w || (t.length > w.length && t.startsWith(w))));
+  // an MCH-tagged photo (pregnant abdomens, partographs, newborns…) may only ever
+  // appear in an MCH lesson — including via generic-tag direct matches (a newborn
+  // photo tagged "care" must not sneak into a renal lesson through that one word)
+  const mchPhoto = (img: LibraryImage) =>
+    img.tags.some((t) => MCH_WORDS.some((w) => t.toLowerCase().includes(w)));
+  // other specialty vocab (reproductive anatomy, family planning) — fine as a
+  // DIRECT match for its own lessons, but it must never fall back into unrelated
+  // lessons (a reproductive diagram has no place on a stroke or diabetes lesson)
+  const SPECIALTY_WORDS = [...MCH_WORDS, "reproductive", "ovaries", "uterus", "fallopian",
+    "menstrual", "contraception", "condom", "sperm", "ovulation", "iud", "implant", "vasectomy"];
+  const specialtyPhoto = (img: LibraryImage) =>
+    img.tags.some((t) => SPECIALTY_WORDS.some((w) => t.toLowerCase().includes(w)));
+  // hard spread cap — no photo may dominate the app (1,932 slots / 219 photos ≈ 8.8 avg)
+  const MAX_USES = 12;
+  const eligible = (img: LibraryImage) =>
+    usageOf(img) < MAX_USES && (lessonHasMch || !mchPhoto(img));
+  const scored = library.filter(eligible).map((img) => {
     let raw = 0;
     for (const t of img.tags) {
       const tt = t.toLowerCase();
@@ -76,14 +97,11 @@ function pickImages(lessonTokens: string[], key: string, count: number, library:
   }
   if (chosen.length < count) {
     // fallback pool: least-used overall (keeps variety even with no tag match)
-    // — but strongly-MCH photos (partographs, pregnant abdomens, newborns…)
-    // never fall back into non-MCH lessons; they wait for their own lessons
+    // — MCH photos and over-used photos are already excluded by `eligible`
     const rest = scored
       .filter((s) => !chosen.includes(s.img))
-      .filter((s) => {
-        if (lessonHasMch) return true;
-        return !s.img.tags.some((t) => MCH_WORDS.some((w) => t.toLowerCase().includes(w)));
-      })
+      // specialty photos only fill fallback slots when the lesson actually wants them
+      .filter((s) => s.raw > 0 || !specialtyPhoto(s.img))
       .sort((a, b) => usageOf(a.img) - usageOf(b.img) || a.img.file.localeCompare(b.img.file));
     const start = hashStr(key) % Math.max(1, rest.length);
     for (let i = 0; chosen.length < count && i < rest.length; i++) {

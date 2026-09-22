@@ -8,7 +8,10 @@
    "instruments",
    "autoclave",
    "asepsis",
-   "sterile"
+   "sterile",
+   "theatre",
+   "perioperative",
+   "surgical"
   ]
  },
  {
@@ -21,7 +24,8 @@
    "measurement",
    "baby",
    "growth",
-   "nutrition"
+   "nutrition",
+   "paediatric"
   ]
  },
  {
@@ -29,11 +33,15 @@
   "alt": "A blood pressure cuff",
   "caption": "The blood pressure cuff — your daily companion at every check-up.",
   "tags": [
-   "blood pressure",
+   "blood",
+   "pressure",
    "vital",
    "measurement",
    "hypertension",
-   "preeclampsia"
+   "preeclampsia",
+   "eclampsia",
+   "cardiac",
+   "monitoring"
   ]
  },
  {
@@ -46,7 +54,9 @@
    "newborn",
    "lactation",
    "latch",
-   "nutrition"
+   "nutrition",
+   "postnatal",
+   "maternal"
   ]
  },
  {
@@ -59,7 +69,8 @@
    "newborn",
    "birth",
    "delivery",
-   "labour"
+   "labour",
+   "maternal"
   ]
  },
  {
@@ -71,7 +82,9 @@
    "care",
    "newborn",
    "hygiene",
-   "baby"
+   "baby",
+   "infection",
+   "sepsis"
   ]
  },
  {
@@ -84,7 +97,8 @@
    "expressed",
    "newborn",
    "milk",
-   "nutrition"
+   "nutrition",
+   "preterm"
   ]
  },
  {
@@ -97,19 +111,22 @@
    "ward",
    "labour",
    "birth",
-   "positioning"
+   "positioning",
+   "maternal",
+   "obstetric"
   ]
  },
  {
   "file": "/images/games/delivery-kit.jpg",
-  "alt": "A sterile midwifery delivery kit",
+  "alt": "A sterile clean delivery kit for the labour ward",
   "caption": "The delivery kit — checked and complete before every birth.",
   "tags": [
    "delivery",
    "kit",
    "instruments",
    "pack",
-   "midwifery",
+   "birth",
+   "clean",
    "sterile",
    "aseptic"
   ]
@@ -124,7 +141,8 @@
    "heart",
    "monitoring",
    "auscultation",
-   "pregnancy"
+   "pregnancy",
+   "antenatal"
   ]
  },
  {
@@ -136,7 +154,9 @@
    "forceps",
    "surgical",
    "obstetric",
-   "sterile"
+   "sterile",
+   "theatre",
+   "delivery"
   ]
  },
  {
@@ -149,7 +169,9 @@
    "protective",
    "infection",
    "hygiene",
-   "standard"
+   "standard",
+   "asepsis",
+   "precautions"
   ]
  },
  {
@@ -161,7 +183,9 @@
    "goggles",
    "protection",
    "infection",
-   "equipment"
+   "equipment",
+   "precautions",
+   "isolation"
   ]
  },
  {
@@ -186,7 +210,8 @@
    "hygiene",
    "alcohol",
    "infection",
-   "sanitizer"
+   "sanitizer",
+   "asepsis"
   ]
  },
  {
@@ -200,7 +225,8 @@
    "washing",
    "infection",
    "asepsis",
-   "aseptic"
+   "aseptic",
+   "precautions"
   ]
  },
  {
@@ -213,20 +239,23 @@
    "skin",
    "premature",
    "newborn",
-   "warmth"
+   "warmth",
+   "preterm",
+   "mother"
   ]
  },
  {
   "file": "/images/games/midwife-ghana.jpg",
-  "alt": "A Ghanaian midwife in her maternity ward",
-  "caption": "A midwife in her ward — calm hands, watchful eyes, warm heart.",
+  "alt": "A Ghanaian nurse in her maternity ward",
+  "caption": "A nurse in her ward — calm hands, watchful eyes, warm heart.",
   "tags": [
-   "midwife",
+   "nurse",
    "ghana",
    "care",
-   "nursing",
+   "maternity",
    "communication",
    "professional",
+   "licensure",
    "ward",
    "leadership"
   ]
@@ -242,7 +271,9 @@
    "medication",
    "vaccination",
    "sharps",
-   "immunization"
+   "immunization",
+   "insulin",
+   "diabetes"
   ]
  },
  {
@@ -255,7 +286,8 @@
    "emergency",
    "airway",
    "breathing",
-   "apgar"
+   "apgar",
+   "neonatal"
   ]
  },
  {
@@ -268,7 +300,9 @@
    "assessment",
    "apgar",
    "baby",
-   "vital"
+   "vital",
+   "neonatal",
+   "paediatric"
   ]
  },
  {
@@ -280,7 +314,8 @@
    "baby",
    "examination",
    "face",
-   "assessment"
+   "assessment",
+   "neonatal"
   ]
  },
  {
@@ -292,7 +327,8 @@
    "baby",
    "feet",
    "assessment",
-   "examination"
+   "examination",
+   "neonatal"
   ]
  },
  {
@@ -305,7 +341,8 @@
    "fontanelle",
    "baby",
    "examination",
-   "skull"
+   "skull",
+   "neonatal"
   ]
  },
  {
@@ -318,7 +355,8 @@
    "baby",
    "warmth",
    "care",
-   "positioning"
+   "positioning",
+   "neonatal"
   ]
  },
  {
@@ -331,7 +369,9 @@
    "premature",
    "newborn",
    "special",
-   "care"
+   "care",
+   "preterm",
+   "neonatal"
   ]
  },
  {
@@ -344,12 +384,14 @@
    "newborn",
    "equipment",
    "premature",
-   "observation"
+   "observation",
+   "preterm",
+   "neonatal"
   ]
  },
  {
   "file": "/images/games/palpation.jpg",
-  "alt": "A midwife palpating a pregnant abdomen",
+  "alt": "A nurse palpating a pregnant abdomen",
   "caption": "Abdominal palpation — hands reading lie, position and growth.",
   "tags": [
    "palpation",
@@ -359,7 +401,8 @@
    "position",
    "antenatal",
    "pregnancy",
-   "assessment"
+   "assessment",
+   "maternal"
   ]
  },
  {
@@ -372,7 +415,9 @@
    "monitoring",
    "progress",
    "chart",
-   "documentation"
+   "documentation",
+   "maternal",
+   "obstructed"
   ]
  },
  {
@@ -410,7 +455,9 @@
    "waste",
    "infection",
    "disposal",
-   "needle"
+   "needle",
+   "medication",
+   "injection"
   ]
  },
  {
@@ -422,7 +469,9 @@
    "waste",
    "disposal",
    "safety",
-   "infection"
+   "infection",
+   "injection",
+   "occupational"
   ]
  },
  {
@@ -434,7 +483,10 @@
    "sterile",
    "aseptic",
    "technique",
-   "surgical"
+   "surgical",
+   "asepsis",
+   "theatre",
+   "perioperative"
   ]
  },
  {
@@ -448,7 +500,9 @@
    "chest",
    "assessment",
    "heart",
-   "lungs"
+   "lungs",
+   "respiratory",
+   "cardiac"
   ]
  },
  {
@@ -461,7 +515,10 @@
    "wound",
    "repair",
    "instruments",
-   "perineal"
+   "perineal",
+   "theatre",
+   "perioperative",
+   "surgical"
   ]
  },
  {
@@ -474,7 +531,9 @@
    "vital",
    "fever",
    "measurement",
-   "infection"
+   "infection",
+   "triage",
+   "sepsis"
   ]
  },
  {
@@ -486,7 +545,8 @@
    "disposal",
    "hygiene",
    "infection",
-   "environment"
+   "environment",
+   "environmental"
   ]
  },
  {
@@ -530,17 +590,8 @@
    "cell",
    "organelles",
    "nucleus",
-   "diagram"
-  ]
- },
- {
-  "file": "/images/lessons/cells/cells-03.jpg",
-  "alt": "Wikimedia Commons: Where a Human Life Begins.png",
-  "caption": "Real cells under the microscope — the tiny building blocks everything else is built from.",
-  "tags": [
-   "cell",
-   "cells",
-   "organelles"
+   "diagram",
+   "cells"
   ]
  },
  {
@@ -550,15 +601,7 @@
   "tags": [
    "cell",
    "membrane",
-   "transport"
-  ]
- },
- {
-  "file": "/images/lessons/cells/cells-05.jpg",
-  "alt": "Wikimedia Commons: Human blood.jpg",
-  "caption": "Real cells under the microscope — the tiny building blocks everything else is built from.",
-  "tags": [
-   "cell",
+   "transport",
    "cells",
    "organelles"
   ]
@@ -580,15 +623,7 @@
   "tags": [
    "cell",
    "membrane",
-   "transport"
-  ]
- },
- {
-  "file": "/images/lessons/cells/cells-07.jpg",
-  "alt": "Wikimedia Commons: TC jejunum 4.jpg",
-  "caption": "Real cells under the microscope — the tiny building blocks everything else is built from.",
-  "tags": [
-   "cell",
+   "transport",
    "cells",
    "organelles"
   ]
@@ -596,21 +631,25 @@
  {
   "file": "/images/lessons/muscles/muscles-02.jpg",
   "alt": "Wikimedia Commons: 1105 Anterior and Posterior Views of Muscles.jpg",
-  "caption": "The muscular system — every move a mother makes in labour uses it.",
+  "caption": "The muscular system — every move your patients make depends on it.",
   "tags": [
    "muscles",
    "muscular",
-   "anatomy"
+   "anatomy",
+   "mobility",
+   "movement"
   ]
  },
  {
   "file": "/images/lessons/muscles/muscles-03.jpg",
   "alt": "Wikimedia Commons: Skeletal muscles homo sapiens.JPG",
-  "caption": "The muscular system — every move a mother makes in labour uses it.",
+  "caption": "The muscular system — every move your patients make depends on it.",
   "tags": [
    "muscles",
    "muscular",
-   "anatomy"
+   "anatomy",
+   "mobility",
+   "movement"
   ]
  },
  {
@@ -620,7 +659,9 @@
   "tags": [
    "skull",
    "bones",
-   "anatomy"
+   "anatomy",
+   "head",
+   "neurology"
   ]
  },
  {
@@ -630,7 +671,9 @@
   "tags": [
    "skull",
    "bones",
-   "anatomy"
+   "anatomy",
+   "head",
+   "neurology"
   ]
  },
  {
@@ -640,7 +683,9 @@
   "tags": [
    "blood",
    "cells",
-   "red"
+   "red",
+   "anaemia",
+   "oxygen"
   ]
  },
  {
@@ -680,7 +725,10 @@
   "tags": [
    "skeleton",
    "bones",
-   "anatomy"
+   "anatomy",
+   "fractures",
+   "mobility",
+   "joints"
   ]
  },
  {
@@ -691,7 +739,10 @@
    "pelvis",
    "bones",
    "female",
-   "anatomy"
+   "anatomy",
+   "labour",
+   "birth",
+   "maternal"
   ]
  },
  {
@@ -702,7 +753,10 @@
    "pelvis",
    "bones",
    "female",
-   "anatomy"
+   "anatomy",
+   "labour",
+   "birth",
+   "maternal"
   ]
  },
  {
@@ -713,7 +767,10 @@
    "pelvis",
    "bones",
    "female",
-   "anatomy"
+   "anatomy",
+   "labour",
+   "birth",
+   "maternal"
   ]
  },
  {
@@ -724,7 +781,10 @@
    "pelvis",
    "bones",
    "female",
-   "anatomy"
+   "anatomy",
+   "labour",
+   "birth",
+   "maternal"
   ]
  },
  {
@@ -734,7 +794,9 @@
   "tags": [
    "skull",
    "bones",
-   "anatomy"
+   "anatomy",
+   "head",
+   "neurology"
   ]
  },
  {
@@ -744,7 +806,9 @@
   "tags": [
    "skull",
    "bones",
-   "anatomy"
+   "anatomy",
+   "head",
+   "neurology"
   ]
  },
  {
@@ -774,7 +838,9 @@
   "tags": [
    "blood",
    "immunity",
-   "white"
+   "white",
+   "infection",
+   "sepsis"
   ]
  },
  {
@@ -784,7 +850,11 @@
   "tags": [
    "brain",
    "nervous",
-   "anatomy"
+   "anatomy",
+   "neurology",
+   "stroke",
+   "seizures",
+   "meningitis"
   ]
  },
  {
@@ -794,7 +864,10 @@
   "tags": [
    "brain",
    "nervous",
-   "anatomy"
+   "anatomy",
+   "neurology",
+   "stroke",
+   "seizures"
   ]
  },
  {
@@ -804,7 +877,10 @@
   "tags": [
    "brain",
    "nervous",
-   "anatomy"
+   "anatomy",
+   "neurology",
+   "stroke",
+   "seizures"
   ]
  },
  {
@@ -854,13 +930,14 @@
   "tags": [
    "pancreas",
    "insulin",
-   "endocrine"
+   "endocrine",
+   "diabetes"
   ]
  },
  {
   "file": "/images/lessons/repro-female/repro-female-01.jpg",
   "alt": "Wikimedia Commons: Female anatomy with G-spot - Ukraine.png",
-  "caption": "The female reproductive system — the anatomy at the heart of midwifery.",
+  "caption": "The female reproductive system — the anatomy at the heart of nursing.",
   "tags": [
    "reproductive",
    "female",
@@ -947,7 +1024,9 @@
    "delivery",
    "room",
    "ward",
-   "labour"
+   "labour",
+   "maternal",
+   "obstetric"
   ]
  },
  {
@@ -958,7 +1037,9 @@
    "kangaroo",
    "care",
    "premature",
-   "newborn"
+   "newborn",
+   "preterm",
+   "neonatal"
   ]
  },
  {
@@ -969,7 +1050,9 @@
    "kangaroo",
    "care",
    "premature",
-   "newborn"
+   "newborn",
+   "preterm",
+   "neonatal"
   ]
  },
  {
@@ -980,7 +1063,9 @@
    "incubator",
    "nicu",
    "premature",
-   "newborn"
+   "newborn",
+   "preterm",
+   "neonatal"
   ]
  },
  {
@@ -990,7 +1075,10 @@
   "tags": [
    "gloves",
    "sterile",
-   "aseptic"
+   "aseptic",
+   "asepsis",
+   "theatre",
+   "perioperative"
   ]
  },
  {
@@ -1000,7 +1088,10 @@
   "tags": [
    "gloves",
    "sterile",
-   "aseptic"
+   "aseptic",
+   "asepsis",
+   "theatre",
+   "perioperative"
   ]
  },
  {
@@ -1010,7 +1101,10 @@
   "tags": [
    "gloves",
    "sterile",
-   "aseptic"
+   "aseptic",
+   "asepsis",
+   "theatre",
+   "perioperative"
   ]
  },
  {
@@ -1020,7 +1114,10 @@
   "tags": [
    "mask",
    "shield",
-   "ppe"
+   "ppe",
+   "isolation",
+   "precautions",
+   "infection"
   ]
  },
  {
@@ -1030,7 +1127,10 @@
   "tags": [
    "mask",
    "shield",
-   "ppe"
+   "ppe",
+   "isolation",
+   "precautions",
+   "infection"
   ]
  },
  {
@@ -1040,7 +1140,10 @@
   "tags": [
    "mask",
    "shield",
-   "ppe"
+   "ppe",
+   "isolation",
+   "precautions",
+   "infection"
   ]
  },
  {
@@ -1050,7 +1153,10 @@
   "tags": [
    "autoclave",
    "sterilization",
-   "instruments"
+   "instruments",
+   "asepsis",
+   "theatre",
+   "perioperative"
   ]
  },
  {
@@ -1060,7 +1166,10 @@
   "tags": [
    "transfusion",
    "blood",
-   "infusion"
+   "infusion",
+   "anaemia",
+   "resuscitation",
+   "shock"
   ]
  },
  {
@@ -1071,7 +1180,8 @@
    "stethoscope",
    "auscultation",
    "chest",
-   "lung"
+   "lung",
+   "respiratory"
   ]
  },
  {
@@ -1082,7 +1192,8 @@
    "stethoscope",
    "auscultation",
    "chest",
-   "lung"
+   "lung",
+   "respiratory"
   ]
  },
  {
@@ -1092,7 +1203,9 @@
   "tags": [
    "oxygen",
    "saturation",
-   "vital"
+   "vital",
+   "respiratory",
+   "copd"
   ]
  },
  {
@@ -1102,7 +1215,9 @@
   "tags": [
    "oxygen",
    "saturation",
-   "vital"
+   "vital",
+   "respiratory",
+   "copd"
   ]
  },
  {
@@ -1112,7 +1227,8 @@
   "tags": [
    "bacteria",
    "culture",
-   "microbiology"
+   "microbiology",
+   "infection"
   ]
  },
  {
@@ -1122,7 +1238,8 @@
   "tags": [
    "virus",
    "microbiology",
-   "microbes"
+   "microbes",
+   "infection"
   ]
  },
  {
@@ -1132,7 +1249,8 @@
   "tags": [
    "virus",
    "microbiology",
-   "microbes"
+   "microbes",
+   "infection"
   ]
  },
  {
@@ -1172,7 +1290,8 @@
   "tags": [
    "malaria",
    "parasite",
-   "blood"
+   "blood",
+   "anaemia"
   ]
  },
  {
@@ -1182,7 +1301,8 @@
   "tags": [
    "worm",
    "parasite",
-   "stool"
+   "stool",
+   "anaemia"
   ]
  },
  {
@@ -1213,7 +1333,9 @@
    "community",
    "health",
    "ghana",
-   "worker"
+   "worker",
+   "chps",
+   "primary"
   ]
  },
  {
@@ -1223,7 +1345,8 @@
   "tags": [
    "nutrition",
    "diet",
-   "food"
+   "food",
+   "diabetes"
   ]
  },
  {
@@ -1233,7 +1356,8 @@
   "tags": [
    "water",
    "sanitation",
-   "hygiene"
+   "hygiene",
+   "environmental"
   ]
  },
  {
@@ -1243,7 +1367,8 @@
   "tags": [
    "family",
    "planning",
-   "contraception"
+   "contraception",
+   "reproductive"
   ]
  },
  {
@@ -1317,7 +1442,9 @@
   "tags": [
    "emergency",
    "resuscitation",
-   "team"
+   "team",
+   "simulation",
+   "training"
   ]
  },
  {
@@ -1337,7 +1464,8 @@
   "tags": [
    "skin",
    "histology",
-   "layers"
+   "layers",
+   "wound"
   ]
  },
  {
@@ -1347,7 +1475,8 @@
   "tags": [
    "heart",
    "anatomy",
-   "model"
+   "model",
+   "cardiac"
   ]
  },
  {
@@ -1357,7 +1486,8 @@
   "tags": [
    "heart",
    "anatomy",
-   "model"
+   "model",
+   "cardiac"
   ]
  },
  {
@@ -1367,7 +1497,8 @@
   "tags": [
    "heart",
    "anatomy",
-   "model"
+   "model",
+   "cardiac"
   ]
  },
  {
@@ -1378,7 +1509,9 @@
    "ecg",
    "heart",
    "rhythm",
-   "cardiac"
+   "cardiac",
+   "arrhythmias",
+   "monitoring"
   ]
  },
  {
@@ -1389,7 +1522,9 @@
    "ecg",
    "heart",
    "rhythm",
-   "cardiac"
+   "cardiac",
+   "arrhythmias",
+   "monitoring"
   ]
  },
  {
@@ -1399,7 +1534,9 @@
   "tags": [
    "blood",
    "hemoglobin",
-   "anaemia"
+   "anaemia",
+   "sickle",
+   "iron"
   ]
  },
  {
@@ -1409,7 +1546,9 @@
   "tags": [
    "blood",
    "hemoglobin",
-   "anaemia"
+   "anaemia",
+   "sickle",
+   "iron"
   ]
  },
  {
@@ -1419,7 +1558,9 @@
   "tags": [
    "blood",
    "hemoglobin",
-   "anaemia"
+   "anaemia",
+   "sickle",
+   "iron"
   ]
  },
  {
@@ -1430,7 +1571,10 @@
    "chest",
    "x-ray",
    "lungs",
-   "radiology"
+   "radiology",
+   "pneumonia",
+   "tuberculosis",
+   "respiratory"
   ]
  },
  {
@@ -1441,7 +1585,10 @@
    "chest",
    "x-ray",
    "lungs",
-   "radiology"
+   "radiology",
+   "pneumonia",
+   "tuberculosis",
+   "respiratory"
   ]
  },
  {
@@ -1452,7 +1599,10 @@
    "chest",
    "x-ray",
    "lungs",
-   "radiology"
+   "radiology",
+   "pneumonia",
+   "tuberculosis",
+   "respiratory"
   ]
  },
  {
@@ -1543,7 +1693,9 @@
   "tags": [
    "apgar",
    "newborn",
-   "assessment"
+   "assessment",
+   "neonatal",
+   "resuscitation"
   ]
  },
  {
@@ -1553,7 +1705,8 @@
   "tags": [
    "newborn",
    "hearing",
-   "screening"
+   "screening",
+   "neonatal"
   ]
  },
  {
@@ -1563,7 +1716,9 @@
   "tags": [
    "isolation",
    "infection",
-   "control"
+   "control",
+   "tuberculosis",
+   "precautions"
   ]
  },
  {
@@ -1573,7 +1728,9 @@
   "tags": [
    "isolation",
    "infection",
-   "control"
+   "control",
+   "tuberculosis",
+   "precautions"
   ]
  },
  {
@@ -1616,7 +1773,8 @@
   "tags": [
    "pharmacy",
    "medication",
-   "dispensing"
+   "dispensing",
+   "pharmacology"
   ]
  },
  {
@@ -1626,7 +1784,9 @@
   "tags": [
    "antibiotic",
    "capsules",
-   "medication"
+   "medication",
+   "pharmacology",
+   "antimicrobial"
   ]
  },
  {
@@ -1636,7 +1796,9 @@
   "tags": [
    "antibiotic",
    "capsules",
-   "medication"
+   "medication",
+   "pharmacology",
+   "antimicrobial"
   ]
  },
  {
@@ -1647,7 +1809,9 @@
    "blood",
    "pressure",
    "monitor",
-   "measurement"
+   "measurement",
+   "hypertension",
+   "vital"
   ]
  },
  {
@@ -1659,7 +1823,8 @@
    "heart",
    "ctg",
    "monitoring",
-   "labour"
+   "labour",
+   "maternal"
   ]
  },
  {
@@ -1671,7 +1836,8 @@
    "heart",
    "ctg",
    "monitoring",
-   "labour"
+   "labour",
+   "maternal"
   ]
  },
  {
@@ -1691,7 +1857,9 @@
   "tags": [
    "tuberculosis",
    "microbiology",
-   "stain"
+   "stain",
+   "respiratory",
+   "infection"
   ]
  },
  {
@@ -1701,7 +1869,9 @@
   "tags": [
    "ward",
    "hospital",
-   "nurses"
+   "nurses",
+   "leadership",
+   "handover"
   ]
  },
  {
@@ -1712,7 +1882,9 @@
    "water",
    "sanitation",
    "village",
-   "pump"
+   "pump",
+   "environmental",
+   "community"
   ]
  },
  {
@@ -1725,7 +1897,9 @@
    "cord",
    "cutting",
    "sterile",
-   "surgical"
+   "surgical",
+   "delivery",
+   "theatre"
   ]
  },
  {
@@ -1738,7 +1912,9 @@
    "bonding",
    "postnatal",
    "baby",
-   "care"
+   "care",
+   "neonatal",
+   "maternal"
   ]
  },
  {
@@ -1748,7 +1924,9 @@
   "tags": [
    "caesarean",
    "surgery",
-   "theatre"
+   "theatre",
+   "perioperative",
+   "sterile"
   ]
  },
  {
@@ -1759,7 +1937,9 @@
    "kangaroo",
    "care",
    "premature",
-   "newborn"
+   "newborn",
+   "preterm",
+   "neonatal"
   ]
  },
  {
@@ -1769,7 +1949,9 @@
   "tags": [
    "incubator",
    "premature",
-   "nicu"
+   "nicu",
+   "preterm",
+   "neonatal"
   ]
  },
  {
@@ -1779,7 +1961,9 @@
   "tags": [
    "incubator",
    "premature",
-   "nicu"
+   "nicu",
+   "preterm",
+   "neonatal"
   ]
  },
  {
@@ -1789,7 +1973,9 @@
   "tags": [
    "incubator",
    "premature",
-   "nicu"
+   "nicu",
+   "preterm",
+   "neonatal"
   ]
  },
  {
@@ -1830,7 +2016,10 @@
    "bed",
    "ward",
    "patient",
-   "comfort"
+   "comfort",
+   "mobility",
+   "positioning",
+   "palliative"
   ]
  },
  {
@@ -1839,7 +2028,9 @@
   "caption": "Explaining clearly — informed care.",
   "tags": [
    "communication",
-   "consultation"
+   "consultation",
+   "therapeutic",
+   "mental"
   ]
  },
  {
@@ -1849,7 +2040,9 @@
   "tags": [
    "immunization",
    "campaign",
-   "vaccination"
+   "vaccination",
+   "community",
+   "school"
   ]
  },
  {
@@ -1859,7 +2052,9 @@
   "tags": [
    "immunization",
    "campaign",
-   "vaccination"
+   "vaccination",
+   "community",
+   "school"
   ]
  },
  {
@@ -1869,7 +2064,9 @@
   "tags": [
    "immunization",
    "campaign",
-   "vaccination"
+   "vaccination",
+   "community",
+   "school"
   ]
  },
  {
@@ -1879,7 +2076,8 @@
   "tags": [
    "immunization",
    "campaign",
-   "vaccination"
+   "vaccination",
+   "community"
   ]
  },
  {
@@ -1945,7 +2143,10 @@
   "tags": [
    "emergency",
    "hospital",
-   "team"
+   "team",
+   "simulation",
+   "training",
+   "triage"
   ]
  },
  {
@@ -1955,7 +2156,8 @@
   "tags": [
    "ambulance",
    "emergency",
-   "referral"
+   "referral",
+   "transport"
   ]
  },
  {
@@ -1965,7 +2167,8 @@
   "tags": [
    "ambulance",
    "emergency",
-   "referral"
+   "referral",
+   "transport"
   ]
  },
  {
@@ -1974,7 +2177,10 @@
   "caption": "Full PPE for procedures.",
   "tags": [
    "ppe",
-   "protective"
+   "protective",
+   "isolation",
+   "precautions",
+   "infection"
   ]
  },
  {
@@ -1984,7 +2190,9 @@
   "tags": [
    "tablets",
    "medication",
-   "oral"
+   "oral",
+   "pharmacology",
+   "pain"
   ]
  },
  {
@@ -1994,7 +2202,9 @@
   "tags": [
    "temperature",
    "thermometer",
-   "vital"
+   "vital",
+   "triage",
+   "fever"
   ]
  },
  {
@@ -2004,7 +2214,8 @@
   "tags": [
    "oxygen",
    "saturation",
-   "vital"
+   "vital",
+   "respiratory"
   ]
  },
  {
@@ -2014,7 +2225,8 @@
   "tags": [
    "oxygen",
    "saturation",
-   "vital"
+   "vital",
+   "respiratory"
   ]
  },
  {
@@ -2042,6 +2254,417 @@
   "tags": [
    "research",
    "laboratory"
+  ]
+ },
+ {
+  "file": "/images/lessons/respiratory/respiratory-01.jpg",
+  "alt": "A child using an asthma inhaler attached to a spacer mask",
+  "caption": "Inhaler plus spacer — the medicine goes to the airways, not the ceiling.",
+  "tags": [
+   "asthma",
+   "inhaler",
+   "respiratory",
+   "attack",
+   "spacer",
+   "child",
+   "paediatric"
+  ]
+ },
+ {
+  "file": "/images/lessons/respiratory/respiratory-02.jpg",
+  "alt": "A nebulizer machine with its mask and tubing",
+  "caption": "The nebulizer turns medicine into mist — five calm breaths at a time.",
+  "tags": [
+   "asthma",
+   "inhaler",
+   "nebulizer",
+   "respiratory",
+   "attack",
+   "emergency"
+  ]
+ },
+ {
+  "file": "/images/lessons/respiratory/respiratory-03.jpg",
+  "alt": "A patient in a hospital bed wearing an oxygen face mask",
+  "caption": "An oxygen mask — high-flow help for the patient working hard to breathe.",
+  "tags": [
+   "oxygen",
+   "respiratory",
+   "therapy",
+   "mask",
+   "emergency",
+   "copd"
+  ]
+ },
+ {
+  "file": "/images/lessons/respiratory/respiratory-04.jpg",
+  "alt": "An elderly patient wearing a nasal cannula for oxygen",
+  "caption": "The nasal cannula — quiet, comfortable oxygen for the long hours.",
+  "tags": [
+   "oxygen",
+   "respiratory",
+   "copd",
+   "therapy",
+   "elderly",
+   "oximetry"
+  ]
+ },
+ {
+  "file": "/images/lessons/renal/renal-01.jpg",
+  "alt": "A hemodialysis machine with a patient's arm connected",
+  "caption": "Dialysis — the machine that does the kidneys' filtering while they rest.",
+  "tags": [
+   "dialysis",
+   "kidney",
+   "renal",
+   "chronic",
+   "machine",
+   "filter"
+  ]
+ },
+ {
+  "file": "/images/lessons/renal/renal-02.jpg",
+  "alt": "Urine dipsticks beside their colour comparison chart",
+  "caption": "The humble dipstick — a whole urinalysis in thirty seconds.",
+  "tags": [
+   "urinalysis",
+   "urine",
+   "uti",
+   "infection",
+   "kidney",
+   "renal",
+   "test"
+  ]
+ },
+ {
+  "file": "/images/lessons/renal/renal-03.jpg",
+  "alt": "A model of the human kidneys",
+  "caption": "Two small filters, a whole body's balance — meet the kidneys.",
+  "tags": [
+   "kidney",
+   "kidneys",
+   "renal",
+   "anatomy",
+   "urinary",
+   "model"
+  ]
+ },
+ {
+  "file": "/images/lessons/diabetes/diabetes-01.jpg",
+  "alt": "Insulin pen injectors held in a hand",
+  "caption": "Insulin pens — dial the dose, pinch the skin, press, count to ten.",
+  "tags": [
+   "insulin",
+   "diabetes",
+   "injection",
+   "pen",
+   "medication"
+  ]
+ },
+ {
+  "file": "/images/lessons/diabetes/diabetes-02.jpg",
+  "alt": "A continuous glucose monitoring system with sensor and reader",
+  "caption": "Continuous glucose monitoring — the numbers as a story, not a snapshot.",
+  "tags": [
+   "diabetes",
+   "glucose",
+   "monitoring",
+   "screening",
+   "technology"
+  ]
+ },
+ {
+  "file": "/images/lessons/diabetes/diabetes-03.jpg",
+  "alt": "A monofilament being pressed against a patient's foot during a diabetic foot exam",
+  "caption": "The ten-point monofilament test — catching numb feet before wounds appear.",
+  "tags": [
+   "diabetes",
+   "foot",
+   "care",
+   "complications",
+   "neuropathy",
+   "examination"
+  ]
+ },
+ {
+  "file": "/images/lessons/thyroid/thyroid-01.jpg",
+  "alt": "A health worker examining a patient's neck and thyroid",
+  "caption": "Thyroid check — stand behind, feel the neck as the patient swallows.",
+  "tags": [
+   "thyroid",
+   "goitre",
+   "hyperthyroidism",
+   "hypothyroidism",
+   "neck",
+   "hormones"
+  ]
+ },
+ {
+  "file": "/images/lessons/liver/liver-01.jpg",
+  "alt": "An anatomical illustration of the human liver",
+  "caption": "The liver — five hundred jobs, one quiet organ under the right ribs.",
+  "tags": [
+   "liver",
+   "hepatitis",
+   "cirrhosis",
+   "jaundice",
+   "anatomy",
+   "digestive"
+  ]
+ },
+ {
+  "file": "/images/lessons/oncology/oncology-01.jpg",
+  "alt": "A patient receiving a chemotherapy infusion through an IV line",
+  "caption": "Chemotherapy — hours in the chair, and a nurse who keeps watch.",
+  "tags": [
+   "cancer",
+   "oncology",
+   "chemotherapy",
+   "infusion",
+   "metastasis"
+  ]
+ },
+ {
+  "file": "/images/lessons/oncology/oncology-02.jpg",
+  "alt": "An infographic explaining that HPV vaccination prevents cervical cancer",
+  "caption": "The HPV vaccine — one jab in adolescence, a lifetime of protection.",
+  "tags": [
+   "cancer",
+   "cervical",
+   "hpv",
+   "vaccination",
+   "screening",
+   "prevention"
+  ]
+ },
+ {
+  "file": "/images/lessons/oncology/oncology-03.jpg",
+  "alt": "A breast surgeon in her examination room",
+  "caption": "Breast checks save lives — the surgeon is the end of a road that starts with you.",
+  "tags": [
+   "cancer",
+   "breast",
+   "screening",
+   "ghana",
+   "warning",
+   "signs"
+  ]
+ },
+ {
+  "file": "/images/lessons/oncology/oncology-04.jpg",
+  "alt": "A younger hand holding the hand of an elderly patient",
+  "caption": "Comfort as a goal — sometimes the treatment is simply staying close.",
+  "tags": [
+   "palliative",
+   "comfort",
+   "care",
+   "communication",
+   "support"
+  ]
+ },
+ {
+  "file": "/images/lessons/mental-health/mental-01.jpg",
+  "alt": "A counsellor listening to a patient during a therapy session",
+  "caption": "The listening posture — the strongest tool in mental health nursing.",
+  "tags": [
+   "mental",
+   "depression",
+   "anxiety",
+   "counselling",
+   "therapeutic",
+   "communication"
+  ]
+ },
+ {
+  "file": "/images/lessons/mental-health/mental-02.jpg",
+  "alt": "A nurse comforting a tearful patient in a hospital room",
+  "caption": "Tears on the ward — your calm presence is the intervention.",
+  "tags": [
+   "mental",
+   "therapeutic",
+   "communication",
+   "support",
+   "distress",
+   "empathy"
+  ]
+ },
+ {
+  "file": "/images/lessons/mental-health/mental-03.jpg",
+  "alt": "A support group seated in a circle",
+  "caption": "The circle — recovery is rarely a journey taken alone.",
+  "tags": [
+   "mental",
+   "recovery",
+   "group",
+   "support",
+   "reintegration",
+   "stigma"
+  ]
+ },
+ {
+  "file": "/images/lessons/cardiac/cardiac-01.jpg",
+  "alt": "A hospital monitor displaying ECG rhythms and vital signs",
+  "caption": "The monitor never sleeps — you are the one who reads its story.",
+  "tags": [
+   "ecg",
+   "cardiac",
+   "monitoring",
+   "arrhythmia",
+   "monitor",
+   "critical"
+  ]
+ },
+ {
+  "file": "/images/lessons/cardiac/cardiac-02.jpg",
+  "alt": "A person in scrubs performing CPR on a training manikin",
+  "caption": "Push hard, push fast — CPR you practise until your hands know it.",
+  "tags": [
+   "cpr",
+   "bls",
+   "resuscitation",
+   "aed",
+   "training",
+   "emergency"
+  ]
+ },
+ {
+  "file": "/images/lessons/wound/wound-01.jpg",
+  "alt": "A nurse applying a clean bandage to a patient's leg",
+  "caption": "Clean, covered, dated — the quiet ritual of wound care.",
+  "tags": [
+   "wound",
+   "dressing",
+   "wounds",
+   "healing",
+   "bandage",
+   "aseptic"
+  ]
+ },
+ {
+  "file": "/images/lessons/wound/wound-02.jpg",
+  "alt": "A patient's foot resting on a cushioned heel protector",
+  "caption": "The heel floats — offloading pressure before the skin ever breaks.",
+  "tags": [
+   "pressure",
+   "ulcers",
+   "immobility",
+   "falls",
+   "prevention",
+   "heel"
+  ]
+ },
+ {
+  "file": "/images/lessons/neuro/neuro-01.jpg",
+  "alt": "A stroke patient walking between parallel bars with a therapist's support",
+  "caption": "Rehabilitation after stroke — every step reclaims a little more independence.",
+  "tags": [
+   "stroke",
+   "rehabilitation",
+   "fast",
+   "mobility",
+   "recovery",
+   "physiotherapy"
+  ]
+ },
+ {
+  "file": "/images/lessons/anaphylaxis/anaphylaxis-01.jpg",
+  "alt": "An epinephrine auto-injector held in a hand",
+  "caption": "Adrenaline, ready in seconds — the anaphylaxis answer.",
+  "tags": [
+   "anaphylaxis",
+   "adrenaline",
+   "allergy",
+   "emergency",
+   "epinephrine"
+  ]
+ },
+ {
+  "file": "/images/lessons/diabetes/diabetes-04.jpg",
+  "alt": "A balanced plate of vegetables, lean protein and whole grains",
+  "caption": "The balanced plate — the cheapest medicine your diabetic patient will ever take.",
+  "tags": [
+   "diabetes",
+   "nutrition",
+   "diet",
+   "education",
+   "food"
+  ]
+ },
+ {
+  "file": "/images/lessons/mental-health/mental-04.jpg",
+  "alt": "A nurse comforting a patient in a hospital room",
+  "caption": "Presence first — the words can follow once the person feels safe.",
+  "tags": [
+   "mental",
+   "therapeutic",
+   "communication",
+   "support",
+   "distress",
+   "counselling"
+  ]
+ },
+ {
+  "file": "/images/lessons/mental-health/mental-05.jpg",
+  "alt": "A young woman sitting alone, withdrawn and low in mood",
+  "caption": "Depression rarely announces itself — it sits quietly and stops asking questions.",
+  "tags": [
+   "depression",
+   "anxiety",
+   "mental",
+   "mood",
+   "sadness",
+   "risk"
+  ]
+ },
+ {
+  "file": "/images/lessons/cardiac/cardiac-04.jpg",
+  "alt": "ECG electrodes being placed on a patient's chest",
+  "caption": "Ten pads, one trace — the ECG that answers chest pain in seconds.",
+  "tags": [
+   "ecg",
+   "cardiac",
+   "chest",
+   "monitoring",
+   "coronary",
+   "pain"
+  ]
+ },
+ {
+  "file": "/images/lessons/neuro/neuro-02.jpg",
+  "alt": "An axial CT scan image of the brain",
+  "caption": "The CT film — where the head-injury story is written in shades of grey.",
+  "tags": [
+   "head",
+   "injury",
+   "brain",
+   "scan",
+   "radiology",
+   "stroke"
+  ]
+ },
+ {
+  "file": "/images/lessons/renal/renal-04.jpg",
+  "alt": "Urinary catheters and drainage bags with tubing",
+  "caption": "The catheter — a helpful stranger you send home as soon as possible.",
+  "tags": [
+   "catheter",
+   "urinary",
+   "drainage",
+   "infection",
+   "prevention",
+   "care"
+  ]
+ },
+ {
+  "file": "/images/lessons/ethics/ethics-01.jpg",
+  "alt": "A patient signing a consent form with a nurse present",
+  "caption": "Consent — a conversation first, a signature second, never the other way round.",
+  "tags": [
+   "consent",
+   "ethics",
+   "rights",
+   "documentation",
+   "professional"
   ]
  }
 ]
