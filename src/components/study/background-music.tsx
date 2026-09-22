@@ -32,8 +32,11 @@ const DEFAULT_VOL = 0.35; // background music should sit under everything
  * - Starts playing the moment the site opens (browsers that block unmuted
  *   autoplay start it silently and offer a one-tap "sound on").
  * - If even silent autoplay is refused, the very first sign of life from the
- *   visitor — a tap, a click, a key, a scroll, even a mouse move — starts the
+ *   visitor — a tap, a click, a key, a scroll (even a mouse move) — starts the
  *   music automatically. No play button hunting required.
+ * - Browsers only allow *sound* after a real tap, so soft gestures (scrolling,
+ *   swiping, hovering) start the song silently instead — it is already rolling
+ *   when the next touch lands, and that touch fades the sound in.
  * - Mute + volume preferences persist across visits.
  * - Plays every enabled track in order, looping forever.
  */
@@ -292,16 +295,19 @@ export function BackgroundMusic() {
 
   /* ── the moment she interacts at all, the music starts ──
  *
- * Two situations bring us here:
- *  - `blocked`: the browser let muted autoplay through, so the song is already
- *    playing silently — the first real gesture (tap / click / key) unmutes it.
+ * Three situations bring us here:
+ *  - `blocked`: the browser let muted autoplay through (at load, or via a soft
+ *    gesture below), so the song is already playing silently — the first real
+ *    gesture (tap / click / key) unmutes it.
  *  - `needsKick`: autoplay was refused outright, so the song is paused — the
- *    first sign of life (a tap, a key, a scroll, even a mouse move) starts it.
+ *    first sign of life starts it.
  *
- * Only activation-bearing gestures (pointer/key/touch/click) unmute, because
- * browsers refuse silent→sound switches without a proper gesture. Soft events
- * (scroll, wheel, mouse move) still start a paused song the moment the browser
- * has already met the visitor — harmless everywhere else.
+ * Activation-bearing gestures (pointer/key/touch/click) get a direct unmuted
+ * start — browsers grant them the audio activation, so sound is immediate.
+ * Soft gestures (scroll, swipe, wheel, mouse move) can never carry sound in any
+ * browser, so they start the song *muted* instead: the moment she scrolls on
+ * her phone the music is already rolling, and the very next tap anywhere fades
+ * the sound in. If even silent playback is refused, the listener stays armed.
  */
   useEffect(() => {
     if (!loaded || tracks.length === 0) return;
@@ -309,6 +315,7 @@ export function BackgroundMusic() {
 
     let kicked = false;
     let lastMove = 0;
+    let lastSoftAttempt = 0;
 
     const kick = (e: Event, withActivation: boolean) => {
       const audio = audioRef.current;
@@ -316,10 +323,50 @@ export function BackgroundMusic() {
       const target = e.target as HTMLElement | null;
       if (target?.closest?.("[data-music-player]")) return; // her own controls handle themselves
 
+      const startSilently = () => {
+        const t = tracks[idx] ?? tracks[0];
+        audio.muted = true;
+        audio
+          .play()
+          .then(() => {
+            // rolling silently — one real tap away from full sound
+            needsKickRef.current = false;
+            setNeedsKick(false);
+            setMuted(true);
+            if (!prefMutedRef.current) {
+              setBlocked(true);
+              setHint(true);
+            }
+            reportPlay(t.id);
+          })
+          .catch(() => {
+            // even silent playback was refused — reset and stay armed
+            audio.muted = prefMutedRef.current;
+            setMuted(prefMutedRef.current);
+            kicked = false;
+          });
+      };
+
       if (audio.paused) {
         if (!needsKickRef.current) return;
+
+        // momentum scroll fires dozens of events — soft attempts are throttled
+        // (a refused play() is retried on the next real gesture immediately)
+        if (!withActivation) {
+          const now = performance.now();
+          if (now - lastSoftAttempt < 600) return;
+          lastSoftAttempt = now;
+        }
+
+        if (prefMutedRef.current) {
+          // she asked for quiet — start muted directly, no sound chase
+          kicked = true;
+          startSilently();
+          return;
+        }
+
         kicked = true; // optimistic — retracted if the browser still refuses
-        audio.muted = prefMutedRef.current;
+        audio.muted = false;
         audio.volume = volRef.current;
         const t = tracks[idx] ?? tracks[0];
         audio
@@ -331,13 +378,26 @@ export function BackgroundMusic() {
             reportPlay(t.id);
           })
           .catch(() => {
-            kicked = false;
+            if (withActivation) {
+              // this gesture may still earn its activation on a following
+              // event (touchend / click) — keep chasing real sound
+              kicked = false;
+              return;
+            }
+            // a scroll / swipe / hover has no activation now and never will —
+            // start the song muted so it is already playing when she taps
+            startSilently();
           });
         return;
       }
 
       // playing silently because the browser muted autoplay — unmute on a real gesture
       if (withActivation && blocked && audio.muted && !prefMutedRef.current) {
+        // a touchend that merely ended a scroll says it's a gesture but carries
+        // no activation — unmuting then would get the song *paused* by the
+        // browser, so only unmute when activation is genuinely present
+        const activation = navigator.userActivation;
+        if (activation && !activation.isActive) return;
         kicked = true;
         smoothUnmute();
         setBlocked(false);
@@ -349,7 +409,7 @@ export function BackgroundMusic() {
     const onSoft = (e: Event) => kick(e, false);
     const onMove = (e: Event) => {
       const now = performance.now();
-      if (now - lastMove < 400) return; // a mouse trail fires dozens per second
+      if (now - lastMove < 400) return; // swipes and mouse trails fire dozens per second
       lastMove = now;
       kick(e, false);
     };
@@ -361,6 +421,7 @@ export function BackgroundMusic() {
     window.addEventListener("click", onGesture, { capture: true });
     window.addEventListener("scroll", onSoft, { capture: true, passive: true });
     window.addEventListener("wheel", onSoft, { capture: true, passive: true });
+    window.addEventListener("touchmove", onMove, { capture: true, passive: true });
     window.addEventListener("mousemove", onMove, { capture: true, passive: true });
 
     return () => {
@@ -371,6 +432,7 @@ export function BackgroundMusic() {
       window.removeEventListener("click", onGesture, { capture: true });
       window.removeEventListener("scroll", onSoft, { capture: true });
       window.removeEventListener("wheel", onSoft, { capture: true });
+      window.removeEventListener("touchmove", onMove, { capture: true });
       window.removeEventListener("mousemove", onMove, { capture: true });
     };
   }, [blocked, needsKick, loaded, tracks, idx, reportPlay]);

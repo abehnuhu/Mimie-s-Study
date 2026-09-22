@@ -99,7 +99,10 @@ export function CurriculumView() {
                   </div>
                   <div className="mt-1.5 flex items-center gap-3">
                     <MiniProgress value={yearLessons ? Math.round((yearDone / yearLessons) * 100) : 0} className="max-w-[180px]" />
-                    <span className="shrink-0 text-xs text-muted-foreground">{yearDone}/{yearLessons} lessons</span>
+                    <span className="shrink-0 text-xs text-muted-foreground">
+                      {yearLessons} lesson{yearLessons === 1 ? "" : "s"}
+                      {yearDone > 0 && <span className="font-medium text-primary"> · {yearDone} done</span>}
+                    </span>
                   </div>
                 </div>
                 {isOpen ? (
@@ -134,7 +137,8 @@ export function CurriculumView() {
                               </span>
                             )}
                             <span className="ml-auto text-xs text-muted-foreground">
-                              {sem.completedCount}/{sem.lessonCount} · {Math.round(sem.minutes / 60)}h content
+                              {sem.lessonCount} lesson{sem.lessonCount === 1 ? "" : "s"} · {Math.round(sem.minutes / 60)}h
+                              {sem.completedCount > 0 && <span className="text-primary"> · {sem.completedCount} done</span>}
                             </span>
                           </div>
                           <div className="grid gap-3 sm:grid-cols-2">
