@@ -1,5 +1,8 @@
+import { rmSync } from "node:fs";
+import path from "node:path";
 import { db } from "@/lib/db";
 import { withAdmin } from "@/lib/api-helpers";
+import { MUSIC_ALLOWED_EXT } from "@/lib/music";
 
 /**
  * Rename a track or include/exclude it from the site playlist.
@@ -32,7 +35,8 @@ export async function PATCH(req: Request, ctx: { params: Promise<{ id: string }>
 }
 
 /**
- * Delete a track (its leftover upload chunks cascade away too).
+ * Delete a track (its leftover upload chunks cascade away too,
+ * and any exported static /music file is removed with it).
  */
 export async function DELETE(req: Request, ctx: { params: Promise<{ id: string }> }) {
   const { id } = await ctx.params;
@@ -40,6 +44,16 @@ export async function DELETE(req: Request, ctx: { params: Promise<{ id: string }
     const existing = await db.musicTrack.findUnique({ where: { id }, select: { id: true, title: true } });
     if (!existing) return Response.json({ error: "Track not found 💗" }, { status: 404 });
     await db.musicTrack.delete({ where: { id } });
+
+    // remove the static export if one exists
+    for (const ext of MUSIC_ALLOWED_EXT) {
+      try {
+        rmSync(path.join(process.cwd(), "public", "music", `${id}${ext}`), { force: true });
+      } catch {
+        /* best effort */
+      }
+    }
+
     return Response.json({ ok: true, deleted: existing.title });
   });
 }

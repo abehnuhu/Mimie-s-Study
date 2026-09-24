@@ -44,7 +44,7 @@ const LETTERS = ["A", "B", "C", "D", "E", "F"];
 const EXAM_PASS_MARK = 50;
 
 export function QuizView({ config }: { config: QuizConfig }) {
-  const { go, triggerConfetti, refreshBootstrap, back } = useAppStore();
+  const { go, triggerConfetti, refreshBootstrap, back, setAssistantHint } = useAppStore();
   const [idx, setIdx] = useState(0);
   const [answers, setAnswers] = useState<Record<string, { selectedIndex?: number; selectedIndexes?: number[]; order?: number[] }>>({});
   const [orderState, setOrderState] = useState<Record<string, number[]>>({});
@@ -69,6 +69,19 @@ export function QuizView({ config }: { config: QuizConfig }) {
   const warnedRef = useRef(false);
 
   useStudyHeartbeat(true, config.lessonId ?? null);
+
+  // tell Ask-Mimie what she's testing
+  useEffect(() => {
+    const kind = config.exam
+      ? "Exam paper"
+      : config.mode === "REVIEW"
+        ? "Review quiz"
+        : config.mode === "EXAM"
+          ? "Timed test"
+          : "Quiz";
+    setAssistantHint(`${kind} “${config.label}” · ${config.questions.length} questions`);
+    return () => setAssistantHint(null);
+  }, [config, setAssistantHint]);
 
   const questions = config.questions;
   const q = questions[idx];

@@ -49,7 +49,7 @@ export function useStudyHeartbeat(active: boolean, lessonId?: string | null) {
 }
 
 export function LessonView({ id, autoplay }: { id: string; autoplay?: boolean }) {
-  const { go, triggerConfetti, refreshBootstrap, user } = useAppStore();
+  const { go, triggerConfetti, refreshBootstrap, user, setAssistantHint } = useAppStore();
   const [data, setData] = useState<LessonDetail | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [note, setNote] = useState("");
@@ -61,6 +61,14 @@ export function LessonView({ id, autoplay }: { id: string; autoplay?: boolean })
   const sectionsRef = useRef<HTMLDivElement>(null);
 
   useStudyHeartbeat(!!data, id);
+
+  // tell Ask-Mimie what she's studying right now
+  useEffect(() => {
+    setAssistantHint(
+      data ? `Lesson “${data.lesson.title}” · ${data.lesson.course.title}` : null
+    );
+    return () => setAssistantHint(null);
+  }, [data, setAssistantHint]);
 
   // reading progress (scroll-through)
   useEffect(() => {

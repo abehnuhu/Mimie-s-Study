@@ -1,5 +1,7 @@
 "use client";
 
+import { useEffect } from "react";
+import { useAppStore } from "@/store/app-store";
 import { SortGame } from "./sort-game";
 import { AnatomyLabelGame } from "./anatomy-label-game";
 import { GcsChallengeGame } from "./gcs-challenge-game";
@@ -19,7 +21,32 @@ import { infectionSortItems, newbornFindings } from "@/lib/game-content";
 import { EmptyState } from "../shared-cards";
 import { Gamepad2 } from "lucide-react";
 
+const GAME_TITLES: Record<string, string> = {
+  "anatomy-label": "Anatomy Label Challenge",
+  "gcs-challenge": "GCS Challenge",
+  "nursing-process-timeline": "Nursing Process Timeline",
+  "clinical-priority": "Clinical Priority",
+  "infection-sort": "Infection Control Sort",
+  "medication-match": "Medication Match",
+  "newborn-challenge": "Newborn Challenge",
+  "sixty-second": "60-Second Recall",
+  "case-detective": "Case Detective",
+  "memory-match": "Memory Match",
+  "picture-memory": "Picture Memory",
+  "diagram-dash": "Diagram Dash",
+  "bubble-pop": "Bubble Pop",
+  "ward-watch": "Ward Watch",
+  "word-bloom": "Word Bloom",
+};
+
 export function GamePlayer({ slug }: { slug: string }) {
+  // tell Ask-Mimie which game she's playing
+  const setAssistantHint = useAppStore((s) => s.setAssistantHint);
+  useEffect(() => {
+    setAssistantHint(`Playing “${GAME_TITLES[slug] ?? slug.replace(/-/g, " ")}”`);
+    return () => setAssistantHint(null);
+  }, [slug, setAssistantHint]);
+
   switch (slug) {
     case "anatomy-label":
       return <AnatomyLabelGame />;

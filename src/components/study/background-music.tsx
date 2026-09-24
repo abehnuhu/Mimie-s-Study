@@ -20,6 +20,8 @@ interface PlaylistTrack {
   title: string;
   mimeType: string;
   sizeBytes: number;
+  /** Preferred audio URL — static /music file when exported, DB stream otherwise. */
+  src?: string;
 }
 
 const MUTE_KEY = "ms-music-muted";
@@ -65,6 +67,8 @@ export function BackgroundMusic() {
 
   const current = tracks[idx] ?? null;
   const streamUrl = (id: string) => `/api/music/stream/${id}`;
+  /** Static CDN file when it exists (the fast path), DB stream as fallback. */
+  const srcOf = (t: PlaylistTrack) => t.src ?? streamUrl(t.id);
 
   /* viewport + motion preferences, the React-way */
   const isDesktop = useSyncExternalStore(
@@ -102,7 +106,7 @@ export function BackgroundMusic() {
       const t = tracks[i];
       if (!audio || !t) return;
       setIdx(i);
-      audio.src = streamUrl(t.id);
+      audio.src = srcOf(t);
       audio.loop = tracks.length === 1;
       if (autoplay) {
         audio
@@ -164,7 +168,7 @@ export function BackgroundMusic() {
 
     audio.volume = volRef.current;
     audio.muted = prefMutedRef.current;
-    audio.src = streamUrl(t.id);
+    audio.src = srcOf(t);
     audio.loop = tracks.length === 1;
 
     (async () => {
@@ -220,7 +224,7 @@ export function BackgroundMusic() {
         setTracks(list);
         setIdx(nextIdx >= 0 ? nextIdx : 0);
         if (audio && nextIdx < 0) {
-          audio.src = streamUrl(list[0].id);
+          audio.src = srcOf(list[0]);
           audio.loop = list.length === 1;
           audio.play().then(() => reportPlay(list[0].id)).catch(() => setPlaying(false));
         }

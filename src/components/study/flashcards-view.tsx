@@ -42,7 +42,7 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 export function FlashcardsView({ courseSlug }: { courseSlug?: string }) {
-  const { go, triggerConfetti, refreshBootstrap } = useAppStore();
+  const { go, triggerConfetti, refreshBootstrap, setAssistantHint } = useAppStore();
   const [data, setData] = useState<DeckData | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [filter, setFilter] = useState<string>(courseSlug ?? "all");
@@ -71,6 +71,14 @@ export function FlashcardsView({ courseSlug }: { courseSlug?: string }) {
       }
     })();
   }, []);
+
+  // tell Ask-Mimie what she's drilling
+  useEffect(() => {
+    if (!data) return;
+    const course = data.courses.find((c) => c.slug === filter);
+    setAssistantHint(course ? `Flashcards · ${course.title}` : "Flashcards · all courses");
+    return () => setAssistantHint(null);
+  }, [data, filter, setAssistantHint]);
 
   // rebuild deck when filter changes
   useEffect(() => {

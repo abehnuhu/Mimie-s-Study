@@ -29,7 +29,7 @@ interface CourseDetail {
 }
 
 export function CourseView({ slug }: { slug: string }) {
-  const { go } = useAppStore();
+  const { go, setAssistantHint } = useAppStore();
   const [data, setData] = useState<CourseDetail | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [openModule, setOpenModule] = useState<string | null>(null);
@@ -56,6 +56,14 @@ export function CourseView({ slug }: { slug: string }) {
       }
     })();
   }, [slug]);
+
+  // tell Ask-Mimie where she is
+  useEffect(() => {
+    setAssistantHint(
+      data ? `Course “${data.course.title}” · ${data.stats.lessonCount} lessons` : null
+    );
+    return () => setAssistantHint(null);
+  }, [data, setAssistantHint]);
 
   if (error) return <div className="mx-auto max-w-3xl"><ErrorCard message={error} onRetry={() => window.location.reload()} /></div>;
 

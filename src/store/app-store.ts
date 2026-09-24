@@ -24,6 +24,9 @@ interface AppState {
   openReportRange: { from?: string; to?: string; all?: string } | null;
   /** Active guided session — walks the smart-plan steps one by one like a workout. */
   session: { steps: SessionStep[]; index: number; skipped: number; startedXp: number; startedAt: number } | null;
+  /** One-line context for the Ask-Mimie assistant — what she is studying right now. Views set it once their data loads. */
+  assistantHint: string | null;
+  setAssistantHint: (hint: string | null) => void;
 
   setUser: (user: SessionUser | null) => void;
   setAuthChecked: (v: boolean) => void;
@@ -56,12 +59,14 @@ export const useAppStore = create<AppState>((set, get) => ({
   dark: false,
   openReportRange: null,
   session: null,
+  assistantHint: null,
 
   setUser: (user) => set({ user }),
   setAuthChecked: (v) => set({ authChecked: v }),
 
   go: (view) => {
     const { view: current, history } = get();
+    set({ assistantHint: null }); // views re-announce their own context on load
     if (current.name === view.name && view.name !== "quiz" && view.name !== "lesson") {
       set({ view });
       return;
@@ -72,6 +77,7 @@ export const useAppStore = create<AppState>((set, get) => ({
 
   back: () => {
     const { history } = get();
+    set({ assistantHint: null });
     if (history.length === 0) {
       set({ view: { name: "dashboard" } });
       return;
@@ -81,7 +87,7 @@ export const useAppStore = create<AppState>((set, get) => ({
     if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
   },
 
-  setView: (view) => set({ view }),
+  setView: (view) => set({ view, assistantHint: null }),
   setBootstrap: (data) => set({ bootstrap: data }),
 
   refreshBootstrap: async () => {
@@ -127,6 +133,10 @@ export const useAppStore = create<AppState>((set, get) => ({
 
   sessionExit: () => set({ session: null }),
 
+  setAssistantHint: (hint) => {
+    if (get().assistantHint !== hint) set({ assistantHint: hint });
+  },
+
   toggleDark: () => {
     const dark = !get().dark;
     set({ dark });
@@ -142,5 +152,6 @@ export const useAppStore = create<AppState>((set, get) => ({
       history: [],
       bootstrap: null,
       confetti: [],
+      assistantHint: null,
     }),
 }));

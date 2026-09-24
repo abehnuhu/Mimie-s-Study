@@ -20,6 +20,7 @@ import { ProfileView } from "./profile-view";
 import { SavedView } from "./saved-view";
 import { AdminView } from "./admin/admin-view";
 import { BackgroundMusic } from "./background-music";
+import { AssistantWidget } from "./assistant-widget";
 import { SearchPalette } from "./search-palette";
 import { ConfettiLayer } from "./decor";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -110,6 +111,7 @@ export function MimieApp() {
       <SearchPalette />
       <ConfettiLayer />
       <BackgroundMusic />
+      <AssistantWidget />
     </AppShell>
   );
 }

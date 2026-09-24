@@ -2,7 +2,7 @@
 // - Cache-first for static assets (icons, manifest)
 // - Network-only for pages and APIs (progress is server-authoritative)
 // - Offline fallback page for navigations when the network is gone
-const CACHE = "mimies-study-v1";
+const CACHE = "mimies-study-v2";
 const PRECACHE = ["/manifest.webmanifest", "/icons/icon-192.png", "/icons/icon-512.png", "/offline.html"];
 
 self.addEventListener("install", (event) => {
@@ -31,6 +31,26 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(
       fetch(request).catch(() =>
         caches.match("/offline.html").then((r) => r ?? new Response("Offline", { status: 503, headers: { "Content-Type": "text/html" } }))
+      )
+    );
+    return;
+  }
+
+  // immutable, content-addressed assets — cache-first forever (music files are
+  // named by track id; images never change content in place). Survives offline
+  // and takes repeat visitors off the network entirely.
+  if (url.pathname.startsWith("/music/") || url.pathname.startsWith("/images/")) {
+    event.respondWith(
+      caches.match(request).then(
+        (cached) =>
+          cached ??
+          fetch(request).then((res) => {
+            if (res.ok) {
+              const copy = res.clone();
+              caches.open(CACHE).then((cache) => cache.put(request, copy));
+            }
+            return res;
+          })
       )
     );
     return;
