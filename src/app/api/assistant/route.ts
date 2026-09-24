@@ -101,74 +101,40 @@ export async function POST(req: Request) {
       return Response.json({ error: "Mimie is unavailable 💗" }, { status: 502 });
     }
 
-    let upstream: Response;
-    try {
-      upstream = await fetch("https://api.z.ai/api/paas/v4/chat/completions", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${apiKey}`,
-        },
-        body: JSON.stringify({
-          model: ZAI_MODEL,
-          messages: zaiMessages,
-          stream: true,
-        }),
-      });
-    } catch (e) {
-      console.error("[assistant]", e);
-      return Response.json(
-        { error: "Mimie is a little busy right now — try again in a moment 💗" },
-        { status: 502 }
-      );
-    }
+    for (let attempt = 0; attempt < 2; attempt++) {
+      try {
+        const res = await fetch("https://api.z.ai/api/paas/v4/chat/completions", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${apiKey}`,
+          },
+          body: JSON.stringify({
+            model: ZAI_MODEL,
+            messages: zaiMessages,
+          }),
+        });
 
-    if (!upstream.ok || !upstream.body) {
-      console.error("[assistant] upstream error", upstream.status);
-      return Response.json(
-        { error: "Mimie is a little busy right now — try again in a moment 💗" },
-        { status: 502 }
-      );
-    }
+        if (!res.ok) throw new Error(`Z.ai API error: ${res.status}`);
 
-    // Transform Z.ai's SSE stream into plain text chunks the browser can read directly.
-    const reader = upstream.body.getReader();
-    const decoder = new TextDecoder();
-    let buffer = "";
-
-    const stream = new ReadableStream({
-      async pull(controller) {
-        const { done, value } = await reader.read();
-        if (done) {
-          controller.close();
-          return;
+        const data = await res.json();
+        const reply = data?.choices?.[0]?.message?.content;
+        if (reply && reply.trim().length > 0) {
+          return Response.json({ reply: reply.trim() });
         }
-        buffer += decoder.decode(value, { stream: true });
-        const lines = buffer.split("\n");
-        buffer = lines.pop() ?? "";
-        for (const line of lines) {
-          const trimmed = line.trim();
-          if (!trimmed.startsWith("data:")) continue;
-          const payload = trimmed.slice(5).trim();
-          if (payload === "[DONE]") continue;
-          try {
-            const json = JSON.parse(payload);
-            const delta = json?.choices?.[0]?.delta?.content;
-            if (typeof delta === "string" && delta.length > 0) {
-              controller.enqueue(new TextEncoder().encode(delta));
-            }
-          } catch {
-            // ignore malformed chunk
-          }
+        throw new Error("empty reply");
+      } catch (e) {
+        if (attempt === 0) {
+          await new Promise((r) => setTimeout(r, 800));
+          continue;
         }
-      },
-      cancel() {
-        reader.cancel();
-      },
-    });
-
-    return new Response(stream, {
-      headers: { "Content-Type": "text/plain; charset=utf-8" },
-    });
+        console.error("[assistant]", e);
+        return Response.json(
+          { error: "Mimie is a little busy right now — try again in a moment 💗" },
+          { status: 502 }
+        );
+      }
+    }
+    return Response.json({ error: "Mimie is unavailable 💗" }, { status: 502 });
   });
 }

@@ -49,7 +49,6 @@ export function AssistantWidget() {
   const [input, setInput] = useState("");
   const [busy, setBusy] = useState(false);
   const [restored, setRestored] = useState(false);
-  const [streaming, setStreaming] = useState<string | null>(null);
 
   const scrollRef = useRef<HTMLDivElement | null>(null);
   const inputRef = useRef<HTMLTextAreaElement | null>(null);
@@ -90,7 +89,7 @@ export function AssistantWidget() {
   useEffect(() => {
     const el = scrollRef.current;
     if (el) el.scrollTo({ top: el.scrollHeight, behavior: "smooth" });
-  }, [msgs, busy, streaming, open]);
+  }, [msgs, busy, open]);
 
   /* keyboard: Escape closes */
   useEffect(() => {
@@ -119,40 +118,26 @@ export function AssistantWidget() {
     const history = [...msgs, { role: "user", content: question } as Msg];
     setMsgs(history);
     setBusy(true);
-    setStreaming("");
     try {
       const res = await fetch("/api/assistant", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ messages: history.slice(-20), context: hint ?? undefined }),
       });
-
-      if (!res.ok || !res.body) {
-        const data = await res.json().catch(() => ({}));
+      const data = await res.json().catch(() => ({}));
+      if (res.ok && typeof data.reply === "string") {
+        setMsgs((m) => [...m, { role: "assistant", content: data.reply }]);
+      } else {
         const error =
           typeof data.error === "string" ? data.error : "Mimie couldn't answer just now — try again 💗";
         setMsgs((m) => [...m, { role: "assistant", content: `_${error}_` }]);
-        return;
       }
-
-      const reader = res.body.getReader();
-      const decoder = new TextDecoder();
-      let acc = "";
-      while (true) {
-        const { done, value } = await reader.read();
-        if (done) break;
-        acc += decoder.decode(value, { stream: true });
-        setStreaming(acc);
-      }
-      const final = acc.trim() || "Mimie couldn't answer just now — try again 💗";
-      setMsgs((m) => [...m, { role: "assistant", content: final }]);
     } catch {
       setMsgs((m) => [
         ...m,
         { role: "assistant", content: "_You look offline — I'll be right here when the network returns 💗_" },
       ]);
     } finally {
-      setStreaming(null);
       setBusy(false);
     }
   }
@@ -243,7 +228,7 @@ export function AssistantWidget() {
               {msgs.map((m, i) => (
                 <Bubble key={i} msg={m} />
               ))}
-              {streaming !== null && streaming.length === 0 && (
+              {busy && (
                 <div className="flex items-center gap-1.5 pl-8" aria-label="Mimie is typing">
                   <span className="flex gap-1 rounded-2xl rounded-bl-md bg-muted px-3 py-2.5">
                     {[0, 1, 2].map((d) => (
@@ -255,9 +240,6 @@ export function AssistantWidget() {
                     ))}
                   </span>
                 </div>
-              )}
-              {streaming !== null && streaming.length > 0 && (
-                <Bubble msg={{ role: "assistant", content: streaming }} />
               )}
             </div>
 
