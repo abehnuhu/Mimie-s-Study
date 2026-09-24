@@ -13,6 +13,9 @@ export const dynamic = "force-dynamic";
  * exists on disk (Vercel CDN-served, cached immutable — the fast path now
  * that songs ship as static assets), falling back to the DB-streaming API
  * route for anything not yet exported.
+ *
+ * `plays` + `fileName` power the player's song library (browse + search +
+ * most-played sorting) — metadata only, still zero audio bytes.
  */
 export async function GET() {
   try {
@@ -21,18 +24,26 @@ export async function GET() {
       db.musicTrack.findMany({
         where: { enabled: true, sizeBytes: { gt: 0 }, chunks: { none: {} } }, // finished tracks only
         orderBy: [{ sortOrder: "asc" }, { uploadedAt: "asc" }],
-        select: { id: true, title: true, mimeType: true, sizeBytes: true, fileName: true },
+        select: { id: true, title: true, mimeType: true, sizeBytes: true, fileName: true, plays: true },
       }),
     ]);
     const enabled = setting?.enabled ?? true;
 
     const musicDir = path.join(process.cwd(), "public", "music");
-    const payload = tracks.map(({ fileName, ...meta }) => {
-      const ext = MUSIC_ALLOWED_EXT.find((e) => fileName.toLowerCase().endsWith(e));
+    const payload = tracks.map((t) => {
+      const ext = MUSIC_ALLOWED_EXT.find((e) => t.fileName.toLowerCase().endsWith(e));
       const staticOk =
         !!ext &&
-        existsSync(path.join(musicDir, `${meta.id}${ext}`));
-      return { ...meta, src: staticOk ? `/music/${meta.id}${ext}` : `/api/music/stream/${meta.id}` };
+        existsSync(path.join(musicDir, `${t.id}${ext}`));
+      return {
+        id: t.id,
+        title: t.title,
+        fileName: t.fileName,
+        mimeType: t.mimeType,
+        sizeBytes: t.sizeBytes,
+        plays: t.plays,
+        src: staticOk ? `/music/${t.id}${ext}` : `/api/music/stream/${t.id}`,
+      };
     });
 
     return Response.json(

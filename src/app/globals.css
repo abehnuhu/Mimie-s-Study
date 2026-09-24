@@ -254,6 +254,15 @@
   border: 1px solid color-mix(in oklch, var(--border) 80%, transparent);
 }
 
+/* denser variant for panels carrying long text lists — page content must
+   not bleed through between the lines (song library, chat history) */
+.glass-solid {
+  background: color-mix(in oklch, var(--card) 93%, transparent);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid color-mix(in oklch, var(--border) 85%, transparent);
+}
+
 .gradient-hero {
   background:
     radial-gradient(1200px 500px at 85% -10%, color-mix(in oklch, var(--lav) 70%, transparent), transparent),
@@ -783,6 +792,15 @@ body[data-session="on"] [data-sonner-toaster] {
     animation: none;
     height: 65%;
   }
+}
+
+/* compact variant for the library rows */
+.eq-bars.eq-sm {
+  height: 11px;
+  gap: 2px;
+}
+.eq-bars.eq-sm > span {
+  width: 2px;
 }
 
 /* volume slider */

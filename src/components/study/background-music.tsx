@@ -1,16 +1,21 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   ChevronDown,
+  Flame,
+  ListMusic,
+  ListOrdered,
   Music2,
   Pause,
   Play,
+  Search,
   SkipBack,
   SkipForward,
   Volume2,
   VolumeX,
+  X,
 } from "lucide-react";
 import { useAppStore } from "@/store/app-store";
 import { cn } from "@/lib/utils";
@@ -20,6 +25,10 @@ interface PlaylistTrack {
   title: string;
   mimeType: string;
   sizeBytes: number;
+  /** Raw upload filename — extra search surface for the library. */
+  fileName?: string;
+  /** Lifetime play count — powers the "most played" library sort. */
+  plays?: number;
   /** Preferred audio URL — static /music file when exported, DB stream otherwise. */
   src?: string;
 }
@@ -27,6 +36,11 @@ interface PlaylistTrack {
 const MUTE_KEY = "ms-music-muted";
 const VOL_KEY = "ms-music-volume";
 const DEFAULT_VOL = 0.35; // background music should sit under everything
+
+const fmtSize = (n: number) =>
+  n >= 1048576 ? `${(n / 1048576).toFixed(1)} MB` : `${Math.max(1, Math.round(n / 1024))} KB`;
+
+type LibrarySort = "order" | "plays";
 
 /**
  * Floating background-music player.
@@ -41,6 +55,9 @@ const DEFAULT_VOL = 0.35; // background music should sit under everything
  *   when the next touch lands, and that touch fades the sound in.
  * - Mute + volume preferences persist across visits.
  * - Plays every enabled track in order, looping forever.
+ * - A song library: one tap on the list button browses every song in the
+ *   playlist, searches them by name, sorts by most played, and plays any
+ *   song directly from the list.
  */
 export function BackgroundMusic() {
   const hasUser = useAppStore((s) => !!s.user);
@@ -64,6 +81,12 @@ export function BackgroundMusic() {
   const [needsKick, setNeedsKick] = useState(false); // autoplay refused outright — first interaction starts it
   const needsKickRef = useRef(false);
   const [hint, setHint] = useState(false);
+
+  /* song library */
+  const [libraryOpen, setLibraryOpen] = useState(false);
+  const [query, setQuery] = useState("");
+  const [sortMode, setSortMode] = useState<LibrarySort>("order");
+  const searchRef = useRef<HTMLInputElement | null>(null);
 
   const current = tracks[idx] ?? null;
   const streamUrl = (id: string) => `/api/music/stream/${id}`;
@@ -309,6 +332,57 @@ export function BackgroundMusic() {
     startTrack((idx + dir + tracks.length) % tracks.length, wasPlaying);
   }
 
+  /** Pick a song straight from the library list. */
+  function selectTrack(i: number) {
+    const audio = audioRef.current;
+    const t = tracks[i];
+    if (!audio || !t) return;
+    // choosing from the library is a deliberate gesture — cancel any pending auto-start
+    needsKickRef.current = false;
+    setNeedsKick(false);
+
+    if (i === idx) {
+      if (audio.paused) {
+        // a finished/nearly-finished song restarts from the top instead of resuming its last second
+        if (Number.isFinite(audio.duration) && audio.duration - audio.currentTime < 1) {
+          audio.currentTime = 0;
+        }
+        audio.play().then(() => reportPlay(t.id)).catch(() => setPlaying(false));
+      } else {
+        audio.pause();
+      }
+      return;
+    }
+
+    // a real tap carries audio activation — if the browser had only allowed
+    // muted autoplay so far, bring the sound in as she picks her song
+    if (blocked && audio.muted && !prefMutedRef.current) {
+      smoothUnmute();
+      setBlocked(false);
+      setHint(false);
+    }
+    startTrack(i, true);
+  }
+
+  /* library rows: every song, filtered by the search box, sorted by the
+     playlist order or by lifetime plays */
+  const rows = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    const base = tracks.map((t, i) => ({ t, i }));
+    const hit = q
+      ? base.filter(({ t }) => `${t.title} ${t.fileName ?? ""}`.toLowerCase().includes(q))
+      : base;
+    return sortMode === "plays"
+      ? [...hit].sort((a, b) => (b.t.plays ?? 0) - (a.t.plays ?? 0))
+      : hit;
+  }, [tracks, query, sortMode]);
+
+  /* focus the search box the moment the library opens (desktop only — a
+     mobile keyboard shouldn't jump up on its own) */
+  useEffect(() => {
+    if (libraryOpen && isDesktop) searchRef.current?.focus();
+  }, [libraryOpen, isDesktop]);
+
   /* ── the moment she interacts at all, the music starts ──
  *
  * Three situations bring us here:
@@ -543,9 +617,10 @@ export function BackgroundMusic() {
         }}
       />
 
-      {/* one-tap sound hint (autoplay was muted by the browser) */}
+      {/* one-tap sound hint (autoplay was muted by the browser) — hidden
+          once the controls are open: she's already at the volume switch */}
       <AnimatePresence>
-        {hint && (
+        {hint && !expanded && (
           <motion.div
             key="hint"
             initial={{ opacity: 0, y: 8, scale: 0.95 }}
@@ -606,6 +681,169 @@ export function BackgroundMusic() {
         </motion.button>
       )}
 
+      {/* library: browse + search every song in the playlist */}
+      <AnimatePresence>
+        {expanded && libraryOpen && (
+          <motion.div
+            key="library"
+            initial={{ opacity: 0, y: 10, scale: 0.97 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 10, scale: 0.97 }}
+            transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
+            className="glass-solid flex w-[17.5rem] max-w-[calc(100vw-2rem)] flex-col overflow-hidden rounded-2xl border border-border/70 shadow-xl shadow-primary/10"
+            role="group"
+            aria-label="Music library — all songs"
+          >
+            {/* search + sort */}
+            <div className="flex shrink-0 items-center gap-1.5 p-2 pb-1.5">
+              <div className="relative min-w-0 flex-1">
+                <Search
+                  className="pointer-events-none absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground"
+                  aria-hidden
+                />
+                <input
+                  ref={searchRef}
+                  type="text"
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Escape") {
+                      // Escape first clears the search, then closes the library
+                      if (query) setQuery("");
+                      else setLibraryOpen(false);
+                    }
+                  }}
+                  placeholder="Search songs…"
+                  aria-label="Search songs"
+                  autoComplete="off"
+                  spellCheck={false}
+                  enterKeyHint="search"
+                  className="h-9 w-full rounded-xl border border-border/60 bg-muted/50 pl-8 pr-8 text-xs text-foreground outline-none transition-colors placeholder:text-muted-foreground/70 focus:border-primary/50 focus:bg-background/60 focus:ring-[3px] focus:ring-ring/40"
+                />
+                {query && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setQuery("");
+                      searchRef.current?.focus();
+                    }}
+                    aria-label="Clear search"
+                    className="absolute right-1 top-1/2 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50"
+                  >
+                    <X className="h-3.5 w-3.5" aria-hidden />
+                  </button>
+                )}
+              </div>
+              <button
+                type="button"
+                onClick={() => setSortMode((m) => (m === "order" ? "plays" : "order"))}
+                title={
+                  sortMode === "order"
+                    ? "Sorted by playlist order — tap for most played"
+                    : "Sorted by most played — tap for playlist order"
+                }
+                aria-label={
+                  sortMode === "order"
+                    ? "Sorted by playlist order — tap to sort by most played"
+                    : "Sorted by most played — tap to restore playlist order"
+                }
+                aria-pressed={sortMode === "plays"}
+                className={cn(
+                  "flex h-9 w-9 shrink-0 items-center justify-center rounded-xl transition-colors focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50",
+                  sortMode === "plays"
+                    ? "bg-primary/15 text-primary"
+                    : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                )}
+              >
+                {sortMode === "plays" ? (
+                  <Flame className="h-4 w-4" aria-hidden />
+                ) : (
+                  <ListOrdered className="h-4 w-4" aria-hidden />
+                )}
+              </button>
+            </div>
+
+            {/* the songs */}
+            <ul className="max-h-[min(45vh,18rem)] list-none overflow-y-auto p-1.5 pt-0.5">
+              {rows.length === 0 && (
+                <li className="flex flex-col items-center gap-1.5 px-3 py-6 text-center">
+                  <Search className="h-4 w-4 text-muted-foreground/50" aria-hidden />
+                  <p className="text-xs leading-snug text-muted-foreground">
+                    No songs match “{query.trim()}”
+                  </p>
+                  <button
+                    type="button"
+                    onClick={() => setQuery("")}
+                    className="mt-0.5 rounded-full bg-muted px-2.5 py-1 text-[11px] font-medium text-muted-foreground transition-colors hover:bg-muted/70 hover:text-foreground focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50"
+                  >
+                    Show all songs
+                  </button>
+                </li>
+              )}
+              {rows.map(({ t, i }) => {
+                const isCurrent = i === idx;
+                return (
+                  <li key={t.id}>
+                    <button
+                      type="button"
+                      onClick={() => selectTrack(i)}
+                      aria-current={isCurrent ? "true" : undefined}
+                      aria-label={`${isCurrent ? (playing ? "Now playing" : "Paused") : "Play"} “${t.title}”${
+                        t.plays ? ` — played ${t.plays} time${t.plays === 1 ? "" : "s"}` : ""
+                      }`}
+                      className={cn(
+                        "flex h-11 w-full items-center gap-2 rounded-xl px-2 text-left transition-colors focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50",
+                        isCurrent ? "bg-primary/10" : "hover:bg-muted/60"
+                      )}
+                    >
+                      <span className="flex h-4 w-4 shrink-0 items-center justify-center" aria-hidden>
+                        {isCurrent ? (
+                          playing ? (
+                            <span className={cn("eq-bars eq-sm", !reducedMotion && "playing")}>
+                              <span />
+                              <span />
+                              <span />
+                              <span />
+                            </span>
+                          ) : (
+                            <Play className="h-3 w-3 translate-x-px text-primary" />
+                          )
+                        ) : sortMode === "order" ? (
+                          <span className="text-[11px] tabular-nums text-muted-foreground">{i + 1}</span>
+                        ) : (
+                          <Music2 className="h-3 w-3 text-muted-foreground/60" />
+                        )}
+                      </span>
+                      <span
+                        className={cn(
+                          "min-w-0 flex-1 truncate text-[13px] font-medium leading-tight",
+                          isCurrent ? "text-primary" : "text-foreground"
+                        )}
+                        title={t.title}
+                      >
+                        {t.title}
+                      </span>
+                      <span className="shrink-0 text-[10px] leading-tight tabular-nums text-muted-foreground">
+                        {fmtSize(t.sizeBytes)}
+                        {!!t.plays && ` · ${t.plays} play${t.plays === 1 ? "" : "s"}`}
+                      </span>
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+
+            {/* count / admin hint */}
+            <p className="shrink-0 border-t border-border/60 px-3 py-1.5 text-[10px] leading-snug text-muted-foreground">
+              {query.trim()
+                ? `${rows.length} of ${tracks.length} song${tracks.length === 1 ? "" : "s"} match`
+                : `${tracks.length} song${tracks.length === 1 ? "" : "s"} in the playlist`}
+              {isAdmin && tracks.length < 2 && " — upload more in Admin Studio → Music 💗"}
+            </p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* expanded: full controls */}
       <AnimatePresence>
         {expanded && (
@@ -634,10 +872,10 @@ export function BackgroundMusic() {
                   {current.title}
                 </p>
                 <p className="text-[11px] text-muted-foreground">
-                  {playing ? "Now playing" : muted ? "Muted" : "Paused"}
+                  {playing ? (muted ? "Playing · muted" : "Now playing") : muted ? "Muted" : "Paused"}
                   {multi && ` · ${idx + 1} of ${tracks.length}`}
                 </p>
-                {isAdmin && tracks.length === 1 && (
+                {isAdmin && tracks.length === 1 && !libraryOpen && (
                   <p className="text-[10px] leading-snug text-muted-foreground/80">
                     The only song in the playlist — upload more in Admin Studio → Music and they play back-to-back 💗
                   </p>
@@ -689,7 +927,25 @@ export function BackgroundMusic() {
               />
               <button
                 type="button"
-                onClick={() => setExpanded(false)}
+                onClick={() => setLibraryOpen((v) => !v)}
+                aria-label="Browse and search all songs"
+                aria-pressed={libraryOpen}
+                title="All songs"
+                className={cn(
+                  "flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-colors focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50",
+                  libraryOpen
+                    ? "bg-primary/15 text-primary"
+                    : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                )}
+              >
+                <ListMusic className="h-4 w-4" aria-hidden />
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setExpanded(false);
+                  setLibraryOpen(false);
+                }}
                 aria-label="Close music controls"
                 className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-muted-foreground/70 transition-colors hover:bg-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50"
               >

@@ -1,19 +1,30 @@
 import { withUser } from "@/lib/api-helpers";
+import ZAI from "z-ai-web-dev-sdk";
 
 export const dynamic = "force-dynamic";
+
+/**
+ * "Ask Mimie" — the in-app AI study companion.
+ *
+ * Frontend posts the chat history + a short context line (what she is
+ * currently studying). The route wraps the LLM with a warm-tutor persona
+ * tuned to the Ghana nursing curriculum, plus guard rails (no invented
+ * doses, no real-patient decisions). The SDK only ever runs here, on
+ * the server — never in the browser.
+ */
 
 interface ChatMsg {
   role: "user" | "assistant";
   content: string;
 }
 
-const MAX_MESSAGES = 20;
+const MAX_MESSAGES = 20; // history sent up (system prompt is added on top)
 const MAX_CHARS_PER_MSG = 2000;
 const MAX_CONTEXT_CHARS = 400;
-const RATE_WINDOW_MS = 10 * 60 * 1000;
-const RATE_MAX = 40;
-const ZAI_MODEL = "glm-4.5-flash";
+const RATE_WINDOW_MS = 10 * 60 * 1000; // 10 minutes
+const RATE_MAX = 40; // messages per window — generous, but stops abuse
 
+/** userId → timestamps of recent requests (in-memory; resets on restart). */
 const rateHits = new Map<string, number[]>();
 
 function rateLimited(userId: string): boolean {
@@ -25,6 +36,7 @@ function rateLimited(userId: string): boolean {
   }
   hits.push(now);
   rateHits.set(userId, hits);
+  // keep the map itself small
   if (rateHits.size > 500) {
     for (const [k, v] of rateHits) {
       if (v.every((t) => now - t >= RATE_WINDOW_MS)) rateHits.delete(k);
@@ -90,35 +102,20 @@ export async function POST(req: Request) {
     const nickname = user.nickname || user.name || "";
     const yearInfo = `a Year ${user.currentYear} nursing student (semester ${user.currentSemester})`;
 
-    const zaiMessages = [
-      { role: "system", content: systemPrompt(context, nickname, yearInfo) },
+    const llmMessages: { role: "assistant" | "user"; content: string }[] = [
+      { role: "assistant", content: systemPrompt(context, nickname, yearInfo) },
       ...messages,
     ];
 
-    const apiKey = process.env.ZAI_API_KEY;
-    if (!apiKey) {
-      console.error("[assistant] Missing ZAI_API_KEY");
-      return Response.json({ error: "Mimie is unavailable 💗" }, { status: 502 });
-    }
-
+    // one retry with a short backoff — the completion service blips sometimes
     for (let attempt = 0; attempt < 2; attempt++) {
       try {
-        const res = await fetch("https://api.z.ai/api/paas/v4/chat/completions", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${apiKey}`,
-          },
-          body: JSON.stringify({
-            model: ZAI_MODEL,
-            messages: zaiMessages,
-          }),
+        const zai = await ZAI.create();
+        const completion = await zai.chat.completions.create({
+          messages: llmMessages,
+          thinking: { type: "disabled" },
         });
-
-        if (!res.ok) throw new Error(`Z.ai API error: ${res.status}`);
-
-        const data = await res.json();
-        const reply = data?.choices?.[0]?.message?.content;
+        const reply = completion.choices[0]?.message?.content;
         if (reply && reply.trim().length > 0) {
           return Response.json({ reply: reply.trim() });
         }
